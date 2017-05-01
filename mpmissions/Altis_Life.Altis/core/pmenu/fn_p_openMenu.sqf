@@ -13,7 +13,7 @@ disableSerialization;
 switch (playerSide) do {
     case west: {
         ctrlShow[2011,false];
-		//ctrlShow[3025,false]; Cops sehen Markt nicht
+		ctrlShow[3025,false]; Cops sehen Markt nicht
     };
 
     case civilian: {
@@ -23,7 +23,7 @@ switch (playerSide) do {
     case independent: {
         ctrlShow[2012,false];
         ctrlShow[2011,false];
-		//ctrlShow[3025,false]; Cops sehen Markt nicht
+		ctrlShow[3025,false]; Cops sehen Markt nicht
     };
 };
 
