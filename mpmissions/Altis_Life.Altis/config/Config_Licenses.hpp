@@ -11,7 +11,7 @@ class Licenses {
     class driver {
         variable = "driver";
         displayName = "STR_License_Driver";
-        price = 1000;
+        price = 500;
         illegal = false;
         side = "civ";
     };
@@ -19,7 +19,7 @@ class Licenses {
     class boat {
         variable = "boat";
         displayName = "STR_License_Boat";
-        price = 25000;
+        price = 1000;
         illegal = false;
         side = "civ";
     };
@@ -27,7 +27,7 @@ class Licenses {
     class pilot {
         variable = "pilot";
         displayName = "STR_License_Pilot";
-        price = 150000;
+        price = 25000;
         illegal = false;
         side = "civ";
     };
@@ -35,7 +35,7 @@ class Licenses {
     class trucking {
         variable = "trucking";
         displayName = "STR_License_Truck";
-        price = 25000;
+        price = 20000;
         illegal = false;
         side = "civ";
     };
@@ -43,7 +43,7 @@ class Licenses {
     class gun {
         variable = "gun";
         displayName = "STR_License_Firearm";
-        price = 60000;
+        price = 10000;
         illegal = false;
         side = "civ";
     };
@@ -51,7 +51,7 @@ class Licenses {
     class dive {
         variable = "dive";
         displayName = "STR_License_Diving";
-        price = 14000;
+        price = 2000;
         illegal = false;
         side = "civ";
     };
@@ -59,7 +59,7 @@ class Licenses {
     class home {
         variable = "home";
         displayName = "STR_License_Home";
-        price = 500000;
+        price = 75000;
         illegal = false;
         side = "civ";
     };
@@ -68,7 +68,7 @@ class Licenses {
     class oil {
         variable = "oil";
         displayName = "STR_License_Oil";
-        price = 65000;
+        price = 10000;
         illegal = false;
         side = "civ";
     };
@@ -76,7 +76,7 @@ class Licenses {
     class diamond {
         variable = "diamond";
         displayName = "STR_License_Diamond";
-        price = 80000;
+        price = 35000;
         illegal = false;
         side = "civ";
     };
@@ -84,7 +84,7 @@ class Licenses {
     class salt {
         variable = "salt";
         displayName = "STR_License_Salt";
-        price = 55000;
+        price = 12000;
         illegal = false;
         side = "civ";
     };
@@ -92,7 +92,7 @@ class Licenses {
     class sand {
         variable = "sand";
         displayName = "STR_License_Sand";
-        price = 40000;
+        price = 14500;
         illegal = false;
         side = "civ";
     };
@@ -100,7 +100,7 @@ class Licenses {
     class iron {
         variable = "iron";
         displayName = "STR_License_Iron";
-        price = 25000;
+        price = 9500;
         illegal = false;
         side = "civ";
     };
@@ -108,7 +108,7 @@ class Licenses {
     class copper {
         variable = "copper";
         displayName = "STR_License_Copper";
-        price = 20000;
+        price = 8000;
         illegal = false;
         side = "civ";
     };
@@ -116,7 +116,7 @@ class Licenses {
     class cement {
         variable = "cement";
         displayName = "STR_License_Cement";
-        price = 32000;
+        price = 6500;
         illegal = false;
         side = "civ";
     };
@@ -133,7 +133,7 @@ class Licenses {
     class cocaine {
         variable = "cocaine";
         displayName = "STR_License_Cocaine";
-        price = 325000;
+        price = 30000;
         illegal = true;
         side = "civ";
     };
@@ -141,7 +141,7 @@ class Licenses {
     class heroin {
         variable = "heroin";
         displayName = "STR_License_Heroin";
-        price = 250000;
+        price = 25000;
         illegal = true;
         side = "civ";
     };
@@ -149,7 +149,7 @@ class Licenses {
     class marijuana {
         variable = "marijuana";
         displayName = "STR_License_Marijuana";
-        price = 180000;
+        price = 19500;
         illegal = true;
         side = "civ";
     };
@@ -157,7 +157,7 @@ class Licenses {
     class rebel {
         variable = "rebel";
         displayName = "STR_License_Rebel";
-        price = 2750000;
+        price = 75000;
         illegal = true;
         side = "civ";
     };

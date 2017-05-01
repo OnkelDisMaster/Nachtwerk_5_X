@@ -12,4 +12,8 @@ if (hasInterface) then {
 };
 [] execVM "KRON_Strings.sqf";
 
+//DynMarket
+DYNAMICMARKET_boughtItems = [];
+[player] remoteExec ["TON_fnc_playerLogged",RSERV];
+
 StartProgress = true;

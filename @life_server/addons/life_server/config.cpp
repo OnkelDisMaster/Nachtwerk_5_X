@@ -51,7 +51,18 @@ class CfgFunctions {
             file = "\life_server\Functions\Client";
         };
     };
-
+	
+	class DynMarket
+	{
+		file = "\life_server\Functions\DynMarket";
+			class calculatePrices {};
+			class config {};
+			class getUpdate {};
+			class HandleDB {};
+			class playerLogged {};
+			class sleeper {}; 
+	};
+	
     class TON_System {
         tag = "TON";
         class Systems {
