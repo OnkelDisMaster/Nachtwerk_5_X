@@ -3,7 +3,9 @@
     Author: DerHeiligeBimBam und Chuck Norris
     
     Description:
-ATM / Geldautomat ausrauben
+	ATM / Geldautomat ausrauben
+	
+	Edit by Audacious
     
 */
 private["_robber","_shop","_atmgeld","_ui","_progress","_pgText","_cP","_rip","_pos","_testserver","_robbed","_wait","_alarm","_crimes"];
@@ -27,7 +29,7 @@ if (isNil "atm_rob") then {atm_rob = []; publicVariable "atm_rob";};
 
 If (life_servername == serverName) then { _testserver = true;};
 
-if(playersNumber west < 3 && !_testserver) exitWith {hint "Es muessen min. 3 Polizisten Online sein!"}; 
+if(playersNumber west < 1 && !_testserver) exitWith {hint "Es muessen min. 3 Polizisten Online sein!"}; 
 /*
 IF (player distance (getMarkerPos "Bankraub") < 2000) exitWith { hint "In der naehe wird bereits eine Bank ausgeraubt!" };
 IF (player distance (getMarkerPos "Marker200") < 1000) exitWith { hint "In der naehe wird bereits ein Geldautomat aufgebrochen!" };
