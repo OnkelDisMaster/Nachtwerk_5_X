@@ -8,5 +8,5 @@
 #################################################################
 */
 
-_playerUID = _this select 0;
+_playerUID = owner (_this select 0);
 [1,DYNMARKET_sellarraycopy] remoteExecCall ["life_fnc_update",_playerUID];
