@@ -106,7 +106,7 @@ _tempArrayHolder = DYNMARKET_Items_CurrentPriceArr;
 	};
 } forEach DYNMARKET_Items_CurrentPriceArr;
 DYNMARKET_Items_CurrentPriceArr = _tempArrayHolder;
-//[1,DYNMARKET_Items_CurrentPriceArr] remoteExecCall ["life_fnc_update",-2];
+//[1,DYNMARKET_Items_CurrentPriceArr] remoteExecCall ["life_fnc_update",2];
 
 // Translate to sell_array
 
