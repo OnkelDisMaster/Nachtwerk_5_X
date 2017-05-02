@@ -10927,6 +10927,17 @@
             <Portuguese>Roubo</Portuguese>
             <German>Raub</German>
         </Key>
+		 <Key ID="STR_Crime_2111">
+            <Original>Robbery</Original>
+            <Czech>Loupež</Czech>
+            <French>Vol</French>
+            <Spanish>Robo</Spanish>
+            <Italian>Rapina</Italian>
+            <Polish>Rozbój</Polish>
+            <Russian></Russian>
+            <Portuguese>Roubo</Portuguese>
+            <German>ATM Raub</German>
+        </Key>
         <Key ID="STR_Crime_207">
             <Original>Kidnapping</Original>
             <Czech>Únos</Czech>

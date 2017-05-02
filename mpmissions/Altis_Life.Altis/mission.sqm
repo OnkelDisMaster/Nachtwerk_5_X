@@ -16017,7 +16017,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=545;
 			type="Land_Atm_02_F";
@@ -16059,7 +16059,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=546;
 			type="Land_Atm_02_F";
@@ -16101,7 +16101,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=547;
 			type="Land_Atm_02_F";
@@ -16143,7 +16143,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=548;
 			type="Land_Atm_02_F";
@@ -16185,7 +16185,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=549;
 			type="Land_Atm_02_F";
@@ -16227,7 +16227,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=550;
 			type="Land_Atm_02_F";
@@ -16268,7 +16268,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=551;
 			type="Land_Atm_02_F";
@@ -16310,7 +16310,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 				name="a1";
 			};
 			id=552;
@@ -16353,7 +16353,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=553;
 			type="Land_Atm_02_F";
@@ -16395,7 +16395,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=554;
 			type="Land_Atm_02_F";
@@ -16437,7 +16437,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=555;
 			type="Land_Atm_02_F";
@@ -16479,7 +16479,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=556;
 			type="Land_Atm_02_F";
@@ -16521,7 +16521,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=557;
 			type="Land_Atm_02_F";
@@ -16563,7 +16563,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=558;
 			type="Land_Atm_02_F";
@@ -16605,7 +16605,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=559;
 			type="Land_Atm_02_F";
@@ -16647,7 +16647,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=560;
 			type="Land_Atm_02_F";
@@ -16689,7 +16689,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=561;
 			type="Land_Atm_02_F";
@@ -19204,7 +19204,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=621;
 			type="Land_Atm_02_F";
@@ -19246,7 +19246,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=622;
 			type="Land_Atm_02_F";
@@ -19288,7 +19288,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=623;
 			type="Land_Atm_02_F";
@@ -19330,7 +19330,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=624;
 			type="Land_Atm_02_F";
@@ -19787,7 +19787,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=635;
 			type="Land_Atm_02_F";
@@ -19828,7 +19828,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=636;
 			type="Land_Atm_01_F";
@@ -21067,7 +21067,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=666;
 			type="Land_Atm_01_F";
@@ -22305,7 +22305,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; this addAction[""Geldautomat aufbrechen"",life_fnc_robATM,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2.5 '];";
 			};
 			id=696;
 			type="Land_Atm_01_F";
