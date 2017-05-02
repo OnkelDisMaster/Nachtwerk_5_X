@@ -113,7 +113,7 @@ DYNMARKET_Serveruptime = (DYNMARKET_Serveruptime * 3600) - 300;
 } forEach DYNMARKET_Items_ToTrack;
 publicVariable "DYNMARKET_UserNotification";
 publicVariable "DYNMARKET_UserNotification_Text";
-[1] call TON_fnc_HandleDB;
+[1] spawn TON_fnc_HandleDB;
 DYNMARKET_UpdateCount = 0;
 if (DYNMARKET_UseExternalDatabase) then {
 	[] spawn {
@@ -124,4 +124,4 @@ if (DYNMARKET_UseExternalDatabase) then {
 	};
 };
 sleep 5;
-[] call TON_fnc_sleeper;
+[] spawn TON_fnc_sleeper;
