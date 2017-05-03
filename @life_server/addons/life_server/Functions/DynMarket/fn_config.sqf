@@ -124,4 +124,4 @@ if (DYNMARKET_UseExternalDatabase) then {
 	};
 };
 sleep 5;
-[] spawn life_fnc_sleeper; //"\life_server\Functions\DynMarket\fn_config.sqf";
+[] spawn TON_fnc_sleeper; //"\life_server\Functions\DynMarket\fn_config.sqf";
