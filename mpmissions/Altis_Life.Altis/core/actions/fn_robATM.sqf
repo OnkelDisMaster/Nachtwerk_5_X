@@ -8,13 +8,13 @@
 	Edit by Audacious
     
 */
-private["_robber","_shop","_atmgeld","_ui","_progress","_pgText","_cP","_rip","_pos","_testserver","_robbed","_wait","_alarm","_crimes"];
+private["_robber","_shop","_atmgeld","_ui","_progress","_pgText","_cP","_rip","_pos","_testserver","_robbed","_wait","_alarm"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; 
 _action = [_this,2] call BIS_fnc_param;
 _testserver = false;
 _robbed = cursorObject;
-_crimes = LIFE_SETTINGS(getArray,"crimes");
+//_crimes = LIFE_SETTINGS(getArray,"crimes"); //Fehler
 
 _wait = round(random(2));
 sleep _wait;
@@ -130,7 +130,7 @@ if(_chance <= 50) then {
     player setObjectTextureGlobal [2,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     [1,format["Die Farbpatrone wurde ausgeloest, der Taeter ist nun hell gruen! ATM: %2, taeter laut Sicherheitsdienst ist %1!",name _robber, _shop]]    remoteExecCall ["life_fnc_broadcast",west];
     //[getPlayerUID _robber,name _robber,"515"] remoteExecCall ["life_fnc_wantedAdd",2];
-	[getPlayerUID _robber,_robber getVariable ["realname",name _robber],"2111"] remoteExecCall ["life_fnc_wantedAdd",RSERV]
+	[getPlayerUID _robber,name _robber,"2111"] remoteExec ["life_fnc_wantedAdd",2];
     };
 
 life_use_atm = false;
