@@ -124,7 +124,7 @@ _rip = false;
 if(_chance <= 50) then { 
     hint "Du hast die Farbpatrone ausloest! Du wurdest gesehen und erkannt vom Sicherheitspersonal via Videokamera!"; 
     titleCut [" ","white in",1];    
-    [player,"SmallExplosion"] remoteExec ["life_fnc_say3D",RANY]
+    [player,"SmallExplosion"] remoteExec ["life_fnc_say3D",RANY];
     player setObjectTextureGlobal [0,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     player setObjectTextureGlobal [1,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     player setObjectTextureGlobal [2,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
