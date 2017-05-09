@@ -1,374 +1,503 @@
-#include "..\..\script_macros.hpp"
+#include <macro.h>
 /*
-*    File: fn_keyHandler.sqf
-*    Author: Bryan "Tonic" Boardwine
-*
-*    Description:
-*    Main key handler for event 'keyDown'.
+	File: fn_keyHandler.sqf
+	Author: Bryan "Tonic" Boardwine
+
+	Description:
+	Main key handler for event 'keyDown'
 */
 private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
-_ctrl = _this select 0;
-_code = _this select 1;
-_shift = _this select 2;
-_ctrlKey = _this select 3;
-_alt = _this select 4;
-_speed = speed cursorObject;
+_ctrl = SEL(_this,0);
+_code = SEL(_this,1);
+_shift = SEL(_this,2);
+_ctrlKey = SEL(_this,3);
+_alt = SEL(_this,4);
+_speed = speed cursorTarget;
 _handled = false;
 
-_interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
-_mapKey = (actionKeys "ShowMap" select 0);
+_interactionKey = if((EQUAL(count (actionKeys "User10"),0))) then {219} else {(actionKeys "User10") select 0};
+_mapKey = SEL(actionKeys "ShowMap",0);
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Vault handling...
-if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "SitDown") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed)) exitWith {
-    true;
+if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player GVAR ["restrained",false])}) exitWith {
+	true;
 };
 
-if (life_action_inUse) exitWith {
-    if (!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
-    _handled;
+if(life_action_inUse) exitWith {
+	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
+	_handled;
 };
 
 //Hotfix for Interaction key not being able to be bound on some operation systems.
-if (!(count (actionKeys "User10") isEqualTo 0) && {(inputAction "User10" > 0)}) exitWith {
-    //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-    if (!life_action_inUse) then {
-        [] spawn {
-            private "_handle";
-            _handle = [] spawn life_fnc_actionKeyHandler;
-            waitUntil {scriptDone _handle};
-            life_action_inUse = false;
-        };
-    };
-    true;
-};
-
-if (life_container_active) then {
-    switch (_code) do {
-        //space key
-        case 57: {
-            [] spawn life_fnc_placestorage;
-        };
-    };
-    true;
+if(!(EQUAL(count (actionKeys "User10"),0)) && {(inputAction "User10" > 0)}) exitWith {
+	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
+	if(!life_action_inUse) then {
+		[] spawn {
+			private "_handle";
+			_handle = [] spawn life_fnc_actionKeyHandler;
+			waitUntil {scriptDone _handle};
+			life_action_inUse = false;
+		};
+	};
+	true;
 };
 
 switch (_code) do {
-    // -- Disable commander/tactical view
-    if (LIFE_SETTINGS(getNumber,"disableCommanderView") isEqualTo 1) then {
-        private _CommandMode = actionKeys "tacticalView";
+	//Space key for Jumping
+	case 57: {
+		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
+		if(_shift && {!(EQUAL(animationState player,"AovrPercMrunSrasWrflDf"))} && {isTouchingGround player} && {EQUAL(stance player,"STAND")} && {speed player > 2} && {!life_is_arrested} && {SEL((velocity player),2) < 2.5} && {time - jumpActionTime > 1.5}) then {
+			jumpActionTime = time; //Update the time.
+			[player,true] spawn life_fnc_jumpFnc; //Local execution
+			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution
+			_handled = true;
+		};
+	};
 
-        if (_code in _CommandMode) then {
-            hint localize "STR_NOTF_CommanderView";
-            _handled = true;
-        };
-    };
+	//Map Key
+	case _mapKey: {
+		switch (playerSide) do {
+			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
+			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case civilian: {if(!visibleMap) then {[] spawn life_fnc_civMarker;}};
+		};
+	};
 
-    //Space key for Jumping
-    case 57: {
-        if (isNil "jumpActionTime") then {jumpActionTime = 0;};
-        if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {!life_is_arrested} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {
-            jumpActionTime = time; //Update the time.
-            [player] remoteExec ["life_fnc_jumpFnc",RANY]; //Global execution
-            _handled = true;
-        };
-    };
+	//Holster / recall weapon.
+	case 35: {
+		if(_shift && !_ctrlKey && !(EQUAL(currentWeapon player,""))) then {
+			life_curWep_h = currentWeapon player;
+			player action ["SwitchWeapon", player, player, 100];
+			player switchCamera cameraView;
+		};
 
-    //Surrender (Shift + B)
-    case 48: {
-        if (_shift) then {
-            if (player getVariable ["playerSurrender",false]) then {
-                player setVariable ["playerSurrender",false,true];
-            } else {
-                [] spawn life_fnc_surrender;
-            };
-            _handled = true;
-        };
-    };
+		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {!(EQUAL(life_curWep_h,""))}) then {
+			if(life_curWep_h in [RIFLE,LAUNCHER,PISTOL]) then {
+				player selectWeapon life_curWep_h;
+			};
+		};
+	};
 
-    //Map Key
-    case _mapKey: {
-        switch (playerSide) do {
-            case west: {if (!visibleMap) then {[] spawn life_fnc_copMarkers;}};
-            case independent: {if (!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
-            case civilian: {if (!visibleMap) then {[] spawn life_fnc_civMarkers;}};
-        };
-    };
+	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
+	case _interactionKey: {
+		if(!life_action_inUse) then {
+			[] spawn  {
+				private "_handle";
+				_handle = [] spawn life_fnc_actionKeyHandler;
+				waitUntil {scriptDone _handle};
+				life_action_inUse = false;
+			};
+		};
+	};
 
-    //Holster / recall weapon. (Shift + H)
-    case 35: {
-        if (_shift && !_ctrlKey && !(currentWeapon player isEqualTo "")) then {
-            life_curWep_h = currentWeapon player;
-            player action ["SwitchWeapon", player, player, 100];
-            player switchCamera cameraView;
-        };
+	//F1 = Faded Sound
+	case 59:
+	{
+		[] call life_fnc_fadeSound;
+		_handled = true;
+	};
 
-        if (!_shift && _ctrlKey && !isNil "life_curWep_h" && {!(life_curWep_h isEqualTo "")}) then {
-            if (life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
-                player selectWeapon life_curWep_h;
-            };
-        };
-    };
+	//Restraining or robbing (Shift + R)
+	case 19:
+	{
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget GVAR "Escorting") && !(cursorTarget GVAR "restrained") && speed cursorTarget < 1) then
+		{
+			[] call life_fnc_restrainAction;
+		};
 
-    //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-    case _interactionKey: {
-        if (!life_action_inUse) then {
-            [] spawn  {
-                private "_handle";
-                _handle = [] spawn life_fnc_actionKeyHandler;
-                waitUntil {scriptDone _handle};
-                life_action_inUse = false;
-            };
-        };
-    };
+		//Robbing
+		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+		{
+			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == RIFLE OR currentWeapon player == PISTOL) && currentWeapon player != "" && !life_knockout && !(player GVAR["restrained",false]) && !life_istazed && !(player GVAR["surrender",false])) then
+			{
+				[cursorTarget] spawn life_fnc_knockoutAction;
+			};
+			_handled = true;
+		};
+	};
 
-    //Restraining (Shift + R)
-    case 19: {
-        if (_shift) then {_handled = true;};
-        if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
-            [] call life_fnc_restrainAction;
-        };
-    };
+	//Shift + G (surrender)
+	case 34:
+	{
+		if(_shift) then {_handled = true;};
 
-    //Knock out, this is experimental and yeah... (Shift + G)
-    case 34: {
-        if (_shift) then {_handled = true;};
-        if (_shift && playerSide isEqualTo civilian && !isNull cursorObject && cursorObject isKindOf "Man" && isPlayer cursorObject && alive cursorObject && cursorObject distance player < 4 && speed cursorObject < 1) then {
-            if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player == primaryWeapon player || currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isknocked) then {
-                [cursorObject] spawn life_fnc_knockoutAction;
-            };
-        };
-    };
+		if (_shift) then
+		{
+			if (vehicle player == player && !(player GVAR ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			{
+				if (player GVAR ["surrender", false]) then
+				{
+					player SVAR ["surrender", false, true];
+				} else
+				{
+					[] spawn life_fnc_surrender;
+				};
+			};
+		};
+	};
 
-    //T Key (Trunk)
-    case 20: {
-        if (!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {
-            if (!(isNull objectParent player) && alive vehicle player) then {
-                if ((vehicle player) in life_vehicles) then {
-                    [vehicle player] spawn life_fnc_openInventory;
-                };
-            } else {
-                private "_list";
-                _list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
-                if (!(isNil "_list")) then {
-                    _house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
-                    if (_house getVariable ["locked", false]) then {
-                        hint localize "STR_House_ContainerDeny";
-                    } else {
-                        [_list] spawn life_fnc_openInventory;
-                    };
-                } else {
-                    _list = ["landVehicle","Air","Ship"];
-                    if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 7} && {isNull objectParent player} && {alive cursorObject} && {!life_action_inUse}) then {
-                        if (cursorObject in life_vehicles || {locked cursorObject isEqualTo 0}) then {
-                            [cursorObject] spawn life_fnc_openInventory;
-                        };
-                    };
-                };
-            };
-        };
-    };
+	//Num1
+	case 79:
+	{
+	if(_shift) then {_handled = true;};
+		if ((_shift) && (vehicle player == player)) then
+		{
+			cutText [format["Taekwondo"], "PLAIN DOWN"];
+			player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
+		};
+	};
 
-    //L Key?
-    case 38: {
-        //If cop run checks for turning lights on.
-        if (_shift && playerSide in [west,independent]) then {
-            if (!(isNull objectParent player) && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
-                if (!isNil {vehicle player getVariable "lights"}) then {
-                    if (playerSide isEqualTo west) then {
-                        [vehicle player] call life_fnc_sirenLights;
-                    } else {
-                        [vehicle player] call life_fnc_medicSirenLights;
-                    };
-                    _handled = true;
-                };
-            };
-        };
+	//Num2
+	case 80:
+	{
+	if(_shift) then {_handled = true;};
+		if ((_shift) && (vehicle player == player)) then
+		{
+			cutText [format["Kniebeuge"], "PLAIN DOWN"];
+			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+		};
+	};
 
-        if (!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
-    };
+	//Num3
+	case 81:
+	{
+	if(_shift) then {_handled = true;};
+		if ((_shift) && (vehicle player == player)) then
+		{
+			cutText [format["Hastige Kniebeuge"], "PLAIN DOWN"];
+			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
+		};
+	};
 
-    //Y Player Menu
-    case 21: {
-        if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
-            [] call life_fnc_p_openMenu;
-        };
-    };
+	//Num4
+	case 75:
+	{
+	if(_shift) then {_handled = true;};
+		if ((_shift) && (vehicle player == player)) then
+		{
+			cutText [format["Liegestütze"], "PLAIN DOWN"];
+			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+		};
+	};
 
-    //F Key
-    case 33: {
-        if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
-            [] spawn {
-                life_siren_active = true;
-                sleep 4.7;
-                life_siren_active = false;
-            };
+	case 76:
+	{
+			if(_shift) then {_handled = true;};
+			if((_shift) && (vehicle player == player)) then
+	{
+			[] spawn {
+				player playMove "Acts_AidlPercMstpSlowWrflDnon_pissing";
+				[player,"piss"] call life_fnc_globalSound;
+				sleep 8;
+				_pipi = "Oil_Spill_F" createVehicle (getPos player);
+				_pipi setPos (getPos player);
+				sleep 120;
+				deleteVehicle _pipi;
+		};
+	};
+};
 
+
+
+	//T Key (Trunk)
+	case 20: {
+		if(!_alt && !_ctrlKey && !life_is_processing) then {
+			if(vehicle player != player && alive vehicle player) then {
+				if((vehicle player) in life_vehicles) then {
+					[vehicle player] call life_fnc_openInventory;
+				};
+			} else {
+				private "_list";
+				_list = ["landVehicle","Air","Ship","House_F"];
+				if(KINDOF_ARRAY(cursorTarget,_list) && {player distance cursorTarget < 7} && {vehicle player == player} && {alive cursorTarget}) then {
+					if(cursorTarget in life_vehicles OR {!(cursorTarget GVAR ["locked",true])}) then {
+						[cursorTarget] call life_fnc_openInventory;
+					};
+				};
+			};
+		};
+	};
+
+	case 18:
+	{
+		if(_shift && playerSide == west  && !(life_siren4_active) && vehicle player != player && ((driver vehicle player) == player)) then
+		{
+			_veh = vehicle player;
+			[[_veh,"takedown_weapon"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+			[] spawn
+			{
+				life_siren4_active = true;
+				sleep 4.2;
+				life_siren4_active = false;
+			};
+			_handled = true;
+		};
+	};
+
+	case 46:
+	{
+		if(_shift && playerSide == west && !(life_siren5_active) && vehicle player != player && ((driver vehicle player) == player)) then
+		{
+			_veh = vehicle player;
+			[[_veh,"follow"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+			[] spawn
+			{
+				life_siren5_active = true;
+				sleep 4.5;
+				life_siren5_active = false;
+			};
+			_handled = true;
+		};
+	};
+
+	case 16:
+	{
+		if(_shift && playerSide == west && !(life_siren2_active) && vehicle player != player && ((driver vehicle player) == player)) then
+		{
+			_veh = vehicle player;
+			[[_veh,"stop_car"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+			[] spawn
+			{
+				life_siren2_active = true;
+				sleep 3.5;
+				life_siren2_active = false;
+			};
+			_handled = true;
+		};
+	};
+
+	case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
+	};
+
+	//NEW ONE
+//L Key?
+case 38: {
+ //If cop run checks for turning lights on.
+ if(!isNil {vehicle player getVariable "lights"} && vehicle player != player && _shift) then {
+ if (!(vehicle player getVariable "lights")) then {
+ [vehicle player, player] spawn life_fnc_emergencyLights;
+ } else {
+ vehicle player setVariable ["lights", false, true];
+ };
+ };
+ if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
+};
+
+	case 41: {
+
+		if (!_alt && !_ctrlKey && playerSide == west) then
+		{
+			[] call life_fnc_radar;
+		};
+	};
+
+	//Y Player Menu
+	case 21: {
+		if(!_alt && !_ctrlKey && !dialog && !life_is_processing) then {
+			[] call life_fnc_p_openMenu;
+		};
+	};
+
+	case 33: //F Key = Sirens
+    {
+        if (!_shift && !_alt && !_ctrlKey) then //F Key = EMS/Cops Sirens
+        {
             _veh = vehicle player;
-            if (isNil {_veh getVariable "siren"}) then {_veh setVariable ["siren",false,true];};
-            if ((_veh getVariable "siren")) then {
-                titleText [localize "STR_MISC_SirensOFF","PLAIN"];
-                _veh setVariable ["siren",false,true];
-            } else {
-                titleText [localize "STR_MISC_SirensON","PLAIN"];
-                _veh setVariable ["siren",true,true];
-                if (playerSide isEqualTo west) then {
-                    [_veh] remoteExec ["life_fnc_copSiren",RCLIENT];
+            if(playerSide in [west,independent] && _veh != player && !life_siren_active && ((driver _veh) == player)) then
+            {
+                [] spawn
+                {
+                    life_siren_active = true;
+                    uiSleep 0.5;
+                    life_siren_active = false;
+                };
+                if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
+                if((_veh getVariable "siren")) then
+                {
+                    titleText [localize "STR_MISC_SirensOFF","PLAIN"];
+                    _veh setVariable["siren",false,true];
                 } else {
-                    [_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
-                };
-            };
-        };
-    };
-
-    //O Key
-    case 24: {
-        if (_shift) then {
-            if !(soundVolume isEqualTo 1) then {
-                1 fadeSound 1;
-                systemChat localize "STR_MISC_soundnormal";
-            } else {
-                1 fadeSound 0.1;
-                systemChat localize "STR_MISC_soundfade";
-            };
-        };
-    };
-
-    //U Key
-    case 22: {
-        if (!_alt && !_ctrlKey) then {
-            if (isNull objectParent player) then {
-                _veh = cursorObject;
-            } else {
-                _veh = vehicle player;
-            };
-
-            if (_veh isKindOf "House_F" && {playerSide isEqualTo civilian}) then {
-                if (_veh in life_vehicles && {player distance _veh < 20}) then {
-                    _door = [_veh] call life_fnc_nearestDoor;
-                    if (_door isEqualTo 0) exitWith {hint localize "STR_House_Door_NotNear"};
-                    _locked = _veh getVariable [format ["bis_disabled_Door_%1",_door],0];
-
-                    if (_locked isEqualTo 0) then {
-                        _veh setVariable [format ["bis_disabled_Door_%1",_door],1,true];
-                        _veh animateSource [format ["Door_%1_source", _door], 0];
-                        systemChat localize "STR_House_Door_Lock";
+                    titleText [localize "STR_MISC_SirensON","PLAIN"];
+                    _veh setVariable["siren",true,true];
+                    if(playerSide == west) then {
+                        [[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
                     } else {
-                        _veh setVariable [format ["bis_disabled_Door_%1",_door],0,true];
-                        _veh animateSource [format ["Door_%1_source", _door], 1];
-                        systemChat localize "STR_House_Door_Unlock";
-                    };
-                };
-            } else {
-                _locked = locked _veh;
-                if (_veh in life_vehicles && {player distance _veh < 20}) then {
-                    if (_locked isEqualTo 2) then {
-                        if (local _veh) then {
-                            _veh lock 0;
-
-                            // BI
-                            _veh animateDoor ["door_back_R",1];
-                            _veh animateDoor ["door_back_L",1];
-                            _veh animateDoor ['door_R',1];
-                            _veh animateDoor ['door_L',1];
-                            _veh animateDoor ['Door_L_source',1];
-                            _veh animateDoor ['Door_rear',1];
-                            _veh animateDoor ['Door_rear_source',1];
-                            _veh animateDoor ['Door_1_source',1];
-                            _veh animateDoor ['Door_2_source',1];
-                            _veh animateDoor ['Door_3_source',1];
-                            _veh animateDoor ['Door_LM',1];
-                            _veh animateDoor ['Door_RM',1];
-                            _veh animateDoor ['Door_LF',1];
-                            _veh animateDoor ['Door_RF',1];
-                            _veh animateDoor ['Door_LB',1];
-                            _veh animateDoor ['Door_RB',1];
-                            _veh animateDoor ['DoorL_Front_Open',1];
-                            _veh animateDoor ['DoorR_Front_Open',1];
-                            _veh animateDoor ['DoorL_Back_Open',1];
-                            _veh animateDoor ['DoorR_Back_Open ',1];
-                        } else {
-                            [_veh,0] remoteExecCall ["life_fnc_lockVehicle",_veh];
-
-                            _veh animateDoor ["door_back_R",1];
-                            _veh animateDoor ["door_back_L",1];
-                            _veh animateDoor ['door_R',1];
-                            _veh animateDoor ['door_L',1];
-                            _veh animateDoor ['Door_L_source',1];
-                            _veh animateDoor ['Door_rear',1];
-                            _veh animateDoor ['Door_rear_source',1];
-                            _veh animateDoor ['Door_1_source',1];
-                            _veh animateDoor ['Door_2_source',1];
-                            _veh animateDoor ['Door_3_source',1];
-                            _veh animateDoor ['Door_LM',1];
-                            _veh animateDoor ['Door_RM',1];
-                            _veh animateDoor ['Door_LF',1];
-                            _veh animateDoor ['Door_RF',1];
-                            _veh animateDoor ['Door_LB',1];
-                            _veh animateDoor ['Door_RB',1];
-                            _veh animateDoor ['DoorL_Front_Open',1];
-                            _veh animateDoor ['DoorR_Front_Open',1];
-                            _veh animateDoor ['DoorL_Back_Open',1];
-                            _veh animateDoor ['DoorR_Back_Open ',1];
-                        };
-                        systemChat localize "STR_MISC_VehUnlock";
-                        [_veh,"unlockCarSound"] remoteExec ["life_fnc_say3D",RANY];
-                    } else {
-                        if (local _veh) then {
-                            _veh lock 2;
-
-                            _veh animateDoor ["door_back_R",0];
-                            _veh animateDoor ["door_back_L",0];
-                            _veh animateDoor ['door_R',0];
-                            _veh animateDoor ['door_L',0];
-                            _veh animateDoor ['Door_L_source',0];
-                            _veh animateDoor ['Door_rear',0];
-                            _veh animateDoor ['Door_rear_source',0];
-                            _veh animateDoor ['Door_1_source',0];
-                            _veh animateDoor ['Door_2_source',0];
-                            _veh animateDoor ['Door_3_source',0];
-                            _veh animateDoor ['Door_LM',0];
-                            _veh animateDoor ['Door_RM',0];
-                            _veh animateDoor ['Door_LF',0];
-                            _veh animateDoor ['Door_RF',0];
-                            _veh animateDoor ['Door_LB',0];
-                            _veh animateDoor ['Door_RB',0];
-                            _veh animateDoor ['DoorL_Front_Open',0];
-                            _veh animateDoor ['DoorR_Front_Open',0];
-                            _veh animateDoor ['DoorL_Back_Open',0];
-                            _veh animateDoor ['DoorR_Back_Open ',0];
-                        } else {
-                            [_veh,2] remoteExecCall ["life_fnc_lockVehicle",_veh];
-
-                            _veh animateDoor ["door_back_R",0];
-                            _veh animateDoor ["door_back_L",0];
-                            _veh animateDoor ['door_R',0];
-                            _veh animateDoor ['door_L',0];
-                            _veh animateDoor ['Door_L_source',0];
-                            _veh animateDoor ['Door_rear',0];
-                            _veh animateDoor ['Door_rear_source',0];
-                            _veh animateDoor ['Door_1_source',0];
-                            _veh animateDoor ['Door_2_source',0];
-                            _veh animateDoor ['Door_3_source',0];
-                            _veh animateDoor ['Door_LM',0];
-                            _veh animateDoor ['Door_RM',0];
-                            _veh animateDoor ['Door_LF',0];
-                            _veh animateDoor ['Door_RF',0];
-                            _veh animateDoor ['Door_LB',0];
-                            _veh animateDoor ['Door_RB',0];
-                            _veh animateDoor ['DoorL_Front_Open',0];
-                            _veh animateDoor ['DoorR_Front_Open',0];
-                            _veh animateDoor ['DoorL_Back_Open',0];
-                            _veh animateDoor ['DoorR_Back_Open ',0];
-                        };
-                        systemChat localize "STR_MISC_VehLock";
-                        [_veh,"lockCarSound"] remoteExec ["life_fnc_say3D",RANY];
+                        [[_veh],"life_fnc_medicSiren2",nil,true] spawn life_fnc_MP;
                     };
                 };
             };
         };
-    };
+		if(_shift && playerSide == west && !(life_yelp_active) && vehicle player != player && ((driver vehicle player) == player)) then
+		{
+			_veh = vehicle player;
+			[[_veh,"Yelp"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+			[] spawn
+			{
+				life_Yelp_active = true;
+				sleep 3.5;
+				life_Yelp_active = false;
+			};
+			_handled = true;
+		};
+		//medyelp new
+		if(_shift && playerSide == independent && !(life_medyelp_active) && vehicle player != player && ((driver vehicle player) == player)) then
+		{
+			_veh = vehicle player;
+			[[_veh,"medyelp"],"life_fnc_globalSound",true,false] spawn life_fnc_MP;
+			[] spawn
+			{
+				life_medyelpelp_active = true;
+				sleep 3.5;
+				life_medyelp_active = false;
+			};
+			_handled = true;
+		};
+	};
+		/*
+		//Medic siren Shift+F (yelp)
+		if(_shift) then
+            {
+                if(playerSide == independent && vehicle player != player && !life_siren4_active && ((driver vehicle player) == player)) then
+                {
+                    [] spawn
+                    {
+                        life_siren4_active = true;
+                        sleep 1.2;
+                        life_siren4_active = false;
+                    };
+                    _veh = vehicle player;
+                    if(isNil {_veh getVariable "siren4"}) then {_veh setVariable["siren4",false,true];};
+                    if((_veh getVariable "siren4")) then
+                    {
+                        titleText ["Signal aus","PLAIN"];
+                        _veh setVariable["siren4",false,true];
+                    }
+                        else
+                    {
+                        titleText ["Signal an","PLAIN"];
+                        _veh setVariable["siren4",true,true];
+                        [[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+                    };
+                };
+            };
+		};
+		*/
+	//U Key
+	case 22:
+	{
+		if(!_alt && !_ctrlKey) then {
+			if(vehicle player == player) then {
+				_veh = cursorTarget;
+			} else {
+				_veh = vehicle player;
+			};
+
+			if(_veh isKindOf "House_F" && playerSide == civilian) then {
+				if(_veh in life_vehicles && player distance _veh < 8) then {
+					_door = [_veh] call life_fnc_nearestDoor;
+					if(EQUAL(_door,0)) exitWith {hint "Du bist nicht in der Nähe einer Tür!"};
+					_locked = _veh GVAR [format["bis_disabled_Door_%1",_door],0];
+					if (EQUAL(_locked,0)) then {
+						_veh SVAR[format["bis_disabled_Door_%1",_door],1,true];
+						_veh animate [format["door_%1_rot",_door],0];
+						hint composeText [ image "icons\lock.paa", "  Tür abgeschlossen" ];
+					} else {
+						_veh SVAR[format["bis_disabled_Door_%1",_door],0,true];
+						_veh animate [format["door_%1_rot",_door],1];
+						hint composeText [ image "icons\unlock.paa", "  Tür aufgeschlossen" ];
+					};
+				};
+			} else {
+				_locked = locked _veh;
+
+			if(_veh in life_vehicles && player distance _veh < 8) then
+			{
+				if(_locked == 2) then
+				{
+					if(local _veh) then
+					{
+						_veh lock 0;
+						_veh animateDoor ["door_back_R",1];
+						_veh animateDoor ["door_back_L",1];
+        					_veh animateDoor ['door_R',1];
+        					_veh animateDoor ['door_L',1];
+        					_veh animateDoor ['Door_rear',1];
+        					_veh animateDoor ['Door_LM',1];
+        					_veh animateDoor ['Door_RM',1];
+        					_veh animateDoor ['Door_LF',1];
+        					_veh animateDoor ['Door_RF',1];
+        					_veh animateDoor ['Door_LB',1];
+        					_veh animateDoor ['Door_RB',1];
+					}
+						else
+					{
+						[[_veh,0], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
+						_veh animateDoor ["door_back_R",1];
+						_veh animateDoor ["door_back_L",1];
+        					_veh animateDoor ['door_R',1];
+        					_veh animateDoor ['door_L',1];
+        					_veh animateDoor ['Door_rear',1];
+        					_veh animateDoor ['Door_LM',1];
+        					_veh animateDoor ['Door_RM',1];
+        					_veh animateDoor ['Door_LF',1];
+        					_veh animateDoor ['Door_RF',1];
+        					_veh animateDoor ['Door_LB',1];
+        					_veh animateDoor ['Door_RB',1];
+					};
+					hint composeText [ image "icons\unlock.paa", "  Fahrzeug aufgeschlossen" ];
+					player say3D "unlock";
+
+				}
+					else
+				{
+					if(local _veh) then
+					{
+						_veh lock 2;
+						_veh animateDoor ["door_back_R",0];
+						_veh animateDoor ["door_back_L",0];
+        					_veh animateDoor ['door_R',0];
+        					_veh animateDoor ['door_L',0];
+        					_veh animateDoor ['Door_rear',0];
+        					_veh animateDoor ['Door_LM',0];
+        					_veh animateDoor ['Door_RM',0];
+        					_veh animateDoor ['Door_LF',0];
+        					_veh animateDoor ['Door_RF',0];
+        					_veh animateDoor ['Door_LB',0];
+        					_veh animateDoor ['Door_RB',0];
+
+					}
+						else
+					{
+						[[_veh,2], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
+						_veh animateDoor ["door_back_R",0];
+						_veh animateDoor ["door_back_L",0];
+        					_veh animateDoor ['door_R',0];
+        					_veh animateDoor ['door_L',0];
+        					_veh animateDoor ['Door_rear',0];
+        					_veh animateDoor ['Door_LM',0];
+        					_veh animateDoor ['Door_RM',0];
+        					_veh animateDoor ['Door_LF',0];
+        					_veh animateDoor ['Door_RF',0];
+        					_veh animateDoor ['Door_LB',0];
+        					_veh animateDoor ['Door_RB',0];
+					};
+
+					hint composeText [ image "icons\lock.paa", "  Fahrzeug abgeschlossen" ];
+					player say3D "car_lock";
+
+
+					};
+				};
+			};
+		};
+	};
 };
 
 _handled;

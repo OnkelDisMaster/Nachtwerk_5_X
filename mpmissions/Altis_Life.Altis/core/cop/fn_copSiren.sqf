@@ -1,23 +1,24 @@
-#include "..\..\script_macros.hpp"
 /*
-    File: fn_copSiren.sqf
-    Author: Bryan "Tonic" Boardwine
-
-    Description:
-    Starts the cop siren sound for other players.
+	File: fn_copSiren.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Starts the cop siren sound for other players
 */
-private ["_vehicle"];
-_vehicle = param [0,objNull,[objNull]];
-
-if (isNull _vehicle) exitWith {};
-if (isNil {_vehicle getVariable "siren"}) exitWith {};
-
-for "_i" from 0 to 1 step 0 do {
-    if (!(_vehicle getVariable "siren")) exitWith {};
-    if (count crew _vehicle isEqualTo 0) then {_vehicle setVariable ["siren",false,true]};
-    if (!alive _vehicle) exitWith {};
-    if (isNull _vehicle) exitWith {};
-    _vehicle say3D "sirenLong";//Class name specified in description.ext
-    sleep 4.870;//Exactly matches the length of the audio file.
-    if (!(_vehicle getVariable "siren")) exitWith {};
+private["_veh"];
+_veh = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_tone = [_this,1,"SirenLong",[""]] call BIS_fnc_param;
+_nap = [_this,2,5.2,[0]] call BIS_fnc_param;
+if(isNull _veh) exitWith {};
+if(isNil {_veh getVariable "siren"}) exitWith {};
+while {true} do
+{
+    if(!(_veh getVariable "siren")) exitWith {};
+    if(count (crew (_veh)) == 0) then {_veh setVariable["siren",false,true]};
+    if(!alive _veh) exitWith {};
+    if(isNull _veh) exitWith {};
+    _veh say3D _tone;
+    uisleep _nap;
+    if(!(_veh getVariable "siren")) exitWith {};
 };
+ 

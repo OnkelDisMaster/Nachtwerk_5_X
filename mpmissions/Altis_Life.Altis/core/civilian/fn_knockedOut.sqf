@@ -1,34 +1,25 @@
-#include "..\..\script_macros.hpp"
+#include <macro.h>
 /*
-    File: fn_knockedOut.sqf
-    Author: Bryan "Tonic" Boardwine
-
-    Description:
-    Starts and monitors the knocked out state.
+	File: fn_knockedOut.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Starts and monitors the knocked out state.
 */
-private "_obj";
-params [
-    ["_target",objNull,[objNull]],
-    ["_who","",[""]]
-];
+private["_target","_who","_obj"];
+_target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_who = [_this,1,"",[""]] call BIS_fnc_param;
+if(isNull _target) exitWith {};
+if(_target != player) exitWith {};
+if(EQUAL(_who,"")) exitWith {};
 
-if (isNull _target) exitWith {};
-if !(_target isEqualTo player) exitWith {};
-if (_who isEqualTo "") exitWith {};
-
-titleText[format [localize "STR_Civ_KnockedOut",_who],"PLAIN"];
+titleText[format[localize "STR_Civ_KnockedOut",_who],"PLAIN"];
 player playMoveNow "Incapacitated";
-disableUserInput true;
-
-_obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player);
+_obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player); //WHY THE HELL WAS THIS BEING CREATED GLOBALLY?!?!?!!?!~?!?!?!?$@Q?G%@?$TGWGSXBG, BECAUSE IT WORK
 _obj setPosATL ASLTOATL(visiblePositionASL player);
-
-life_isknocked = true;
 player attachTo [_obj,[0,0,0]];
 sleep 15;
-player playMoveNow "AmovPpneMstpSrasWrflDnon";
-disableUserInput false;
+player playMoveNow "amovppnemstpsraswrfldnon";
 detach player;
 deleteVehicle _obj;
-life_isknocked = false;
-player setVariable ["robbed",false,true];
+player SVAR ["robbed",FALSE,TRUE];

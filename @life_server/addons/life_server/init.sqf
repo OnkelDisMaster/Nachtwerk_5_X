@@ -1,130 +1,132 @@
 #include "script_macros.hpp"
 /*
-    File: init.sqf
-    Author: Bryan "Tonic" Boardwine
+	Author: Bryan "Tonic" Boardwine
 
-    Edit: Nanou for HeadlessClient optimization.
-    Please read support for more informations.
-
-    Description:
-    Initialize the server and required systems.
+	Description:
+	Initialize the server and required systems.
 */
-private ["_dome","_rsb","_timeStamp","_extDBNotLoaded"];
+"BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 life_server_isReady = false;
-_extDBNotLoaded = "";
+life_server_extDB_notLoaded = "";
 serv_sv_use = [];
-publicVariable "life_server_isReady";
-life_save_civilian_position = if (LIFE_SETTINGS(getNumber,"save_civilian_position") isEqualTo 0) then {false} else {true};
-fn_whoDoneIt = compile preprocessFileLineNumbers "\life_server\Functions\Systems\fn_whoDoneIt.sqf";
+PVAR_ALL("life_server_isReady");
 
 /*
-    Prepare the headless client.
+	Prepare extDB before starting the initialization process
+	for the server.
 */
-life_HC_isActive = false;
-publicVariable "life_HC_isActive";
-HC_Life = false;
-publicVariable "HC_Life";
+if(isNil {GVAR_UINS "life_sql_id"}) then {
+	life_sql_id = round(random(9999));
+	CONSTVAR(life_sql_id);
+	SVAR_UINS ["life_sql_id",life_sql_id];
 
-if (EXTDB_SETTING(getNumber,"HeadlessSupport") isEqualTo 1) then {
-    [] execVM "\life_server\initHC.sqf";
-};
+	//Retrieve extDB version
+	_result = EXTDB "9:VERSION";
+	["diag_log",[format["extDB: Version: %1",_result]]] call TON_fnc_logIt;
+	if(EQUAL(_result,"")) exitWith {EXTDB_FAILED("The server-side extension extDB was not loaded into the engine, report this to the server admin.")};
+	if ((parseNumber _result) < 52) exitWith {EXTDB_FAILED("extDB version is not compatible with current Altis life version. Require version 52 or higher.")};
+	//Lets start logging in extDB
+	EXTDB "9:ADD_PROTOCOL:LOG:SPY_LOG:spyglass";
+	//Initialize connection to Database
+	_result = EXTDB format["9:ADD_DATABASE:%1",DATABASE_SELECTION];
+	if(!(EQUAL(_result,"[1]"))) exitWith {EXTDB_FAILED("extDB: Error with Database Connection")};
+	_result = EXTDB format["9:ADD_DATABASE_PROTOCOL:%1:SQL_CUSTOM_V2:%2:altis-life-rpg-4",DATABASE_SELECTION,FETCH_CONST(life_sql_id)];
+	if(!(EQUAL(_result,"[1]"))) exitWith {EXTDB_FAILED("extDB: Error with Database Connection")};
+	//Initialize Logging options from extDB
+	if((EQUAL(EXTDB_SETTINGS("LOG"),1))) then {
+		{
+			EXTDB format["9:ADD_PROTOCOL:LOG:%1:%2",SEL(_x,0),SEL(_x,1)];
+			["diag_log",[format["extDB: %1 is successfully added",SEL(_x,0)]]] call TON_fnc_logIt;
+		} forEach EXTDB_LOGAR;
+	};
+	//Initialize RCON options from extDB
+	if((EQUAL(EXTDB_SETTINGS("RCON"),1))) then {
+		RCON_ID = round(random(9999));
+		CONSTVAR(RCON_ID);
+		SVAR_UINS ["RCON_ID",RCON_ID];
 
-/*
-    Prepare extDB before starting the initialization process
-    for the server.
-*/
+		EXTDB format["9:START_RCON:%1",RCON_SELECTION];
+		EXTDB format["9:ADD:RCON:%1",FETCH_CONST(RCON_ID)];
+		["diag_log",["extDB: RCON is enabled"]] call TON_fnc_logIt;
+	};
+	//Initialize VAC options from extDB
+	if((EQUAL(EXTDB_SETTINGS("VAC"),1))) then {
+		VAC_ID = round(random(9999));
+		CONSTVAR(VAC_ID);
+		SVAR_UINS ["VAC_ID",VAC_ID];
 
-if (isNil {uiNamespace getVariable "life_sql_id"}) then {
-    life_sql_id = round(random(9999));
-    CONSTVAR(life_sql_id);
-    uiNamespace setVariable ["life_sql_id",life_sql_id];
-        try {
-        _result = EXTDB format ["9:ADD_DATABASE:%1",EXTDB_SETTING(getText,"DatabaseName")];
-        if (!(_result isEqualTo "[1]")) then {throw "extDB3: Error with Database Connection"};
-        _result = EXTDB format ["9:ADD_DATABASE_PROTOCOL:%2:SQL:%1:TEXT2",FETCH_CONST(life_sql_id),EXTDB_SETTING(getText,"DatabaseName")];
-        if (!(_result isEqualTo "[1]")) then {throw "extDB3: Error with Database Connection"};
-    } catch {
-        diag_log _exception;
-        _extDBNotLoaded = [true, _exception];
-    };
-    if (_extDBNotLoaded isEqualType []) exitWith {};
-    EXTDB "9:LOCK";
-    diag_log "extDB3: Connected to Database";
+		EXTDB "9:START_VAC";
+		EXTDB format["9:ADD_PROTOCOL:STEAM:%1",FETCH_CONST(VAC_ID)];
+		["diag_log",["extDB: VAC is enabled"]] call TON_fnc_logIt;
+	};
+	//Initialize MISC options from extDB
+	if((EQUAL(EXTDB_SETTINGS("MISC"),1))) then {
+		MISC_ID = round(random(9999));
+		CONSTVAR(MISC_ID);
+		SVAR_UINS ["MISC_ID",MISC_ID];
+
+		EXTDB format["9:ADD_PROTOCOL:MISC:%1",FETCH_CONST(MISC_ID)];
+		["diag_log",["extDB: MISC is enabled"]] call TON_fnc_logIt;
+	};
+	EXTDB "9:LOCK";
+	["diag_log",["extDB: Connected to the Database"]] call TON_fnc_logIt;
 } else {
-    life_sql_id = uiNamespace getVariable "life_sql_id";
-    CONSTVAR(life_sql_id);
-    diag_log "extDB3: Still Connected to Database";
+	life_sql_id = GVAR_UINS "life_sql_id";
+	CONSTVAR(life_sql_id);
+	["diag_log",["extDB: Still Connected to the Database"]] call TON_fnc_logIt;
+	if((EQUAL(EXTDB_SETTINGS("RCON"),1))) then {
+		RCON_ID = GVAR_UINS "RCON_ID";
+		CONSTVAR(RCON_ID);
+		["diag_log",["extDB: RCON still enabled"]] call TON_fnc_logIt;
+	};
+	if((EQUAL(EXTDB_SETTINGS("VAC"),1))) then {
+		VAC_ID = GVAR_UINS "VAC_ID";
+		CONSTVAR(VAC_ID);
+		["diag_log",["extDB: VAC still enabled"]] call TON_fnc_logIt;
+	};
+	if((EQUAL(EXTDB_SETTINGS("MISC"),1))) then {
+		MISC_ID = GVAR_UINS "MISC_ID";
+		CONSTVAR(MISC_ID);
+		["diag_log",["extDB: MISC still enabled"]] call TON_fnc_logIt;
+	};
 };
 
-
-if (_extDBNotLoaded isEqualType []) exitWith {
-    life_server_extDB_notLoaded = true;
-    publicVariable "life_server_extDB_notLoaded";
-};
-life_server_extDB_notLoaded = false;
-publicVariable "life_server_extDB_notLoaded";
+if(!(EQUAL(life_server_extDB_notLoaded,""))) exitWith {}; //extDB did not fully initialize so terminate the rest of the initialization process.
 
 /* Run stored procedures for SQL side cleanup */
-["CALL resetLifeVehicles",1] call DB_fnc_asyncCall;
-["CALL deleteDeadVehicles",1] call DB_fnc_asyncCall;
-["CALL deleteOldHouses",1] call DB_fnc_asyncCall;
-["CALL deleteOldGangs",1] call DB_fnc_asyncCall;
-
-_timeStamp = diag_tickTime;
-diag_log "----------------------------------------------------------------------------------------------------";
-diag_log "---------------------------------- Starting Altis Life Server Init ---------------------------------";
-diag_log "------------------------------------------ Version 5.0.0 -------------------------------------------";
-diag_log "----------------------------------------------------------------------------------------------------";
-
-if (LIFE_SETTINGS(getNumber,"save_civilian_position_restart") isEqualTo 1) then {
-    [] spawn {
-        _query = "UPDATE players SET civ_alive = '0' WHERE civ_alive = '1'";
-        [_query,1] call DB_fnc_asyncCall;
-    };
-};
+["resetLifeVehicles",1] spawn DB_fnc_asyncCall;
+["deleteDeadVehicles",1] spawn DB_fnc_asyncCall;
+["deleteOldHouses",1] spawn DB_fnc_asyncCall;
+["deleteOldGangs",1] spawn DB_fnc_asyncCall;
 
 /* Map-based server side initialization. */
 master_group attachTo[bank_obj,[0,0,0]];
+onMapSingleClick "if(_alt) then {vehicle player setPos _pos};"; //Local debug for myself
 
 {
-    _hs = createVehicle ["Land_Hospital_main_F", [0,0,0], [], 0, "NONE"];
-    _hs setDir (markerDir _x);
-    _hs setPosATL (getMarkerPos _x);
-    _var = createVehicle ["Land_Hospital_side1_F", [0,0,0], [], 0, "NONE"];
-    _var attachTo [_hs, [4.69775,32.6045,-0.1125]];
-    detach _var;
-    _var = createVehicle ["Land_Hospital_side2_F", [0,0,0], [], 0, "NONE"];
-    _var attachTo [_hs, [-28.0336,-10.0317,0.0889387]];
-    detach _var;
-    if (worldName isEqualTo "Tanoa") then {
-        if (_forEachIndex isEqualTo 0) then {
-            atm_hospital_2 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
-            vendor_hospital_2 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
-            "medic_spawn_3" setMarkerPos (_var modelToWorld [8.01172,-5.47852,-8.20022]);
-            "med_car_2" setMarkerPos (_var modelToWorld [8.01172,-5.47852,-8.20022]);
-            hospital_assis_2 setPos (_hs modelToWorld [0.0175781,0.0234375,-0.231956]);
-        } else {
-            atm_hospital_3 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
-            vendor_hospital_3 setPos (_var modelToWorld [4.48633,0.438477,-8.25683]);
-            "medic_spawn_1" setMarkerPos (_var modelToWorld [-1.85181,-6.07715,-8.24944]);
-            "med_car_1" setMarkerPos (_var modelToWorld [5.9624,11.8799,-8.28493]);
-            hospital_assis_2 setPos (_hs modelToWorld [0.0175781,0.0234375,-0.231956]);
-        };
-    };
-} forEach ["hospital_2","hospital_3"];
+	_hs = createVehicle ["Land_Hospital_main_F", [0,0,0], [], 0, "NONE"];
+	_hs setDir (markerDir _x);
+	_hs setPosATL (getMarkerPos _x);
+	_var = createVehicle ["Land_Hospital_side1_F", [0,0,0], [], 0, "NONE"];
+	_var attachTo [_hs, [4.69775,32.6045,-0.1125]];
+	detach _var;
+	_var = createVehicle ["Land_Hospital_side2_F", [0,0,0], [], 0, "NONE"];
+	_var attachTo [_hs, [-28.0336,-10.0317,0.0889387]];
+	detach _var;
+} foreach ["hospital_2","hospital_3"];
 
 {
-    if (!isPlayer _x) then {
-        _npc = _x;
-        {
-            if (_x != "") then {
-                _npc removeWeapon _x;
-            };
-        } forEach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
-    };
-} forEach allUnits;
+	if(!isPlayer _x) then {
+		_npc = _x;
+		{
+			if(_x != "") then {
+				_npc removeWeapon _x;
+			};
+		} foreach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
+	};
+} foreach allUnits;
 
 [8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
 
@@ -144,78 +146,46 @@ fed_bank setVariable ["safe",count playableUnits,true];
 
 /* Event handler for disconnecting players */
 addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}];
-[] call compile preprocessFileLineNumbers "\life_server\functions.sqf";
-
-/* Set OwnerID players for Headless Client */
-TON_fnc_requestClientID =
-{
-    (_this select 1) setVariable ["life_clientID", owner (_this select 1), true];
-};
-"life_fnc_RequestClientId" addPublicVariableEventHandler TON_fnc_requestClientID;
-
-/* Event handler for logs */
-"money_log" addPublicVariableEventHandler {diag_log (_this select 1)};
-"advanced_log" addPublicVariableEventHandler {diag_log (_this select 1)};
+[] call compile PreProcessFileLineNumbers "\life_server\functions.sqf";
+[] call compile PreProcessFileLineNumbers "\life_server\eventhandlers.sqf";
 
 /* Miscellaneous mission-required stuff */
+[] spawn TON_fnc_cleanup;
 life_wanted_list = [];
+[] execFSM "\life_server\FSM\cleanup.fsm";
 
-cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
+[] spawn
+{
+	private["_logic","_queue"];
+	while {true} do {
+		sleep (30 * 60);
+		_logic = missionnamespace getvariable ["bis_functions_mainscope",objnull];
+		_queue = _logic getvariable "BIS_fnc_MP_queue";
+		_logic setVariable["BIS_fnc_MP_queue",[],TRUE];
 
-[] spawn {
-    for "_i" from 0 to 1 step 0 do {
-        uiSleep (30 * 60);
-        {
-            _x setVariable ["sellers",[],true];
-        } forEach [Dealer_1,Dealer_2,Dealer_3];
-    };
+		{
+			_x setVariable["sellers",[],true];
+		} foreach [Dealer_1,Dealer_2,Dealer_3];
+	};
 };
 
 [] spawn TON_fnc_initHouses;
-cleanup = [] spawn TON_fnc_cleanup;
-
-TON_fnc_playtime_values = [];
-TON_fnc_playtime_values_request = [];
-
-//Just incase the Headless Client connects before anyone else
-publicVariable "TON_fnc_playtime_values";
-publicVariable "TON_fnc_playtime_values_request";
-
 
 /* Setup the federal reserve building(s) */
-private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
-private _altisArray = [16019.5,16952.9,0];
-private _tanoaArray = [11074.2,11501.5,0.00137329];
-private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+private["_dome","_rsb"];
+_dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
+_rsb = nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"];
 
-_dome = nearestObject [_pos,"Land_Dome_Big_F"];
-_rsb = nearestObject [_pos,_vaultHouse];
-
-for "_i" from 1 to 3 do {_dome setVariable [format ["bis_disabled_Door_%1",_i],1,true]; _dome animateSource [format ["Door_%1_source", _i], 0];};
-_dome setVariable ["locked",true,true];
-_rsb setVariable ["locked",true,true];
-_rsb setVariable ["bis_disabled_Door_1",1,true];
-_dome allowDamage false;
+for "_i" from 1 to 3 do {_dome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _dome animate [format["Door_%1_rot",_i],0];};
+_rsb setVariable["bis_disabled_Door_1",1,true];
 _rsb allowDamage false;
+_dome allowDamage false;
 
 /* Tell clients that the server is ready and is accepting queries */
 life_server_isReady = true;
-publicVariable "life_server_isReady";
+PVAR_ALL("life_server_isReady");
+
 
 /* Initialize hunting zone(s) */
-aiSpawn = ["hunting_zone",30] spawn TON_fnc_huntingZone;
-
-// We create the attachment point to be used for objects to attachTo load virtually in vehicles.
-life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];
-life_attachment_point setPosASL [0,0,0];
-life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
-
-// Sharing the point of attachment with all players.
-publicVariable "life_attachment_point";
-
-// Start DynMarket
+["hunting_zone",30] spawn TON_fnc_huntingZone;
 [] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
-
-diag_log "----------------------------------------------------------------------------------------------------";
-diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
-diag_log "----------------------------------------------------------------------------------------------------";

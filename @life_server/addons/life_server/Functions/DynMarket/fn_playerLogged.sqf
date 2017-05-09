@@ -9,4 +9,4 @@
 */
 
 _playerUID = _this select 0;
-[1,DYNMARKET_sellarraycopy] remoteExecCall ["life_fnc_update",_playerUID];
+[[1,DYNMARKET_sellarraycopy],"life_fnc_update",_playerUID,false] spawn life_fnc_MP;

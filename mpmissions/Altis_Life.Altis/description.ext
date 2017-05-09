@@ -1,179 +1,326 @@
-disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
-overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
+author = "Tonic and Itsyuka";
+onLoadName = "Altis Life RPG v4.0";
+onLoadMission = "Beginne ein neues Leben! Entscheide dich fuer einen Beruf und baue dir eine Monopolstellung auf, schliesse dich den Gesetzeshuetern an oder zahle es der Obrigkeit heim.";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+disableChannels[] = {0,1,2};
+enableItemsDropping = 0;
+enableDebugConsole = 1;
+respawnDialog = 0;
+loadScreen = "images\logo.paa";
 
-#include "config\Config_SpyGlass.hpp"
-#include "CfgRemoteExec.hpp"
-#include "dialog\MasterHandler.hpp"
-#include "config\Config_Master.hpp"
-
-class CfgServer {
-    DebugMode = 0; //Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
-    HeadlessSupport = 0; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
-    /*
-    Enabled: When HeadlessSupport is set to 1 (enabled), the server will run without fault when no Headless Client is connected. However, it will support the Headless Client if you choose to connect one.
-    Disabled: If HeadlessSupport is set to 0 (disabled), the connection of a Headless Client will make no difference. This option will increase server performance a TINY but negligible amount.
-    */
-    DatabaseName = "altislife";
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 75;
 };
 
-class RscTitles {
-    #include "dialog\progress.hpp"
-    #include "dialog\hud_nameTags.hpp"
-    #include "dialog\hud_stats.hpp"
+wreckLimit = 10;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+corpseLimit = 15;
+corpseRemovalMinTime = 120;
+corpseRemovalMaxTime = 300;
+
+#include "dialog\MasterHandler.h"
+#include "Config_Master.hpp"
+
+class RscTitles
+{
+	#include "dialog\ui.hpp"
+	#include "dialog\progress.hpp"
+	#include "dialog\hud_nameTags.h"
+	
+		class RageCoreintro {
+		idd = -1;
+		duration = 12; //6
+		class controls {
+			class ExampleControl {
+				idc = -1;
+				type = 0;
+				style = 2192;
+				x = 0.125;
+				y = 0.125;
+				h = 0.75;
+				w = 0.75;
+				font = "EtelkaNarrowMediumPro";
+				sizeEx = 0.05; 
+				colorBackground[] = {1,1,1,0};
+				colorText[] = {1,1,1,1};
+				text = "images\intrologo.paa";
+				lineSpacing = 1;
+			};
+		};
+	};	
 };
 
-class CfgFunctions {
-    #include "Functions.hpp"
+class CfgFunctions
+{
+	#include "Functions.h"
 };
 
-class CfgSounds {
-    sounds[] = {};
-    class sirenLong {
-        name = "sirenLong";
-        sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
-        titles[] = {};
-    };
+class CfgSounds
+{
+	sounds[] = {};
+	class SirenLong
+	{
+		name = "SirenLong";
+		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+		titles[] = {};
+	};
 
-    class medicSiren {
-        name = "medicSiren";
-        sound[] = {"\sounds\medicSiren.ogg", 1.0, 1};
-        titles[] = {};
-    };
+	class tazersound
+	{
+		name = "Tazersound";
+		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		titles[] = {};
+	};
 
-    class tazerSound {
-        name = "tazerSound";
-        sound[] = {"\sounds\tazer.ogg", 0.25, 1};
-        titles[] = {};
-    };
-
-    class flashbang {
-        name = "flashbang";
-        sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
-        titles[] = {};
-    };
-
-    class mining {
-        name = "mining";
-        sound[] = {"\sounds\mining.ogg", 1.0, 1};
-        titles[] = {};
-    };
-
-    class harvest {
-        name = "harvest";
-        sound[] = {"\sounds\harvest.ogg", 1.0, 1};
-        titles[] = {};
-    };
-
-    class lockCarSound {
-        name = "lockCarSound";
-        sound[] = {"\sounds\carLock.ogg", 0.25, 1};
-        titles[] = {};
+	class flashbang
+	{
+		name = "flashbang";
+		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class welcome
+	{
+		name = "welcome";
+		sound[] = {"\sounds\welcome.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class Geschafft
+	{
+		name = "Geschafft";
+		sound[] = {"\sounds\Geschafft.ogg",1.0, 1};
+		titles[] = {};
+	};
+	
+		class car_lock
+	{
+		name = "car_lock";
+		sound[] = {"\sounds\veh_lock.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class unlock
+	{
+		name = "unlock";
+		sound[] = {"\sounds\veh_unlock.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class handcuffs
+    {
+        name="handcuffs";
+		sound[] = {"\sounds\handcuffs.ogg", 1.0, 1};
+		titles[] = {};
+    };	
+	
+	class rcmix
+    {
+        name="rcmix";
+		sound[] = {"\sounds\rcmix.ogg", 1.0, 1};
+		titles[] = {};
     };
 	
-	class ATMRaub {
-        name = "ATMRaub";
-        sound[] = {"\sounds\carLock.ogg", 0.25, 1};
-        titles[] = {};
-    };
+	class survival
+	{
+		name = "survival";
+		sound[] = {"\sounds\survival.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+		class dimitri
+	{
+		name = "dimitri";
+		sound[] = {"\sounds\dimitri.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class airportsound
+	{
+		name = "airportsound";
+		sound[] = {"\sounds\airportsound.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class dramatic
+	{
+		name = "dramatic";
+		sound[] = {"\sounds\dramatic.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class stop_car
+	{
+		name = "stop_car";
+		sound[] = {"\sounds\stop_car.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class evac
+	{
+		name = "evac";
+		sound[] = {"\sounds\evac.ogg", 1.0, 1};
+		titles[] = {};
+	 };
+	
+	class takedown_weapon
+	{
+		name = "takedown_weapon";
+		sound[] = {"\sounds\takedown_weapon.ogg", 1.0, 1};
+		titles[] = {};
+	};
 
-    class unlockCarSound {
-        name = "unlockCarSound";
-        sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
-        titles[] = {};
-    };
+	class follow
+	{
+		name = "follow";
+		sound[] = {"\sounds\follow.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class waiting
+	{
+		name = "waiting";
+		sound[] = {"\sounds\waiting.ogg", 1.0, 1};
+		titles[] = {};
+	};	
+	
+	class piss
+	{
+		name = "piss";
+		sound[] = {"\sounds\piss.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class medsiren
+	{
+		name = "medsiren";
+		sound[] = {"\sounds\medsiren.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class yelp
+	{
+		name = "yelp";
+		sound[] = {"\sounds\yelp.ogg", 1.0, 1};
+		titles[] = {};
+	};	
+	
+	class medyelp
+	{
+		name = "medyelp";
+		sound[] = {"\sounds\medyelp.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class grummelmix
+	{
+		name = "grummelmix";
+		sound[] = {"\sounds\grummelmix.ogg", 1.0, 1};
+		titles[] = {};
+	};
 };
 
-class CfgDebriefing {
-    class NotWhitelisted {
-        title = "$STR_NotWhitelisted_Title";
-        subtitle = "$STR_NotWhitelisted_SubTitle";
-        description = "$STR_NotWhitelisted_Descript";
-        pictureBackground = "";
-        picture = "";
-        pictureColor[] = {0,0.3,0.6,1};
-    };
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Zutritt verweigert!";
+		subtitle = "Du bist kein registrierter Beamter.";
+		description = "Bewerbungen nehmen die Dienststellen unter www.altisliferpg.de/forum entgegen.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
 
-    class Blacklisted {
-        title = "$STR_Blacklisted_Title";
-        subtitle = "$STR_Blacklisted_SubTitle";
-        description = "$STR_Blacklisted_Descript";
-        pictureBackground = "";
-        picture = "";
-        pictureColor[] = {0,0.3,0.6,1};
-    };
-
-    class SpyGlass {
-        title = "$STR_SpyDetect_Title";
-        subTitle = "$STR_SpyDetect_SubTitle";
-        description = "$STR_SpyDetect_Descript";
-        pictureBackground = "";
-        picture = "";
-        pictureColor[] = {0,0.3,0.6,1};
-    };
+	class Blacklisted
+	{
+		title = "Zutritt verweigert!";
+		subtitle = "Du wurdest suspendiert!";
+		description = "Scheinbar hast du dich daneben benommen und wurdest daher vom Dienst suspendiert.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
 };
 
-class CfgNotifications {
-    class MedicalRequestEmerg {
-        title = "$STR_MedicalRequestEmerg_Title";
-        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
-        description = "%1";
-        duration = 5;
-        priority = 7;
-    };
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "Notarzt verständigt!";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
 
-    class DeliveryAssigned {
-        title = "$STR_DeliveryAssigned_Title";
-        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
-        description = "%1";
-        duration = 10;
-        priority = 7;
-    };
+	class DeliveryAssigned
+	{
+		title = "Auftrag angenommen";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
 
-    class DeliveryFailed {
-        title = "$STR_DeliveryFailed_Title";
-        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
-        description = "%1";
-        duration = 7;
-        priority = 7;
-    };
+	class DeliveryFailed
+	{
+		title = "Auftrag fehlgeschlagen";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
 
-    class DeliverySucceeded {
-        title = "$STR_DeliverySucceeded_Title";
-        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
-        description = "%1";
-        duration = 6;
-        priority = 6;
-    };
+	class DeliverySucceeded
+	{
+		title = "Auftrag abgeschlossen";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
 
-    class TextMessage {
-        title = "$STR_TextMessage_Title";
-        iconPicture = "icons\ico_messageNew.paa";
-        description = "%1";
-        duration = 10;
-        priority = 6;
-    };
+	class TextMessage
+	{
+		title = "Eine neue Nachricht";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
 
-    class PoliceDispatch {
-        title = "$STR_PoliceDispatch_Title";
-        iconPicture = "icons\ico_messagePolice.paa";
-        description = "%1";
-        duration = 10;
-        priority = 6;
-    };
+	class PoliceDispatch
+	{
+		title = "Notrufzentrale";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
 
-    class AdminDispatch {
-        title = "$STR_AdminDispatch_Title";
-        iconPicture = "icons\ico_messageAdmin.paa";
-        description = "%1";
-        duration = 10;
-        priority = 6;
-    };
+	class AdminDispatch
+	{
+		title = "Adminzentrale";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
 
-    class AdminMessage {
-        title = "$STR_AdminMessage_Title";
-        iconPicture = "icons\ico_messageAdmin.paa";
-        description = "%1";
-        duration = 10;
-        priority = 5;
-    };
+	class AdminMessage
+	{
+		title = "Admin Nachricht";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
 };

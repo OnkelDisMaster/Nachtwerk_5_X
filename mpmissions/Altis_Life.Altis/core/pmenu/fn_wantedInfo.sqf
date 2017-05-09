@@ -1,31 +1,33 @@
 /*
-    File: fn_wantedInfo.sqf
-    Author: Bryan "Tonic" Boardwine
-
-    Description:
-    Pulls back information about the wanted criminal.
+	File: fn_wantedInfo.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Pulls back information about the wanted criminal.
 */
+private["_display","_list","_crimes","_bounty","_mylist"];
 disableSerialization;
 
-private _data = param [0,[],[[]]];
-private _display = findDisplay 2400;
-private _list = _display displayCtrl 2402;
-private _mylist = [];
-
-if (isNil "_data") exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
-if !(_data isEqualType []) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
-if (_data isEqualTo []) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
-
+_display = findDisplay 2400;
+_list = _display displayCtrl 2402;
+_data = lbData[2401,(lbCurSel 2401)];
+_mylist = [];
+_data = call compile format["%1", _data];
+if(isNil "_data") exitWith {};
+if(typeName _data != "ARRAY") exitWith {};
+if(count _data == 0) exitWith {};
 lbClear _list;
 
-private _crimes = _data select 0;
-
+_crimes = _data select 2;
+_bounty = _data select 3;
+	
 {
-    _crime = _x;
-    if !(_crime in _mylist) then {
-        _mylist pushBack _crime;
-        _list lbAdd format [localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
-    };
-} forEach _crimes;
+	_crime = _x;
+	if(!(_crime in _mylist)) then
+	{
+		_mylist pushBack _crime;
+		_list lbAdd format["%1 mal %2",{_x == _crime} count _crimes,_crime];
+	};
+} foreach _crimes;
 
-ctrlSetText[2403,format [localize "STR_Wanted_Bounty",[(_data select 1)] call life_fnc_numberText]];
+ctrlSetText[2403,format["Kopfgeld: $%1",[_bounty] call life_fnc_numberText]];

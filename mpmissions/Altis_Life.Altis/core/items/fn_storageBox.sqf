@@ -1,34 +1,61 @@
-#include "..\..\script_macros.hpp"
+#include <macro.h>
 /*
-    File : fn_storageBox.sqf
-    Author: NiiRoZz
-
-    Description:
-    Create Storage and attachto player;
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Tries to place a storage box in the nearest house.
 */
-private ["_object","_attachPos"];
-params [
-    ["_size",false,[false]]
-];
-if (!(nearestObject [player, "House"] in life_vehicles)) exitWith {hint localize "STR_ISTR_Box_NotinHouse";};
+private["_boxType","_house","_positions","_containers","_pos","_houseCfg"];
+_boxType = _this select 0;
 
-life_container_active = true;
-closeDialog 0;
+_house = nearestBuilding (getPosATL player);
+if(!(_house in life_vehicles)) exitWith {hint localize "STR_ISTR_Box_NotinHouse"};
+_containers = _house getVariable["containers",[]];
+_houseCfg = M_CONFIG(getNumber,"Houses",typeOf(_house),"maxStorage");
+if(_houseCfg == 0) exitWith {}; //What the fuck just happened?
+if(count _containers >= _houseCfg) exitWith {hint localize "STR_ISTR_Box_HouseFull"};
 
-if (_size) then {
-    _object = "B_supplyCrate_F" createVehicle [0,0,0];
-} else {
-    _object = "Box_IND_Grenades_F" createVehicle [0,0,0];
+_slots = _house getVariable ["slots",[]];
+_positions = [_house] call life_fnc_getBuildingPositions;
+_pos = [0,0,0];
+{
+	_slots = _house getVariable ["slots",[]];
+	if(!(_forEachIndex in _slots)) exitWith {
+		_slots pushBack _forEachIndex;
+		_house setVariable["slots",_slots,true];
+		_pos = _x;
+	};
+} foreach _positions;
+if(_pos isEqualTo [0,0,0]) exitWith {hint localize "STR_ISTR_Box_HouseFull_2"};
+if(!([false,_boxType,1] call life_fnc_handleInv)) exitWith {};
+switch (_boxType) do {
+	case "storagesmall": {
+		_container = "Box_IND_Grenades_F" createVehicle [0,0,0];
+		_container setPosATL _pos;
+		
+		_containers pushBack _container;
+		_house setVariable["containers",_containers,true];
+		[[_house],"TON_fnc_updateHouseContainers",false,false] call life_fnc_MP;
+		
+		//Empty out the crate
+		clearWeaponCargoGlobal _container;
+		clearMagazineCargoGlobal _container;
+		clearItemCargoGlobal _container;
+		clearBackpackCargoGlobal _container;
+	};
+	
+	case "storagebig": {
+		_container = "I_supplyCrate_F" createVehicle [0,0,0];
+		_container setPosATL _pos;
+		
+		_containers pushBack _container;
+		_house setVariable["containers",_containers,true];
+		[[_house],"TON_fnc_updateHouseContainers",false,false] call life_fnc_MP;
+		
+		//Empty out the crate
+		clearWeaponCargoGlobal _container;
+		clearMagazineCargoGlobal _container;
+		clearItemCargoGlobal _container;
+		clearBackpackCargoGlobal _container;
+	};
 };
-
-life_container_activeObj = _object;
-_attachPos = [0.16, 3, ((boundingBoxReal _object) select 1) select 2];
-[_object] remoteExecCall ["life_fnc_simDisable",RANY];
-_object attachTo[player, _attachPos];
-
-clearWeaponCargoGlobal _object;
-clearMagazineCargoGlobal _object;
-clearItemCargoGlobal _object;
-clearBackpackCargoGlobal _object;
-
-titleText [localize "STR_NOTF_PlaceContainer", "PLAIN"];

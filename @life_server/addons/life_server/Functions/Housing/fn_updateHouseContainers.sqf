@@ -1,24 +1,29 @@
 /*
-    File : fn_updateHouseContainers.sqf
-    Author: NiiRoZz
-
-    Description:
-    Update inventory "i" in container
+	BLAH BLAH
+	I LOVE NOTEPAD++ GET OVER IT
+	BLAH!
 */
-private ["_containerID","_containers","_query","_vehItems","_vehMags","_vehWeapons","_vehBackpacks","_cargo"];
-_container = [_this,0,objNull,[objNull]] call BIS_fnc_param;
-if (isNull _container) exitWith {};
-_containerID = _container getVariable ["container_id",-1];
-if (_containerID isEqualTo -1) exitWith {};
+private["_house","_houseID","_containers","_query"];
+_house = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+if(isNull _house) exitWith {systemChat "House null";};
+_houseID = _house getVariable["house_id",-1];
+if(_houseID == -1) exitWith {systemChat "HouseID invalid";};
 
-_vehItems = getItemCargo _container;
-_vehMags = getMagazineCargo _container;
-_vehWeapons = getWeaponCargo _container;
-_vehBackpacks = getBackpackCargo _container;
-_cargo = [_vehItems,_vehMags,_vehWeapons,_vehBackpacks];
+_containers = _house getVariable ["containers",[]];
 
-_cargo = [_cargo] call DB_fnc_mresArray;
+//systemChat format["Number of containers found: %1",count _containers];
+_arr = [];
+{
+	_className = typeOf _x;
+	_weapons = getWeaponCargo _x;
+	_magazines = getMagazineCargo _x;
+	_items = getItemCargo _x;
+	_backpacks = getBackpackCargo _x;
 
-_query = format ["UPDATE containers SET gear='%1' WHERE id='%2'",_cargo,_containerID];
+	_arr pushBack [_className,[_weapons,_magazines,_items,_backpacks]];
+} foreach _containers;
+
+_query = format["houseUpdateContainer:%1:%2",_arr,_houseID];
 
 [_query,1] call DB_fnc_asyncCall;
+//systemChat "Query ran?";
