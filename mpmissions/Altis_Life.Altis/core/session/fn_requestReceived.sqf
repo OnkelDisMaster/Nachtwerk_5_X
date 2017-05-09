@@ -26,21 +26,24 @@ if(!(EQUAL(steamid,SEL(_this,0)))) exitWith {[] call SOCK_fnc_dataQuery;};
 //Parse basic player information.
 CASH = parseNumber (SEL(_this,2));
 BANK = parseNumber (SEL(_this,3));
-CONST(life_adminlevel,parseNumber (SEL(_this,4)));
-CONST(life_donator,0);
-
-//Loop through licenses
-if(count (SEL(_this,6)) > 0) then {
-	{SVAR_MNS [SEL(_x,0),SEL(_x,1)];} foreach (SEL(_this,6));
+CONST(life_adminlevel,(_this select 4));
+if (LIFE_SETTINGS(getNumber,"donor_level") isEqualTo 1) then {
+    CONST(life_donorlevel,(_this select 5));
+} else {
+    CONST(life_donorlevel,0);
 };
 
+//Loop through licenses
+if (count (_this select 6) > 0) then {
+    {missionNamespace setVariable [(_x select 0),(_x select 1)];} forEach (_this select 6);
+};
 life_gear = SEL(_this,8);
 [true] call life_fnc_loadGear;
 
 //Parse side specific information.
 switch(playerSide) do {
 	case west: {
-		CONST(life_coplevel, parseNumber(SEL(_this,7)));
+		CONST(life_coplevel,(_this select 7));
 		CONST(life_medicLevel,0);
 		life_blacklisted = SEL(_this,9);
 	};
@@ -63,7 +66,7 @@ switch(playerSide) do {
 	};
 
 	case independent: {
-		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
+		CONST(life_medicLevel,(_this select 7));
 		CONST(life_coplevel,0);
 	};
 };
