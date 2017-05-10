@@ -19,6 +19,11 @@ if((call life_fnc_nearATM) && {!dialog}) exitWith {
 	[] call life_fnc_atmMenu;
 };
 
+//ATM Ausrauben
+if((call life_fnc_nearATM) && {!dialog}) exitWith {
+	[] call life_fnc_robATM;
+};
+
 if(isNull _curTarget) exitWith {
 	if(_isWater) then {
 		private "_fish";

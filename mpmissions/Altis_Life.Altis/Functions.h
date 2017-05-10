@@ -103,6 +103,7 @@ class Life_Client_Core
 		class gutAnimal {};
 		class surrender {};
 		class robSmartphoneAction {};
+		class robATM {}; //ATM Ausrauben
 		//class Input {};
 	};
 	
