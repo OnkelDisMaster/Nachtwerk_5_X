@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+/*
+    File: fn_logIt.sqf
+    Author: 
+    
+    Description:
+    
+*/
+diag_log format["%1 set %2",_this select 0, _this select 1];
+=======
 #include "\life_server\script_macros.hpp"
 /*
 	Name: Dillon (Itsyuka) Modine-Thuen
@@ -21,3 +31,4 @@ _uid = [_this,3,"",[""]] call BIS_fnc_param;
 		EXTDB SEL(_output,1);
 	};
 } forEach _message;
+>>>>>>> origin/master

@@ -1,21 +1,24 @@
-#include <macro.h>
-/*	
-	File: fn_surrender.sqf
-	Author: MrKraken
-	
-	Description: 
-	places player into a surrendered state!
+#include "..\..\script_macros.hpp"
+/*
+    File: fn_surrender.sqf
+    Author:
+
+    Description: Causes player to put their hands on their head.
 */
+if ( player getVariable ["restrained",false] ) exitWith {};
+if ( player getVariable ["Escorting",false] ) exitWith {};
+if ( vehicle player != player ) exitWith {};
+if ( speed player > 1 ) exitWith {};
 
-player SVAR ["surrender", true, true]; //Set surrender to true
-
-while { player GVAR ["surrender", false] }  do { 
-	player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"; //Animation in
-	
-	// Check if player is alive.
-	if (!alive player) then {
-		player SVAR ["surrender", false, true];
-	};
+if (player getVariable ["playerSurrender",false]) then {
+    player setVariable ["playerSurrender",false,true];
+} else {
+    player setVariable ["playerSurrender",true,true];
 };
 
-player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; //Animation out
+while {player getVariable ["playerSurrender",false]} do {
+    player playMove "AmovPercMstpSnonWnonDnon_AmovPercMstpSsurWnonDnon";
+    if (!alive player || (vehicle player) != player) then { player setVariable ["playerSurrender",false,true]; };
+};
+
+player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon";

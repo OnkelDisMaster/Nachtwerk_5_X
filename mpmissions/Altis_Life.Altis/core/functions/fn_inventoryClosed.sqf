@@ -1,25 +1,36 @@
-#include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
-	Author: Bryan "Tonic" Boardwine
-	
-	Description:
-	Used for syncing house container data but when the inventory menu
-	is closed a sync request is sent off to the server.
+    File: fn_inventoryClosed.sqf
+    Author: Bryan "Tonic" Boardwine
+    Modified : NiiRoZz
+
+    Description:
+    1 : Used for syncing house container data but when the inventory menu
+    is closed a sync request is sent off to the server.
+    2 : Used for syncing vehicle inventory when save vehicle gear are activated
 */
 private "_container";
-_container = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
-if(isNull _container) exitWith {}; //MEH
+_container = param [1,ObjNull,[ObjNull]];
+if (isNull _container) exitWith {}; //MEH
 
-if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
-	_house = lineIntersectsWith [visiblePositionASL player, ATLtoASL screenToWorld[0.5,0.5]];
-	
-	switch(true) do {
-		case (EQUAL(count _house,0)): {_exit = true;};
-		case (EQUAL(count _house,1)): {_house = _house select 0;};
-		default {
-			{if(_x isKindOf "House_F") exitWith {_house = _x;};} foreach _house;
-		};
-	};
-	if(!isNil "_exit" OR !(_house isKindOf "House_F")) exitWith {systemChat localize "STR_House_ContainerError"};
-	[[_house],"TON_fnc_updateHouseContainers",false,false] call life_fnc_MP;
+if ((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
+
+    if (life_HC_isActive) then {
+        [_container] remoteExecCall ["HC_fnc_updateHouseContainers",HC_Life];
+    } else {
+        [_container] remoteExecCall ["TON_fnc_updateHouseContainers",RSERV];
+    };
+
+};
+
+if (LIFE_SETTINGS(getNumber,"save_vehicle_inventory") isEqualTo 1) then {
+    if ((_container isKindOf "Car") || (_container isKindOf "Air") || (_container isKindOf "Ship")) then {
+        [] call SOCK_fnc_updateRequest;
+
+        if (life_HC_isActive) then {
+            [_container,1] remoteExecCall ["HC_fnc_vehicleUpdate",HC_Life];
+        } else {
+            [_container,1] remoteExecCall ["TON_fnc_vehicleUpdate",RSERV];
+        };
+    };
 };

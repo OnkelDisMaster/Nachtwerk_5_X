@@ -6,100 +6,96 @@ class life_dynmarket_prices {
 	onLoad = "[] spawn {sleep 1;[] call life_fnc_LoadIntoListbox;};";
 	
 	class controlsBackground {
-		
-		class HG: life_RscPicture //tablet background
-		{
-			idc = -1;
-			text = "images\tablet\tablet.paa";
-			x = 0.258501 * safezoneW + safezoneX;
-			y = 0.0716 * safezoneH + safezoneY;
-			w = 0.485625 * safezoneW;
-			h = 0.854 * safezoneH;
-		};
-		
 	};
 	
-	
-class controls {
-		
-	class RscFrame_1800: Life_RscText //Background Pricingtable
-	{
-		idc = -1;
-		x = 0.31599 * safezoneW + safezoneX;
-		y = 0.276518 * safezoneH + safezoneY;
-		w = 0.12375 * safezoneW;
-		h = 0.429 * safezoneH;
-		colorBackground[] = {0,0,0,0.5};
-	};
-	
-	class RscListbox_1500: Life_RscListBox //Pricingtable
-	{
-		idc = 7055;
-		onLBSelChanged = "[] spawn {[] call life_fnc_DisplayPrices;};";
-		x = 0.31599 * safezoneW + safezoneX;
-		y = 0.277444 * safezoneH + safezoneY;
-		w = 0.124323 * safezoneW;
-		h = 0.427148 * safezoneH;
-		sizeEx = 0.0260;
-	};
-	
-	class Market_InfotextBox: RscStructuredText //Infotext header
+	class controls {
+class RscFrame_1800: Life_RscText
 {
-	idc = 1100;
-	text = "Aktueller Verkaufspreis: "; //--- ToDo: Localize;
-	x = 0.45875 * safezoneW + safezoneX;
-	y = 0.291 * safezoneH + safezoneY;
-	w = 0.139219 * safezoneW;
-	h = 0.022 * safezoneH;
-	colorBackground[] = {0,0,0,0.5};
+	idc = -1;
+
+	x = 0.276563 * safezoneW + safezoneX;
+	y = 0.390043 * safezoneH + safezoneY;
+	w = 0.446875 * safezoneW;
+	h = 0.219914 * safezoneH;
+	colorBackground[] = {0,0,0,1};
 };
-	/*
-	class RscText_1000: Life_RscText //infotext pricing
-	{
-		idc = -1;
-		text = "Verkaufspreis"; //--- ToDo: Localize;
-		x = 0.441198 * safezoneW + safezoneX;
-		y = 0.450666 * safezoneH + safezoneY;
-		w = 0.0876563 * safezoneW;
-		h = 0.033 * safezoneH;
-	};
-	*/
-	class RscText_1001: Life_RscText //preisanzeige!
-	{
-		idc = 7056;
-		text = "";
-		x = 0.459271 * safezoneW + safezoneX;
-		y = 0.319371 * safezoneH + safezoneY;
-		w = 0.195937 * safezoneW;
-		h = 0.022 * safezoneH;
-		colorBackground[] = {0,0,0,0.5};
-	};
-	
-	class RscButtonMenu_2400: Life_RscButtonMenu //close button
-	{
-		onButtonClick = "closeDialog 0;";
-	
-		idc = 1006;
-		text = "Schließen";
-		x = 0.59073 * safezoneW + safezoneX;
-		y = 0.667074 * safezoneH + safezoneY;
-		w = 0.0825 * safezoneW;
-		h = 0.033 * safezoneH;
-	};
-	/*
-	class RscText_1007: Life_RscStructuredText
-	{
-		idc = 7058;
-	
-		text = "";
-		x = 0.5 * safezoneW + safezoneX;
-		//y = 0.447221 * safezoneH + safezoneY;
-		y = 0.460221 * safezoneH + safezoneY;
-		w = 0.20625 * safezoneW;
-		h = 0.0549786 * safezoneH;
-		colorText[] = {0.33,0.33,0.33,1};
-	
-		};
-		*/
-	};
+class RscListbox_1500: Life_RscListBox
+{
+	idc = 7055;
+	onLBSelChanged = "[] spawn {[] call life_fnc_DisplayPrices;};";
+
+	x = 0.282292 * safezoneW + safezoneX;
+	y = 0.398839 * safezoneH + safezoneY;
+	w = 0.211979 * safezoneW;
+	h = 0.202321 * safezoneH;
+	sizeEx = 0.0260;
+};
+class RscText_1000: Life_RscText
+{
+	idc = -1;
+
+	text = "Current Sell Price"; //--- ToDo: Localize;
+	x = 0.5 * safezoneW + safezoneX;
+	y = 0.401039 * safezoneH + safezoneY;
+	w = 0.217708 * safezoneW;
+	h = 0.0219914 * safezoneH;
+};
+class RscText_1001: Life_RscText
+{
+	idc = 7056;
+
+	text = "Please select an Item"; //--- ToDo: Localize;
+	x = 0.5 * safezoneW + safezoneX;
+	y = 0.420831 * safezoneH + safezoneY;
+	w = 0.20625 * safezoneW;
+	h = 0.0549786 * safezoneH;
+	sizeEx = 0.060;
+};
+class RscText_1002: Life_RscText
+{
+	idc = -1;
+
+	text = "Amout of Items sold by You"; //--- ToDo: Localize;
+	x = 0.5 * safezoneW + safezoneX;
+	y = 0.5 * safezoneH + safezoneY;
+	w = 0.217708 * safezoneW;
+	h = 0.0219914 * safezoneH;
+};
+class RscText_1003: Life_RscText
+{
+	idc = 7057;
+
+	text = "2345"; //--- ToDo: Localize;
+	x = 0.5 * safezoneW + safezoneX;
+	y = 0.513195 * safezoneH + safezoneY;
+	w = 0.20625 * safezoneW;
+	h = 0.0549786 * safezoneH;
+	sizeEx = 0.060;
+};
+class RscButtonMenu_2400: Life_RscButtonMenu
+{
+	onButtonClick = "closeDialog 0;";
+
+	idc = 1006;
+	text = "OKAY"; //--- ToDo: Localize;
+	x = 0.5 * safezoneW + safezoneX;
+	y = 0.57697 * safezoneH + safezoneY;
+	w = 0.217708 * safezoneW;
+	h = 0.0219914 * safezoneH;
+	colorText[] = {1,1,1,1};
+	colorBackground[] = {0,0.52,0.03,1};
+};
+class RscText_1007: Life_RscStructuredText
+{
+	idc = 7058;
+
+	text = ""; //--- ToDo: Localize;
+	x = 0.5 * safezoneW + safezoneX;
+	//y = 0.447221 * safezoneH + safezoneY;
+	y = 0.460221 * safezoneH + safezoneY;
+	w = 0.20625 * safezoneW;
+	h = 0.0549786 * safezoneH;
+	colorText[] = {0.33,0.33,0.33,1};
+};
+};
 };

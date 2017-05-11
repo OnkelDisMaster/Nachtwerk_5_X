@@ -31,12 +31,24 @@ if(_side == "Error") exitWith {
 	[[[]],"life_fnc_impoundMenu",(owner _unit),false] call life_fnc_MP;
 };
 
+<<<<<<< HEAD
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE pid='%1' AND alive='1' AND active='0' AND side='%2' AND type='%3'",_pid,_side,_type];
+=======
 _query = format["vehiclesInfo:%1:%2:%3",_pid,_side,_type];
+>>>>>>> origin/master
 
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2,true] call DB_fnc_asyncCall;
 
+<<<<<<< HEAD
+if (EXTDB_SETTING(getNumber,"DebugMode") isEqualTo 1) then {
+    diag_log "------------- Client Query Request -------------";
+    diag_log format["QUERY: %1",_query];
+    diag_log format["Time to complete: %1 (in seconds)",(diag_tickTime - _tickTime)];
+    diag_log format["Result: %1",_queryResult];
+    diag_log "------------------------------------------------";
+=======
 if((EQUAL(EXTDB_SETTINGS("MySQL_Query"),1))) then {
 	["diag_log",[
 		"------------- Vehicle Query Request -------------",
@@ -45,6 +57,7 @@ if((EQUAL(EXTDB_SETTINGS("MySQL_Query"),1))) then {
 		format["Result: %1",_queryResult],
 		"-------------------------------------------------"
 	]] call TON_fnc_logIt;
+>>>>>>> origin/master
 };
 
 if(typeName _queryResult == "STRING") exitWith {

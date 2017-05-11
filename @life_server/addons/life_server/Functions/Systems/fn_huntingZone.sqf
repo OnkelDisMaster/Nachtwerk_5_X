@@ -8,15 +8,35 @@
 	TODO:
 	Change it up so animals repopulate over time.
 */
+<<<<<<< HEAD
+
+private["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
+params [
+        ["_zoneName","",[""]],
+        ["_maxAnimals",10,[0]]
+];
+
+if (_zoneName isEqualTo "") exitWith {};
+=======
 private["_animalList","_dist","_radius","_animals","_zoneName","_unitsNear","_animalsActive"];
 _zoneName = [_this,0,"",[""]] call BIS_fnc_param;
 _maxAnimals = [_this,1,10,[0]] call BIS_fnc_param;
 if(_zoneName == "") exitWith {};
+>>>>>>> origin/master
 _animalList = ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F"];
 _radius = (getMarkerSize _zoneName) select 0;
 _dist = _radius + 100;
 _zone = getMarkerPos _zoneName;
+<<<<<<< HEAD
+
+if (!isNil "animals" && {count animals != 0}) then {
+    _maxAnimals = _maxAnimals - count(animals);
+} else {
+    animals = [];
+};
+=======
 _animals = [];
+>>>>>>> origin/master
 
 _unitsNear = false;
 _animalsActive = false;

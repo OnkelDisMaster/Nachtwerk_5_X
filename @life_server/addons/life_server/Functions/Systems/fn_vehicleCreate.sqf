@@ -33,5 +33,9 @@ _side = switch(_side) do
 _plate = round(random(1000000));
 [_uid,_side,_type,_classname,_color,_plate] call DB_fnc_insertVehicle;
 
+<<<<<<< HEAD
+_vehicle setVariable["dbInfo",[_uid,_plate],true];
+=======
 _vehicle setVariable["dbInfo",[_uid,_plate]];
 _vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"];
+>>>>>>> origin/master

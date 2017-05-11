@@ -39,11 +39,154 @@ class FSM
         /*%FSM<LINK "true">*/
         class true
         {
+<<<<<<< HEAD
+                /*%FSM<STATE "init">*/
+                class init
+                {
+                        name = "init";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"private[""_impound"",""_cars"",""_objs"",""_totCars"",""_thread""];" \n
+                         "_impound = time;" \n
+                         "_cars = time;" \n
+                         "_objs = time;" \n
+                         "cleanupFSM setFSMVariable [""stopfsm"",false];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="Share__Work_load";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Share__Work_load">*/
+                class Share__Work_load
+                {
+                        name = "Share__Work_load";
+                        itemno = 2;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Time_Check">*/
+                                class Time_Check
+                                {
+                                        itemno = 4;
+                                        priority = 0.000000;
+                                        to="Delete_Dead_Cars";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((time - _cars) > (3 * 60))"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Delete_Dead_Cars">*/
+                class Delete_Dead_Cars
+                {
+                        name = "Delete_Dead_Cars";
+                        itemno = 5;
+                        init = /*%FSM<STATEINIT""">*/"{" \n
+                         "	if (!alive _x) then {" \n
+                         "		_dbInfo = _x getVariable[""dbInfo"",[]];" \n
+                         "		if (count _dbInfo > 0) then {" \n
+                         "			_uid = _dbInfo select 0;" \n
+                         "			_plate = _dbInfo select 1;" \n
+                         "" \n
+                         "			_query = format[""UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'"",_uid,_plate];" \n
+                         "			_query spawn {" \n
+                         "				" \n
+                         "				_thread = [_this,1] call DB_fnc_asyncCall;" \n
+                         "			};" \n
+                         "		};" \n
+                         "		if (!isNil ""_x"" && {!isNull _x}) then {" \n
+                         "			deleteVehicle _x;" \n
+                         "		};" \n
+                         "	};" \n
+                         "} forEach allMissionObjects ""LandVehicle"";" \n
+                         "" \n
+                         "{" \n
+                         "	if (!alive _x) then {" \n
+                         "		_dbInfo = _x getVariable[""dbInfo"",[]];" \n
+                         "		if (count _dbInfo > 0) then {" \n
+                         "			_uid = _dbInfo select 0;" \n
+                         "			_plate = _dbInfo select 1;" \n
+                         "" \n
+                         "			_query = format[""UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'"",_uid,_plate];" \n
+                         "			_query spawn {" \n
+                         "				" \n
+                         "				_thread = [_this,1] call DB_fnc_asyncCall;" \n
+                         "			};" \n
+                         "		};" \n
+                         "		if (!isNil ""_x"" && {!isNull _x}) then {" \n
+                         "			deleteVehicle _x;" \n
+                         "		};" \n
+                         "	};" \n
+                         "} forEach allMissionObjects ""Air"";" \n
+                         "_cars = time;" \n
+                         "" \n
+                         "//Group cleanup." \n
+                         "{" \n
+                         "	if (units _x isEqualTo [] && local _x) then {" \n
+                         "		deleteGroup _x;" \n
+                         "	};" \n
+                         "} forEach allGroups;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Check_for_HC_">*/
+                                class Check_for_HC_
+                                {
+                                        itemno = 9;
+                                        priority = 0.000000;
+                                        to="End_Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"cleanupFSM getFSMVariable ""stopfsm"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Continue__">*/
+                                class Continue__
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="Share__Work_load";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(cleanupFSM getFSMVariable ""stopfsm"")"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "End_Cleanup_">*/
+                class End_Cleanup_
+                {
+                        name = "End_Cleanup_";
+                        itemno = 8;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+=======
           priority = 0.000000;
           to="Share__Work_load";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+>>>>>>> origin/master
         };
         /*%FSM</LINK>*/
       };

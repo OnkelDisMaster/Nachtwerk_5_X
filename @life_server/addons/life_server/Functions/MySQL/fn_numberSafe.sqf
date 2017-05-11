@@ -21,7 +21,13 @@ _digitsCount = count _digits - 1;
 _modBase = _digitsCount % _mod;
 _numberText = "";
 {
+<<<<<<< HEAD
+    _numberText = _numberText + str _x;
+    if ((_foreachindex - _modBase) % (_mod) isEqualTo 0 && _foreachindex != _digitsCount) then {_numberText = _numberText + "";};
+} forEach _digits;
+=======
 	_numberText = _numberText + str _x;
 	if ((_foreachindex - _modBase) % (_mod) == 0 && _foreachindex != _digitsCount) then {_numberText = _numberText + "";};
 } foreach _digits;
+>>>>>>> origin/master
 _numberText

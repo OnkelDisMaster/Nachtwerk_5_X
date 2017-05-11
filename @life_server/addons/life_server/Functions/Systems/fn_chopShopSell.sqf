@@ -26,14 +26,25 @@ if(count _dbInfo > 0) then {
 	_uid = SEL(_dbInfo,0);
 	_plate = SEL(_dbInfo,1);
 
+<<<<<<< HEAD
+    _query = format["UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+
+    _sql = [_query,1] call DB_fnc_asyncCall;
+=======
 	_query = format["vehicleDead:0:%1:%2",_uid,_plate];
 	
 	_sql = [_query,1] call DB_fnc_asyncCall;
+>>>>>>> origin/master
 };
 
 deleteVehicle _vehicle;
 life_action_inUse = false;
 PVAR_ID("life_action_inUse",_unit);
 CASH = _cash;
+<<<<<<< HEAD
+_unit publicVariableClient "life_cash";
+[2,format[(localize "STR_NOTF_ChopSoldCar"),_displayName,[_price] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",_unit];
+=======
 PVAR_ID("life_cash",_unit);
 [[2,format[(localize "STR_NOTF_ChopSoldCar"),_displayName,[_price] call life_fnc_numberText]],"life_fnc_broadcast",_unit,false] call life_fnc_MP;
+>>>>>>> origin/master

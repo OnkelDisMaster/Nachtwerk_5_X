@@ -8,6 +8,16 @@
 */
 private["_deleted"];
 _deleted = false;
+<<<<<<< HEAD
+for "_i" from 0 to 1 step 0 do {
+    private["_veh","_units","_fuel"];
+    uiSleep (60 * 60);
+    {
+        _protect = false;
+        _veh = _x;
+        _vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
+        _fuel = 1;
+=======
 while {true} do
 {
 	private["_veh","_units"];
@@ -15,6 +25,7 @@ while {true} do
 	{
 		_veh = _x;
 		_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
+>>>>>>> origin/master
 
 		if(_vehicleClass in ["Car","Air","Ship","Armored","Submarine"]) then
 		{
@@ -33,10 +44,27 @@ while {true} do
 				};
 			};
 
+<<<<<<< HEAD
+        if ((_vehicleClass in ["Car","Air","Ship","Armored","Submarine"]) && {!(_protect)}) then {
+            if (LIFE_SETTINGS(getNumber,"save_vehicle_fuel") isEqualTo 1) then {_fuel = (fuel _veh);};
+            _dbInfo = _veh getVariable["dbInfo",[]];
+            _units = {(_x distance _veh < 300)} count playableUnits;
+            if (count crew _x isEqualTo 0) then {
+                switch (true) do {
+                    case ((_x getHitPointDamage "HitEngine") > 0.7 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
+                    case ((_x getHitPointDamage "HitLFWheel") > 0.98 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
+                    case ((_x getHitPointDamage "HitLF2Wheel") > 0.98 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
+                    case ((_x getHitPointDamage "HitRFWheel") > 0.98 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
+                    case ((_x getHitPointDamage "HitRF2Wheel") > 0.98 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
+                    case (_units isEqualTo 0): {deleteVehicle _x; _deleted = true;};
+                };
+            };
+=======
 			if(_deleted) then {
 				waitUntil {isNull _veh};
 				_deleted = false;
 			};
+>>>>>>> origin/master
 
 			if(isNull _veh) then
 			{
@@ -55,6 +83,9 @@ while {true} do
 		};
 	} foreach vehicles;
 
+<<<<<<< HEAD
+                    _query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel];
+=======
 	sleep (3 * 60); //3 minute cool-down before next cycle.
 	{
 		if((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F", "Land_Can_V3_F","Land_Money_F","Land_Suitcase_F"]) then
@@ -62,6 +93,7 @@ while {true} do
 			deleteVehicle _x;
 		};
 	} foreach (allMissionObjects "Thing");
+>>>>>>> origin/master
 
 	sleep (2 * 60);
 	{

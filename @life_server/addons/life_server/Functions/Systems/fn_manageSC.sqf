@@ -1,9 +1,17 @@
 /*
+<<<<<<< HEAD
+    File: fn_managesc.sqf
+    Author: Bryan "Tonic" Boardwine
+
+    Description:
+    User management of whether or not they want to be on a sidechat for their side.
+=======
 	File: fn_managesc.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
 	User management of whether or not they want to be on a sidechat for their side.
+>>>>>>> origin/master
 */
 private["_unit","_bool","_side"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;

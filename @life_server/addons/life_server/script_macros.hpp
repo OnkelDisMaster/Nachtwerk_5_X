@@ -1,8 +1,11 @@
 #define SYSTEM_TAG "life"
 #define ITEM_TAG format["%1%2",SYSTEM_TAG,"item_"]
+<<<<<<< HEAD
+=======
 #define SUB(var1,var2) var1 = var1 - var2
 #define ADD(var1,var2) var1 = var1 + var2
 #define SEL(ARRAY,INDEX) (ARRAY select INDEX)
+>>>>>>> origin/master
 #define CASH life_cash
 #define BANK life_atmbank
 #define GANG_FUNDS grpPlayer getVariable ["gang_bank",0];
@@ -18,6 +21,10 @@
 #define CONST(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 #define CONSTVAR(var) var = compileFinal (if(typeName var == "STRING") then {var} else {str(var)})
 #define FETCH_CONST(var) (call var)
+<<<<<<< HEAD
+#define EXTDB "extDB2" callExtension
+#define EXTDB_SETTING(TYPE,SETTING) TYPE(missionConfigFile >> "CfgServer" >> SETTING)
+=======
 #define PVAR_ALL(var) publicVariable var
 #define PVAR_SERV(var) publicVariableServer var
 #define PVAR_ID(var,id) id publicVariableClient var
@@ -28,6 +35,7 @@
 #define PISTOL handgunWeapon player
 #define PISTOL_ITEMS handgunItems player
 #define LAUNCHER secondaryWeapon player
+>>>>>>> origin/master
 #define EXTDB_FAILED(MESSAGE) \
 	life_server_extDB_notLoaded = [true,##MESSAGE]; \
 	PVAR_ALL("life_server_extDB_notLoaded"); \
@@ -42,12 +50,19 @@
 #define CONTROL_DATAI(ctrl,index) ctrl lbData index
 
 //System Macros
+<<<<<<< HEAD
+#define LICENSE_VARNAME(varName,flag) format["license_%1_%2",flag,M_CONFIG(getText,"Licenses",varName,"variable")]
+#define LICENSE_VALUE(varName,flag) missionNamespace getVariable [LICENSE_VARNAME(varName,flag),false]
+#define ITEM_VARNAME(varName) format["life_inv_%1",M_CONFIG(getText,"VirtualItems",varName,"variable")]
+#define ITEM_VALUE(varName) missionNamespace getVariable [ITEM_VARNAME(varName),0]
+=======
 #define grpPlayer group player
 #define steamid getPlayerUID player
 #define LICENSE_VARNAME(varName,flag) format["license_%1_%2",flag,M_CONFIG(getText,"Licenses",varName,"variable")]
 #define LICENSE_VALUE(varName,flag) GVAR_MNS [LICENSE_VARNAME(varName,flag),false]
 #define ITEM_VARNAME(varName) format["life_inv_%1",M_CONFIG(getText,"VirtualItems",varName,"variable")]
 #define ITEM_VALUE(varName) GVAR_MNS [ITEM_VARNAME(varName),0]
+>>>>>>> origin/master
 #define ITEM_ILLEGAL(varName) M_CONFIG(getNumber,"VirtualItems",ITEM_VARNAME(varName),"illegal")
 #define ITEM_SELLPRICE(varName) M_CONFIG(getNumber,"VirtualItems",ITEM_VARNAME(varName),"sellPrice")
 #define ITEM_BUYPRICE(varName) M_CONFIG(getNumber,"VirtualItems",ITEM_VARNAME(varName),"buyPrice")

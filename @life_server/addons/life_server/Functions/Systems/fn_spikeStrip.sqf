@@ -9,7 +9,11 @@
 */
 private["_nearVehicles","_spikeStrip"];
 _spikeStrip = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+<<<<<<< HEAD
+if (isNull _spikeStrip) exitWith {}; //Bad vehicle type passed.
+=======
 if(isNull _spikeStrip) exitWith {}; //Bad vehicle type passed.
+>>>>>>> origin/master
 
 waitUntil {_nearVehicles = nearestObjects[getPos _spikeStrip,["Car"],5]; count _nearVehicles > 0 OR isNull _spikeStrip};
 

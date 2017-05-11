@@ -1,34 +1,42 @@
-#include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
-	Author: Bryan "Tonic" Boardwine
-	
-	Description:
-	Reskins the vehicle
+    File: fn_colorVehicle.sqf
+    Author: Bryan "Tonic" Boardwine
+
+    Description:
+    Reskins the vehicle
 */
-private["_vehicle","_index","_textures"];
-_vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
-_index = [_this,1,-1,[0]] call BIS_fnc_param;
-if(isNull _vehicle OR !alive _vehicle OR EQUAL(_index,-1)) exitWith {};
+private ["_textures","_className","_classNameLife"];
+params [
+    ["_vehicle",objNull,[objNull]],
+    ["_index",-1,[0]]
+];
+
+_className = typeOf _vehicle;
+_classNameLife = _className;
+
+if (isNull _vehicle || !alive _vehicle || _index isEqualTo -1) exitWith {};
 //Does the vehicle already have random styles? Halt till it's set.
 
-if(local _vehicle) then {
-	switch (typeOf _vehicle) do {
-		case "C_Offroad_01_F": {[[_vehicle,"color",3,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;};
-		case "C_Hatchback_01_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;};
-		case "C_Hatchback_01_sport_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;};
-		case "C_SUV_01_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;};
-		case "C_Van_01_box_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;};
-		case "C_Van_01_transport_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;};
-	};
+if (local _vehicle) then {
+    switch _className do {
+        case "C_Offroad_01_F": {[_vehicle,"color",3,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];};
+        case "C_Hatchback_01_F": {[_vehicle,"color",1,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];};
+        case "C_Hatchback_01_sport_F": {[_vehicle,"color",1,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];};
+        case "C_SUV_01_F": {[_vehicle,"color",1,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];};
+        case "C_Van_01_box_F": {[_vehicle,"color",1,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];};
+        case "C_Van_01_transport_F": {[_vehicle,"color",1,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];};
+    };
 };
 
-_textures = SEL(SEL(M_CONFIG(getArray,CONFIG_VEHICLES,(typeOf _vehicle),"textures"),_index),2);
-if(isNil "_textures" OR {EQUAL(count _textures,0)}) exitWith {};
-
-//Local to us? Set it's color.
-if(local _vehicle) then {
-	_vehicle setVariable["Life_VEH_color",_index,true];
+if (!isClass (missionConfigFile >> "LifeCfgVehicles" >> _classNameLife)) then {
+    _classNameLife = "Default"; //Use Default class if it doesn't exist
+    diag_log format["%1: LifeCfgVehicles class doesn't exist",_className];
 };
 
-waitUntil{!isNil {_vehicle getVariable "Life_VEH_color"}};
-{_vehicle setObjectTexture [_forEachIndex,_x];} foreach _textures;
+_textures = ((M_CONFIG(getArray,"LifeCfgVehicles",_classNameLife,"textures") select _index) select 2);
+if (isNil "_textures" || {count _textures isEqualTo 0}) exitWith {};
+
+_vehicle setVariable ["Life_VEH_color",_index,true];
+
+{_vehicle setObjectTextureGlobal [_forEachIndex,_x];} forEach _textures;

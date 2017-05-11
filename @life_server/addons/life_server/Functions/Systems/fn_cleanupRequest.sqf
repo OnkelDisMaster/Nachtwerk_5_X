@@ -8,7 +8,11 @@
 */
 private["_client","_loops"];
 _client = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+<<<<<<< HEAD
+if (isNull _client) exitWith {};
+=======
 if(isNull _client) exitWith {};
+>>>>>>> origin/master
 
 _loops = 0;
 while {true} do {

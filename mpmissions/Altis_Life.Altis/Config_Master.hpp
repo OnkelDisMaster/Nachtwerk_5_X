@@ -1,353 +1,201 @@
-#define VITEMMACRO(NAME,DISPLAYNAME,VARNAME,WEIGHT,BUYPRICE,SELLPRICE,ILLEGAL,EDIBLE,ICON) class NAME { \
-		variable = VARNAME; \
-		weight = WEIGHT; \
-		displayName = DISPLAYNAME; \
-		buyPrice = BUYPRICE; \
-		sellPrice = SELLPRICE; \
-		illegal = ILLEGAL; \
-		edible = EDIBLE; \
-		icon = ICON; \
-	};
-	
-#define LICENSEMACRO(NAME,DISPLAYNAME,VARNAME,PRICE,ILLEGAL,SIDE) class NAME { \
-		variable = VARNAME; \
-		displayName = DISPLAYNAME; \
-		price = PRICE; \
-		illegal = ILLEGAL; \
-		side = SIDE; \
-	};
-
 #define true 1
 #define false 0
-#include "Config_Clothing.hpp"
-#include "Config_Shops.hpp"
-
 
 /*
-	Master settings for various features and functionality	
+    Master settings for various features and functionality
 */
 class Life_Settings {
-	/* Persistent Settings */
-	save_civ_weapons = true; //Allow civilians to save weapons on them?
-	save_virtualItems = true; //Save Virtual items (all sides)?
+/* Logging and Security Settings*/
+    /* Security Settings */
+    spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off
 
-	/* Revive system settings */
-	revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
-	revive_fee = 2500; //Revive fee that players have to pay and medics / EMS are rewarded
-	
-	/* House related settings */
-	house_limit = 3; //Maximum amount of houses a player can own.
+    /* Data Logging Settings */
+    battlEye_friendlyLogging = false; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
+    player_advancedLog = false; //False [default] - No advanced logging. True - Logs house purchase and sale, vehicle purchase, sale, and chop shopping, police arrests, and gang creations. Search for: advanced_log
+    player_moneyLog = false; //False [default] - No money logging. True - Logs player bank deposits, withdraws, and transfers, gang bank deposits and withdraws, money picked up off of the ground, and player robbery. Search for: money_log
+    player_deathLog = false; //False [default] - No death logging. True - Logs victim and killer, and vehicle or weapon if used, when a player dies. Search for: death_log
 
-	/* Gang related settings */
-	gang_price = 75000; //Price for creating a gang, remember they are persistent so keep it reasonable to avoid millions of gangs.
-	gang_upgradeBase = 10000; //The base cost for upgrading slots in a gang
-	gang_upgradeMultiplier = 2.5; //Not sure if in use?
+/* Database Related Settings */
+    /* Player Data Saving */
+    save_virtualItems = true; //Save Virtual items (all sides)?
+    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    save_playerStats = true; //Save food, water and damage (all sides)?
+    save_civilian_weapons = true; //Allow civilians to save weapons on them?
+    save_civilian_position = false; //Save civilian location?
+    save_civilian_position_restart = false; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
+    /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
+    save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
-	/* Player-related systems */
-	enable_fatigue = false; //Set to false to disable the ARMA 3 false system.
-	total_maxWeight = 150; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
-	total_maxWeightT = 24;  //Static variable for the maximum weight allowed without having a backpack
-	paycheck_period = 30; //Scaled in minutes
-	
-	/* Impound Variables */
-	impound_car = 5000; //Price for impounding cars
-	impound_boat = 12000; //Price for impounding boats
-	impound_air = 8500; //Price for impounding helicopters / planes
+    /* Vehicle Data Saving */
+    save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
+    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
+    save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
+    save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
+    save_vehicle_damage = true; //Save vehicle damage to the database.
+    save_vehicle_illegal = true; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
 
-	/* Car-shop Settings */
-	vehicleShop_rentalOnly[] = { "B_MRAP_01_hmg_F", "B_G_Offroad_01_armed_F" };
 
-	/* Job-related stuff */
-	delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
+/* System Settings */
+    /* ATM & Federal Reserve System Configurations */
+    global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
+    noatm_timer = 10; //Time in minutes that players cannot deposit money after selling stolen gold.
+    minimum_cops = 5; //Minimum cops required online to rob the Federal Reserve
 
-	crimes[] = { 
-		{"STR_Crime_1","350","1"}, 
-		{"STR_Crime_2","1500","2"}, 
-		{"STR_Crime_3","2500","3"}, 
-		{"STR_Crime_4","3500","4"}, 
-		{"STR_Crime_5","10000","5"}, 
-		{"STR_Crime_6","5000","6"}, 
-		{"STR_Crime_7","10000","7"} 
-	};
-	
-	sellArray[] = {
-		{"arifle_sdar_F", 7500},
-		{"hgun_P07_snds_F", 650},
-		{"hgun_P07_F", 1500},
-		{"ItemGPS", 45},
-		{"ToolKit", 75},
-		{"FirstAidKit", 65},
-		{"Medikit", 450},
-		{"NVGoggles", 980},
-		{"16Rnd_9x21_Mag", 15},
-		{"20Rnd_556x45_UW_mag", 35},
-		{"ItemMap", 35},
-		{"ItemCompass", 25},
-		{"Chemlight_blue", 50},
-		{"Chemlight_yellow", 50},
-		{"Chemlight_green", 50},
-		{"Chemlight_red", 50},
-		{"hgun_Rook40_F", 500},
-		{"arifle_Katiba_F", 5000},
-		{"30Rnd_556x45_Stanag", 65},
-		{"20Rnd_762x51_Mag", 85},
-		{"30Rnd_65x39_caseless_green", 50},
-		{"DemoCharge_Remote_Mag", 7500},
-		{"SLAMDirectionalMine_Wire_Mag", 2575},
-		{"optic_ACO_grn", 250},
-		{"acc_flashlight", 100},
-		{"srifle_EBR_F", 15000},
-		{"arifle_TRG21_F", 3500},
-		{"optic_MRCO", 5000},
-		{"optic_Aco", 850},
-		{"arifle_MX_F", 7500},
-		{"arifle_MXC_F", 5000},
-		{"arifle_MXM_F", 8500},
-		{"MineDetector", 500},
-		{"optic_Holosight", 275},
-		{"acc_pointer_IR", 175},
-		{"arifle_TRG20_F", 2500},
-		{"SMG_01_F", 1500},
-		{"arifle_Mk20C_F", 4500},
-		{"30Rnd_45ACP_Mag_SMG_01", 60},
-		{"30Rnd_9x21_Mag", 30}
-	};
+    /* Basic System Configurations */
+    donor_level = false; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
+    enable_fatigue = true; //Set to false to disable the ARMA 3 fatigue system.
+    total_maxWeight = 80; //Static variable for the maximum weight allowed without having a backpack
+    respawn_timer = 60; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
-	allowedSavedVirtualItems[] = { "pickaxe", "fuelEmpty", "fuelFull", "spikeStrip", "lockpick", "defuseKit", "storageSmall", "storageBig", "redgull", "coffee", "waterBottle", "apple", "peach", "tbacon", "donut", "rabbitGrilled", "salemaGrilled", "ornateGrilled", "mackerelGrilled", "tunaGrilled", "mulletGrilled", "catsharkGrilled", "turtleSoup", "henGrilled", "roosterGrilled", "sheepGrilled", "goatGrilled" };
+    /* Clothing System Configurations */
+    civ_skins = false; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
+    cop_extendedSkins = false; //Enable or disable cop skins by level. Before enabling, you must add all the EIGHT files to textures folder. (It must be named as: cop_uniform.jpg + cop_uniform_1.jpg, cop_uniform_2.jpg...cop_uniform_6.jpg, cop_uniform_7.jpg; meaning cop_uniform = life_coplevel=0, cop_uniform_1 = life_coplevel=1, cop_uniform_2 = life_coplevel=2, etc...)
+    clothing_noTP = false;  //Disable clothing preview teleport? (true = no teleport. false = teleport)
+    clothing_box = true; //true = teleport to a black box. false = teleport to somewhere on map. (It only affects the game if clothing_noTP is set as false)
+    clothing_masks[] = { "H_Shemag_olive", "H_Shemag_khk", "H_Shemag_tan", "H_Shemag_olive_hs", "H_ShemagOpen_khk", "H_ShemagOpen_tan", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Bandanna_aviator", "G_Bandanna_beast", "G_Bandanna_blk", "G_Bandanna_khk", "G_Bandanna_oli", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_tan", "U_O_GhillieSuit", "U_I_GhillieSuit", "U_B_GhillieSuit", "H_RacingHelmet_1_black_F", "H_RacingHelmet_1_red_F", "H_RacingHelmet_1_white_F", "H_RacingHelmet_1_blue_F", "H_RacingHelmet_1_yellow_F", "H_RacingHelmet_1_green_F", "H_RacingHelmet_1_F", "H_RacingHelmet_2_F", "H_RacingHelmet_3_F", "H_RacingHelmet_4_F" };
+
+    /* Fuel System Configurations */
+    pump_service = true; //Allow users to use pump service on the map. Default = false
+    fuel_cost = 80; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
+    service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
+    fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
+
+    /* Gang System Configurations */
+    gang_price = 75000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_upgradeBase = 10000; //The base cost for purchasing additional slots in a gang
+    gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
+
+    /* Housing System Configurations */
+    house_limit = 5; //Maximum number of houses a player can own.
+
+    /* Hunting & Fishing System Configurations */
+    animaltypes_fish[] = { "Salema_F", "Ornate_random_F", "Mackerel_F", "Tuna_F", "Mullet_F", "CatShark_F", "Turtle_F" }; //Classnames of fish you can catch
+    animaltypes_hunting[] = { "Sheep_random_F", "Goat_random_F", "Hen_random_F", "Cock_random_F", "Rabbit_F" }; //Classnames of aniamls you can hunt/gut
+
+    /* Item-related Restrictions */
+    restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
+    restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
+    restrict_weaponPickup = false; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
+    restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
+    restricted_weapons[] = { "hgun_P07_snds_F", "arifle_MX_F", "arifle_MXC_F" };
+
+    /* Jail System Configurations */
+    jail_seize_vItems[] = { "spikeStrip","lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","lsd_processed","meth_processed","turtle_raw" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
+    jail_seize_inventory = false; //Set to true to run the cop seize script on inmates. False will remove only weapons and magazines otherwise. (Basically used in case cops forget to seize items). [See Lines 106-111 below]
+    sendtoJail_locations[] = { "police_hq_1", "police_hq_2", "cop_spawn_3", "cop_spawn_5", "Correctional_Facility" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
+
+    /* Medical System Configurations */
+    revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
+    revive_fee = 1500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
+    hospital_heal_fee = 100; //Fee to heal at a hospital NPC
+
+    /* Paycheck & Bank System Configurations */
+    bank_cop = 200000; //Amount of cash in bank for new cops
+    bank_civ = 200000; //Amount of cash in bank for new civillians
+    bank_med = 200000; //Amount of cash in bank for new medics
+
+    paycheck_cop = 5000; //Payment for cops
+    paycheck_civ = 3500; //Payment for civillians
+    paycheck_med = 4500; //Payment for medics
+
+    paycheck_period = 5; //Scaled in minutes
+    bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
+
+    /* Player Job System Configurations */
+    delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
+    fuelTank_winMultiplier = 1; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
+
+    /* Search & Seizure System Configurations */
+    seize_exempt[] = { "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg" }; //Arma items that will not get seized from player inventories
+    seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
+    seize_vest[] = { "V_TacVest_blk_POLICE" }; //Any specific vests you want to be seized from players
+    seize_headgear[] = { "H_Cap_police" }; //Any hats or helmets you want seized from players
+    seize_minimum_rank = 2; //Required minimum CopLevel to be able to seize items from players
+
+    /* Vehicle System Configurations */
+    chopShop_vehicles[] = { "Car", "Air" }; //Vehicles that can be chopped. (Can add: "Ship" and possibly more -> look at the BI wiki...)
+    vehicle_infiniteRepair[] = {false, false, true, false}; //Set to true for unlimited repairs with 1 toolkit. False will remove toolkit upon use. civilian, west, independent, east
+    vehicleShop_rentalOnly[] = { "B_MRAP_01_hmg_F", "B_G_Offroad_01_armed_F", "B_Boat_Armed_01_minigun_F" }; //Vehicles that can only be rented and not purchased. (Last only for the session)
+    vehicleShop_3D = false; //Add preview 3D inside Shop vehicle.       Default : False
+
+    /* Vehicle Purchase Prices */
+    vehicle_purchase_multiplier_CIVILIAN = 1; //Civilian Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_COP = .5; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_MEDIC = .75; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
+
+    /* Vehicle Rental Prices */
+    vehicle_rental_multiplier_CIVILIAN = .80; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_COP = .3; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_MEDIC = .55; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
+
+    /* Vehicle Sell Prices */
+    vehicle_sell_multiplier_CIVILIAN = .5; //Civilian Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_COP = .5; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_MEDIC = .5; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
+
+    /* "Other" Vehicle Prices */
+    vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+    vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+
+    /* Wanted System Settings *
+    /* crimes[] = {String, Bounty, Code} */
+    crimes[] = {
+        {"STR_Crime_187V","650","187V"},
+        {"STR_Crime_187","2000","187"},
+        {"STR_Crime_901","450","901"},
+        {"STR_Crime_215","200","215"},
+        {"STR_Crime_213","1000","213"},
+        {"STR_Crime_211","100","211"},
+        {"STR_Crime_207","350","207"},
+        {"STR_Crime_207A","200","207A"},
+        {"STR_Crime_390","1500","390"},
+        {"STR_Crime_487","150","487"},
+        {"STR_Crime_488","70","488"},
+        {"STR_Crime_480","100","480"},
+        {"STR_Crime_481","100","481"},
+        {"STR_Crime_482","500","482"},
+        {"STR_Crime_483","950","483"},
+        {"STR_Crime_459","650","459"},
+        {"STR_Crime_666","200","666"},
+        {"STR_Crime_667","4500","667"},
+        {"STR_Crime_668","1500","668"},
+        {"STR_Crime_1","250","1"},
+        {"STR_Crime_2","200","2"},
+        {"STR_Crime_3","150","3"},
+        {"STR_Crime_4","250","4"},
+        {"STR_Crime_5","100","5"},
+        {"STR_Crime_6","80","6"},
+        {"STR_Crime_7","150","7"},
+        {"STR_Crime_8","5000","8"},
+        {"STR_Crime_9","5000","9"},
+        {"STR_Crime_10","15000","10"},
+        {"STR_Crime_11","10000","11"},
+        {"STR_Crime_12","2500","12"},
+        {"STR_Crime_13","1500","13"},
+        {"STR_Crime_14","500","14"},
+        {"STR_Crime_15","2500","15"},
+        {"STR_Crime_16","1500","16"},
+        {"STR_Crime_17","100","17"},
+        {"STR_Crime_18","1500","18"},
+        {"STR_Crime_19","2500","19"},
+        {"STR_Crime_20","500","20"},
+        {"STR_Crime_21","500","21"},
+        {"STR_Crime_22","2000","22"},
+        {"STR_Crime_23","5000","23"},
+        {"STR_Crime_24","10000","24"},
+        {"STR_Crime_25","20000","25"}
+    };
 };
 
-//Virtual Items
-class VirtualItems {
-	//Misc
-	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "icons\pickaxe.paa")
-	VITEMMACRO(fuelEmpty, "STR_Item_FuelE", "fuelEmpty", 2, -1, -1, false, -1, "icons\ico_fuelempty.paa")
-	VITEMMACRO(fuelFull, "STR_Item_FuelF", "fuelFull", 5, 850, 500, false, -1, "icons\ico_fuel.paa")
-	VITEMMACRO(spikeStrip, "STR_Item_SpikeStrip", "spikeStrip", 15, 2500, 1200, false, -1, "icons\spikestrip.paa")
-	VITEMMACRO(lockpick, "STR_Item_Lockpick", "lockpick", 1, 150, 75, false, -1, "icons\lockpick.paa")
-	VITEMMACRO(goldbar, "STR_Item_GoldBar", "goldBar", 12, -1, 95000, false, -1, "icons\goldbar.paa")
-	VITEMMACRO(blastingcharge, "STR_Item_BCharge", "blastingCharge", 15, 35000, -1, true, -1, "icons\ico_blastingCharge.paa")
-	VITEMMACRO(boltcutter, "STR_Item_BCutter", "boltCutter", 5, 7500, -1, true, -1, "icons\ico_boltcutters.paa")
-	VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 2500, -1, false, -1, "icons\defusekit.paa")
-	VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 75000, -1, false, -1, "icons\ico_storageSmall.paa")
-	VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 150000, -1, false, -1, "icons\ico_storageBig.paa")
-
-	//Mined Items
-	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 7, -1, -1, false, -1, "icons\oil_unprocessed.paa")
-	VITEMMACRO(oil_processed, "STR_Item_OilP", "oilProcessed", 6, -1, 3200, false, -1, "icons\oil_processed.paa")
-	VITEMMACRO(copper_unrefined, "STR_Item_CopperOre", "copperUnrefined", 3, -1, -1, false, -1, "icons\copper_ore.paa")
-	VITEMMACRO(copper_refined, "STR_Item_CopperIngot", "copperRefined", 2, -1, 1500, false, -1, "icons\copper.paa")
-	VITEMMACRO(iron_unrefined, "STR_Item_IronOre", "ironUnrefined", 5, -1, -1, false, -1, "icons\iron_ore.paa")
-	VITEMMACRO(iron_refined, "STR_Item_IronIngot", "ironRefined", 3, -1, 3200, false, -1, "icons\iron.paa")
-	VITEMMACRO(salt_unrefined, "STR_Item_Salt", "saltUnrefined", 3, -1, -1, false, -1, "icons\salt_unprocessed.paa")
-	VITEMMACRO(salt_refined, "STR_Item_SaltR", "saltRefined", 1, -1, 1450, false, -1, "icons\salt.paa")
-	VITEMMACRO(sand, "STR_Item_Sand", "sand", 3, -1, -1, false, -1, "icons\sand.paa")
-	VITEMMACRO(glass, "STR_Item_Glass", "glass", 1, -1, 1450, false, -1, "icons\glass.paa")
-	VITEMMACRO(diamond_uncut, "STR_Item_DiamondU", "diamondUncut", 4, -1, 750, false, -1, "icons\diamond_unprocessed.paa")
-	VITEMMACRO(diamond_cut, "STR_Item_DiamondC", "diamondCut", 2, -1, 2000, false, -1, "icons\diamond.paa")
-	VITEMMACRO(rock, "STR_Item_Rock", "rock", 6, -1, -1, false, -1, "icons\rock.paa")
-	VITEMMACRO(cement, "STR_Item_CementBag", "cement", 5, -1, 1950, false, -1, "icons\cement.paa")
-	VITEMMACRO(weaponmg, "STR_Item_Weaponmg", "weaponmg", 20, -1, 1950, true, -1, "icons\weaponmg.paa")
-
-	//Drugs
-	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "icons\heroin_unprocessed.paa")
-	VITEMMACRO(heroin_processed, "STR_Item_HeroinP", "heroinProcessed", 4, -1, 2560, true, -1, "icons\heroin_processed.paa")
-	VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 4, -1, -1, true, -1, "icons\cannabis.paa")
-	VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 3, 2800, 2350, true, -1, "icons\ico_marijuana.paa")
-	VITEMMACRO(cocaine_unprocessed, "STR_Item_CocaineU", "cocaineUnprocessed", 6, -1, 3000, true, -1, "icons\cocaine_unprocessed.paa")
-	VITEMMACRO(cocaine_processed, "STR_Item_CocaineP", "cocaineProcessed", 4, -1, 5000, true, -1, "icons\cocaine_processed.paa")
-
-	//Drink
-	VITEMMACRO(redgull, "STR_Item_RedGull", "redgull", 1, 1500, 200, false, 100, "icons\ico_redgull.paa")
-	VITEMMACRO(coffee, "STR_Item_Coffee", "coffee", 1, 10, 5, false, 100, "icons\coffee.paa")
-	VITEMMACRO(waterBottle, "STR_Item_WaterBottle", "waterBottle", 1, 10, 5, false, 100, "icons\ico_waterBottle.paa")
-	//FASTFOOD
-	VITEMMACRO(cocacola, "STR_Item_CocaCola", "cocaCola", 2, 175, 135, false, 100, "icons\cola.paa")
-	VITEMMACRO(fanta, "STR_Item_Fanta", "Fanta", 2, 175, 135, false, 100, "icons\fanta.paa")
-	VITEMMACRO(sprite, "STR_Item_Sprite", "Sprite", 2, 175, 135, false, 100, "icons\sprite.paa")
-
-	//Food
-	VITEMMACRO(apple, "STR_Item_Apple", "apple", 1, 65, 50, false, 10, "icons\apple.paa")
-	VITEMMACRO(peach, "STR_Item_Peach", "peach", 1, 68, 55, false, 10, "icons\peach.paa")
-	VITEMMACRO(tbacon, "STR_Item_TBacon", "tbacon", 1, 75, 25, false, 40, "icons\ico_tbacon.paa")
-	VITEMMACRO(donut, "STR_Item_Donuts", "donut", 1, 120, 60, false, 30, "icons\food.paa")
-	VITEMMACRO(rabbit_raw, "STR_Item_Rabbit", "rabbitRaw", 2, -1, 65, false, -1, "icons\food.paa")
-	VITEMMACRO(rabbit_grilled, "STR_Item_RabbitGrilled", "rabbitGrilled", 1, 150, 115, false, 20, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(salema_raw, "STR_Item_Salema", "salemaRaw", 2, -1, 45, false, -1, "icons\food.paa")
-	VITEMMACRO(salema_grilled, "STR_Item_SalemaGrilled", "salemaGrilled", 1, 75, 55, false, 30, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(ornate_raw, "STR_Item_OrnateMeat", "ornateRaw", 2, -1, 40, false, -1, "icons\food.paa")
-	VITEMMACRO(ornate_grilled, "STR_Item_OrnateGrilled", "ornateGrilled", 1, 175, 150, false, 25, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(mackerel_raw, "STR_Item_MackerelMeat", "mackerelRaw", 4, -1, 175, false, -1, "icons\food.paa")
-	VITEMMACRO(mackerel_grilled, "STR_Item_MackerelGrilled", "mackerelGrilled", 2, 250, 200, false, 30, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(tuna_raw, "STR_Item_TunaMeat", "tunaRaw", 6, -1, 700, false, -1, "icons\food.paa")
-	VITEMMACRO(tuna_grilled, "STR_Item_TunaGrilled", "tunaGrilled", 3, 1250, 1000, false, 100, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(mullet_raw, "STR_Item_MulletMeat", "mulletRaw", 4, -1, 250, false, -1, "icons\food.paa")
-	VITEMMACRO(mullet_fried, "STR_Item_MulletFried", "mulletFried", 2, 600, 400, false, 80, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(catshark_raw, "STR_Item_CatSharkMeat", "catsharkRaw", 6, -1, 300, false, -1, "icons\food.paa")
-	VITEMMACRO(catshark_fried, "STR_Item_CatSharkFried", "catsharkFried", 3, 750, 500, false, 100, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(turtle_raw, "STR_Item_Turtle", "turtle_raw", 6, 4000, 3000, true, -1, "icons\food.paa")
-	VITEMMACRO(turtle_soup, "STR_Item_TurtleSoup", "turtleSoup", 2, 2500, 1000, false, 100, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(hen_raw, "STR_Item_HenRaw", "henRaw", 1, -1, 35, false, -1, "icons\food.paa")
-	VITEMMACRO(hen_fried, "STR_Item_HenFried", "henFried", 1, 115, 85, false, 65, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(rooster_raw, "STR_Item_RoosterRaw", "roosterRaw", 1, -1, 35, false, -1, "icons\food.paa")
-	VITEMMACRO(rooster_grilled, "STR_Item_RoosterGrilled", "roosterGrilled", 115, 85, false, 45, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(sheep_raw, "STR_Item_SheepRaw", "sheepRaw", 2, -1, 50, false, -1, "icons\food.paa")
-	VITEMMACRO(sheep_grilled, "STR_Item_SheepGrilled", "sheepGrilled", 2, 155, 115, false, 100, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(goat_raw, "STR_Item_GoatRaw", "goatRaw", 2, -1, 75, false, -1, "icons\food.paa")
-	VITEMMACRO(goat_grilled, "STR_Item_GoatGrilled", "goatGrilled", 2, 175, 135, false, 100, "icons\ico_cookedMeat.paa")
-	//FASTFOOD
-	VITEMMACRO(hamburger, "STR_Item_Hamburger", "Hamburger", 2, 175, 135, false, 100, "icons\burgers.paa")
-	VITEMMACRO(cheeseburger, "STR_Item_Cheeseburger", "Cheeseburger", 2, 175, 135, false, 100, "icons\burgers.paa")
-	VITEMMACRO(gyrosteller, "STR_Item_Gyrosteller", "Gyrosteller", 2, 175, 135, false, 100, "icons\gyrosteller.paa")
-	
-};
-
-
-/*
-	Licenses
-	
-	Params:
-	CLASS ENTRY,DisplayName,VariableName,price,illegal,side indicator
-*/
-class Licenses {
-	LICENSEMACRO(driver,"STR_License_Driver","driver",500,false,"civ")
-	LICENSEMACRO(boat,"STR_License_Boat","boat",1000,false,"civ")
-	LICENSEMACRO(pilot,"STR_License_Pilot","pilot",25000,false,"civ")
-	LICENSEMACRO(gun,"STR_License_Firearm","gun",10000,false,"civ")
-	LICENSEMACRO(dive,"STR_License_Diving","dive",2000,false,"civ")
-	LICENSEMACRO(oil,"STR_License_Oil","oil",10000,false,"civ")
-	LICENSEMACRO(cAir,"STR_License_Pilot","cAir",15000,false,"cop")
-	LICENSEMACRO(coastguard,"STR_License_CG","cg",8000,false,"cop")
-	LICENSEMACRO(heroin,"STR_License_Heroin","heroin",25000,true,"civ")
-	LICENSEMACRO(marijuana,"STR_License_Marijuana","marijuana",19500,true,"civ")
-	LICENSEMACRO(medmarijuana,"STR_License_Medmarijuana","medmarijuana",15000,false,"civ")
-	LICENSEMACRO(rebel,"STR_License_Rebel","rebel",250000,true,"civ")
-	LICENSEMACRO(trucking,"STR_License_Truck","trucking",20000,false,"civ")
-	LICENSEMACRO(diamond,"STR_License_Diamond","diamond",35000,false,"civ")
-	LICENSEMACRO(salt,"STR_License_Salt","salt",12000,false,"civ")
-	LICENSEMACRO(cocaine,"STR_License_Cocaine","cocaine",30000,false,"civ")
-	LICENSEMACRO(sand,"STR_License_Sand","sand",14500,false,"civ")
-	LICENSEMACRO(iron,"STR_License_Iron","iron",9500,false,"civ")
-	LICENSEMACRO(copper,"STR_License_Copper","copper",8000,false,"civ")
-	LICENSEMACRO(cement,"STR_License_Cement","cement",6500,false,"civ")
-	LICENSEMACRO(mAir,"STR_License_Pilot","mAir",15000,false,"med")
-	LICENSEMACRO(home,"STR_License_Home","home",75000,false,"civ")
-	LICENSEMACRO(heavyweapon,"STR_License_Heavyweapon","heavyweapon",250000,false,"civ")
-	LICENSEMACRO(Theorie,"STR_License_Theorie","Theorie",250000,false,"civ")
-	LICENSEMACRO(ausweis,"STR_License_Ausweis","ausweis",250,false,"civ")
-	LICENSEMACRO(gsg,"STR_License_GSG","gsg",1000,false,"cop")
-};
-
-class VirtualShops {
-	class market {
-		name = "STR_Shops_Market";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter" };
-	};	
-	
-	class redburger {
-		name = "STR_Shops_RedBurger";
-		items[] = { "hamburger", "cheeseburger", "cocacola", "fanta", "sprite" };
-	};	
-	
-	class gyros {
-		name = "STR_Shops_Gyros";
-		items[] = { "gyrosteller", "cocacola", "fanta", "sprite" };
-	};
-
-	class handwerk {
-		name = "STR_Shops_Handwerk";
-		items[] = { "lockpick", "pickaxe", "fuelFull", "boltcutter", "storagesmall", "storagebig" };
-	};		
-	
-	class schmuggel {
-		name = "STR_Shops_Schmuggel";
-		items[] = { "weaponmg" };
-	};	
-	
-	class richis {
-		name = "STR_Shops_Richis";
-		items[] = { "storagesmall", "storagebig" };
-	};
-	
-	class fleischerei {
-		name = "STR_Shops_Fleischerei";
-		items[] = { "rabbit_grilled", "tbacon", };
-	};
-	
-	class rebel {
-		name = "STR_Shops_Rebel";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
-	};
-
-	class gang {
-		name = "STR_Shops_Gang";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
-	};
-
-	class wongs {
-		name = "STR_Shops_Wongs";
-		items[] = { "turtle_soup", "turtle_raw" };
-	};
-
-	class coffee {
-		name = "STR_Shops_Coffee";
-		items[] = { "coffee", "donuts" };
-	};
-	
-	class drugdealer {
-		name = "STR_Shops_DrugDealer";
-		items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
-	};
-
-	class oil {
-		name = "STR_Shops_Oil";
-		items[] = { "oil_processed", "pickaxe", "fuelFull" };
-	};
-
-	class fishmarket {
-		name = "STR_Shops_FishMarket";
-		items[] = { "salema_raw", "salema_grilled", "ornate_raw", "ornate_grilled", "mackerel_raw", "mackerel_grilled", "tuna_raw", "tuna_grilled", "mullet_raw", "mullet_fried", "catshark_raw", "catshark_fried" };
-	};
-
-	class glass {
-		name = "STR_Shops_Glass";
-		items[] = { "glass" };
-	};
-
-	class iron  {
-		name = "STR_Shops_Minerals";
-		items[] = { "iron_refined", "copper_refined" };
-	};
-
-	class diamond {
-		name = "STR_Shops_Diamond";
-		items[] = { "diamond_uncut", "diamond_cut" };
-	};
-
-	class salt {
-		name = "STR_Shops_Salt";
-		items[] = { "salt_refined" };
-	};
-
-	class cop {
-		name = "STR_Shops_Cop";
-		items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit_grilled", "apple", "redgull", "fuelFull", "defusekit" };
-	};
-	
-	class med {
-		name = "STR_Shops_Med";
-		items[] = { "donuts", "coffee","waterBottle", "rabbit_grilled", "apple", "redgull" };
-	};
-
-	class cement {
-		name = "STR_Shops_Cement";
-		items[] = { "cement" };
-	};
-
-	class gold {
-		name = "STR_Shops_Gold";
-		items[] = { "goldbar" };
-	};
-};
-
+#include "Config_Clothing.hpp"
+#include "Config_Licenses.hpp"
 #include "Config_Vehicles.hpp"
-#include "Config_Houses.hpp"
+#include "Config_vItems.hpp"
+#include "Config_Weapons.hpp"
+#include "Config_Gather.hpp"
+#include "Config_SpawnPoints.hpp"
+#include "Config_Process.hpp"
