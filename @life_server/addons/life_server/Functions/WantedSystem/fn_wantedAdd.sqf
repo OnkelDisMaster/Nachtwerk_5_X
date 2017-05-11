@@ -65,6 +65,8 @@ switch (_type) do
     case "23": {_type = ["23",2500]};
     case "24": {_type = ["24",5000]};
     case "25": {_type = ["25",10000]};
+	//Neue
+	case "1000": {_type = ["1000",10000]};
 =======
 if(_uid == "" OR _type == "" OR _name == "") exitWith {}; //Bad data passed.
 
@@ -160,6 +162,8 @@ switch(_type) do
 	case "64": {_type = ["Hausfriedensbruch",125000]};
 	case "65": {_type = ["Falschaussage",25000]};
 	case "66": {_type = ["Verwarnung",1]};
+	//Neue
+	case "1000": {_type = ["ATM Raub",25000]};
 >>>>>>> origin/master
     default {_type = [];};
 };
