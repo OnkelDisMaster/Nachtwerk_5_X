@@ -1,12 +1,15 @@
+#include "\life_server\script_macros.hpp"
 /*
-	File: fn_asyncCall.sqf
-	Author: Bryan "Tonic" Boardwine
-	Description:
-	Commits an asynchronous call to ExtDB
-	Parameters:
-		0: STRING (Query to be ran).
-		1: INTEGER (1 = ASYNC + not return for update/insert, 2 = ASYNC + return for query's).
-		3: BOOL (True to return a single array, false to return multiple entries mainly for garage).
+    File: fn_asyncCall.sqf
+    Author: Bryan "Tonic" Boardwine
+
+    Description:
+    Commits an asynchronous call to ExtDB
+
+    Parameters:
+        0: STRING (Query to be ran).
+        1: INTEGER (1 = ASYNC + not return for update/insert, 2 = ASYNC + return for query's).
+        3: BOOL (True to return a single array, false to return multiple entries mainly for garage).
 */
 private["_queryStmt","_mode","_multiarr","_queryResult","_key","_return","_loop"];
 _queryStmt = [_this,0,"",[""]] call BIS_fnc_param;
@@ -31,7 +34,7 @@ if (_queryResult isEqualTo "[3]") then {
 
 if (_queryResult isEqualTo "[5]") then {
     _loop = true;
-    for "_i" from 0 to 1 step 0 do { // extDB2 returned that result is Multi-Part Message
+    for "_i" from 0 to 1 step 0 do { // extDB3 returned that result is Multi-Part Message
         _queryResult = "";
         for "_i" from 0 to 1 step 0 do {
             _pipe = EXTDB format["5:%1", _key];
@@ -42,7 +45,7 @@ if (_queryResult isEqualTo "[5]") then {
     };
 };
 _queryResult = call compile _queryResult;
-if ((_queryResult select 0) isEqualTo 0) exitWith {diag_log format ["extDB2: Protocol Error: %1", _queryResult]; []};
+if ((_queryResult select 0) isEqualTo 0) exitWith {diag_log format ["extDB3: Protocol Error: %1", _queryResult]; []};
 _return = (_queryResult select 1);
 if (!_multiarr && count _return > 0) then {
     _return = (_return select 0);
