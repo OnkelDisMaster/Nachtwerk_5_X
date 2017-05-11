@@ -1,72 +1,55 @@
 #include "\life_server\script_macros.hpp"
 /*
-	Author: Bryan "Tonic" Boardwine
+    File: fn_insertGang.sqf
+    Author: Bryan "Tonic" Boardwine
 
-	Description:
-	Inserts the gang into the database.
+    Description:
+    Inserts the gang into the database.
 */
-private["_ownerID","_uid","_gangName","_query","_queryResult","_gangMembers","_group"];
-_ownerID = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-_uid = [_this,1,"",[""]] call BIS_fnc_param;
-_gangName = [_this,2,"",[""]] call BIS_fnc_param;
-_ownerName = [_this,3,"",[""]] call BIS_fnc_param;
+private ["_query","_queryResult","_gangMembers","_group"];
+params [
+    ["_ownerID",objNull,[objNull]],
+    ["_uid","",[""]],
+    ["_gangName","",[""]]
+];
 _group = group _ownerID;
 
-if(isNull _ownerID OR EQUAL(_uid,"") OR EQUAL(_gangName,"")) exitWith {}; //Fail
+if (isNull _ownerID || _uid isEqualTo "" || _gangName isEqualTo "") exitWith {}; //Fail
 
 _ownerID = owner _ownerID;
-<<<<<<< HEAD
 _gangName = [_gangName] call DB_fnc_mresString;
 _query = format["SELECT id FROM gangs WHERE name='%1' AND active='1'",_gangName];
-=======
-_query = format["gangNameSelectID:%1:%2",_gangName,1];
->>>>>>> origin/master
 
-_queryResult = [_query,2,true] call DB_fnc_asyncCall;
+_queryResult = [_query,2] call DB_fnc_asyncCall;
 
 //Check to see if the gang name already exists.
-if(!(EQUAL(count _queryResult,0))) exitWith {
-	[[1,"There is already a gang created with that name please pick another name."],"life_fnc_broadcast",_ownerID,false] call life_fnc_MP;
-	life_action_gangInUse = nil;
-	PVAR_ID("life_action_gangInUse",_ownerID);
+if (!(count _queryResult isEqualTo 0)) exitWith {
+    [1,"There is already a gang created with that name please pick another name."] remoteExecCall ["life_fnc_broadcast",_ownerID];
+    life_action_gangInUse = nil;
+    _ownerID publicVariableClient "life_action_gangInUse";
 };
 
-<<<<<<< HEAD
 _query = format["SELECT id FROM gangs WHERE members LIKE '%2%1%2' AND active='1'",_uid,"%"];
-=======
-_query = format["gangIDPlayer:%2%1%2",_uid,"%"];
->>>>>>> origin/master
 
-_queryResult = [_query,2,true] call DB_fnc_asyncCall;
+_queryResult = [_query,2] call DB_fnc_asyncCall;
 
 //Check to see if this person already owns or belongs to a gang.
-if(!(EQUAL(count _queryResult,0))) exitWith {
-	[[1,"You are currently already active in a gang, please leave the gang first."],"life_fnc_broadcast",_ownerID,false] call life_fnc_MP;
-	life_action_gangInUse = nil;
-	PVAR_ID("life_action_gangInUse",_ownerID);
+if (!(count _queryResult isEqualTo 0)) exitWith {
+    [1,"You are currently already active in a gang, please leave the gang first."] remoteExecCall ["life_fnc_broadcast",_ownerID];
+    life_action_gangInUse = nil;
+    _ownerID publicVariableClient "life_action_gangInUse";
 };
 
 //Check to see if a gang with that name already exists but is inactive.
-<<<<<<< HEAD
 _query = format["SELECT id, active FROM gangs WHERE name='%1' AND active='0'",_gangName];
-=======
-_query = format["gangNameSelectID:%1:%2",_gangName,0];
->>>>>>> origin/master
 
-_queryResult = [_query,2,true] call DB_fnc_asyncCall;
-_gangMembers = [[_uid,_ownerName]];
+_queryResult = [_query,2] call DB_fnc_asyncCall;
+_gangMembers = [[_uid]] call DB_fnc_mresArray;
 
-<<<<<<< HEAD
 if (!(count _queryResult isEqualTo 0)) then {
     _query = format["UPDATE gangs SET active='1', owner='%1',members='%2' WHERE id='%3'",_uid,_gangMembers,(_queryResult select 0)];
 } else {
     _query = format["INSERT INTO gangs (owner, name, members) VALUES('%1','%2','%3')",_uid,_gangName,_gangMembers];
-=======
-if(!(EQUAL(count _queryResult,0))) then {
-	_query = format["gangUpdate:%1:%2:%3",_uid,_gangMembers,(_queryResult select 0)];
-} else {
-	_query = format["gangInsert:%1:%2:%3",_uid,_gangName,_gangMembers];
->>>>>>> origin/master
 };
 
 _queryResult = [_query,1] call DB_fnc_asyncCall;
@@ -75,20 +58,12 @@ _group setVariable["gang_name",_gangName,true];
 _group setVariable["gang_owner",_uid,true];
 _group setVariable["gang_bank",0,true];
 _group setVariable["gang_maxMembers",8,true];
-<<<<<<< HEAD
 _group setVariable["gang_members",[_uid],true];
 [_group] remoteExecCall ["life_fnc_gangCreated",_ownerID];
 
 uiSleep 0.35;
 _query = format["SELECT id FROM gangs WHERE owner='%1' AND active='1'",_uid];
-=======
-_group setVariable["gang_members",[[_uid,_ownerName]],true];
-[[_group],"life_fnc_gangCreated",_ownerID,false] call life_fnc_MP;
 
-sleep 0.35;
-_query = format["gangNameSelectID:%1:%2",_uid,1];
->>>>>>> origin/master
+_queryResult = [_query,2] call DB_fnc_asyncCall;
 
-_queryResult = [_query,2,true] call DB_fnc_asyncCall;
-
-_group SVAR ["gang_id",SEL(_queryResult,0),true];
+_group setVariable ["gang_id",(_queryResult select 0),true];

@@ -7,9 +7,9 @@
     can be properly inserted into the database without causing
     any problems. The return method is 'hacky' but it's effective.
 */
-private ["_array"];
+private["_array"];
 _array = [_this,0,[],[[]]] call BIS_fnc_param;
-_array = str _array;
+_array = str(str(_array));
 _array = toArray(_array);
 
 for "_i" from 0 to (count _array)-1 do
@@ -24,4 +24,4 @@ for "_i" from 0 to (count _array)-1 do
     };
 };
 
-str(toString(_array));
+toString(_array);

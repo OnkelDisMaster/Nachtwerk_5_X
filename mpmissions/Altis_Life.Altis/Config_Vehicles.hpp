@@ -13,15 +13,14 @@ class CarShops {
     *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
     */
     class civ_car {
-        side = "civ"; 
+        side = "civ";
         vehicles[] = {
             { "B_Quadbike_01_F", { "", "", -1 } },
             { "C_Hatchback_01_F", { "", "", -1 } },
             { "C_Offroad_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
             { "C_Hatchback_01_sport_F", { "", "", -1 } },
-            { "C_Van_01_transport_F", { "", "", -1 } },
-			{ "C_Offroad_02_unarmed_black_F", { "", "", -1 } }
+            { "C_Van_01_transport_F", { "", "", -1 } }
         };
     };
 
@@ -43,13 +42,11 @@ class CarShops {
             { "I_Truck_02_covered_F", { "", "", -1 } },
             { "B_Truck_01_transport_F", { "", "", -1 } },
             { "O_Truck_03_transport_F", { "", "", -1 } },
-			{ "O_Truck_03_ammo_F", { "", "", -1 } },
             { "O_Truck_03_covered_F", { "", "", -1 } },
             { "B_Truck_01_box_F", { "", "", -1 } },
             { "O_Truck_03_device_F", { "", "", -1 } },
             { "C_Van_01_fuel_F", { "", "", -1 } },
             { "I_Truck_02_fuel_F", { "", "", -1 } },
-			{ "O_Truck_03_fuel_F", { "", "", -1 } },
             { "B_Truck_01_fuel_F", { "", "", -1 } }
         };
     };
@@ -87,10 +84,9 @@ class CarShops {
         side = "med";
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_Van_01_box_F", { "", "", -1 } },
-            { "B_Truck_01_medical_F", { "", "", -1 } },
-			{ "C_Offroad_02_unarmed_black_F", { "", "", -1 } },
-			{ "C_SUV_01_F", { "", "", -1 } }
+            { "I_Truck_02_medical_F", { "", "", -1 } },
+            { "O_Truck_03_medical_F", { "", "", -1 } },
+            { "B_Truck_01_medical_F", { "", "", -1 } }
         };
     };
 
@@ -105,14 +101,11 @@ class CarShops {
     class cop_car {
         side = "cop";
         vehicles[] = {
-			{ "B_Quadbike_01_F", { "", "", -1 } },
-            { "C_Offroad_01_F", { "life_coplevel", "SCALAR", 2 } },
-            { "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
-            { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 2 } },
-            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 3 } },
-			{ "O_T_LSV_02_unarmed_F", { "life_coplevel", "SCALAR", 5 } },
-			{ "C_Offroad_02_unarmed_black_F", { "life_coplevel", "SCALAR", 2 } },
-			{ "O_APC_Wheeled_02_rcws_F", { "life_coplevel", "SCALAR", 5 } }
+            { "C_Offroad_01_F", { "", "", -1 } },
+            { "C_SUV_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 1 } },
+            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 2 } },
+            { "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 3 } }
         };
     };
 
@@ -120,9 +113,7 @@ class CarShops {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", { "", "", -1 } },
-            { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 3 } },
-			{ "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 2 } },
-			{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 2 } }
+            { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 3 } }
         };
     };
 
@@ -207,6 +198,19 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
+    class B_MRAP_01_hmg_F {
+        vItemSpace = 100;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 750000;
+        textures[] = {
+            { "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } }
+        };
+    };
+
     class B_Boat_Armed_01_minigun_F {
         vItemSpace = 175;
         licenses[] = { {""}, {"cg"}, {""}, {""} };
@@ -222,70 +226,17 @@ class LifeCfgVehicles {
     };
 
     class O_Truck_03_transport_F {
-        vItemSpace = 350;
+        vItemSpace = 285;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 800000;
-        textures[] = { 
-		   { "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa"
-            } }
-		};
-    };
-	
-	class O_Truck_03_fuel_F {
-        vItemSpace = 800;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 1000000;
-        textures[] = { 
-		   { "Smell Tank", "civ", {
-                "textures\ArmA3-Smell-Tempesttank0.jpg",
-				"textures\ArmA3-Smell-Tempesttank1.jpg",
-				"textures\ArmA3-Smell-Tempesttank2.jpg"
-           } }
-		};
-    };
-	
-        class O_Truck_03_ammo_F {
-        vItemSpace = 2500;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 3000000;
-        textures[] = { 
-		   { "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa"
-            } }
-		};
+        price = 200000;
+        textures[] = { };
     };
 
     class O_Truck_03_device_F {
-        vItemSpace = 700;
+        vItemSpace = 350;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 1450000;
-        textures[] = { 
-  	       { "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa"
-            } }
-		};
+        price = 450000;
+        textures[] = { };
     };
 
     class Land_CargoBox_V1_F {
@@ -390,26 +341,8 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
-            { "State Police", "cop", {
-                "textures\policeoff.jpg"
-			 } },
-            { "SWAT", "cop", {
-                "textures\swatoff.jpg"
-            } },
-			{ "Sheriff", "cop", {
-                "textures\SDOff.jpg"
-            } },
-			{ "DEA", "cop", {
-                "textures\DEAoff.jpg"
-            } },
-			{ "Monster", "civ", {
-                "textures\monsterenergy_off.jpg"
-            } },
-			{ "Unicorn", "civ", {
-                "textures\ziv_offroad.jpg"
-            } },
-			{ "Gay", "civ", {
-                "textures\ziv_offroad_Gay.jpg"
+            { "Police", "cop", {
+                "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
         };
     };
@@ -456,11 +389,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-            { "State Police", "cop", {
-                "textures\Hatchbackpol.jpg"
-            } },
-			{ "Monster", "civ", {
-                "textures\hatchback_sport_ken_block.jpg"
+            { "Police", "cop", {
+                "#(ai,64,64,1)Fresnel(1.3,7)"
             } }
         };
     };
@@ -496,9 +426,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            } },
-			{ "City Police", "cop", {
-                "textures\PDQUAD.jpg"
             } }
         };
     };
@@ -534,23 +461,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class O_Truck_03_covered_F {
-        vItemSpace = 500;
+        vItemSpace = 300;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 1250000;
-        textures[] = {
-	       { "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa",
-				"textures\Mandes4.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa",
-				"textures\Manwd4.paa"
-            } }
-		};
+        price = 250000;
+        textures[] = {};
     };
 
     class C_Hatchback_01_F {
@@ -601,44 +515,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Police", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
-			} },
-			{ "APD Sheriff", "cop", {
-                "textures\BTsheriff.jpg"
-			} },
-			{ "State Police", "cop", {
-                "textures\policesuv.jpg"
             } },
-			{ "DEA", "cop", {
-                "textures\DEAsuv.jpg"
-            } },
-			{ "Sheriff", "cop", {
-                "textures\BTsheriffSuv.jpg"
-            } },
-			{ "HWY Police", "cop", {
-                "textures\HWYsuv.jpg"
-            } },
-			{ "Trump", "civ", {
-                "textures\TrumpSUV.jpg"
-            } },
-			{ "Monster", "civ", {
-                "textures\suv_Monster_energy_block.jpg"
-            } },
-			{ "Ambulance", "med", {
-                "textures\med_suv.jpg"
-            } }
-        };
-    };
-	
-	class O_APC_Wheeled_02_rcws_F {
-        vItemSpace = 500;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 300000;
-        textures[] = {
-            { "APD SWAT", "cop", {
-                "textures\Marid1.paa",
-				"textures\Marid2.paa",
-				"textures\MaridRCWS.paa"
-            } }
         };
     };
 
@@ -666,10 +543,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            } },
-			{ "Live Saver", "med", {
-                "textures\rtwfront.jpg",
-				"textures\rtwback.jpg"
             } }
         };
     };
@@ -679,63 +552,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 30000;
         textures[] = {
-            { "Metro Police", "cop", {
-                "textures\swathunter_1.jpg",
-				"textures\swathunter_2.jpg"
-            } },
-			{ "SWAT", "cop", {
-                "textures\APD_Swat_1.jpg",
-				"textures\swathunter_2.jpg"
-            } },
-			{ "Sheriff", "cop", {
-                "textures\SD_Hunter_1.jpg",
-				"textures\swathunter_2.jpg"
-            } },
-			{ "DEA", "cop", {
-                "textures\DEA_Hunter_1.jpg",
-				"textures\swathunter_2.jpg"
-            } },
-			{ "State Police", "cop", {
-                "textures\APDHunter_1.jpg",
-				"textures\swathunter_2.jpg"
-            } }
-        };
-    };
-	
-	class O_T_LSV_02_unarmed_F {
-        vItemSpace = 500;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 50000;
-        textures[] = {
-            { "DEA", "cop", {
-                "textures\deaquilin1.jpg",
-				"textures\deaquilin2.jpg"
-            } }
-        };
-    };
-	
-	class C_Offroad_02_unarmed_black_F {
-        vItemSpace = 80;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 50000;
-        textures[] = {
-            { "DEA", "cop", {
-                "textures\4WDDEA.jpg"
-            } },
-			{ "SWAT", "cop", {
-                "textures\4WDSWAT.jpg"
-            } },
-			{ "POLICE", "cop", {
-                "textures\4WDAPD.jpg"
-            } },
-			{ "Sheriff", "cop", {
-                "textures\4WDSD.jpg"
-            } },
-			{ "Troll", "civ", {
-                "textures\4WDTROLL.jpg"
-            } },
-			{ "Paramedic", "med", {
-                "textures\4WDMED.jpg"
+            { "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } }
         };
     };
@@ -747,17 +566,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            } }
-        };
-    };
-	
-	class I_Heli_light_03_unarmed_F {
-        vItemSpace = 200;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 200000;
-        textures[] = {
-            { "Black", "cop", {
-                "textures\HellcatPD.jpg"
             } }
         };
     };
@@ -809,14 +617,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             } },
-            { "Life Saver Medic", "med", {
-                "textures\MDHM.jpg"
-			} },
-            { "State Police", "cop", {
-                "textures\police_heli.jpg"
-            } },
-			{ "Sheriff", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
+            { "EMS White", "med", {
+                "#(argb,8,8,3)color(1,1,1,0.8)"
             } }
         };
     };
@@ -843,20 +645,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
-            { "Rescue", "med", {
-                "textures\OrcaRescue.jpg"
-            } },
-			{ "State Police", "cop", {
-                "textures\policeorc.jpg"
-            } },
-			{ "Life Saver", "med", {
-                "textures\westpacorc.jpg"
-            } },
-			{ "Seven News", "civ", {
-                "textures\sevenorc.jpg"
-            } },
-			{ "Nine News", "civ", {
-                "textures\nineorc.jpg"
+            { "EMS White", "med", {
+                "#(argb,8,8,3)color(1,1,1,0.8)"
             } }
         };
     };

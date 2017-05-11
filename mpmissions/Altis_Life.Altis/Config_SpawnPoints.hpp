@@ -53,7 +53,7 @@ class CfgSpawnPoints {
         };
 
         class RebelS {
-            displayName = "Rebellen HQ";
+            displayName = "Northern Rebel Base";
             spawnMarker = "Rebelop";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
@@ -79,7 +79,7 @@ class CfgSpawnPoints {
 
     class Cop {
         class Kavala {
-            displayName = "Kavala Police HQ";
+            displayName = "Kavala HQ";
             spawnMarker = "cop_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "", true } };
@@ -87,7 +87,7 @@ class CfgSpawnPoints {
         };
 
         class Athira {
-            displayName = "Athira Police HQ";
+            displayName = "Athira HQ";
             spawnMarker = "cop_spawn_3";
             icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
             licenses[] = { { "", true } };
@@ -95,7 +95,7 @@ class CfgSpawnPoints {
         };
 
         class Pyrgos {
-            displayName = "Pyrgos Police HQ";
+            displayName = "Pyrgos HQ";
             spawnMarker = "cop_spawn_2";
             icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
             licenses[] = { { "", true } };
@@ -103,7 +103,7 @@ class CfgSpawnPoints {
         };
 
         class Air {
-            displayName = "Air Police HQ";
+            displayName = "Air HQ";
             spawnMarker = "cop_spawn_4";
             icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
             licenses[] = { { "cAir", true } };
@@ -111,32 +111,11 @@ class CfgSpawnPoints {
         };
 
         class HW {
-            displayName = "Sheriff Outpost";
+            displayName = "HW Patrol";
             spawnMarker = "cop_spawn_5";
             icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
             licenses[] = { { "", true } };
-            level[] = { "life_coplevel", "SCALAR", 1 };
-        };
-		class AC {
-            displayName = "Altis Corrections";
-            spawnMarker = "cop_spawn_11";
-            icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-            licenses[] = { { "", true } };
-            level[] = { "life_coplevel", "SCALAR", 1 };
-        };
-		class SD {
-            displayName = "Sheriff Department";
-            spawnMarker = "cop_spawn_10";
-            icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-            licenses[] = { { "", true } };
-            level[] = { "life_coplevel", "SCALAR", 1 };
-        };
-		class DEA {
-            displayName = "SWAT/DEA HQ";
-            spawnMarker = "cop_spawn_12";
-            icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-            licenses[] = { { "", true } };
-            level[] = { "life_coplevel", "SCALAR", 6 };
+            level[] = { "life_coplevel", "SCALAR", 3 };
         };
     };
 

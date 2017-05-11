@@ -20,7 +20,6 @@ class CfgRemoteExec {
         F(life_fnc_copLights,CLIENT)
         F(life_fnc_copSearch,CLIENT)
         F(life_fnc_copSiren,CLIENT)
-		F(life_fnc_copSiren2,CLIENT)
         F(life_fnc_freezePlayer,CLIENT)
         F(life_fnc_gangCreated,CLIENT)
         F(life_fnc_gangDisbanded,CLIENT)
@@ -108,10 +107,6 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleDelete,SERVER)
         F(TON_fnc_vehicleStore,SERVER)
         F(TON_fnc_vehicleUpdate,SERVER)
-		F(TON_fnc_playerLogged,SERVER) //DynMarket
-        F(TON_fnc_getUpdate,SERVER) //DynMarket
-        F(TON_fnc_changePrice, SERVER) //DynMarket
-        F(life_fnc_update,CLIENT) //DynMarket
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)

@@ -18,7 +18,7 @@ class CfgServer {
 class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
-	#include "dialog\hud_stats.hpp"
+    #include "dialog\hud_stats.hpp"
 };
 
 class CfgFunctions {
@@ -32,13 +32,6 @@ class CfgSounds {
         sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
         titles[] = {};
     };
-	
-	class speech
-	{
-		name = "speech";
-		sound[] = {"sounds\speech.ogg", 1.0, 1};
-		titles[] = {};
-	};
 
     class medicSiren {
         name = "medicSiren";

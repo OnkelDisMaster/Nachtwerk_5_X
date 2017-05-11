@@ -60,7 +60,6 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
-		class robATM {}; //ATM Ausrauben
     };
 
     class Admin {
@@ -132,8 +131,6 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
-		class showArrestDialog {};
-		class arrestDialog_Arrest {};
     };
 
     class Dialog_Controls {
@@ -208,8 +205,6 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
-		class robstore {};
-		class robTank {};
     };
 
     class Gangs    {
@@ -361,23 +356,5 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
-    };
-	
-	class Ausweis
-    {
-        file = "core\Ausweis";
-        class Lizenzsehen {};
-        class Lizenzzeigen {};
-    };
-	
-	class DynMarket
-    {
-        file = "core\DynMarket";
-        class bought {};
-        class update {};
-        class DisplayPrices {};
-        class LoadIntoListbox {};
-        class ForcePrice {};
-        class DYNMARKET_getPrice {};
     };
 };

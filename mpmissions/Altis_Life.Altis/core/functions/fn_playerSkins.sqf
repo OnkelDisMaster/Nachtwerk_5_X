@@ -45,33 +45,6 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
-		if (uniform player isEqualTo "U_Competitor") then {
-            _skinName = "textures\SD_uniform.jpg";
-            if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
-                if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\SD_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
-                };
-            };
-            player setObjectTextureGlobal [0, _skinName];
-        };
-		if (uniform player isEqualTo "U_B_CTRG_1") then {
-            _skinName = "textures\DEA.paa";
-            if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
-                if (FETCH_CONST(life_coplevel) >= 5) then {
-                    _skinName = ["textures\DEA_",(FETCH_CONST(life_coplevel)),".paa"] joinString "";
-                };
-            };
-            player setObjectTextureGlobal [0, _skinName];
-        };
-		if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
-            _skinName = "textures\SWAT.paa";
-            if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
-                if (FETCH_CONST(life_coplevel) >= 5) then {
-                    _skinName = ["textures\SWAT_",(FETCH_CONST(life_coplevel)),".paa"] joinString "";
-                };
-            };
-            player setObjectTextureGlobal [0, _skinName];
-        };
     };
 
     case independent: {
