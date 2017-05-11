@@ -156,6 +156,8 @@ class CfgFunctions
 		{
 			file = "\life_server\Functions\Jail";
 			class jailSys {};
+			class jailTimer {};
+			class jailPlayer {};
 		};
 
 		class Client_Code
