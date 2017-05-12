@@ -1,6 +1,6 @@
 disableChannels[]={0,1,2};
 
-#include "Config_Spyglass.hpp"
+/*#include "Config_Spyglass.hpp"*/
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "Config_Master.hpp"

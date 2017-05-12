@@ -81,8 +81,8 @@ class CfgRemoteExec {
         F(life_fnc_wantedFetch,SERVER)
         F(life_fnc_wantedProfUpdate,SERVER)
         F(life_fnc_wantedRemove,SERVER)
-        F(SPY_fnc_cookieJar,SERVER)
-        F(SPY_fnc_observe,SERVER)
+        //F(SPY_fnc_cookieJar,SERVER)
+        //F(SPY_fnc_observe,SERVER)
         F(TON_fnc_addContainer,SERVER)
         F(TON_fnc_addHouse,SERVER)
         F(TON_fnc_chopShopSell,SERVER)
@@ -160,7 +160,7 @@ class CfgRemoteExec {
         F(life_fnc_say3D,ANYONE)
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
-        F(SPY_fnc_notifyAdmins,ANYONE)
+        //F(SPY_fnc_notifyAdmins,ANYONE)
     };
 
     class Commands {
