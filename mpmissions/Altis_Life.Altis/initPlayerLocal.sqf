@@ -17,3 +17,17 @@ if (!hasInterface && !isServer) exitWith {
 //if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "SpyGlass\fn_initSpy.sqf";};
 
 [] execVM "core\init.sqf";
+
+//Illegale Marker nicht für Cops
+
+    if (playerSide == west) then 
+		{
+            private["_illegalmarkers"];
+            while {true} do
+            {
+                    _illegalmarkers = ["heroin_1","cocaine_1","cocaine_2","weed_1","meth_1","Dealer_1_1","Dealer_1_2","Dealer_1_3"];
+                    
+                    { deleteMarkerLocal _x; } forEach _illegalmarkers;
+                    sleep 10;
+            };
+		};
