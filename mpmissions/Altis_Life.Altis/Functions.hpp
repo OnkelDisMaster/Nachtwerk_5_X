@@ -37,6 +37,7 @@ class Life_Client_Core {
 	class holy_help {
 		file = "core\holy_help";
 		class holy_help;
+		class holy_bug;
 	};
 	
     class Actions {
