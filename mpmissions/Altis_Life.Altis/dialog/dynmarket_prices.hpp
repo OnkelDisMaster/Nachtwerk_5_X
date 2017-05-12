@@ -34,7 +34,7 @@ class RscText_1000: Life_RscText
 {
 	idc = -1;
 
-	text = "Current Sell Price"; //--- ToDo: Localize;
+	text = "Aktueller Verkaufspreis"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.401039 * safezoneH + safezoneY;
 	w = 0.217708 * safezoneW;
@@ -44,7 +44,7 @@ class RscText_1001: Life_RscText
 {
 	idc = 7056;
 
-	text = "Please select an Item"; //--- ToDo: Localize;
+	text = "Item auswählen"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.420831 * safezoneH + safezoneY;
 	w = 0.20625 * safezoneW;
@@ -55,7 +55,7 @@ class RscText_1002: Life_RscText
 {
 	idc = -1;
 
-	text = "Amout of Items sold by You"; //--- ToDo: Localize;
+	text = "Items von dir verkauft"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.217708 * safezoneW;
