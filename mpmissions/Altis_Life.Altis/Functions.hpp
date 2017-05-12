@@ -11,6 +11,15 @@ class Socket_Reciever {
     };
 };
 
+class blackfisch_Functions {
+	tag = "bf";
+		class Scripts {
+		file = "core\scripts";
+		class lights {};
+		class lightsOn {};
+	};
+};
+
 class Life_Client_Core {
     tag = "life";
 
