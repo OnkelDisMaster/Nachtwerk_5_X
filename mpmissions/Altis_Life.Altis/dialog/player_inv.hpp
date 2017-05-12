@@ -280,7 +280,7 @@ class playerSettings {
 			idc = 3025; 
 			text = "Börse"; 
 			onButtonClick = "createDialog ""life_dynmarket_prices"";"; 
-			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH)); 
+			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH)); 
 			y = 0.805; 
 			w = (6.25 / 40); 
 			h = (1 / 25); 
