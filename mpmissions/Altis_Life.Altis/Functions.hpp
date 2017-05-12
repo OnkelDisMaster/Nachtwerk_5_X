@@ -34,6 +34,11 @@ class Life_Client_Core {
         class welcomeNotification {};
     };
 
+	class holy_help {
+		file = "core\holy_help";
+		class holy_help;
+	};
+	
     class Actions {
         file = "core\actions";
         class arrestAction {};
