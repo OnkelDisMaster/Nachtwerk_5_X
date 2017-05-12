@@ -63,6 +63,7 @@ switch (_type) do
     case "23": {_type = ["23",2500]};
     case "24": {_type = ["24",5000]};
     case "25": {_type = ["25",10000]};
+	case "2000": {_type = ["2000",25000]};   
     default {_type = [];};
 };
 

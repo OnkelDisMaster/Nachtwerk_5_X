@@ -69,6 +69,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+		class robATM  {};
     };
 
     class Admin {

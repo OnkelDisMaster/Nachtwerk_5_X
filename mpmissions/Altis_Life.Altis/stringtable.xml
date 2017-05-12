@@ -10547,6 +10547,10 @@
             <Italian>Omicidio di un agente</Italian>
             <Polish>Zabijając żołnierza</Polish>
         </Key>
+		 <Key ID="STR_Crime_2000">
+            <Original>ATM breaking</Original>
+            <German>ATM Aufgebrochen</German>
+        </Key>
     </Package>
     <Package name="FuelTank_Mission">
         <Key ID="STR_MAR_FuelTank_Storage">
