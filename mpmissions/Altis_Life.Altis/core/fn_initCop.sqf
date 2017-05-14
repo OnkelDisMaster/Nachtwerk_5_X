@@ -23,6 +23,7 @@ if (!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
     };
 };
 
+[] execVM "IgiLoad\IgiLoadInit.sqf";
 
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;

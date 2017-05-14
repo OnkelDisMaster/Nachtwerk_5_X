@@ -11,9 +11,9 @@ class Life_Settings {
 
     /* Data Logging Settings */
     battlEye_friendlyLogging = false; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
-    player_advancedLog = false; //False [default] - No advanced logging. True - Logs house purchase and sale, vehicle purchase, sale, and chop shopping, police arrests, and gang creations. Search for: advanced_log
-    player_moneyLog = false; //False [default] - No money logging. True - Logs player bank deposits, withdraws, and transfers, gang bank deposits and withdraws, money picked up off of the ground, and player robbery. Search for: money_log
-    player_deathLog = false; //False [default] - No death logging. True - Logs victim and killer, and vehicle or weapon if used, when a player dies. Search for: death_log
+    player_advancedLog = true; //False [default] - No advanced logging. True - Logs house purchase and sale, vehicle purchase, sale, and chop shopping, police arrests, and gang creations. Search for: advanced_log
+    player_moneyLog = true; //False [default] - No money logging. True - Logs player bank deposits, withdraws, and transfers, gang bank deposits and withdraws, money picked up off of the ground, and player robbery. Search for: money_log
+    player_deathLog = true; //False [default] - No death logging. True - Logs victim and killer, and vehicle or weapon if used, when a player dies. Search for: death_log
 
 /* Database Related Settings */
     /* Player Data Saving */
@@ -24,49 +24,49 @@ class Life_Settings {
     save_civilian_position = true; //Save civilian location?
     save_civilian_position_restart = true; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
     /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
-    save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
+    save_civilian_positionStrict = true; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
     save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
-    save_vehicle_damage = true; //Save vehicle damage to the database.
-    save_vehicle_illegal = true; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
+    save_vehicle_damage = false; //Save vehicle damage to the database.
+    save_vehicle_illegal = false; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
 
 
 /* System Settings */
     /* ATM & Federal Reserve System Configurations */
     global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
-    noatm_timer = 10; //Time in minutes that players cannot deposit money after selling stolen gold.
+    noatm_timer = 15; //Time in minutes that players cannot deposit money after selling stolen gold.
     minimum_cops = 5; //Minimum cops required online to rob the Federal Reserve
 
     /* Basic System Configurations */
     donor_level = true; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
-    enable_fatigue = true; //Set to false to disable the ARMA 3 fatigue system.
+    enable_fatigue = false; //Set to false to disable the ARMA 3 fatigue system.
     total_maxWeight = 24; //Static variable for the maximum weight allowed without having a backpack
     respawn_timer = 30; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Clothing System Configurations */
-    civ_skins = true; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
-    cop_extendedSkins = true; //Enable or disable cop skins by level. Before enabling, you must add all the EIGHT files to textures folder. (It must be named as: cop_uniform.jpg + cop_uniform_1.jpg, cop_uniform_2.jpg...cop_uniform_6.jpg, cop_uniform_7.jpg; meaning cop_uniform = life_coplevel=0, cop_uniform_1 = life_coplevel=1, cop_uniform_2 = life_coplevel=2, etc...)
+    civ_skins = false; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
+    cop_extendedSkins = false; //Enable or disable cop skins by level. Before enabling, you must add all the EIGHT files to textures folder. (It must be named as: cop_uniform.jpg + cop_uniform_1.jpg, cop_uniform_2.jpg...cop_uniform_6.jpg, cop_uniform_7.jpg; meaning cop_uniform = life_coplevel=0, cop_uniform_1 = life_coplevel=1, cop_uniform_2 = life_coplevel=2, etc...)
     clothing_noTP = false;  //Disable clothing preview teleport? (true = no teleport. false = teleport)
     clothing_box = true; //true = teleport to a black box. false = teleport to somewhere on map. (It only affects the game if clothing_noTP is set as false)
     clothing_masks[] = { "H_Shemag_olive", "H_Shemag_khk", "H_Shemag_tan", "H_Shemag_olive_hs", "H_ShemagOpen_khk", "H_ShemagOpen_tan", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Bandanna_aviator", "G_Bandanna_beast", "G_Bandanna_blk", "G_Bandanna_khk", "G_Bandanna_oli", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_tan", "U_O_GhillieSuit", "U_I_GhillieSuit", "U_B_GhillieSuit", "H_RacingHelmet_1_black_F", "H_RacingHelmet_1_red_F", "H_RacingHelmet_1_white_F", "H_RacingHelmet_1_blue_F", "H_RacingHelmet_1_yellow_F", "H_RacingHelmet_1_green_F", "H_RacingHelmet_1_F", "H_RacingHelmet_2_F", "H_RacingHelmet_3_F", "H_RacingHelmet_4_F" };
 
     /* Fuel System Configurations */
     pump_service = true; //Allow users to use pump service on the map. Default = false
-    fuel_cost = 80; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
-    service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
-    fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
+    fuel_cost = 800; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
+    service_chopper = 10000; //Cost to service chopper at chopper service station(Repair/Refuel).
+    fuelCan_refuel = 2500; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
-    gang_price = 75000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
-    gang_upgradeBase = 10000; //The base cost for purchasing additional slots in a gang
+    gang_price = 250000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_upgradeBase = 25000; //The base cost for purchasing additional slots in a gang
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 3; //Maximum number of houses a player can own.
+    house_limit = 4; //Maximum number of houses a player can own.
 
     /* Hunting & Fishing System Configurations */
     animaltypes_fish[] = { "Salema_F", "Ornate_random_F", "Mackerel_F", "Tuna_F", "Mullet_F", "CatShark_F", "Turtle_F" }; //Classnames of fish you can catch
@@ -74,32 +74,32 @@ class Life_Settings {
 
     /* Item-related Restrictions */
     restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
-    restrict_clothingPickup = false; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
+    restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
     restrict_weaponPickup = false; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
     restricted_weapons[] = { "hgun_P07_snds_F", "arifle_MX_F", "arifle_MXC_F" };
 
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
-    jail_seize_inventory = false; //Set to true to run the cop seize script on inmates. False will remove only weapons and magazines otherwise. (Basically used in case cops forget to seize items). [See Lines 106-111 below]
+    jail_seize_inventory = true; //Set to true to run the cop seize script on inmates. False will remove only weapons and magazines otherwise. (Basically used in case cops forget to seize items). [See Lines 106-111 below]
     sendtoJail_locations[] = { "police_hq_1", "police_hq_2", "cop_spawn_3", "cop_spawn_5", "Correctional_Facility" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
 
     /* Medical System Configurations */
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
-    revive_fee = 1500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
-    hospital_heal_fee = 100; //Fee to heal at a hospital NPC
+    revive_fee = 20000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
+    hospital_heal_fee = 10000; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 7000; //Amount of cash in bank for new cops
-    bank_civ = 3000; //Amount of cash in bank for new civillians
-    bank_med = 6500; //Amount of cash in bank for new medics
+    bank_cop = 30000; //Amount of cash in bank for new cops
+    bank_civ = 30000; //Amount of cash in bank for new civillians
+    bank_med = 30000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 500; //Payment for cops
-    paycheck_civ = 350; //Payment for civillians
-    paycheck_med = 450; //Payment for medics
+    paycheck_cop = 4500; //Payment for cops
+    paycheck_civ = 3500; //Payment for civillians
+    paycheck_med = 4000; //Payment for medics
 
     paycheck_period = 5; //Scaled in minutes
-    bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
+    bank_transferTax = .10; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
 
     /* Player Job System Configurations */
     delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
@@ -115,7 +115,7 @@ class Life_Settings {
     /* Vehicle System Configurations */
     chopShop_vehicles[] = { "Car", "Air" }; //Vehicles that can be chopped. (Can add: "Ship" and possibly more -> look at the BI wiki...)
     vehicle_infiniteRepair[] = {false, false, true, false}; //Set to true for unlimited repairs with 1 toolkit. False will remove toolkit upon use. civilian, west, independent, east
-    vehicleShop_rentalOnly[] = { "B_MRAP_01_hmg_F", "B_G_Offroad_01_armed_F", "B_Boat_Armed_01_minigun_F" }; //Vehicles that can only be rented and not purchased. (Last only for the session)
+    vehicleShop_rentalOnly[] = { "B_Boat_Armed_01_minigun_F" }; //Vehicles that can only be rented and not purchased. (Last only for the session)
     vehicleShop_3D = true; //Add preview 3D inside Shop vehicle.       Default : False
 
     /* Vehicle Purchase Prices */
@@ -125,21 +125,21 @@ class Life_Settings {
     vehicle_purchase_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Rental Prices */
-    vehicle_rental_multiplier_CIVILIAN = .80; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_COP = .3; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_MEDIC = .55; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_CIVILIAN = .60; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_COP = .20; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_MEDIC = .45; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
     vehicle_rental_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Sell Prices */
     vehicle_sell_multiplier_CIVILIAN = .5; //Civilian Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
-    vehicle_sell_multiplier_COP = .5; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
-    vehicle_sell_multiplier_MEDIC = .5; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_COP = .1; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_MEDIC = .1; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
     vehicle_sell_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* "Other" Vehicle Prices */
-    vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
-    vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+    vehicle_chopShop_multiplier = .45; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+    vehicle_storage_fee_multiplier = .15; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_cop_impound_multiplier = .15; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */

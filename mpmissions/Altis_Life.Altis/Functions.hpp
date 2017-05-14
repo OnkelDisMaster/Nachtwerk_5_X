@@ -75,7 +75,9 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
-		class robATM  {};
+		class sitDown {};
+		class robATM {};  //ATM ausrauben
+		class robMBank {};  //Bank Mini ausrauben
     };
 
     class Admin {
@@ -231,6 +233,9 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+		class disableSnakes {};
+        class savezone {};
+        class teargas {};
     };
 
     class Gangs    {
@@ -281,8 +286,22 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+		class schranke {};
+		class blitzer {};
+		class plastik {};
+		class bunker {};
+		class licht {};
+		class flutlicht {};
+		class mauer {};
     };
-
+	
+	class Ausweis
+    	{
+        file = "core\Ausweis";
+        class Lizenzsehen {};
+        class Lizenzzeigen {};
+   	 };
+	 
     class Medical_System {
         file = "core\medical";
         class deathScreen {};
