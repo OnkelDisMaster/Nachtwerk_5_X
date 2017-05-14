@@ -127,7 +127,7 @@ if(_chance <= 50) then {
     player setObjectTextureGlobal [1,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     player setObjectTextureGlobal [2,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     [1,format["Die Farbpatrone wurde ausgeloest, der Taeter ist nun hell gruen! ATM: Taeter laut Sicherheitsdienst ist %1!",name _robber, _shop]]    remoteExecCall ["life_fnc_broadcast",west];
-    [[getPlayerUID _robber,name _robber,"213"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+    [[getPlayerUID _robber,name _robber,"2000"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
     };
 
 life_use_atm = false;

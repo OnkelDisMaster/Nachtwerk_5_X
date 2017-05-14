@@ -246,7 +246,7 @@ switch (_code) do {
     };
 
     //O Key
-    case 24: {
+    case 209: {
         if (_shift) then {
             if (soundVolume != 1) then {
                 1 fadeSound 1;
@@ -258,6 +258,15 @@ switch (_code) do {
         };
     };
 
+	//EMP Konsole - K
+    case 37:
+    {
+        if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (__GETC__(life_coplevel) > 2) && (vehicle player != player) && (typeOf vehicle player) in ["B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","I_MRAP_03_F","B_MRAP_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","I_APC_Wheeled_03_cannon_F","C_SUV_01_F"]) then
+        {
+            [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
+        };
+    };
+	
     //U Key
     case 22: {
         if (!_alt && !_ctrlKey) then {

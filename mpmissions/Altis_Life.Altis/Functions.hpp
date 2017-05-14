@@ -55,7 +55,13 @@ class Life_Client_Core {
         class healHospital {};
         class impoundAction {};
         class mine {};
-        class packupSpikes {};
+        class packupmauer {};
+		class packupschranke {};
+		class packupblitzer {};
+		class packupplastik {};
+		class packupbunker {};
+		class packuplicht {};
+		class packupflutlicht {};
         class pickupItem {};
         class pickupMoney {};
         class postBail {};
@@ -79,7 +85,19 @@ class Life_Client_Core {
 		class robATM {};  //ATM ausrauben
 		class robMBank {};  //Bank Mini ausrauben
     };
-
+	
+	class EMP
+	{
+		file = "core\EMP";
+		class openEmpMenu {};
+		class isEmpOperator {};
+		class scanVehicles {};
+		class warnVehicle {};
+		class empVehicle {};
+		class vehicleWarned {};
+		class vehicleEmpd {};
+	};
+	
     class Admin {
         file = "core\admin";
         class adminCompensate {};
