@@ -31,3 +31,4 @@
 #include "dynmarket_changeprice.hpp"
 #include "dynmarket_prices.hpp"
 #include "..\core\holy_help\dialog\dialog_handler.hpp"
+#include "emp_menu.hpp"

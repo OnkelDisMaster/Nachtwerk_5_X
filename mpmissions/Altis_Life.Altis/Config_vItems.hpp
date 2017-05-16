@@ -141,7 +141,7 @@ class VirtualShops {
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "mauer", "blitzer", "bunker", "flutlicht", "licht", "plastik", "schranke", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
     };
 };
 
@@ -219,6 +219,77 @@ class VirtualItems {
     class spikeStrip {
         variable = "spikeStrip";
         displayName = "STR_Item_SpikeStrip";
+        weight = 15;
+        buyPrice = 2500;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_spikeStrip.paa";
+    };
+	
+	class blitzer {
+        variable = "blitzer";
+        displayName = "STR_Item_blitzer";
+        weight = 15;
+        buyPrice = 2500;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_spikeStrip.paa";
+    };
+	class bunker {
+        variable = "bunker";
+        displayName = "STR_Item_bunker";
+        weight = 15;
+        buyPrice = 2500;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_spikeStrip.paa";
+    };
+	class flutlicht {
+        variable = "flutlicht";
+        displayName = "STR_Item_flutlicht";
+        weight = 15;
+        buyPrice = 2500;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_spikeStrip.paa";
+    };
+	class licht {
+        variable = "licht";
+        displayName = "STR_Item_licht";
+        weight = 15;
+        buyPrice = 2500;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_spikeStrip.paa";
+    };
+	class mauer {
+        variable = "mauer";
+        displayName = "STR_Item_mauer";
+        weight = 15;
+        buyPrice = 2500;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_spikeStrip.paa";
+    };
+	class plastik {
+        variable = "plastik";
+        displayName = "STR_Item_plastik";
+        weight = 15;
+        buyPrice = 2500;
+        sellPrice = 1200;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_spikeStrip.paa";
+    };
+	class schranke {
+        variable = "schranke";
+        displayName = "STR_Item_schranke";
         weight = 15;
         buyPrice = 2500;
         sellPrice = 1200;
