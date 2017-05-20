@@ -60,6 +60,62 @@ switch (true) do {
             closeDialog 0;
         };
     };
+	
+	case (_item isEqualTo "blitzer"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_blitzer;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "bunker"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_bunker;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "flutlicht"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_flutlicht;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "licht"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_licht;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "plastik"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_plastik;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "schranke"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_schranke;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "mauer"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_mauer;
+            closeDialog 0;
+        };
+    };
 
     case (_item isEqualTo "fuelFull"): {
         if (vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
