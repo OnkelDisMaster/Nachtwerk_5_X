@@ -32,6 +32,8 @@ _passwordAdmin = 'Fachidiot';
 /*
 	_MOD can be 'Epoch', 'AltisLife', 'KOTH', 'WASTELAND' or 'Other'.
 	You have to set the mod you run manually
+	e.g.
+	_MOD = 'KOTH';
 */
 _MOD = 'AltisLife';
 
@@ -45,12 +47,12 @@ _MOD = 'AltisLife';
 _OPEN_ADMIN_MENU_KEY = 0x3B;
 
 /* What ESCAPE Menu shows */
-_ESCMNUTOP = 'AntiHack & AdminTools';
-_ESCMNUBOT = 'by infiSTAR.de';
+_ESCMNUTOP = 'Nachtwerk';
+_ESCMNUBOT = 'IP 78.31.67.120';
 _BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
-_USE_RESTART_TIMER = true;	/* true or false */
+_USE_RESTART_TIMER = false;	/* true or false */
 _RESTART_TIME_IN_M = 360;		/* restart time in minutes */
 _SHOW_TIMER_IN_MIN = [1,2,3,5,10,60,120];	/* minutes before restart, when message is shown */
 
@@ -64,7 +66,7 @@ _LogAdminActions = true;	/* true or false */
 _enableIngameLogs = true;	/* true or false */
 
 /* Use infiSTAR Tild (CommandingMenu) */
-_useTildMenu = false;	/* true or false */
+_useTildMenu = true;	/* true or false */
 
 /* "_startAsNormal": if you add admin UIDs in here as well, they will start as almost "normal" player instead of with admin menu and such. */
 _startAsNormal =
@@ -80,11 +82,11 @@ _adminUIDandAccess =
 [
 	[
 		/*ODM, ElekDrix, Valle */ 
-		['76561198031337441','76561198023941976','76561198165164593'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198031337441','76561198023941976','76561198165164593'],	// Superadmins
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
-			'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'HealSelf','HealRepairNear','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
 			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====','==== VirtualItems ====',
 			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
 			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
@@ -104,42 +106,72 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		// Darius, Andreas
-		['76561198061099914','76561197992632340'],	// Supporter
+		// Darius, Sascha,  Andreas 
+		['76561198061099914','76561198093687897','76561197992632340'],	// Admins, Mods
 		[
-			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target',
-			'spectating','Delete Vehicle','EjectTarget','ToggleVehLock','ShowGear',
-			'HealSelf','HealRepairNear','Freeze Target','UnFreeze Target',
+			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
+			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
+			'HealSelf','HealRepairNear','AdminStart','Freeze Target','UnFreeze Target',
 			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====','==== VirtualItems ====',
 			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
 			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
-			'Force Disconnect',
+			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
 			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
-			'Show FPS','Give All Licenses','Call EMP','Mass Message','DayTime','NightTime',
-			'Restrain','Unrestrain',
-			'Arsenal'	// Adds Arsenal to the mousewheel actions if you press "," on the Numpad!
-		]
-	],
-	[	
-		//Sascha
-		['76561198093687897'],	// Community Manager
-		[
-			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target',
-			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
-			'HealSelf','HealRepairNear','AdminStart','Freeze Target','UnFreeze Target',
-			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====','==== VirtualItems ====',
-			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====',
-			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
-			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Force Disconnect',
-			'Vehicle Marker',
-			'God Mode','Vehicle God Mode','Vehboost','Stealth / Invisible',
-			'Show FPS','Give All Licenses','Mass Message','DayTime','NightTime',
+			'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
+			'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
+			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
+			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
+			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
+			'Disable Announces','Show FPS','Give All Licenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
+			'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
+			'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
 			'Request Steam Name','Dump unique client variables',
 			'Restrain','Unrestrain',
 			'Arsenal'	// Adds Arsenal to the mousewheel actions if you press "," on the Numpad!
 		]
+	],
+	[
+		// Lehmann, Salvatore, Ente
+		['76561198143557428','76561198067388481','76561198125513959'],	// Supporter
+		[
+			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
+			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
+			'HealSelf','HealRepairNear','AdminStart','Freeze Target','UnFreeze Target',
+			'==== AltisLife Money ====',
+			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
+			'Eject','Eject Crew','Force Disconnect',
+			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
+			'DeadPlayer Marker',
+			'Vehboost',
+			'Give All Licenses','Call EMP','Mass Message','DayTime','NightTime',
+			'Request Steam Name','Dump unique client variables',
+			'Restrain','Unrestrain'
+		]
 	]
 ];
+
+
+/*
+	What is this?
+	infiSTAR has a global ban system so hackers don't jump around servers and learn how to bypass infiSTAR.
+
+	There was a situation where a group of people asked why their friend could not join the server.
+	Well he was globally banned for hacking.. anyways - if you as a server admin want him to get in even tho he is globally banned,
+	just ask for his UID and add the UID in the array below.
+*/
+_UID_SKIP_GLOBAL_BAN_CHECK =
+[
+	"UID1","UID2","UID3","..."
+];
+
+
+/*
+	ARMA_LOG.dll SETTINGS
+	LOG_PATH = ""; is the Arma3Server directory
+	LOG_PATH = "infiSTAR_Logs/"; would be a folder called "infiSTAR_Logs" within your Arma3Server directory.
+	You need to create the defined folder if it doesn't exist. If you don't create it - the DLL won't be able to write any Log files ! ! !
+*/
+LOG_PATH = "";
 /* ********************************************************************************* */
 /*            many checks should be set to true instead of false.                    */
 /*     These are just diabled because the average user doesn't read this file..      */
@@ -148,10 +180,10 @@ _adminUIDandAccess =
 /*  Local Vehicle Check  */ _LVC = true;	/* true or false */
 /*  unitRecoil checks    */ _URC = true;	/* true or false */	/* checks unitRecoilCoefficient and resets default unitRecoilCoefficient */
 /*  Notification check   */ _UNC = false;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
-/*  Use MPInterrupt check*/ _UMP = true;	/* true or false */
-/*  Check BTTNs on D49   */ _B49 = true;	/* true or false */	/* will announce: BadButton on 49/ F1 */
+/*  Use MPInterrupt check*/ _UMP = false;	/* true or false */
+/*  Check BTTNs on D49   */ _B49 = true;	/* true or false */	/* will announce: BadButton on 49 */
 /*  whitelist for _B49   */ _excludedButtons = [];	/* Will Kick for BadButton XYZ if a customnized button is not white-listed here. Example: _excludedButtons = [1010]; */
-/*  Check Actions Plr    */ _CAP = true;	/* true or false */	/* "Actions: xxx/xxx possible scroll menu hack (or you added custom actions..)" */
+/*  Check Actions Plr    */ _CAP = false;	/* true or false */	/* "Actions: xxx/xxx possible scroll menu hack (or you added custom actions..)" */
 /*  Remove Actions Plr   */ _OAP = false;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
 /*  Remove Actions Objs  */ _OAO = false;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
 /*  Check Attached Objs  */ _CAO = false;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
@@ -168,7 +200,7 @@ _adminUIDandAccess =
 /*  custom HandleDamage  */ _CHD = {};		/* this needs to be CODE */
 /*  Revert allowDamage   */ _RAD = false;	/* true or false */	/* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
 /*  Revert HandleDamage  */ _RHD = false;	/* true or false */	/* Needs to be  false  for Paintball script */
-/*  EH_Draw3D check      */ _C3D = true;	/* true or false */	/* announces: "EH_Draw3D x should be y" */
+/*  EH_Draw3D check      */ _C3D = false;	/* true or false */	/* announces: "EH_Draw3D x should be y" */
 /*  MouseMoving EH check */ _MOH = false;	/* true or false */	/* announces: "MouseMoving EventHandler added" - needs to be disabled for UAV scripts and such.. */
 /*  MouseButton EH check */ _MBC = false;	/* true or false */	/* announces: "MouseButton EventHandler added" */
 /*  Revert MouseButton   */ _RMB = false;	/* true or false */	/* false with Task Force Radio ? */
@@ -179,7 +211,6 @@ _adminUIDandAccess =
 /*  Remove Hit Handler   */ _REH = false;	/* true or false */	/* Needs to be  false  for Paintball script */
 /*  Revert InventoryOpen */ _RIO = false;	/* true or false */	/* AltisLife only: Sets the custom InventoryOpened Handler */
 /*  Revert Killed EH     */ _RKH = false;	/* true or false */
-/*  "" Respawn Handler   */ _RRH = false;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
 /*  Revert Map EH        */ _RMEH = ['MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','MouseZChanged','MouseHolding','KeyDown','KeyUp'];
 /*  Do not change EH_Fired at all! */ _NO_EHF = false;	/*true or false */	/* obviously needs to be false if settings below are supposed to be used! */
 /*  Use EH_Fired check   */ _EHF = false;	/* true or false */	/* Some mods revert the EventHandlers by default and can cause problems with this check. Tested on Epoch and AltisLife. */
@@ -206,7 +237,6 @@ _customOnPlayerConnected = {};
 /*  Use Anti Glitch      */ _UAG = true;	/* true or false */	/* a try to stop glitching through walls on Doors/Walls */
 /*  Use Anti Wall Look   */ _AWL = false;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
 /*  MPHit Log            */ _MPH = false;	/* true or false */	/* will create a A3_MPHIT.txt file where logs hits on players */
-/*  Token Check          */ _TOC = false;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
 /* ------- SOME EPOCH ONLY FUNCTIONS - ABOVE ------- */
 
 
@@ -255,6 +285,19 @@ _aLocalM =
 ];
 
 
+/*
+	if somebody talks on one of the following channels, his channel will be switched to "direct" channel
+	0 = Global
+	1 = Side
+	2 = Command
+	3 = Group
+	4 = Vehicle
+	5 = Direct <-- this is where people get switched too if they talk in one of the blacklisted channels!
+	6-15 = Custom Radio (see radioChannelCreate)
+*/
+_disAllowVon = [0,1,2];
+
+
 
 
 /* _badIDDsToKick will be checked before _badIDDsToClose, _badIDDsToClose will be checked before _allowedIDDs */
@@ -266,7 +309,8 @@ _badIDDsToClose =
 [
 	2,3,7,17,19,25,26,27,28,29,30,31,32,37,40,41,43,44,45,51,52,53,56,74,85,
 	106,126,127,132,146,147,150,151,152,153,154,155,159,162,164,262,
-	314,632,1320,2121,148,163,129,169,157,131,69
+	314,632,1320,2121,148,163,129,169,157,131,69,
+	312 // Zeus Menu
 ];
 
 /* Use IDD White-List ? */ _UDW = false;	/* true or false */
@@ -589,9 +633,8 @@ infiSTAR_IS_RUN_ON_THIS_SERVER = time;
 EPOCH_server_isPAdmin=compileFinal 'true';
 diag_log format['<infiSTAR.de> %1 - run.sqf - finaled EPOCH_server_isPAdmin: %2',time,EPOCH_server_isPAdmin];
 /* ********************************************************************************* */
-/* #2925 */
+/* #9bf99a6f8dea */
 /* ********************************************************************************* */
-_testserver = (((toLower servername) find 'mgt exile' isEqualTo -1)||((toLower servername) find 'test' isEqualTo -1));
 try {
 	_cfgPatches = configFile >> 'CfgPatches';
 	for '_i' from 0 to (count _cfgPatches - 1) do
@@ -628,5 +671,5 @@ catch
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */
