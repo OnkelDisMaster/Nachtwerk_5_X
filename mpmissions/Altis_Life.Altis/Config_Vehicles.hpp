@@ -839,7 +839,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 				"textures\Manwd2.paa",
 				"textures\Manwd3.paa",
 				"textures\Manwd4.paa"
-            }*/ }
+            } }*/
 		};
     };
 
