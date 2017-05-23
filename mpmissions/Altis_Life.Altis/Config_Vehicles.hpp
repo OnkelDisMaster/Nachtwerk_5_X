@@ -428,7 +428,7 @@ class LifeCfgVehicles {
                 "textures\ArmA3-Smell-Tempesttank0.jpg",
 				"textures\ArmA3-Smell-Tempesttank1.jpg",
 				"textures\ArmA3-Smell-Tempesttank2.jpg"
-           }*/ }
+           } }*/
 		};
     };
 	
@@ -446,7 +446,7 @@ class LifeCfgVehicles {
                 "textures\Manwd1.paa",
 				"textures\Manwd2.paa",
 				"textures\Manwd3.paa"
-            }*/ }
+            } }*/
 		};
     };
 
@@ -464,7 +464,7 @@ class LifeCfgVehicles {
                 "textures\Manwd1.paa",
 				"textures\Manwd2.paa",
 				"textures\Manwd3.paa"
-            }*/ }
+            } }*/
 		};
     };
 
