@@ -272,29 +272,7 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
-    // Apex DLC
-    class O_T_LSV_02_unarmed_F {
-        vItemSpace = 100;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 800000;
-        textures[] = {
-            { "Arid", "civ", {
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa",
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_arid_CO.paa"
-            }, "" },
-            { "Black", "civ", {
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_black_CO.paa",
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
-            }, "" },
-            { "Green Hex", "civ", {
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa",
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa",
-                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa"
-            }, "" }
-        };
-    };	
+
 	
     class I_Truck_02_medical_F {
         vItemSpace = 150;
