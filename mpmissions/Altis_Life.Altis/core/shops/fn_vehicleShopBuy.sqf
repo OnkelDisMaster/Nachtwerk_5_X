@@ -106,6 +106,8 @@ _vehicle lock 2;
 [_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
+_vehicle setvariable ["Chipsatz",0,true];
+
 //Side Specific actions.
 switch (playerSide) do {
     case west: {

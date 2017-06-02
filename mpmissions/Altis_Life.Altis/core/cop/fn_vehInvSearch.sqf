@@ -6,7 +6,7 @@
     Description:
     Searches the vehicle for illegal items.
 */
-private["_vehicle","_vehicleInfo","_value","_list"];
+private["_vehicle","_vehicleInfo","_value","_list","_chip"];
 _vehicle = cursorObject;
 _list = ["Air","Ship","LandVehicle"];
 if (isNull _vehicle || {!(KINDOF_ARRAY(_vehicle,_list))}) exitWith {};
@@ -38,3 +38,11 @@ if (_value > 0) then {
 } else {
     hint localize "STR_Cop_NoIllegalVeh";
 };
+_chip = life_vInact_curTarget getvariable "Chipsatz";
+	if (_chip > 0) then {
+	if (_chip isequalto 1) then {
+		systemChat (localize "STR_chip_chipLe");
+	} else {
+		systemChat (localize "STR_chip_chipIl");
+	};
+	};

@@ -20,6 +20,9 @@ if (count _vInfo > 0) then {
     _uid = _vInfo select 0;
 };
 
+_chip = _vehicle getvariable ["Chipsatz",0];
+diag_log format ["CHIPSATZ: %1",_chip];
+	
 // save damage.
 if (LIFE_SETTINGS(getNumber,"save_vehicle_damage") isEqualTo 1) then {
     _damage = getAllHitPointsDamage _vehicle;
@@ -40,14 +43,13 @@ if (_impound) exitWith {
     if (count _vInfo isEqualTo 0) then  {
         life_impound_inuse = false;
         (owner _unit) publicVariableClient "life_impound_inuse";
-
         if (!isNil "_vehicle" && {!isNull _vehicle}) then {
             deleteVehicle _vehicle;
         };
     } else {    // no free repairs!
-        _query = format["UPDATE vehicles SET active='0', fuel='%3', damage='%4' WHERE pid='%1' AND plate='%2'",_uid , _plate, _fuel, _damage];
+        _query = format["UPDATE vehicles SET active='0', fuel='%3', damage='%4' WHERE pid='%1' AND var='%5' WHERE pid='%1' AND plate='%2'",_uid , _plate, _fuel, _damage, _chip];
         _thread = [_query,1] call DB_fnc_asyncCall;
-
+		
         if (!isNil "_vehicle" && {!isNull _vehicle}) then {
             deleteVehicle _vehicle;
         };
@@ -140,7 +142,7 @@ _trunk = [_trunk] call DB_fnc_mresArray;
 _cargo = [_cargo] call DB_fnc_mresArray;
 
 // update
-_query = format["UPDATE vehicles SET active='0', inventory='%3', gear='%4', fuel='%5', damage='%6' WHERE pid='%1' AND plate='%2'", _uid, _plate, _trunk, _cargo, _fuel, _damage];
+_query = format["UPDATE vehicles SET active='0', inventory='%3', gear='%4', fuel='%5', damage='%6' WHERE pid='%1' AND var='%7' WHERE pid='%1' AND plate='%2'", _uid, _plate, _trunk, _cargo, _fuel, _damage, _chip];
 _thread = [_query,1] call DB_fnc_asyncCall;
 
 if (!isNil "_vehicle" && {!isNull _vehicle}) then {

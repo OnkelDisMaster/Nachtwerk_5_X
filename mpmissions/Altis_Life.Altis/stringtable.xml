@@ -10845,4 +10845,68 @@
             <German>Admin-Nachricht</German>
         </Key>
     </Package>
+		<Key ID="STR_chip_ac">
+		<Original>Install Chip</Original>
+		<English>Install Chip</English>
+		<German>Chip installieren</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+	<Key ID="STR_chip_ac2">
+		<Original>Deinstall Chip</Original>
+		<English>Deinstall Chip</English>
+		<German>Chip Deinstallieren</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+	<Key ID="STR_chip_ask">
+		<Original>Do you want to install an illegal chip?</Original>
+		<English>Dou you want illegal chip?</English>
+		<German>Möchtest du einen illegalen Chip installieren?</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+	<Key ID="STR_chip_ins">
+		<Original>Chip is installed now.</Original>
+		<English>Chip is installed now</English>
+		<German>Der Chip wurde installiert.</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+	<Key ID="STR_chip_deask">
+		<Original>Do you want to deinstall the chip?</Original>
+		<English>Do you want to deinstall the chip?</English>
+		<German>Möchtest du den Chip deinstallieren?</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+	<Key ID="STR_chip_dein">
+		<Original>Chip is deinstalled now.</Original>
+		<English>Chip is deinstalled now</English>
+		<German>Der Chip wurde deinstalliert.</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+	<Key ID="STR_chip_chipLe">
+		<Original>This vehicle has an installed legal chip.</Original>
+		<English>This vehicle has an installed legal chip.</English>
+		<German>Das Fahrzeug hat einen installierten legalen Chipsatz.</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+	<Key ID="STR_chip_chipIl">
+		<Original>This vehicle has an installed illegal chip.</Original>
+		<English>This vehicle has an installed illegal chip.</English>
+		<German>Das Fahrzeug hat einen installierten illegalen Chipsatz.</German>
+		<French>Vous avez crafté : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
 </Project>

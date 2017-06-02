@@ -267,6 +267,19 @@ switch (_code) do {
         };
     };
 	
+	_speed = speed cursorTarget;
+	// Taste Q
+	case 16: {		
+		if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
+			_speed = (vehicle player) getvariable ["speeder",false];			
+			if (_speed) exitwith {
+				vehicle player setvariable ["speeder",false,true];	
+				hint "Chip wurde deaktiviert...";
+			};
+			[(vehicle player)] spawn life_fnc_speedUp;
+		};
+	};
+	
     //U Key
     case 22: {
         if (!_alt && !_ctrlKey) then {
