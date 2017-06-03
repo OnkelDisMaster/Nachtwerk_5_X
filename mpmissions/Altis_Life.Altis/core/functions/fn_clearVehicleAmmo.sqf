@@ -20,7 +20,7 @@ if (_veh isEqualTo "B_Boat_Armed_01_minigun_F") then {
 };
 */
 
-switch (_classname) do
+switch (_veh) do
 {	
 	//Jet A-10
 	case "O_Plane_CAS_02_F":

@@ -29,7 +29,7 @@ class nanoEMPConsole {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 2901;
-			text = "EMP Operator Konsole";
+			text = "nanoEMP Operator Konsole";
 			x = 0.1;
 			y = 0.2;
 			w = 0.6;
@@ -42,7 +42,7 @@ class nanoEMPConsole {
 			text = "";
 			sizeEx = 0.035;
 			//colorBackground[] = {0,0,0,0};
-			//onLBSelChanged = "hintSilent format [""%1"",_this select 1];";
+			//onLBSelChanged = "hint format [""%1"",_this select 1];";
 			
 			x = 0.12; y = 0.26;
 			w = 0.30; h = 0.4;
@@ -60,7 +60,7 @@ class nanoEMPConsole {
 
 		class CloseButtonKey : Life_RscButtonMenu {
 			idc = -1;
-			text = "Schliesen";
+			text = "Schließen";
 			onButtonClick = "closeDialog 0;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
@@ -70,7 +70,7 @@ class nanoEMPConsole {
 		
 		class Refresh : Life_RscButtonMenu {
 			idc = -1;
-			text = "Suchen";
+			text = "Scan";
 			onButtonClick = "[] spawn life_fnc_scanVehicles;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
@@ -90,7 +90,7 @@ class nanoEMPConsole {
 
 		class ExecEMP : Life_RscButtonMenu {
 			idc = 2070;
-			text = "Auslösen";
+			text = "Deaktivieren";
 			onButtonClick = "[] spawn life_fnc_empVehicle;";
 			x = 0.58 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
