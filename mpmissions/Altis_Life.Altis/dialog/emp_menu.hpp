@@ -29,7 +29,7 @@ class nanoEMPConsole {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 2901;
-			text = "nanoEMP Operator Konsole";
+			text = "EMP Operator Konsole";
 			x = 0.1;
 			y = 0.2;
 			w = 0.6;
