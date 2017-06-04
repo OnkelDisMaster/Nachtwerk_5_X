@@ -74,12 +74,6 @@ _damage = [(_vInfo select 12)] call DB_fnc_mresToArray;
 _wasIllegal = (_vInfo select 13);
 _wasIllegal = if (_wasIllegal isEqualTo 1) then { true } else { false };
 
-_vehicle setvariable ["Chipsatz",0,true]; //init
-_chip = _vInfo select 14;	
-diag_log format ["CHIPSATZ OUT DB: %1",_vInfo];
-diag_log format ["CHIPSATZ OUT DB: %1",_chip];
-_vehicle setvariable ["Chipsatz",_chip,true]; // setzen des chips
-
 [_query,1] call DB_fnc_asyncCall;
 if (_sp isEqualType "") then {
     _vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
@@ -97,6 +91,13 @@ if (_sp isEqualType "") then {
     _vehicle setDir _dir;
 };
 _vehicle allowDamage true;
+
+_vehicle setvariable ["Chipsatz",0,true]; //init
+_chip = _vInfo select 14;	
+diag_log format ["CHIPSATZ OUT DB: %1",_vInfo];
+diag_log format ["CHIPSATZ OUT DB: %1",_chip];
+_vehicle setvariable ["Chipsatz",_chip,true]; // setzen des chips
+
 //Send keys over the network.
 [_vehicle] remoteExecCall ["life_fnc_addVehicle2Chain",_unit];
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
