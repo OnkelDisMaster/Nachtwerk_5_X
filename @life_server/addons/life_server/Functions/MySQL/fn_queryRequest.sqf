@@ -55,7 +55,7 @@ _queryResult set[3,[_tmp] call DB_fnc_numberSafe];
 
 //Parse licenses (Always index 6)
 _new = [(_queryResult select 6)] call DB_fnc_mresToArray;
-if (_new isEqualType "") then {_new = call compile format["%1", _new];};
+if(typeName _new isEqualTo "STRING") then {_new = call compile format["%1", _new];};
 _queryResult set[6,_new];
 
 //Convert tinyint to boolean
