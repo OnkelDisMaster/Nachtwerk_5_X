@@ -7,20 +7,21 @@
     can be properly inserted into the database without causing
     any problems. The return method is 'hacky' but it's effective.
 */
-private["_array"];
-_array = [_this,0,"",[""]] call BIS_fnc_param;
-if (_array isEqualTo "") exitWith {[]};
+private ["_array"];
+_array = [_this,0,[],[[]]] call BIS_fnc_param;
+_array = str _array;
 _array = toArray(_array);
 
 for "_i" from 0 to (count _array)-1 do
 {
     _sel = _array select _i;
-    if (_sel == 96) then
+    if ((_i != 0 && _i != ((count _array)-1))) then
     {
-        _array set[_i,39];
+        if (_sel isEqualTo 34) then
+        {
+            _array set[_i,96];
+        };
     };
 };
 
-_array = toString(_array);
-_array = call compile format["%1", _array];
-_array;
+str(toString(_array));
