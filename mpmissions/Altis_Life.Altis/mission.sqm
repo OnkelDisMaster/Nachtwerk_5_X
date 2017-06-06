@@ -2374,6 +2374,66 @@ class Mission
 			colorName="ColorWhite";
 			id=219;
 		};
+		class Item2400
+        {
+            dataType="Marker";
+            position[]={3639.0879,2.4627349e+021,13130.7};
+            name="safezone_kav";
+            markerType="ELLIPSE";
+            type="Empty";
+            colorName="ColorGreen";
+            fillName="DiagGrid";
+            a=200;
+            b=200;
+            id=18441;
+            atlOffset=2.4627349e+021;
+        };
+        class Item8650
+        {
+            dataType="Marker";
+            position[]={22016.961,-1.6951516e-019,21041.371};
+            name="reb_hq";
+            markerType="ELLIPSE";
+            type="Empty";
+            colorName="ColorRed";
+            fillName="SolidBorder";
+            a=400;
+            b=400;
+            angle=242.81491;
+            drawBorder=1;
+            id=32597;
+            atlOffset=-28.779608;
+        };
+        class Item3641
+        {
+            dataType="Marker";
+            position[]={20794.414,4.4571731e+037,7212.9048};
+            name="reb_sued";
+            markerType="ELLIPSE";
+            type="Empty";
+            colorName="ColorRed";
+            a=100;
+            b=100;
+            angle=140.845;
+            id=23952;
+            atlOffset=4.4571731e+037;
+        };
+        class Item874
+        {
+            dataType="Marker";
+            position[]={14338.604,-1.7004621e-019,23105.131};
+            name="reb_lager";
+            markerType="ELLIPSE";
+            type="Empty";
+            colorName="ColorRed";
+            fillName="SolidBorder";
+            a=200;
+            b=200;
+            angle=242.81491;
+            drawBorder=1;
+            id=10054;
+            atlOffset=-32.702129;
+        };
 		class Item218
 		{
 			dataType="Object";
