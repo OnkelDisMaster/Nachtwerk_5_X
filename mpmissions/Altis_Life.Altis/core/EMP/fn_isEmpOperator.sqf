@@ -1,7 +1,7 @@
 #include "..\..\script_macros.hpp"
 /*
 
-© 2014 nano2K - written for we-are-friendly.de
+? 2014 nano2K - written for we-are-friendly.de
 */
 _player = _this select 0;
 _slot = assignedVehicleRole player;

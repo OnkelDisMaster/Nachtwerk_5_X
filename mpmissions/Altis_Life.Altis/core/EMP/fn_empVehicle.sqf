@@ -10,7 +10,7 @@ if(!isNull (findDisplay 3494)) then {
 	_index = lbCurSel (2902);
 	_vehicle = nn_last_vehicles select _index;
 	if(isNull _vehicle) exitWith {};
-	(vehicle player) say3D "empacsound";
+	(vehicle player) say3D "empac";
 	[[_vehicle], "life_fnc_vehicleEmpd",crew _vehicle,false] call life_fnc_MP;
 	uiSleep (5 * 60);
 	nn_empInUse = false;
