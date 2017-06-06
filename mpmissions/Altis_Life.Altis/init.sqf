@@ -9,6 +9,7 @@ StartProgress = false;
 
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+[] execVM "nw_functions\savezone.sqf"; //Load the Savezones
 
 //Polizeilicht
 emergLight_vehicles = [];
