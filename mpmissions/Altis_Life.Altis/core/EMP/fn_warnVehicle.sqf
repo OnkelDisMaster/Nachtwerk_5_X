@@ -5,7 +5,7 @@
 private["_index","_vehicle"];
 disableSerialization;
 if(!isNull (findDisplay 3494)) then {
-hint "ICH BIN EIN TEST! warnVehicle 1";
+hint format ["safezoneX: %1 \n safezoneW: %2 \n safezoneY: %3 \n safezoneH:  %4",safezoneX,safezoneW,safezoneY,safezoneH];
 uiSleep 3.35;
 	if(nn_empInUse) exitWith { hintSilent "Das EMP warnt grade schon ein Fahrzeug"; };
 	hint "ICH BIN EIN TEST! warnVehicle 2";
@@ -16,7 +16,7 @@ uiSleep 3.35;
 	if(isNull _vehicle) exitWith {};
 	hint "ICH BIN EIN TEST! warnVehicle 4";
     uiSleep 3.35;
-	[[_vehicle], "life_fnc_vehicleWarned",crew _vehicle,false] spawn life_fnc_MP;
+	[[_vehicle], "call life_fnc_vehicleWarned",crew _vehicle,false] spawn life_fnc_MP;
 	hint "ICH BIN EIN TEST! warnVehicle 5";
     uiSleep 3.35;
 	uiSleep 10;
