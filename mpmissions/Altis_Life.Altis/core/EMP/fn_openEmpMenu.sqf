@@ -9,4 +9,4 @@ if(!alive player || dialog) exitWith {};
 createDialog "nanoEMPConsole";	
 disableSerialization;
 waitUntil {!isNull (findDisplay 3494)};
-[] call life_fnc_scanVehicles;
+[] spawn life_fnc_scanVehicles;
