@@ -918,7 +918,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
 			{ "Ambulance", "med", {
                 "textures\med_suv.jpg"
-            } }*/
+            } }
 			
 			{ "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
@@ -928,9 +928,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            }, "" },
-            { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+            }, "" },*/
+            { "Polizei", "cop", {
+                "textures\car\police_suv.paa"
             }, "" }
         };
     };
