@@ -612,7 +612,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
             { "Police", "cop", {
-                "skins\car\police_offroad.paa"
+                "textures\car\police_offroad.paa"
             } }
         };
     };
