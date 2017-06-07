@@ -613,7 +613,7 @@ class LifeCfgVehicles {
             }, "" },*/
             { "Polizei", "cop", {
                 "textures\car\police_offroad.paa"
-            } }
+            }, "" }
         };
     };
 
@@ -685,7 +685,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
             { "Polizei", "cop", {
                 "textures\car\police_hatchback.paa"
-            } }
+            }, "" }
         };
     };
 
@@ -725,9 +725,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\PDQUAD.jpg"
             } }*/
 			
-			{ "Brown", "cop", {
+			{ "Polizei", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
-            } }/*,
+            }, "" }/*,
             { "Digi Desert", "reb", {
                 "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
             }, "" },
@@ -772,9 +772,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
             }, "" },*/
-            { "Black", "cop", {
+            { "Polizei", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
+            }, "" }
         };
     };
 
@@ -931,7 +931,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
             { "Polizei", "cop", {
                 "textures\car\police_suv.paa"
-            } }
+            }, "" }
         };
     };
 	
