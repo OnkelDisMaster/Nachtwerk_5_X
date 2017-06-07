@@ -582,7 +582,7 @@ class LifeCfgVehicles {
             } },
 			{ "Gay", "civ", {
                 "textures\ziv_offroad_Gay.jpg"
-            } }*/
+            } }
 			
 			{ "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -610,8 +610,8 @@ class LifeCfgVehicles {
             }, "" },
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
-            }, "" },
-            { "Police", "cop", {
+            }, "" },*/
+            { "Polizei", "cop", {
                 "textures\car\police_offroad.paa"
             } }
         };
@@ -663,7 +663,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
 			{ "Monster", "civ", {
                 "textures\hatchback_sport_ken_block.jpg"
-            } }*/
+            } }
 
 			{ "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
@@ -682,10 +682,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
-            }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
-            }, "" }
+            }, "" },*/
+            { "Polizei", "cop", {
+                "textures\car\police_hatchback.paa"
+            } }
         };
     };
 
@@ -727,7 +727,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			
 			{ "Brown", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
-            }, "" },
+            } }/*,
             { "Digi Desert", "reb", {
                 "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
             }, "" },
@@ -751,7 +751,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            }, "" }
+            }, "" }*/
         };
     };
 
@@ -766,15 +766,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }*/
+            } }
 			
 			{ "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            }, "" },
+            }, "" },*/
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
+            } }
         };
     };
 
@@ -789,7 +789,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }*/
+            } }
 			
 			{ "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -797,7 +797,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
+            }, "" }*/
         };
     };
 
@@ -931,7 +931,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
             { "Polizei", "cop", {
                 "textures\car\police_suv.paa"
-            }, "" }
+            } }
         };
     };
 	
@@ -1012,13 +1012,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
 				"textures\swathunter_2.jpg"
             } }*/
 			{ "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" },
+                "textures\car\sek_hunter_1.paa",
+                "textures\car\sek_hunter_2.paa"
+            }, "" }/*,
 			{ "Black", "civ", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
+            }, "" }*/
         };
     };
 	
