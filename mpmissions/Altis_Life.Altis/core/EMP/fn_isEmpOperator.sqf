@@ -13,7 +13,6 @@ if((_vehicle != player) && (playerSide == west)) && (call life_coplevel > 2) the
     if((typeof _vehicle in _heli) && (_vehicle getVariable ["nano_emp_enabled", false])) then {
         if(_slot select 0 == "Turret") then {
             if(_slot select 1 select 0 == 0) then {
-            hint "ICH BIN EIN TEST! ";
             uiSleep 3.35;
                 _result = true;
             };
