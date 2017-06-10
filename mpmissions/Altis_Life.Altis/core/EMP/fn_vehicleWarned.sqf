@@ -3,7 +3,7 @@
     Author: � 2014 nano2K - written for we-are-friendly.de
 */
 private["_vehicle"];
-_vehicle =  [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
+_vehicle =  [_this,0,[],[]] call BIS_fnc_param;
 hint "ICH BIN EIN TEST! vehicleWarned 1";
 uiSleep 3.35;
 if(isNull _vehicle) exitWith {};
