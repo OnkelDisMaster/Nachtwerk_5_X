@@ -3,7 +3,7 @@
     File: scanVehicles.sqf
     Author: � 2014 nano2K - written for we-are-friendly.de
 */
-private["_display","_list","_objects"];
+private["_display","_list","_objects","_color"];
 disableSerialization;
 if(!isNull (findDisplay 3494)) then {
     _display = findDisplay 3494;
@@ -17,8 +17,8 @@ if(!isNull (findDisplay 3494)) then {
 		uiSleep 1.2;
         if(vehicle player != _x) then {
             //_color = [(typeOf _x),(_x getVariable "Life_VEH_color")] call life_fnc_vehicleColorStr;
-            //_color = ((M_CONFIG(getArray,"LifeCfgVehicles", _x,"textures") select ( _x getVariable "Life_VEH_color")) select 0);
-            _color = "Testfarbe";
+            _color = ((M_CONFIG(getArray,"LifeCfgVehicles", _x,"textures") select ( _x getVariable "Life_VEH_color")) select 0);
+            //_color = "Testfarbe";
 			if (isNil "_color") then {_color = ""};
 			_text = format["(%1)", _color];
 			if (_text == "()") then {
