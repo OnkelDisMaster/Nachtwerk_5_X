@@ -23,5 +23,6 @@ if(!isNull (findDisplay 3494)) then {
             _list lbAdd format ["%1 - %2 (%3)", getText(configFile >> "cfgVehicles" >> typeOf _x >> "DisplayName"), _text, round(player distance _x)];
             nn_last_vehicles set [count nn_last_vehicles, _x];
         };
+		hint format["Fahrzeug: %1", _x];
     } foreach _veh;
 };
