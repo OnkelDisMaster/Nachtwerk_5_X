@@ -2,7 +2,7 @@
     File: scanVehicles.sqf
     Author: � 2014 nano2K - written for we-are-friendly.de
 */
-private["_display","_list","_objects"];
+private["_display","_list","_objects","_veh"];
 disableSerialization;
 if(!isNull (findDisplay 3494)) then {
     _display = findDisplay 3494;
@@ -10,11 +10,16 @@ if(!isNull (findDisplay 3494)) then {
     lbClear _list;
     nn_last_vehicles = [];
     _objects = nearestObjects [player, ["Air","Car","Ship"], 350];
+	_veh = typeOf _objects;
     {
         if(vehicle player != _x) then {
             //_color = [(typeOf _x),(_x getVariable "Life_VEH_color")] call life_fnc_vehicleColorStr;
-            _color = ((M_CONFIG(getArray,"LifeCfgVehicles",(typeOf _x),"textures") select (_x getVariable "Life_VEH_color")) select 0);
-            _text = format["(%1)",_color];
+            _color = ((M_CONFIG(getArray,"LifeCfgVehicles",_veh,"textures") select (_veh getVariable "Life_VEH_color")) select 0);
+			if (isNil "_color") then {_color = ""};
+			_text = format["(%1)", _color];
+			if (_text == "()") then {
+				_text = "";
+			};
             _list lbAdd format ["%1 - %2 (%3)", getText(configFile >> "cfgVehicles" >> typeOf _x >> "DisplayName"), _text, round(player distance _x)];
             nn_last_vehicles set [count nn_last_vehicles, _x];
         };
