@@ -32,6 +32,7 @@ class Life_Client_Core {
         class setupEVH {};
         class survival {};
         class welcomeNotification {};
+        class regelWerk {};
     };
 
 	class holy_help {
