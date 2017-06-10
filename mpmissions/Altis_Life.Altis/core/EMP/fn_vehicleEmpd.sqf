@@ -43,7 +43,7 @@ if(_vehicle isKindOf "Air") then {
 		_vehicle setHit [getText(configFile >> "cfgVehicles" >> typeOf _vehicle >> "HitPoints" >> "HitEngine" >> "name"), 1];
 		uiSleep (1 * 60);
 		_vehicle setHit [getText(configFile >> "cfgVehicles" >> typeOf _vehicle >> "HitPoints" >> "HitEngine" >> "name"), 0];
-	}
+	};
 };
 if(_vehicle isKindOf "Ship") then {
 	hint"Sie werden gerade EMP!!\n Bleiben Sie Sofort stehen!!";
@@ -53,6 +53,6 @@ if(_vehicle isKindOf "Ship") then {
 		_vehicle setHit [getText(configFile >> "cfgVehicles" >> typeOf _vehicle >> "HitPoints" >> "HitEngine" >> "name"), 1];
 		uiSleep (1 * 60);
 		_vehicle setHit [getText(configFile >> "cfgVehicles" >> typeOf _vehicle >> "HitPoints" >> "HitEngine" >> "name"), 0];
-	}
+	};
 };
 _vehicle setVariable["nano_empd",false,true];
