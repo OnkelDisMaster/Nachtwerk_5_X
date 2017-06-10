@@ -80,6 +80,9 @@ waitUntil {life_session_completed};
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
 
+_handler = [] spawn life_fnc_regelWerk;
+waituntil {scriptdone _handler};
+
 switch (playerSide) do {
     case west: {
         _handle = [] spawn life_fnc_initCop;
