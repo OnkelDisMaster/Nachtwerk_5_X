@@ -10,7 +10,7 @@ if(!isNull (findDisplay 3494)) then {
     lbClear _list;
     nn_last_vehicles = [];
     _objects = nearestObjects [player, ["Air","Car","Ship"], 350];
-	_veh = typeOf _objects;
+
     {
         if(vehicle player != _x) then {
             //_color = [(typeOf _x),(_x getVariable "Life_VEH_color")] call life_fnc_vehicleColorStr;
@@ -24,5 +24,5 @@ if(!isNull (findDisplay 3494)) then {
             nn_last_vehicles set [count nn_last_vehicles, _x];
         };
 		hint format["Fahrzeug: %1", _x];
-    } foreach _veh;
+    } foreach _objects;
 };
