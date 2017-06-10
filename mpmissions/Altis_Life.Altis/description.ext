@@ -8,7 +8,7 @@ disableChannels[]={0,1,2};
 
 author = "Tonic | Edit by Nachtwerk";
 onLoadName = "Nachtwerk - Altis Life";
-onLoadMission = "Altis Life [3.1.4.8]";
+onLoadMission = "Altis Life [4.4r3]";
 wreckManagerMode = 1;
 wreckLimit = 0;
 wreckRemovalMinTime = 60;
