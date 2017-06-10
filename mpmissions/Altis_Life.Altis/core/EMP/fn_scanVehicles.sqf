@@ -1,8 +1,9 @@
+#include "..\..\script_macros.hpp"
 /*
     File: scanVehicles.sqf
     Author: � 2014 nano2K - written for we-are-friendly.de
 */
-private["_display","_list","_objects","_veh"];
+private["_display","_list","_objects","_veh","_color"];
 disableSerialization;
 if(!isNull (findDisplay 3494)) then {
     _display = findDisplay 3494;
