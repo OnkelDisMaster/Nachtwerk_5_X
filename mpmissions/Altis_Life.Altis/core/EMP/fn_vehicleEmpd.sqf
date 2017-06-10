@@ -10,6 +10,9 @@ if(isNull _vehicle) exitWith {};
 if((_vehicle getVariable ["nano_empd", false])) exitWith {};
 _vehicle setVariable["nano_empd",true,true];
 
+
+hint format["vehicle: %1", _vehicle];
+
 if(_vehicle isKindOf "Car") then {
 	hint "Sie werden gerade EMP!!\n Fahren Sie sofort Rechts an die Seite!!";
 	_vehicle say3D "empwarn";
