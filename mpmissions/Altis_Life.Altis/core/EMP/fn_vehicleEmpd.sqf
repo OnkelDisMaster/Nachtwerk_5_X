@@ -4,6 +4,8 @@
 */
 private["_vehicle"];
 _vehicle =  [_this,0,[],[[]]] call BIS_fnc_param;
+hint "ICH BIN EIN TEST! vehicleEMP 0";
+uiSleep 3.35;
 if(isNull _vehicle) exitWith {};
 hint "ICH BIN EIN TEST! vehicleEMP 1";
 uiSleep 3.35;
