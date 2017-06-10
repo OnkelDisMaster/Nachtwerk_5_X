@@ -14,7 +14,7 @@ if(!isNull (findDisplay 3494)) then {
     {
         if(vehicle player != _x) then {
             //_color = [(typeOf _x),(_x getVariable "Life_VEH_color")] call life_fnc_vehicleColorStr;
-            _color = ((M_CONFIG(getArray,"LifeCfgVehicles",_veh,"textures") select (_veh getVariable "Life_VEH_color")) select 0);
+            _color = ((M_CONFIG(getArray,"LifeCfgVehicles",_x,"textures") select (_x getVariable "Life_VEH_color")) select 0);
 			if (isNil "_color") then {_color = ""};
 			_text = format["(%1)", _color];
 			if (_text == "()") then {
@@ -23,5 +23,5 @@ if(!isNull (findDisplay 3494)) then {
             _list lbAdd format ["%1 - %2 (%3)", getText(configFile >> "cfgVehicles" >> typeOf _x >> "DisplayName"), _text, round(player distance _x)];
             nn_last_vehicles set [count nn_last_vehicles, _x];
         };
-    } foreach _objects;
+    } foreach _veh;
 };
