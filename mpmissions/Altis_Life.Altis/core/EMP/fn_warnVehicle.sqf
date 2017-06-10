@@ -16,7 +16,7 @@ uiSleep 3.35;
 	if(isNull _vehicle) exitWith {};
 	hint format["[]: %1 \n crew: %2 \n veh: %3",[_vehicle], crew _vehicle,_vehicle];
     uiSleep 3.35;
-	[[_vehicle]] remoteExecCall ["life_fnc_vehicleWarned",crew _vehicle];
+	[_vehicle] remoteExecCall ["life_fnc_vehicleWarned",crew _vehicle];
 	hint "ICH BIN EIN TEST! warnVehicle 5";
     uiSleep 3.35;
 	uiSleep 10;
