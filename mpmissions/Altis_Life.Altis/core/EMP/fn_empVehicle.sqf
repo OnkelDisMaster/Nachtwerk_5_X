@@ -12,7 +12,7 @@ if(!isNull (findDisplay 3494)) then {
 	if(isNull _vehicle) exitWith {};
 	(vehicle player) say3D "empacsound";
 // alt	[[_vehicle], "life_fnc_vehicleEmpd",crew _vehicle,false] spawn life_fnc_MP;
-	[[_vehicle],crew _vehicle] remoteExecCall ["life_fnc_vehicleEmpd",false];
+	[[_vehicle]] remoteExecCall ["life_fnc_vehicleEmpd",crew _vehicle];
 	uiSleep (1 * 60);
 	nn_empInUse = false;
 };
