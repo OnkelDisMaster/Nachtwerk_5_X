@@ -13,13 +13,13 @@ _vehicle setVariable["nano_empd",true,true];
 if(_vehicle isKindOf "Car") then {
 	hint "Sie werden gerade EMP!!\n Fahren Sie sofort Rechts an die Seite!!";
 	_vehicle say3D "empwarn";
-    uiSleep 3.35;
-    hint "Sie werden gerade EMP!!\n Fahren Sie sofort Rechts an die Seite!!";
+    sleep 3.35;
+   /* hint "Sie werden gerade EMP!!\n Fahren Sie sofort Rechts an die Seite!!";
     _vehicle say3D "empwarn";
     uiSleep 3.35;
     hint "Sie werden gerade EMP!!\n Fahren Sie sofort Rechts an die Seite!!";
     _vehicle say3D "empwarn";
-    uiSleep 3.35;
+    uiSleep 3.35;*/
 	//if(local _vehicle) then {
     _vehicle setHitPointDamage ["HitEngine", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
@@ -30,10 +30,11 @@ if(_vehicle isKindOf "Car") then {
     //_vehicle setHitPointDamage ["HitGlass2 ", 1];
     //_vehicle setHitPointDamage ["HitGlass3 ", 1];
     //_vehicle setHitPointDamage ["HitHull", 1.0];
-    uiSleep (1 * 60);
-    _vehicle setHitPointDamage ["HitEngine", 0];
-    _vehicle setHitPointDamage ["HitEngine2", 0];
-    _vehicle setHitPointDamage ["HitEngine3", 0];
+    sleep (1 * 60);
+   // _vehicle setHitPointDamage ["HitEngine", 0];
+
+    //_vehicle setHitPointDamage ["HitEngine2", 0];
+    //_vehicle setHitPointDamage ["HitEngine3", 0];
     //_vehicle setHitPointDamage ["HitAvionics", 0];
 	//};
 };
