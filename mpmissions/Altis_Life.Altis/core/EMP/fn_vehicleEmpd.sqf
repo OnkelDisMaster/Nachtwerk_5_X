@@ -12,6 +12,10 @@ _vehicle setVariable["nano_empd",true,true];
 
 
 hint format["vehicle: %1", _vehicle];
+uiSleep 3.35;
+
+hint format["vehicle: %1", typeOf _vehicle];
+uiSleep 3.35;
 
 if(_vehicle isKindOf "Car") then {
 	hint "Sie werden gerade EMP!!\n Fahren Sie sofort Rechts an die Seite!!";
@@ -23,7 +27,6 @@ if(_vehicle isKindOf "Car") then {
 		_vehicle setHit [getText(configFile >> "cfgVehicles" >> typeOf _vehicle >> "HitPoints" >> "HitEngine" >> "name"), 0];
 	//};
 };
-hint "ICH BIN EIN TEST! vehicleEMP after car";
 
 if(_vehicle isKindOf "Air") then {
 	hint"Sie werden gerade EMP!!\n Landen Sie Sofort!!";
