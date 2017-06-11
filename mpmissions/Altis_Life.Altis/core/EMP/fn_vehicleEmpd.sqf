@@ -15,11 +15,15 @@ if(_vehicle isKindOf "Car") then {
 	_vehicle say3D "empwarn";
 
 	//if(local _vehicle) then {
-		(_vehicle player) setHitPointDamage ["hitEngine", 1.0];
-		(_vehicle player) setHitPointDamage ["hitEngine2", 1.0];
-		uiSleep (1 * 60);
-		(_vehicle player) setHitPointDamage ["hitEngine", 0];
-        (_vehicle player) setHitPointDamage ["hitEngine2",0];
+    _vehicle setHitPointDamage ["HitEngine", 1];
+    _vehicle setHitPointDamage ["HitEngine1", 1];
+    _vehicle setHitPointDamage ["HitEngine2", 1];
+    _vehicle setHitPointDamage ["HitAvionics", 1];
+    uiSleep (1 * 60);
+    _vehicle setHitPointDamage ["HitEngine", 0];
+    _vehicle setHitPointDamage ["HitEngine1", 0];
+    _vehicle setHitPointDamage ["HitEngine2", 0];
+    _vehicle setHitPointDamage ["HitAvionics", 0];
 	//};
 };
 
