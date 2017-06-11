@@ -5,9 +5,7 @@
 private["_index","_vehicle"];
 disableSerialization;
 if(!isNull (findDisplay 3494)) then {
-uiSleep 3.35;
 	if(nn_empInUse) exitWith { hintSilent "Das EMP warnt grade schon ein Fahrzeug"; };
-    uiSleep 3.35;
 	nn_empInUse = true;
 	_index = lbCurSel (2902);
 	_vehicle = nn_last_vehicles select _index;
