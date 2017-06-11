@@ -22,9 +22,9 @@ if(_vehicle isKindOf "Car") then {
 	_vehicle say3D "empwarn";
 	uiSleep 3.35;
 	//if(local _vehicle) then {
-		_vehicle setHit [getText(configFile >> "cfgVehicles" >> typeOf _vehicle >> "HitPoints" >> "HitEngine" >> "name"), 1];
+		_vehicle setHit ["motor", 1];
 		uiSleep (1 * 60);
-		_vehicle setHit [getText(configFile >> "cfgVehicles" >> typeOf _vehicle >> "HitPoints" >> "HitEngine" >> "name"), 0];
+		_vehicle setHit ["motor", 0];
 	//};
 };
 
