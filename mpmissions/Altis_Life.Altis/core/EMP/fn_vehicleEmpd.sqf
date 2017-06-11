@@ -16,14 +16,19 @@ if(_vehicle isKindOf "Car") then {
 
 	//if(local _vehicle) then {
     _vehicle setHitPointDamage ["HitEngine", 1];
-    _vehicle setHitPointDamage ["HitEngine1", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
-    _vehicle setHitPointDamage ["HitAvionics", 1];
+    _vehicle setHitPointDamage ["HitEngine3", 1];
+    _vehicle setHitPointDamage ["HitBatteries ", 1];
+    _vehicle setHitPointDamage ["HitLGlass ", 1];
+    _vehicle setHitPointDamage ["HitGlass1 ", 1];
+    _vehicle setHitPointDamage ["HitGlass2 ", 1];
+    _vehicle setHitPointDamage ["HitGlass3 ", 1];
+    _vehicle setHitPointDamage ["HitHull", 1.0];
     uiSleep (1 * 60);
-    _vehicle setHitPointDamage ["HitEngine", 0];
-    _vehicle setHitPointDamage ["HitEngine1", 0];
-    _vehicle setHitPointDamage ["HitEngine2", 0];
-    _vehicle setHitPointDamage ["HitAvionics", 0];
+    //_vehicle setHitPointDamage ["HitEngine", 0];
+    //_vehicle setHitPointDamage ["HitEngine1", 0];
+    //_vehicle setHitPointDamage ["HitEngine2", 0];
+    //_vehicle setHitPointDamage ["HitAvionics", 0];
 	//};
 };
 
