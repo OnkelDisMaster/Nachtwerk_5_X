@@ -1,4 +1,4 @@
-#include <macro.h>
+#include "script_macros.hpp"
 /*
 
 	file: fn_smartphone.sqf
