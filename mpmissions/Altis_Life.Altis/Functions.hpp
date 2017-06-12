@@ -239,7 +239,7 @@ class Life_Client_Core {
         class onFired {};
         class onTakeItem {};
         class playerSkins {};
-        class playerTags {};
+        //class playerTags {};
         class pullOutVeh {};
         class pushObject {};
         class receiveItem {};
