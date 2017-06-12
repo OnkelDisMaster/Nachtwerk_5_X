@@ -35,7 +35,7 @@ if(_vehicle isKindOf "Car") then {
 	hint "vor sleep";
 	while {_aktiv} do
 	{
-		sleep 1 * 60;
+		uisleep 1 * 60;
 		aktiv = false;
 	};
 	hint "nach sleep";
