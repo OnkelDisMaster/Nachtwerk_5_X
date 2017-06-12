@@ -2,7 +2,8 @@
 	File: vehicleEmpd.sqf
 	Author: � 2014 nano2K - written for we-are-friendly.de
 */
-private["_vehicle"];
+private["_vehicle","_aktiv"];
+_aktiv = true;
 _vehicle =  [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 
 if(isNull _vehicle) exitWith {};
@@ -32,7 +33,11 @@ if(_vehicle isKindOf "Car") then {
     //_vehicle setHitPointDamage ["HitHull", 1.0];
     //sleep (1 * 60);
 	hint "vor sleep";
-	[] spawn {sleep 1 * 60};
+	while {_aktiv} do
+	{
+		sleep 1 * 60;
+		aktiv = false;
+	};
 	hint "nach sleep";
    // _vehicle setHitPointDamage ["HitEngine", 0];
 
