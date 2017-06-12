@@ -90,6 +90,14 @@ class CfgFunctions {
             class recupkeyforHC {};
         };
 
+        class Smartphone
+        {
+            file = "\life_server\Functions\Smartphone";
+            class handleMessages {};
+            class msgRequest {};
+            class cleanupMessages {};
+        };
+
         class Housing {
             file = "\life_server\Functions\Housing";
             class addHouse {};

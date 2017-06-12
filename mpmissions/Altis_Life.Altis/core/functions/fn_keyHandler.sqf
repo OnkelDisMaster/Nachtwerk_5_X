@@ -279,6 +279,19 @@ switch (_code) do {
 			[(vehicle player)] spawn life_fnc_speedUp;
 		};
 	};
+
+	//SmartPhone  Shift + 1
+    	case 2:
+    	{
+    		if(_shift) then {_handled = true;};
+    		if (_shift) then
+    		{
+    			if(!_alt && !_ctrlKey && !dialog) then
+    			{
+    				[] call life_fnc_callCellPhone;
+    			};
+    		};
+    	};
 	
     //U Key
     case 22: {

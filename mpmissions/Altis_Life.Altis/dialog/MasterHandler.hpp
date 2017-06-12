@@ -12,6 +12,7 @@
 #include "shops.hpp"
 #include "ui.hpp"
 //#include "hud_stats.hpp"
+#include "smartphone.hpp"
 #include "admin_menu.hpp"
 #include "cell_phone.hpp"
 #include "wanted_list.hpp"

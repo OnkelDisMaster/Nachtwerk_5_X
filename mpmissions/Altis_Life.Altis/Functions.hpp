@@ -255,6 +255,7 @@ class Life_Client_Core {
 		class disableSnakes {};
         class savezone {};
         class teargas {};
+        class callCellPhone {};
     };
 
     class Gangs    {
@@ -368,6 +369,7 @@ class Life_Client_Core {
         class s_onCheckedChange {};
         class s_onSliderChange {};
         class settingsMenu {};
+        class smartphone {};
         class updateViewDistance {};
         class useItem {};
         class wantedAddP {};
