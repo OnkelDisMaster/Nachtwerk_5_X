@@ -32,7 +32,7 @@ if(_vehicle isKindOf "Car") then {
     //_vehicle setHitPointDamage ["HitHull", 1.0];
     //sleep (1 * 60);
 	hint "vor sleep";
-	waitUntil {sleep 1 * 60};
+	[] spawn {sleep 1 * 60};
 	hint "nach sleep";
    // _vehicle setHitPointDamage ["HitEngine", 0];
 
