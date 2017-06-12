@@ -31,7 +31,9 @@ if(_vehicle isKindOf "Car") then {
     //_vehicle setHitPointDamage ["HitGlass3 ", 1];
     //_vehicle setHitPointDamage ["HitHull", 1.0];
     //sleep (1 * 60);
+	hint "vor sleep";
 	waitUntil {sleep 1 * 60};
+	hint "nach sleep";
    // _vehicle setHitPointDamage ["HitEngine", 0];
 
     //_vehicle setHitPointDamage ["HitEngine2", 0];
