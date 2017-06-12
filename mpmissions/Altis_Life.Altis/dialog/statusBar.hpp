@@ -1,4 +1,4 @@
- #include "..\script_macros.hpp"
+#include "..\script_macros.hpp"
 
 #define ST_RIGHT 0x01
 
