@@ -1,9 +1,9 @@
 /*
-	Versão : 0.2
+	Versï¿½o : 0.2
 	Nome : statusBar.sqf
 	Autor : Bosco
-	Data de Criação : 07/02/2016
-	Descrição : Barra de Status para Life,Wasteland,Epoch e Exile.
+	Data de Criaï¿½ï¿½o : 07/02/2016
+	Descriï¿½ï¿½o : Barra de Status para Life,Wasteland,Epoch e Exile.
 
 */
 
@@ -60,7 +60,7 @@ waitUntil{isNull (findDisplay 38500)};
 		_unit = _this select 0;
 		_damage = round ((1 - (damage player)) * 100);
 		_dinheiro = [life_cash] call life_fnc_numberText;
-		_banco = [life_atmcash] call life_fnc_numberText;
+		_banco = [BANK] call life_fnc_numberText;
 		_serverFPS = round diag_fps;
 		_grid = mapGridPosition  player; _xx = (format[_grid]) select  [0,3];
 		_yy = (format[_grid]) select  [3,3];
