@@ -60,7 +60,7 @@ waitUntil{isNull (findDisplay 38500)};
 		_unit = _this select 0;
 		_damage = round ((1 - (damage player)) * 100);
 		_dinheiro = [life_cash] call life_fnc_numberText;
-		_banco = [life_atmcash] call life_fnc_numberText;
+		_banco = [life_atmbank] call life_fnc_numberText;
 		_serverFPS = round diag_fps;
 		_grid = mapGridPosition  player; _xx = (format[_grid]) select  [0,3];
 		_yy = (format[_grid]) select  [3,3];
