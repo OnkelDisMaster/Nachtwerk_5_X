@@ -40,7 +40,7 @@ class playerHUD
     {
         idc = 4452;
         size = 0.019 * safeZoneH;
-        text = "100%"; //--- ToDo: Localize;
+        text = "$STR_HUD_Food"; //--- ToDo: Localize;
         x = 0.906 * safezoneW + safezoneX;
         y = 0.899 * safezoneH + safezoneY;
         w = 0.0300029 * safezoneW;
@@ -51,7 +51,7 @@ class playerHUD
     {
         idc = 4453;
         size = 0.019 * safeZoneH;
-        text = "100%"; //--- ToDo: Localize;
+        text = "$STR_HUD_Water"; //--- ToDo: Localize;
         x = 0.906 * safezoneW + safezoneX;
         y = 0.925  * safezoneH + safezoneY;
         w = 0.0300029 * safezoneW;
