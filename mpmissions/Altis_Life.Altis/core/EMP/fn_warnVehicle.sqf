@@ -11,7 +11,7 @@ if(!isNull (findDisplay 3494)) then {
 	_vehicle = nn_last_vehicles select _index;
 	if(isNull _vehicle) exitWith {};
 //	hint format["[]: %1 \n crew: %2 \n veh: %3",[_vehicle], crew _vehicle,_vehicle];
-	[_vehicle] remoteExecCall ["life_fnc_vehicleWarned",crew _vehicle];
+	[_vehicle] remoteExec ["life_fnc_vehicleWarned",crew _vehicle];
 	uiSleep 10;
 	nn_empInUse = false;
 };

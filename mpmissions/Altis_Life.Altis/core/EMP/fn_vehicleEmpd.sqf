@@ -33,11 +33,12 @@ if(_vehicle isKindOf "Car") then {
     //_vehicle setHitPointDamage ["HitHull", 1.0];
     //sleep (1 * 60);
 	hint "vor sleep";
-	while {_aktiv} do
+	sleep (1 * 60);
+	/*while {_aktiv} do
 	{
 		uisleep 1 * 60;
 		aktiv = false;
-	};
+	};*/
 	hint "nach sleep";
    // _vehicle setHitPointDamage ["HitEngine", 0];
 
