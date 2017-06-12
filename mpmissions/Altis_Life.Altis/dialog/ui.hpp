@@ -28,7 +28,7 @@ class playerHUD
         shadow = 0;
         type = CT_STATIC;
         style = ST_PICTURE;
-        text = "..\images\ui\ui_secbg_pfa.paa";
+        text = "images\ui\ui_secbg_pfa.paa";
         x = 0.90504 * safezoneW + safezoneX;
         y = 0.881 * safezoneH + safezoneY;
         w = 0.10001 * safezoneW;
@@ -40,7 +40,7 @@ class playerHUD
     {
         idc = 4452;
         size = 0.019 * safeZoneH;
-        text = "$STR_HUD_Food"; //--- ToDo: Localize;
+        text = "100%"; //--- ToDo: Localize;
         x = 0.906 * safezoneW + safezoneX;
         y = 0.899 * safezoneH + safezoneY;
         w = 0.0300029 * safezoneW;
@@ -51,7 +51,7 @@ class playerHUD
     {
         idc = 4453;
         size = 0.019 * safeZoneH;
-        text = "$STR_HUD_Water"; //--- ToDo: Localize;
+        text = "100%"; //--- ToDo: Localize;
         x = 0.906 * safezoneW + safezoneX;
         y = 0.925  * safezoneH + safezoneY;
         w = 0.0300029 * safezoneW;
