@@ -22,6 +22,7 @@ class CfgServer {
 };
 
 class RscTitles {
+    #include "dialog\ui.hpp"
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\statusBar.hpp"
