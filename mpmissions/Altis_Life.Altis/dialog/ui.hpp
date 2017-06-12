@@ -1,3 +1,5 @@
+#include "..\script_macros.hpp"
+
 // Control types
 #define CT_STATIC	0
 // Static styles
@@ -21,7 +23,7 @@ class playerHUD
 			shadow = 0;
 			type = CT_STATIC;
 			style = ST_PICTURE;
-			text = "images\ui\ui_secbg_pfa.paa";
+			text = "..\images\ui\ui_secbg_pfa.paa";
 			x = 0.90504 * safezoneW + safezoneX;
 			y = 0.881 * safezoneH + safezoneY;
 			w = 0.10001 * safezoneW;
