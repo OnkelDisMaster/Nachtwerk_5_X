@@ -112,7 +112,7 @@ class CfgRemoteExec {
 		F(TON_fnc_getUpdate,SERVER) //DynMarket
 		F(TON_fnc_changePrice, SERVER) //DynMarket
 		F(life_fnc_update,CLIENT) //DynMarket
-		F(TON_fnc_clientMessage,SERVER) //SMARTPHONE
+		//F(TON_fnc_clientMessage,SERVER) //SMARTPHONE
 		F(life_fnc_smartphone,CLIENT) // SMARTPHONE
 		F(TON_fnc_msgRequest,SERVER) // SMARTPHONE
 		F(TON_fnc_cleanupMessages,SERVER) // SMARTPHONE
