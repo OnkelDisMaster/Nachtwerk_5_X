@@ -5,7 +5,7 @@
 
 */
 private ["_vehicle","_maxspeed","_dmg","_chip"];
-_vehicle = _this select 0;
+_vehicle = _this select 0};
 
 _chip = _vehicle getVariable ["Chipsatz",0];
 if (_chip isEqualTo 0) exitwith {}; // nope??
@@ -16,11 +16,11 @@ _boosterSpeed = _maxspeed;
 
 switch (_chip) do
 {
-	case 1:	_boosterSpeed = _maxspeed + 20; // legal
-	case 2: _boosterSpeed = _maxspeed + 30; // illegal
-	case 3:	_boosterSpeed = _maxspeed + 50; // Event
-	case 4:	_boosterSpeed = _maxspeed + 70; // Admin
-	default {exitwith {}};
+	case 1:	{ _boosterSpeed = _maxspeed + 20}; // legal
+	case 2: { _boosterSpeed = _maxspeed + 30}; // illegal
+	case 3:	{ _boosterSpeed = _maxspeed + 50}; // Event
+	case 4:	{ _boosterSpeed = _maxspeed + 70}; // Admin
+	default  {exitwith {}};
 };
 
 _dmg = getdammage _vehicle;
@@ -61,16 +61,15 @@ while{(_vehicle getvariable "speeder")} do {
 		
 		switch (_chip) do
 		{
-			case 1,2: 	_vehicle setfuel (_f - 0.0008); // fuelverbrauch / halbe Sekunde == 0,1 Liter	
-			case 3:		_vehicle setfuel (_f - 0.0006); 	
-			case 4:		_vehicle setfuel (_f - 0.0001); 	
-			default {exitwith {}};
+			case 1,2: 	{ _vehicle setfuel (_f - 0.0008)}; // fuelverbrauch / halbe Sekunde == 0,1 Liter	
+			case 3:		{ _vehicle setfuel (_f - 0.0006)}; 	
+			case 4:		{ _vehicle setfuel (_f - 0.0001)}; 	
+			default 	{ exitwith {}};
 		};		
 	};
-	//
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
 		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
 	};	
-	sleep 2.0;  //delay für spam
+	sleep 2.0};  //delay für spam
 };
