@@ -4,7 +4,7 @@
 	Speeder Script for higher endspeed!
 
 */
-private ["_vehicle","_maxspeed","_dmg","_chip"];
+private ["_vehicle","_maxspeed","_dmg","_chip","_fuelc"];
 _vehicle = _this select 0;
 
 _chip = _vehicle getVariable ["Chipsatz",0];
@@ -16,10 +16,11 @@ _boosterSpeed = _maxspeed;
 
 switch (_chip) do
 {
-	case 1:	{ _boosterSpeed = _maxspeed + 20}; // legal
-	case 2: { _boosterSpeed = _maxspeed + 30}; // illegal
-	case 3:	{ _boosterSpeed = _maxspeed + 50}; // Event
-	case 4:	{ _boosterSpeed = _maxspeed + 70}; // Admin
+	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008}; // legal
+	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0008}; // illegal
+	case 3:	{ _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002}; // Beamter
+	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0006}; // Event
+	case 5:	{ _boosterSpeed = _maxspeed + 100;	_fuelc = 0.0001}; // Admin
 };
 
 _dmg = getdammage _vehicle;
@@ -57,7 +58,7 @@ while{(_vehicle getvariable "speeder")} do {
 		];
 		_f = fuel _vehicle;
 		// fuelverbrauch / halbe Sekunde == 0,1 Liter
-		_vehicle setfuel (_f - 0.0006); // fuelverbrauch / halbe Sekunde == 0,1 Liter		
+		_vehicle setfuel (_f - _fuelc); // fuelverbrauch / halbe Sekunde == 0,1 Liter	(standard)	
 	};
 
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
