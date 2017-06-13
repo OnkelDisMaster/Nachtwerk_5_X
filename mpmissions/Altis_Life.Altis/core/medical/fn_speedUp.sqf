@@ -13,10 +13,14 @@ if (_chip isEqualTo 0) exitwith {}; // nope??
 _vehicle setvariable ["speeder",true,true];
 _maxspeed = getNumber(configFile >> "CfgVehicles" >> (typeof _vehicle) >> "maxSpeed") -5;
 _boosterSpeed = _maxspeed;
-if (_chip >1) then {
-	_boosterSpeed = _maxspeed + 30; // illegal
-} else {
-	_boosterSpeed = _maxspeed + 20; // legal
+
+switch (_chip) do
+{
+	case 1:	{ _boosterSpeed = _maxspeed + 20}; // legal
+	case 2: { _boosterSpeed = _maxspeed + 30}; // illegal
+	case 3:	{ _boosterSpeed = _maxspeed + 50}; // Event
+	case 4:	{ _boosterSpeed = _maxspeed + 70}; // Admin
+	default { _boosterSpeed = _maxspeed};
 };
 
 _dmg = getdammage _vehicle;
@@ -53,7 +57,13 @@ while{(_vehicle getvariable "speeder")} do {
 				(_vel select 2) 
 		];
 		_f = fuel _vehicle;
-		_vehicle setfuel (_f - 0.0008); // fuelverbrauch / halbe Sekunde == 0,1 Liter		
+		
+		switch (_chip) do
+		{
+			case 1,2: 	{ _vehicle setfuel (_f - 0.0008)}; // fuelverbrauch / halbe Sekunde == 0,1 Liter	
+			case 3:		{ _vehicle setfuel (_f - 0.0006)}; 	
+			case 4:		{ _vehicle setfuel (_f - 0.0001)}; 	
+		};				
 	};
 	//
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
