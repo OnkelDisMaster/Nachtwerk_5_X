@@ -95,6 +95,7 @@ class Life_my_smartphone {
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 			colorBackground[] = {0, 0, 0, 0.0};
 			columns[] = {0,0.3};
+			rowHeight = 0.050;
 			x = 0.325;
 			y = 0.25 + (1 / 25);
 			w = 0.7;
