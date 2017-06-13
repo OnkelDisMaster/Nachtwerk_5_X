@@ -71,5 +71,5 @@ while{(_vehicle getvariable "speeder")} do {
 		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
 	};	
-	sleep 2.0};  //delay für spam
+	sleep 2.0;  //delay für spam
 };
