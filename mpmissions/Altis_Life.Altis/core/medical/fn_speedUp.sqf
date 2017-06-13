@@ -20,7 +20,7 @@ switch (_chip) do
 	case 2: { _boosterSpeed = _maxspeed + 30}; // illegal
 	case 3:	{ _boosterSpeed = _maxspeed + 50}; // Event
 	case 4:	{ _boosterSpeed = _maxspeed + 70}; // Admin
-	default  {exitwith {}};
+	default { _boosterSpeed = _maxspeed};
 };
 
 _dmg = getdammage _vehicle;
@@ -64,7 +64,6 @@ while{(_vehicle getvariable "speeder")} do {
 			case 1,2: 	{ _vehicle setfuel (_f - 0.0008)}; // fuelverbrauch / halbe Sekunde == 0,1 Liter	
 			case 3:		{ _vehicle setfuel (_f - 0.0006)}; 	
 			case 4:		{ _vehicle setfuel (_f - 0.0001)}; 	
-			default 	{ exitwith {}};
 		};		
 	};
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
