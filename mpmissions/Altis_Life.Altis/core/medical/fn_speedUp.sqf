@@ -57,14 +57,9 @@ while{(_vehicle getvariable "speeder")} do {
 		];
 		_f = fuel _vehicle;
 		// fuelverbrauch / halbe Sekunde == 0,1 Liter
-		switch (_chip) do
-		{
-			case 1,2: 	{ _vehicle setfuel (_f - 0.0008)}; 	
-			case 3:		{ _vehicle setfuel (_f - 0.0006)}; 	
-			case 4:		{ _vehicle setfuel (_f - 0.0001)}; 	
-		};				
+		_vehicle setfuel (_f - 0.0006); // fuelverbrauch / halbe Sekunde == 0,1 Liter		
 	};
-	//
+
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
 		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
