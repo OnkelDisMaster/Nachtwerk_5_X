@@ -96,6 +96,9 @@ class Life_my_smartphone {
 			colorBackground[] = {0, 0, 0, 0.0};
 			columns[] = {0,0.3};
 			rowHeight = 0.050;
+			drawSideArrows = 0;
+            idcLeft = -1;
+            idcRight = -1;
 			x = 0.325;
 			y = 0.25 + (1 / 25);
 			w = 0.7;
@@ -127,7 +130,7 @@ class Life_my_smartphone {
 		
 		class Schreiben : Life_RscButtonMenu {
 			idc = 887892;
-			text = "$STR_SMARTPHONE_SCHREIBEN";
+			text = "Schreiben";
 			onButtonClick = "createDialog ""Life_smartphone_schreiben"";";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 1.0};
 			x = 0.11;
@@ -139,7 +142,7 @@ class Life_my_smartphone {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = -1;
-			text = "$STR_SMARTPHONE_TITLE";
+			text = "SMS-System";
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 			x = 0.1;
 			y = 0.2;
@@ -150,7 +153,7 @@ class Life_my_smartphone {
 		class PlayerListTitle : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = -1;
-			text = "$STR_SMARTPHONE_PLAYERLISTTITLE";
+			text = "Spieler";
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.9)";
 			x = 0.11;
 			y = 0.25;
@@ -160,7 +163,7 @@ class Life_my_smartphone {
 		
 		class CloseLoadMenu : Life_RscButtonMenu {
 			idc = -1;
-			text = "$STR_Global_Close";
+			text = "Schließen";
 			onButtonClick = "closeDialog 0;[] call life_fnc_p_updateMenu";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.9 - (1 / 25);
@@ -170,7 +173,7 @@ class Life_my_smartphone {
 		
 		class Notruf : Life_RscButtonMenu {
 			idc = -1;
-			text = "$STR_SMARTPHONE_NOTRUF";
+			text = "Notruf";
 			onButtonClick = "createDialog ""Life_smartphone_notruf"";";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			x = 0.325 + 0.7 - (6.25 / 40);
@@ -226,7 +229,7 @@ class Life_smartphone_schreiben
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 88886;
-			text = "$STR_SMARTPHONE_NACHRICHTTITLE";
+			text = "Titel";
 			x = 0.1;
 			y = 0.2;
 			w = 0.95;
@@ -235,7 +238,7 @@ class Life_smartphone_schreiben
 		
 		class Absenden : Life_RscButtonMenu {
 			idc = 88885;
-			text = "$STR_SMARTPHONE_ABSENDEN";
+			text = "Absenden";
 			onButtonClick = "[1,-1,(ctrlText 88884)] call life_fnc_newMsg;";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 1.0};
 			x = 0.6 - (6.25 / 40) + 0.088;
@@ -247,7 +250,7 @@ class Life_smartphone_schreiben
 		class AdminMsg : life_RscButtonMenu 
 		{
 			idc = 888897;
-			text = "$STR_CELL_AdminMsg";
+			text = "AdminMsg";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 1.0};
 			onButtonClick = "[5,-1,(ctrlText 88884)] call life_fnc_newMsg;";
 			
@@ -259,7 +262,7 @@ class Life_smartphone_schreiben
 		
 		class Close : Life_RscButtonMenu {
 			idc = -1;
-			text = "$STR_Global_Close";
+			text = "Schließen";
 			onButtonClick = "closeDialog 0;";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			x = 0.11;
@@ -313,7 +316,7 @@ class Life_smartphone_notruf {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 888892;
-			text = "$STR_SMARTPHONE_Notruftitle";
+			text = "Titel";
 			x = 0.1;
 			y = 0.2;
 			w = 0.6;
@@ -334,7 +337,7 @@ class Life_smartphone_notruf {
 		class TxtCopButton : life_RscButtonMenu 
 		{
 			idc = 888895;
-			text = "$STR_CELL_TextPolice";
+			text = "Polizei Msg";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[2,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
@@ -347,7 +350,7 @@ class Life_smartphone_notruf {
 		class TxtAdminButton : life_RscButtonMenu 
 		{
 			idc = 888896;
-			text = "$STR_CELL_TextAdmins";
+			text = "Admin Msg";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[3,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
@@ -361,7 +364,7 @@ class Life_smartphone_notruf {
 		class AdminMsgAll : life_RscButtonMenu 
 		{
 			idc = 888898;
-			text = "$STR_CELL_AdminMSGAll";
+			text = "Admin Msg All";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[7,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
@@ -387,7 +390,7 @@ class Life_smartphone_notruf {
 		class ADACReq : life_RscButtonMenu
 		{
 			idc = 888900;
-			text = "$STR_CELL_ADACRequest";
+			text = "ADAC";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[8,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
@@ -399,7 +402,7 @@ class Life_smartphone_notruf {
 		
 		class CloseButton : Life_RscButtonMenu {
 			idc = -1;
-			text = "$STR_Global_Close";
+			text = "Schließen";
 			onButtonClick = "closeDialog 0;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.38 + (1 / 50);
