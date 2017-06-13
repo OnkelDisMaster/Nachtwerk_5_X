@@ -271,6 +271,7 @@ switch (_code) do {
 	// Taste Q
 	case 16: {		
 		if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
+			[] spawn {
 			_speed = (vehicle player) getvariable ["speeder",false];			
 			if (_speed) exitwith {
 				vehicle player setvariable ["speeder",false,true];	
@@ -278,7 +279,8 @@ switch (_code) do {
 				sleep 5.0;
 			};
 			[(vehicle player)] spawn life_fnc_speedUp;
-			sleep 5.0;
+			sleep 3.0;
+			};
 		};
 	};
 

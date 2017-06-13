@@ -67,7 +67,10 @@ while{(_vehicle getvariable "speeder")} do {
 	};	
 	if (_chip < 2) then {	
 		sleep 0.5;
-	} else {		
+	} else {
+		if (_chip == 5) then {	
+		sleep 0.1;
+		} else {
 		sleep 0.2;
 	}
 };
