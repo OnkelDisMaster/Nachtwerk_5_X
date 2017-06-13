@@ -1,7 +1,6 @@
 /*
 
 	Author Shinji
-	Edit: Valle
 	Speeder Script for higher endspeed!
 
 */
@@ -14,14 +13,10 @@ if (_chip isEqualTo 0) exitwith {}; // nope??
 _vehicle setvariable ["speeder",true,true];
 _maxspeed = getNumber(configFile >> "CfgVehicles" >> (typeof _vehicle) >> "maxSpeed") -5;
 _boosterSpeed = _maxspeed;
-
-switch (_chip) do
-{
-	case 1:	{ _boosterSpeed = _maxspeed + 20}; // legal
-	case 2: { _boosterSpeed = _maxspeed + 30}; // illegal
-	case 3:	{ _boosterSpeed = _maxspeed + 50}; // Event
-	case 4:	{ _boosterSpeed = _maxspeed + 70}; // Admin
-	default { _boosterSpeed = _maxspeed};
+if (_chip >1) then {
+	_boosterSpeed = _maxspeed + 30; // illegal
+} else {
+	_boosterSpeed = _maxspeed + 20; // legal
 };
 
 _dmg = getdammage _vehicle;
@@ -44,9 +39,8 @@ while{(_vehicle getvariable "speeder")} do {
 		];
 		_f = fuel _vehicle;
 		_vehicle setfuel (_f - 0.0006); // fuelverbrauch / halbe Sekunde == 0,1 Liter
-		
 	};
-	// illegale geshcwindigkeit bzw. beschleuinigung erhöhen    //Chip spam verhindern ! muss noch gemacht werden !
+	// illegale geshcwindigkeit bzw. beschleuinigung erhöhen
 	 if (_chip > 1 && speed _vehicle <= _maxspeed &&  speed _Vehicle > 10 && (alive _vehicle) && ((getdammage _vehicle)<=_dmg) && (alive player) && (vehicle player != player)) then {	
 		if ((driver _vehicle != player)) exitwith {};
 		_vel = velocity _vehicle;  
@@ -59,17 +53,16 @@ while{(_vehicle getvariable "speeder")} do {
 				(_vel select 2) 
 		];
 		_f = fuel _vehicle;
-		
-		switch (_chip) do
-		{
-			case 1,2: 	{ _vehicle setfuel (_f - 0.0008)}; // fuelverbrauch / halbe Sekunde == 0,1 Liter	
-			case 3:		{ _vehicle setfuel (_f - 0.0006)}; 	
-			case 4:		{ _vehicle setfuel (_f - 0.0001)}; 	
-		};		
+		_vehicle setfuel (_f - 0.0008); // fuelverbrauch / halbe Sekunde == 0,1 Liter		
 	};
+	//
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
 		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
 	};	
-	sleep 0.2; 
+	if (_chip < 2) then {	
+		sleep 0.5;
+	} else {		
+		sleep 0.2;
+	}
 };
