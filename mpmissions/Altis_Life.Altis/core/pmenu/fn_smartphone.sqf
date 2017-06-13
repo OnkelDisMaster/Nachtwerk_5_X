@@ -37,7 +37,8 @@ switch(_type) do
 			};
 		} forEach playableUnits;
 		
-		[[getPlayerUID player, player],"TON_fnc_msgRequest",false] spawn life_fnc_MP;
+		//[[getPlayerUID player, player],"TON_fnc_msgRequest",false] spawn life_fnc_MP;
+		[getPlayerUID player,player] remoteExec ["TON_fnc_msgRequest"];
 		ctrlEnable[887892,false];
 	};
 	case 1:
@@ -54,6 +55,7 @@ switch(_type) do
 	case 3:
 	{
 		lbClear _cMessageList;
-		[[player],"TON_fnc_cleanupMessages",false] spawn life_fnc_MP;
+		//[[player],"TON_fnc_cleanupMessages",false] spawn life_fnc_MP;
+		[player] remoteExec ["TON_fnc_cleanupMessages"];
 	};
 };
