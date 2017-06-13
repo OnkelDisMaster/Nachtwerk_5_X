@@ -18,7 +18,7 @@ switch (_chip) do
 {
 	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008}; // legal
 	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0008}; // illegal
-	case 3:	{ _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002}; // Beamter
+	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01};}; // Beamter + Sicherung
 	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0006}; // Event
 	case 5:	{ _boosterSpeed = _maxspeed + 100;	_fuelc = 0.0001}; // Admin
 };

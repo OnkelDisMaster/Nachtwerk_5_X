@@ -6,7 +6,7 @@
 *    Description:
 *    Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_aktiv"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -266,20 +266,21 @@ switch (_code) do {
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
     };
-	
+	_aktiv = false;
 	_speed = speed cursorTarget;
 	// Taste Q
 	case 16: {		
-		if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
+		if ((_aktiv == false) && vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
 			[] spawn {
+			_aktiv = true;
 			_speed = (vehicle player) getvariable ["speeder",false];			
 			if (_speed) exitwith {
 				vehicle player setvariable ["speeder",false,true];	
 				hint "Chip wurde deaktiviert...";
 				sleep 10.0;
+				_aktiv = false;
 			};
 			[(vehicle player)] spawn life_fnc_speedUp;
-			sleep 6.0;
 			};
 		};
 	};
