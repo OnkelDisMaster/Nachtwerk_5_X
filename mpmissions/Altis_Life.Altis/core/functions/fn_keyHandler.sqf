@@ -276,10 +276,10 @@ switch (_code) do {
 			if (_speed) exitwith {
 				vehicle player setvariable ["speeder",false,true];	
 				hint "Chip wurde deaktiviert...";
-				sleep 5.0;
+				sleep 10.0;
 			};
 			[(vehicle player)] spawn life_fnc_speedUp;
-			sleep 3.0;
+			sleep 6.0;
 			};
 		};
 	};
