@@ -5,7 +5,7 @@
 
 */
 private ["_vehicle","_maxspeed","_dmg","_chip"];
-_vehicle = _this select 0};
+_vehicle = _this select 0;
 
 _chip = _vehicle getVariable ["Chipsatz",0];
 if (_chip isEqualTo 0) exitwith {}; // nope??
