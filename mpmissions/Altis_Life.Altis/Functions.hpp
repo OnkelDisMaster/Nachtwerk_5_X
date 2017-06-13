@@ -372,6 +372,8 @@ class Life_Client_Core {
         class smartphone {};
         class updateViewDistance {};
         class useItem {};
+        class newMsg {};
+        class showMsg {};
         class wantedAddP {};
         class wantedInfo {};
         class wantedList {};

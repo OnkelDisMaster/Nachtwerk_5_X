@@ -116,6 +116,7 @@ class CfgRemoteExec {
 		F(life_fnc_smartphone,CLIENT) // SMARTPHONE
 		F(TON_fnc_msgRequest,SERVER) // SMARTPHONE
 		F(TON_fnc_cleanupMessages,SERVER) // SMARTPHONE
+		F(TON_fnc_handleMessages,SERVER) // SMARTPHONE
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
