@@ -31,6 +31,7 @@ HC_DC = ["HC_Disconnected","onPlayerDisconnected",
             publicVariable "life_HC_isActive";
             HC_Life = false;
             publicVariable "HC_Life";
+            sync = [] spawn SOCK_fnc_syncData;
             cleanup = [] spawn TON_fnc_cleanup;
             cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
             [false] call TON_fnc_transferOwnership;
