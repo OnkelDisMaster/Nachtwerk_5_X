@@ -70,9 +70,5 @@ while{(_vehicle getvariable "speeder")} do {
 			_aktiv = false;
 		};
 	};	
-	[] spawn {
-		_aktiv = true;
-		sleep 2.0;
-		_aktiv = false;
-	};
+	sleep 2.0;	
 };
