@@ -139,17 +139,17 @@ publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for Headless
 [] spawn life_fnc_survival;
 
 [] spawn {
-    for "_i" from 0 to 1 step 0 do {
-        waitUntil{(!isNull (findDisplay 49)) && (!isNull (findDisplay 602))}; // Check if Inventory and ESC dialogs are open
-        (findDisplay 49) closeDisplay 2; // Close ESC dialog
-        (findDisplay 602) closeDisplay 2; // Close Inventory dialog
-    };
+    while {true} do {
+		waitUntil{(!isNull (findDisplay 49)) && (!isNull (findDisplay 602))}; // Check if Inventory and ESC dialogs are open
+		(findDisplay 49) closeDisplay 2; // Close ESC dialog
+		(findDisplay 602) closeDisplay 2; // Close Inventory dialog
+	};
 };
 
-[] execVM "core\welcome.sqf";
+
 
 CONSTVAR(life_paycheck); //Make the paycheck static.
-if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 0) then {player enableFatigue false;};
+if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
 
 if (LIFE_SETTINGS(getNumber,"pump_service") isEqualTo 1) then{
     [] execVM "core\fn_setupStationService.sqf";
@@ -160,7 +160,7 @@ if (life_HC_isActive) then {
 } else {
     [getPlayerUID player,player getVariable["realname",name player]] remoteExec ["life_fnc_wantedProfUpdate",RSERV];
 };
-
+[] execVM "core\welcome.sqf";
 //DynMarket
 DYNAMICMARKET_boughtItems = [];
 [player] remoteExec ["TON_fnc_playerLogged",RSERV];
