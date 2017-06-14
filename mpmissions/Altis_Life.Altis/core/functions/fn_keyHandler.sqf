@@ -279,7 +279,6 @@ switch (_code) do {
 				};
 			};
 			[(vehicle player)] spawn life_fnc_speedUp;
-			};
 		};
 	};
 
