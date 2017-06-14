@@ -172,6 +172,7 @@ class Life_Client_Core {
         class copOpener {};
         class showArrestDialog {};
         class arrestDialog_Arrest {};
+        class copSiren2 {};
     };
 
     class Dialog_Controls {
