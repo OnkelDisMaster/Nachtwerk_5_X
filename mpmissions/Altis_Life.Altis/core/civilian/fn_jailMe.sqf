@@ -11,21 +11,26 @@ private["_time","_bail","_esc","_countDown"];
 params [
     ["_ret",[],[[]]],
     ["_bad",false,[false]]
+    ["_time",15,[0]]
 ];
 
+_time = time + (_time * 60);
 
-if (_bad) then { _time = time + 1100; } else { _time = time + (15 * 60); };
+//if (_bad) then { _time = time + 1100; } else { _time = time + (15 * 60); };
 
 if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 1500; _time = time + (10 * 60); };
 _esc = false;
 _bail = false;
 
-[_bad] spawn {
+if(_time <= 0) then { _time = time + (15 * 60); hintC "Please Report to Admin: JAIL_FALLBACK_15, time is zero!"; };
+
+[_bad,_time] spawn {
     life_canpay_bail = false;
+    life_bail_amount = life_bail_amount * 5;
     if (_this select 0) then {
-        sleep (10 * 60);
+        uiSleep ( (_this select 1) * 0.5 );
     } else {
-        sleep (5 * 60);
+        uiSleep ( (_this select 1) * 0.2 );
     };
     life_canpay_bail = nil;
 };

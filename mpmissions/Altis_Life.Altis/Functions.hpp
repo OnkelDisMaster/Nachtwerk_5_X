@@ -170,6 +170,8 @@ class Life_Client_Core {
         class wantedGrab {};
         class copEnter {};
         class copOpener {};
+        class showArrestDialog {};
+        class arrestDialog_Arrest {};
     };
 
     class Dialog_Controls {

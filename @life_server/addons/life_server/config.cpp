@@ -46,6 +46,8 @@ class CfgFunctions {
         class Jail_Sys {
             file = "\life_server\Functions\Jail";
             class jailSys {};
+            class jailTimer {};
+            class jailPlayer {};
         };
 
         class Client_Code {

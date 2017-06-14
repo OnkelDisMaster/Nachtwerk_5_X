@@ -17,6 +17,7 @@
 #include "cell_phone.hpp"
 #include "wanted_list.hpp"
 #include "wantedadd2.hpp"
+#include "jail_time.hpp"
 #include "ticket.hpp"
 #include "clothing.hpp"
 #include "trunk.hpp"
