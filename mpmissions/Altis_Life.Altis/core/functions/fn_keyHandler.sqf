@@ -323,6 +323,14 @@ switch (_code) do {
             };
         };
     };
+
+    // O Schranken öffnen
+    case 40:
+    {
+        if (!_shift && !_alt && !_ctrlKey && (playerSide in [west,independent])) then {
+            [] call life_fnc_copOpener;
+        };
+    };
 	
     //U Key
     case 22: {
