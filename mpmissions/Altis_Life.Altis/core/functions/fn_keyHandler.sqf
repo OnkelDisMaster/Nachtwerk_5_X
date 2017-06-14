@@ -349,10 +349,10 @@ switch (_code) do {
 				_veh setVariable["siren2",true,true];
 				if(playerSide == west) then {
 					//[[_veh],"life_fnc_copSiren2",nil,true] spawn life_fnc_MP;
-					[_veh] remoteExec ["life_fnc_copSiren2",nil,true];
+					[_veh] remoteExec ["life_fnc_copSiren2"];
 				} else {
 					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
-					[_veh] remoteExec ["life_fnc_medicSiren",nil,true];
+					[_veh] remoteExec ["life_fnc_medicSiren"];
 				};
 			};
 		};
