@@ -19,8 +19,8 @@ switch (_chip) do
 	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008}; // legal
 	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0006}; // illegal
 	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01};}; // Beamter + Sicherung
-	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0005}; // Event
-	case 5:	{ _boosterSpeed = _maxspeed + 100;	_fuelc = 0.0001}; // Admin
+	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0004}; // Event
+	case 5:	{ _boosterSpeed = _maxspeed + 60;	_fuelc = 0.00001}; // Admin
 };
 
 _dmg = getdammage _vehicle;
@@ -42,7 +42,7 @@ while{(_vehicle getvariable "speeder")} do {
 				(_vel select 2)  
 		];
 		_f = fuel _vehicle;
-		_vehicle setfuel (_f - 0.0006); // fuelverbrauch / halbe Sekunde == 0,1 Liter
+		_vehicle setfuel (_f - _fuelc); // fuelverbrauch / halbe Sekunde == 0,1 Liter
 	};
 	// illegale geshcwindigkeit bzw. beschleuinigung erhöhen
 	 if (_chip > 1 && speed _vehicle <= _maxspeed &&  speed _Vehicle > 10 && (alive _vehicle) && ((getdammage _vehicle)<=_dmg) && (alive player) && (vehicle player != player)) then {	
@@ -64,10 +64,11 @@ while{(_vehicle getvariable "speeder")} do {
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
 		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
+		[] spawn {
+			sleep 10.0;
+		};
 	};	
-	if (_chip < 2) then {	
-		sleep 0.5;
-	} else {		
-		sleep 0.2;
-	}
+	[] spawn {
+		sleep 0.1;
+	};
 };
