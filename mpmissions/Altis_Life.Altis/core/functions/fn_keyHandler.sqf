@@ -284,17 +284,45 @@ switch (_code) do {
 	};
 
 	//SmartPhone  Shift + 1
-    	case 2:
-    	{
-    		if(_shift) then {_handled = true;};
-    		if (_shift) then
-    		{
-    			if(!_alt && !_ctrlKey && !dialog) then
-    			{
-    				[] call life_fnc_callCellPhone;
-    			};
-    		};
-    	};
+    case 2:
+    {
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                [] call life_fnc_callCellPhone;
+            };
+        };
+    };
+
+    //Wanted List Shift + 2
+    case 3:
+    {
+        if(playerSide in [independent,civilian]) exitWith {};
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                [] call life_fnc_wantedMenu;
+            };
+        };
+    };
+
+    //Wanted List Shift + 3
+    case 4:
+    {
+        if(playerSide in [independent,civilian]) exitWith {};
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                createDialog "life_wantedadd2";
+            };
+        };
+    };
 	
     //U Key
     case 22: {

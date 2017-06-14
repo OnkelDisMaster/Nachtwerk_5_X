@@ -378,6 +378,8 @@ class Life_Client_Core {
         class wantedInfo {};
         class wantedList {};
         class wantedMenu {};
+        class wantedadd2 {};
+        class wanted2 {};
     };
 
     class Shops    {
