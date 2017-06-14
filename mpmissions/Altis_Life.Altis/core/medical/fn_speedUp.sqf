@@ -4,7 +4,7 @@
 	Speeder Script for higher endspeed!
 
 */
-private ["_vehicle","_maxspeed","_dmg","_chip","_fuelc"];
+private ["_vehicle","_maxspeed","_dmg","_chip","_fuelc","_aktiv"];
 _vehicle = _this select 0;
 
 _chip = _vehicle getVariable ["Chipsatz",0];
@@ -65,10 +65,14 @@ while{(_vehicle getvariable "speeder")} do {
 		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
 		[] spawn {
-			sleep 10.0;
+			_aktiv = true;
+			sleep 5.0;
+			_aktiv = false;
 		};
 	};	
 	[] spawn {
-		sleep 2;
+		_aktiv = true;
+		sleep 2.0;
+		_aktiv = false;
 	};
 };

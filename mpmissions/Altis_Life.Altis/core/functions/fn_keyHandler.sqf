@@ -275,7 +275,7 @@ switch (_code) do {
 				vehicle player setvariable ["speeder",false,true];	
 				hint "Chip wurde deaktiviert...";
 				[] spawn {
-				sleep 10.0;
+				sleep 5.0;
 				hint "nach Q sleep"; 
 				};
 			};
