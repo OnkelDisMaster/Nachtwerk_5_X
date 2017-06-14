@@ -89,7 +89,7 @@ class playerSettings {
  w = 0.108281 * safezoneW;
  h = 0.0276 * safezoneH;
  };
- class Licenses_Menu: life_RscControlsGroup
+ class Licenses_Menu: Life_RscControlsGroup
  {
  idc = -1;
  x = 0.425188 * safezoneW + safezoneX;
@@ -98,7 +98,7 @@ class playerSettings {
  h = 0.297 * safezoneH;
  class controls
  {
- class life_Licenses: life_RscStructuredText
+ class Life_Licenses: Life_RscStructuredText
  {
  idc = 2014;
  sizeEx = 0.020;
@@ -109,7 +109,7 @@ class playerSettings {
  h = 0.297 * safezoneH;
  };
  };
- }
+ };
  class itemList: life_RscListbox
  {
  idc = item_list;
