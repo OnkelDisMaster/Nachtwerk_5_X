@@ -68,6 +68,7 @@ class CfgRemoteExec {
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
 		F(life_fnc_vehicleEmpd,CLIENT)
+		F(life_fnc_copSiren2,CLIENT)
 		F(life_fnc_vehicleWarned,CLIENT)
 
 
