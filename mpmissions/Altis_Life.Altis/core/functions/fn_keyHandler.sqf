@@ -6,7 +6,7 @@
 *    Description:
 *    Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_aktiv"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -275,9 +275,9 @@ switch (_code) do {
 				vehicle player setvariable ["speeder",false,true];	
 				hint "Chip wurde deaktiviert...";
 				[] spawn {
-					//_aktiv = true;
+					_aktiv = true;
 					sleep 5.0;
-					//_aktiv = false;
+					_aktiv = false;
 				};
 			};
 			[(vehicle player)] spawn life_fnc_speedUp;
