@@ -261,6 +261,8 @@ class Life_Client_Core {
         class savezone {};
         class teargas {};
         class callCellPhone {};
+        class introCam {};
+        class loggedOut {};
     };
 
     class Gangs    {
