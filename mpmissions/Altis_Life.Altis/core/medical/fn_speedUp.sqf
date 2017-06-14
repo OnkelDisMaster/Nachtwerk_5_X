@@ -69,6 +69,6 @@ while{(_vehicle getvariable "speeder")} do {
 		};
 	};	
 	[] spawn {
-		sleep 0.1;
+		sleep 2;
 	};
 };
