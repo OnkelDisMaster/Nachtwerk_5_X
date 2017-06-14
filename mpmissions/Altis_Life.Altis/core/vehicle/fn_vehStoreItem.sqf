@@ -8,7 +8,7 @@
     Used in the vehicle trunk menu, stores the selected item and puts it in the vehicles virtual inventory
     if the vehicle has room for the item.
 */
-private["_ctrl","_num","_totalWeight","_itemWeight","_veh_data","_inv","_index","_val"];
+private["_ctrl","_num","_totalWeight","_itemWeight","_veh_data","_inv","_index","_val","_Truck","_FuelTrucks","_FuelStuff"];
 disableSerialization;
 if ((life_trunk_vehicle getVariable ["trunk_in_use_by",player]) != player) exitWith { closeDialog 0; hint localize "STR_MISC_VehInvUse"; };
 
@@ -25,6 +25,13 @@ _veh_data = life_trunk_vehicle getVariable ["Trunk",[[],0]];
 _inv = _veh_data select 0;
 
 if (_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint localize "STR_NOTF_canOnlyStoreInLandVeh";};
+
+_Truck = TypeOf life_trunk_vehicle;
+_FuelStuff = ["oilu","oilp"]; //Which Items can be stored in?
+_FuelTrucks = ["C_Van_01_fuel_F","B_Truck_01_fuel_F","O_Truck_02_fuel_F","O_Truck_03_fuel_F"]; //Fuel Trucks, who are allowed to carry fuel
+
+if (life_TankLaster == 3) exitWith {hint "Du kannst nur Öl oder Kerosin in einen Tanklaster füllen!)"};
+if (life_TankLaster == 4) exitWith {hint "Du kannst Öl oder Kerosin NUR in einen Tanklaster füllen!)";};
 
 if (_ctrl == "money") then {
     _index = [_ctrl,_inv] call TON_fnc_index;
