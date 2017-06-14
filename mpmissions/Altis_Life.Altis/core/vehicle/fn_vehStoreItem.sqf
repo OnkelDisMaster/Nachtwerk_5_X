@@ -27,11 +27,11 @@ _inv = _veh_data select 0;
 if (_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint localize "STR_NOTF_canOnlyStoreInLandVeh";};
 
 _Truck = TypeOf life_trunk_vehicle;
-_FuelStuff = ["oilu","oilp"]; //Which Items can be stored in?
+_FuelStuff = ["oilUnprocessed","oilProcessed","oil_unprocessed","oil_processed"]; //Which Items can be stored in?
 _FuelTrucks = ["C_Van_01_fuel_F","B_Truck_01_fuel_F","O_Truck_02_fuel_F","O_Truck_03_fuel_F"]; //Fuel Trucks, who are allowed to carry fuel
 
-if (life_TankLaster == 3) exitWith {hint "Du kannst nur Öl oder Kerosin in einen Tanklaster füllen!)"};
-if (life_TankLaster == 4) exitWith {hint "Du kannst Öl oder Kerosin NUR in einen Tanklaster füllen!)";};
+if (life_TankLaster isEqualTo 3) exitWith {hint "Du kannst nur Öl oder Kerosin in einen Tanklaster füllen!)"};
+if (life_TankLaster isEqualTo 4) exitWith {hint "Du kannst Öl oder Kerosin NUR in einen Tanklaster füllen!)";};
 
 if (_ctrl == "money") then {
     _index = [_ctrl,_inv] call TON_fnc_index;
