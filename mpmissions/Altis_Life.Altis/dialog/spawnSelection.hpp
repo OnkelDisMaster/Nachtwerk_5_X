@@ -15,7 +15,7 @@ class life_spawn_selection
 	class controlsBackground
 	{
 
-		class MainBackground : RscPicture
+		class MainBackground : life_RscPicture
 		{
 			idc = -1;
 			text = "images\login.paa";
