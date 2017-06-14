@@ -98,7 +98,7 @@ class playerSettings {
  h = 0.297 * safezoneH;
  class controls
  {
- class life_Licenses: life_RscStructuredText
+ class Life_Licenses: life_RscStructuredText
  {
  idc = 2014;
  sizeEx = 0.020;
@@ -109,7 +109,7 @@ class playerSettings {
  h = 0.297 * safezoneH;
  };
  };
- }
+ };
  class itemList: life_RscListbox
  {
  idc = item_list;
