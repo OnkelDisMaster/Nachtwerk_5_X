@@ -269,13 +269,14 @@ switch (_code) do {
 	_speed = speed cursorTarget;
 	// Taste Q
 	case 16: {		
-		if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
-			[] spawn {
+		if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {	
 			_speed = (vehicle player) getvariable ["speeder",false];			
 			if (_speed) exitwith {
 				vehicle player setvariable ["speeder",false,true];	
 				hint "Chip wurde deaktiviert...";
+				[] spawn {
 				sleep 10.0;
+				};
 			};
 			[(vehicle player)] spawn life_fnc_speedUp;
 			};

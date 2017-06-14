@@ -17,9 +17,9 @@ _boosterSpeed = _maxspeed;
 switch (_chip) do
 {
 	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008}; // legal
-	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0008}; // illegal
+	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0006}; // illegal
 	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01};}; // Beamter + Sicherung
-	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0006}; // Event
+	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0005}; // Event
 	case 5:	{ _boosterSpeed = _maxspeed + 100;	_fuelc = 0.0001}; // Admin
 };
 
@@ -66,11 +66,8 @@ while{(_vehicle getvariable "speeder")} do {
 		_vehicle setvariable ["speeder",false,true];
 	};	
 	if (_chip < 2) then {	
-		sleep 0.3;
-	} else {
-		if (_chip == 5) then {	
-		sleep 0.01;
-		} else {
-		sleep 0.1;
+		sleep 0.5;
+	} else {		
+		sleep 0.2;
 	}
 };
