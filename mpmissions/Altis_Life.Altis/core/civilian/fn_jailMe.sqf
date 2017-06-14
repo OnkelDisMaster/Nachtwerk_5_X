@@ -10,7 +10,7 @@ private["_time","_bail","_esc","_countDown"];
 
 params [
     ["_ret",[],[[]]],
-    ["_bad",false,[false]]
+    ["_bad",false,[false]],
     ["_time",15,[0]]
 ];
 
