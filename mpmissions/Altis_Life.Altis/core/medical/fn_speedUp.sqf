@@ -64,12 +64,10 @@ while{(_vehicle getvariable "speeder")} do {
 	};
 
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
-		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
 		[] spawn {
-			_aktiv = true;
+			hint "Chip wurde deaktiviert...";
 			sleep 5.0;
-			_aktiv = false;
 		};
 	};	
 	sleep (_boostRate);	
