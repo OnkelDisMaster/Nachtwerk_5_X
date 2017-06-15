@@ -20,9 +20,9 @@ switch (_chip) do
 {
 	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008;	_boostRate = 0.5;}; // legal
 	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0006;	_boostRate = 0.3;}; // illegal
-	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002;	_boostRate = 0.2;} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01;	_boostRate = 3.0;};}; // Beamter + Sicherung
-	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0004;	_boostRate = 0.2;}; // Event
-	case 5:	{ _boosterSpeed = _maxspeed + 60;	_fuelc = 0.00001;	_boostRate = 0.1;}; // Admin
+	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002;	_boostRate = 0.15;} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01;	_boostRate = 3.0;};}; // Beamter + Sicherung
+	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0004;	_boostRate = 0.14;}; // Event
+	case 5:	{ _boosterSpeed = _maxspeed + 60;	_fuelc = 0.00001;	_boostRate = 0.07;}; // Admin
 };
 
 _dmg = getdammage _vehicle;
