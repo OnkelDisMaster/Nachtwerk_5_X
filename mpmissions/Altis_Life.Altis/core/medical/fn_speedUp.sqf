@@ -68,6 +68,7 @@ while{(_vehicle getvariable "speeder")} do {
 		[] spawn {
 			hint "Chip wurde deaktiviert...";
 			sleep 5.0;
+			hintSilent "Chip wurde deaktiviert...";
 		};
 	};	
 	sleep (_boostRate);	

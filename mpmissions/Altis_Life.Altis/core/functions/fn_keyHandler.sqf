@@ -276,6 +276,7 @@ switch (_code) do {
 				[] spawn {
 					hint "Chip wurde deaktiviert...";
 					sleep 5.0;
+					hint "Chip wurde deaktiviert...";
 				};
 			};
 			[(vehicle player)] spawn life_fnc_speedUp;
