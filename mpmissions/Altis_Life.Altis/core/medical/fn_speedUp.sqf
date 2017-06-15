@@ -1,10 +1,11 @@
 /*
 
 	Author Shinji
+	Edit by Valle
 	Speeder Script for higher endspeed!
 
 */
-private ["_vehicle","_maxspeed","_dmg","_chip","_fuelc","_aktiv"];
+private ["_vehicle","_maxspeed","_dmg","_chip","_fuelc","_aktiv","_boostRate"];
 _vehicle = _this select 0;
 
 _chip = _vehicle getVariable ["Chipsatz",0];
@@ -13,14 +14,15 @@ if (_chip isEqualTo 0) exitwith {}; // nope??
 _vehicle setvariable ["speeder",true,true];
 _maxspeed = getNumber(configFile >> "CfgVehicles" >> (typeof _vehicle) >> "maxSpeed") -5;
 _boosterSpeed = _maxspeed;
+_boostRate = 10;	//Boost Wiederholungsrate in Sek.
 
 switch (_chip) do
 {
-	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008}; // legal
-	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0006}; // illegal
-	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01};}; // Beamter + Sicherung
-	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0004}; // Event
-	case 5:	{ _boosterSpeed = _maxspeed + 60;	_fuelc = 0.00001}; // Admin
+	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008;	_boostRate = 2;}; // legal
+	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0006;	_boostRate = 1;}; // illegal
+	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002;	_boostRate = 0.8;} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01;	_boostRate = 3.0;};}; // Beamter + Sicherung
+	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0004;	_boostRate = 0.8;}; // Event
+	case 5:	{ _boosterSpeed = _maxspeed + 60;	_fuelc = 0.00001;	_boostRate = 0.5;}; // Admin
 };
 
 _dmg = getdammage _vehicle;
@@ -70,5 +72,5 @@ while{(_vehicle getvariable "speeder")} do {
 			_aktiv = false;
 		};
 	};	
-	sleep 2.0;	
+	sleep (_boostRate);	
 };
