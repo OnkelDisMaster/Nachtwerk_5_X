@@ -18,7 +18,7 @@ _boostRate = 10;	//Boost Wiederholungsrate in Sek.
 
 switch (_chip) do
 {
-	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008;	_boostRate = 0.5;}; // legal
+	case 1:	{ _boosterSpeed = _maxspeed + 20;	_fuelc = 0.0008;	_boostRate = 0.3;}; // legal
 	case 2: { _boosterSpeed = _maxspeed + 30;	_fuelc = 0.0006;	_boostRate = 0.3;}; // illegal
 	case 3:	{ if (playerSide != civilian) then { _boosterSpeed = _maxspeed + 50;	_fuelc = 0.0002;	_boostRate = 0.15;} else { _boosterSpeed = _maxspeed - 30;	_fuelc = 0.01;	_boostRate = 3.0;};}; // Beamter + Sicherung
 	case 4:	{ _boosterSpeed = _maxspeed + 45;	_fuelc = 0.0004;	_boostRate = 0.14;}; // Event
@@ -46,12 +46,12 @@ while{(_vehicle getvariable "speeder")} do {
 		_f = fuel _vehicle;
 		_vehicle setfuel (_f - _fuelc); // fuelverbrauch / halbe Sekunde == 0,1 Liter
 	};
-	// illegale geshcwindigkeit bzw. beschleuinigung erhöhen
+	// illegale geschwindigkeit bzw. beschleuinigung erhöhen
 	 if (_chip > 1 && speed _vehicle <= _maxspeed &&  speed _Vehicle > 10 && (alive _vehicle) && ((getdammage _vehicle)<=_dmg) && (alive player) && (vehicle player != player)) then {	
 		if ((driver _vehicle != player)) exitwith {};
 		_vel = velocity _vehicle;  
-		_dir = direction _vehicle;  
-		_val = 0.8;	
+		_dir = direction _vehicle; 
+		_val = 0.8;
 		_speed = _val;
 		_vehicle setVelocity 	
 		[   	(_vel select 0) + (sin _dir * _speed),
@@ -66,11 +66,7 @@ while{(_vehicle getvariable "speeder")} do {
 	if (vehicle player == player || !(alive player) || !(alive _vehicle) || ((getdammage _vehicle)>_dmg)) then {
 		_vehicle setvariable ["speeder",false,true];
 		hint "Chip wurde deaktiviert...";
-		[] spawn {
-			
-			sleep 5.0;
-			hintSilent "Chip wurde deaktiviert...";
-		};
+		sleep 5.0;
 	};	
 	sleep (_boostRate);	
 };
