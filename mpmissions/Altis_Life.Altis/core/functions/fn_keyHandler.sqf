@@ -265,32 +265,13 @@ switch (_code) do {
         {
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
-    };
-/*	_speed = speed cursorTarget;
-	// Taste Q
-	case 16: {		
-		//if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
-		if (vehicle player != player) && (driver vehicle player isEqualTo player) && ((vehicle player) getVariable["speeder",0]) then {
-			_speed = (vehicle player) getvariable ["speeder",false];			
-			if (_speed) exitwith {
-				//vehicle player setvariable ["speeder",false,true];
-				//hint "Chip wurde deaktiviert...";
-				[] spawn {
-					sleep 5;
-					hint "Chip wurde deaktiviert...";
-				};
-			};
-			[(vehicle player)] spawn life_fnc_speedUp;
-		};
-	};
-*/	
-	_aktiv = false;
+    };	
 	// Taste Q Boost
 	case 16: {
-		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_aktiv isEqualTo false) then {
+		_speed = (vehicle player) getvariable ["speeder",false];
 		[(vehicle player)] spawn life_fnc_speedUp;
 		} else {
-		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_aktiv) then {
+		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_speed) then {
 			vehicle player setvariable ["speeder",false,true];
 			[] spawn {
 				sleep 5;
