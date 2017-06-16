@@ -276,6 +276,7 @@ switch (_code) do {
 		} else {
 		if (vehicle player != player) && ((driver vehicle player) == player) && (_speed) then {
 			vehicle player setvariable ["speeder",false,true];
+			[(vehicle player)] spawn life_fnc_speedUp;
 			[] spawn {
 				sleep 5;
 				hint "Chip wurde deaktiviert...";
