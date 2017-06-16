@@ -6,7 +6,7 @@
 *    Description:
 *    Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_aktiv"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -266,8 +266,8 @@ switch (_code) do {
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
     };
-	_speed = speed cursorTarget;
-/*	// Taste Q
+/*	_speed = speed cursorTarget;
+	// Taste Q
 	case 16: {		
 		//if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
 		if (vehicle player != player) && (driver vehicle player isEqualTo player) && ((vehicle player) getVariable["speeder",0]) then {
@@ -284,24 +284,19 @@ switch (_code) do {
 		};
 	};
 */	
+	_aktiv = false;
 	// Taste Q Boost
 	case 16: {
-		_speed = (vehicle player) getvariable ["speeder",false];
-		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_speed isEqualTo false) then {
+		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_aktiv isEqualTo false) then {
 		[(vehicle player)] call life_fnc_speedUp;
 		} else {
-		hint "vor if";
-		if (_speed) then {
+		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_aktiv) then {
 			vehicle player setvariable ["speeder",false,true];
 			[] spawn {
 				sleep 5;
 				hint "Chip wurde deaktiviert...";
 				};
 			};	
-		};
-		[] spawn {
-				sleep 5;
-				hint "nach if";
 		};	
 	};
 	
