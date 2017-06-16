@@ -21,7 +21,7 @@ class Licenses {
     //Civilian Licenses
     class driver {
         variable = "driver";
-        displayName = "Führerschein";
+        displayName = "STR_License_Driver";
         price = 1000;
         illegal = false;
         side = "civ";
@@ -29,7 +29,7 @@ class Licenses {
 
     class boat {
         variable = "boat";
-        displayName = "Bootschein";
+        displayName = "STR_License_Boat";
         price = 25000;
         illegal = false;
         side = "civ";
@@ -37,7 +37,7 @@ class Licenses {
 
     class pilot {
         variable = "pilot";
-        displayName = "Pilotenschein";
+        displayName = "STR_License_Pilot";
         price = 150000;
         illegal = false;
         side = "civ";
@@ -45,7 +45,7 @@ class Licenses {
 
     class trucking {
         variable = "trucking";
-        displayName = "LKW-Schein";
+        displayName = "STR_License_Truck";
         price = 25000;
         illegal = false;
         side = "civ";

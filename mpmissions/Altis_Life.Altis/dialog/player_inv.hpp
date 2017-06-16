@@ -89,16 +89,16 @@ class playerSettings {
  w = 0.108281 * safezoneW;
  h = 0.0276 * safezoneH;
  };
- class Licenses_Menu: life_RscControlsGroup
+ class Licenses_Menu: Life_RscControlsGroup
  {
  idc = -1;
  x = 0.425188 * safezoneW + safezoneX;
  y = 0.2984 * safezoneH + safezoneY;
  w = 0.103031 * safezoneW;
  h = 0.297 * safezoneH;
- class controls
+ class Controls
  {
- class Life_Licenses: life_RscStructuredText
+ class Life_Licenses: Life_RscStructuredText
  {
  idc = 2014;
  sizeEx = 0.020;
