@@ -29,7 +29,7 @@ class Licenses {
 
     class boat {
         variable = "boat";
-        displayName = "STR_License_Boat";
+        displayName = ""Bootsfüherschein"";
         price = 25000;
         illegal = false;
         side = "civ";
