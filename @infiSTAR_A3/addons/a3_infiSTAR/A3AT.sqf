@@ -7,7 +7,7 @@
 	Arma AntiHack & AdminTools - infiSTAR.de
 */
 /* *******************Developer : infiSTAR (infiSTAR23@gmail.com)******************* */
-/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2016 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
 VERSION_DATE_IS = '20-05-2017 13-46-20#9bf99a6f8dea';
@@ -3136,8 +3136,8 @@ fnc_Altislife_money = {
 	};
 	if(_state == 'bank')then
 	{
-		life_atmcash = life_atmcash + _amount;
-		_log = format['Bank %1K - %2K has been added.',life_atmcash/1000,_amount/1000];
+		life_atmbank = life_atmbank + _amount;
+		_log = format['Bank %1K - %2K has been added.',life_atmbank/1000,_amount/1000];
 		_log call FN_SHOW_LOG;
 	};
 };
@@ -5804,5 +5804,5 @@ infiSTAR_MAIN_CODE = compile infiSTAR_MAIN_CODE;
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2016 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */
