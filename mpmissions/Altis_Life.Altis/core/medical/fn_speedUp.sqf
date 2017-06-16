@@ -70,5 +70,5 @@ while{(_vehicle getvariable "speeder")} do {
 			hint "Chip wurde deaktiviert...";
 		};
 	};	
-	sleep (_boostRate);	
+	sleep 2.0;
 };
