@@ -285,11 +285,12 @@ switch (_code) do {
 	};
 */	
 	// Taste Q Boost
-	case 16: {	
-		if (vehicle player != player) && (driver vehicle player isEqualTo player) && ((vehicle player) getVariable["speeder",0]) then {
+	case 16: {
+		_speed = (vehicle player) getvariable ["speeder",false];
+		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_speed == false) then {
 		[(vehicle player)] call life_fnc_speedUp;
 		} else {
-		if ((vehicle player) getVariable["speeder",1]) then {
+		if (_speed) then {
 			vehicle player setvariable ["speeder",false,true];
 			[] spawn {
 				sleep 5;
