@@ -261,19 +261,20 @@ switch (_code) do {
 	//EMP Konsole - K
     case 37:
     {
-        if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (call life_coplevel > 2) && (vehicle player != player) && (typeOf vehicle player) in ["B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","I_MRAP_03_F","B_MRAP_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","I_APC_Wheeled_03_cannon_F","C_SUV_01_F"]) then
+        if (!_shift && !_alt && !_ctrlKey && (playerSide isEqualTo west) && (call life_coplevel > 2) && (vehicle player != player) && (typeOf vehicle player) in ["B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","I_MRAP_03_F","B_MRAP_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","I_APC_Wheeled_03_cannon_F","C_SUV_01_F"]) then
         {
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
     };
 	_speed = speed cursorTarget;
-	// Taste Q
+/*	// Taste Q
 	case 16: {		
-		if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {	
+		//if (vehicle player != player && alive player && alive vehicle player && (driver vehicle player) == player) then {
+		if (vehicle player != player) && (driver vehicle player isEqualTo player) && ((vehicle player) getVariable["speeder",0]) then {
 			_speed = (vehicle player) getvariable ["speeder",false];			
 			if (_speed) exitwith {
-				vehicle player setvariable ["speeder",false,true];
-				hint "Chip wurde deaktiviert...";
+				//vehicle player setvariable ["speeder",false,true];
+				//hint "Chip wurde deaktiviert...";
 				[] spawn {
 					sleep 5;
 					hint "Chip wurde deaktiviert...";
@@ -282,7 +283,22 @@ switch (_code) do {
 			[(vehicle player)] spawn life_fnc_speedUp;
 		};
 	};
-
+*/	
+	// Taste Q Boost
+	case 16: {	
+		if (vehicle player != player) && (driver vehicle player isEqualTo player) && ((vehicle player) getVariable["speeder",0]) then {
+		[(vehicle player)] call life_fnc_speedUp;
+		} else {
+		if ((vehicle player) getVariable["speeder",1]) then {
+			vehicle player setvariable ["speeder",false,true];
+			[] spawn {
+				sleep 5;
+				hint "Chip wurde deaktiviert...";
+				};
+			};	
+		};
+	};
+	
 	//SmartPhone  Shift + 1
     case 2:
     {
