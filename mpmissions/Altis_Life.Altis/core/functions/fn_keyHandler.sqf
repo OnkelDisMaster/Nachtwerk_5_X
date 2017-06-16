@@ -266,9 +266,11 @@ switch (_code) do {
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
     };	
+	
 	// Taste Q Boost
 	case 16: {
 		_speed = (vehicle player) getvariable ["speeder",false];
+		if ((vehicle player != player) && (driver vehicle player isEqualTo player) && (_speed isEqualTo false)) then {
 		[(vehicle player)] spawn life_fnc_speedUp;
 		} else {
 		if (vehicle player != player) && (driver vehicle player isEqualTo player) && (_speed) then {
