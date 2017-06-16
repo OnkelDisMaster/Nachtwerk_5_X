@@ -302,7 +302,6 @@ switch (_code) do {
 		[] spawn {
 				sleep 5;
 				hint "nach if";
-				};
 		};	
 	};
 	
