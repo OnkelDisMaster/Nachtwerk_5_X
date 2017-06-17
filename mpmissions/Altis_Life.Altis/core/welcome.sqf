@@ -1,8 +1,8 @@
 private ["_admins","_serververwaltung","_supporter","_scripter","_designer"];
-_admins = "ElekDrix, Valle, Darius";
+_admins = "ElekDrix, Valle, Darius, Daniel";
 _supporter = "Andreas, Sascha, Salvatore";
 _serververwaltung = "Nachtwerk-Community";
-_scripter = "Valle";
+_scripter = "Valle, Daniel";
 _designer = "Salvatore Martinez";
 
 [
