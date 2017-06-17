@@ -613,9 +613,6 @@ class LifeCfgVehicles {
             }, "" },
             { "Polizei", "cop", {
                 "textures\car\police_offroad.paa"
-            }, "" },
-            { "NW-TE", "cop", {
-                "\nw_textures\cop\police_offroad.paa"
             }, "" }
         };
     };
