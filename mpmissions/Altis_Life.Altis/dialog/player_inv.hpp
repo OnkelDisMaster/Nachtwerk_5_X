@@ -386,3 +386,4 @@ class playerSettings {
  tooltip = $STR_PM_WantedList;
  };
  };
+ };
