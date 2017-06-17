@@ -12,10 +12,18 @@ if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
 
 //_data = [_this,0,[],[[]]] call BIS_fnc_param;
 _data = lbData[2406,(lbCurSel 2406)];
+
+hint format["_data: %1",_data];
+uiSleep 1.0;
+
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _mylist = [];
 _data = call compile format["%1", _data];
+
+hint format["_data2: %1",_data];
+uiSleep 1.0;
+
 if (isNil "_data") exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
 if (!(_data isEqualType [])) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
 if (_data isEqualTo []) exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
