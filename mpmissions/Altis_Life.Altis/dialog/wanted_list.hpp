@@ -48,8 +48,8 @@ class life_wanted_menu {
 			idc = 2401;
 			text = "";
 			sizeEx = 0.035;
-			//onLBSelChanged = "[] call life_fnc_wantedInfo";
-			onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
+			onLBSelChanged = "[] call life_fnc_wantedInfo";
+			//onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
 
 
 			x = 0.12; y = 0.26;
