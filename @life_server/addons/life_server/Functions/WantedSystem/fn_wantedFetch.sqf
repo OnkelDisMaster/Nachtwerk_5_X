@@ -16,7 +16,12 @@ _ret = owner _ret;
 _inStatement = "";
 _list = [];
 _units = [];
-{if ((side _x) isEqualTo civilian) then {_units pushBack (getPlayerUID _x)};} forEach playableUnits;
+{
+    //if ((side _x) isEqualTo civilian) then {
+        _units pushBack (getPlayerUID _x);
+    //};
+
+} forEach playableUnits;
 
 if (count _units isEqualTo 0) exitWith {[_list] remoteExec ["life_fnc_wantedList",_ret];};
 
