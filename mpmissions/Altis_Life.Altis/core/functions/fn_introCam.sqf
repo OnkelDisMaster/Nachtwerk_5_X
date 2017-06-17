@@ -6,13 +6,14 @@ private ["_camera", "_camDistance","_randCamX","_randCamY","_camTime"];
 _camDistance = 1000;
 _randCamX = 75 - floor(random 150);
 _randCamY = 75 - floor(random 150);
-_camTime = 5;// you can change the time for sure, I adjusted mine to the intro music
+_camTime = 15;// you can change the time for sure, I adjusted mine to the intro music
 
 // the one below basically says that if you already joined the server once the time of the camera movement will be faster, else it might get annoying
 
-if(!life_firstSpawn) then {
-	_camTime = 10;
-};
+/*if(!life_firstSpawn) then {
+	_camTime = 15;
+};*/
+
 //intro move
 showCinemaBorder true;
 camUseNVG false;

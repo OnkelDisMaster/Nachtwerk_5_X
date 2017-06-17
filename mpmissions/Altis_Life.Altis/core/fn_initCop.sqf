@@ -22,10 +22,10 @@ if (life_blacklisted) exitWith {
         sleep 35;
     };
 //};
-[] spawn life_fnc_IntroCam;
 [] execVM "IgiLoad\IgiLoadInit.sqf";
 
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
+[] spawn life_fnc_IntroCam;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
