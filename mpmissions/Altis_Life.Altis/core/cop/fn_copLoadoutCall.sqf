@@ -1,4 +1,4 @@
-#include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
 fn_copLoadoutCall.sqf
 
@@ -13,55 +13,55 @@ createDialog "life_loadout_selector";
 
 _loadouts = [];
 
-if ((__GETC__(life_coplevel) > 0)) then {
+if (call (life_coplevel) > 0) then {
 	_loadouts = _loadouts + ["Rekruten Bank/ Tanken Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 2)) then {
+if (call (life_coplevel) >= 2) then {
 	_loadouts = _loadouts + ["MP5 Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 3)) then {
+if (call (life_coplevel) >= 3) then {
 	_loadouts = _loadouts + ["MX-3GL Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 4)) then {
+if (call (life_coplevel) >= 4) then {
 	_loadouts = _loadouts + ["MX-SW Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 5)) then {
+if (call (life_coplevel) >= 5) then {
 	_loadouts = _loadouts + ["SPAR-16-S Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 6)) then {
+if (call (life_coplevel) >= 6) then {
 	_loadouts = _loadouts + ["CAR-95-1 Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 7)) then {
+if (call (life_coplevel) >= 7) then {
 	_loadouts = _loadouts + ["Spar-17 Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 7)) then {
+if (call (life_coplevel) >= 7) then {
 	_loadouts = _loadouts + ["MK18 Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 9)) then {
+if (call (life_coplevel) >= 9) then {
 	_loadouts = _loadouts + ["Typ115 Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 9)) then {
+if (call (life_coplevel) >= 9) then {
 	_loadouts = _loadouts + ["MK200 Loadout"];
 };
 	
-if ((__GETC__(life_coplevel) >= 9)) then {
+if (call (life_coplevel) >= 9) then {
 	_loadouts = _loadouts + ["LRR Loadout"];
 };	
 	
-if ((__GETC__(life_coplevel) >= 12)) then {
+if (call (life_coplevel) >= 12) then {
 	_loadouts = _loadouts + ["Valles Loadout"];
 };
 
-if ((__GETC__(life_coplevel) >= 12)) then {
+if (call (life_coplevel) >= 12) then {
 	_loadouts = _loadouts + ["Valles Loadout Type115"];
 };
 
