@@ -26,12 +26,16 @@ if (_inst) then {
 	_deinst buttonSetAction _button3;		
 	_deinst ctrlCommit 0;	
 } else {
-	_legal = _display ctrlCreate ["RscButton", 37450];
+	_legal 	 = _display ctrlCreate ["RscButton", 37450];
 	_illegal = _display ctrlCreate ["RscButton", 37451];	
+	_beamter = _display ctrlCreate ["RscButton", 37452];
 	_legal ctrlSetPosition [0.35,0.27,0.24,0.04];
-	_legal ctrlSetText "Legal Chip";	
+	_legal ctrlSetText "Legaler Chip";	
 	_illegal ctrlSetPosition [0.35,0.34,0.24,0.04];
-	_illegal ctrlSetText "Illegal Chip";	
+	_illegal ctrlSetText "Illegaler Chip";
+	_beamter ctrlSetPosition [0.35,0.41,0.24,0.04];
+	_beamter ctrlSetText "Beamten Chip";
+	
 
 	_button = format [" hint format [(localize 'STR_chip_ins'),0]; closedialog 0; [1] spawn life_fnc_installChip;",0];
 	_legal buttonSetAction _button;		
@@ -39,7 +43,11 @@ if (_inst) then {
 
 	_button2 = format ["hint format [(localize 'STR_chip_ins'),0]; closedialog 0; [2] spawn life_fnc_installChip;",0];
 	_illegal buttonSetAction _button2;		
-	_illegal ctrlCommit 0;		
+	_illegal ctrlCommit 0;	
+
+	_button3 = format ["hint "Beamtenchip erfolgreich installiert"; closedialog 0; [3] spawn life_fnc_installChip;",0];
+	_beamter buttonSetAction _button3;		
+	_beamter ctrlCommit 0;	
 };
 
 	

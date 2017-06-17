@@ -4,6 +4,8 @@ fn_copLoadoutCall.sqf
 
 AUTHOR: OnkelDisMaster (afo-odin.com) && Valle
 VERSION: v1.2 Dez 2016
+
+Aufgerufen in init mit: this addAction[""Loadoutauswahl"", life_fnc_copLoadoutCall];
 */
 createDialog "life_loadout_selector";
 
