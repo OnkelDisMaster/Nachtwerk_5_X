@@ -140,7 +140,14 @@ class Life_Settings {
     vehicle_chopShop_multiplier = .45; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
     vehicle_storage_fee_multiplier = .15; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
     vehicle_cop_impound_multiplier = .15; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-
+	
+	/* Channel 7 News Station Configurations */
+	news_broadcast_cost = 1000000; //Preis für eine Nachricht im Fernsehen
+	news_broadcast_cooldown = 20; //Abklingzeit zwischen zwei Nachrichten. (Default = 20 minutes)
+	news_broadcast_header_length = 60; //Maximallänge der Überschrift. Alles darüber wird abgeschnitten. Hängt von der Schriftart, -größe und anderen Faktoren ab. Vorsicht beim Abändern!
+	cop_news_broadcast_cooldown = 5; //Abklingzeit zwischen zwei Nachrichten der Polizei
+	cop_news_broadcast_minimum_Rank = 3; //Benötigter Rang für Polizisten, um Nachricht zu senden
+	
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {

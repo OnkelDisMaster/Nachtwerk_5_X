@@ -85,6 +85,7 @@ class Life_Client_Core {
 		class sitDown {};
 		class robATM {};  //ATM ausrauben
 		class robMBank {};  //Bank Mini ausrauben
+		class newsBroadcast {};
     };
 	
 	class EMP
@@ -265,6 +266,8 @@ class Life_Client_Core {
         class callCellPhone {};
         class introCam {};
         class loggedOut {};
+		class AAN {};
+		class postNewsBroadcast {};
     };
 
     class Gangs    {

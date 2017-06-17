@@ -195,6 +195,15 @@ class playerSettings {
  colorText[] = {1,1,1,1};
  colorDisabled[] = {0,0,0,0.4};
  };
+ class PoliceNewsBroadcast : life_RscButtonMenu {
+ idc = 3024;
+ text = "AAN News Nachricht";
+ onButtonClick = "closeDialog 0; [] call life_fnc_newsBroadcast;";
+ x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+ y = 0.805; 
+ w = (6.25 / 40);
+ h = (1 / 25); 
+};
  class ButtonSettings_ICON: life_RscPicture
  {
  idc = -1;

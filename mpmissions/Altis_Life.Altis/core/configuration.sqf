@@ -50,6 +50,7 @@ life_markers = false;
 nn_last_vehicles = [];
 nn_empInUse = false;
 life_TankLaster = 1;
+life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];

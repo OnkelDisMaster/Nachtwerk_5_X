@@ -38,3 +38,4 @@
 #include "..\core\holy_help\dialog\dialog_handler.hpp"
 #include "emp_menu.hpp"
 #include "loadout_selector.hpp"
+#include "newsStation.hpp"

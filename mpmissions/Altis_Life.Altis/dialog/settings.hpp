@@ -44,6 +44,12 @@ class SettingsMenu {
             text = "$STR_SM_RNObj";
             y = 0.53;
         };
+		
+		class BroacastHeader : PlayerTagsHeader {
+			idc = -1;
+			text = "$STR_SM_BCSW";
+			y = 0.58;
+		};
 
         class Title: Life_RscTitle {
             idc = -1;
@@ -173,6 +179,13 @@ class SettingsMenu {
             onCheckedChanged = "['objects',_this select 1] call life_fnc_s_onCheckedChange;";
             y = 0.53;
         };
+		
+		class BroadcastONOFF : PlayerTagsONOFF {
+			idc = 2973;
+			tooltip = "$STR_GUI_BroadcastSwitch";
+			onCheckedChanged = "['broadcast',_this select 1] call life_fnc_s_onCheckedChange;";
+			y = 0.58;
+		};
 
         class ButtonClose: Life_RscButtonMenu {
             idc = -1;
