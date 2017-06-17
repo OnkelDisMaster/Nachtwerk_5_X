@@ -137,7 +137,7 @@ life_fnc_RequestClientId = player;
 publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for HeadlessClient
 
 [] spawn life_fnc_survival;
-
+[] execVM "core\welcome.sqf";
 [] spawn {
     while {true} do {
 		waitUntil{(!isNull (findDisplay 49)) && (!isNull (findDisplay 602))}; // Check if Inventory and ESC dialogs are open
@@ -160,7 +160,7 @@ if (life_HC_isActive) then {
 } else {
     [getPlayerUID player,player getVariable["realname",name player]] remoteExec ["life_fnc_wantedProfUpdate",RSERV];
 };
-[] execVM "core\welcome.sqf";
+
 //DynMarket
 DYNAMICMARKET_boughtItems = [];
 [player] remoteExec ["TON_fnc_playerLogged",RSERV];
