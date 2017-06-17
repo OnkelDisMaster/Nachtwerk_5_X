@@ -269,19 +269,19 @@ switch (_code) do {
 	
 	// Taste Q Boost
 	case 16: {
-		_speed = (vehicle player) getvariable ["speeder",false];
-		if ((vehicle player != player) && ((driver vehicle player) == player) && (_speed isEqualTo false)) then {
-            vehicle player setvariable ["speeder",true,true];
-            [(vehicle player)] spawn life_fnc_speedUp;
-			[] spawn {sleep 3;};
-		} else {
-		if (_speed) then {
-			[] spawn {
-				hint "Chip wurde deaktiviert...";
-				sleep 5;
+		if ((vehicle player != player) && ((driver vehicle player) == player)) then {
+            if ((vehicle player) getVariable ["speeder",true]) then
+				{	
+					[] spawn {
+					hint "Chip wurde deaktiviert...";
+					sleep 5;
+					vehicle player setvariable ["speeder",false,true];	
+					};
+				} else
+				{
+					[(vehicle player)] spawn life_fnc_speedUp;
+					sleep 3;
 				};
-			vehicle player setvariable ["speeder",false,true];	
-			};	
 		};	
 	};
 	
