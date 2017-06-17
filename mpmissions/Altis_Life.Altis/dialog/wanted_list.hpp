@@ -99,7 +99,7 @@ class life_wanted_menu {
 			h = (1 / 25);
 		};
 
-		class PardonButtonKey : Life_RscButtonMenu {
+		class InfoButtonKey : Life_RscButtonMenu {
             idc = -1;
             text = "Info";
             onButtonClick = "[] call life_fnc_wantedInfo";
