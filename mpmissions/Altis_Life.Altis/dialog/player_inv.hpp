@@ -358,7 +358,7 @@ class playerSettings {
  colorText[] = {1,1,1,1};
  colorDisabled[] = {1,0,0,0.1};
  };
- /*class ButtonWanted_ICON: life_RscPicture
+ class ButtonWanted_ICON: life_RscPicture
  {
  idc = 1210;
  text = "images\tablet\wanted.paa";
@@ -383,6 +383,6 @@ class playerSettings {
  color2[] = {0,0,0,0};
  colorText[] = {1,1,1,1};
  colorDisabled[] = {1,0,0,0.1};
- tooltip = $STR_PM_WantedList;*/
+ tooltip = $STR_PM_WantedList;
  };
  };
