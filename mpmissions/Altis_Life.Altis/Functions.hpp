@@ -173,6 +173,8 @@ class Life_Client_Core {
         class showArrestDialog {};
         class arrestDialog_Arrest {};
         class copSiren2 {};
+		class copLoadoutCall {};
+		class copLoadoutLoad {};
     };
 
     class Dialog_Controls {

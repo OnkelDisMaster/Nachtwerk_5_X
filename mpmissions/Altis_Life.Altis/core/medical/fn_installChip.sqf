@@ -18,5 +18,8 @@ switch(_mode) do {
 	case 2: {
 		life_ve_chip setvariable ['Chipsatz',2,true];
 	};
+	case 3: {
+		life_ve_chip setvariable ['Chipsatz',3,true];
+	};
 	
 };
