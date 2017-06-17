@@ -267,6 +267,14 @@
         </Key>
     </Package>
     <Package name="Global">
+        <Key ID="STR_Global_Select">
+            <Original>Select</Original>
+            <English>Select</English>
+            <German>Auswahl</German>
+            <French>Baguette</French>
+            <Italian>Babedibibedibubedi</Italian>
+            <Portuguese>Select</Portuguese>
+        </Key>
         <Key ID="STR_Global_Close">
             <Original>Close</Original>
             <Czech>Zavřít</Czech>
