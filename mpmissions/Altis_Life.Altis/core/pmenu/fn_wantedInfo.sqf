@@ -8,10 +8,10 @@
 private["_display","_list","_crimes","_bounty","_mylist","_data"];
 disableSerialization;
 
-if((lbCurSel 2401) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
+if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
 
 //_data = [_this,0,[],[[]]] call BIS_fnc_param;
-_data = lbData[2401,(lbCurSel 2401)];
+_data = lbData[2406,(lbCurSel 2406)];
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _mylist = [];
