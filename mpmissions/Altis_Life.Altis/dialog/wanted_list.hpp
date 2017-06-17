@@ -79,6 +79,18 @@ class life_wanted_menu {
 			h = 0.6;
 		};
 
+		class PlayerList: Life_RscListBox {
+            idc = 2406;
+            text = "";
+            sizeEx = 0.035;
+            //colorBackground[] = {0,0,0,0};
+            onLBSelChanged = "";
+            x = 0.34;
+            y = 0.28;
+            w = 0.2;
+            h = 0.3;
+        };
+
 		class CloseButtonKey : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Close";
