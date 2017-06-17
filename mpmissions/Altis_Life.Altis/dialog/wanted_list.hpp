@@ -48,7 +48,9 @@ class life_wanted_menu {
 			idc = 2401;
 			text = "";
 			sizeEx = 0.035;
-			onLBSelChanged = "[] call life_fnc_wantedInfo";
+			//onLBSelChanged = "[] call life_fnc_wantedInfo";
+			onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
+
 
 			x = 0.12; y = 0.26;
 			w = 0.2; h = 0.7;
@@ -96,5 +98,17 @@ class life_wanted_menu {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+
+		class PardonButtonKey : Life_RscButtonMenu {
+            idc = -1;
+            text = "Info";
+            onButtonClick = "[] call life_fnc_wantedInfo";
+            x = 0.3 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+            y = 1.1 - (1 / 25);
+            w = (6.25 / 40);
+            h = (1 / 25);
+        };
+
+
 	};
 };
