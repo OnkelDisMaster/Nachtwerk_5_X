@@ -45,7 +45,7 @@ if (_inst) then {
 	_illegal buttonSetAction _button2;		
 	_illegal ctrlCommit 0;	
 
-	_button3 = format ["hint "Beamtenchip erfolgreich installiert"; closedialog 0; [3] spawn life_fnc_installChip;",0];
+	_button3 = format ["hint ""Beamtenchip erfolgreich installiert""; closedialog 0; [3] spawn life_fnc_installChip;",0];
 	_beamter buttonSetAction _button3;		
 	_beamter ctrlCommit 0;	
 };
