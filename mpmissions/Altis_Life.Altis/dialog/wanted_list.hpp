@@ -48,7 +48,7 @@ class life_wanted_menu {
 			idc = 2401;
 			text = "";
 			sizeEx = 0.035;
-			onLBSelChanged = "[_this] call life_fnc_wantedInfo";
+			onLBSelChanged = "[player] remoteExec [""life_fnc_wantedFetch"",RSERV]";
 
 			x = 0.12; y = 0.26;
 			w = 0.2; h = 0.7;
