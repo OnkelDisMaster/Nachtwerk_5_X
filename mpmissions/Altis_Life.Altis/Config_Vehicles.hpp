@@ -607,12 +607,15 @@ class LifeCfgVehicles {
             { "Blue / White", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
-            }, "" },
+            }, "" },*/
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
-            }, "" },*/
+            }, "" },
             { "Polizei", "cop", {
                 "textures\car\police_offroad.paa"
+            }, "" },
+            { "NW-TE", "cop", {
+                "\nw_textures\cop\police_offroad.paa"
             }, "" }
         };
     };
