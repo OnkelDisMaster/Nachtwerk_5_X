@@ -6516,14 +6516,14 @@
         </Key>
         <Key ID="STR_License_Oil">
             <Original>Oil Processing</Original>
-            <Czech>Zpracování olej</Czech>
-            <Spanish>Procesamiento de Petroleo</Spanish>
-            <Russian></Russian>
             <German>Ölverarbeitung</German>
-            <French>Raffinage du pétrole</French>
-            <Italian>Processo Olio</Italian>
-            <Portuguese>Refinamento de Petróleo</Portuguese>
-            <Polish>Rafinacja ropy naftowej</Polish>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_License_Diving">
             <Original>Diving License</Original>
@@ -6569,6 +6569,39 @@
             <Portuguese>Licença do Bope</Portuguese>
             <Polish>Trening SWAT</Polish>
         </Key>
+        <Key ID="STR_License_cAir">
+            <Original>Pilotenschein</Original>
+            <German>Pilotenschein</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_revive">
+            <Original>Sanitäterausbildung</Original>
+            <German>Sanitäterausbildung</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_mAir">
+            <Original>Medizin Ausbildung</Original>
+            <German>Medizin Ausbildung</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_License_CG">
             <Original>Coast Guard License</Original>
             <Czech>Pobřežní stráž licence</Czech>
@@ -6591,6 +6624,17 @@
             <Portuguese>Treinamento Rebelde</Portuguese>
             <Polish>Trening rebelianta</Polish>
         </Key>
+        <Key ID="STR_License_ERebel">
+            <Original>Eliterebel Training</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Elite-Rebellenausbildung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_License_Truck">
             <Original>Truck License</Original>
             <Czech>Truck licence</Czech>
@@ -6602,16 +6646,60 @@
             <Portuguese>Licença de Caminhão</Portuguese>
             <Polish>Prawo jazdy - ciężarówki</Polish>
         </Key>
+        <Key ID="STR_License_Gun">
+            <Original>Weapon License</Original>
+            <German>Waffenschein</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Dive">
+            <Original>Dive License</Original>
+            <German>Tauchscheinschein</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_License_Diamond">
             <Original>Diamond Processing</Original>
-            <Czech>Diamond Processing</Czech>
-            <Spanish>Procesamiento de Diamantes</Spanish>
-            <Russian></Russian>
             <German>Diamantenverarbeitung</German>
-            <French>Taillage des Diamands</French>
-            <Italian>Processo Diamanti</Italian>
-            <Portuguese>Lapidação de Diamante</Portuguese>
-            <Polish>Szlifierz diamentów</Polish>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_DiamondUncut">
+            <Original>Diamant Uncut</Original>
+            <German>Diamant Uncut</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_DiamondCut">
+            <Original>Diamant Cut</Original>
+            <German>Diamant Cut</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_License_Copper">
             <Original>Copper Processing</Original>
@@ -6624,7 +6712,7 @@
             <Portuguese>Processamento de Cobre</Portuguese>
             <Polish>Wytapianie miedzi</Polish>
         </Key>
-        <Key ID="STR_License_Iron">
+         <Key ID="STR_License_Iron">
             <Original>Iron Processing</Original>
             <Czech>Zpracování Iron</Czech>
             <Spanish>Procesamiento de Hierro</Spanish>
@@ -6635,27 +6723,82 @@
             <Portuguese>Processamento de Ferro</Portuguese>
             <Polish>Wytapianie żelaza</Polish>
         </Key>
-        <Key ID="STR_License_Sand">
-            <Original>Sand Processing</Original>
-            <Czech>Zpracování písek</Czech>
-            <Spanish>Procesamiento de Arena</Spanish>
+        <Key ID="STR_License_Ironr">
+            <Original>Eisen Barren</Original>
+            <German>Eisen Barren</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Ironore">
+            <Original>Eisenerz</Original>
+            <German>Eisenerz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Sand">
+            <Original>Sand</Original>
+            <German>Sand</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Sandv">
+            <Original>Sand Processing</Original>
             <German>Sandverarbeitung</German>
-            <French>Traitement du Sable</French>
-            <Italian>Processo Sabbia</Italian>
-            <Portuguese>Processamento de Areia</Portuguese>
-            <Polish>Hutnik szkła z piasku</Polish>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_License_Salt">
-            <Original>Salt Processing</Original>
-            <Czech>sůl Processing</Czech>
-            <Spanish>Procesamiento de Sal</Spanish>
+            <Original>Salzerz</Original>
+            <German>Salzerz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Saltr">
+            <Original>Salt</Original>
+            <German>Salz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Saltv">
+            <Original>Salt Processing</Original>
             <German>Salzverarbeitung</German>
-            <French>Traitement du Sel</French>
-            <Italian>Processo Sale</Italian>
-            <Portuguese>Processamento de Sal</Portuguese>
-            <Polish>Warzenie soli</Polish>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_License_Cocaine">
             <Original>Cocaine Training</Original>
@@ -6667,6 +6810,28 @@
             <Italian>Processo Cocaina</Italian>
             <Portuguese>Treinamento de Cocaína</Portuguese>
             <Polish>Oczyszczanie kokainy</Polish>
+        </Key>
+        <Key ID="STR_License_Cocaineu">
+            <Original>Unverarbeitetes Kokain</Original>
+            <German>Unverarbeitetes Kokain</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Cocainep">
+            <Original>Verarbeitetes Kokain</Original>
+            <German>Verarbeitetes Kokain</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_License_Marijuana">
             <Original>Marijuana Training</Original>
@@ -6689,6 +6854,149 @@
             <Italian>Processo Cemento</Italian>
             <Portuguese>Licença de Cimento</Portuguese>
             <Polish>Wytwórca cementu</Polish>
+        </Key>
+        <Key ID="STR_License_Cementm">
+            <Original>Marmorplatte</Original>
+            <German>Marmorplatte</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_rock">
+            <Original>Marmor</Original>
+            <German>Marmor</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_transport">
+            <Original>Transporteur Lizenz</Original>
+            <German>Transporteur Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Wine">
+            <Original>Wein Verarbeitung</Original>
+            <German>Wein Verarbeitung</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Wein">
+            <Original>Wein</Original>
+            <German>Wein</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Grapes">
+            <Original>Trauben</Original>
+            <German>Trauben</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_stiller">
+            <Original>Destillier Lizenz</Original>
+            <German>Destillier Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_liquor">
+            <Original>Schnaps Lizenz</Original>
+            <German>Schnaps Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_bottler">
+            <Original>Abfüll Lizenz</Original>
+            <German>Abfüll Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_jagen">
+            <Original>Jagdschein</Original>
+            <German>Jagdschein</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_chefkoch">
+            <Original>Kochausbilung</Original>
+            <German>Kochausbilung</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Meth">
+            <Original>Methamphetamine Training</Original>
+            <German>Methamphetamine Training</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_uranium">
+            <Original>Uran Lizenz</Original>
+            <German>Uran Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_License_Medmarijuana">
             <Original>Medical Marijuana License</Original>

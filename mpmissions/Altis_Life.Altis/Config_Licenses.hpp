@@ -53,7 +53,7 @@ class Licenses {
 
     class gun {
         variable = "gun";
-        displayName = "Waffenschein";
+        displayName = "STR_License_Gun";
         price = 60000;
         illegal = false;
         side = "civ";
@@ -61,7 +61,7 @@ class Licenses {
 
     class dive {
         variable = "dive";
-        displayName = "Taucherschein";
+        displayName = "STR_License_Dive";
         price = 14000;
         illegal = false;
         side = "civ";
@@ -69,7 +69,7 @@ class Licenses {
 
     class home {
         variable = "home";
-        displayName = "Hauseigentümer Lizenz";
+        displayName = "STR_License_Home";
         price = 500000;
         illegal = false;
         side = "civ";
@@ -78,7 +78,7 @@ class Licenses {
     //Processing Licenses
     class oil {
         variable = "license_civ_oil";
-        displayName = "ÖL Verarbeitung";
+        displayName = "STR_License_Oil";
         price = 65000;
         illegal = false;
         side = "civ";
@@ -86,7 +86,7 @@ class Licenses {
 
 	class oilu {
         variable = "life_inv_oilu";
-        displayName = "Rohöl";
+        displayName = "STR_License_Oilu";
         price = 65000;
         illegal = false;
         side = "civ";
@@ -94,7 +94,7 @@ class Licenses {
 
 	class oilp {
         variable = "life_inv_oilp";
-        displayName = "Euro-Diesel";
+        displayName = "STR_License_Oilp";
         price = 65000;
         illegal = false;
         side = "civ";
@@ -102,7 +102,7 @@ class Licenses {
 
     class diamond {
         variable = "diamond";
-        displayName = "Diamant Verarbeitung";
+        displayName = "STR_License_Diamond";
         price = 80000;
         illegal = false;
         side = "civ";
@@ -110,7 +110,7 @@ class Licenses {
 
 	class diamondUncut {
         variable = "life_inv_diamond";
-        displayName = "Diamant Uncut";
+        displayName = "STR_License_DiamondUncut";
         price = 80000;
         illegal = false;
         side = "civ";
@@ -118,7 +118,7 @@ class Licenses {
 
 	class diamondCut {
         variable = "life_inv_diamondr";
-        displayName = "Diamant Cut";
+        displayName = "STR_License_DiamondCut";
         price = 80000;
         illegal = false;
         side = "civ";
@@ -126,7 +126,7 @@ class Licenses {
 
     class salt {
         variable = "salt";
-        displayName = "Salzerz";
+        displayName = "STR_License_Salt";
         price = 55000;
         illegal = false;
         side = "civ";
@@ -134,7 +134,7 @@ class Licenses {
 
 	class saltr {
         variable = "life_inv_saltr";
-        displayName = "Salz";
+        displayName = "STR_License_Saltr";
         price = 55000;
         illegal = false;
         side = "civ";
@@ -142,7 +142,7 @@ class Licenses {
 
 	class saltv {
         variable = "license_civ_salt";
-        displayName = "Salz Verarbeitung";
+        displayName = "STR_License_Saltv";
         price = 55000;
         illegal = false;
         side = "civ";
@@ -150,7 +150,7 @@ class Licenses {
 
     class sand {
         variable = "sand";
-        displayName = "Sand";
+        displayName = "STR_License_Sand";
         price = 40000;
         illegal = false;
         side = "civ";
@@ -158,7 +158,7 @@ class Licenses {
 
 	class sandv {
         variable = "license_civ_sand";
-        displayName = "Sand Verarbeitung";
+        displayName = "STR_License_Sandv";
         price = 40000;
         illegal = false;
         side = "civ";
@@ -166,7 +166,7 @@ class Licenses {
 
     class iron {
         variable = "license_civ_iron";
-        displayName = "Eisen Verarbeitung";
+        displayName = "STR_License_Iron";
         price = 25000;
         illegal = false;
         side = "civ";
@@ -174,7 +174,7 @@ class Licenses {
 
 	class ironr {
         variable = "life_inv_ironr";
-        displayName = "Eisen Barren";
+        displayName = "STR_License_Ironr";
         price = 25000;
         illegal = false;
         side = "civ";
@@ -182,7 +182,7 @@ class Licenses {
 
 	class ironore {
         variable = "life_inv_ironore";
-        displayName = "Eisenerz";
+        displayName = "STR_License_Ironore";
         price = 25000;
         illegal = false;
         side = "civ";
@@ -190,7 +190,7 @@ class Licenses {
 
     class copper {
         variable = "license_civ_copper";
-        displayName = "Kupfer Verarbeitung";
+        displayName = "STR_License_Copper";
         price = 20000;
         illegal = false;
         side = "civ";
@@ -198,7 +198,7 @@ class Licenses {
 
 	class copperr {
         variable = "life_inv_copperr";
-        displayName = "Kupfer Barren";
+        displayName = "STR_License_Copperr";
         price = 20000;
         illegal = false;
         side = "civ";
@@ -206,7 +206,7 @@ class Licenses {
 
 	class copperore {
         variable = "life_inv_copperore";
-        displayName = "Kupfererz";
+        displayName = "STR_License_Copperore";
         price = 20000;
         illegal = false;
         side = "civ";
@@ -214,7 +214,7 @@ class Licenses {
 
     class cement {
         variable = "license_civ_cement";
-        displayName = "Zement Mix Lizenz";
+        displayName = "STR_License_Cement";
         price = 32000;
         illegal = false;
         side = "civ";
@@ -222,7 +222,7 @@ class Licenses {
 
 	class cementm {
         variable = "life_inv_cement";
-        displayName = "Marmorplatte";
+        displayName = "STR_License_Cementm";
         price = 32000;
         illegal = false;
         side = "civ";
@@ -230,7 +230,7 @@ class Licenses {
 
 	class rock {
         variable = "life_inv_rock";
-        displayName = "Marmor";
+        displayName = "STR_License_rock";
         price = 32000;
         illegal = false;
         side = "civ";
@@ -247,7 +247,7 @@ class Licenses {
 
 	class transport {
         variable = "license_civ_transport";
-        displayName = "Transporteur Lizenz";
+        displayName = "STR_License_transport";
         price = 7500000;
         illegal = false;
         side = "civ";
@@ -255,7 +255,7 @@ class Licenses {
 
 	class grapes {
         variable = "license_civ_grapes";
-        displayName = "Wein Verarbeitung";
+        displayName = "STR_License_Wine";
         price = 35000;
         illegal = false;
         side = "civ";
@@ -263,7 +263,7 @@ class Licenses {
 
 	class wine {
         variable = "life_inv_wine";
-        displayName = "Wein";
+        displayName = "STR_License_Wein";
         price = 1;
         illegal = false;
         side = "civ";
@@ -271,7 +271,7 @@ class Licenses {
 
 	class grapesr {
         variable = "life_inv_grapes";
-        displayName = "Trauben";
+        displayName = "STR_License_Grapes";
         price = 1;
         illegal = false;
         side = "civ";
@@ -727,7 +727,7 @@ class Licenses {
 
 	class stiller {
         variable = "license_civ_stiller";
-        displayName = "Destillier Lizenz";
+        displayName = "STR_License_stiller";
         price = 25000;
         illegal = false;
         side = "civ";
@@ -735,7 +735,7 @@ class Licenses {
 
 	class liquor {
         variable = "license_civ_liquor";
-        displayName = "Schnaps Lizenz";
+        displayName = "STR_License_liquor";
         price = 135000;
         illegal = false;
         side = "civ";
@@ -743,7 +743,7 @@ class Licenses {
 
 	class bottler {
         variable = "license_civ_bottler";
-        displayName = "Abfüll Lizenz";
+        displayName = "STR_License_bottler";
         price = 25000;
         illegal = false;
         side = "civ";
@@ -751,7 +751,7 @@ class Licenses {
 
 	class jagen {
         variable = "license_civ_jagen";
-        displayName = "Jagdschein";
+        displayName = "STR_License_jagen";
         price = 400000;
         illegal = false;
         side = "civ";
@@ -759,7 +759,7 @@ class Licenses {
 
 	class chefkoch {
         variable = "license_civ_chefkoch";
-        displayName = "Kochausbilung";
+        displayName = "STR_License_chefkoch";
         price = 150000;
         illegal = false;
         side = "civ";
@@ -768,7 +768,7 @@ class Licenses {
     //Illegal Licenses
     class cocaine {
         variable = "license_civ_coke";
-        displayName = "Kokain Training";
+        displayName = "STR_License_Cocaine";
         price = 325000;
         illegal = true;
         side = "civ";
@@ -776,7 +776,7 @@ class Licenses {
 
 	class cocaineu {
         variable = "life_inv_coke";
-        displayName = "Unverarbeitetes Kokain";
+        displayName = "STR_License_Cocaineu";
         price = 325000;
         illegal = true;
         side = "civ";
@@ -784,7 +784,7 @@ class Licenses {
 
 	class cocainep {
         variable = "life_inv_cokep";
-        displayName = "Verarbeitetes Kokain";
+        displayName = "STR_License_Cocainep";
         price = 325000;
         illegal = true;
         side = "civ";
@@ -792,7 +792,7 @@ class Licenses {
 
     class heroin {
         variable = "license_civ_heroin";
-        displayName = "Heroin Training";
+        displayName = "STR_License_Heroin";
         price = 250000;
         illegal = true;
         side = "civ";
@@ -832,7 +832,7 @@ class Licenses {
 
 	class marijuanat {
         variable = "license_civ_marijuana";
-        displayName = "Marijuana Training";
+        displayName = "STR_License_Marijuana";
         price = 180000;
         illegal = true;
         side = "civ";
@@ -840,7 +840,7 @@ class Licenses {
 
 	class meth {
         variable = "license_civ_meth";
-        displayName = "Methamphetamine Training";
+        displayName = "STR_License_Meth";
         price = 200000;
         illegal = true;
         side = "civ";
@@ -864,7 +864,7 @@ class Licenses {
 
 	class uranium {
         variable = "license_civ_uranium";
-        displayName = "Uran Lizenz";
+        displayName = "STR_License_uranium";
         price = 1500000;
         illegal = true;
         side = "civ";
@@ -1008,7 +1008,7 @@ class Licenses {
 
     class rebel {
         variable = "license_civ_rebel";
-        displayName = "Rebellen Training";
+        displayName = "STR_License_Rebel";
         price = 2750000;
         illegal = true;
         side = "civ";
@@ -1016,7 +1016,7 @@ class Licenses {
 
 	class eliterebel {
         variable = "license_civ_elite";
-        displayName = "Eliterebellen Lizenz";
+        displayName = "STR_License_ERebel";
         price = 90000000;
         illegal = true;
         side = "civ";
@@ -1025,7 +1025,7 @@ class Licenses {
     //Cop Licenses
     class cAir {
         variable = "cAir";
-        displayName = "Pilotenschein";
+        displayName = "STR_License_cAir";
         price = 1500;
         illegal = false;
         side = "cop";
@@ -1033,7 +1033,7 @@ class Licenses {
 
     class cg {
         variable = "cg";
-        displayName = "Küstenwache";
+        displayName = "STR_License_CG";
         price = 1000;
         illegal = false;
         side = "cop";
@@ -1041,7 +1041,7 @@ class Licenses {
 
 	class swat {
         variable = "license_cop_swat";
-        displayName = "GSG9 Lizenz";
+        displayName = "STR_License_Swat";
         price = 3500;
         illegal = false;
         side = "cop";
@@ -1049,7 +1049,7 @@ class Licenses {
 
 	class revive {
         variable = "revive";
-        displayName = "Sanitäterausbildung";
+        displayName = "STR_License_revive";
         price = 500000;
         illegal = false;
         side = "cop";
@@ -1058,7 +1058,7 @@ class Licenses {
     //Medic Licenses
     class mAir {
         variable = "mAir";
-        displayName = "Medizin Ausbildung";
+        displayName = "STR_License_mAir";
         price = 1000;
         illegal = false;
         side = "med";
