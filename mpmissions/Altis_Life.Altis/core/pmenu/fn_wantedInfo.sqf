@@ -1,4 +1,3 @@
-#include "\life_server\script_macros.hpp"
 /*
     File: fn_wantedInfo.sqf
     Author: Bryan "Tonic" Boardwine
@@ -6,33 +5,19 @@
     Description:
     Pulls back information about the wanted criminal.
 */
-private["_display","_list","_crimes","_bounty","_mylist","_data","_query","_queryResult","_wantedid"];
+private["_display","_list","_crimes","_bounty","_mylist","_data"];
 disableSerialization;
 
 if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
 
 //_data = [_this,0,[],[[]]] call BIS_fnc_param;
 _data = lbData[2406,(lbCurSel 2406)];
-_wantedid = getPlayerUID _data;
+
 _display = findDisplay 2400;
-_list = [];
+_list = _display displayCtrl 2402;
 _mylist = [];
 
-_query = "SELECT wantedID, wantedName,wantedBounty FROM wanted WHERE active='1'";
-_queryResult = [_query,2,true] call DB_fnc_asyncCall;
-
-if (EXTDB_SETTING(getNumber,"DebugMode") isEqualTo 1) then {
-    diag_log format["Query: %1",_query];
-};
-
-{
-    _list pushBack (_x);
-}
-forEach _queryResult;
-
-if (count _list isEqualTo 0) exitWith {[_list] remoteExec ["life_fnc_wantedList",getPlayerUID player];};
-
-[_list] remoteExec ["life_fnc_wantedList",getPlayerUID player];
+[player] remoteExec ["life_fnc_wantedFetch",RSERV];
 
 //_data = call compile format["%1", _data];
 //if (_active isEqualTo 1) exitWith {hint format["_data: %1 \n _owner: %2",_data,_owner];};
