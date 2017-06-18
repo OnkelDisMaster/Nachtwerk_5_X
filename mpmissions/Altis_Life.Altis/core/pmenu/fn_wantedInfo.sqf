@@ -11,13 +11,38 @@ disableSerialization;
 //if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
 
 //_data = [_this,0,[],[[]]] call BIS_fnc_param;
-_data = lbData[2406,(lbCurSel 2406)];
+_data = lbData[2401,(lbCurSel 2401)];
 
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _mylist = [];
 
-[player] remoteExec ["life_fnc_wantedFetch",RSERV];
+
+
+if((lbCurSel 2401) == -1) then {
+    [player] remoteExec ["life_fnc_wantedFetch",RSERV];
+} else {
+_data = [_this,0,[],[[]]] call BIS_fnc_param;
+
+lbClear _list;
+
+_crimes = _data select 1;
+
+{
+    _crime = _x;
+    if (!(_crime in _mylist)) then
+    {
+        _mylist pushBack _crime;
+        _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
+    };
+} forEach _crimes;
+
+ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[(_data select 2)] call life_fnc_numberText]];
+
+};
+
+
+
 
 //_data = call compile format["%1", _data];
 //if (_active isEqualTo 1) exitWith {hint format["_data: %1 \n _owner: %2",_data,_owner];};

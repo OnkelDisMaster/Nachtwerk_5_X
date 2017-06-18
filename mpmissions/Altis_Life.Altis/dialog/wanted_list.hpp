@@ -57,7 +57,7 @@ class life_wanted_menu {
             idcRight = -1;
 			x = 0.12;
 			y = 0.26;
-			w = 0.6;
+			w = 0.2;
 			h = 0.7;
 		};
 
