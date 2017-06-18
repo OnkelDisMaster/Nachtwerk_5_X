@@ -18,7 +18,7 @@ _display = findDisplay 2400;
 _list = [];
 _mylist = [];
 
-_query = format["SELECT wantedID, wantedName FROM wanted WHERE active='1' AND wantedID='%1'",_wantedid];
+_query = "SELECT wantedID, wantedName FROM wanted WHERE active='1'";
 _queryResult = [_query,2,true] call DB_fnc_asyncCall;
 
 if (EXTDB_SETTING(getNumber,"DebugMode") isEqualTo 1) then {
