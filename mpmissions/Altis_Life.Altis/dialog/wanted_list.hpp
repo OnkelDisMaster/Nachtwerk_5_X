@@ -43,16 +43,21 @@ class life_wanted_menu {
 			text = "";
 		};
 
-		class WantedList : Life_RscListBox
+		class WantedList : Life_RscListNBox
 		{
 			idc = 2401;
 			text = "";
+			columns[] = {0,0.3};
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 			onLBSelChanged = "[] call life_fnc_wantedInfo";
 			//onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
+            rowHeight = 0.050;
+            drawSideArrows = 0;
+            idcLeft = -1;
+            idcRight = -1;
 			x = 0.12;
 			y = 0.26;
-			w = 0.2;
+			w = 0.6;
 			h = 0.7;
 		};
 
@@ -79,7 +84,7 @@ class life_wanted_menu {
 			h = 0.6;
 		};
 
-		class PlayerList: Life_RscListBox {
+		/*class PlayerList: Life_RscListBox {
             idc = 2406;
             text = "";
             sizeEx = 0.035;
@@ -89,7 +94,7 @@ class life_wanted_menu {
             y = 0.28;
             w = 0.2;
             h = 0.3;
-        };
+        };*/
 
 		class CloseButtonKey : Life_RscButtonMenu {
 			idc = -1;
