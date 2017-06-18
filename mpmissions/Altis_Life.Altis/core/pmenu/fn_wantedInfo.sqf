@@ -5,7 +5,7 @@
     Description:
     Pulls back information about the wanted criminal.
 */
-private["_display","_list","_crimes","_bounty","_mylist","_data","_crimesArr"];
+private["_display","_list","_crimes","_bounty","_mylist","_data","_crimesArr","_criminalID"];
 disableSerialization;
 
 //if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
@@ -24,7 +24,8 @@ if((lbCurSel 2401) == -1) then {
 } else {
     if (_mylist isEqualTo 1) then {
         _mylist = 0;
-        [_data] call life_fnc_wantedGrab;
+        _criminalID = getPlayerUID _data;
+        [player,_criminalID] remoteExec ["life_fnc_wantedCrimes",RSERV];
     } else {
         _data = [_this,0,[],[[]]] call BIS_fnc_param;
         lbClear _list;

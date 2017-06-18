@@ -11,7 +11,7 @@ disableSerialization;
 _display = findDisplay 2400;
 _tab = _display displayCtrl 2402;
 _criminal = [_this,0,[],[[]]] call BIS_fnc_param;
-_criminalID = getPlayerUID _criminal
+_criminalID = getPlayerUID _criminal;
 //_criminal = call compile format["%1", _criminal];
 //if (isNil "_criminal") exitWith {};
 
