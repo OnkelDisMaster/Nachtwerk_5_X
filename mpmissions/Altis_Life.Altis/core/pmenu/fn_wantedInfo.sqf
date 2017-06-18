@@ -34,7 +34,7 @@ if((lbCurSel 2401) == -1) then {
 
         {
             _crime = _x;
-            if (!(_crime in _mylist)) then
+            if (!(_crime in _crimesArr)) then
             {
                 _crimesArr pushBack _crime;
                 _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
