@@ -47,13 +47,13 @@ class life_wanted_menu {
 		{
 			idc = 2401;
 			text = "";
-			sizeEx = 0.035;
+			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 			onLBSelChanged = "[] call life_fnc_wantedInfo";
 			//onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
-
-
-			x = 0.12; y = 0.26;
-			w = 0.2; h = 0.7;
+			x = 0.12;
+			y = 0.26;
+			w = 0.2;
+			h = 0.7;
 		};
 
 		class WantedDetails : Life_RscListBox
@@ -113,7 +113,7 @@ class life_wanted_menu {
 
 		class InfoButtonKey : Life_RscButtonMenu {
             idc = -1;
-            text = "Info";
+            text = "Aktualisieren";
             onButtonClick = "[] call life_fnc_wantedInfo";
             x = 0.3 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
             y = 1.1 - (1 / 25);
