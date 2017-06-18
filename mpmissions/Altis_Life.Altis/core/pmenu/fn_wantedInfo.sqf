@@ -5,7 +5,7 @@
     Description:
     Pulls back information about the wanted criminal.
 */
-private["_display","_list","_crimes","_bounty","_mylist","_data","_active","_owner"];
+private["_display","_list","_crimes","_bounty","_mylist","_data"];
 disableSerialization;
 
 if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
@@ -16,10 +16,11 @@ _data = lbData[2406,(lbCurSel 2406)];
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _mylist = [];
+
+[player] remoteExec ["life_fnc_wantedFetch",RSERV];
+
 //_data = call compile format["%1", _data];
-_owner = owner _data;
-_active = 1;
-if (_active isEqualTo 1) exitWith {hint format["_data: %1 \n _owner: %2",_data,_owner];};
+//if (_active isEqualTo 1) exitWith {hint format["_data: %1 \n _owner: %2",_data,_owner];};
 
 /*
 if (isNil "_data") exitWith {hint localize "STR_Cop_wantedList_FailedToFetch";};
