@@ -24,7 +24,7 @@ if((lbCurSel 2401) == -1) then {
 } else {
 _data = [_this,0,[],[[]]] call BIS_fnc_param;
 
-if (_mylist isEqualTo 1) exitWith {hint format["data: %1",_data];};
+if (_mylist isEqualTo 1) exitWith {hint format["data: %1",(_data select 0)];};
 
 lbClear _list;
 
