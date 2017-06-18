@@ -13,16 +13,11 @@ if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
 //_data = [_this,0,[],[[]]] call BIS_fnc_param;
 _data = lbData[2406,(lbCurSel 2406)];
 
-hint format["_data: %1",_data];
-uiSleep 1.0;
-
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _mylist = [];
-//_data = call compile format["%1", _data];
+_data = call compile format["%1", _data];
 
-hint format["_data2: %1",_data];
-uiSleep 1.0;
 _active = 1;
 if (_active isEqualTo 1) exitWith {hint format["_data: %1",_data];};
 
