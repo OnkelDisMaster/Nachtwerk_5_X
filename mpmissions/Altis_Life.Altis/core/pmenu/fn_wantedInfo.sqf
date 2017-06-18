@@ -8,7 +8,7 @@
 private["_display","_list","_crimes","_bounty","_mylist","_data"];
 disableSerialization;
 
-if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
+//if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
 
 //_data = [_this,0,[],[[]]] call BIS_fnc_param;
 _data = lbData[2406,(lbCurSel 2406)];
