@@ -13,7 +13,7 @@ _tab = _display displayCtrl 2402;
 _criminal = [_this,0,[],[[]]] call BIS_fnc_param;
 _criminalID = getPlayerUID _criminal
 //_criminal = call compile format["%1", _criminal];
-if (isNil "_criminal") exitWith {};
+//if (isNil "_criminal") exitWith {};
 
 //if (life_HC_isActive) then {
 //    [player,_criminal] remoteExec ["HC_fnc_wantedCrimes",HC_Life];
