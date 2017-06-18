@@ -5,7 +5,7 @@
     Description:
     Pulls back information about the wanted criminal.
 */
-private["_display","_list","_crimes","_bounty","_mylist","_data"];
+private["_display","_list","_crimes","_bounty","_mylist","_data","_crimesArr"];
 disableSerialization;
 
 //if((lbCurSel 2406) == -1) exitWith {hintSilent "Niemand wurde ausgewaehlt!";};
@@ -16,31 +16,34 @@ _data = lbData[2401,(lbCurSel 2401)];
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _mylist = 1;
-
+_crimesArr = [];
 
 
 if((lbCurSel 2401) == -1) then {
     [player] remoteExec ["life_fnc_wantedFetch",RSERV];
 } else {
-_data = [_this,0,[],[[]]] call BIS_fnc_param;
+    _data = [_this,0,[],[[]]] call BIS_fnc_param;
 
-if (_mylist isEqualTo 1) exitWith {hint format["data: %1",(_data select 0)];};
+    if (_mylist isEqualTo 1) then {
+        _mylist = 0;
+        [] call life_fnc_wantedGrab;
+    } else {
 
-lbClear _list;
+        lbClear _list;
 
-_crimes = _data select 1;
+        _crimes = _data select 0;
 
-{
-    _crime = _x;
-    if (!(_crime in _mylist)) then
-    {
-        _mylist pushBack _crime;
-        _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
+        {
+            _crime = _x;
+            if (!(_crime in _mylist)) then
+            {
+                _crimesArr pushBack _crime;
+                _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
+            };
+        } forEach _crimes;
+
+        ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[(_data select 1)] call life_fnc_numberText]];
     };
-} forEach _crimes;
-
-ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[(_data select 2)] call life_fnc_numberText]];
-
 };
 
 

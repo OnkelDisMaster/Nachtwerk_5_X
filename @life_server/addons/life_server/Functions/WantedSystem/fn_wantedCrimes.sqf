@@ -13,7 +13,7 @@ disableSerialization;
 _ret = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _criminal = [_this,1,[],[]] call BIS_fnc_param;
 
-_query = format["SELECT wantedCrimes, wantedBounty FROM wanted WHERE active='1' AND wantedID='%1'",_criminal select 0];
+_query = format["SELECT wantedCrimes, wantedBounty FROM wanted WHERE active='1' AND wantedID='%1'",_criminal];
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 _ret = owner _ret;
