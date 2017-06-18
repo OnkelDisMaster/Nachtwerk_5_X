@@ -17,8 +17,10 @@ _crimes = _data select 0;
 _active = 1;
 
 hintSilent "Daten werden geladen...";
+if (_active isEqualTo 1) exitWith {hint format["data: %1",_data];};
 
 lbClear _tab;
+
 {
     _crime = _x;
     if (!(_crime in _mylist)) then
