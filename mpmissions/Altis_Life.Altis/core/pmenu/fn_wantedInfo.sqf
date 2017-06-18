@@ -22,13 +22,11 @@ _crimesArr = [];
 if((lbCurSel 2401) == -1) then {
     [player] remoteExec ["life_fnc_wantedFetch",RSERV];
 } else {
-    _data = [_this,0,[],[[]]] call BIS_fnc_param;
-
     if (_mylist isEqualTo 1) then {
         _mylist = 0;
-        [] call life_fnc_wantedGrab;
+        [_data] call life_fnc_wantedGrab;
     } else {
-
+        _data = [_this,0,[],[[]]] call BIS_fnc_param;
         lbClear _list;
 
         _crimes = _data select 0;
