@@ -55,6 +55,9 @@ class life_wanted_menu {
             drawSideArrows = 0;
             idcLeft = -1;
             idcRight = -1;
+            colorBackground[] = {0, 0, 0, 0};
+            colorSelectBackground[] = {0.8,0.8,0.8,1};
+            colorSelectBackground2[] = {1,1,1,0.5};
 			x = 0.12;
 			y = 0.26;
 			w = 0.2;
@@ -67,7 +70,8 @@ class life_wanted_menu {
 			text = "";
 			sizeEx = 0.035;
 			colorBackground[] = {0, 0, 0, 0};
-
+            colorSelectBackground[] = {0.95, 0.95, 0.95, 0.5};
+            colorSelectBackground2[] = {1, 1, 1, 0.5};
 			x = 0.34;
 			y = 0.35;
 			w = 0.65;

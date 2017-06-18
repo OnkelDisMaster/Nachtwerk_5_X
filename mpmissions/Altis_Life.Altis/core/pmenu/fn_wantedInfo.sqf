@@ -15,7 +15,7 @@ _data = lbData[2401,(lbCurSel 2401)];
 
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
-_mylist = [];
+_mylist = 1;
 
 
 
@@ -23,6 +23,8 @@ if((lbCurSel 2401) == -1) then {
     [player] remoteExec ["life_fnc_wantedFetch",RSERV];
 } else {
 _data = [_this,0,[],[[]]] call BIS_fnc_param;
+
+if (_mylist isEqualTo 1) exitWith {hint format["data: %1",_data];};
 
 lbClear _list;
 
