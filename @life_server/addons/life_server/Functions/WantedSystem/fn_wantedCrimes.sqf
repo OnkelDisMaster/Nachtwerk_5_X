@@ -77,4 +77,4 @@ if (_type isEqualType "") then {_type = call compile format["%1", _type];};
 }forEach _type;
 _queryResult set[0,_crimesArr];
 
-[_queryResult] remoteExec ["life_fnc_wantedInfo",_ret];
+[_queryResult] remoteExec ["life_fnc_wantedGrab",_ret];
