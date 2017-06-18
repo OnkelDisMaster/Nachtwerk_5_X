@@ -19,11 +19,11 @@ _units = [];
 
 {
     _entry = _x;
-    if((_entry select 0) in _units) then
-    {
+   // if((_entry select 0) in _units) then
+   // {
         _list lbAdd format["%1", _entry select 0];
         _list lbSetData [(lbSize _list)-1,str(_entry)];
-    };
+    //};
 } forEach _info;
 
 ctrlSetText[2404,"Connection Established"];
