@@ -6,15 +6,18 @@
     Description:
     Prepare the array to query the crimes.
 */
-private["_display","_tab","_criminal","_mylist"];
+private["_display","_tab","_crimes","_mylist","_active","_data"];
 disableSerialization;
+
+_mylist = [];
 _display = findDisplay 2400;
 _tab = _display displayCtrl 2402;
-_criminal = [_this,0,[],[[]]] call BIS_fnc_param;
-_criminalID = getPlayerUID _criminal;
-_mylist = [];
+_data = [_this,0,[],[[]]] call BIS_fnc_param;
 _crimes = _data select 0;
-hint "Daten werden geladen";
+_active = 1;
+
+hintSilent "Daten werden geladen...";
+
 lbClear _tab;
 {
     _crime = _x;
