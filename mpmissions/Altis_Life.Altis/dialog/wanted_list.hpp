@@ -47,7 +47,7 @@ class life_wanted_menu {
 		{
 			idc = 2401;
 			text = "";
-			columns[] = {0,0.3};
+			//columns[] = {0,0.3};
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 			onLBSelChanged = "[] call life_fnc_wantedInfo";
 			//onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
