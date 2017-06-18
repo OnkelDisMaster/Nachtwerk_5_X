@@ -131,7 +131,7 @@ class WeaponShops {
     };
 
     //Cop Shops
-    class cop_basic {
+    class cop_pa {
         name = "Altis Cop Shop";
         side = "cop";
         license = "";
@@ -155,7 +155,7 @@ class WeaponShops {
         };
     };
 
-    class cop_patrol {
+    class cop_pm {
         name = "Altis Patrol Officer Shop";
         side = "cop";
         license = "";
@@ -181,7 +181,247 @@ class WeaponShops {
         };
     };
 
-    class cop_sergeant {
+    class cop_pom {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_phm {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_pka {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_pk {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_pok {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_pok+ {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_phk {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_phk+ {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_ephk {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_pd {
+        name = "Altis Sergeant Officer Shop";
+        side = "cop";
+        license = "";
+        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        items[] = {
+            { "hgun_ACPC2_F", "", 17500, -1 },
+            { "SMG_02_ACO_F", "", 15000, -1 },
+            { "arifle_MXC_F", "", 30000, 5000 },
+            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
+            { "optic_Arco", "", 2500, -1 },
+            { "muzzle_snds_H", "", 2750, -1 }
+        };
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 200 },
+            { "30Rnd_9x21_Mag", "", 60 },
+            { "30Rnd_65x39_caseless_mag", "", 100 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 2500 },
+            { "muzzle_snds_H", "", 2750 }
+        };
+    };
+	
+	class cop_lpd {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";

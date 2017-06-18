@@ -130,6 +130,17 @@
             <Portuguese>Mercado</Portuguese>
             <Polish>Market Altis</Polish>
         </Key>
+		<Key ID="STR_Shops_apotheke">
+            <Original>Apotheke</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Apotheke</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
             <Czech>Rebel Market</Czech>

@@ -23,7 +23,15 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
     };
-
+	
+	class apotheke {
+        name = "STR_Shops_apotheke";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+    };
+	
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
