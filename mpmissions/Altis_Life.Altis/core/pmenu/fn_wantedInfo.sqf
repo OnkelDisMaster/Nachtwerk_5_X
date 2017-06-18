@@ -41,6 +41,7 @@ if((lbCurSel 2401) == -1) then {
         } forEach _crimes;
 
         ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[(_data select 1)] call life_fnc_numberText]];
+        _mylist = 1;
     };
 };
 
