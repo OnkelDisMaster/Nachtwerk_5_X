@@ -119,17 +119,5 @@ class life_wanted_menu {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-
-		class InfoButtonKey : Life_RscButtonMenu {
-            idc = -1;
-            text = "Aktualisieren";
-            onButtonClick = "[] call life_fnc_wantedInfo";
-            x = 0.3 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-            y = 1.1 - (1 / 25);
-            w = (6.25 / 40);
-            h = (1 / 25);
-        };
-
-
 	};
 };
