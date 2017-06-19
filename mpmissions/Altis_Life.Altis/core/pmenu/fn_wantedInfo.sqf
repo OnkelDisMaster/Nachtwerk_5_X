@@ -33,7 +33,7 @@ if (_active isEqualTo 1) exitWith{
     };
     _type = toString(_type);
     _type = call compile format ["%1", _type];
-
+hint format["type: %1",_type];
     {
         switch (_x) do
         {
