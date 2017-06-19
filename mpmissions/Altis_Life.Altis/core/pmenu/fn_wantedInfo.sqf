@@ -64,10 +64,12 @@ if (_active isEqualTo 1) exitWith{
             case "3": {_x = "STR_Crime_3"};
             case "4": {_x = "STR_Crime_4"};
             case "5": {_x = "STR_Crime_5"};
-            case "6": {_x = "STR_Crime_6"};
+            //case "6": {_x = "STR_Crime_6"};
+            case "6": {_x = "Fahren ohne Helm"};
             case "7": {_x = "STR_Crime_7"};
             case "8": {_x = "STR_Crime_8"};
-            case "9": {_x = "STR_Crime_9"};
+            //case "9": {_x = "STR_Crime_9"};
+            case "9": {_x = "Schwerer Diebstahl (Zivilfahrzeug)"};
             case "10": {_x = "STR_Crime_10"};
             case "11": {_x = "STR_Crime_11"};
             case "12": {_x = "STR_Crime_12"};
