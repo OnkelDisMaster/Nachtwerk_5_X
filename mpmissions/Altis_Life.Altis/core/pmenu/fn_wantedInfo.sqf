@@ -13,7 +13,10 @@ _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _active= 1;
 
-if (_active isEqualTo 1) exitWith{hint format["data: %1",_data];};
+if (_active isEqualTo 1) exitWith{
+    ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[(_data select 3)] call life_fnc_numberText]];
+    hint format["data: %1",(_data select 3)];
+};
 
 
 if((lbCurSel 2401) == -1) then {
