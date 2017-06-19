@@ -33,7 +33,7 @@ if (_active isEqualTo 1) exitWith{
     };
     _type = toString(_type);
     _type = call compile format ["%1", _type];
-hint format["type: %1",_type];
+
     {
         switch (_x) do
         {
@@ -96,7 +96,7 @@ hint format["type: %1",_type];
         if (!(_crime in _mylist)) then
         {
             _mylist pushBack _crime;
-            _tab lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
+            _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
         };
     } forEach _crimes;
 
