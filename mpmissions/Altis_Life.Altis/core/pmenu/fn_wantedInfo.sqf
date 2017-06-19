@@ -18,7 +18,7 @@ if (_active isEqualTo 1) exitWith{
     _array = toString(_dataArr);
     _array = call compile format ["%1", _array];
     hint format["data: %1 \n %2",_array, count _array];
-    //ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_data select 3] call life_fnc_numberText]];
+    ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_array select 3] call life_fnc_numberText]];
 };
 
 
