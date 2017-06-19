@@ -16,6 +16,7 @@ _active= 1;
 if (_active isEqualTo 1) exitWith{
     _crimesArr = [];
     _mylist = [];
+    _crimes = [];
     _dataArr = toArray(_data);
     _array = toString(_dataArr);
     _array = call compile format ["%1", _array];
@@ -89,13 +90,7 @@ if (_active isEqualTo 1) exitWith{
         _crimes pushBack _x;
     }forEach _type;
 
-
-        _crimes = toArray(_crimes);
-        _crimesArr = toString(_crimes);
-        _crimesArr = call compile format ["%1", _crimesArr];
-
-
-hint format["crimes: %1 \n %2",_crimesArr,_type];
+hint format["crimes: %1 \n %2",_crimes,_type];
     lbClear _list;
 
     {
@@ -103,9 +98,9 @@ hint format["crimes: %1 \n %2",_crimesArr,_type];
         if (!(_crime in _mylist)) then
         {
             _mylist pushBack _crime;
-            _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimesArr,localize _crime];
+            _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
         };
-    } forEach _crimesArr;
+    } forEach _crimes;
 
     ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_array select 3] call life_fnc_numberText]];
 };
