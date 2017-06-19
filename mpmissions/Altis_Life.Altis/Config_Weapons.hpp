@@ -301,7 +301,7 @@ class WeaponShops {
         };
     };
 	
-	class cop_pok+ {
+	class cop_pok_p {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
@@ -349,7 +349,7 @@ class WeaponShops {
         };
     };
 	
-	class cop_phk+ {
+	class cop_phk_p {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
