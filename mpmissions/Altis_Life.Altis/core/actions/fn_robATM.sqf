@@ -59,7 +59,11 @@ if (log_atm_rob >= 4) then { _kassa = 50 + round(random 100);
     [1,format["*** Ein leerer Geldautomat wird aufgebrochen in %1. ***", _shop]]    remoteExecCall ["life_fnc_broadcast",west];
     _chance = 35;  };
 
-if(_chance >= 25) then { hint "Die Polizei wurde benachrichtig!"; [1,format["Ein Geldautomat wird aufgebrochen!", _shop]] remoteExecCall ["life_fnc_broadcast",west]; [[getPlayerUID _robber,name _robber,"213"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;};
+if(_chance >= 25) then { hint "Die Polizei wurde benachrichtig!"; [1,format["Ein Geldautomat wird aufgebrochen!", _shop]] remoteExecCall ["life_fnc_broadcast",west];
+
+//[[getPlayerUID _robber,name _robber,"213"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+[getPlayerUID _robber,name _robber,"213"] remoteExec ["life_fnc_wantedAdd"];
+};
 
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
@@ -127,7 +131,8 @@ if(_chance <= 50) then {
     player setObjectTextureGlobal [1,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     player setObjectTextureGlobal [2,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     [1,format["Die Farbpatrone wurde ausgeloest, der Taeter ist nun hell gruen! ATM: Taeter laut Sicherheitsdienst ist %1!",name _robber, _shop]]    remoteExecCall ["life_fnc_broadcast",west];
-    [[getPlayerUID _robber,name _robber,"2000"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+    //[[getPlayerUID _robber,name _robber,"2000"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+    [getPlayerUID _robber,name _robber,"2000"] remoteExec ["life_fnc_wantedAdd"];
     };
 
 life_use_atm = false;

@@ -72,6 +72,7 @@ class CfgRemoteExec {
 		F(life_fnc_copSiren2,CLIENT)
 		F(life_fnc_vehicleWarned,CLIENT)
 		F(life_fnc_AAN,CLIENT)
+		F(life_fnc_execJailTimer,CLIENT)
 
 
         /* Server only functions */

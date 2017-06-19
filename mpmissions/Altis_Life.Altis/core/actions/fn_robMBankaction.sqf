@@ -13,5 +13,6 @@ if(isNull _target) exitWith {};
 if(!isPlayer _target) exitWith {};
 
 if(_target getVariable["robbed",false]) exitWith {};
-[[player],"life_fnc_robPerson",_target,false] spawn life_fnc_MP;
+//[[player],"life_fnc_robPerson",_target,false] spawn life_fnc_MP;
+[player] remoteExec ["life_fnc_robPerson",_target,false];
 _target setVariable["robbed",TRUE,TRUE];

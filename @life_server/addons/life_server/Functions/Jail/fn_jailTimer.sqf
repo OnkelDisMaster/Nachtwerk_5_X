@@ -12,4 +12,5 @@ _query = format["SELECT IF( remainingtime <= '0', TRUE, FALSE ) FROM players WHE
 
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
-[ [_injail] ,"life_fnc_execJailTimer",_player,false] spawn life_fnc_MP;
+//[ [_injail] ,"life_fnc_execJailTimer",_player,false] spawn life_fnc_MP;
+[_injail] remoteExec ["life_fnc_execJailTimer",_player,false];

@@ -20,11 +20,18 @@ _kassa = 100000 + round(random 500000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = 100;
-if(_chance >= 85) then { hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!"; [[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
+if(_chance >= 85) then {
+    hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!";
+    //[[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+    [1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]] remoteExec ["life_fnc_broadcast",west,false];
+};
 
 _cops = (west countSide playableUnits);
-if(_cops < 4) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; 
-hint "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";};
+if(_cops < 4) exitWith{
+    //[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP;
+    [_vault,-1] remoteExecCall ["disableSerialization;"];
+    hint "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";
+};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
@@ -64,7 +71,8 @@ life_use_atm = false;
 uiSleep (30 + random(180));
 life_use_atm = true;
 if!(alive _robber) exitWith {};
-[[getPlayerUID _robber,name _robber,"212"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+//[[getPlayerUID _robber,name _robber,"212"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+[getPlayerUID _robber,name _robber,"212"] remoteExec ["life_fnc_wantedAdd"];
 };
 uiSleep 300;
 _action = _shop addAction["Bankfiliale ausrauben",life_fnc_robMBank];	
