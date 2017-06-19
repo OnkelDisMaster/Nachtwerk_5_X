@@ -64,12 +64,10 @@ if (_active isEqualTo 1) exitWith{
             case "3": {_x = "STR_Crime_3"};
             case "4": {_x = "STR_Crime_4"};
             case "5": {_x = "STR_Crime_5"};
-            //case "6": {_x = "STR_Crime_6"};
-            case "6": {_x = "Fahren ohne Helm"};
+            case "6": {_x = "STR_Crime_6"};
             case "7": {_x = "STR_Crime_7"};
             case "8": {_x = "STR_Crime_8"};
-            //case "9": {_x = "STR_Crime_9"};
-            case "9": {_x = "Schwerer Diebstahl (Zivilfahrzeug)"};
+            case "9": {_x = "STR_Crime_9"};
             case "10": {_x = "STR_Crime_10"};
             case "11": {_x = "STR_Crime_11"};
             case "12": {_x = "STR_Crime_12"};
@@ -90,7 +88,14 @@ if (_active isEqualTo 1) exitWith{
         };
         _crimes pushBack _x;
     }forEach _type;
-hint format["crimes: %1 \n %2",_crimes,_type];
+
+
+        _crimes = toArray(_crimes);
+        _crimesArr = toString(_crimes);
+        _crimesArr = call compile format ["%1", _crimesArr];
+
+
+hint format["crimes: %1 \n %2",_crimesArr,_type];
     lbClear _list;
 
     {
@@ -98,9 +103,9 @@ hint format["crimes: %1 \n %2",_crimes,_type];
         if (!(_crime in _mylist)) then
         {
             _mylist pushBack _crime;
-            _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimes,localize _crime];
+            _list lbAdd format[localize "STR_Wanted_Count",{_x == _crime} count _crimesArr,localize _crime];
         };
-    } forEach _crimes;
+    } forEach _crimesArr;
 
     ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_array select 3] call life_fnc_numberText]];
 };
