@@ -5,16 +5,16 @@
     Description:
     Pulls back information about the wanted criminal.
 */
-private["_display","_list","_data","_criminalID","_active","_dataArr","_array","_crimes","_crimesArr","_mylist"];
+private["_display","_list","_data","_criminalID","_dataArr","_array","_crimes","_mylist"];
 disableSerialization;
 
 _data = lbData[2401,(lbCurSel 2401)];
 _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
-_active= 1;
 
-if (_active isEqualTo 1) exitWith{
-    _crimesArr = [];
+if((lbCurSel 2401) == -1) then {
+    [player] remoteExec ["life_fnc_wantedFetch",RSERV];
+} else {
     _mylist = [];
     _crimes = [];
     _dataArr = toArray(_data);
@@ -90,7 +90,6 @@ if (_active isEqualTo 1) exitWith{
         _crimes pushBack _x;
     }forEach _type;
 
-hint format["crimes: %1 \n %2",_crimes,_type];
     lbClear _list;
 
     {
@@ -103,13 +102,5 @@ hint format["crimes: %1 \n %2",_crimes,_type];
     } forEach _crimes;
 
     ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_array select 3] call life_fnc_numberText]];
-};
-
-
-if((lbCurSel 2401) == -1) then {
-    [player] remoteExec ["life_fnc_wantedFetch",RSERV];
-} else {
-    _criminalID = _data select 1;
-    [player,_criminalID] remoteExec ["life_fnc_wantedCrimes",RSERV];
 };
 
