@@ -5,7 +5,7 @@
     Description:
     Pulls back information about the wanted criminal.
 */
-private["_display","_list","_data","_criminalID","_active"];
+private["_display","_list","_data","_criminalID","_active","_dataArr"];
 disableSerialization;
 
 _data = lbData[2401,(lbCurSel 2401)];
@@ -14,7 +14,8 @@ _list = _display displayCtrl 2402;
 _active= 1;
 
 if (_active isEqualTo 1) exitWith{
-    hint format["data: %1 \n %2",_data, count _data];
+    _dataArr = toArray(_data);
+    hint format["data: %1 \n %2",_dataArr, count _dataArr];
     //ctrlSetText[2403,format[localize "STR_Wanted_Bounty",[_data select 3] call life_fnc_numberText]];
 };
 
