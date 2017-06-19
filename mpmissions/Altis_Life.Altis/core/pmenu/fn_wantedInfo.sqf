@@ -88,7 +88,7 @@ if (_active isEqualTo 1) exitWith{
         };
         _crimes pushBack _x;
     }forEach _type;
-hint format["crimes: %1",_crimes];
+hint format["crimes: %1 \n %2",_crimes,_type];
     lbClear _list;
 
     {
