@@ -13,7 +13,7 @@ _display = findDisplay 2400;
 _list = _display displayCtrl 2402;
 _active= 1;
 
-//if (_active isEqualTo 1) exitWith{hint format["data: %1",_data];};
+if (_active isEqualTo 1) exitWith{hint format["data: %1",_data];};
 
 
 if((lbCurSel 2401) == -1) then {
