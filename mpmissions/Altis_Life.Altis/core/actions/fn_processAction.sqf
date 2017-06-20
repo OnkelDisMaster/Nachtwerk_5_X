@@ -139,4 +139,6 @@ if (_hasLicense) then {
     if (_minimumConversions isEqualTo (_totalConversions call BIS_fnc_lowestNum)) then {hint localize "STR_NOTF_ItemProcess";} else {hint localize "STR_Process_Partial";};
     CASH = CASH - _cost;
     life_is_processing = false; life_action_inUse = false;
+
 };
+[] call life_fnc_hudUpdate;

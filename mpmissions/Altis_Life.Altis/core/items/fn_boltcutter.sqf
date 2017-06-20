@@ -96,3 +96,4 @@ if (life_HC_isActive) then {
 } else {
     [getPlayerUID player,profileName,"459"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
 };
+[] call life_fnc_hudUpdate;
