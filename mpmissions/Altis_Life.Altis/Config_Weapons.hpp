@@ -52,16 +52,16 @@ class WeaponShops {
         items[] = {
             { "arifle_TRG20_F", "", 85000, 2500 },
             { "arifle_Katiba_F", "", 120000, 5000 },
-            { "srifle_DMR_01_F", "", 80000, -1 },
+            { "srifle_DMR_01_F", "", 180000, -1 },
             { "arifle_SDAR_F", "", 20000, 7500 },
-			{ "arifle_AKM_F", "", 100000, 2500 },
+			{ "arifle_AKM_F", "", 120000, 2500 },
 			{ "arifle_AKS_F", "", 95000, 2500 },
 			{ "arifle_MX_F", "", 175000, 2500 },
 			{ "arifle_MXC_F", "", 170000, 2500 },
-			{ "arifle_MX_SW_F", "", 200000, 2500 },
-			{ "arifle_MXM_F", "", 210000, 2500 },
-			{ "srifle_DMR_03_F", "", 185000, 2500 },
-			{ "srifle_EBR_F", "", 250000, 2500 }			
+			{ "arifle_MX_SW_F", "", 220000, 2500 },
+			{ "arifle_MXM_F", "", 240000, 2500 },
+			{ "srifle_DMR_03_F", "", 285000, 2500 },
+			{ "srifle_EBR_F", "", 350000, 2500 }			
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 3000 },
@@ -150,22 +150,59 @@ class WeaponShops {
         side = "civ";
         license = "elite";
         level[] = { "", "", -1, "" };
-        items[] = {			
-			{ "LMG_Mk200_F", "", 350000, 2500 },
-            { "srifle_LRR_F", "", 650000, 2500 },
-            { "arifle_ARX_hex_F", "", 300000, 5000 },
-            { "srifle_DMR_02_camo_F", "", 370000, 7500 },
-			{ "srifle_DMR_05_hex_F", "", 450000, 5000 },
-            { "LMG_Zafir_F", "", 470000, -1 }
+        items[] = {	
+			{ "arifle_AK12_F", "", 550000, 2500 },
+			{ "arifle_SPAR_01_khk_F", "", 150000, 2500 },
+			{ "arifle_SPAR_02_khk_F", "", 250000, 2500 },
+			{ "arifle_SPAR_03_khk_F", "", 350000, 2500 },
+			{ "arifle_CTAR_ghex_F", "", 250000, 2500 },
+			{ "arifle_CTARS_ghex_F", "", 280000, 2500 },
+			{ "LMG_03_F", "", 340000, 2500 },
+			{ "LMG_Mk200_F", "", 300000, 2500 },
+            { "srifle_LRR_tna_LRPS_F", "", 550000, 2500 },
+            { "arifle_ARX_ghex_F", "", 260000, 5000 },
+            { "srifle_DMR_02_camo_F", "", 335000, 7500 },
+			{ "srifle_DMR_05_hex_F", "", 420000, 5000 },
+            { "LMG_Zafir_F", "", 410000, -1 },
+			{ "arifle_TRG20_F", "", 50000, 2500 },
+            { "arifle_Katiba_F", "", 60000, 5000 },
+            { "srifle_DMR_01_F", "", 40000, -1 },
+            { "arifle_SDAR_F", "", 10000, 7500 },
+			{ "arifle_AKM_F", "", 50000, 2500 },
+			{ "arifle_AKS_F", "", 45000, 2500 },
+			{ "arifle_MX_khk_ACO_Pointer_Snds_F", "", 145000, 2500 },
+			{ "arifle_MXC_khk_ACO_Pointer_Snds_F", "", 140000, 2500 },
+			{ "arifle_MX_SW_khk_Pointer_F", "", 160000, 2500 },
+			{ "arifle_MXM_khk_F", "", 170000, 2500 },
+			{ "srifle_DMR_03_F", "", 110000, 2500 },
+			{ "srifle_EBR_F", "", 200000, 2500 },
+			{ "hgun_P07_khk_F", "", 25000, 2500 }
         };
         mags[] = {
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "", 15000 },
+			{ "30Rnd_556x45_Stanag_green", "", 4000 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 9000 },
+			{ "30Rnd_580x42_Mag_Tracer_F", "", 5000 },
+			{ "100Rnd_580x42_Mag_Tracer_F", "", 18000 },
+			{ "200Rnd_556x45_Box_Tracer_F", "", 250000 },
             { "200Rnd_65x39_cased_Box_Tracer", "", 20000 },
 			{ "7Rnd_408_Mag", "", 35000 },
             { "30Rnd_65x39_caseless_green", "", 5000 },
             { "10Rnd_50BW_Mag_F", "", 50000 },
             { "10Rnd_338_Mag", "", 25000 },
 			{ "10Rnd_93x64_DMR_05_Mag", "", 25000 },
-			{ "150Rnd_762x54_Box_Tracer", "", 18000 }
+			{ "150Rnd_762x54_Box_Tracer", "", 18000 },
+			{ "30Rnd_556x45_Stanag", "", 3000 },
+            { "30Rnd_65x39_caseless_green", "", 2750 },
+            { "10Rnd_762x54_Mag", "", 15000 },
+            { "20Rnd_556x45_UW_mag", "", 1250 },
+			{ "30Rnd_762x39_Mag_Tracer_F", "", 15000 },
+			{ "30Rnd_545x39_Mag_Tracer_F", "", 15000 },
+			{ "30Rnd_65x39_caseless_mag", "", 5000 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "", 5000 },
+			{ "100Rnd_65x39_caseless_mag", "", 9000 },
+			{ "20Rnd_762x51_Mag", "", 15000 },
+			{ "30Rnd_9x21_Green_Mag", "", 15000 }
         };
         accs[] = {
 			{ "Rangefinder", "", 12500 },
@@ -194,6 +231,10 @@ class WeaponShops {
 			{ "muzzle_snds_93mmg_tan", "", 15500 },
 			{ "muzzle_snds_65_H_snd_F", "", 15500 },
 			{ "muzzle_snds_H_MG_blk_F", "", 15500 },
+			{ "muzzle_snds_H_khk_F", "", 15500 },
+			{ "muzzle_snds_m_khk_F", "", 15500 },
+			{ "muzzle_snds_B_khk_F", "", 15500 },
+			{ "bipod_01_F_khk", "", 3000 },
 			{ "bipod_01_F_blk", "", 3000 },
 			{ "bipod_01_F_snd", "", 3000 }
         };
@@ -205,19 +246,44 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "hgun_Rook40_F", "", 1500, 500 },
-            { "hgun_Pistol_heavy_02_F", "", 2500, -1 },
-            { "hgun_ACPC2_F", "", 4500, -1 },
-            { "hgun_PDW2000_F", "", 9500, -1 }
+            { "arifle_TRG20_F", "", 85000, 2500 },
+            { "arifle_Katiba_F", "", 120000, 5000 },
+            { "srifle_DMR_01_F", "", 180000, -1 },
+            { "arifle_SDAR_F", "", 20000, 7500 },
+			{ "arifle_AKM_F", "", 120000, 2500 },
+			{ "arifle_AKS_F", "", 95000, 2500 },
+			{ "arifle_MX_F", "", 175000, 2500 },
+			{ "arifle_MXC_F", "", 170000, 2500 },
+			{ "arifle_MX_SW_F", "", 220000, 2500 },
+			{ "arifle_MXM_F", "", 240000, 2500 },
+			{ "srifle_DMR_03_F", "", 285000, 2500 },
+			{ "srifle_EBR_F", "", 350000, 2500 }			
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 25 },
-            { "6Rnd_45ACP_Cylinder", "", 50 },
-            { "9Rnd_45ACP_Mag", "", 45 },
-            { "30Rnd_9x21_Mag", "", 75 }
+            { "30Rnd_556x45_Stanag", "", 3000 },
+            { "30Rnd_65x39_caseless_green", "", 2750 },
+            { "10Rnd_762x54_Mag", "", 15000 },
+            { "20Rnd_556x45_UW_mag", "", 1250 },
+			{ "30Rnd_762x39_Mag_Tracer_F", "", 15000 },
+			{ "30Rnd_545x39_Mag_Tracer_F", "", 15000 },
+			{ "30Rnd_65x39_caseless_mag", "", 5000 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "", 5000 },
+			{ "100Rnd_65x39_caseless_mag", "", 9000 },
+			{ "20Rnd_762x51_Mag", "", 15000 }
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 950 }
+            { "optic_ACO_grn", "", 12500 },
+			{ "optic_MRCO", "", 12500 },
+			{ "optic_Arco", "", 12500 },
+			{ "optic_ERCO_blk_F", "", 12500 },
+			{ "optic_ERCO_snd_F", "", 12500 },
+            { "optic_Holosight", "", 12500 },
+            { "optic_Hamr", "", 12500 },
+			{ "optic_DMS", "", 35000 },
+			{ "optic_NVS", "", 15500 },
+            { "acc_flashlight", "", 3000 },
+			{ "bipod_01_F_blk", "", 3000 },
+			{ "bipod_01_F_snd", "", 3000 }	
         };
     };
 
@@ -271,23 +337,23 @@ class WeaponShops {
         name = "Altis Cop Shop";
         side = "cop";
         license = "";
-        level[] = { "", "", -1, "" };
+        level[] = { "life_coplevel", "SCALAR", 1, "You must be a Sergeant Rank!" };
         items[] = {
-            { "arifle_sdar_F", "Taser Rifle", 10, 1 },
-            { "hgun_Pistol_heavy_01_MRD_F", "Taser Pistole", 10, 1 },
-            { "HandGrenade_Stone", "Flashbang", 10, 1 },
-            { "Rangefinder", "", 10, 1 },
-            { "B_UavTerminal", "", 10, 1 },
-            { "Medikit", "", 10, 1 },
-			{ "ToolKit", "", 10, 1 },
-            { "NVGoggles", "", 10, 1 }
+            { "arifle_sdar_F", "Taser Rifle", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "Taser Pistole", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
             { "11Rnd_45ACP_Mag", "", 1 },
             { "20Rnd_556x45_UW_mag", "", 1 }
         };
         accs[] = {
-            { "muzzle_snds_acp", "", 650 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 
@@ -297,23 +363,23 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 2, "You must be a Patrol Officer Rank!" };
         items[] = {
-            { "arifle_MX_F", "", 35000, 7500 },
-            { "SMG_02_ACO_F", "", 30000, -1 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "acc_flashlight", "", 750, 100 },
-            { "optic_Holosight", "", 1200, 275 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+            { "SMG_01_Holo_pointer_snds_F", "", 1, 1 },
+			{ "SMG_05_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "Taser Pistole", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "30Rnd_65x39_caseless_mag", "", 130 },
-            { "30Rnd_9x21_Mag", "", 250 }
+            { "11Rnd_45ACP_Mag", "", 1 },
+            { "30Rnd_45ACP_Mag_SMG_01", "", 1 },
+			{ "30Rnd_9x21_Mag_SMG_02", "", 1 }
         };
         accs[] = {
-            { "acc_flashlight", "", 750 },
-            { "optic_Holosight", "", 1200 },
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 
@@ -323,21 +389,33 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
         items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+			{ "arifle_Mk20_MRCO_pointer_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+            { "11Rnd_45ACP_Mag", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "30Rnd_556x45_Stanag", "", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -345,23 +423,36 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 4, "You must be a Sergeant Rank!" };
+        items[] = {	
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },		
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -369,23 +460,39 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 5, "You must be a Sergeant Rank!" };
+        items[] = {	
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -393,23 +500,44 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        level[] = { "life_coplevel", "SCALAR", 6, "You must be a Sergeant Rank!" };
         items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+			{ "arifle_CTAR_blk_F", "", 1, 1 },
+			{ "arifle_CTAR_GL_blk_F", "", 1, 1 },
+			{ "arifle_CTARS_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_580x42_Mag_F", "", 1 },
+			{ "100Rnd_580x42_Mag_F", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -417,23 +545,48 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 7, "You must be a Sergeant Rank!" };
+        items[] = {		
+			{ "srifle_DMR_03_F", "", 1, 1 },
+			{ "srifle_DMR_06_olive_F", "", 1, 1 },
+			{ "srifle_EBR_ARCO_pointer_snds_F", "", 1, 1 },
+			{ "srifle_DMR_07_blk_DMS_Snds_F", "", 1, 1 },
+			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "20Rnd_762x51_Mag", "", 1 },
+			{ "20Rnd_650x39_Cased_Mag_F", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -441,23 +594,47 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        level[] = { "life_coplevel", "SCALAR", 8, "You must be a Sergeant Rank!" };
         items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+			{ "srifle_DMR_02_F", "", 1, 1 },
+			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },
+			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "10Rnd_338_Mag", "", 1 },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 1 },
+			{ "20Rnd_762x51_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -465,23 +642,60 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 9, "You must be a Sergeant Rank!" };
+        items[] = {			
+			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
+			{ "LMG_Zafir_F", "", 1, 1 },
+			{ "srifle_LRR_F", "", 1, 1 },
+			{ "arifle_ARX_blk_F", "", 1, 1 },
+			{ "srifle_DMR_02_F", "", 1, 1 },
+			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },
+			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
+			{ "DemoCharge_Remote_Mag", "", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "200Rnd_65x39_cased_Box", "", 1 },
+			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
+			{ "150Rnd_762x54_Box", "", 1 },
+			{ "150Rnd_762x54_Box_Tracer", "", 1 },
+			{ "7Rnd_408_Mag", "", 1 },
+			{ "30Rnd_65x39_caseless_green","Typ 115 Primärmagazin", 1 },
+			{ "10Rnd_50BW_Mag_F","Typ 115 Sekundärmagazin", 1 },
+			{ "10Rnd_338_Mag", "", 1 },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 1 },
+			{ "20Rnd_762x51_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -489,23 +703,60 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 10, "You must be a Sergeant Rank!" };
+        items[] = {			
+			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
+			{ "LMG_Zafir_F", "", 1, 1 },
+			{ "srifle_LRR_F", "", 1, 1 },
+			{ "arifle_ARX_blk_F", "", 1, 1 },
+			{ "srifle_DMR_02_F", "", 1, 1 },
+			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },
+			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
+			{ "DemoCharge_Remote_Mag", "", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "200Rnd_65x39_cased_Box", "", 1 },
+			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
+			{ "150Rnd_762x54_Box", "", 1 },
+			{ "150Rnd_762x54_Box_Tracer", "", 1 },
+			{ "7Rnd_408_Mag", "", 1 },
+			{ "30Rnd_65x39_caseless_green","Typ 115 Primärmagazin", 1 },
+			{ "10Rnd_50BW_Mag_F","Typ 115 Sekundärmagazin", 1 },
+			{ "10Rnd_338_Mag", "", 1 },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 1 },
+			{ "20Rnd_762x51_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -513,23 +764,62 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 11, "You must be a Sergeant Rank!" };
+        items[] = {		
+			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
+			{ "LMG_Zafir_F", "", 1, 1 },
+			{ "srifle_LRR_F", "", 1, 1 },
+			{ "srifle_GM6_LRPS_F", "", 1, 1 },
+			{ "arifle_ARX_blk_F", "", 1, 1 },
+			{ "srifle_DMR_02_F", "", 1, 1 },
+			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },
+			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
+			{ "DemoCharge_Remote_Mag", "", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "200Rnd_65x39_cased_Box", "", 1 },
+			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
+			{ "150Rnd_762x54_Box", "", 1 },
+			{ "150Rnd_762x54_Box_Tracer", "", 1 },
+			{ "7Rnd_408_Mag", "", 1 },
+			{ "5Rnd_127x108_Mag", "", 1 },
+			{ "30Rnd_65x39_caseless_green","Typ 115 Primärmagazin", 1 },
+			{ "10Rnd_50BW_Mag_F","Typ 115 Sekundärmagazin", 1 },
+			{ "10Rnd_338_Mag", "", 1 },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 1 },
+			{ "20Rnd_762x51_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -537,23 +827,62 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 12, "You must be a Sergeant Rank!" };
+        items[] = {		
+			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
+			{ "LMG_Zafir_F", "", 1, 1 },
+			{ "srifle_LRR_F", "", 1, 1 },
+			{ "srifle_GM6_LRPS_F", "", 1, 1 },
+			{ "arifle_ARX_blk_F", "", 1, 1 },
+			{ "srifle_DMR_02_F", "", 1, 1 },
+			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },
+			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
+			{ "DemoCharge_Remote_Mag", "", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "200Rnd_65x39_cased_Box", "", 1 },
+			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
+			{ "150Rnd_762x54_Box", "", 1 },
+			{ "150Rnd_762x54_Box_Tracer", "", 1 },
+			{ "7Rnd_408_Mag", "", 1 },
+			{ "5Rnd_127x108_Mag", "", 1 },
+			{ "30Rnd_65x39_caseless_green","Typ 115 Primärmagazin", 1 },
+			{ "10Rnd_50BW_Mag_F","Typ 115 Sekundärmagazin", 1 },
+			{ "10Rnd_338_Mag", "", 1 },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 1 },
+			{ "20Rnd_762x51_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 	
@@ -561,23 +890,62 @@ class WeaponShops {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
         license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
-        items[] = {
-            { "hgun_ACPC2_F", "", 17500, -1 },
-            { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_MXC_F", "", 30000, 5000 },
-            { "HandGrenade_Stone", "Flashbang", 1700, -1 },
-            { "optic_Arco", "", 2500, -1 },
-            { "muzzle_snds_H", "", 2750, -1 }
+        level[] = { "life_coplevel", "SCALAR", 13, "You must be a Sergeant Rank!" };
+        items[] = {		
+			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
+			{ "LMG_Zafir_F", "", 1, 1 },
+			{ "srifle_LRR_F", "", 1, 1 },
+			{ "srifle_GM6_LRPS_F", "", 1, 1 },
+			{ "arifle_ARX_blk_F", "", 1, 1 },
+			{ "srifle_DMR_02_F", "", 1, 1 },
+			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },
+			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_01_GL_blk_F", "", 1, 1 },
+			{ "arifle_SPAR_02_blk_F", "", 1, 1 },			
+            { "arifle_MX_Black_F", "", 1, 1 },
+			{ "arifle_MX_GL_Black_Hamr_pointer_F", "", 1, 1 },
+			{ "arifle_MXC_Black_F", "", 1, 1 },
+			{ "arifle_MXM_Black_F", "", 1, 1 },
+			{ "arifle_MX_SW_Black_F", "", 1, 1 },
+            { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
+            { "HandGrenade_Stone", "Flashbang", 1, 1 },
+			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
+			{ "DemoCharge_Remote_Mag", "", 1, 1 },
+            { "Rangefinder", "", 1, 1 },
+            { "B_UavTerminal", "", 1, 1 },
+            { "Medikit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
+            { "NVGoggles", "", 1, 1 }
         };
         mags[] = {
-            { "9Rnd_45ACP_Mag", "", 200 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "30Rnd_65x39_caseless_mag", "", 100 }
+			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "200Rnd_65x39_cased_Box", "", 1 },
+			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
+			{ "150Rnd_762x54_Box", "", 1 },
+			{ "150Rnd_762x54_Box_Tracer", "", 1 },
+			{ "7Rnd_408_Mag", "", 1 },
+			{ "5Rnd_127x108_Mag", "", 1 },
+			{ "30Rnd_65x39_caseless_green","Typ 115 Primärmagazin", 1 },
+			{ "10Rnd_50BW_Mag_F","Typ 115 Sekundärmagazin", 1 },
+			{ "10Rnd_338_Mag", "", 1 },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 1 },
+			{ "20Rnd_762x51_Mag", "", 1 },
+			{ "30Rnd_556x45_Stanag_green", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 1 },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 1 },
+            { "30Rnd_65x39_caseless_mag", "", 1 },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
         };
         accs[] = {
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 }
+            { "muzzle_snds_acp", "", 1 }
         };
     };
 

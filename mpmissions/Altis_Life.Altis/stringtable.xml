@@ -10165,7 +10165,7 @@
             <Italian>Deposita veicolo in garage</Italian>
         </Key>
         <Key ID="STR_MAR_Cop_Item_Shop">
-            <Original>Cop Item Shop</Original>
+            <Original>Polizei Markt</Original>
             <Czech>Cop Item Shop</Czech>
             <French>Marché flic</French>
             <Spanish>Tienda de Objetos de Policía</Spanish>
@@ -10176,7 +10176,7 @@
             <Polish>Zaopatrzenie</Polish>
         </Key>
         <Key ID="STR_MAR_Cop_Clothing_Shop">
-            <Original>Cop Clothing Shop</Original>
+            <Original>Polizei Uniformen</Original>
             <Czech>Cop Oblečení Shop</Czech>
             <French>Friperie Flic</French>
             <Spanish>Tienda de Ropa de Policía</Spanish>
@@ -10186,38 +10186,148 @@
             <Portuguese>Loja de Roupas da Polícia</Portuguese>
             <Polish>Umundurowanie</Polish>
         </Key>
-        <Key ID="STR_MAR_Cop_Weapon_Shop">
-            <Original>Cop Weapon Shop</Original>
-            <Czech>Cop obchodu se zbraněmi</Czech>
-            <French>Vendeur d'armes flic</French>
-            <Spanish>Tienda de Armas de Policía</Spanish>
-            <Italian>Armeria da Agenti</Italian>
+        <Key ID="STR_MAR_Cop_Weapon_pa">
+            <Original>PA Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <German>Polizei Waffenhändler</German>
-            <Portuguese>Loja de Armas da Polícia</Portuguese>
-            <Polish>Broń policji</Polish>
+            <German>PA Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
-        <Key ID="STR_MAR_Patrol_Officer_Weapon_Shop">
-            <Original>Patrol Officer Weapon Shop</Original>
-            <Czech>Policistou obchodu se zbraněmi</Czech>
-            <French>Vendeur d'armes flic (Officier)</French>
-            <Spanish>Tienda de Armas de Oficial de Patrulla</Spanish>
-            <Italian>Armeria da Pattuglia</Italian>
+		<Key ID="STR_MAR_Cop_Weapon_pm">
+            <Original>PM Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <Portuguese>Loja de Armas de Patrulha</Portuguese>
-            <Polish>Broń patrolowa</Polish>
-            <German>Streifenpolizist Waffenladen</German>
+            <German>PM Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
-        <Key ID="STR_MAR_Sergeant_Weapon_Shop">
-            <Original>Sergeant Weapon Shop</Original>
-            <Czech>Seržant obchodu se zbraněmi</Czech>
-            <French>Vendeur d'armes flic (Sergent)</French>
-            <Spanish>Tienda de Armas de Oficial de Sargento</Spanish>
-            <Italian>Armeria dei Sergenti</Italian>
+		<Key ID="STR_MAR_Cop_Weapon_pom">
+            <Original>POM Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <Portuguese>Lojas de Armas de Sargento</Portuguese>
-            <Polish>Broń sierżanta</Polish>
-            <German>Sergeant Waffenladen</German>
+            <German>POM Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_phm">
+            <Original>PHM Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>PHM Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_pka">
+            <Original>PKA Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>PKA Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_pk">
+            <Original>PK Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>PK Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_pok">
+            <Original>POK Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>POK Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_pok_p">
+            <Original>POK+ Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>POK+ Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_phk">
+            <Original>PHK Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>PHK Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_phk_p">
+            <Original>PHK+ Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>PHK+ Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_ephk">
+            <Original>EPHK Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>EPHK Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_pd">
+            <Original>PD Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>PD Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_MAR_Cop_Weapon_lpd">
+            <Original>LPD Waffen Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>LPD Waffenhändler</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_MAR_W_E_Vehicle Shop">
             <Original>Vehicle Shop</Original>
