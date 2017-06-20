@@ -361,7 +361,7 @@
             <Polish>Kup</Polish>
         </Key>
         <Key ID="STR_Global_Mags">
-            <Original>Magazines</Original>
+            <Original>Magazine</Original>
             <Czech>časopisy</Czech>
             <French>Chargeurs</French>
             <Spanish>Cargadores</Spanish>
@@ -369,7 +369,7 @@
             <Polish>Magazyny</Polish>
             <Russian></Russian>
             <Portuguese>Munições</Portuguese>
-            <German>Zeitschriften</German>
+            <German>Magazine</German>
         </Key>
         <Key ID="STR_Global_Accs">
             <Original>Accessories</Original>

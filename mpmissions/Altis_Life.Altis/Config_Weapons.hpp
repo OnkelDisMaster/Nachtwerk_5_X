@@ -346,7 +346,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
             { "11Rnd_45ACP_Mag", "", 1 },
@@ -371,7 +371,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
             { "11Rnd_45ACP_Mag", "", 1 },
@@ -415,7 +415,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
             { "11Rnd_45ACP_Mag", "", 1 },
@@ -465,7 +465,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -516,7 +516,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -572,7 +572,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -632,7 +632,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -692,7 +692,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -759,7 +759,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -833,7 +833,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -908,7 +908,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -984,7 +984,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
@@ -1060,7 +1060,7 @@ class WeaponShops {
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
 			{ "ToolKit", "", 1, 1 },
-            { "NVGoggles", "", 1, 1 }
+            { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
