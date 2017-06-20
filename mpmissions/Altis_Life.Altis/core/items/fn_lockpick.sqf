@@ -10,18 +10,18 @@ private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_ti
 _curTarget = cursorObject;
 life_interrupted = false;
 
-if (life_action_inUse) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if (isNull _curTarget) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];}; //Bad type
+if (life_action_inUse) exitWith {};
+if (isNull _curTarget) exitWith {}; //Bad type
 _distance = ((boundingBox _curTarget select 1) select 0) + 2;
-if (player distance _curTarget > _distance) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];}; //Too far
+if (player distance _curTarget > _distance) exitWith {}; //Too far
 
 _isVehicle = if ((_curTarget isKindOf "LandVehicle") || (_curTarget isKindOf "Ship") || (_curTarget isKindOf "Air")) then {true} else {false};
 if (_isVehicle && _curTarget in life_vehicles) exitWith {hint localize "STR_ISTR_Lock_AlreadyHave"};
 
 //More error checks
-if (!_isVehicle && !isPlayer _curTarget) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if (!_isVehicle && !(_curTarget getVariable ["restrained",false])) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if (_curTarget getVariable "NPC") exitWith {hint localize "STR_NPC_Protected";_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+if (!_isVehicle && !isPlayer _curTarget) exitWith {};
+if (!_isVehicle && !(_curTarget getVariable ["restrained",false])) exitWith {};
+if (_curTarget getVariable "NPC") exitWith {hint localize "STR_NPC_Protected"};
 
 _title = format[localize "STR_ISTR_Lock_Process",if (!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
@@ -55,23 +55,23 @@ for "_i" from 0 to 1 step 0 do {
     _progressBar progressSetPosition _cP;
     _titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
 
-    if (_cP >= 1 || !alive player) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-    if (life_istazed) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];}; //Tazed
-    if (life_isknocked) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];}; //Knocked
-    if (life_interrupted) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-    if (player getVariable["restrained",false]) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-    if (player distance _curTarget > _distance) exitWith {_badDistance = true;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+    if (_cP >= 1 || !alive player) exitWith {};
+    if (life_istazed) exitWith {}; //Tazed
+    if (life_isknocked) exitWith {}; //Knocked
+    if (life_interrupted) exitWith {};
+    if (player getVariable["restrained",false]) exitWith {};
+    if (player distance _curTarget > _distance) exitWith {_badDistance = true;};
 };
 
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 
-if (!alive player || life_istazed || life_isknocked) exitWith {life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if (player getVariable["restrained",false]) exitWith {life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if (!isNil "_badDistance") exitWith {titleText[localize "STR_ISTR_Lock_TooFar","PLAIN"]; life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-if (!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+if (!alive player || life_istazed || life_isknocked) exitWith {life_action_inUse = false;};
+if (player getVariable["restrained",false]) exitWith {life_action_inUse = false;};
+if (!isNil "_badDistance") exitWith {titleText[localize "STR_ISTR_Lock_TooFar","PLAIN"]; life_action_inUse = false;};
+if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
+if (!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 
 life_action_inUse = false;
 
