@@ -15,12 +15,14 @@ switch (playerSide) do {
         ctrlShow[2011,false];
 		ctrlShow[3025,false];
 		ctrlShow[9800,true];
+		ctrlShow[2008,true];
     };
 
     case civilian: {
         ctrlShow[2012,false];
         ctrlShow[9800,false];
 		ctrlShow[3024,false];
+		ctrlShow[2008,false];
     };
 
     case independent: {
@@ -28,6 +30,7 @@ switch (playerSide) do {
         ctrlShow[2011,false];
 		ctrlShow[3025,false];
 		ctrlShow[9800,false];
+		ctrlShow[2008,false];
 		ctrlShow[3024,false];
     };
 };

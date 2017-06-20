@@ -367,7 +367,7 @@ class playerSettings {
  colorText[] = {1,1,1,1};
  colorDisabled[] = {1,0,0,0.1};
  };
- /*class ButtonWanted_ICON: life_RscPicture
+ class ButtonWanted_ICON: life_RscPicture
  {
  idc = 1210;
  text = "images\tablet\wanted.paa";
@@ -383,7 +383,8 @@ class playerSettings {
  y = 0.7016 * safezoneH + safezoneY;
  w = 0.028875 * safezoneW;
  h = 0.0504 * safezoneH;
- onButtonClick = "[] call life_fnc_wantedMenu";
+ //onButtonClick = "[] call life_fnc_wantedMenu";
+ onButtonClick = "closeDialog 0; [""craftingClothes""] spawn cat_crafting_fnc_craft;";
  colorBackground[] = {-1,-1,-1,-1};
  colorBackgroundFocused[] = {1,1,1,0.12};
  colorBackground2[] = {0.75,0.75,0.75,0.2};
@@ -393,6 +394,6 @@ class playerSettings {
  colorText[] = {1,1,1,1};
  colorDisabled[] = {1,0,0,0.1};
  tooltip = $STR_PM_WantedList;
- };*/
+ };
  };
  };
