@@ -108,7 +108,7 @@ for "_i" from 0 to 1 step 0 do {
 };
 
 [] spawn {
-	if (playerside == west) then {
+	if (playerside isEqualTo west) then {
 	//Unsichtbare Rucksäcke
 		while {true} do {
 			if (!isNull(unitBackpack player)) then {
