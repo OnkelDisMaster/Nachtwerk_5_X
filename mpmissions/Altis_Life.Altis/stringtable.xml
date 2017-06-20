@@ -10186,6 +10186,39 @@
             <Portuguese>Loja de Roupas da Polícia</Portuguese>
             <Polish>Umundurowanie</Polish>
         </Key>
+		<Key ID="STR_MAR_Cop_Weapon_Shop">
+            <Original>Cop Weapon Shop</Original>
+            <Czech>Cop obchodu se zbraněmi</Czech>
+            <French>Vendeur d'armes flic</French>
+            <Spanish>Tienda de Armas de Policía</Spanish>
+            <Italian>Armeria da Agenti</Italian>
+            <Russian></Russian>
+            <German>Polizei Waffenhändler</German>
+            <Portuguese>Loja de Armas da Polícia</Portuguese>
+            <Polish>Broń policji</Polish>
+        </Key>
+        <Key ID="STR_MAR_Patrol_Officer_Weapon_Shop">
+            <Original>Patrol Officer Weapon Shop</Original>
+            <Czech>Policistou obchodu se zbraněmi</Czech>
+            <French>Vendeur d'armes flic (Officier)</French>
+            <Spanish>Tienda de Armas de Oficial de Patrulla</Spanish>
+            <Italian>Armeria da Pattuglia</Italian>
+            <Russian></Russian>
+            <Portuguese>Loja de Armas de Patrulha</Portuguese>
+            <Polish>Broń patrolowa</Polish>
+            <German>Streifenpolizist Waffenladen</German>
+        </Key>
+        <Key ID="STR_MAR_Sergeant_Weapon_Shop">
+            <Original>Sergeant Weapon Shop</Original>
+            <Czech>Seržant obchodu se zbraněmi</Czech>
+            <French>Vendeur d'armes flic (Sergent)</French>
+            <Spanish>Tienda de Armas de Oficial de Sargento</Spanish>
+            <Italian>Armeria dei Sergenti</Italian>
+            <Russian></Russian>
+            <Portuguese>Lojas de Armas de Sargento</Portuguese>
+            <Polish>Broń sierżanta</Polish>
+            <German>Sergeant Waffenladen</German>
+		</Key>
         <Key ID="STR_MAR_Cop_Weapon_pa">
             <Original>PA Waffen Shop</Original>
             <Czech></Czech>
