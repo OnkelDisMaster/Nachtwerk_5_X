@@ -40,3 +40,4 @@ _ProgressBar_THIRST  progressSetPosition (1 / (100 / life_thirst));
 
 _Text_THIRST ctrlSetText format["%1%2", life_thirst,"%"];
 _Text_THIRST ctrlCommit 0;
+6 cutRsc ["osefStatusBarAdmin","PLAIN"];

@@ -7,12 +7,13 @@
 
 */
 
-waitUntil{!isNull (findDisplay 38500)};
-waitUntil{isNull (findDisplay 38500)};
+//waitUntil{!isNull (findDisplay 38500)};
+//waitUntil{isNull (findDisplay 38500)};
+waitUntil{!isNull (findDisplay 46)};
 
-
-	_rscLayer = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
-	_rscLayer cutRsc["osefStatusBarAdmin","PLAIN"];
+	//_rscLayer = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
+	//_rscLayer cutRsc["osefStatusBarAdmin","PLAIN"];
+	6 cutRsc ["osefStatusBarAdmin","PLAIN"];
 	[] spawn
 	{
 
@@ -52,8 +53,9 @@ waitUntil{isNull (findDisplay 38500)};
 		{
 			diag_log "statusbar is null create";
 			disableSerialization;
-			_rscLayer = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
-			_rscLayer cutRsc["osefStatusBarAdmin","PLAIN"];
+			//_rscLayer = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
+			//_rscLayer cutRsc["osefStatusBarAdmin","PLAIN"];
+			6 cutRsc ["osefStatusBarAdmin","PLAIN"];
 		};
 
 
