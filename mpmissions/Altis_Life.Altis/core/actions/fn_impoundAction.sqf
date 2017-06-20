@@ -9,12 +9,12 @@
 private["_vehicle","_type","_time","_value","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_filters","_impoundValue","_price","_impoundMultiplier"];
 _vehicle = param [0,ObjNull,[ObjNull]];
 _filters = ["Car","Air","Ship"];
-if (!((KINDOF_ARRAY(_vehicle,_filters)))) exitWith {};
-if (player distance cursorObject > 10) exitWith {};
-if (_vehicle getVariable "NPC") exitWith {hint localize "STR_NPC_Protected"};
+if (!((KINDOF_ARRAY(_vehicle,_filters)))) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+if (player distance cursorObject > 10) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+if (_vehicle getVariable "NPC") exitWith {hint localize "STR_NPC_Protected";_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 
 _vehicleData = _vehicle getVariable ["vehicle_info_owners",[]];
-if (_vehicleData isEqualTo 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
+if (_vehicleData isEqualTo 0) exitWith {deleteVehicle _vehicle;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];}; //Bad vehicle.
 _vehicleName = FETCH_CONFIG2(getText,"CfgVehicles",(typeOf _vehicle),"displayName");
 _price = M_CONFIG(getNumber,"LifeCfgVehicles",(typeOf _vehicle),"price");
 [0,"STR_NOTF_BeingImpounded",true,[((_vehicleData select 0) select 1),_vehicleName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -36,18 +36,18 @@ for "_i" from 0 to 1 step 0 do {
     _cP = _cP + 0.01;
     _progress progressSetPosition _cP;
     _pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
-    if (_cP >= 1) exitWith {};
-    if (player distance _vehicle > 10) exitWith {};
-    if (!alive player) exitWith {};
+    if (_cP >= 1) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+    if (player distance _vehicle > 10) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+    if (!alive player) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 };
 
 5 cutText ["","PLAIN"];
 
-if (player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false;};
-if (!alive player) exitWith {life_action_inUse = false;};
+if (player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+if (!alive player) exitWith {life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 
 if (count crew _vehicle isEqualTo 0) then {
-    if (!(KINDOF_ARRAY(_vehicle,_filters))) exitWith {life_action_inUse = false;};
+    if (!(KINDOF_ARRAY(_vehicle,_filters))) exitWith {life_action_inUse = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
     _type = FETCH_CONFIG2(getText,"CfgVehicles",(typeOf _vehicle),"displayName");
 
     life_impound_inuse = true;
