@@ -313,7 +313,7 @@ class playerSettings {
  colorText[] = {1,1,1,1};
  colorDisabled[] = {1,0,0,0.1};
  };
- /*class Markt_ICON: life_RscPicture
+ class Markt_ICON: life_RscPicture
  {
  idc = 980021;
  text = "images\tablet\markt.paa";
@@ -339,7 +339,7 @@ class playerSettings {
  color2[] = {0,0,0,0};
  colorText[] = {1,1,1,1};
  colorDisabled[] = {1,0,0,0.1};
- };*/
+ };
  class ButtonGang_ICON: life_RscPicture
  {
  idc = 1207;
