@@ -31,6 +31,7 @@ _Btn3 = _display displayCtrl Btn3;
 _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
+_Btn7 = _display displayCtrl Btn7;
 life_vInact_curTarget = _curTarget;
 _chip = life_vInact_curTarget getvariable ["Chipsatz",0]; // 0 fpr nicht nichts, 1 für legal, 2 für illegal
 
@@ -114,6 +115,10 @@ switch (playerside) do
 		_Btn6 ctrlSetText "Eigentümer";
 		_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 		_Btn6 ctrlEnable true;
+
+		//Set Ticket Button
+        _Btn7 ctrlSetText localize "STR_pInAct_TicketBtn";
+        _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
 		if (_chip isEqualTo 0) then {
 			_Btn4 ctrlShow true;
