@@ -285,7 +285,7 @@
             <Polish>Skup złota</Polish>
         </Key>
         <Key ID="STR_Shops_Diamond">
-            <Original>Diamond Dealer</Original>
+            <Original>Juwelier</Original>
             <Czech>Diamond Dealer</Czech>
             <Spanish>Comerciante de Diamantes</Spanish>
             <Russian></Russian>
@@ -6419,11 +6419,11 @@
             <Polish>Wytrych</Polish>
         </Key>
         <Key ID="STR_Item_Rock">
-            <Original>Rock</Original>
+            <Original>Marmor</Original>
             <Czech>Skála</Czech>
             <Spanish>Piedra</Spanish>
             <Russian></Russian>
-            <German>Stein</German>
+            <German>Marmor</German>
             <French>Pierre</French>
             <Italian>Roccia</Italian>
             <Portuguese>Pedra</Portuguese>
@@ -9351,12 +9351,12 @@
             <Italian>Miniera di ferro</Italian>
         </Key>
         <Key ID="STR_MAR_Salt_Mine">
-            <Original>Salt Mine</Original>
+            <Original>Salz Grube</Original>
             <Czech>Solný důl</Czech>
             <French>Mine de sel</French>
             <Spanish>Mina de Sal</Spanish>
             <Russian></Russian>
-            <German>Salzmine</German>
+            <German>Salzgrube</German>
             <Portuguese>Mina de Sal</Portuguese>
             <Polish>Kopalnia soli</Polish>
             <Italian>Salina</Italian>
@@ -9461,13 +9461,13 @@
             <Polish>Huta żelaza</Polish>
         </Key>
         <Key ID="STR_MAR_Sand_Mine">
-            <Original>Sand Mine</Original>
+            <Original>Sand Grube</Original>
             <Czech>písek Mine</Czech>
             <French>Mine de sable</French>
             <Spanish>Mina de Arena</Spanish>
             <Italian>Miniera di sabbia</Italian>
             <Russian></Russian>
-            <German>Sand Mine</German>
+            <German>Sand Grube</German>
             <Portuguese>Mina de Areia</Portuguese>
             <Polish>Kopalnia piasku</Polish>
         </Key>
@@ -9483,13 +9483,13 @@
             <Polish>Dziupla</Polish>
         </Key>
         <Key ID="STR_MAR_Cocaine_Processing">
-            <Original>Cocaine Processing</Original>
+            <Original>Koks Küche</Original>
             <Czech>Zpracování kokain</Czech>
             <French>Traitement de cocaïne</French>
             <Spanish>Procesador de Cocaína</Spanish>
             <Italian>Trattamento cocaina</Italian>
             <Russian></Russian>
-            <German>Kokain Verarbeiter</German>
+            <German>Koks Küche</German>
             <Portuguese>Processador de Cocaína</Portuguese>
             <Polish>Oczyszczanie kokainy</Polish>
         </Key>
@@ -9747,23 +9747,23 @@
             <Italian>Giacimento di Petrolio</Italian>
         </Key>
         <Key ID="STR_MAR_Weed_Field">
-            <Original>Marijuana Field</Original>
+            <Original>Marijuana Plantage</Original>
             <Czech>Marihuana Field</Czech>
             <French>Champs de pavots</French>
             <Spanish>Campo de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Gras Plantage</German>
+            <German>Marijuana Plantage</German>
             <Portuguese>Campo de Maconha</Portuguese>
             <Polish>Pole marihuany</Polish>
             <Italian>Campo di Marijuana</Italian>
         </Key>
         <Key ID="STR_MAR_Weed_Processing">
-            <Original>Marijuana Processing</Original>
+            <Original>Marijuana Küche</Original>
             <Czech>Zpracování marihuana</Czech>
             <French>Traitement du pavot</French>
             <Spanish>Procesador de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Gras Verarbeitung</German>
+            <German>Marijuana Küche</German>
             <Portuguese>Processador de Maconha</Portuguese>
             <Polish>Suszarnia marihuany</Polish>
             <Italian>Trattamento Marijuana</Italian>
@@ -9846,12 +9846,12 @@
             <Italian>Vendita del Vetro</Italian>
         </Key>
         <Key ID="STR_MAR_Iron_Copper_Trader">
-            <Original>Iron / Copper Trader</Original>
+            <Original>Metallhändler</Original>
             <Czech>Žehlička / Měď Trader</Czech>
             <French>Vendeur de Fer/Cuivre</French>
             <Spanish>Comerciante de Hierro / Cobre</Spanish>
             <Russian></Russian>
-            <German>Händler für Eisen / Kupfer</German>
+            <German>Metall Händler</German>
             <Portuguese>Comprador de Ferro e Cobre</Portuguese>
             <Polish>Skup metali</Polish>
             <Italian>Vendita del Ferro/Rame</Italian>
@@ -9934,23 +9934,23 @@
             <Italian>Checkpoint di polizia</Italian>
         </Key>
         <Key ID="STR_MAR_Rock_Quarry">
-            <Original>Rock Quarry</Original>
+            <Original>Marmor Steinbruch</Original>
             <Czech>kamenolomu</Czech>
             <French>Mine de pierres</French>
             <Spanish>Mina de Piedra</Spanish>
             <Russian></Russian>
-            <German>Steinbruch</German>
+            <German>Marmor Steinbruch</German>
             <Portuguese>Pedreira</Portuguese>
             <Polish>Kamieniołom</Polish>
             <Italian>Cava di Roccia</Italian>
         </Key>
         <Key ID="STR_MAR_Rock_Processing">
-            <Original>Rock Processing</Original>
+            <Original>Marmor Verarbeitung</Original>
             <Czech>rock Processing</Czech>
             <French>Traitement de pierres</French>
             <Spanish>Procesador de Piedra</Spanish>
             <Russian></Russian>
-            <German>Stein Verarbeitung</German>
+            <German>Marmor Verarbeitung</German>
             <Portuguese>Processador de Pedra</Portuguese>
             <Polish>Wytwórnia cementu z kamienia</Polish>
             <Italian>Processo Roccia</Italian>
@@ -9967,13 +9967,13 @@
             <Italian>Vendita del Cemento</Italian>
         </Key>
         <Key ID="STR_MAR_Turtle_Poaching">
-            <Original>Turtle Poaching</Original>
+            <Original>Naturschutzgebiet</Original>
             <Czech>Turtle pytláctví</Czech>
             <French>Zones de tortues</French>
             <Spanish>Caza de Tortugas</Spanish>
             <Italian>Bracconaggio di Tartarughe</Italian>
             <Russian></Russian>
-            <German>Wilderei für Schildkröten</German>
+            <German>Naturschutzgebiet</German>
             <Portuguese>Área de Tartarugas</Portuguese>
             <Polish>Strefa występowania żółwi morskich</Polish>
         </Key>
@@ -10385,12 +10385,12 @@
             <Italian>Lavorazione Sabbia</Italian>
         </Key>
         <Key ID="STR_MAR_Process_Rock">
-            <Original>Process Rock</Original>
+            <Original>Verarbeite MArmor</Original>
             <Czech>proces rock</Czech>
             <French>Traiter la pierre</French>
             <Spanish>Procesar Piedra</Spanish>
             <Russian></Russian>
-            <German>Verarbeite Stein</German>
+            <German>Verarbeite Marmor</German>
             <Portuguese>Processar Pedra</Portuguese>
             <Polish>Zmiel skały na cement</Polish>
             <Italian>Processo Roccia</Italian>
