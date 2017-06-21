@@ -96,7 +96,7 @@ switch(_type) do
 			ctrlShow[888898,false];
 			ctrlShow[888896,true];
 		} else {
-		    if ((side _x) isEqualTo west) {
+		    if ((side _x) isEqualTo west) then {
                 ctrlShow[888898,true];
                 ctrlShow[888896,false];
 		    };
