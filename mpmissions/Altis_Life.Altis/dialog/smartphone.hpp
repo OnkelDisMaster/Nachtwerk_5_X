@@ -337,7 +337,7 @@ class Life_smartphone_notruf {
 		class TxtCopButton : life_RscButtonMenu 
 		{
 			idc = 888895;
-			text = "Polizei Msg";
+			text = "Polizei Notruf";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[2,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
@@ -350,7 +350,7 @@ class Life_smartphone_notruf {
 		class TxtAdminButton : life_RscButtonMenu 
 		{
 			idc = 888896;
-			text = "Admin Msg";
+			text = "Admin Notruf";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[3,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
@@ -364,7 +364,7 @@ class Life_smartphone_notruf {
 		class AdminMsgAll : life_RscButtonMenu 
 		{
 			idc = 888898;
-			text = "Admin Msg All";
+			text = "Polizei-Rundnachricht";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[7,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
@@ -377,7 +377,7 @@ class Life_smartphone_notruf {
 		class EMSReq : life_RscButtonMenu
 		{
 			idc = 888899;
-			text = "$STR_CELL_EMSRequest";
+			text = "Medic Notruf";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[4,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			

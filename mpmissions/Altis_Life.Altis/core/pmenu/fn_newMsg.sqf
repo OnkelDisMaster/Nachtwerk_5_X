@@ -96,14 +96,16 @@ switch(_type) do
 			ctrlShow[888898,false];
 			ctrlShow[888896,true];
 		} else {
-			ctrlShow[888898,true];
-			ctrlShow[888896,false];
+		    if (playerSide == west) {
+                ctrlShow[888898,true];
+                ctrlShow[888896,false];
+		    }
 		};
 	};
 	//adminMsgAll
 	case 7:
 	{
-		if((call life_adminlevel) < 1) exitWith {hintSilent "You are not an admin!";};
+		//if((call life_adminlevel) < 1) exitWith {hintSilent "You are not an admin!";};
 		if(_msg == "") exitWith {hintSilent "You must enter a message to send!";};
 		//[[ObjNull,_msg,player,5],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		[ObjNull,_msg,player,5] remoteExec ["TON_fnc_handleMessages"];
