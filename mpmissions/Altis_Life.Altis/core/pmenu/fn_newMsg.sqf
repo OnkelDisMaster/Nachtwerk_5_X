@@ -99,7 +99,7 @@ switch(_type) do
 		    if (playerSide == west) {
                 ctrlShow[888898,true];
                 ctrlShow[888896,false];
-		    }
+		    };
 		};
 	};
 	//adminMsgAll
