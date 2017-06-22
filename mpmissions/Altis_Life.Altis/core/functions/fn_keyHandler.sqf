@@ -271,7 +271,7 @@ switch (_code) do {
 	case 16: {
 		_chip = (vehicle player) getVariable ["Chipsatz",0];
 		if (_chip isEqualTo 0) exitwith {};
-		if ((vehicle player != player) && ((driver vehicle player) isEqualTo player) && ) then {
+		if ((vehicle player != player) && ((driver vehicle player) isEqualTo player)) then {
             if ((vehicle player) getVariable ["speeder",true]) then
 				{	
 					[] spawn {
