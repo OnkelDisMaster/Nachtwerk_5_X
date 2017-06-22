@@ -18,15 +18,20 @@ if(player distance cursorTarget > 4) exitWith {};
 #define Title 37401
 
 private["_display","_unit","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10"];
+
+disableSerialization;
+_curTarget = param [0,objNull,[objNull]];
+_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+
+if(isNull _curTarget) exitWith {closeDialog 0;};
+
+if(!isPlayer _curTarget && side _curTarget == independent) exitWith {closeDialog 0;};
+
+_display = findDisplay 37400;
+
 if(!dialog) then {
  createDialog "pInteraction_Menu";
 };
-disableSerialization;
-_curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-if(isNull _curTarget) exitWith {closeDialog 0;};
-if(!isPlayer _curTarget && side _curTarget == independent) exitWith {closeDialog 0;};
-_display = findDisplay 37400;
 
 _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
