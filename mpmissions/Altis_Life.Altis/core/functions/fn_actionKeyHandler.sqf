@@ -90,6 +90,9 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
     if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
         [_curObject] call life_fnc_copInteractionMenu;
     };
+    if(!dialog && playerSide == independent) then {
+        [_curTarget] call life_fnc_medInteractionMenu;
+     };
 } else {
     //OK, it wasn't a player so what is it?
     private["_isVehicle","_miscItems","_money","_list"];
