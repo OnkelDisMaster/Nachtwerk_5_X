@@ -10,7 +10,7 @@ class DeathScreen {
         class MedicsOnline: Life_RscText {
             idc = 7304;
             colorBackground[] = {0,0,0,0};
-            text = "Medics Online: 1";
+            text = "Ärzte am Leben: 1";
             x = 0.005 * safezoneW + safezoneX;
             y = 0.015 * safezoneH + safezoneY;
             w = 0.8;
@@ -20,7 +20,7 @@ class DeathScreen {
         class MedicsNearby: Life_RscText {
             idc = 7305;
             colorBackground[] = {0,0,0,0};
-            text = "Medics Nearby: No";
+            text = "Ärzte in der Nähe: Nein";
             x = 0.005 * safezoneW + safezoneX;
             y = 0.040 * safezoneH + safezoneY;
             w = 0.8;
