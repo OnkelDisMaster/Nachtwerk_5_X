@@ -6,7 +6,7 @@
 *    Description:
 *    Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_chip"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -269,7 +269,9 @@ switch (_code) do {
 	
 	// Taste Q Boost
 	case 16: {
-		if ((vehicle player != player) && ((driver vehicle player) == player)) then {
+		_chip = (vehicle player) getVariable ["Chipsatz",0];
+		if (_chip isEqualTo 0) exitwith {};
+		if ((vehicle player != player) && ((driver vehicle player) isEqualTo player) && ) then {
             if ((vehicle player) getVariable ["speeder",true]) then
 				{	
 					[] spawn {
