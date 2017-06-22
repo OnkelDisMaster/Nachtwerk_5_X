@@ -452,6 +452,7 @@ class WeaponShops {
 				{ "optic_NVS", "", 1 },
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
+				{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
             { "muzzle_snds_acp", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
