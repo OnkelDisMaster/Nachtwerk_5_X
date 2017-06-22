@@ -91,7 +91,11 @@ switch(_type) do
 	//emergencyloading
 	case 6:
 	{
-		if((__GETC__(life_adminlevel) < 1)) then
+        if ((side _x) isEqualTo west) then {
+            ctrlShow[888898,true];
+            ctrlShow[888896,false];
+        };
+		/*if((__GETC__(life_adminlevel) < 1)) then
 		{
 			ctrlShow[888898,false];
 			ctrlShow[888896,true];
@@ -100,7 +104,7 @@ switch(_type) do
                 ctrlShow[888898,true];
                 ctrlShow[888896,false];
 		    };
-		};
+		};*/
 	};
 	//adminMsgAll
 	case 7:
