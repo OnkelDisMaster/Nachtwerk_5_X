@@ -355,18 +355,20 @@ class WeaponShops {
         accs[] = {
 			/* 
 			alte schallis aus alter config
-						["muzzle_snds_acp",nil,1],			// acp
-						["muzzle_snds_L",nil,1],			// 9mm
-						["muzzle_snds_M",nil,1],			// 5,56
-						["muzzle_snds_H",nil,1],			// 6,5mm MX			
-						["muzzle_snds_B",nil,1], 			// 7,62mm
-						["muzzle_snds_58_blk_F",nil,1],		// 5,8mm
-						["muzzle_snds_338_black",nil,1],	// Mar 10
-						["muzzle_snds_93mmg",nil,1			// Cyrus
-						["muzzle_snds_65_TI_blk_F",nil,1],	// 6,5mm Typ 115
-						["muzzle_snds_H_MG_blk_F",nil,1],	// 6,5mm Mx SW
+						["muzzle_snds_acp",nil,1],
+						["muzzle_snds_L",nil,1],
+						["muzzle_snds_M",nil,1],
+						["muzzle_snds_H",nil,1],
+						["muzzle_snds_B",nil,1],
+						["muzzle_snds_58_blk_F",nil,1],
+						["muzzle_snds_65_TI_blk_F",nil,1],
+						["muzzle_snds_338_black",nil,1],
+						["muzzle_snds_93mmg",nil,1],
+						["muzzle_snds_65_TI_blk_F",nil,1],
+						["muzzle_snds_H_MG_blk_F",nil,1],
+						["muzzle_snds_acp",nil,1],
 			*/
-            { "muzzle_snds_acp", "", 1 }
+			
         };
     };
 
@@ -403,9 +405,19 @@ class WeaponShops {
 				{ "optic_NVS", "", 1 },
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
-            { "muzzle_snds_acp", "", 1 },
-			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
-			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
+				{ "muzzle_snds_acp", "", 1 },
+				{ "muzzle_snds_acp", "", 1 },
+				{ "muzzle_snds_L", "", 1 },
+				{ "muzzle_snds_M", "", 1 },
+				{ "muzzle_snds_B", "", 1 },
+				{ "muzzle_snds_58_blk_F", "", 1 },
+				{ "muzzle_snds_65_TI_blk_F", "", 1 },
+				{ "muzzle_snds_338_black", "", 1 },
+				{ "muzzle_snds_93mmg", "", 1 },
+				{ "muzzle_snds_65_TI_blk_F", "", 1 },
+				{ "muzzle_snds_H_MG_blk_F", "", 1 },
+				{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
+				{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
     };
 
@@ -452,8 +464,17 @@ class WeaponShops {
 				{ "optic_NVS", "", 1 },
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
-				{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -504,6 +525,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -557,6 +588,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -615,6 +656,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -680,6 +731,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -744,6 +805,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -821,6 +892,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -898,6 +979,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -977,6 +1068,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -1056,6 +1157,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };
@@ -1135,6 +1246,16 @@ class WeaponShops {
 				{ "optic_Arco", "", 1 },
 				{ "optic_ERCO_blk_F", "", 1 },
             { "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_acp", "", 1 },
+			{ "muzzle_snds_L", "", 1 },
+			{ "muzzle_snds_M", "", 1 },
+			{ "muzzle_snds_B", "", 1 },
+			{ "muzzle_snds_58_blk_F", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_338_black", "", 1 },
+			{ "muzzle_snds_93mmg", "", 1 },
+			{ "muzzle_snds_65_TI_blk_F", "", 1 },
+			{ "muzzle_snds_H_MG_blk_F", "", 1 },
 			{ "bipod_01_F_blk","Schwarzes Zweibein", 1 },
 			{ "bipod_01_F_snd","Sandfarbenes Zweibein", 1 }
         };

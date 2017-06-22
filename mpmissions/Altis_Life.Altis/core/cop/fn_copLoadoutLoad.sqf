@@ -59,6 +59,7 @@ switch _loadout do
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
+	player addItem "muzzle_snds_H";
 	
   [] call life_fnc_saveGear;
 };
@@ -107,6 +108,7 @@ switch _loadout do
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
+	player addItem "";
 	
   [] call life_fnc_saveGear;
 };
@@ -165,6 +167,7 @@ switch _loadout do
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
+	player addItem "muzzle_snds_H";
 	
   [] call life_fnc_saveGear;
 };
@@ -209,6 +212,7 @@ switch _loadout do
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
+	player addItem "muzzle_snds_H_MG_blk_F";
 	
   [] call life_fnc_saveGear;
 };
@@ -253,6 +257,7 @@ switch _loadout do
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
+	player addItem "muzzle_snds_M";
 	
   [] call life_fnc_saveGear;
 };
@@ -301,7 +306,8 @@ switch _loadout do
 		player addItem "Medikit";
 		player addItem "HandGrenade_Stone";
 		player addItem "HandGrenade_Stone";
-
+		player addItem "muzzle_snds_58_blk_F";
+		
 	 [] call life_fnc_saveGear;
 };
 	
@@ -355,6 +361,68 @@ switch _loadout do
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_B";
+	
+  [] call life_fnc_saveGear;
+};
+
+	case "AK-12-GL Loadout":{ 
+  private["_handle"];
+  _handle = [] spawn life_fnc_stripDownPlayer;
+  waitUntil {scriptDone _handle};
+	player addUniform "U_B_CombatUniform_mcam_vest";
+	player addVest "V_PlateCarrier1_blk";
+	player addBackpack "B_Bergen_dgtl_F";
+	player addHeadgear "H_Beret_02";
+	// TAZER
+	player addWeapon "hgun_Pistol_heavy_01_snds_F",
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	// SCHARFE WAFFE
+	player addWeapon "arifle_AK12_GL_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "1Rnd_SmokeBlue_Grenade_shell";
+	player addMagazine "1Rnd_SmokeBlue_Grenade_shell";
+	player addMagazine "1Rnd_SmokeBlue_Grenade_shell";
+	player addMagazine "1Rnd_SmokeBlue_Grenade_shell";
+	player addMagazine "1Rnd_SmokeBlue_Grenade_shell";
+	player addMagazine "1Rnd_SmokeBlue_Grenade_shell";
+	// ITEMS
+	player addItem "ItemMap";
+	player assignItem "ItemMap";
+	player addItem "ItemCompass";
+	player assignItem "ItemCompass";
+	player addItem "ItemWatch";
+	player assignItem "ItemWatch";
+	player addItem "B_UavTerminal";
+	player assignItem "B_UavTerminal";
+	player addItem "Rangefinder";
+	player assignItem "Rangefinder";
+	player addItem "NVGoggles_OPFOR";
+	player assignItem "NVGoggles_OPFOR";
+	player addItem "optic_ERCO_blk_F";
+	player addItem "optic_MRD";
+	player addItem "ToolKit";
+	player addItem "Medikit";
+	player addItem "HandGrenade_Stone";
+	player addItem "HandGrenade_Stone";
+	player addItem "HandGrenade_Stone";
+	player addItem "HandGrenade_Stone";
+	player addItem "SmokeShellBlue";
+	player addItem "SmokeShellBlue";
+	player addItem "SmokeShellBlue";
+	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_B";
 	
   [] call life_fnc_saveGear;
 };
@@ -408,6 +476,7 @@ switch _loadout do
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_B";
 	
   [] call life_fnc_saveGear;
 };
@@ -470,9 +539,64 @@ switch _loadout do
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_65_TI_blk_F";
 	
   [] call life_fnc_saveGear;
 };
+	
+case "Zafir Loadout":{ 
+  private["_handle"];
+  _handle = [] spawn life_fnc_stripDownPlayer;
+  waitUntil {scriptDone _handle};
+	player addUniform "U_B_CombatUniform_mcam";
+	player addVest "V_PlateCarrierSpec_blk";
+	player addBackpack "B_Bergen_dgtl_F";
+	player addHeadgear "H_HelmetSpecB_blk";
+	// TAZER
+	player addWeapon "hgun_Pistol_heavy_01_snds_F",
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	// SCHARFE WAFFE
+	player addWeapon "LMG_Zafir_ARCO_F";
+	player addMagazine "150Rnd_762x54_Box";
+	player addMagazine "150Rnd_762x54_Box";
+	player addMagazine "150Rnd_762x54_Box";
+	player addMagazine "150Rnd_762x54_Box";
+	player addMagazine "150Rnd_762x54_Box";
+	player addMagazine "150Rnd_762x54_Box";
+	// ITEMS
+	player addItem "ItemMap";
+	player assignItem "ItemMap";
+	player addItem "ItemCompass";
+	player assignItem "ItemCompass";
+	player addItem "ItemWatch";
+	player assignItem "ItemWatch";
+	player addItem "B_UavTerminal";
+	player assignItem "B_UavTerminal";
+	player addItem "Rangefinder";
+	player assignItem "Rangefinder";
+	player addItem "NVGoggles_OPFOR";
+	player assignItem "NVGoggles_OPFOR";
+	player addItem "optic_MRCO";
+	player addItem "optic_MRD";
+	player addItem "muzzle_snds_H";
+	player addItem "ToolKit";
+	player addItem "Medikit";
+	player addItem "HandGrenade_Stone";
+	player addItem "HandGrenade_Stone";
+	player addItem "HandGrenade_Stone";
+	player addItem "HandGrenade_Stone";
+	player addItem "SmokeShellBlue";
+	player addItem "SmokeShellBlue";
+	player addItem "SmokeShellBlue";
+	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_B";
+	
+  [] call life_fnc_saveGear;
+};	
 	
 	case "MK200 Loadout":{ 
   private["_handle"];
@@ -522,6 +646,7 @@ switch _loadout do
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_H_MG";
 	
   [] call life_fnc_saveGear;
 };
@@ -576,6 +701,7 @@ switch _loadout do
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
+	player addItem "";
 	
   [] call life_fnc_saveGear;
 };
@@ -614,8 +740,7 @@ switch _loadout do
 	player addMagazine "10Rnd_338_Mag";
 	player addMagazine "10Rnd_338_Mag";
 	player addMagazine "10Rnd_338_Mag";
-	player addMagazine "10Rnd_338_Mag";
-	
+	player addMagazine "10Rnd_338_Mag";	
 	// ITEMS
 	player addItem "ItemMap";
 	player assignItem "ItemMap";
@@ -641,6 +766,8 @@ switch _loadout do
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_338_black";
+	
 	[] call life_fnc_saveGear;
 	};
 
@@ -709,6 +836,8 @@ case "Valles Loadout Type115":
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
+	player addItem "muzzle_snds_65_TI_blk_F";
+	
 	[] call life_fnc_saveGear;
 	};
 };

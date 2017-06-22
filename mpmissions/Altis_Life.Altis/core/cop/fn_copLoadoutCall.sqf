@@ -42,11 +42,19 @@ if ((call (life_coplevel)) >= 7) then {
 };
 
 if ((call (life_coplevel)) >= 7) then {
+	_loadouts = _loadouts + ["AK-12-GL"];
+};
+
+if ((call (life_coplevel)) >= 7) then {
 	_loadouts = _loadouts + ["MK18 Loadout"];
 };
 
 if ((call (life_coplevel)) >= 9) then {
 	_loadouts = _loadouts + ["Typ115 Loadout"];
+};
+
+if ((call (life_coplevel)) >= 9) then {
+	_loadouts = _loadouts + ["Zafir Loadout"];
 };
 
 if ((call (life_coplevel)) >= 9) then {
