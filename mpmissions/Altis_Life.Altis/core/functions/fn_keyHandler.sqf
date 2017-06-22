@@ -280,6 +280,7 @@ switch (_code) do {
 				} else
 				{
 					[(vehicle player)] spawn life_fnc_speedUp;
+					vehicle player setvariable ["speeder",true,true];
 					sleep 2;
 				};
 		};	

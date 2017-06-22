@@ -21,7 +21,7 @@ if(!isNil "TON_Debug") then {
 if(!isNull _source) then {
 	if(_source != _unit) then {
 		_curWep = currentWeapon _source;
-		if(_projectile in ["B_556x45_dual","B_50BW_Ball_F","B_45ACP_Ball","B_127x108_Ball","B_127x108_APDS"] && _curWep in ["arifle_SDAR_F","arifle_ARX_blk_F","srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_01_snds_F","hgun_Pistol_heavy_01_MRD_F"]) then {
+		if(_projectile in ["B_556x45_dual","B_50BW_Ball_F","B_45ACP_Ball","B_127x108_Ball","B_127x108_APDS","B_762x39_Ball_Green_F"] && _curWep in ["arifle_SDAR_F","arifle_ARX_blk_F","srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_01_snds_F","hgun_Pistol_heavy_01_MRD_F","arifle_AK12_GL_F","arifle_AK12_F"]) then {
 			if(side _source == west && playerSide != west) then {
 				private["_distance","_isVehicle","_isQuad"];
 				_isVehicle = if(vehicle player != player) then {true} else {false};

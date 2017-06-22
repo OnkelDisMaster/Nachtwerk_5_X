@@ -353,6 +353,19 @@ class WeaponShops {
             { "20Rnd_556x45_UW_mag", "", 1 }
         };
         accs[] = {
+			/* 
+			alte schallis aus alter config
+						["muzzle_snds_acp",nil,1],			// acp
+						["muzzle_snds_L",nil,1],			// 9mm
+						["muzzle_snds_M",nil,1],			// 5,56
+						["muzzle_snds_H",nil,1],			// 6,5mm MX			
+						["muzzle_snds_B",nil,1], 			// 7,62mm
+						["muzzle_snds_58_blk_F",nil,1],		// 5,8mm
+						["muzzle_snds_338_black",nil,1],	// Mar 10
+						["muzzle_snds_93mmg",nil,1			// Cyrus
+						["muzzle_snds_65_TI_blk_F",nil,1],	// 6,5mm Typ 115
+						["muzzle_snds_H_MG_blk_F",nil,1],	// 6,5mm Mx SW
+			*/
             { "muzzle_snds_acp", "", 1 }
         };
     };
@@ -611,7 +624,8 @@ class WeaponShops {
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 7, "You must be a Sergeant Rank!" };
-        items[] = {		
+        items[] = {	
+			{ "arifle_AK12_GL_F", "", 1, 1 },
 			{ "srifle_DMR_03_F", "", 1, 1 },
 			{ "srifle_DMR_06_olive_F", "", 1, 1 },
 			{ "srifle_EBR_ARCO_pointer_snds_F", "", 1, 1 },
@@ -636,6 +650,8 @@ class WeaponShops {
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_762x39_Mag_F", "AK-12 Normales Mag", 1 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "AK-12 Taser Mag", 1 },
 			{ "20Rnd_762x51_Mag", "", 1 },
 			{ "20Rnd_650x39_Cased_Mag_F", "", 1 },
 			{ "30Rnd_556x45_Stanag_green", "", 1 },
@@ -674,6 +690,7 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 8, "You must be a Sergeant Rank!" };
         items[] = {
+			{ "arifle_AK12_GL_F", "", 1, 1 },
 			{ "srifle_DMR_02_F", "", 1, 1 },
 			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },
 			{ "arifle_SPAR_03_blk_F", "", 1, 1 },
@@ -696,6 +713,8 @@ class WeaponShops {
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_762x39_Mag_F", "AK-12 Normales Mag", 1 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "AK-12 Taser Mag", 1 },
 			{ "10Rnd_338_Mag", "", 1 },
 			{ "10Rnd_93x64_DMR_05_Mag", "", 1 },
 			{ "20Rnd_762x51_Mag", "", 1 },
@@ -734,7 +753,8 @@ class WeaponShops {
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 9, "You must be a Sergeant Rank!" };
-        items[] = {			
+        items[] = {		
+			{ "arifle_AK12_GL_F", "", 1, 1 },
 			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
 			{ "LMG_Zafir_F", "", 1, 1 },
 			{ "srifle_LRR_F", "", 1, 1 },
@@ -763,6 +783,8 @@ class WeaponShops {
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_762x39_Mag_F", "AK-12 Normales Mag", 1 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "AK-12 Taser Mag", 1 },
 			{ "200Rnd_65x39_cased_Box", "", 1 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
 			{ "150Rnd_762x54_Box", "", 1 },
@@ -808,7 +830,8 @@ class WeaponShops {
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 10, "You must be a Sergeant Rank!" };
-        items[] = {			
+        items[] = {	
+			{ "arifle_AK12_GL_F", "", 1, 1 },
 			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
 			{ "LMG_Zafir_F", "", 1, 1 },
 			{ "srifle_LRR_F", "", 1, 1 },
@@ -837,6 +860,8 @@ class WeaponShops {
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_762x39_Mag_F", "AK-12 Normales Mag", 1 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "AK-12 Taser Mag", 1 },
 			{ "200Rnd_65x39_cased_Box", "", 1 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
 			{ "150Rnd_762x54_Box", "", 1 },
@@ -882,7 +907,8 @@ class WeaponShops {
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 11, "You must be a Sergeant Rank!" };
-        items[] = {		
+        items[] = {	
+			{ "arifle_AK12_GL_F", "", 1, 1 },
 			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
 			{ "LMG_Zafir_F", "", 1, 1 },
 			{ "srifle_LRR_F", "", 1, 1 },
@@ -912,6 +938,8 @@ class WeaponShops {
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_762x39_Mag_F", "AK-12 Normales Mag", 1 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "AK-12 Taser Mag", 1 },
 			{ "200Rnd_65x39_cased_Box", "", 1 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
 			{ "150Rnd_762x54_Box", "", 1 },
@@ -959,6 +987,7 @@ class WeaponShops {
         license = "";
         level[] = { "life_coplevel", "SCALAR", 12, "You must be a Sergeant Rank!" };
         items[] = {		
+			{ "arifle_AK12_GL_F", "", 1, 1 },
 			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
 			{ "LMG_Zafir_F", "", 1, 1 },
 			{ "srifle_LRR_F", "", 1, 1 },
@@ -988,6 +1017,8 @@ class WeaponShops {
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_762x39_Mag_F", "AK-12 Normales Mag", 1 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "AK-12 Taser Mag", 1 },
 			{ "200Rnd_65x39_cased_Box", "", 1 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
 			{ "150Rnd_762x54_Box", "", 1 },
@@ -1034,7 +1065,8 @@ class WeaponShops {
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 13, "You must be a Sergeant Rank!" };
-        items[] = {		
+        items[] = {	
+			{ "arifle_AK12_GL_F", "", 1, 1 },
 			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
 			{ "LMG_Zafir_F", "", 1, 1 },
 			{ "srifle_LRR_F", "", 1, 1 },
@@ -1064,6 +1096,8 @@ class WeaponShops {
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "", 1 },
+			{ "30Rnd_762x39_Mag_F", "AK-12 Normales Mag", 1 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "AK-12 Taser Mag", 1 },
 			{ "200Rnd_65x39_cased_Box", "", 1 },
 			{ "200Rnd_65x39_cased_Box_Tracer", "", 1 },
 			{ "150Rnd_762x54_Box", "", 1 },
