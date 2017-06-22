@@ -272,17 +272,17 @@ switch (_code) do {
 		_chip = (vehicle player) getVariable ["Chipsatz",0];
 		if (_chip isEqualTo 0) exitwith {};
 		if ((vehicle player != player) && ((driver vehicle player) isEqualTo player)) then {
-            if ((vehicle player) getVariable ["speeder",true]) then
+            if ((vehicle player) getVariable ["speeder",false]) then
 				{	
 					[] spawn {
 					hint "Chip wurde deaktiviert...";
 					sleep 2;
-					vehicle player setvariable ["speeder",false,true];	
+					vehicle player setvariable ["speeder",true,true];	
 					};
 				} else
 				{
 					[(vehicle player)] spawn life_fnc_speedUp;
-					vehicle player setvariable ["speeder",true,true];
+					vehicle player setvariable ["speeder",false,true];
 					sleep 2;
 				};
 		};	

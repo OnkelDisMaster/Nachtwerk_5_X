@@ -42,7 +42,7 @@ if ((call (life_coplevel)) >= 7) then {
 };
 
 if ((call (life_coplevel)) >= 7) then {
-	_loadouts = _loadouts + ["AK-12-GL"];
+	_loadouts = _loadouts + ["AK-12-GL Loadout"];
 };
 
 if ((call (life_coplevel)) >= 7) then {
