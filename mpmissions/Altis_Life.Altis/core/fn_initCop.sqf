@@ -9,6 +9,7 @@
 private "_end";
 player addRating 9999999;
 waitUntil {!(isNull (findDisplay 46))};
+player enableFatigue false;
 _end = false;
 
 if (life_blacklisted) exitWith {

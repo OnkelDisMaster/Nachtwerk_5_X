@@ -11,7 +11,7 @@ _vehicle = _this select 0;
 _chip = _vehicle getVariable ["Chipsatz",0];
 if (_chip isEqualTo 0) exitwith {}; // nope??
 
-//_vehicle setvariable ["speeder",true,true];
+_vehicle setvariable ["speeder",true,true];
 _maxspeed = getNumber(configFile >> "CfgVehicles" >> (typeof _vehicle) >> "maxSpeed") -5;
 _boosterSpeed = _maxspeed;
 _boostRate = 10;	//Boost Wiederholungsrate in Sek.

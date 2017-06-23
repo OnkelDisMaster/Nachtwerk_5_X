@@ -149,7 +149,6 @@ publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for Headless
 
 
 CONSTVAR(life_paycheck); //Make the paycheck static.
-if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
 
 if (LIFE_SETTINGS(getNumber,"pump_service") isEqualTo 1) then{
     [] execVM "core\fn_setupStationService.sqf";

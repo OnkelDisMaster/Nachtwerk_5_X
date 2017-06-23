@@ -6,7 +6,16 @@
     Description:
     All survival? things merged into one thread.
 */
-private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos"];
+private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos","_fatigue"];
+
+switch (playerside) do 
+{
+	case west: {_fatigue = false};
+	case east: {_fatigue = false};
+	case independent: {_fatigue = false};
+	case civilian: {_fatigue = true};
+};
+
 _fnc_food =  {
     if (life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";}
     else
@@ -19,7 +28,7 @@ _fnc_food =  {
             case 20: {hint localize "STR_NOTF_EatMSG_2";};
             case 10: {
                 hint localize "STR_NOTF_EatMSG_3";
-                if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 1;};
+                if (_fatigue) then {player setFatigue 1;};
             };
         };
     };
@@ -36,11 +45,11 @@ _fnc_water = {
             case 30: {hint localize "STR_NOTF_DrinkMSG_1";};
             case 20: {
                 hint localize "STR_NOTF_DrinkMSG_2";
-                if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 1;};
+                if (_fatigue) then {player setFatigue 1;};
             };
             case 10: {
                 hint localize "STR_NOTF_DrinkMSG_3";
-                if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 1;};
+                if (_fatigue) then {player setFatigue 1;};
             };
         };
     };
@@ -80,7 +89,7 @@ for "_i" from 0 to 1 step 0 do {
     /* Check if the weight has changed and the player is carrying to much */
     if (life_carryWeight > life_maxWeight && {!isForcedWalk player}) then {
         player forceWalk true;
-        if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 1;};
+        if (_fatigue) then {player setFatigue 1;};
         hint localize "STR_NOTF_MaxWeight";
     } else {
         if (isForcedWalk player) then {
