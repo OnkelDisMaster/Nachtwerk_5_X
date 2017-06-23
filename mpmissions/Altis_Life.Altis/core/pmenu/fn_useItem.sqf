@@ -15,7 +15,8 @@ switch (true) do {
     case (_item in ["waterBottle","coffee","redgull"]): {
         if ([false,_item,1] call life_fnc_handleInv) then {
             life_thirst = 100;
-            if ((_item isEqualTo "redgull") && (playerside isEqualTo civilian)) then {
+            if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
+            if (_item isEqualTo "redgull" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
                 [] spawn {
                     life_redgull_effect = time;
                     titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];

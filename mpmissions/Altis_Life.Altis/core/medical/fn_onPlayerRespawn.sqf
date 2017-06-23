@@ -28,13 +28,5 @@ player playMoveNow "AmovPpneMstpSrasWrflDnon";
 
 [] call life_fnc_setupActions;
 [_unit,life_settings_enableSidechannel,playerSide] remoteExecCall ["TON_fnc_managesc",RSERV];
-
-switch (playerside) do 
-{
-	case west: {player enableFatigue false;};
-	case east: {player enableFatigue false;};
-	case independent: {player enableFatigue false;};
-	case civilian: {player enableFatigue true;};
-};
-
+if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 0) then {player enableFatigue false;};
 [] call life_fnc_hudUpdate;
