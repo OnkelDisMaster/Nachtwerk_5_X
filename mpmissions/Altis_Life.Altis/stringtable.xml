@@ -284,7 +284,7 @@
             <Portuguese>Comprador de Ouro</Portuguese>
             <Polish>Skup złota</Polish>
         </Key>
-        <Key ID="STR_Shops_Juwelier">
+        <Key ID="STR_Shops_Diamond">
             <Original>Juwelier</Original>
             <Czech>Diamond Dealer</Czech>
             <Spanish>Comerciante de Diamantes</Spanish>
@@ -6297,28 +6297,6 @@
             <Portuguese>Pepita de Ferro</Portuguese>
             <Polish>Ruda żelaza</Polish>
         </Key>
-		<Key ID="STR_Item_AluErz">
-            <Original>Aluminium Ore</Original>
-            <Czech>Měděná ruda</Czech>
-            <Spanish>Cobre</Spanish>
-            <Russian></Russian>
-            <German>Aluminiumerz</German>
-            <French>Minerai de Cuivre</French>
-            <Italian>Minerale di Rame</Italian>
-            <Portuguese>Pepita de Cobre</Portuguese>
-            <Polish>Ruda miedzi</Polish>
-        </Key>
-		<Key ID="STR_Item_PlatinErz">
-            <Original>Platin Ore</Original>
-            <Czech>Měděná ruda</Czech>
-            <Spanish>Cobre</Spanish>
-            <Russian></Russian>
-            <German>Platinerz</German>
-            <French>Minerai de Cuivre</French>
-            <Italian>Minerale di Rame</Italian>
-            <Portuguese>Pepita de Cobre</Portuguese>
-            <Polish>Ruda miedzi</Polish>
-        </Key>
         <Key ID="STR_Item_IronIngot">
             <Original>Iron Ingot</Original>
             <Czech>Železná cihla</Czech>
@@ -6336,28 +6314,6 @@
             <Spanish>Lingote de Cobre</Spanish>
             <Russian></Russian>
             <German>Kupferbarren</German>
-            <French>Lingot de cuivre</French>
-            <Italian>Lingotto di Rame</Italian>
-            <Portuguese>Barra de Cobre</Portuguese>
-            <Polish>Sztabka miedzi</Polish>
-        </Key>
-		<Key ID="STR_Item_AluBarren">
-            <Original>Aluminium Ingot</Original>
-            <Czech>měď ingotů</Czech>
-            <Spanish>Lingote de Cobre</Spanish>
-            <Russian></Russian>
-            <German>Aluminiumbarren</German>
-            <French>Lingot de cuivre</French>
-            <Italian>Lingotto di Rame</Italian>
-            <Portuguese>Barra de Cobre</Portuguese>
-            <Polish>Sztabka miedzi</Polish>
-        </Key>
-		<Key ID="STR_Item_PlatinBarren">
-            <Original>Platin Ingot</Original>
-            <Czech>měď ingotů</Czech>
-            <Spanish>Lingote de Cobre</Spanish>
-            <Russian></Russian>
-            <German>Platinbarren</German>
             <French>Lingot de cuivre</French>
             <Italian>Lingotto di Rame</Italian>
             <Portuguese>Barra de Cobre</Portuguese>
@@ -6463,22 +6419,22 @@
             <Polish>Wytrych</Polish>
         </Key>
         <Key ID="STR_Item_Rock">
-            <Original>Raw Marmor</Original>
+            <Original>Marmor</Original>
             <Czech>Skála</Czech>
             <Spanish>Piedra</Spanish>
             <Russian></Russian>
-            <German>Gebrochener Marmor</German>
+            <German>Marmor</German>
             <French>Pierre</French>
             <Italian>Roccia</Italian>
             <Portuguese>Pedra</Portuguese>
             <Polish>Skała</Polish>
         </Key>
         <Key ID="STR_Item_CementBag">
-            <Original>Marmor</Original>
+            <Original>Cement Bag</Original>
             <Czech>cement Bag</Czech>
             <Spanish>Bolsa de Cemento</Spanish>
             <Russian></Russian>
-            <German>Marmor</German>
+            <German>Zement Sack</German>
             <French>Sac de ciment</French>
             <Italian>Sacco di Cemento</Italian>
             <Portuguese>Saco de Cimento</Portuguese>
@@ -9867,8 +9823,8 @@
             <Polish>Skup soli</Polish>
             <Italian>Vendita Sale</Italian>
         </Key>
-        <Key ID="STR_MAR_Juwelier">
-            <Original>Juwelier</Original>
+        <Key ID="STR_MAR_Diamond_Trader">
+            <Original>Diamond Trader</Original>
             <Czech>Diamond Trader</Czech>
             <French>Vendeur de diamant</French>
             <Spanish>Comerciante de Diamantes</Spanish>
@@ -10000,12 +9956,12 @@
             <Italian>Processo Roccia</Italian>
         </Key>
         <Key ID="STR_MAR_Cement_Trader">
-            <Original>Baustoff Trader</Original>
+            <Original>Cement Trader</Original>
             <Czech>cement Trader</Czech>
             <French>Vendeur de ciments</French>
             <Spanish>Comerciante de Cemento</Spanish>
             <Russian></Russian>
-            <German>Baustoff Händler</German>
+            <German>Zement Händler</German>
             <Portuguese>Comprador de Cimento</Portuguese>
             <Polish>Skup cementu</Polish>
             <Italian>Vendita del Cemento</Italian>
