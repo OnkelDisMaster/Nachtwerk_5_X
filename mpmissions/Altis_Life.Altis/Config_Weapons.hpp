@@ -436,6 +436,8 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -448,9 +450,8 @@ class WeaponShops {
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "30Rnd_556x45_Stanag", "", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "30Rnd_556x45_Stanag", "", 1 }
+
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -496,6 +497,8 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -508,9 +511,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -557,6 +558,8 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -571,9 +574,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -623,6 +624,8 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -639,10 +642,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
-        };
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         accs[] = {
 				{ "optic_Holosight", "", 1 },
 				{ "optic_Holosight_smg_blk_F", "", 1 },
@@ -694,6 +694,10 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -712,11 +716,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
-			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }		
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -767,6 +767,10 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -786,11 +790,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
-			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -845,6 +845,10 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
 			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
 			{ "DemoCharge_Remote_Mag", "", 1, 1 },
             { "Rangefinder", "", 1, 1 },
@@ -873,11 +877,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
-			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -932,6 +932,10 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
 			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
 			{ "DemoCharge_Remote_Mag", "", 1, 1 },
             { "Rangefinder", "", 1, 1 },
@@ -960,11 +964,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
-			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -1020,6 +1020,10 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
 			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
 			{ "DemoCharge_Remote_Mag", "", 1, 1 },
             { "Rangefinder", "", 1, 1 },
@@ -1049,11 +1053,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
-			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -1109,6 +1109,10 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
 			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
 			{ "DemoCharge_Remote_Mag", "", 1, 1 },
             { "Rangefinder", "", 1, 1 },
@@ -1138,11 +1142,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
-			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
@@ -1198,6 +1198,10 @@ class WeaponShops {
             { "hgun_Pistol_heavy_01_MRD_F", "", 1, 1 },
             { "HandGrenade_Stone", "Flashbang", 1, 1 },
 			{ "SmokeShellBlue","CE-Gas", 1, 1 },
+			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
+			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
+			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
+			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 },
 			{ "SatchelCharge_Remote_Mag", "", 1, 1 },
 			{ "DemoCharge_Remote_Mag", "", 1, 1 },
             { "Rangefinder", "", 1, 1 },
@@ -1227,11 +1231,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 1 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
-			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 },
-			{ "1Rnd_HE_Grenade_shell","1er-HE-Granate", 1 },
-			{ "3Rnd_HE_Grenade_shell","3er-HE-Granate", 1 },
-			{ "1Rnd_SmokeBlue_Grenade_shell","1er-CE-Gas", 1 },
-			{ "3Rnd_SmokeBlue_Grenade_shell","3er-CE-Gas", 1 }
+			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
         };
         accs[] = {
 				{ "optic_Holosight", "", 1 },
