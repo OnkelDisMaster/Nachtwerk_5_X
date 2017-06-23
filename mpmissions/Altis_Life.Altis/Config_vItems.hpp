@@ -10,10 +10,10 @@ class VirtualShops {
     //Virtual Shops
     class market {
         name = "STR_Shops_Market";
-        side = "civ";
+        side = "";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "kleidung", "holz", "moebel", "rabbit", "apple", "peach", "ananas", "kokosnuss", "bananen", "apfelsaft", "pfirsichsaft", "ananassaft", "kokosnussmilch", "bananensaft", "pina_collada", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class med_market {
@@ -26,7 +26,7 @@ class VirtualShops {
 	
 	class apotheke {
         name = "STR_Shops_apotheke";
-        side = "civ";
+        side = "";
         license = "";
         level[] = { "", "", -1, "" };
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
@@ -55,6 +55,14 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "turtle_soup", "turtle_raw" };
     };
+	
+	class altiskom {
+        name = "STR_Shops_Wongs";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "bambusleitung" };
+    };
 
     class coffee {
         name = "STR_Shops_Coffee";
@@ -77,7 +85,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "schwarzpulver", "polen_boeller", "tabak", "zigaretten", "zigaretten_stangen", "korallen", "korallen_ketten" };
     };
 
     class oil {
@@ -85,7 +93,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "oil_processed", "pickaxe", "fuelFull" };
+        items[] = { "oil_processed", "pickaxe", "fuelFull", "diesel" };
     };
 
     class fishmarket {
@@ -104,20 +112,20 @@ class VirtualShops {
         items[] = { "glass" };
     };
 
-    class iron  {
+    class metall  {
         name = "STR_Shops_Minerals";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "iron_refined", "copper_refined" };
+        items[] = { "iron_refined", "copper_refined", "alu_barren", "platin_barren" };
     };
 
-    class diamond {
-        name = "STR_Shops_Diamond";
+    class juwelier {
+        name = "STR_Shops_Juwelier";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "diamond_uncut", "diamond_cut" };
+        items[] = { "diamond_uncut", "diamond_cut", "juwelen"};
     };
 
     class salt {
@@ -128,12 +136,12 @@ class VirtualShops {
         items[] = { "salt_refined" };
     };
 
-    class cement {
+    class baustoff {
         name = "STR_Shops_Cement";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "cement" };
+        items[] = { "marmor_roh", "marmor", "lava", "obsidian" };
     };
 
     class gold {
@@ -143,7 +151,31 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "goldbar" };
     };
-
+	
+	class kraftwerk {
+        name = "STR_Shops_Gold";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "plutonium", "brennstab" };
+    };
+	
+	class atm {
+        name = "STR_Shops_Gold";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "falschgeld" };
+    };
+	
+	class cyborg {
+        name = "STR_Shops_Gold";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "mikro_prozessor", "implantat_normal" };
+    };
+	
     class cop {
         name = "STR_Shops_Cop";
         side = "cop";
@@ -201,6 +233,28 @@ class VirtualItems {
         edible = -1;
         icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
     };
+	
+	class mikro_prozessor {
+        variable = "mikroProzessor";
+        displayName = "STR_Item_Toolkit";
+        weight = 4;
+        buyPrice = 350;
+        sellPrice = 100;
+        illegal = false;
+        edible = -1;
+        icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
+    };
+	
+	class implantat_normal {
+        variable = "implantatNormal";
+        displayName = "STR_Item_Toolkit";
+        weight = 4;
+        buyPrice = 350;
+        sellPrice = 100;
+        illegal = false;
+        edible = -1;
+        icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
+    };
 
     class fuelEmpty {
         variable = "fuelEmpty";
@@ -247,7 +301,7 @@ class VirtualItems {
     };
 	class bunker {
         variable = "bunker";
-        displayName = "STR_Item_bunker";
+        displayName = "Bunker";
         weight = 15;
         buyPrice = 2500;
         sellPrice = 1200;
@@ -405,6 +459,17 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_oilProcessed.paa";
     };
+	
+	 class diesel {
+        variable = "diesel";
+        displayName = "STR_Item_OilP";
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = 3200;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_oilProcessed.paa";
+    };
 
     class copper_unrefined {
         variable = "copperUnrefined";
@@ -449,7 +514,51 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_iron.paa";
     };
+	
+	class alu_erz {
+        variable = "aluErz";
+        displayName = "STR_Item_AluErz";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_copperOre.paa";
+    };
 
+    class alu_barren {
+        variable = "aluBarren";
+        displayName = "STR_Item_AluBarren";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = 1500;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_copper.paa";
+    };
+	
+	class platin_erz {
+        variable = "PlatinErz";
+        displayName = "STR_Item_PlatinErz";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_copperOre.paa";
+    };
+
+    class platin_barren {
+        variable = "platinBarren";
+        displayName = "STR_Item_AluBarren";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = 1500;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_copper.paa";
+    };
+	
     class salt_unrefined {
         variable = "saltUnrefined";
         displayName = "STR_Item_Salt";
@@ -493,6 +602,61 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_glass.paa";
     };
+	
+	class bambus {
+        variable = "bambusleitung";
+        displayName = "STR_Item_Sand";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_sand.paa";
+    };
+
+    class bambusleitung {
+        variable = "bambusleitung";
+        displayName = "STR_Item_Glass";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 1450;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_glass.paa";
+    };
+	
+	class baumwolle {
+        variable = "baumwolle";
+        displayName = "STR_Item_Sand";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_sand.paa";
+    };
+
+    class stoff {
+        variable = "stoff";
+        displayName = "STR_Item_Glass";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 1450;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_glass.paa";
+    };
+	
+	class kleidung {
+        variable = "kleidung";
+        displayName = "STR_Item_Glass";
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 1450;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_glass.paa";
+    };
 
     class diamond_uncut {
         variable = "diamondUncut";
@@ -515,9 +679,53 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_diamondCut.paa";
     };
+	
+	class schurfgut {
+        variable = "schurfgut";
+        displayName = "STR_Item_DiamondU";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 750;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_diamondUncut.paa";
+    };
 
-    class rock {
-        variable = "rock";
+    class juwelen {
+        variable = "juwelen";
+        displayName = "STR_Item_DiamondC";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = 2000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_diamondCut.paa";
+    };
+
+    class marmor_roh {
+        variable = "marmorRoh";
+        displayName = "STR_Item_Rock";
+        weight = 6;
+        buyPrice = 1500;
+        sellPrice = 1000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_rock.paa";
+    };
+
+    class marmor {
+        variable = "marmor";
+        displayName = "STR_Item_CementBag";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = 1950;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_cement.paa";
+    };
+	
+	class lava {
+        variable = "lava";
         displayName = "STR_Item_Rock";
         weight = 6;
         buyPrice = -1;
@@ -527,8 +735,30 @@ class VirtualItems {
         icon = "icons\ico_rock.paa";
     };
 
-    class cement {
-        variable = "cement";
+    class obsidian {
+        variable = "obsidian";
+        displayName = "STR_Item_CementBag";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = 1950;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_cement.paa";
+    };
+	
+	class holz {
+        variable = "holz";
+        displayName = "STR_Item_Rock";
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_rock.paa";
+    };
+
+    class moebel {
+        variable = "moebel";
         displayName = "STR_Item_CementBag";
         weight = 5;
         buyPrice = -1;
@@ -539,6 +769,30 @@ class VirtualItems {
     };
 
     //Drugs
+	class papier {
+        variable = "papier";
+        displayName = "STR_Item_HeroinU";
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_heroinUnprocessed.paa";
+        processedItem = "heroin_processed";
+    };
+	
+	class falschgeld {
+        variable = "falschgeld";
+        displayName = "STR_Item_HeroinU";
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_heroinUnprocessed.paa";
+        processedItem = "heroin_processed";
+    };
+	
     class heroin_unprocessed {
         variable = "heroinUnprocessed";
         displayName = "STR_Item_HeroinU";
@@ -584,6 +838,86 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_marijuana.paa";
     };
+	
+	class schwarzpulver {
+        variable = "schwarzpulver";
+        displayName = "STR_Item_Cannabis";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cannabis.paa";
+        processedItem = "marijuana";
+    };
+
+    class polen_boeller {
+        variable = "polenBoeller";
+        displayName = "STR_Item_Marijuana";
+        weight = 3;
+        buyPrice = 2800;
+        sellPrice = 2350;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_marijuana.paa";
+    };
+	
+	class tabak {
+        variable = "tabak";
+        displayName = "STR_Item_Marijuana";
+        weight = 3;
+        buyPrice = 2800;
+        sellPrice = 2350;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_marijuana.paa";
+    };
+	
+	class zigaretten {
+        variable = "zigaretten";
+        displayName = "STR_Item_Cannabis";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cannabis.paa";
+        processedItem = "marijuana";
+    };
+
+    class zigaretten_stangen {
+        variable = "zigarettenStangen";
+        displayName = "STR_Item_Marijuana";
+        weight = 3;
+        buyPrice = 2800;
+        sellPrice = 2350;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_marijuana.paa";
+    };
+	
+	class korallen {
+        variable = "korallen";
+        displayName = "STR_Item_Cannabis";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cannabis.paa";
+        processedItem = "marijuana";
+    };
+
+    class korallen_ketten {
+        variable = "korallenKetten";
+        displayName = "STR_Item_Marijuana";
+        weight = 3;
+        buyPrice = 2800;
+        sellPrice = 2350;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_marijuana.paa";
+    };
 
     class cocaine_unprocessed {
         variable = "cocaineUnprocessed";
@@ -599,6 +933,84 @@ class VirtualItems {
 
     class cocaine_processed {
         variable = "cocaineProcessed";
+        displayName = "STR_Item_CocaineP";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cocaineProcessed.paa";
+    };
+	
+	class uran_erz {
+        variable = "uranErz";
+        displayName = "STR_Item_CocaineU";
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cocaineUnprocessed.paa";
+        processedItem = "cocaine_processed";
+    };
+	
+	class uran_I {
+        variable = "uranI";
+        displayName = "STR_Item_CocaineP";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cocaineProcessed.paa";
+    };
+	
+    class uran_II {
+        variable = "uranII";
+        displayName = "STR_Item_CocaineP";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cocaineProcessed.paa";
+    };
+	
+	class uran_III {
+        variable = "uranIII";
+        displayName = "STR_Item_CocaineP";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cocaineProcessed.paa";
+    };
+
+    class uran_IV {
+        variable = "uranIV";
+        displayName = "STR_Item_CocaineP";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cocaineProcessed.paa";
+    };
+	
+	class plutonium {
+        variable = "plutonium";
+        displayName = "STR_Item_CocaineP";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_cocaineProcessed.paa";
+    };
+	
+	class brennstab {
+        variable = "brennstab";
         displayName = "STR_Item_CocaineP";
         weight = 4;
         buyPrice = -1;
@@ -664,7 +1076,106 @@ class VirtualItems {
         edible = 10;
         icon = "icons\ico_peach.paa";
     };
+	
+	class ananas {
+        variable = "ananas";
+        displayName = "STR_Item_Apple";
+        weight = 1;
+        buyPrice = 65;
+        sellPrice = 50;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_apple.paa";
+    };
 
+    class bananen {
+        variable = "bananen";
+        displayName = "STR_Item_Peach";
+        weight = 1;
+        buyPrice = 68;
+        sellPrice = 55;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_peach.paa";
+    };
+	
+	class kokosnuss {
+        variable = "kokosnuss";
+        displayName = "STR_Item_Peach";
+        weight = 1;
+        buyPrice = 68;
+        sellPrice = 55;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_peach.paa";
+    };
+	
+	class apfelsaft {
+        variable = "apfelsaft";
+        displayName = "STR_Item_Apple";
+        weight = 1;
+        buyPrice = 65;
+        sellPrice = 50;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_apple.paa";
+    };
+
+    class pfirsichsaft {
+        variable = "pfirsichsaft";
+        displayName = "STR_Item_Peach";
+        weight = 1;
+        buyPrice = 68;
+        sellPrice = 55;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_peach.paa";
+    };
+	
+	class ananassaft {
+        variable = "ananassaft";
+        displayName = "STR_Item_Apple";
+        weight = 1;
+        buyPrice = 65;
+        sellPrice = 50;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_apple.paa";
+    };
+
+    class bananensaft {
+        variable = "bananensaft";
+        displayName = "STR_Item_Peach";
+        weight = 1;
+        buyPrice = 68;
+        sellPrice = 55;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_peach.paa";
+    };
+	
+	class kokosnuss_milch {
+        variable = "kokosnussMilch";
+        displayName = "STR_Item_Peach";
+        weight = 1;
+        buyPrice = 68;
+        sellPrice = 55;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_peach.paa";
+    };
+	
+	class pina_collada {
+        variable = "pinacollada";
+        displayName = "STR_Item_Peach";
+        weight = 1;
+        buyPrice = 68;
+        sellPrice = 55;
+        illegal = false;
+        edible = 10;
+        icon = "icons\ico_peach.paa";
+    };
+	
     class tbacon {
         variable = "tbacon";
         displayName = "STR_Item_TBacon";
