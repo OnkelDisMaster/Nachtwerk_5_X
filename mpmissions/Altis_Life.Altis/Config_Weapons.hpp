@@ -639,6 +639,7 @@ class WeaponShops {
 			{ "30Rnd_65x39_caseless_mag_Tracer", "MX Leuchtspur Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag","100er MX SW Magazin", 1 },
 			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer Magazin", 1 }
+		};
         accs[] = {
 				{ "optic_Holosight", "", 1 },
 				{ "optic_Holosight_smg_blk_F", "", 1 },
