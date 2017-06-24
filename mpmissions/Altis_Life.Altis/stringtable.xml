@@ -207,6 +207,61 @@
             <Portuguese>Traficante</Portuguese>
             <Polish>Sprzedawca 'Trawy'</Polish>
         </Key>
+		<Key ID="STR_Shops_Terrorkeller">
+            <Original>Terrorism Cave</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Terrorkeller</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Shops_Altiskom">
+            <Original>Altiskom</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Altiskom</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Shops_Kraftwerk">
+            <Original>Powerplant Merchandise</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kraftwerk Warenannahme</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Shops_Uranium">
+            <Original>Uranium Dealer</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uranhändler</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Shops_Cyborg">
+            <Original>Chris the Cyborg</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Chris der Cyborg</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Shops_Oil">
             <Original>Oil Trader</Original>
             <Czech>olej Trader</Czech>
@@ -262,12 +317,12 @@
             <Portuguese>Equipamentos da Polícia</Portuguese>
             <Polish>Zbrojownia Policji</Polish>
         </Key>
-        <Key ID="STR_Shops_Cement">
-            <Original>Juan's Cement Laying</Original>
+        <Key ID="STR_Shops_Baustoff">
+            <Original>Juan's Crafting Materials</Original>
             <Czech>Juanovo Cement Pokládka</Czech>
             <Spanish>Fabrica de Cemento de Juan</Spanish>
             <Russian></Russian>
-            <German>Juan's Zementleger</German>
+            <German>Baustoffhändler</German>
             <Italian>Vendita Cemento</Italian>
             <French>Poseur de Ciment</French>
             <Portuguese>Comprador de Cimento</Portuguese>
@@ -286,7 +341,7 @@
         </Key>
         <Key ID="STR_Shops_Juwelier">
             <Original>Juwelier</Original>
-            <Czech>Diamond Dealer</Czech>
+            <Czech>Juwelier</Czech>
             <Spanish>Comerciante de Diamantes</Spanish>
             <Russian></Russian>
             <German>Juwelier</German>
@@ -5802,6 +5857,105 @@
             <Portuguese>Maçã</Portuguese>
             <Polish>Jabłko</Polish>
         </Key>
+		<Key ID="STR_Item_Ananas">
+            <Original>Pineapple</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Ananas</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Bananen">
+            <Original>Bananas</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bananen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Kokosnuss">
+            <Original>Coconuts</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kokosnüsse</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Apfelsaft">
+            <Original>Applejuice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Apfelsaft</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Pfirsichsaft">
+            <Original>Peachjuice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Pfirsichsaft</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Ananassaft">
+            <Original>Pineapplejuice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Ananassaft</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Bananensaft">
+            <Original>Bananajuice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bananensaft</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Kokosnussmilch">
+            <Original>Coconutmik</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kokosnussmilch</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Pina_Colada">
+            <Original>Pina Colada</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Pina Colada</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_Apples">
             <Original>Apples</Original>
             <Czech>jablka</Czech>
@@ -5878,6 +6032,39 @@
             <Italian>Olio processato</Italian>
             <Portuguese>Petróleo Refinado</Portuguese>
             <Polish>Olej napędowy</Polish>
+        </Key>
+		<Key ID="STR_Item_Diesel">
+            <Original>Diesel</Original>
+            <Czech>Diesel</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Diesel</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Bambus">
+            <Original>Bambus</Original>
+            <Czech>Bambus</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bambus</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Bambusleitung">
+            <Original>Bambusleitung</Original>
+            <Czech>Bambusleitung</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bambusleitung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Item_HeroinU">
             <Original>Opium Poppy</Original>
@@ -6264,6 +6451,28 @@
             <Portuguese>conjunto de ferramentas</Portuguese>
             <Polish>zestaw narzędzi</Polish>
         </Key>
+		<Key ID="STR_Item_mikroProzessor">
+            <Original>Mikroprozessor</Original>
+            <Czech>Mikroprozessor</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Mikroprozessor</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_implantat_normal">
+            <Original>Standardimplantat</Original>
+            <Czech>Standardimplantat</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Standardimplantat</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_Pickaxe">
             <Original>Pickaxe</Original>
             <Czech>Krumpáč</Czech>
@@ -6429,6 +6638,39 @@
             <Portuguese>Diamante Bruto</Portuguese>
             <Polish>Diament surowy</Polish>
         </Key>
+		<Key ID="STR_Item_PlatinKrone">
+            <Original>PlatinKrone</Original>
+            <Czech>PlatinKrone</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>PlatinKrone</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Schurfgut">
+            <Original>Schurfgut</Original>
+            <Czech>Schurfgut</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Schurfgut</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Juwelen">
+            <Original>Juwelen</Original>
+            <Czech>Juwelen</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Juwelen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_TBacon">
             <Original>Tactical Bacon</Original>
             <Czech>Tactical Bacon</Czech>
@@ -6462,27 +6704,247 @@
             <Portuguese>Chave Mestra</Portuguese>
             <Polish>Wytrych</Polish>
         </Key>
-        <Key ID="STR_Item_Rock">
+        <Key ID="STR_Item_MarmorRoh">
             <Original>Raw Marmor</Original>
-            <Czech>Skála</Czech>
-            <Spanish>Piedra</Spanish>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
             <German>Gebrochener Marmor</German>
-            <French>Pierre</French>
-            <Italian>Roccia</Italian>
-            <Portuguese>Pedra</Portuguese>
-            <Polish>Skała</Polish>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
-        <Key ID="STR_Item_CementBag">
+        <Key ID="STR_Item_Marmor">
             <Original>Marmor</Original>
-            <Czech>cement Bag</Czech>
-            <Spanish>Bolsa de Cemento</Spanish>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
             <German>Marmor</German>
-            <French>Sac de ciment</French>
-            <Italian>Sacco di Cemento</Italian>
-            <Portuguese>Saco de Cimento</Portuguese>
-            <Polish>Worek cementu</Polish>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Lava">
+            <Original>Lava</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Lava</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Obsidian">
+            <Original>Obsidian</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Obsidian</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Holz">
+            <Original>Wood</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Holz</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Moebel">
+            <Original>Moebel</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Moebel</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Schwarzpulver">
+            <Original>Gunpowder</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Schwarzpulver</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Polen_Boeller">
+            <Original>Polenböller</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Polenböller</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Tabak">
+            <Original>Tabak</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Tabak</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Zigaretten">
+            <Original>Zigaretten</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Zigaretten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Zigaretten_Stangen">
+            <Original>Zigarettenstangen</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Zigarettenstangen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Korallen">
+            <Original>Korallen</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Korallen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Korallenketten">
+            <Original>Korallenketten</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Korallenketten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Uranerz">
+            <Original>Uranerz</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uranerz</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_UranI">
+            <Original>Uran I</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran I</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_UranII">
+            <Original>Uran II</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran II</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_UranIII">
+            <Original>Uran III</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran III</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_UranIV">
+            <Original>Uran IV</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran IV</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Plutonium">
+            <Original>Plutonium</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Plutonium</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Brennstab">
+            <Original>Brennstäbe</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Brennstäbe</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Bombenkopf">
+            <Original>Warhead</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bombenkopf</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_Atombombe">
+            <Original>Nuke</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Atombombe</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Item_GoldBar">
             <Original>Gold Bar</Original>
@@ -6582,6 +7044,83 @@
             <Italian>Striscia Chiodata</Italian>
             <Portuguese>Tapete de Espinhos</Portuguese>
             <Polish>Kolczatka drogowa</Polish>
+        </Key>
+		<Key ID="STR_Item_blitzer">
+            <Original>Blitzer</Original>
+            <Czech>Blitzer</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Blitzer</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_bunker">
+            <Original>Bunkerfundament</Original>
+            <Czech>Bunkerfundament</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bunkerfundament</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_flutlicht">
+            <Original>Flutlicht</Original>
+            <Czech>Flutlicht</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Flutlicht</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_licht">
+            <Original>Straßenlicht</Original>
+            <Czech>Straßenlicht</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Straßenlicht</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_mauer">
+            <Original>Straßensperre</Original>
+            <Czech>Straßensperre</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Straßensperre</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_plastik">
+            <Original>Plastikabsperrung</Original>
+            <Czech>Plastikabsperrung</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Plastikabsperrung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Item_schranke">
+            <Original>Schranke</Original>
+            <Czech>Schranke</Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Schranke</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
     </Package>
     <Package name="Life_License">
