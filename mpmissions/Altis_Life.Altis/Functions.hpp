@@ -354,6 +354,7 @@ class Life_Client_Core {
 		class chipInstall {};
 		class installChip {};
 		class speedUp {};
+		class alkoholdrugtester {};
     };
 
     class Network {
