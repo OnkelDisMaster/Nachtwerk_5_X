@@ -99,10 +99,10 @@ class WeaponShops {
         items[] = {			
 			{ "LMG_Mk200_F", "", 350000, 2500 },
             { "srifle_LRR_F", "", 650000, 2500 },
-            { "arifle_ARX_hex_F", "", 300000, 5000 },
-            { "srifle_DMR_02_camo_F", "", 370000, 7500 },
-			{ "srifle_DMR_05_hex_F", "", 450000, 5000 },
-            { "LMG_Zafir_F", "", 470000, -1 }
+            { "arifle_ARX_hex_F", "", 200000, 5000 },
+            { "srifle_DMR_02_camo_F", "", 350000, 7500 },
+			{ "srifle_DMR_05_hex_F", "", 370000, 5000 },
+            { "LMG_Zafir_F", "", 340000, -1 }
         };
         mags[] = {
             { "200Rnd_65x39_cased_Box_Tracer", "", 20000 },

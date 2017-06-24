@@ -385,7 +385,7 @@ class LifeCfgVehicles {
     };
 	
 	class O_Truck_03_fuel_F {
-        vItemSpace = 150;
+        vItemSpace = 500;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
         price = 500000;
         textures[] = { 
@@ -1254,7 +1254,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
         class C_Van_01_fuel_F {
-        vItemSpace = 50;
+        vItemSpace = 200;
         vFuelSpace = 19500;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
         price = 75000;
@@ -1284,7 +1284,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_Truck_01_fuel_F {
-        vItemSpace = 200;
+        vItemSpace = 800;
         vFuelSpace = 950000;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
         price = 5500000;
