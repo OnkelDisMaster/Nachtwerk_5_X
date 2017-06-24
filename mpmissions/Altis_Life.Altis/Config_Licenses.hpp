@@ -302,7 +302,7 @@ class Licenses {
 	
 	class implantat {
         variable = "implantat";
-        displayName = "STR_License_Implantat";
+        displayName = "STR_License_Implantat";			// auch für prozessoren
         price = 1275000;
         illegal = false;
         side = "civ";
@@ -366,7 +366,7 @@ class Licenses {
 	
 	class pro_rebel {
         variable = "pro_rebel";
-        displayName = "STR_License_Rebel";
+        displayName = "STR_License_ProRebel";
         price = 2750000;
         illegal = false;
         side = "civ";
@@ -374,7 +374,7 @@ class Licenses {
 
 	class elite {
         variable = "elite";
-        displayName = "STR_License_ERebel";
+        displayName = "STR_License_Elite";
         price = 9000;
         illegal = false;
         side = "civ";

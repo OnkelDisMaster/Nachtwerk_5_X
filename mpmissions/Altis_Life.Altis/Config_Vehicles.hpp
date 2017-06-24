@@ -119,7 +119,6 @@ class CarShops {
         vehicles[] = {
 			{ "C_Van_01_box_F", { "", "", -1 } },
             { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_Offroad_01_repair_F", { "", "", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
 			{ "B_Truck_01_medical_F", { "", "", -1 } },
 			{ "O_Truck_03_medical_F", { "", "", -1 } },

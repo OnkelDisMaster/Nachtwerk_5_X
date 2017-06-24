@@ -7608,7 +7608,18 @@
             <Portuguese>Treinamento Rebelde</Portuguese>
             <Polish>Trening rebelianta</Polish>
         </Key>
-        <Key ID="STR_License_ERebel">
+		 <Key ID="STR_License_ProRebel">
+            <Original>Pro-Rebel Training</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Pro-Rebellenausbildung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_License_Elite">
             <Original>Eliterebel Training</Original>
             <Czech></Czech>
             <Spanish></Spanish>

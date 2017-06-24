@@ -17,7 +17,7 @@
 */
 
 class ProcessAction {
-    class oil {
+    class oel {
         MaterialsReq[] = {{"oil_unprocessed",1}};
         MaterialsGive[] = {{"oil_processed",1}};
         Text = "STR_Process_Oil";
@@ -25,7 +25,7 @@ class ProcessAction {
         NoLicenseCost = 1200;
     };
 
-    class diamond {
+    class dia {
         MaterialsReq[] = {{"diamond_uncut",1}};
         MaterialsGive[] = {{"diamond_cut",1}};
         Text = "STR_Process_Diamond";
@@ -33,7 +33,7 @@ class ProcessAction {
         NoLicenseCost = 1350;
     };
 
-    class heroin {
+    class hero {
         MaterialsReq[] = {{"heroin_unprocessed",1}};
         MaterialsGive[] = {{"heroin_processed",1}};
         Text = "STR_Process_Heroin";
@@ -41,7 +41,7 @@ class ProcessAction {
         NoLicenseCost = 1750;
     };
 
-    class copper {
+    class kupfer {
         MaterialsReq[] = {{"copper_unrefined",1}};
         MaterialsGive[] = {{"copper_refined",1}};
         Text = "STR_Process_Copper";
@@ -49,7 +49,7 @@ class ProcessAction {
         NoLicenseCost = 750;
     };
 
-    class iron {
+    class eisen {
         MaterialsReq[] = {{"iron_unrefined",1}};
         MaterialsGive[] = {{"iron_refined",1}};
         Text = "STR_Process_Iron";
@@ -57,7 +57,7 @@ class ProcessAction {
         NoLicenseCost = 1120;
     };
 
-    class sand {
+    class glas {
         MaterialsReq[] = {{"sand",1}};
         MaterialsGive[] = {{"glass",1}};
         Text = "STR_Process_Sand";
@@ -65,7 +65,7 @@ class ProcessAction {
         NoLicenseCost = 650;
     };
 
-    class salt {
+    class salz {
         MaterialsReq[] = {{"salt_unrefined",1}};
         MaterialsGive[] = {{"salt_refined",1}};
         Text = "STR_Process_Salt";
@@ -73,7 +73,7 @@ class ProcessAction {
         NoLicenseCost = 450;
     };
 
-    class cocaine {
+    class koks {
         MaterialsReq[] = {{"cocaine_unprocessed",1}};
         MaterialsGive[] = {{"cocaine_processed",1}};
         Text = "STR_Process_Cocaine";
@@ -89,11 +89,4 @@ class ProcessAction {
         NoLicenseCost = 500;
     };
 
-    class cement {
-        MaterialsReq[] = {{"rock",1}};
-        MaterialsGive[] = {{"cement",1}};
-        Text = "STR_Process_Cement";
-        //ScrollText = "Mix Cement";
-        NoLicenseCost = 350;
-    };
 };
