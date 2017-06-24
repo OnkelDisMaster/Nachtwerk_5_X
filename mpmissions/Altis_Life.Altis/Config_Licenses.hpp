@@ -212,14 +212,6 @@ class Licenses {
         side = "civ";
     };
 	
-	class tabak {
-        variable = "tabak";
-        displayName = "STR_License_Zigaretten";
-        price = 28000;
-        illegal = false;
-        side = "civ";
-    };
-	
 	class boeller {
         variable = "boeller";
         displayName = "STR_License_Boeller";
