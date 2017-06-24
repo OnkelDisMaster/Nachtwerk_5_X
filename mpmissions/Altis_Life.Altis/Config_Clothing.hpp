@@ -395,7 +395,7 @@ class Clothing {
         };
     };
 
-    class reb {
+    class rebel {
         title = "STR_Shops_C_Rebel";
         license = "rebel";
         side = "civ";

@@ -300,9 +300,9 @@ class Licenses {
         side = "civ";
     };
 	
-	class implantat {
+	class implantat {  //Auch die Lizenz für die Herstellung von Mikroprozessoren
         variable = "implantat";
-        displayName = "STR_License_Implantat";			// auch für prozessoren
+        displayName = "STR_License_Implantat";
         price = 1275000;
         illegal = false;
         side = "civ";
