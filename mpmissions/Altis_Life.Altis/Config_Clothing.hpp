@@ -643,3 +643,4 @@ class Clothing {
 			{ "B_ViperHarness_blk_F", "", 5000, { "", "", -1 } }
         };
     };
+};
