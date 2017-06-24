@@ -262,6 +262,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_Shops_Tabakwaren">
+            <Original>Tobacco Dealer</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Tabakwarenhändler</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Shops_Oil">
             <Original>Oil Trader</Original>
             <Czech>olej Trader</Czech>

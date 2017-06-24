@@ -95,6 +95,14 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "bombenkopf", "atombombe"};
     };
+	
+	class tabakwaren {
+        name = "STR_Shop_Tabakwaren";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "tabak", "zigaretten"};
+    };
 
     class oil {
         name = "STR_Shops_Oil";
