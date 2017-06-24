@@ -54,7 +54,7 @@ class Licenses {
     class gun {
         variable = "gun";
         displayName = "STR_License_Gun";
-        price = 60000;
+        price = 80000;
         illegal = false;
         side = "civ";
     };
@@ -62,7 +62,7 @@ class Licenses {
     class dive {
         variable = "dive";
         displayName = "STR_License_Dive";
-        price = 14000;
+        price = 28000;
         illegal = false;
         side = "civ";
     };
@@ -70,891 +70,257 @@ class Licenses {
     class home {
         variable = "home";
         displayName = "STR_License_Home";
-        price = 500000;
+        price = 1500000;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class transport {
+        variable = "transport";
+        displayName = "STR_License_Transport";
+        price = 1000000;
         illegal = false;
         side = "civ";
     };
 
     //Processing Licenses
-    class oil {
-        variable = "license_civ_oil";
-        displayName = "STR_License_Oil";
-        price = 65000;
+	class pina {
+        variable = "pina";
+        displayName = "STR_License_Pina";
+        price = 10000;
         illegal = false;
         side = "civ";
     };
-
-	class oilu {
-        variable = "life_inv_oilu";
-        displayName = "STR_License_Oilu";
-        price = 65000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class oilp {
-        variable = "life_inv_oilp";
-        displayName = "STR_License_Oilp";
-        price = 65000;
-        illegal = false;
-        side = "civ";
-    };
-
-    class diamond {
-        variable = "diamond";
-        displayName = "STR_License_Diamond";
-        price = 80000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class diamondUncut {
-        variable = "life_inv_diamond";
-        displayName = "STR_License_DiamondUncut";
-        price = 80000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class diamondCut {
-        variable = "life_inv_diamondr";
-        displayName = "STR_License_DiamondCut";
-        price = 80000;
-        illegal = false;
-        side = "civ";
-    };
-
-    class salt {
-        variable = "salt";
-        displayName = "STR_License_Salt";
-        price = 55000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class saltr {
-        variable = "life_inv_saltr";
-        displayName = "STR_License_Saltr";
-        price = 55000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class saltv {
-        variable = "license_civ_salt";
-        displayName = "STR_License_Saltv";
-        price = 55000;
-        illegal = false;
-        side = "civ";
-    };
-
-    class sand {
-        variable = "sand";
-        displayName = "STR_License_Sand";
-        price = 40000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class sandv {
-        variable = "license_civ_sand";
-        displayName = "STR_License_Sandv";
-        price = 40000;
-        illegal = false;
-        side = "civ";
-    };
-
-    class iron {
-        variable = "license_civ_iron";
-        displayName = "STR_License_Iron";
-        price = 25000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class ironr {
-        variable = "life_inv_ironr";
-        displayName = "STR_License_Ironr";
-        price = 25000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class ironore {
-        variable = "life_inv_ironore";
-        displayName = "STR_License_Ironore";
-        price = 25000;
-        illegal = false;
-        side = "civ";
-    };
-
-    class copper {
-        variable = "license_civ_copper";
-        displayName = "STR_License_Copper";
-        price = 20000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class copperr {
-        variable = "life_inv_copperr";
-        displayName = "STR_License_Copperr";
-        price = 20000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class copperore {
-        variable = "life_inv_copperore";
-        displayName = "STR_License_Copperore";
-        price = 20000;
-        illegal = false;
-        side = "civ";
-    };
-
-    class cement {
-        variable = "license_civ_cement";
-        displayName = "STR_License_Cement";
-        price = 32000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class cementm {
-        variable = "life_inv_cement";
-        displayName = "STR_License_Cementm";
-        price = 32000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class rock {
-        variable = "life_inv_rock";
-        displayName = "STR_License_rock";
-        price = 32000;
-        illegal = false;
-        side = "civ";
-    };
-
-	//@todo: Brauchen wir medizinisches Marijuana?
-    /*class medmarijuana {
-        variable = "medmarijuana";
-        displayName = "STR_License_Medmarijuana";
+	
+	class kupfer {
+        variable = "kupfer";
+        displayName = "STR_License_Kupfer";
         price = 15000;
         illegal = false;
         side = "civ";
-    };*/
-
-	class transport {
-        variable = "license_civ_transport";
-        displayName = "STR_License_transport";
-        price = 7500000;
-        illegal = false;
-        side = "civ";
     };
-
-	class grapes {
-        variable = "license_civ_grapes";
-        displayName = "STR_License_Wine";
-        price = 35000;
-        illegal = false;
-        side = "civ";
-    };
-
-	class wine {
-        variable = "life_inv_wine";
-        displayName = "STR_License_Wein";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class grapesr {
-        variable = "life_inv_grapes";
-        displayName = "STR_License_Grapes";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class peach {
-        variable = "life_inv_peach";
-        displayName = "Pfirsich";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class lockpick {
-        variable = "life_inv_lockpick";
-        displayName = "Dietrich";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class redgull {
-        variable = "life_inv_redgull";
-        displayName = "RedBull";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class bacon {
-        variable = "life_inv_tbacon";
-        displayName = "Tactical Bacon";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class glass {
-        variable = "life_inv_glass";
-        displayName = "Glas";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class pickaxe {
-        variable = "life_inv_pickaxe";
-        displayName = "Spitzhacke";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class bottles {
-        variable = "life_inv_bottles";
-        displayName = "Glass Flaschen";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class apple {
-        variable = "life_inv_apple";
-        displayName = "Apfel";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class rabbit {
-        variable = "life_inv_rabbit";
-        displayName = "Hasenfleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class salema {
-        variable = "life_inv_salema";
-        displayName = "Salema Fleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class ornate {
-        variable = "life_inv_ornate";
-        displayName = "Aufwendiges Fleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class mackerel {
-        variable = "life_inv_mackerel";
-        displayName = "Makrele Fleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class tuna {
-        variable = "life_inv_tuna";
-        displayName = "Thunfisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class mullet {
-        variable = "life_inv_mullet";
-        displayName = "Meeräsche Fleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class catshark {
-        variable = "life_inv_catshark";
-        displayName = "Katzenhai Fleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class turtle {
-        variable = "life_inv_turtle";
-        displayName = "Turtle Meat";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class fishingpoles {
-        variable = "life_inv_fishingpoles";
-        displayName = "Angel";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class water {
-        variable = "life_inv_water";
-        displayName = "Wasserflasche";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class coffee {
-        variable = "life_inv_coffee";
-        displayName = "Kaffee";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class turtlesoup {
-        variable = "life_inv_turtlesoup";
-        displayName = "Schildkröten Suppe";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class donuts {
-        variable = "life_inv_donuts";
-        displayName = "Donuts";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class fuelE {
-        variable = "life_inv_fuelE";
-        displayName = "Benzinkanister (leer)";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class fuelF {
-        variable = "life_inv_fuelF";
-        displayName = "Benzinkanister";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class spikeStrip {
-        variable = "life_inv_spikeStrip";
-        displayName = "Nagelband";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class goldbar {
-        variable = "life_inv_goldbar";
-        displayName = "Gold Barren";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class battery {
-        variable = "life_inv_battery";
-        displayName = "Telefon Batterie";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class storageb {
-        variable = "life_inv_storage2";
-        displayName = "Kiste (groß)";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class storagel {
-        variable = "life_inv_storage1";
-        displayName = "Kiste (klein)";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class boltcutter {
-        variable = "life_inv_boltcutter";
-        displayName = "Bolzen Schneider";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class painkillers {
-        variable = "life_inv_painkillers";
-        displayName = "Schmerzmittel";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class zipties {
-        variable = "life_inv_zipties";
-        displayName = "Kabelbinder";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class storagesmall {
-        variable = "life_inv_storagesmall";
-        displayName = "Small Storage Box";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class storagebig {
-        variable = "life_inv_storagebig";
-        displayName = "Large Storage Box";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class mauer {
-        variable = "life_inv_mauer";
-        displayName = "Strassensperre";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class schranke {
-        variable = "life_inv_schranke";
-        displayName = "Schranke";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class blitzer {
-        variable = "life_inv_blitzer";
-        displayName = "Platzierbarer Blitzer";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class plastik {
-        variable = "life_inv_plastik";
-        displayName = "Plastik Absperrung";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class bunker {
-        variable = "life_inv_bunker";
-        displayName = "Bunkerfundament";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class flutlicht {
-        variable = "life_inv_flutlicht";
-        displayName = "Flutlicht";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class licht {
-        variable = "life_inv_licht";
-        displayName = "Straßenlicht";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class yeast {
-        variable = "life_inv_yeast";
-        displayName = "Hefe";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class rye {
-        variable = "life_inv_rye";
-        displayName = "Roggen";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class hops {
-        variable = "life_inv_hops";
-        displayName = "Hopfen";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class whiskey {
-        variable = "life_inv_whiskey";
-        displayName = "Destillierter Whiskey";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class beerp {
-        variable = "life_inv_beerp";
-        displayName = "Fermentiertes Bier";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class bottledwhiskey {
-        variable = "life_inv_bottledwhiskey";
-        displayName = "Abgefüllter Whiskey";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class bottledbeer {
-        variable = "life_inv_bottledbeer";
-        displayName = "Abgefülltes Beer";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class ziege_roh {
-        variable = "life_inv_ziege_roh";
-        displayName = "Rohes Ziegenfleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class hahn_roh {
-        variable = "life_inv_hahn_roh";
-        displayName = "Rohes Haehnchen";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class schaf_roh {
-        variable = "life_inv_schaf_roh";
-        displayName = "Rohes Lammfleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class hase_roh {
-        variable = "life_inv_hase_roh";
-        displayName = "Rohes Hasenfleisch";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class ziege_ver {
-        variable = "life_inv_ziege_ver";
-        displayName = "Ziegenschmorbraten";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class hahn_ver {
-        variable = "life_inv_hahn_ver";
-        displayName = "Brathaehnchen";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class schaf_ver {
-        variable = "life_inv_schaf_ver";
-        displayName = "Lammbraten";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class hase_ver {
-        variable = "life_inv_hase_ver";
-        displayName = "Hasenbraten";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class jagdmesser {
-        variable = "life_inv_jagdmesser";
-        displayName = "Jagdmesser";
-        price = 1;
-        illegal = false;
-        side = "civ";
-    };
-
-	class stiller {
-        variable = "license_civ_stiller";
-        displayName = "STR_License_stiller";
+	
+	class eisen {
+        variable = "eisen";
+        displayName = "STR_License_Eisen";
         price = 25000;
         illegal = false;
         side = "civ";
     };
-
-	class liquor {
-        variable = "license_civ_liquor";
-        displayName = "STR_License_liquor";
-        price = 135000;
+	
+	class platin {
+        variable = "platin";
+        displayName = "STR_License_Platin";
+        price = 55000;
         illegal = false;
         side = "civ";
     };
-
-	class bottler {
-        variable = "license_civ_bottler";
-        displayName = "STR_License_bottler";
-        price = 25000;
+	
+	class alu {
+        variable = "alu";
+        displayName = "STR_License_Aluminium";
+        price = 45000;
         illegal = false;
         side = "civ";
     };
-
-	class jagen {
-        variable = "license_civ_jagen";
-        displayName = "STR_License_jagen";
-        price = 400000;
+	
+	class marmor {
+        variable = "marmor";
+        displayName = "STR_License_Marmor";
+        price = 65000;
         illegal = false;
         side = "civ";
     };
-
-	class chefkoch {
-        variable = "license_civ_chefkoch";
-        displayName = "STR_License_chefkoch";
-        price = 150000;
+	
+	class obsidian {
+        variable = "obsidian";
+        displayName = "STR_License_Obsidian";
+        price = 75000;
         illegal = false;
         side = "civ";
     };
-
-    //Illegal Licenses
-    class cocaine {
-        variable = "license_civ_coke";
-        displayName = "STR_License_Cocaine";
-        price = 325000;
-        illegal = true;
+	
+    class oel {
+        variable = "oel";
+        displayName = "STR_License_Oel";
+        price = 85000;
+        illegal = false;
         side = "civ";
     };
-
-	class cocaineu {
-        variable = "life_inv_coke";
-        displayName = "STR_License_Cocaineu";
-        price = 325000;
-        illegal = true;
+	
+	class diesel {
+        variable = "diesel";
+        displayName = "STR_License_Diesel";
+        price = 120000;
+        illegal = false;
         side = "civ";
     };
-
-	class cocainep {
-        variable = "life_inv_cokep";
-        displayName = "STR_License_Cocainep";
-        price = 325000;
-        illegal = true;
+	
+	class glas {
+        variable = "glas";
+        displayName = "STR_License_Glas";
+        price = 18000;
+        illegal = false;
         side = "civ";
     };
-
-    class heroin {
-        variable = "license_civ_heroin";
-        displayName = "STR_License_Heroin";
-        price = 250000;
-        illegal = true;
+	
+	class salz {
+        variable = "salz";
+        displayName = "STR_License_Salz";
+        price = 28000;
+        illegal = false;
         side = "civ";
     };
-
-	class heroinu {
-        variable = "life_inv_heroinu";
-        displayName = "Unverarbeitetes Heroin";
-        price = 250000;
-        illegal = true;
+	
+	class bambus {
+        variable = "bambus";
+        displayName = "STR_License_Bambus";
+        price = 38000;
+        illegal = false;
         side = "civ";
     };
-
-	class heroinp {
-        variable = "life_inv_heroinp";
-        displayName = "Verarbeitetes Heroin";
-        price = 250000;
-        illegal = true;
+	
+	class dia {
+        variable = "dia";
+        displayName = "STR_License_Dia";
+        price = 140000;
+        illegal = false;
         side = "civ";
     };
-
-	class cannabis {
-        variable = "life_inv_cannabis";
-        displayName = "Kannabis";
+	
+	class juwelen {
+        variable = "juwelen";
+        displayName = "STR_License_Juwelen";
         price = 180000;
-        illegal = true;
+        illegal = false;
         side = "civ";
     };
-
-    class marijuana {
-        variable = "life_inv_marijuana";
-        displayName = "Marijuana";
-        price = 180000;
-        illegal = true;
+	
+	class kronen {
+        variable = "kronen";
+        displayName = "STR_License_Kronen";
+        price = 280000;
+        illegal = false;
         side = "civ";
     };
-
-	class marijuanat {
-        variable = "license_civ_marijuana";
-        displayName = "STR_License_Marijuana";
-        price = 180000;
-        illegal = true;
+	
+	class tabak {
+        variable = "tabak";
+        displayName = "STR_License_Zigaretten";
+        price = 28000;
+        illegal = false;
         side = "civ";
     };
-
+	
+	class tabak {
+        variable = "tabak";
+        displayName = "STR_License_Zigaretten";
+        price = 28000;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class boeller {
+        variable = "boeller";
+        displayName = "STR_License_Boeller";
+        price = 58000;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class weed {
+        variable = "weed";
+        displayName = "STR_License_Weed";
+        price = 48000;
+        illegal = false;
+        side = "civ";
+    };
+	
 	class meth {
-        variable = "license_civ_meth";
+        variable = "meth";
         displayName = "STR_License_Meth";
-        price = 200000;
-        illegal = true;
+        price = 68000;
+        illegal = false;
         side = "civ";
     };
-
-	class methu {
-        variable = "life_inv_methu";
-        displayName = "Unverarbeitetes Methamphetamine";
-        price = 200000;
-        illegal = true;
+	
+	class hero {
+        variable = "hero";
+        displayName = "STR_License_Hero";
+        price = 88000;
+        illegal = false;
         side = "civ";
     };
-
-	class methp {
-        variable = "life_inv_methp";
-        displayName = "Pures Methamphetamine";
-        price = 200000;
-        illegal = true;
+	
+	class koks {
+        variable = "koks";
+        displayName = "STR_License_Koks";
+        price = 215000;
+        illegal = false;
         side = "civ";
     };
-
-	class uranium {
-        variable = "license_civ_uranium";
-        displayName = "STR_License_uranium";
-        price = 1500000;
-        illegal = true;
+	
+	class korallen {
+        variable = "korallen";
+        displayName = "STR_License_Korallen";
+        price = 155000;
+        illegal = false;
         side = "civ";
     };
-
-	class uraniumore {
-        variable = "life_inv_uranium1";
-        displayName = "Uranerz";
-        price = 1500000;
-        illegal = true;
-        side = "civ";
-    };
-
-	class uraniumroh {
-        variable = "life_inv_uranium2";
-        displayName = "Rohes Uran";
-        price = 1500000;
-        illegal = true;
-        side = "civ";
-    };
-
-	class uraniumge {
-        variable = "life_inv_uranium3";
-        displayName = "Gereinigtes Uran";
-        price = 1500000;
-        illegal = true;
-        side = "civ";
-    };
-
-	class uraniumkon {
-        variable = "life_inv_uranium4";
-        displayName = "Uran Konzetrat";
-        price = 1500000;
-        illegal = true;
-        side = "civ";
-    };
-
+	
 	class uran {
-        variable = "life_inv_uranium";
-        displayName = "Uran";
-        price = 1500000;
-        illegal = true;
+        variable = "uran";
+        displayName = "STR_License_Uran";
+        price = 420000;
+        illegal = false;
         side = "civ";
     };
-
-	class morphium {
-        variable = "life_inv_morphium";
-        displayName = "Morphium";
-        price = 1500000;
-        illegal = true;
+	
+	class plutonium {
+        variable = "plutonium";
+        displayName = "STR_License_Plutonium";
+        price = 120000;
+        illegal = false;
         side = "civ";
     };
-
-	class kidney {
-        variable = "life_inv_kidney";
-        displayName = "Niere";
-        price = 90000000;
-        illegal = true;
+	
+	class brennstab {
+        variable = "brennstab";
+        displayName = "STR_License_Brennstab";
+        price = 200000;
+        illegal = false;
         side = "civ";
     };
-
-	class scalpel {
-        variable = "life_inv_scalpel";
-        displayName = "Scalpel";
-        price = 90000000;
-        illegal = true;
+	
+	class bombe {
+        variable = "bombe";
+        displayName = "STR_License_Bombe";
+        price = 265000;
+        illegal = false;
         side = "civ";
     };
-
-	class blastingcharge {
-        variable = "life_inv_blastingcharge";
-        displayName = "C4 Sprengstoff";
-        price = 50000;
-        illegal = true;
+	
+	class abombe {
+        variable = "abombe";
+        displayName = "STR_License_Abombe";
+        price = 1275000;
+        illegal = false;
         side = "civ";
     };
-
-	class defusekit {
-        variable = "life_inv_defusekit";
-        displayName = "C4 EntschärfungsKit";
-        price = 50000;
-        illegal = true;
+	
+	class implantat {
+        variable = "implantat";
+        displayName = "STR_License_Implantat";
+        price = 1275000;
+        illegal = false;
         side = "civ";
     };
 
 	class gang {
         variable = "license_civ_gang";
         displayName = "Gang Lizenz";
-        price = 50000;
-        illegal = true;
+        price = 100000;
+        illegal = false;
         side = "civ";
     };
 
@@ -962,15 +328,7 @@ class Licenses {
         variable = "license_civ_gang_mtse";
         displayName = "MTSE Gangmitglied";
         price = 1;
-        illegal = true;
-        side = "civ";
-    };
-
-	class gangbk {
-        variable = "license_civ_gang_bk";
-        displayName = "BK Gangmitglied";
-        price = 1;
-        illegal = true;
+        illegal = false;
         side = "civ";
     };
 
@@ -978,7 +336,7 @@ class Licenses {
         variable = "license_civ_gang_bt";
         displayName = "BT Gangmitglied";
         price = 1;
-        illegal = true;
+        illegal = false;
         side = "civ";
     };
 
@@ -986,7 +344,7 @@ class Licenses {
         variable = "license_civ_gang_raize";
         displayName = "RaiZe Gangmitglied";
         price = 1;
-        illegal = true;
+        illegal = false;
         side = "civ";
     };
 
@@ -994,7 +352,7 @@ class Licenses {
         variable = "license_civ_gang_adb";
         displayName = "ADB Gangmitglied";
         price = 1;
-        illegal = true;
+        illegal = false;
         side = "civ";
     };
 
@@ -1002,23 +360,31 @@ class Licenses {
         variable = "license_civ_gang_twl";
         displayName = "TWL Gangmitglied";
         price = 1;
-        illegal = true;
+        illegal = false;
         side = "civ";
     };
 
     class rebel {
-        variable = "license_civ_rebel";
+        variable = "rebel";
         displayName = "STR_License_Rebel";
         price = 2750000;
-        illegal = true;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class pro_rebel {
+        variable = "pro_rebel";
+        displayName = "STR_License_Rebel";
+        price = 2750000;
+        illegal = false;
         side = "civ";
     };
 
-	class eliterebel {
-        variable = "license_civ_elite";
+	class elite {
+        variable = "elite";
         displayName = "STR_License_ERebel";
-        price = 90000000;
-        illegal = true;
+        price = 9000;
+        illegal = false;
         side = "civ";
     };
 
@@ -1039,21 +405,14 @@ class Licenses {
         side = "cop";
     };
 
-	class swat {
-        variable = "license_cop_swat";
-        displayName = "STR_License_Swat";
-        price = 3500;
-        illegal = false;
-        side = "cop";
-    };
-
 	class revive {
         variable = "revive";
         displayName = "STR_License_revive";
-        price = 500000;
+        price = 200000;
         illegal = false;
         side = "cop";
     };
+	
 
     //Medic Licenses
     class mAir {
