@@ -8492,7 +8492,7 @@
         </Key>
     </Package>
     <Package name="Process_Action">
-        <Key ID="STR_Process_Oil">
+        <Key ID="STR_Process_oel">
             <Original>Processing Oil</Original>
             <Czech>zpracování ropy</Czech>
             <Spanish>Procesando Petróleo</Spanish>
@@ -8503,7 +8503,7 @@
             <Portuguese>Processando Petróleo</Portuguese>
             <Polish>Rafinacja ropy</Polish>
         </Key>
-        <Key ID="STR_Process_Diamond">
+        <Key ID="STR_Process_dia">
             <Original>Cutting Diamonds</Original>
             <Czech>řezání diamantů</Czech>
             <Spanish>Cortando Diamantes</Spanish>
@@ -8514,7 +8514,7 @@
             <Portuguese>Lapidando Diamante</Portuguese>
             <Polish>Szlif diamentów</Polish>
         </Key>
-        <Key ID="STR_Process_Heroin">
+        <Key ID="STR_Process_hero">
             <Original>Processing Opium</Original>
             <Czech>zpracování Opium</Czech>
             <Spanish>Procesando Opio</Spanish>
@@ -8525,7 +8525,7 @@
             <Portuguese>Processando Heroína</Portuguese>
             <Polish>Oczyszczanie heroiny</Polish>
         </Key>
-        <Key ID="STR_Process_Copper">
+        <Key ID="STR_Process_kupfer">
             <Original>Casting Copper Ingots</Original>
             <Czech>Casting měděných ingotů</Czech>
             <Spanish>Fundiendo Lingotes de Cobre</Spanish>
@@ -8536,7 +8536,7 @@
             <Portuguese>Processando Cobre</Portuguese>
             <Polish>Wytop miedzi</Polish>
         </Key>
-        <Key ID="STR_Process_Iron">
+        <Key ID="STR_Process_eisen">
             <Original>Casting Iron Ingots</Original>
             <Czech>Litiny ingoty</Czech>
             <Spanish>Fundiendo Lingotes de Hierro</Spanish>
@@ -8547,7 +8547,7 @@
             <Portuguese>Processando Ferro</Portuguese>
             <Polish>Wytop żelaza</Polish>
         </Key>
-        <Key ID="STR_Process_Sand">
+        <Key ID="STR_Process_glas">
             <Original>Processing Sand</Original>
             <Czech>zpracování Písek</Czech>
             <Spanish>Procesando Arena</Spanish>
@@ -8558,7 +8558,7 @@
             <Portuguese>Processando Areia</Portuguese>
             <Polish>Topienie piasku</Polish>
         </Key>
-        <Key ID="STR_Process_Salt">
+        <Key ID="STR_Process_salz">
             <Original>Processing Salt</Original>
             <Czech>zpracování Salt</Czech>
             <Spanish>Procesando Sal</Spanish>
@@ -8569,7 +8569,7 @@
             <Portuguese>Refinando Sal</Portuguese>
             <Polish>Warzenie soli</Polish>
         </Key>
-        <Key ID="STR_Process_Cocaine">
+        <Key ID="STR_Process_koks">
             <Original>Processing Coca Leaves</Original>
             <Czech>Zpracování listů koky</Czech>
             <Spanish>Procesando Hojas de Coca</Spanish>
@@ -8580,7 +8580,7 @@
             <Portuguese>Processando Cocaína</Portuguese>
             <Polish>Oczyszczanie kokainy</Polish>
         </Key>
-        <Key ID="STR_Process_Marijuana">
+        <Key ID="STR_Process_weed">
             <Original>Processing Marijuana</Original>
             <Czech>zpracování Marihuana</Czech>
             <Spanish>Procesando Marihuana</Spanish>
@@ -8591,16 +8591,258 @@
             <Portuguese>Processando Maconha</Portuguese>
             <Polish>Suszenie marihuany</Polish>
         </Key>
-        <Key ID="STR_Process_Cement">
-            <Original>Mixing Cement</Original>
-            <Czech>Míchání Cement</Czech>
-            <Spanish>Mezclando Cemento</Spanish>
+        <Key ID="STR_Process_marmor">
+            <Original>Marmor schleifen</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <German>Zement wird gemischt</German>
-            <French>Mélange de ciment</French>
-            <Italian>Processando Cemento</Italian>
-            <Portuguese>Misturando Cimento</Portuguese>
-            <Polish>Mielenie cementu</Polish>
+            <German>Marmor schleifen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_pina">
+            <Original>Mixing Pina Colada</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Pina Colada mischen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_platin">
+            <Original>Processing Platin</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Platin verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_alu">
+            <Original>Processing Aluminium</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Aluminium verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_obsidian">
+            <Original>Processing Lavarock</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Lavagestein verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_diesel">
+            <Original>Processing oil</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Öl verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_bambus">
+            <Original>Processing bambus</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bambus verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_juwelen">
+            <Original>Processing some rocks</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Schürfgut verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_kronen">
+            <Original>Crafting crowns</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Platinkronen herstellen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_tabak">
+            <Original>Processing tobacco</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Tabak verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_boeller">
+            <Original>Processing gunpowder</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Schwarzpulver verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_meth">
+            <Original>Processing meth</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Meth verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_korallen">
+            <Original>Processing coralls</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Korallen verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_uranOre">
+            <Original>Processing uranore</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uranerz verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_uranI">
+            <Original>Processing uran I</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran I verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_uranII">
+            <Original>Processing uran II</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran II verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_uranIII">
+            <Original>Processing uran III</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran III verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Plutonium">
+            <Original>Processing uran IV</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Uran IV verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Brennstab">
+            <Original>Processing Plutonium</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Plutonium verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_bombe">
+            <Original>Making Warhead</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bombenkopf herstellen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_abombe">
+            <Original>Making nuke</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Atombombe herstellen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Mikro_Prozessor">
+            <Original>Making cpu</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Mikroprozessor herstellen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Implantat">
+            <Original>Making Implantat</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Implantat herstellen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Process_Stay">
             <Original>You need to stay within 10m to process.</Original>
