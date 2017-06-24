@@ -7,7 +7,7 @@
 	Arma AntiHack & AdminTools - infiSTAR.de
 */
 /* *******************Developer : infiSTAR (infiSTAR23@gmail.com)******************* */
-/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2016 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 diag_log '<infiSTAR.de> VERSION: 20-05-2017 13-46-20 infiSTAR.de AHAT (v0249)';
 comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
@@ -318,7 +318,7 @@ _verybadStrings =
 	'gggg_eeee_ffff','mord all','teleport all','__byass','_altislifeh4x','antifrezze','ownscripts','ownscripted','mesnu',
 	'mystic_','init re','init life re','spoody','gef_','throx_','_adasaasasa','_dsfnsjf','cheatmenu','in54nity','markad','fuck_me_','_v4fin',
 	'a3randvar','infinite ammo','player markers','+ _code +',
-	'i can break these cuffs','give 100k','kill all','grimbae','pony menu','35sp','lyštîc mêñu',
+	'i can break these cuffs','give 100k','kill all','grimbae','pony menu','35sp','lyï¿½tï¿½c mï¿½ï¿½u',
 	'insert script','3x3cutor','c4sh'
 ];
 _blacklistedVariables append [
@@ -2554,7 +2554,7 @@ else
 		player say3D ''babycry'';
 	};
 };
-if(_ltxt in [''killme'',''/killme'',''kill me'',''/kill me'',''/suicide'',''suicide''])then{
+/*if(_ltxt in [''killme'',''/killme'',''kill me'',''/kill me'',''/suicide'',''suicide''])then{
 	(findDisplay 24) closeDisplay 0;
 	_unit = player;
 	{_unit setHitPointDamage [_x,1];} forEach [''HitBody'',''HitHead''];
@@ -2563,7 +2563,7 @@ if(_ltxt in [''killme'',''/killme'',''kill me'',''/kill me'',''/suicide'',''suic
 		if(isNull _this)exitWith{};
 		if(local _this)then{_this setPos [0,0,100];};
 	};
-};
+};*/
 if(_ltxt find ''infishit'' > -1)then{
 	(findDisplay 24) closeDisplay 0;
 	_log = format[''BadText: %1 [infishit]'',_txt];
@@ -5634,5 +5634,5 @@ diag_log format['<infiSTAR.de> %1 - AntiHack loaded!',time];
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2016 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */
