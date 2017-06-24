@@ -76,6 +76,7 @@ class CfgRemoteExec {
 		F(life_fnc_AAN,CLIENT)
 		F(life_fnc_execJailTimer,CLIENT)
 		F(life_fnc_Lizenzsehen,CLIENT)
+		F(life_fnc_alkoholdrugtester,CLIENT)
 
 
         /* Server only functions */

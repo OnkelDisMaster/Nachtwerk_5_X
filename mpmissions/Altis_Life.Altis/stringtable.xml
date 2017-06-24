@@ -5068,6 +5068,39 @@
         </Key>
     </Package>
     <Package name="MISC_Strings">
+        <Key ID="STR_MISC_AlreadyDrinking">
+            <Original>Du trinkst bereits geiles Zeug...</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German></German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_MISC_WestIndNoNo">
+            <Original>Im Dienst wird nicht getrunken</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German></German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_pInAct_Breathalyzer">
+            <Original>Alkohol-Drogentest</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German></German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_MISC_TooMuch">
             <Original>You tried to give %1 %2 %3 but they couldn't hold that so it was returned.</Original>
             <Czech>Pokusili jste se dát% %1 %2 3, ale nemohli si myslí, že tak to bylo se vrátil.</Czech>

@@ -176,6 +176,7 @@ class Life_Client_Core {
         class copSiren2 {};
 		class copLoadoutCall {};
 		class copLoadoutLoad {};
+		class alkoholdrugtester {};
     };
 
     class Dialog_Controls {
