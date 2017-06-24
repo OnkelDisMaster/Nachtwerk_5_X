@@ -293,7 +293,7 @@ class VirtualItems {
     };
 	class bunker {
         variable = "bunker";
-        displayName = ""Bunker"";
+        displayName = "Bunker";
         weight = 15;
         buyPrice = 2500;
         sellPrice = 1200;
