@@ -292,8 +292,8 @@ class VirtualItems {
         icon = "icons\ico_spikeStrip.paa";
     };
 	class bunker {
-        variable = ""bunker"";
-        displayName = "Bunker";
+        variable = "bunker";
+        displayName = ""Bunker"";
         weight = 15;
         buyPrice = 2500;
         sellPrice = 1200;
