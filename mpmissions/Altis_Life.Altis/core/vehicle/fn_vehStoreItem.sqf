@@ -30,6 +30,15 @@ _Truck = TypeOf life_trunk_vehicle;
 _FuelStuff = ["oilUnprocessed","oilProcessed","oil_unprocessed","oil_processed"]; //Which Items can be stored in?
 _FuelTrucks = ["C_Van_01_fuel_F","B_Truck_01_fuel_F","O_Truck_02_fuel_F","O_Truck_03_fuel_F"]; //Fuel Trucks, who are allowed to carry fuel
 
+
+switch (true) do
+{
+case ((_ctrl in _FuelStuff) && (_Truck in _FuelTrucks)): {life_TankLaster = 1}; //Fuel in FuelTruck -> Allowed
+case (!(_ctrl in _FuelStuff) && !(_Truck in _FuelTrucks)): {life_TankLaster = 2}; //NonFuel in NonFuelTruck -> Allowed
+case (!(_ctrl in _FuelStuff) && (_Truck in _FuelTrucks)): {life_TankLaster = 3}; //NonFuel in FuelTruck -> Nope
+case ((_ctrl in _FuelStuff) && !(_Truck in _FuelTrucks)): {life_TankLaster = 4}; //Fuel in NonFuelTruck -> Nope!
+};
+
 if (life_TankLaster isEqualTo 3) exitWith {hint "Du kannst nur Öl oder Kerosin in einen Tanklaster füllen!)"};
 if (life_TankLaster isEqualTo 4) exitWith {hint "Du kannst Öl oder Kerosin NUR in einen Tanklaster füllen!)";};
 
