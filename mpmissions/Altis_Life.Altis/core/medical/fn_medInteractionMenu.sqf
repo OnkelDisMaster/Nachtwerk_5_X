@@ -14,7 +14,7 @@ private["_display","_unit","_curTarget","_Btn1","_Btn2","_Btn3"];
 
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
-_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+//_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 
 if(isNull _curTarget) exitWith {closeDialog 0;};
 
@@ -30,7 +30,7 @@ _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
 _Btn3 = _display displayCtrl Btn3;
 
-life_pInact_curTarget = _unit;
+life_pInact_curTarget = _curTarget;
 
 _Btn1 ctrlEnable true;
 _Btn1 ctrlSetText localize "STR_pInAct_TicketBtn";
