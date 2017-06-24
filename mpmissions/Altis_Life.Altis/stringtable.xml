@@ -6727,11 +6727,11 @@
             <Polish></Polish>
         </Key>
 		<Key ID="STR_Item_Lava">
-            <Original>Lava</Original>
+            <Original>Lavagestein</Original>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Lava</German>
+            <German>Lavagestein</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -6743,28 +6743,6 @@
             <Spanish></Spanish>
             <Russian></Russian>
             <German>Obsidian</German>
-            <French></French>
-            <Italian></Italian>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
-		<Key ID="STR_Item_Holz">
-            <Original>Wood</Original>
-            <Czech></Czech>
-            <Spanish></Spanish>
-            <Russian></Russian>
-            <German>Holz</German>
-            <French></French>
-            <Italian></Italian>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
-		<Key ID="STR_Item_Moebel">
-            <Original>Moebel</Original>
-            <Czech></Czech>
-            <Spanish></Spanish>
-            <Russian></Russian>
-            <German>Moebel</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -7160,6 +7138,325 @@
         <Key ID="STR_License_Oil">
             <Original>Oil Processing</Original>
             <German>Ölverarbeitung</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Transport">
+            <Original>Transport License</Original>
+            <German>Transporteur Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Pina">
+            <Original>Pina Colada License</Original>
+            <German>Pina Colada Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Kupfer">
+            <Original>Copper License</Original>
+            <German>Kupfer Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Eisen">
+            <Original>Iron License</Original>
+            <German>Iron Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Platin">
+            <Original>Platin License</Original>
+            <German>Platin Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Aluminium">
+            <Original>Aluminium License</Original>
+            <German>Aluminium Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Aluminium">
+            <Original>Marble License</Original>
+            <German>Marmor Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Obsidian">
+            <Original>Obsidian License</Original>
+            <German>Obsidian Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Oel">
+            <Original>Oil License</Original>
+            <German>Öl Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Diesel">
+            <Original>Diesel License</Original>
+            <German>Diesel Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Glas">
+            <Original>Glass License</Original>
+            <German>Glas Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Salz">
+            <Original>Salt License</Original>
+            <German>Salz Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Bambus">
+            <Original>Bambus License</Original>
+            <German>Bambus Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Dia">
+            <Original>Diamond License</Original>
+            <German>Diamant Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Juwelen">
+            <Original>Juwelen License</Original>
+            <German>Juwelen Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Kronen">
+            <Original>Juwelen License</Original>
+            <German>Juwelen Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Zigaretten">
+            <Original>Zigarrets License</Original>
+            <German>Zigaretten Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Boeller">
+            <Original>Explosive License</Original>
+            <German>Polenböller Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Weed">
+            <Original>Weed License</Original>
+            <German>Marijuana Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Meth">
+            <Original>Meth License</Original>
+            <German>Meth Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Hero">
+            <Original>Heroin License</Original>
+            <German>Heroin Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Koks">
+            <Original>Cocain License</Original>
+            <German>Kokain Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Korallen">
+            <Original>Korallen License</Original>
+            <German>Korallen Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Uran">
+            <Original>Uranium License</Original>
+            <German>Uran Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Plutonium">
+            <Original>Plutonium License</Original>
+            <German>Plutonium Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Brennstab">
+            <Original>Brennstab License</Original>
+            <German>Brennstabherstellungs Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Bombe">
+            <Original>Warhead-Building License</Original>
+            <German>Bombenkopfbau Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Abombe">
+            <Original>Nuke-Building License</Original>
+            <German>Atombombenbau Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Implantat">
+            <Original>Implantat License</Original>
+            <German>Implantat Lizenz</German>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
