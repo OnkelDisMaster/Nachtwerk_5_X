@@ -5,8 +5,8 @@
 //Wenn man mehr als 4m entfernt vom Spieler ist gehts nicht!
 if(player distance cursorTarget > 4) exitWith {};
 
-#define Btn1 37450
-#define Btn2 37451
+#define Btn1 37458
+#define Btn2 37459
 #define Title 37401
 
 private["_display","_unit","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10"];
