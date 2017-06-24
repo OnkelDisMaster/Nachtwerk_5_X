@@ -13,7 +13,7 @@ class VirtualShops {
         side = "";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "holz", "moebel", "rabbit", "apple", "peach", "ananas", "kokosnuss", "bananen", "apfelsaft", "pfirsichsaft", "ananassaft", "kokosnussmilch", "bananensaft", "pina_colada", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "peach", "ananas", "kokosnuss", "bananen", "apfelsaft", "pfirsichsaft", "ananassaft", "kokosnussmilch", "bananensaft", "pina_colada", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class med_market {
@@ -85,7 +85,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "schwarzpulver", "polen_boeller", "tabak", "zigaretten", "zigaretten_stangen", "korallen", "korallen_ketten" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "schwarzpulver", "polen_boeller", "tabak", "zigaretten", "korallen", "korallen_ketten" };
     };
 	
 	class terrorkeller {

@@ -33,7 +33,7 @@ class Clothing {
             { "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
             { "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
             { "U_NikosAgedBody", "Casual Wears", 5000, { "", "", -1 } },
-			{ "U_C_Poor_2","Hello Kitty", "Casual Wears", 5000, { "", "", -1 } }
+			{ "U_C_Poor_2","Hello Kitty", 5000, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -118,17 +118,17 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_Rangemaster","Praktikant", 25, { "", "", -1 } },
-            { "U_B_SpecopsUniform_sgg", "Beamten Uniform", "", 1, { "life_coplevel", "SCALAR", 2 } },
-            { "U_B_Wetsuit","Taucher Anzug", "", 1, { "life_coplevel", "SCALAR", 2 } },
+            { "U_Rangemaster","Praktikant", 1, { "", "", -1 } },
+            { "U_B_SpecopsUniform_sgg", "Beamten Uniform", 1, { "life_coplevel", "SCALAR", 2 } },
+            { "U_B_Wetsuit","Taucher Anzug", 1, { "life_coplevel", "SCALAR", 2 } },
 			{ "U_B_CombatUniform_mcam_vest", "", 1, { "life_coplevel", "SCALAR", 5 } },
 			{ "U_B_FullGhillie_lsh", "", 1, { "life_coplevel", "SCALAR", 7 } },
 			{ "U_B_FullGhillie_sard", "", 1, { "life_coplevel", "SCALAR", 7 } },
 			{ "U_B_FullGhillie_ard", "", 1, { "life_coplevel", "SCALAR", 7 } },
-			{ "U_B_CombatUniform_mcam","SEK-Uniform", "", 1, { "life_coplevel", "SCALAR", 9 } },
-			{ "U_B_GEN_Soldier_F","Zivile-SEK-Uniform", "", 1, { "life_coplevel", "SCALAR", 9 } },
-			{ "U_B_CombatUniform_mcam_worn","SEK-Leitungs-Uniform", "", 1, { "life_coplevel", "SCALAR", 10 } },
-            { "U_B_GEN_Commander_F","Zivile-Leitungs-Uniform", "", 1, { "life_coplevel", "SCALAR", 10 } }
+			{ "U_B_CombatUniform_mcam","SEK-Uniform", 1, { "life_coplevel", "SCALAR", 9 } },
+			{ "U_B_GEN_Soldier_F","Zivile-SEK-Uniform", 1, { "life_coplevel", "SCALAR", 9 } },
+			{ "U_B_CombatUniform_mcam_worn","SEK-Leitungs-Uniform", 1, { "life_coplevel", "SCALAR", 10 } },
+            { "U_B_GEN_Commander_F","Zivile-Leitungs-Uniform", 1, { "life_coplevel", "SCALAR", 10 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -138,7 +138,7 @@ class Clothing {
 			{ "H_HelmetB_light_black", "", 1, { "life_coplevel", "SCALAR", 3 } },
             { "H_Beret_blk", "", 1, { "life_coplevel", "SCALAR", 5 } },
 			{ "H_Beret_blk_POLICE", "", 1, { "life_coplevel", "SCALAR", 5 } },
-			{ "H_HelmetB_black","Schwerer Helm", "", 1, { "life_coplevel", "SCALAR", 5 } },
+			{ "H_HelmetB_black","Schwerer Helm", 1, { "life_coplevel", "SCALAR", 5 } },
 			{ "H_Beret_02", "", 1, { "life_coplevel", "SCALAR", 6 } },
 			{ "H_HelmetIA", "", 1, { "life_coplevel", "SCALAR", 6 } },
 			{ "H_Beret_Colonel", "", 1, { "life_coplevel", "SCALAR", 7 } },
@@ -146,7 +146,7 @@ class Clothing {
 			{ "H_CrewHelmetHeli_B", "", 1, { "life_coplevel", "SCALAR", 8 } },
 			{ "H_HelmetSpecB_blk", "", 1, { "life_coplevel", "SCALAR", 8 } },
 			{ "H_StrawHat", "", 1, { "life_coplevel", "SCALAR", 12 } },
-            { "H_Booniehat_mcamo", "", 120, { "life_coplevel", "SCALAR", 1 } }
+            { "H_Booniehat_mcamo", "", 1, { "life_coplevel", "SCALAR", 1 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
@@ -171,10 +171,10 @@ class Clothing {
             { "NONE", "Remove Vest", 0, { "", "", -1 } },
             { "V_Rangemaster_belt", "", 1, { "", "", -1 } },
             { "V_RebreatherB", "", 1, { "life_coplevel", "SCALAR", 2 } },
-            { "V_TacVest_blk_POLICE","Polizeiweste", "", 1, { "life_coplevel", "SCALAR", 2 } },
-			{ "V_TacVestIR_blk","Einsatzweste", "", 1, { "life_coplevel", "SCALAR", 4 } },
-			{ "V_PlateCarrier1_blk","Schwere Weste", "", 1, { "life_coplevel", "SCALAR", 6 } },
-			{ "V_PlateCarrierSpec_blk","SEK Weste", "", 1, { "life_coplevel", "SCALAR", 9 } }
+            { "V_TacVest_blk_POLICE","Polizeiweste", 1, { "life_coplevel", "SCALAR", 2 } },
+			{ "V_TacVestIR_blk","Einsatzweste", 1, { "life_coplevel", "SCALAR", 4 } },
+			{ "V_PlateCarrier1_blk","Schwere Weste", 1, { "life_coplevel", "SCALAR", 6 } },
+			{ "V_PlateCarrierSpec_blk","SEK Weste", 1, { "life_coplevel", "SCALAR", 9 } }
 			};
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } },

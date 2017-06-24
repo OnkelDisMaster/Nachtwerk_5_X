@@ -25,11 +25,13 @@ switch _loadout do
 	player addBackpack "B_Bergen_dgtl_F";
 	player addHeadgear "H_Cap_police";
 	// TAZER
-	player addWeapon "hgun_Rook40_snds_F";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
+	player addWeapon "hgun_Pistol_heavy_01_snds_F",
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addItem "optic_MRD";
 	// SCHARFE WAFFE
 	player addWeapon "arifle_MX_Black_Hamr_pointer_F";
 	player addMagazine "30Rnd_65x39_caseless_mag";
@@ -74,11 +76,13 @@ switch _loadout do
 	player addBackpack "B_Bergen_dgtl_F";
 	player addHeadgear "H_Cap_police";
 	// TAZER
-	player addWeapon "hgun_Rook40_snds_F";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
+	player addWeapon "hgun_Pistol_heavy_01_snds_F",
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addItem "optic_MRD";
 	// SCHARFE WAFFE
 	player addWeapon "SMG_05_F";
 	player addMagazine "30Rnd_9x21_Mag_SMG_02";
@@ -123,11 +127,13 @@ switch _loadout do
 	player addBackpack "B_Bergen_dgtl_F";
 	player addHeadgear "H_Watchcap_blk";
 	// TAZER
-	player addWeapon "hgun_Rook40_snds_F";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
+	player addWeapon "hgun_Pistol_heavy_01_snds_F",
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addItem "optic_MRD";
 	// SCHARFE WAFFE
 	player addWeapon "arifle_MX_GL_Black_Hamr_pointer_F";
 	player addMagazine "30Rnd_65x39_caseless_mag";
@@ -182,10 +188,13 @@ switch _loadout do
 	player addBackpack "B_Bergen_dgtl_F";
 	player addHeadgear "H_Watchcap_blk";
 	// TAZER
-	player addWeapon "hgun_Rook40_snds_F";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
+	player addWeapon "hgun_Pistol_heavy_01_snds_F",
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addItem "optic_MRD";
 	// SCHARFE WAFFE
 	player addWeapon "arifle_MX_SW_Black_F";
 	player addMagazine "100Rnd_65x39_caseless_mag";
@@ -227,10 +236,13 @@ switch _loadout do
 	player addBackpack "B_Bergen_dgtl_F";
 	player addHeadgear "H_Beret_blk_POLICE";
 	// TAZER
-	player addWeapon "hgun_Rook40_snds_F";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
-	player addMagazine "30Rnd_9x21_Mag";
+	player addWeapon "hgun_Pistol_heavy_01_snds_F",
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addMagazine "11Rnd_45ACP_Mag";
+	player addItem "optic_MRD";
 	// SCHARFE WAFFE
 	player addWeapon "arifle_SPAR_02_blk_F";
 	player addMagazine "150Rnd_556x45_Drum_Mag_F";
@@ -272,11 +284,13 @@ switch _loadout do
 		player addBackpack "B_Bergen_dgtl_F";
 		player addHeadgear "H_Beret_02";
 		// TAZER
-		player addWeapon "hgun_Rook40_snds_F";
-		player addMagazine "30Rnd_9x21_Mag";
-		player addMagazine "30Rnd_9x21_Mag";
-		player addMagazine "30Rnd_9x21_Mag";
-		player addMagazine "30Rnd_9x21_Mag";
+		player addWeapon "hgun_Pistol_heavy_01_snds_F",
+		player addMagazine "11Rnd_45ACP_Mag";
+		player addMagazine "11Rnd_45ACP_Mag";
+		player addMagazine "11Rnd_45ACP_Mag";
+		player addMagazine "11Rnd_45ACP_Mag";
+		player addMagazine "11Rnd_45ACP_Mag";
+		player addItem "optic_MRD";
 		// SCHARFE WAFFE
 		player addWeapon "arifle_CTARS_blk_F";
 		player addMagazine "100Rnd_580x42_Mag_F";
@@ -326,6 +340,7 @@ switch _loadout do
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
+	player addItem "optic_MRD";
 	// SCHARFE WAFFE
 	player addWeapon "arifle_SPAR_03_blk_F";
 	player addMagazine "20Rnd_762x51_Mag";
@@ -381,6 +396,7 @@ switch _loadout do
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
+	player addItem "optic_MRD";
 	// SCHARFE WAFFE
 	player addWeapon "arifle_AK12_GL_F";
 	player addMagazine "30Rnd_762x39_Mag_F";
@@ -411,7 +427,6 @@ switch _loadout do
 	player addItem "NVGoggles_OPFOR";
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_ERCO_blk_F";
-	player addItem "optic_MRD";
 	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
@@ -582,7 +597,6 @@ case "Zafir Loadout":{
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_MRCO";
 	player addItem "optic_MRD";
-	player addItem "muzzle_snds_H";
 	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
@@ -593,7 +607,6 @@ case "Zafir Loadout":{
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
-	player addItem "muzzle_snds_B";
 	
   [] call life_fnc_saveGear;
 };	
