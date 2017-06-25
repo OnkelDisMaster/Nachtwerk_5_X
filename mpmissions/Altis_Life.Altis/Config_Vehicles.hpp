@@ -84,7 +84,6 @@ class CarShops {
 			{ "O_T_LSV_02_unarmed_arid_F", { "", "", -1 } },
 			{ "B_MRAP_01_F", { "", "", -1 } },
 			{ "O_MRAP_02_F", { "", "", -1 } },
-			{ "O_MRAP_02_hmg_F", { "", "", -1 } },
 			{ "C_Plane_Civil_01_F", { "", "", -1 } },
 			{ "O_Plane_CAS_02_F", { "", "", -1 } },
 			{ "B_Heli_Light_01_F", { "", "", -1 } },
@@ -101,7 +100,6 @@ class CarShops {
         vehicles[] = {
             { "O_T_LSV_02_unarmed_ghex_F", { "", "", -1 } },
             { "O_T_MRAP_02_ghex_F", { "", "", -1 } },
-            { "O_T_MRAP_02_hmg_ghex_F", { "", "", -1 } },
 			{ "O_T_Truck_03_transport_ghex_F", { "", "", -1 } },
 			{ "O_T_Truck_03_covered_ghex_F", { "", "", -1 } },
 			{ "O_T_Truck_03_fuel_ghex_F", { "", "", -1 } },

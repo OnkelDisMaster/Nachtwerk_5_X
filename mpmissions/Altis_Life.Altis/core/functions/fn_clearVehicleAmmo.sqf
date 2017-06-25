@@ -20,10 +20,105 @@ if (_veh isEqualTo "B_Boat_Armed_01_minigun_F") then {
 };
 */
 
+
+
+
 switch (_veh) do
 {	
-	//Jet A-10
 	case "O_Plane_CAS_02_F":
+	{
+		//Remove ammo and Flaires
+	/*	_vehicle setVehicleAmmo 0;
+		_vehicle setDamage 0;
+		_vehicle allowDamage true;
+		_vehicle setAmmoCargo 0;
+        _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
+		_vehicle setRepairCargo 0; // Repariert
+	*/	
+		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+
+		systemChat "Waffen entfernt und Repariert";
+    };
+	
+	case "I_Plane_Fighter_04_F":
+	{
+		//Remove ammo and Flaires
+		_vehicle setVehicleAmmo 0;
+		_vehicle setDamage 0;
+		_vehicle allowDamage true;
+		_vehicle setAmmoCargo 0;
+        _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
+		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+
+		systemChat "Waffen entfernt und Repariert";
+    };
+	
+	case "O_Plane_Fighter_02_F":
+	{
+		//Remove ammo and Flaires
+		_vehicle setVehicleAmmo 0;
+		_vehicle setDamage 0;
+		_vehicle allowDamage true;
+		_vehicle setAmmoCargo 0;
+        _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
+		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
+		
+		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+
+		systemChat "Waffen entfernt und Repariert";
+    };
+	
+	case "B_Plane_Fighter_01_F":
 	{
 		//Remove ammo and Flaires
 		_vehicle setVehicleAmmo 0;
@@ -86,10 +181,17 @@ switch (_veh) do
 		_vehicle setAmmoCargo 0;
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[0]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[0]];
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[0]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[0]];
+		
 		systemChat "Waffen entfernt und Repariert";
     };
 	
-/*	//GhostHawk (Khaki)
+	//GhostHawk (Khaki)
 	case "B_CTRG_Heli_Transport_01_tropic_F":
     {
         //Remove ammo and Flaires
@@ -99,11 +201,18 @@ switch (_veh) do
 		_vehicle setAmmoCargo 0;
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[0]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[0]];
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[0]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[0]];
+		
 		systemChat "Waffen entfernt und Repariert";
     };
-*/
-	//Mohawk
-	case "I_Heli_Transport_02_F":
+	
+	//GhostHawk (Sand)
+	case "B_CTRG_Heli_Transport_01_sand_F":
     {
         //Remove ammo and Flaires
         _vehicle setVehicleAmmo 0;
@@ -112,6 +221,13 @@ switch (_veh) do
 		_vehicle setAmmoCargo 0;
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[0]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[0]];
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[0]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[0]];
+		
 		systemChat "Waffen entfernt und Repariert";
     };
 	
@@ -125,6 +241,15 @@ switch (_veh) do
 		_vehicle setAmmoCargo 0;
 		_vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["gatling_30mm_VTOL_02",[0]];
+		_vehicle removeMagazinesTurret ["gatling_30mm_VTOL_02",[0]];
+		
+		_vehicle removeWeaponTurret ["missiles_SCALPEL",[0]];
+		_vehicle removeMagazinesTurret ["missiles_SCALPEL",[0]];
+		
+		_vehicle removeWeaponTurret ["rockets_Skyfire",[0]];
+		_vehicle removeMagazinesTurret ["rockets_Skyfire",[0]];
 		systemChat "Waffen entfernt und Repariert";
     };
 	
