@@ -312,8 +312,8 @@ compileFinal "
             _loc = _this select 3;
             _unit = _this select 4;
             _message = format[""!!! EMS REQUEST: %1"",_msg];
+            if (isNil ""_loc"") then {_loc = ""Unknown"";};
             hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>New Dispatch<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Medics<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
-
             [""MedicalRequestEmerg"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
             systemChat _message;
         };
