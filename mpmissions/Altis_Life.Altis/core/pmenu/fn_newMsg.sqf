@@ -91,7 +91,7 @@ switch(_type) do
 	//emergencyloading
 	case 6:
 	{
-        if ((side player) isEqualTo west) then {
+        if ((side player) isEqualTo west || (side player) isEqualTo independent) then {
             ctrlShow[888898,true];
             ctrlShow[888896,false];
         } else {
