@@ -141,4 +141,4 @@ if (_hasLicense) then {
     life_is_processing = false; life_action_inUse = false;
 
 };
-[] call life_fnc_hudUpdate;
+//[] call life_fnc_hudUpdate;

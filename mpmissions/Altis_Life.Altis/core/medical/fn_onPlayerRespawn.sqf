@@ -37,4 +37,4 @@ switch (playerside) do
 	case civilian: {player enableFatigue true;};
 };
 
-[] call life_fnc_hudUpdate;
+//[] call life_fnc_hudUpdate;

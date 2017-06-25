@@ -103,4 +103,4 @@ if (!_isVehicle) then {
         titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
     };
 };
-[] call life_fnc_hudUpdate;
+//[] call life_fnc_hudUpdate;

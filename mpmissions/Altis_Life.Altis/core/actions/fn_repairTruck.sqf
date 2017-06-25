@@ -69,4 +69,4 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
         titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
     };
 };
-[] call life_fnc_hudUpdate;
+//[] call life_fnc_hudUpdate;
