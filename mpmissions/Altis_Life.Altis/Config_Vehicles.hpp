@@ -11,7 +11,7 @@ class CarShops {
     *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
     *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
     */
-    class civ_car {
+    class civ_car {			//Lizenz driver
         side = "civ"; 
         vehicles[] = {
 			{ "B_Quadbike_01_F", { "", "", -1 } },
@@ -34,7 +34,7 @@ class CarShops {
         };
     };
 
-    class civ_truck {
+    class civ_truck {		//Lizenz trucking
         side = "civ";
         vehicles[] = {
             { "C_Van_01_fuel_F", { "", "", -1 } },
@@ -54,7 +54,7 @@ class CarShops {
         };
     };
 
-    class civ_air {
+    class civ_air {			//Lizenz   pilot
         side = "civ";
         vehicles[] = {
 			{ "B_Heli_Light_01_F", { "", "", -1 } },
@@ -64,7 +64,7 @@ class CarShops {
         };
     };
 
-     class civ_ship {
+     class civ_ship {		//Lizenz  boat				
         side = "civ";
         vehicles[] = {
 			{ "C_Rubberboat", { "", "", -1 } },
@@ -75,7 +75,7 @@ class CarShops {
         };
     };
 
-    class reb_car {
+    class reb_car {			//Lizenz rebel
         side = "civ";
         vehicles[] = {
 			{ "B_Quadbike_01_F", { "", "", -1 } },
@@ -95,7 +95,7 @@ class CarShops {
         };
     };
 
-	class elite {
+	class elite {			//Lizenz elite
         side = "civ";
         vehicles[] = {
             { "O_T_LSV_02_unarmed_ghex_F", { "", "", -1 } },
@@ -125,7 +125,7 @@ class CarShops {
         };
     };
 
-    class med_air_hs {
+    class med_air_hs {		//Lizenz mAir
         side = "med";
         vehicles[] = {
 			{ "B_Heli_Light_01_F", { "", "", -1 } },
@@ -135,7 +135,7 @@ class CarShops {
         };
     };
 
-    class cop_car {
+    class cop_car {			//Lizenz     cg
         side = "cop";
         vehicles[] = {
 			//{ "B_Quadbike_01_F", { "", "", -1 } },
@@ -160,7 +160,7 @@ class CarShops {
         };
     };
 
-    class cop_air {
+    class cop_air {		//Lizenz     cAir
         side = "cop";
         vehicles[] = {
             //{ "B_Heli_Light_01_F", { "", "", -1 } },
@@ -261,15 +261,6 @@ class LifeCfgVehicles {
             }, "" }
         };
     }; 
-		
-	class B_T_LSV_01_unarmed_olive_F {
-        vItemSpace = 150;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 450000;
-        textures[] = {};
-    };
-
-
 	
     class I_Truck_02_medical_F {
         vItemSpace = 250;
@@ -330,14 +321,14 @@ class LifeCfgVehicles {
 	class O_Heli_Transport_04_F {
         vItemSpace = 350;
         licenses[] = { {""}, {"cAir"}, {""}, {""} };//license_cop_cAir
-        price = 2750000;
+        price = 3750000;
         textures[] = {};
     };
 
 	class O_Heli_Transport_04_box_F {
         vItemSpace = 475;
         licenses[] = { {""}, {"cAir"}, {""}, {""} };//license_cop_cAir
-        price = 4200000;
+        price = 5200000;
         textures[] = {};
     };
 
@@ -351,14 +342,14 @@ class LifeCfgVehicles {
 	
     class B_Boat_Armed_01_minigun_F {
         vItemSpace = -1;
-        licenses[] = { {""}, {"cg"}, {""}, {""} };//license_cop_cg
+        licenses[] = { {""}, {""}, {""}, {""} };//license_cop_cg
         price = 75000;
         textures[] = { };
     };
 
     class B_Boat_Transport_01_F {
         vItemSpace = 100;
-        licenses[] = { {""}, {"cg"}, {""}, {""} };//license_cop_cg
+        licenses[] = { {""}, {""}, {""}, {""} };//license_cop_cg
         price = 3000;
         textures[] = { };
     };
@@ -488,7 +479,7 @@ class LifeCfgVehicles {
 
     class C_Boat_Civil_01_police_F {
         vItemSpace = 120;
-        licenses[] = { {""}, {"cg"}, {""}, {""} };//license_cop_cg
+        licenses[] = { {""}, {""}, {""}, {""} };//license_cop_cg
         price = 100000;
         textures[] = { };
     };
@@ -1006,10 +997,42 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 	
+	class B_T_LSV_01_unarmed_olive_F {
+        vItemSpace = 150;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 550000;
+        textures[] = {};
+    };
+
+	class O_T_LSV_02_unarmed_arid_F {
+        vItemSpace = 150;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 550000;
+        textures[] = {};
+    };
+	
+	
+	
+	class B_T_LSV_01_unarmed_black_F {
+        vItemSpace = 150;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 32500;
+        textures[] = {}
+        };
+    };	
+
+	class O_T_LSV_02_unarmed_black_F {
+        vItemSpace = 150;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 32500;
+        textures[] = {}
+        };
+    };
+			
 	class O_T_LSV_02_unarmed_F {
         vItemSpace = 150;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 325000;
+        price = 625000;
         textures[] = {
             /*{ "DEA", "cop", {
                 "textures\deaquilin1.jpg",
@@ -1245,7 +1268,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_SDV_01_F {
         vItemSpace = 30;
-        licenses[] = { {"boat"}, {"cg"}, {""}, {""} };//license_civ_boat || {license_cop_cg}
+        licenses[] = { {"boat"}, {""}, {""}, {""} };//license_civ_boat || {license_cop_cg}
         price = 99000;
         textures[] = {};
     };
@@ -1348,7 +1371,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	// Apex DLC
     class C_Boat_Transport_02_F {
         vItemSpace = 320;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {""}, {""}, {""}, {""} };//license_civ_boat
         price = 950000;
         textures[] = {
             { "Civilian", "civ", {
@@ -1363,7 +1386,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	// Apex DLC
     class C_Scooter_Transport_01_F {
         vItemSpace = -1;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {""}, {""}, {""}, {""} };//license_civ_boat
         price = 175000;
         textures[] = {
             { "Black", "civ", {
@@ -1410,77 +1433,91 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	
 	class O_T_LSV_02_unarmed_ghex_F {
         vItemSpace = 150;
-		licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+		licenses[] = { {""}, {""}, {""}, {""} };//license_civ_boat
         price = 325000;
         textures[] = { };
     };
 
     class O_T_MRAP_02_ghex_F {
         vItemSpace = 100;
-        licenses[] = { {"" }, {"cg"}, {""}, {""} };//license_cop_cg
+        licenses[] = { {"" }, {""}, {""}, {""} };//license_cop_cg
         price = 2750000;
         textures[] = { };
     };
 	
 	class O_T_Truck_03_transport_ghex_F {
         vItemSpace = 350;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {""}, {""}, {""}, {""} };//license_civ_boat
         price = 650000;
         textures[] = { };
     };
 
     class O_T_Truck_03_covered_ghex_F {
         vItemSpace = 400;
-        licenses[] = { {"" }, {"cg"}, {""}, {""} };//license_cop_cg
+        licenses[] = { {"" }, {""}, {""}, {""} };//license_cop_cg
         price = 1000000;
         textures[] = { };
     };
 	
 	class O_T_Truck_03_fuel_ghex_F {
         vItemSpace = 100;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {"" }, {""}, {""}, {""} };
         price = 400000;
         textures[] = { };
     };
 	
 	class O_T_Truck_03_device_ghex_F {
         vItemSpace = 450;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {"" }, {""}, {""}, {""} };
         price = 7250000;
         textures[] = { };
     };
 
     class O_T_Truck_03_ammo_ghex_F {
         vItemSpace = 600;
-        licenses[] = { {"" }, {"cg"}, {""}, {""} };//license_cop_cg
+        licenses[] = { {"" }, {""}, {""}, {""} };
         price = 4000000;
         textures[] = { };
     };
 	
 	class C_Heli_light_01_ion_F {
         vItemSpace = 90;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {"" }, {""}, {""}, {""} };
         price = 600000;
         textures[] = { };
     };
 	
 	class C_Heli_light_01_wasp_F {
         vItemSpace = 90;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {"" }, {""}, {""}, {""} };
         price = 600000;
         textures[] = { };
     };
 
     class B_CTRG_Heli_Transport_01_tropic_F {
         vItemSpace = 300;
-        licenses[] = { {"" }, {"cg"}, {""}, {""} };//license_cop_cg
+        licenses[] = { {"" }, {""}, {""}, {""} };//license_cop_cg
         price = 9500000;
+        textures[] = { };
+    };
+	
+	class B_CTRG_Heli_Transport_01_sand_F {
+        vItemSpace = 320;
+        licenses[] = { {"" }, {""}, {""}, {""} };//license_cop_cg
+        price = 9500000;
+        textures[] = { };
+    };
+	
+	class O_T_VTOL_02_vehicle_hex_F {
+        vItemSpace = 420;
+        licenses[] = { {"" }, {""}, {""}, {""} };
+        price = 19500000;
         textures[] = { };
     };
 	
 	class B_T_VTOL_01_vehicle_olive_F {
         vItemSpace = 550;
-        licenses[] = { {"boat" }, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {""}, {""}, {""}, {""} };//license_civ_boat
         price = 14950000;
         textures[] = { };
     };	
