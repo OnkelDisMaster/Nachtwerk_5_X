@@ -299,11 +299,9 @@ compileFinal "
                 [""MedicalRequestEmerg"",[""Du hast eine Nachricht von den Medics erhalten!""]] call bis_fnc_showNotification;
             };
 
-
-
             systemChat _message;
 
-            if ((call life_adminlevel) > 0) then {systemChat _admin;};
+            //if ((call life_adminlevel) > 0) then {systemChat _admin;};
         };
 
         case 5: {
