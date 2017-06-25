@@ -61,15 +61,16 @@ class CfgSpawnPoints {
         };
 		
         class RebelHQ {
+            displayName = "Rebellen HQ";
             spawnMarker = "reb_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
         };
 
-        class RebelN {
-            displayName = "Southern Rebel Base";
-            spawnMarker = "Rebelop_1";
+        class Rebellenlager {
+            displayName = "Rebellenlager";
+            spawnMarker = "reb_spawn_2";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
