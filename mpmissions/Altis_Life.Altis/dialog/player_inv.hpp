@@ -407,7 +407,6 @@ h = 0.0504 * safezoneH;
 };
 class holy_helpzbutton : Life_RscButtonMenu {
     idc = 2010;
-    text = "$STR_PM_HelpMenu";
     tooltip = $STR_PM_HelpMenu;
     onButtonClick = "createDialog ""holy_help"";";
     colorBackground[] = {-1,-1,-1,-1};
