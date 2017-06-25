@@ -317,7 +317,7 @@ class VirtualItems {
     };
 	class bunker {
         variable = "bunker";
-        displayName = "STR_Item_bunker";
+        displayName = "Bunker";
         weight = 15;
         buyPrice = 2500;
         sellPrice = 1200;
@@ -343,7 +343,7 @@ class VirtualItems {
         sellPrice = 1200;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_spikeStrip.paa";
     };
 	class mauer {
         variable = "mauer";
