@@ -285,16 +285,14 @@ compileFinal "
 
         case 4 : {
             private[""_message"",""_admin"",""_side""];
-            _side = switch (side _from) do {case west: {""Cop""}; case civilian: {""Civ""}; case independent: {""Medic""}; default {""Unknown""};};
-
-            if (_side isEqualTo "Cop") then {
+            if (side _from isEqualTo west) then {
                 _message = format[""!!!POLIZEI MESSAGE: %1"",_msg];
                 _admin = format[""Gesendet von der Polizei:""];
                 hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Polizei Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Players<br/><t color='#33CC33'>From: <t color='#ffffff'>Polizei<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
                 [""PolizeiMessage"",[""Du hast eine Nachricht von der Polizei erhalten!""]] call bis_fnc_showNotification;
             };
 
-            if (_side isEqualTo "Medic") then {
+            if (side _from isEqualTo independent) then {
                 _message = format[""!!!MEDIC MESSAGE: %1"",_msg];
                 _admin = format[""Gesendet von den Medics:""];
                 hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Medic Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Players<br/><t color='#33CC33'>From: <t color='#ffffff'>Medics<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
