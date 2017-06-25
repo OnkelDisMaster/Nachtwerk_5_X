@@ -51,10 +51,17 @@ class CfgSpawnPoints {
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
         };
-
-        class RebelS {
-            displayName = "Northern Rebel Base";
-            spawnMarker = "Rebelop";
+		
+		class EliteHQ {
+            displayName = "Eliterebellen HQ";
+            spawnMarker = "reb_spawn_1";
+            icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+            licenses[] = { { "elite", true } };
+            level[] = { "", "", -1 };
+        };
+		
+        class RebelHQ {
+            spawnMarker = "reb_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
@@ -68,9 +75,9 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 
-        class RebelE {
-            displayName = "Eastern Rebel Base";
-            spawnMarker = "Rebelop_2";
+        class RebelS {
+            displayName = "Rebellen Süd";
+            spawnMarker = "reb_spawn_3";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
@@ -102,20 +109,36 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 
-        class Air {
-            displayName = "Air HQ";
+        class Jail {
+            displayName = "Gefängnis";
             spawnMarker = "cop_spawn_4";
             icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
             licenses[] = { { "cAir", true } };
             level[] = { "life_coplevel", "SCALAR", 2 };
         };
 
-        class HW {
-            displayName = "HW Patrol";
+        class Schiessplatz {
+            displayName = "Übungsgelände";
+            spawnMarker = "spawn_trainer";
+            icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+            licenses[] = { { "", true } };
+            level[] = { "life_coplevel", "SCALAR", 1 };
+        };
+		
+		class SEK {
+            displayName = "SEK Zentrale";
             spawnMarker = "cop_spawn_5";
             icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
             licenses[] = { { "", true } };
-            level[] = { "life_coplevel", "SCALAR", 3 };
+            level[] = { "life_coplevel", "SCALAR", 9 };
+        };
+		
+		class SZ2 {
+            displayName = "Sicherheitszone 2";
+            spawnMarker = "cop_spawn_6";
+            icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+            licenses[] = { { "", true } };
+            level[] = { "life_coplevel", "SCALAR", 1 };
         };
     };
 
@@ -128,9 +151,9 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 
-        class Athira {
-            displayName = "Athira Regional";
-            spawnMarker = "medic_spawn_2";
+        class Sophia {
+            displayName = "Sophia Regional";
+            spawnMarker = "medic_spawn_3";
             icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
@@ -138,7 +161,15 @@ class CfgSpawnPoints {
 
         class Pyrgos {
             displayName = "Pyrgos Hospital";
-            spawnMarker = "medic_spawn_3";
+            spawnMarker = "medic_spawn_2";
+            icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+            licenses[] = { { "", true } };
+            level[] = { "", "", -1 };
+        };
+		
+		class Air HQ {
+            displayName = "Air HQ";
+            spawnMarker = "medic_spawn_4";
             icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
