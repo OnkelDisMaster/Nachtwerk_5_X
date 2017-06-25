@@ -284,8 +284,8 @@ compileFinal "
         };
 
         case 4 : {
-            private[""_message"",""_admin""];
-            _side = switch (side _from) do {case west: {"Cop"}; case civilian: {"Civ"}; case independent: {"Medic"}; default {"Unknown"};};
+            private[""_message"",""_admin"",""_side""];
+            _side = switch (side _from) do {case west: {""Cop""}; case civilian: {""Civ""}; case independent: {""Medic""}; default {""Unknown""};};
 
             if (_side isEqualTo "Cop") then {
                 _message = format[""!!!POLIZEI MESSAGE: %1"",_msg];
