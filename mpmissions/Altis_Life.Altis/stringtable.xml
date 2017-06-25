@@ -2316,6 +2316,17 @@
             <Portuguese>Lista de Foragidos</Portuguese>
             <Polish>Poszukiwani</Polish>
         </Key>
+        <Key ID="STR_PM_HelpMenu">
+            <Original>Help-Menu</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Help-Menu</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_PM_CellPhone">
             <Original>Cell Phone</Original>
             <Czech>Mobilní telefon</Czech>

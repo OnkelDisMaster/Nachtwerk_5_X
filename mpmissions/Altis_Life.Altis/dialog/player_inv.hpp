@@ -396,5 +396,32 @@ class playerSettings {
  colorDisabled[] = {1,0,0,0.1};
  tooltip = $STR_PM_WantedList;
  };*/
- };
- };
+class holy_helpzbutton_ICON: life_RscPicture
+{
+idc = 1210;
+text = "images\tablet\internet.paa";
+x = 0.505251 * safezoneW + safezoneX;
+y = 0.6988 * safezoneH + safezoneY;
+w = 0.0315 * safezoneW;
+h = 0.056 * safezoneH;
+};
+class holy_helpzbutton : Life_RscButtonMenu {
+    idc = 2010;
+    text = "$STR_PM_HelpMenu";
+    tooltip = $STR_PM_HelpMenu;
+    onButtonClick = "createDialog ""holy_help"";";
+    colorBackground[] = {-1,-1,-1,-1};
+    colorBackgroundFocused[] = {1,1,1,0.12};
+    colorBackground2[] = {0.75,0.75,0.75,0.2};
+    color[] = {1,1,1,1};
+    colorFocused[] = {0,0,0,0};
+    color2[] = {0,0,0,0};
+    colorText[] = {1,1,1,1};
+    colorDisabled[] = {1,0,0,0.1};
+    x = 0.506562 * safezoneW + safezoneX;
+    y = 0.7016 * safezoneH + safezoneY;
+    w = 0.028875 * safezoneW;
+    h = 0.0504 * safezoneH;
+};
+};
+};
