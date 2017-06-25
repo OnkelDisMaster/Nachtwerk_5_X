@@ -467,8 +467,7 @@ class Clothing {
 			{ "H_CrewHelmetHeli_I", "", 10000, { "", "", -1 } },
 			{ "H_HelmetB_light_sand", "", 10000, { "", "", -1 } },
 			{ "H_HelmetB_sand", "", 10000, { "", "", -1 } },
-			{ "H_HelmetSpecB_sand", "", 10000, { "", "", -1 } },
-			{ "H_HelmetB_TI_tna_F", "", 10000, { "", "", -1 } }
+			{ "H_HelmetSpecB_sand", "", 10000, { "", "", -1 } }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
@@ -574,7 +573,8 @@ class Clothing {
 			{ "U_O_FullGhillie_lsh", "", 50000, { "", "", -1 } },
 			{ "U_O_FullGhillie_sard", "", 50000, { "", "", -1 } },
 			{ "U_O_FullGhillie_ard", "", 50000, { "", "", -1 } },
-			{ "U_I_FullGhillie_ard", "", 50000, { "", "", -1 } }
+			{ "U_I_FullGhillie_ard", "", 50000, { "", "", -1 } },
+			{ "U_O_V_Soldier_Viper_F", "", 150000, { "", "", -1 } }
         };
         headgear[] = {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
@@ -589,6 +589,10 @@ class Clothing {
 			{ "H_HelmetB_light_sand", "", 10000, { "", "", -1 } },
 			{ "H_HelmetB_sand", "", 10000, { "", "", -1 } },
 			{ "H_HelmetSpecB_sand", "", 10000, { "", "", -1 } },
+			{ "H_MilCap_tna_F", "", 10000, { "", "", -1 } },
+			{ "H_HelmetB_Light_tna_F", "", 10000, { "", "", -1 } },
+			{ "H_HelmetB_tna_F", "", 10000, { "", "", -1 } },
+			{ "H_HelmetB_Enh_tna_F", "", 10000, { "", "", -1 } },
 			{ "H_HelmetB_TI_tna_F", "", 10000, { "", "", -1 } }
         };
         goggles[] = {
