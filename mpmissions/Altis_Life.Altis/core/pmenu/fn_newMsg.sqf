@@ -93,9 +93,11 @@ switch(_type) do
 	{
         if ((side player) isEqualTo west || (side player) isEqualTo independent) then {
             ctrlShow[888898,true];
+            ctrlShow[888900,true];
             ctrlShow[888896,false];
         } else {
             ctrlShow[888898,false];
+            ctrlShow[888900,false];
         	ctrlShow[888896,true];
         };
 		/*if((__GETC__(life_adminlevel) < 1)) then
