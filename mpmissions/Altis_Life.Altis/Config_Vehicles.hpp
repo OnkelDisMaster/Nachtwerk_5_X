@@ -1018,7 +1018,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 32500;
         textures[] = {}
-        };
     };	
 
 	class O_T_LSV_02_unarmed_black_F {
@@ -1026,7 +1025,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 32500;
         textures[] = {}
-        };
     };
 			
 	class O_T_LSV_02_unarmed_F {
