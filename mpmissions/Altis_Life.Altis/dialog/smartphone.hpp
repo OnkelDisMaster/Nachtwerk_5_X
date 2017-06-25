@@ -387,7 +387,7 @@ class Life_smartphone_notruf {
 			h = (1 / 25);
 		};
 		
-		class ADACReq : life_RscButtonMenu
+		/*class ADACReq : life_RscButtonMenu
 		{
 			idc = 888900;
 			text = "ADAC";
@@ -398,7 +398,7 @@ class Life_smartphone_notruf {
 			y = 0.30;
 			w = 0.2;
 			h = (1 / 25);
-		};
+		};*/
 		
 		class CloseButton : Life_RscButtonMenu {
 			idc = -1;

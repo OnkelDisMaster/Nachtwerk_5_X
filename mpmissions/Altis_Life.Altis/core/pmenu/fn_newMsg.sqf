@@ -91,13 +91,11 @@ switch(_type) do
 	//emergencyloading
 	case 6:
 	{
-        if ((side _x) isEqualTo west) then {
+        if ((side player) isEqualTo west) then {
             ctrlShow[888898,true];
             ctrlShow[888896,false];
-            ctrlShow[888900,false];
         } else {
             ctrlShow[888898,false];
-            ctrlShow[888900,false];
         	ctrlShow[888896,true];
         };
 		/*if((__GETC__(life_adminlevel) < 1)) then
