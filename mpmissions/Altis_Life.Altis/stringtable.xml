@@ -5890,6 +5890,28 @@
         </Key>
     </Package>
     <Package name="Life_Items">
+        <Key ID="STR_Item_MethU">
+            <Original>Unprocessed Meth</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Unverarbeitetes Meth</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Item_MethP">
+            <Original>Processed Meth</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Verarbeitetes Meth</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_Cannabis">
             <Original>Marijuana leaf</Original>
             <Czech>marihuana list</Czech>
@@ -8025,6 +8047,17 @@
             <Italian>Licenza possesso Casa</Italian>
             <Portuguese>Licença de Casas</Portuguese>
             <Polish>Zarządca nieruchomości</Polish>
+        </Key>
+        <Key ID="STR_License_Jagd">
+            <Original>Hunting License</Original>
+            <German>Jagdschein</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
     </Package>
     <Package name="More_Item_Strings">
