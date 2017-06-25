@@ -110,10 +110,10 @@ switch(_type) do
 	case 7:
 	{
 		//if((call life_adminlevel) < 1) exitWith {hintSilent "You are not an admin!";};
-		if(_msg == "") exitWith {hintSilent "You must enter a message to send!";};
+		if(_msg == "") exitWith {hintSilent "Bitte ein Text eingeben!";};
 		//[[ObjNull,_msg,player,5],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		[ObjNull,_msg,player,5] remoteExec ["TON_fnc_handleMessages"];
-		hintSilent format["Admin Message Sent To All: %1",_msg];
+		hintSilent format["Rundfunknachricht wurde gesendet: %1",_msg];
 		closeDialog 887890;
 	};
 	//adacrequest

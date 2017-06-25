@@ -364,7 +364,7 @@ class Life_smartphone_notruf {
 		class AdminMsgAll : life_RscButtonMenu 
 		{
 			idc = 888898;
-			text = "Polizei-Rundnachricht";
+			text = "Rundfunknachricht";
 			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[7,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			

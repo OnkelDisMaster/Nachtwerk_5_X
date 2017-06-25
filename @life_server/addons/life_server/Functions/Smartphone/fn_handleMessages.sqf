@@ -60,7 +60,7 @@ switch(_type) do
 	case 5:
 	{
 		//[[_msg,name _player,4],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
-		[_msg,name _player,4] remoteExec ["TON_fnc_clientMessage"];
+		[_msg,_player,4] remoteExec ["TON_fnc_clientMessage"];
 	};
 	//adac request
 	case 6:
