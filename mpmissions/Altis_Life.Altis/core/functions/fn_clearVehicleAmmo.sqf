@@ -16,7 +16,7 @@ _veh = typeOf _vehicle;
 
 /*
 if (_veh isEqualTo "B_Boat_Armed_01_minigun_F") then {
-    _vehicle removeMagazinesTurret ["200Rnd_40mm_G_belt",[0]];
+    _vehicle removeMagazinesTurret ["200Rnd_40mm_G_belt",[-1]];
 };
 */
 
@@ -35,23 +35,23 @@ switch (_veh) do
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
 	*/	
-		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[-1]];
+		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[-1]];
 		
-		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[-1]];
+		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[-1]];
 		
-		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[-1]];
+		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[-1]];
 		
-		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[-1]];
+		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[-1]];
 		
-		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[-1]];
+		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[-1]];
 		
-		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[-1]];
+		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[-1]];
 
 		systemChat "Waffen entfernt und Repariert";
     };
@@ -66,23 +66,17 @@ switch (_veh) do
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
 		
-		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_Fighter_Gun20mm_AA",[-1]]; 
+		_vehicle removeMagazinesTurret ["weapon_Fighter_Gun20mm_AA",[-1]];
 		
-		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_BIM9xLauncher",[-1]]; 
+		_vehicle removeMagazinesTurret ["weapon_BIM9xLauncher",[-1]];  
 		
-		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_AMRAAMLauncher",[-1]];
+		_vehicle removeMagazinesTurret ["weapon_AMRAAMLauncher",[-1]];
 		
-		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
-		
-		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
-		
-		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_AGM_65Launcher",[-1]];
+		_vehicle removeMagazinesTurret ["weapon_AGM_65Launcher",[-1]];
 
 		systemChat "Waffen entfernt und Repariert";
     };
@@ -97,23 +91,17 @@ switch (_veh) do
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
 		
-		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_Fighter_Gun_30mm",[-1]];
+		_vehicle removeMagazinesTurret ["weapon_Fighter_Gun_30mm",[-1]];
 		
-		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_R73Launcher",[-1]]; 
+		_vehicle removeMagazinesTurret ["weapon_R73Launcher",[-1]];  
 		
-		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_R77Launcher",[-1]]; 
+		_vehicle removeMagazinesTurret ["weapon_R77Launcher",[-1]]; 
 		
-		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
-		
-		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
-		
-		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_KAB250Launcher",[-1]];
+		_vehicle removeMagazinesTurret ["weapon_KAB250Launcher",[-1]];
 
 		systemChat "Waffen entfernt und Repariert";
     };
@@ -128,23 +116,20 @@ switch (_veh) do
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
 		
-		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_Fighter_Gun20mm_AA",[-1]];
+		_vehicle removeMagazinesTurret ["weapon_Fighter_Gun20mm_AA",[-1]];
 		
-		_vehicle removeWeaponTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AA_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_BIM9xLauncher",[-1]]; 
+		_vehicle removeMagazinesTurret ["weapon_BIM9xLauncher",[-1]]; 
 		
-		_vehicle removeWeaponTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Missile_AGM_01_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_GBU12Launcher",[-1]]; 
+		_vehicle removeMagazinesTurret ["weapon_GBU12Launcher",[-1]]; 
 		
-		_vehicle removeWeaponTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_HE_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_AMRAAMLauncher",[-1]];
+		_vehicle removeMagazinesTurret ["weapon_AMRAAMLauncher",[-1]];
 		
-		_vehicle removeWeaponTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Rocket_03_AP_Plane_CAS_02_F",[0]];
-		
-		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[0]];
-		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[0]];
+		_vehicle removeWeaponTurret ["weapon_AGM_65Launcher",[-1]];
+		_vehicle removeMagazinesTurret ["weapon_AGM_65Launcher",[-1]];
 
 		systemChat "Waffen entfernt und Repariert";
     };
@@ -182,11 +167,11 @@ switch (_veh) do
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[0]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[0]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[0]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[0]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
 		
 		systemChat "Waffen entfernt und Repariert";
     };
@@ -202,11 +187,11 @@ switch (_veh) do
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[0]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[0]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[0]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[0]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
 		
 		systemChat "Waffen entfernt und Repariert";
     };
@@ -222,11 +207,11 @@ switch (_veh) do
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[0]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[0]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[0]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[0]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
 		
 		systemChat "Waffen entfernt und Repariert";
     };
