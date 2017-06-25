@@ -34,9 +34,9 @@ DYNMARKET_Items_Groups =
 [
 	["Obst",
 		[
-			/*["apple",-1,10,50],
 			["apple",-1,10,50],
-			["apple",-1,10,50],*/
+			["apple",-1,10,50],
+			["apple",-1,10,50],
 			["apple",-1,10,50],
 			["peach",-1,30,100]
 		],
