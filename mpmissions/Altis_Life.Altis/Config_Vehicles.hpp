@@ -151,15 +151,15 @@ class CarShops {
 			//{ "O_APC_Wheeled_02_rcws_F", { "life_coplevel", "SCALAR", 5 } }
 			
 			{ "B_Quadbike_01_F", { "", "", -1 } },
-            { "C_SUV_01_F", { "", "", -1 } },
-            { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_Hatchback_01_F", { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", { "", "", -1 } },
-			{ "B_T_LSV_01_unarmed_black_F", { "", "", -1 } },
-            { "O_T_LSV_02_unarmed_black_F", { "", "", -1 } },
-            { "B_MRAP_01_F", { "", "", -1 } },
-            { "I_MRAP_03_F", { "", "", -1 } },
-            { "I_APC_Wheeled_03_cannon_F", { "", "", -1 } } //call life_coplevel >= 3
+            { "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
+            { "C_Offroad_01_F", { "life_coplevel", "SCALAR", 2 } },
+            { "C_Hatchback_01_F", { "life_coplevel", "SCALAR", 3 } },
+            { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 4 } },
+			{ "B_T_LSV_01_unarmed_black_F", { "life_coplevel", "SCALAR", 5 } },
+            { "O_T_LSV_02_unarmed_black_F", { "life_coplevel", "SCALAR", 5 } },
+            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 6 } },
+            { "I_MRAP_03_F", { "life_coplevel", "SCALAR", 9 } },
+            { "O_APC_Wheeled_02_rcws_F", { "life_coplevel", "SCALAR", 9 } } //call life_coplevel >= 3
         };
     };
 
@@ -171,16 +171,16 @@ class CarShops {
 			//{ "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 2 } },
 			//{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 2 } }
 			
-			{ "B_Heli_Light_01_F", { "", "", -1 } },
-            { "I_Heli_light_03_unarmed_F", { "", "", -1 } },
-			{ "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
-            { "B_UAV_01_F", { "", "", -1 } },
-			{ "I_Heli_Transport_02_F", { "", "", -1 } },
-            { "B_Heli_Transport_01_F", { "", "", -1 } },
-			{ "B_Heli_Transport_03_F", { "", "", -1 } },
-            { "B_Plane_Fighter_01_F", { "", "", -1 } },
-			{ "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
-            { "B_T_UAV_03_F", { "", "", -1 } }
+			{ "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 2 } },
+            { "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
+			{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 4 } },
+            { "B_UAV_01_F", { "life_coplevel", "SCALAR", 2 } },
+			{ "I_Heli_Transport_02_F", { "life_coplevel", "SCALAR", 5 } },
+            { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 6 } },
+			{ "B_Heli_Transport_03_F", { "life_coplevel", "SCALAR", 7 } },
+            { "B_Plane_Fighter_01_F", { "life_coplevel", "SCALAR", 8 } },
+			{ "B_T_VTOL_01_vehicle_blue_F", { "life_coplevel", "SCALAR", 7 } },
+            { "B_T_UAV_03_F", { "life_coplevel", "SCALAR", 10 } }
         };
     };
 
