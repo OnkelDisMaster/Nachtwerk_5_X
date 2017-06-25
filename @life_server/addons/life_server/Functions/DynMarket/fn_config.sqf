@@ -139,7 +139,7 @@ DYNMARKET_Items_ToTrack        =
 	["goat",300],
 	["goldbar",95000],
 	["mikro_prozessor",25000],
-	["imlantat_normal",265000],
+	["implantat_normal",265000],
 	["oil_processed",4500],
 	["diesel",5600],
 	["copper_refined",2400],

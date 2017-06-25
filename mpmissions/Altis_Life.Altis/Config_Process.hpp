@@ -185,14 +185,6 @@ class ProcessAction {
         NoLicenseCost = 15500;
 	};
 	
-	class uran {
-        MaterialsReq[] = {{"uranErz",1}};
-        MaterialsGive[] = {{"uranI",1}};
-        Text = "STR_Process_uran";
-        //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 42000;
-	};
-	
 	class uranerz {
         MaterialsReq[] = {{"uranErz",1}};
         MaterialsGive[] = {{"uranI",1}};

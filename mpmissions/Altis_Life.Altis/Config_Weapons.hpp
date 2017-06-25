@@ -43,6 +43,28 @@ class WeaponShops {
             { "optic_ACO_grn_smg", "", 7500 }
         };
     };
+	
+	class jagd {
+        name = "Jagdwaffen";
+        side = "civ";
+        license = "jagd";
+        level[] = { "", "", -1, "" };
+        items[] = {
+            { "hgun_Pistol_01_F", "", 6500, 500 },
+            { "srifle_DMR_01_F", "", 9850, -1 },
+			{ "srifle_DMR_06_olive_F", "", 25500, -1 },
+			{ "srifle_DMR_06_camo_khs_F", "", 25500, -1 }           
+        };
+        mags[] = {
+			{ "10Rnd_9x21_Mag", "", 750 }, //9mm
+			{ "10Rnd_762x54_Mag", "", 750 }, //Rahim
+			{ "20Rnd_762x51_Mag", "", 750 }	//Mk 14
+			
+        };
+        accs[] = {
+            { "optic_ACO_grn_smg", "", 7500 }
+        };
+    };
 
     class rebel {
         name = "Mohammed's Jihadi Shop";

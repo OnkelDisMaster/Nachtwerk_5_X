@@ -889,8 +889,8 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_methUnprocessed.paa";
-        processedItem = "meth_processed";
+        icon = "";
+        processedItem = "";
     };
 
 	class meth_processed {
@@ -901,7 +901,7 @@ class VirtualItems {
         sellPrice = 3100;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_methProcessed.paa";
+        icon = "";
     };
 	
 	class uran_erz {
