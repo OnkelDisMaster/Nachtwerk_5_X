@@ -86,6 +86,7 @@ class CarShops {
 			{ "O_MRAP_02_F", { "", "", -1 } },
 			{ "C_Plane_Civil_01_F", { "", "", -1 } },
 			{ "O_Plane_CAS_02_F", { "", "", -1 } },
+			{ "I_Plane_Fighter_04_F", { "", "", -1 } },
 			{ "B_Heli_Light_01_F", { "", "", -1 } },
 			{ "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
 			{ "I_Heli_Transport_02_F", { "", "", -1 } },
@@ -107,6 +108,8 @@ class CarShops {
 			{ "O_T_Truck_03_ammo_ghex_F", { "", "", -1 } },
 			{ "C_Heli_light_01_ion_F", { "", "", -1 } },
 			{ "C_Heli_light_01_wasp_F", { "", "", -1 } },
+			{ "O_Plane_Fighter_02_F", { "", "", -1 } },
+			{ "B_Plane_Fighter_01_F", { "", "", -1 } },
 			{ "B_CTRG_Heli_Transport_01_tropic_F", { "", "", -1 } },
 			{ "B_T_VTOL_01_vehicle_olive_F", { "", "", -1 } }          
         };
@@ -175,11 +178,9 @@ class CarShops {
 			{ "I_Heli_Transport_02_F", { "", "", -1 } },
             { "B_Heli_Transport_01_F", { "", "", -1 } },
 			{ "B_Heli_Transport_03_F", { "", "", -1 } },
-            { "B_Heli_Attack_01_F", { "", "", -1 } },
+            { "B_Plane_Fighter_01_F", { "", "", -1 } },
 			{ "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
-            { "B_T_UAV_03_F", { "", "", -1 } },
-			{ "B_UAV_02_F", { "", "", -1 } },
-            { "B_UAV_02_CAS_F", { "", "", -1 } }
+            { "B_T_UAV_03_F", { "", "", -1 } }
         };
     };
 
@@ -299,8 +300,29 @@ class LifeCfgVehicles {
 	
 	class O_Plane_CAS_02_F {
         vItemSpace = 150;
-        licenses[] = { {"rebel"}, {""}, {""}, {""} };
+        licenses[] = { {"rebel"}, {"cAir"}, {""}, {""} };
         price = 25000000;
+        textures[] = {};
+    };
+	
+	class I_Plane_Fighter_04_F {
+        vItemSpace = 250;
+        licenses[] = { {"rebel"}, {"cAir"}, {""}, {""} };
+        price = 30000000;
+        textures[] = {};
+    };
+	
+	class O_Plane_Fighter_02_F {
+        vItemSpace = 350;
+        licenses[] = { {"elite"}, {"cAir"}, {""}, {""} };
+        price = 35000000;
+        textures[] = {};
+    };
+	
+	class B_Plane_Fighter_01_F {
+        vItemSpace = 350;
+        licenses[] = { {"elite"}, {"cAir"}, {""}, {""} };
+        price = 40000000;
         textures[] = {};
     };
 	
