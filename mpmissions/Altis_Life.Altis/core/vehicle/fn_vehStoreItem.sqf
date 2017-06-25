@@ -39,8 +39,8 @@ case (!(_ctrl in _FuelStuff) && (_Truck in _FuelTrucks)): {life_TankLaster = 3};
 case ((_ctrl in _FuelStuff) && !(_Truck in _FuelTrucks)): {life_TankLaster = 4}; //Fuel in NonFuelTruck -> Nope!
 };
 
-if (life_TankLaster isEqualTo 3) exitWith {hint "Du kannst nur Öl oder Kerosin in einen Tanklaster füllen!)"};
-if (life_TankLaster isEqualTo 4) exitWith {hint "Du kannst Öl oder Kerosin NUR in einen Tanklaster füllen!)";};
+if (life_TankLaster isEqualTo 3) exitWith {hint "Du kannst nur Öl oder Diesel in einen Tanklaster füllen! "};
+if (life_TankLaster isEqualTo 4) exitWith {hint "Du kannst Öl oder Diesel NUR in einen Tanklaster füllen! ";};
 
 if (_ctrl == "money") then {
     _index = [_ctrl,_inv] call TON_fnc_index;
