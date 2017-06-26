@@ -346,7 +346,7 @@ class WeaponShops {
             { "ItemCompass", "", 50, 25 },
             { "ItemWatch", "", 50, -1 },
             { "FirstAidKit", "", 150, 65 },
-			{ "toolkit", "", 3000, 100 },
+			{ "ToolKit", "", 3000, 100 },
             { "NVGoggles", "", 4000, 980 },
             { "Chemlight_red", "", 300, -1 },
             { "Chemlight_yellow", "", 300, 50 },
@@ -369,7 +369,7 @@ class WeaponShops {
             { "ItemCompass", "", 250, 25 },
             { "ItemWatch", "", 250, -1 },
             { "FirstAidKit", "", 750, 65 },
-			{ "toolkit", "", 5000, 100 },
+			{ "ToolKit", "", 5000, 100 },
             { "NVGoggles", "", 10000, 980 },
             { "Chemlight_red", "", 1500, -1 },
             { "Chemlight_yellow", "", 1500, 50 },
@@ -393,7 +393,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -433,7 +433,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -488,7 +488,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -548,7 +548,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -608,7 +608,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -673,7 +673,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -745,7 +745,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -817,7 +817,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -896,7 +896,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -982,7 +982,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -1069,7 +1069,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -1157,7 +1157,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {
@@ -1245,7 +1245,7 @@ class WeaponShops {
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
-			{ "toolkit", "", 1, 1 },
+			{ "ToolKit", "", 1, 1 },
             { "NVGoggles_OPFOR", "", 1, 1 }
         };
         mags[] = {

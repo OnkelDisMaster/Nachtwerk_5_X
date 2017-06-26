@@ -57,7 +57,7 @@ switch _loadout do
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_ERCO_blk_F";
 	//player addItem "muzzle_snds_H_MG_blk_F"; //6,5 mm Schalli
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -108,7 +108,7 @@ switch _loadout do
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_Aco";
 	player addItem "muzzle_snds_L"; //9 mm Schalli
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -169,7 +169,7 @@ switch _loadout do
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_ERCO_blk_F";
 	player addItem "muzzle_snds_H"; //6,5 mm Schalli
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -217,7 +217,7 @@ switch _loadout do
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_ERCO_blk_F";
 	player addItem "muzzle_snds_H"; //6,5 mm Schalli
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -265,7 +265,7 @@ switch _loadout do
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_ERCO_blk_F";
 	player addItem "muzzle_snds_M";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -316,7 +316,7 @@ switch _loadout do
 		player assignItem "NVGoggles_OPFOR";
 		player addItem "optic_ERCO_blk_F";
 		player addItem "muzzle_snds_58_blk_F";
-		player addItem "toolkit";
+		player addItem "ToolKit";
 		player addItem "Medikit";
 		player addItem "HandGrenade_Stone";
 		player addItem "HandGrenade_Stone";
@@ -366,7 +366,7 @@ switch _loadout do
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_ERCO_blk_F";
 	player addItem "optic_MRD";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -427,7 +427,7 @@ switch _loadout do
 	player addItem "NVGoggles_OPFOR";
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_ERCO_blk_F";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -481,7 +481,7 @@ switch _loadout do
 	player addItem "NVGoggles_OPFOR";
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_MRD";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -544,7 +544,7 @@ switch _loadout do
 	player addItem "optic_MRCO";
 	player addItem "optic_MRD";
 	player addItem "muzzle_snds_65_TI_blk_F";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -597,7 +597,7 @@ case "Zafir Loadout":{
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_MRCO";
 	player addItem "optic_MRD";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -649,7 +649,7 @@ case "Zafir Loadout":{
 	player addItem "optic_MRCO";
 	player addItem "optic_MRD";
 	player addItem "muzzle_snds_H";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -704,7 +704,7 @@ case "Zafir Loadout":{
 	player assignItem "NVGoggles_OPFOR";
 	player addItem "optic_NVS";
 	player addItem "optic_MRD";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -771,7 +771,7 @@ case "Zafir Loadout":{
 	player addItem "optic_AMS";
 	player addItem "optic_LRPS";
 	player addItem "muzzle_snds_93mmg";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
@@ -841,7 +841,7 @@ case "Valles Loadout Type115":
 	player addItem "optic_AMS";
 	player addItem "optic_LRPS";
 	player addItem "muzzle_snds_93mmg";
-	player addItem "toolkit";
+	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";

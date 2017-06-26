@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="Altis Life RPG">
 	<Package name="News_Strings">
 		<Key ID="STR_News_AddAction">
@@ -6517,12 +6517,12 @@
             <Portuguese>Desfibrilador</Portuguese>
             <Polish>defibrylator</Polish>
         </Key>
-        <Key ID="STR_Item_toolkit">
-            <Original>toolkit</Original>
-            <Czech>toolkit</Czech>
+        <Key ID="STR_Item_Toolkit">
+            <Original>Toolkit</Original>
+            <Czech>Toolkit</Czech>
             <Spanish>Kit de Herramientas</Spanish>
             <Russian></Russian>
-            <German>toolkit</German>
+            <German>Toolkit</German>
             <French>Boîte à outils</French>
             <Italian>kit di strumenti</Italian>
             <Portuguese>conjunto de ferramentas</Portuguese>
