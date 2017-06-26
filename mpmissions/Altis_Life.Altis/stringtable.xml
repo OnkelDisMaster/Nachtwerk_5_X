@@ -6517,12 +6517,12 @@
             <Portuguese>Desfibrilador</Portuguese>
             <Polish>defibrylator</Polish>
         </Key>
-        <Key ID="STR_Item_Toolkit">
-            <Original>Toolkit</Original>
-            <Czech>Toolkit</Czech>
+        <Key ID="STR_Item_toolkit">
+            <Original>toolkit</Original>
+            <Czech>toolkit</Czech>
             <Spanish>Kit de Herramientas</Spanish>
             <Russian></Russian>
-            <German>Toolkit</German>
+            <German>toolkit</German>
             <French>Boîte à outils</French>
             <Italian>kit di strumenti</Italian>
             <Portuguese>conjunto de ferramentas</Portuguese>
