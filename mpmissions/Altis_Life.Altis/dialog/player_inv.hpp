@@ -400,10 +400,10 @@ class holy_helpzbutton_ICON: life_RscPicture
 {
 idc = 1210;
 text = "images\tablet\Internet.paa";
-x = 0.506562 * safezoneW + safezoneX;
-y = 0.7016 * safezoneH + safezoneY;
-w = 0.028875 * safezoneW;
-h = 0.0504 * safezoneH;
+ x = 0.505251 * safezoneW + safezoneX;
+ y = 0.6988 * safezoneH + safezoneY;
+ w = 0.0315 * safezoneW;
+ h = 0.056 * safezoneH;
 };
 class holy_helpzbutton : Life_RscButtonMenu {
     idc = 2010;
