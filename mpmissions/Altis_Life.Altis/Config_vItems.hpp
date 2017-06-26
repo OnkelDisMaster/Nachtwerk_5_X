@@ -890,12 +890,12 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "";
-        processedItem = "";
+        processedItem = "meth_processed";
     };
 
 	class meth_processed {
         variable = "methProcessed";
-        displayName = "STR_Item_MethU";
+        displayName = "STR_Item_MethP";
         weight = 3;
         buyPrice = 8000;
         sellPrice = 3100;

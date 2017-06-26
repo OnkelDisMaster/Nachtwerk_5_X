@@ -338,6 +338,13 @@ switch (_code) do {
 		sleep 2;
 	};
 	
+	case 82: {
+		if (_shift) then {
+			hint "Cop Sound";
+			sleep 2;
+		};
+	};
+	
 	//SmartPhone  Shift + 1
     case 2:
     {
