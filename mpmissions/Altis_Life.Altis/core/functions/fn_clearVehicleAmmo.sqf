@@ -28,13 +28,13 @@ switch (_veh) do
 	case "O_Plane_CAS_02_F":
 	{
 		//Remove ammo and Flaires
-	/*	_vehicle setVehicleAmmo 0;
+		_vehicle setVehicleAmmo 0;
 		_vehicle setDamage 0;
 		_vehicle allowDamage true;
 		_vehicle setAmmoCargo 0;
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
-	*/	
+		
 		_vehicle removeWeaponTurret ["Cannon_30mm_Plane_CAS_02_F",[-1]];
 		_vehicle removeMagazinesTurret ["Cannon_30mm_Plane_CAS_02_F",[-1]];
 		
