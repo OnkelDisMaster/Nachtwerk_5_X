@@ -131,8 +131,8 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		// Lehmann, Salvatore, Ente
-		['76561198143557428','76561198067388481','76561198125513959'],	// Supporter
+		// Lehmann, Salvatore, Ente, Gideon, Melvin
+		['76561198143557428','76561198067388481','76561198125513959','76561198091201110','76561198079472612'],	// Supporter
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
