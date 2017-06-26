@@ -138,7 +138,7 @@ class Life_Settings {
 
     /* "Other" Vehicle Prices */
     vehicle_chopShop_multiplier = .45; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .05; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_storage_fee_multiplier = .005; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
     vehicle_cop_impound_multiplier = .15; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 	
 	/* Channel 7 News Station Configurations */
