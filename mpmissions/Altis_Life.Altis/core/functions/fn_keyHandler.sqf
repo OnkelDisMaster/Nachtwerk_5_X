@@ -293,7 +293,7 @@ switch (_code) do {
 		sleep 2;
 	};
 	
-	case 79: {
+	case 156: {
 		player playAction "GestureAdvance";
 		sleep 2;
 	};
@@ -329,7 +329,7 @@ switch (_code) do {
 	};
 	
 	case 72: {
-		player playAction "GestureNod";
+		player playAction "GestureYes";
 		sleep 2;
 	};
 	
@@ -339,7 +339,7 @@ switch (_code) do {
 	};
 	
 	case 82: {
-		if (_shift) then {
+		if ((_shift) && (license_cop_sound)) then {
 			hint "Cop Sound";
 			sleep 2;
 		};

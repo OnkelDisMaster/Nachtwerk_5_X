@@ -66,6 +66,12 @@ class CfgSounds {
         sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
         titles[] = {};
     };
+	
+	class copsound {
+        name = "copsound";
+        sound[] = {"\sounds\copsound.ogg", 1.0, 1};
+        titles[] = {};
+    };
 
     class mining {
         name = "mining";

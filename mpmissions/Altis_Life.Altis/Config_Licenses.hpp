@@ -413,6 +413,14 @@ class Licenses {
         side = "cop";
     };
 	
+	class sound {
+        variable = "sound";
+        displayName = "";
+        price = 0;
+        illegal = false;
+        side = "cop";
+    };
+	
 
     //Medic Licenses
     class mAir {
