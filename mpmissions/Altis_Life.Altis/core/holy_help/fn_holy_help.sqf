@@ -31,7 +31,8 @@ switch(_lbauswahl) do {
 		lbSetCurSel[198890, 0];
 	};
 	case 0: {
-		_desctext = "Folgende Steuerung gibt es:....";
+		_desctext = "Folgende Steuerung gibt es:.... \n
+					Bla Bla";
 	};
 	case 1: {
 		_desctext = "Diese Jobs gibt es....";

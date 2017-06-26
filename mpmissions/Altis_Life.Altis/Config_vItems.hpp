@@ -109,7 +109,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "oil_processed", "pickaxe", "fuelFull", "diesel" };
+        items[] = { "oil_processed", "fuelFull", "diesel" };
     };
 
     class fishmarket {
@@ -251,6 +251,17 @@ class VirtualItems {
     };
 	
 	class schmerzmittel {
+        variable = "schmerzmittel";
+        displayName = "STR_Item_Schmerzmittel";
+        weight = 1;
+        buyPrice = 5500;
+        sellPrice = 1000;
+        illegal = false;
+        edible = 1;
+        icon = "";
+    };
+	
+	class kabelbinder {
         variable = "schmerzmittel";
         displayName = "STR_Item_Schmerzmittel";
         weight = 1;

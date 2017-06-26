@@ -1528,7 +1528,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class B_T_VTOL_01_vehicle_blue_F {
         vItemSpace = 550;
         licenses[] = { {"elite"}, {"cAir"}, {"mAir"}, {""} };
-        price = 30000000;
+        price = 3000000;
         textures[] = { };
     };
 	
