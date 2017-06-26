@@ -66,20 +66,6 @@ DYNMARKET_Items_Groups =
 		],
 		0.5
 	],
-		["Fisch",
-		[
-			["mullet",-1,100,1250],
-			["tuna",-1,1000,2000],
-			["salema",-1,50,200],
-			["ornate",-1,75,250],
-			["mackerel",-1,100,500],
-			["mullet",-1,250,500],
-			["turtleRaw",-1,5250,9750],
-			["turtleSoup",-1,5250,9750],
-			["catshark",-1,250,1000]
-		],
-		0.5
-	],
 	["Illegal", 
 		[
 			["heroinProcessed",-1,2940,6000],
@@ -95,6 +81,20 @@ DYNMARKET_Items_Groups =
 			["atombombe",-1,455000,845000],
 			["mikroProzessor",-1,17500,32500],
 			["implantatNormal",-1,185500,444500]
+		],
+		0.5
+	],
+	["Fisch",
+		[
+			["mullet",-1,100,1250],
+			["tuna",-1,1000,2000],
+			["salema",-1,50,200],
+			["ornate",-1,75,250],
+			["mackerel",-1,100,500],
+			["mullet",-1,250,500],
+			["turtleRaw",-1,5250,9750],
+			["turtleSoup",-1,5250,9750],
+			["catshark",-1,250,1000]
 		],
 		0.5
 	]
