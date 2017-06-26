@@ -241,13 +241,24 @@ class VirtualItems {
 
     class toolkit {
         variable = "toolkit";
-        displayName = "STR_Item_Toolkit";
+        displayName = "STR_Item_toolkit";
         weight = 4;
         buyPrice = 350;
         sellPrice = 100;
         illegal = false;
         edible = -1;
         icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
+    };
+	
+	class schmerzmittel {
+        variable = "schmerzmittel";
+        displayName = "STR_Item_Schmerzmittel";
+        weight = 1;
+        buyPrice = 5500;
+        sellPrice = 1000;
+        illegal = false;
+        edible = 1;
+        icon = "";
     };
 	
 	class mikro_prozessor {
@@ -563,10 +574,10 @@ class VirtualItems {
         edible = -1;
         icon = "";
     };
-
+	
     class platin_barren {
         variable = "platinBarren";
-        displayName = "STR_Item_AluBarren";
+        displayName = "STR_Item_PlatinBarren";
         weight = 5;
         buyPrice = 8000;
         sellPrice = 3500;
