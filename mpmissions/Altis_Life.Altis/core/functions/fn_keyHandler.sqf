@@ -248,14 +248,13 @@ switch (_code) do {
     //O Key
     case 209: {
         if (_shift) then {
-            {
-				switch (player getVariable["Earplugs",0]) do {
-					case 0: {hint composeText [ image "icons\sound.paa"," 100% Leiser"]; 1 fadeSound 0; player setVariable ["Earplugs", 10]; };
-					case 10: {hint composeText [ image "icons\sound.paa"," 60% Leiser"]; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
-					case 40: {hint composeText [ image "icons\sound.paa"," 30% Leiser"]; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
-					case 70: {hint composeText [ image "icons\sound_new.paa"," Normaler Sound"]; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
-				};
-			};
+            if (soundVolume != 1) then {
+                1 fadeSound 1;
+                hint composeText [ image "icons\sound_new.paa"," Normaler Sound"];
+            } else {
+                1 fadeSound 0.1;
+                hint composeText [ image "icons\sound.paa"," 90% Leiser"];
+            };
         };
     };
 
