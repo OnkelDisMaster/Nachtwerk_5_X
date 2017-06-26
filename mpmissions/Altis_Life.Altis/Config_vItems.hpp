@@ -157,12 +157,12 @@ class VirtualShops {
 
     class kabelbinder {
         variable = "kabelbinder";
-        displayName = "STR_Item_Kabelbinder";
+        displayName = "STR_Item_Kabel";
         weight = 1;
         buyPrice = 5500;
         sellPrice = 1000;
         illegal = true;
-        edible = 1;
+        edible = -1;
         icon = "";
     };
 
