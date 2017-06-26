@@ -6528,7 +6528,19 @@
             <Portuguese>conjunto de ferramentas</Portuguese>
             <Polish>zestaw narzędzi</Polish>
         </Key>
-		<Key ID="STR_Item_Schmerzmittel">
+        <Key ID="STR_Item_Kabelbinder">
+            <Original>Zipties</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kabelbinder</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+
+        <Key ID="STR_Item_Schmerzmittel">
             <Original>Painkiller</Original>
             <Czech></Czech>
             <Spanish></Spanish>
@@ -8569,6 +8581,61 @@
         </Key>
     </Package>
     <Package name="Process_Action">
+        <Key ID="STR_Process_Apfelsaft">
+            <Original>Mixing Apple Juice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Äpfel auspressen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Process_Pfirsichsaft">
+            <Original>Mixing Peach Juice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Pfirsiche auspressen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Process_Ananassaft">
+            <Original>Mixing Pineapple Juice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Ananas auspressen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Process_Bananensaft">
+            <Original>Mixing Banana Juice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Bananen auspressen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Process_Kokosnussmilch">
+            <Original>Mixing Coconut Juice</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kokosnüsse zermalmen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Process_oel">
             <Original>Processing Oil</Original>
             <Czech>zpracování ropy</Czech>
