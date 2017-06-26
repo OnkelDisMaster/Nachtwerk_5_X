@@ -923,12 +923,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 	
-	 class O_APC_Wheeled_02_rcws_F {
+	class O_APC_Wheeled_02_rcws_F {
         vItemSpace = -1;
         licenses[] = { {""}, {"cg"}, {""}, {""} };
         price = 300000;
         textures[] = {}
-        };
     };
 
     class C_Van_01_transport_F {
