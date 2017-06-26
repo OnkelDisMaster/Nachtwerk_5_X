@@ -16,7 +16,7 @@ class AltisPhone {
 
     class backgroundScreen: Life_RscPicture {
         idc = 6601;
-        text = "textures\phone_bg_manwar.paa";
+        text = "skins\phone_bg_manwar.paa";
         x = 0.710431 * safezoneW + safezoneX;
         y = 0.533 * safezoneH + safezoneY;
         w = 0.15 * safezoneW;
@@ -25,7 +25,7 @@ class AltisPhone {
 
     class backgroundPhone: Life_RscPicture {
         idc = 6600;
-        text = "textures\phone_frame.paa";
+        text = "skins\phone_frame.paa";
         x = 0.710431 * safezoneW + safezoneX;
         y = 0.533 * safezoneH + safezoneY;
         w = 0.15 * safezoneW;

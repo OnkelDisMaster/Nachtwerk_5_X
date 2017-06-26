@@ -373,14 +373,14 @@ class LifeCfgVehicles {
         price = 950000;
         textures[] = { 
 		   /*{ "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa"
+                "skins\Mandes1.paa",
+				"skins\Mandes2.paa",
+				"skins\Mandes3.paa"
            } },
 		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa"
+                "skins\Manwd1.paa",
+				"skins\Manwd2.paa",
+				"skins\Manwd3.paa"
             } }*/
 		};
     };
@@ -391,9 +391,9 @@ class LifeCfgVehicles {
         price = 500000;
         textures[] = { 
 		   /*{ "Smell Tank", "civ", {
-                "textures\ArmA3-Smell-Tempesttank0.jpg",
-				"textures\ArmA3-Smell-Tempesttank1.jpg",
-				"textures\ArmA3-Smell-Tempesttank2.jpg"
+                "skins\ArmA3-Smell-Tempesttank0.jpg",
+				"skins\ArmA3-Smell-Tempesttank1.jpg",
+				"skins\ArmA3-Smell-Tempesttank2.jpg"
            } }*/
 		};
     };
@@ -404,14 +404,14 @@ class LifeCfgVehicles {
         price = 4450000;
         textures[] = { 
 		  /* { "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa"
+                "skins\Mandes1.paa",
+				"skins\Mandes2.paa",
+				"skins\Mandes3.paa"
            } },
 		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa"
+                "skins\Manwd1.paa",
+				"skins\Manwd2.paa",
+				"skins\Manwd3.paa"
             } }*/
 		};
     };
@@ -422,14 +422,14 @@ class LifeCfgVehicles {
         price = 7950000;
         textures[] = { 
   	       /*{ "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa"
+                "skins\Mandes1.paa",
+				"skins\Mandes2.paa",
+				"skins\Mandes3.paa"
            } },
 		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa"
+                "skins\Manwd1.paa",
+				"skins\Manwd2.paa",
+				"skins\Manwd3.paa"
             } }*/
 		};
     };
@@ -551,25 +551,25 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, ""  },
             { "State Police", "cop", {
-                "textures\car\policeoff.jpg"
+                "skins\car\policeoff.jpg"
 			 }, ""  },
             { "SWAT", "cop", {
-                "textures\car\swatoff.jpg"
+                "skins\car\swatoff.jpg"
             }, ""  },
 			{ "Sheriff", "cop", {
-                "textures\car\SDOff.jpg"
+                "skins\car\SDOff.jpg"
             }, ""  },
 			{ "DEA", "cop", {
-                "textures\car\DEAoff.jpg"
+                "skins\car\DEAoff.jpg"
             }, ""  },
 			{ "Monster", "civ", {
-                "textures\car\monsterenergy_off.jpg"
+                "skins\car\monsterenergy_off.jpg"
             } , "" },
 			{ "Unicorn", "civ", {
-                "textures\car\ziv_offroad.jpg"
+                "skins\car\ziv_offroad.jpg"
             }, ""  },
 			{ "Gay", "civ", {
-                "textures\car\ziv_offroad_Gay.jpg"
+                "skins\car\ziv_offroad_Gay.jpg"
             }, ""  },
 			
 			{ "Red", "civ", {
@@ -597,7 +597,7 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             }, "" },
             { "Polizei", "cop", {
-                "textures\car\police_offroad.paa"
+                "skins\car\police_offroad.paa"
             }, "" }
         };
     };
@@ -644,10 +644,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "State Police", "cop", {
-                "textures\Hatchbackpol.jpg"
+                "skins\Hatchbackpol.jpg"
             } },
 			{ "Monster", "civ", {
-                "textures\hatchback_sport_ken_block.jpg"
+                "skins\hatchback_sport_ken_block.jpg"
             } }
 */
 			{ "Red", "civ", {
@@ -669,7 +669,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
             { "Polizei", "cop", {
-                "textures\car\police_hatchback.paa"
+                "skins\car\police_hatchback.paa"
             }, "" }
         };
     };
@@ -707,7 +707,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
             } },
 			{ "City Police", "cop", {
-                "textures\PDQUAD.jpg"
+                "skins\PDQUAD.jpg"
             } }*/
 			
 			{ "Polizei", "cop", {
@@ -792,16 +792,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 1450000;
         textures[] = {
 	       /*{ "MAN Desert", "civ", {
-                "textures\Mandes1.paa",
-				"textures\Mandes2.paa",
-				"textures\Mandes3.paa",
-				"textures\Mandes4.paa"
+                "skins\Mandes1.paa",
+				"skins\Mandes2.paa",
+				"skins\Mandes3.paa",
+				"skins\Mandes4.paa"
            } },
 		   { "MAN Woodland", "civ", {
-                "textures\Manwd1.paa",
-				"textures\Manwd2.paa",
-				"textures\Manwd3.paa",
-				"textures\Manwd4.paa"
+                "skins\Manwd1.paa",
+				"skins\Manwd2.paa",
+				"skins\Manwd3.paa",
+				"skins\Manwd4.paa"
             } }*/
 		};
     };
@@ -881,28 +881,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
 			}, ""  },
 			{ "APD Sheriff", "cop", {
-                "textures\car\BTsheriff.jpg"
+                "skins\car\BTsheriff.jpg"
 			} , "" },
 			{ "State Police", "cop", {
-                "textures\car\policesuv.jpg"
+                "skins\car\policesuv.jpg"
             }, ""  },
 			{ "DEA", "cop", {
-                "textures\car\DEAsuv.jpg"
+                "skins\car\DEAsuv.jpg"
             }, ""  },
 			{ "Sheriff", "cop", {
-                "textures\car\BTsheriffSuv.jpg"
+                "skins\car\BTsheriffSuv.jpg"
             }, ""  },
 			{ "HWY Police", "cop", {
-                "textures\car\HWYsuv.jpg"
+                "skins\car\HWYsuv.jpg"
             }, ""  },
 			{ "Trump", "civ", {
-                "textures\car\TrumpSUV.jpg"
+                "skins\car\TrumpSUV.jpg"
             }, ""  },
 			{ "Monster", "civ", {
-                "textures\car\suv_Monster_energy_block.jpg"
+                "skins\car\suv_Monster_energy_block.jpg"
             }, ""  },
 			{ "Ambulance", "med", {
-                "textures\car\med_suv.jpg"
+                "skins\car\med_suv.jpg"
             }, ""  },
 			
 			{ "Dark Red", "civ", {
@@ -915,7 +915,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
             { "Polizei", "cop", {
-                "textures\car\police_suv.paa"
+                "skins\car\police_suv.paa"
             }, "" }
         };
     };
@@ -953,8 +953,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
             } },*/
 			{ "Live Saver", "med", {
-                "textures\rtwfront.jpg",
-				"textures\rtwback.jpg"
+                "skins\rtwfront.jpg",
+				"skins\rtwback.jpg"
             },"" },
 			{ "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -971,28 +971,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 3500000;
         textures[] = {
             { "Metro Police", "cop", {
-                "textures\car\swathunter_1.jpg",
-				"textures\car\swathunter_2.jpg"
+                "skins\car\swathunter_1.jpg",
+				"skins\car\swathunter_2.jpg"
             }, ""  },
 			{ "SWAT", "cop", {
-                "textures\car\APD_Swat_1.jpg",
-				"textures\car\swathunter_2.jpg"
+                "skins\car\APD_Swat_1.jpg",
+				"skins\car\swathunter_2.jpg"
             }, ""  },
 			{ "Sheriff", "cop", {
-                "textures\car\SD_Hunter_1.jpg",
-				"textures\car\swathunter_2.jpg"
+                "skins\car\SD_Hunter_1.jpg",
+				"skins\car\swathunter_2.jpg"
             }, ""  },
 			{ "DEA", "cop", {
-                "textures\car\DEA_Hunter_1.jpg",
-				"textures\car\swathunter_2.jpg"
+                "skins\car\DEA_Hunter_1.jpg",
+				"skins\car\swathunter_2.jpg"
             }, ""  },
 			{ "State Police", "cop", {
-                "textures\car\APDHunter_1.jpg",
-				"textures\car\swathunter_2.jpg"
+                "skins\car\APDHunter_1.jpg",
+				"skins\car\swathunter_2.jpg"
             }, ""  },
 			{ "Black", "cop", {
-                "textures\car\sek_hunter_1.paa",
-                "textures\car\sek_hunter_2.paa"
+                "skins\car\sek_hunter_1.paa",
+                "skins\car\sek_hunter_2.paa"
             }, "" },
 			{ "Black", "civ", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
@@ -1039,8 +1039,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 625000;
         textures[] = {
             /*{ "DEA", "cop", {
-                "textures\deaquilin1.jpg",
-				"textures\deaquilin2.jpg"
+                "skins\deaquilin1.jpg",
+				"skins\deaquilin2.jpg"
             } }*/
 			
 			{ "Arid", "civ", {
@@ -1067,22 +1067,22 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 50000;
         textures[] = {
             { "DEA", "cop", {
-                "textures\4WDDEA.jpg"
+                "skins\4WDDEA.jpg"
             } },
 			{ "SWAT", "cop", {
-                "textures\4WDSWAT.jpg"
+                "skins\4WDSWAT.jpg"
             } },
 			{ "POLICE", "cop", {
-                "textures\4WDAPD.jpg"
+                "skins\4WDAPD.jpg"
             } },
 			{ "Sheriff", "cop", {
-                "textures\4WDSD.jpg"
+                "skins\4WDSD.jpg"
             } },
 			{ "Troll", "civ", {
-                "textures\4WDTROLL.jpg"
+                "skins\4WDTROLL.jpg"
             } },
 			{ "Paramedic", "med", {
-                "textures\4WDMED.jpg"
+                "skins\4WDMED.jpg"
             } }
         };
     };*/
@@ -1153,10 +1153,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             } },
             { "Life Saver Medic", "med", {
-                "textures\MDHM.jpg"
+                "skins\MDHM.jpg"
 			} },
             { "State Police", "cop", {
-                "textures\police_heli.jpg"
+                "skins\police_heli.jpg"
             } },
 			{ "Sheriff", "cop", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -1233,19 +1233,19 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
             { "Rescue", "med", {
-                "textures\OrcaRescue.jpg"
+                "skins\OrcaRescue.jpg"
             } },
 			{ "State Police", "cop", {
-                "textures\policeorc.jpg"
+                "skins\policeorc.jpg"
             } },
 			{ "Life Saver", "med", {
-                "textures\westpacorc.jpg"
+                "skins\westpacorc.jpg"
             } },
 			{ "Seven News", "civ", {
-                "textures\sevenorc.jpg"
+                "skins\sevenorc.jpg"
             } },
 			{ "Nine News", "civ", {
-                "textures\nineorc.jpg"
+                "skins\nineorc.jpg"
             } }*/
 			
 			{ "Black", "cop", {
