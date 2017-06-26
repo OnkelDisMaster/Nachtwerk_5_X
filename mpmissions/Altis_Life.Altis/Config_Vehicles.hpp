@@ -1101,12 +1101,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 	
-	 class I_Heli_light_03_unarmed_F { 
+	class I_Heli_light_03_unarmed_F { 
         vItemSpace = -1;
         licenses[] = { {""}, {"cAir"}, {"mAir"}, {""} };
         price = 200000;
-        textures[] = {}
-        };
+        textures[] = {};
     };
 
     class B_Heli_Light_01_F {
