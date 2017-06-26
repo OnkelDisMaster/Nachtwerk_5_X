@@ -341,6 +341,7 @@ switch (_code) do {
 	case 82: {
 		if ((_shift) && (license_cop_sound)) then {
 			hint "Cop Sound";
+			[player,"copsound"] remoteExec ["life_fnc_say3D",RANY];
 			sleep 2;
 		};
 	};

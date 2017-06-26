@@ -932,18 +932,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 	
-	/* class O_APC_Wheeled_02_rcws_F { ######### TODO: Eventuell einbauen?
-        vItemSpace = 500;
-        licenses[] = { {""}, {""}, {""}, {""} };
+	 class O_APC_Wheeled_02_rcws_F {
+        vItemSpace = -1;
+        licenses[] = { {""}, {"cg"}, {""}, {""} };
         price = 300000;
-        textures[] = {
-            { "APD SWAT", "cop", {
-                "textures\Marid1.paa",
-				"textures\Marid2.paa",
-				"textures\MaridRCWS.paa"
-            } }
+        textures[] = {}
         };
-    };*/
+    };
 
     class C_Van_01_transport_F {
         vItemSpace = 150;
