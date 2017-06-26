@@ -140,16 +140,7 @@ class CarShops {
 
     class cop_car {			//Lizenz     cg
         side = "cop";
-        vehicles[] = {
-			//{ "B_Quadbike_01_F", { "", "", -1 } },
-            //{ "C_Offroad_01_F", { "life_coplevel", "SCALAR", 2 } },
-            //{ "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
-            //{ "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 2 } },
-            //{ "B_MRAP_01_F", { "life_coplevel", "SCALAR", 3 } },
-			//{ "O_T_LSV_02_unarmed_F", { "life_coplevel", "SCALAR", 5 } },
-			//{ "C_Offroad_02_unarmed_black_F", { "life_coplevel", "SCALAR", 2 } },
-			//{ "O_APC_Wheeled_02_rcws_F", { "life_coplevel", "SCALAR", 5 } }
-			
+        vehicles[] = {			
 			{ "B_Quadbike_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Offroad_01_F", { "life_coplevel", "SCALAR", 2 } },
@@ -173,11 +164,11 @@ class CarShops {
 			
 			{ "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
-			{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 4 } },
-            { "B_UAV_01_F", { "life_coplevel", "SCALAR", 2 } },
-			{ "I_Heli_Transport_02_F", { "life_coplevel", "SCALAR", 5 } },
+			{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
+            { "B_UAV_01_F", { "life_coplevel", "SCALAR", 3 } },
+			{ "I_Heli_Transport_02_F", { "life_coplevel", "SCALAR", 4 } },
             { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 6 } },
-			{ "B_Heli_Transport_03_F", { "life_coplevel", "SCALAR", 7 } },
+			{ "B_Heli_Transport_03_unarmed_F", { "life_coplevel", "SCALAR", 7 } },
             { "B_Plane_Fighter_01_F", { "life_coplevel", "SCALAR", 8 } },
 			{ "B_T_VTOL_01_vehicle_blue_F", { "life_coplevel", "SCALAR", 7 } },
             { "B_T_UAV_03_F", { "life_coplevel", "SCALAR", 10 } }
@@ -1111,16 +1102,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 	
-	/* class I_Heli_light_03_unarmed_F { ########TODO: ist in der alten nicht enthalten?!
-        vItemSpace = 200;
-        licenses[] = { {""}, {""}, {""}, {""} };
+	 class I_Heli_light_03_unarmed_F { 
+        vItemSpace = -1;
+        licenses[] = { {""}, {"cAir"}, {"mAir"}, {""} };
         price = 200000;
-        textures[] = {
-            { "Black", "cop", {
-                "textures\HellcatPD.jpg"
-            } }
+        textures[] = {}
         };
-    };*/
+    };
 
     class B_Heli_Light_01_F {
         vItemSpace = 125;
@@ -1534,8 +1522,29 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	
 	class B_T_VTOL_01_vehicle_olive_F {
         vItemSpace = 550;
-        licenses[] = { {"elite"}, {""}, {""}, {""} };//license_civ_boat
+        licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 14950000;
         textures[] = { };
     };	
+	
+	class B_T_VTOL_01_vehicle_olive_F {
+        vItemSpace = 550;
+        licenses[] = { {"elite"}, {""}, {""}, {""} };
+        price = 14950000;
+        textures[] = { };
+    };
+	
+	class B_T_VTOL_01_vehicle_blue_F {
+        vItemSpace = 550;
+        licenses[] = { {"elite"}, {"cAir"}, {"mAir"}, {""} };
+        price = 30000000;
+        textures[] = { };
+    };
+	
+	class B_T_UAV_03_F {
+        vItemSpace = -1;
+        licenses[] = { {""}, {"cAir"}, {""}, {""} };
+        price = 300000;
+        textures[] = { };
+    };
 };
