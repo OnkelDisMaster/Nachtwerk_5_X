@@ -1523,13 +1523,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 14950000;
         textures[] = { };
-    };	
-	
-	class B_T_VTOL_01_vehicle_olive_F {
-        vItemSpace = 550;
-        licenses[] = { {"elite"}, {""}, {""}, {""} };
-        price = 14950000;
-        textures[] = { };
     };
 	
 	class B_T_VTOL_01_vehicle_blue_F {
