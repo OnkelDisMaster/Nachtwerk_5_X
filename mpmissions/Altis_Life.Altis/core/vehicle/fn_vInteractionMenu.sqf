@@ -38,8 +38,7 @@ _chip = life_vInact_curTarget getvariable ["Chipsatz",0]; // 0 fpr nicht nichts,
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
-if("toolkit" in (items player)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
-if(true) exitWith {hint format["ITEMS: %1",items player];};
+if("ToolKit" in (items player)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 if(_curTarget isKindOf "Ship") then {
 		_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
