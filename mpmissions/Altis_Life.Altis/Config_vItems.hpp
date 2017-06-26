@@ -37,7 +37,7 @@ class VirtualShops {
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder" };
     };
 
     class gang {
@@ -45,7 +45,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder" };
     };
 
     class wongs {
@@ -156,12 +156,12 @@ class VirtualShops {
     };
 
     class kabelbinder {
-        variable = "schmerzmittel";
-        displayName = "STR_Item_Schmerzmittel";
+        variable = "kabelbinder";
+        displayName = "STR_Item_Kabelbinder";
         weight = 1;
         buyPrice = 5500;
         sellPrice = 1000;
-        illegal = false;
+        illegal = true;
         edible = 1;
         icon = "";
     };
