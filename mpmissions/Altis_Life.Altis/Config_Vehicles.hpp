@@ -1498,15 +1498,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_CTRG_Heli_Transport_01_tropic_F {
-        vItemSpace = 300;
-        licenses[] = { {"elite"}, {""}, {""}, {""} };//license_cop_cg
-        price = 9500000;
+        vItemSpace = 350;
+        licenses[] = { {"elite"}, {""}, {""}, {""} };
+        price = 7500000;
         textures[] = { };
     };
 	
 	class B_CTRG_Heli_Transport_01_sand_F {
-        vItemSpace = 320;
-        licenses[] = { {""}, {""}, {""}, {""} };//license_cop_cg
+        vItemSpace = 420;
+        licenses[] = { {""}, {""}, {""}, {""} };
         price = 9500000;
         textures[] = { };
     };

@@ -375,7 +375,7 @@ class Licenses {
 	class pro_rebel {
         variable = "pro_rebel";
         displayName = "STR_License_ProRebel";
-        price = 2750000;
+        price = 5750000;
         illegal = false;
         side = "civ";
     };
@@ -383,7 +383,7 @@ class Licenses {
 	class elite {
         variable = "elite";
         displayName = "STR_License_Elite";
-        price = 9000;
+        price = 20000000;
         illegal = false;
         side = "civ";
     };
