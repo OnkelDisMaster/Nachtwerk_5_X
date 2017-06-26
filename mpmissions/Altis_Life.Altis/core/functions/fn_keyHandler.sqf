@@ -287,6 +287,57 @@ switch (_code) do {
 		};	
 	};
 	
+	// Emotes
+	case 79: {
+		player playAction "GestureCeaseFire";
+		sleep 2;
+	};
+	
+	case 79: {
+		player playAction "GestureAdvance";
+		sleep 2;
+	};
+	
+	case 80: {
+		player playAction "GestureAgonyCargo";
+		sleep 2;
+	};
+	
+	case 81: {
+		player playAction "GestureCover";
+		sleep 2;
+	};
+	
+	case 75: {
+		player playAction "GestureFollow";
+		sleep 2;
+	};
+	
+	case 76: {
+		player playAction "GestureFreeze";
+		sleep 2;
+	};
+	
+	case 77: {
+		player playAction "GestureHi";
+		sleep 2;
+	};
+	
+	case 71: {
+		player playAction "GestureNo";
+		sleep 2;
+	};
+	
+	case 72: {
+		player playAction "GestureNod";
+		sleep 2;
+	};
+	
+	case 73: {
+		player playAction "GesturePoint";
+		sleep 2;
+	};
+	
 	//SmartPhone  Shift + 1
     case 2:
     {
