@@ -546,30 +546,30 @@ class LifeCfgVehicles {
             { "Blue / White", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
-            } },
+            } },*/
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
             { "State Police", "cop", {
-                "textures\policeoff.jpg"
+                "textures\car\policeoff.jpg"
 			 } },
             { "SWAT", "cop", {
-                "textures\swatoff.jpg"
+                "textures\car\swatoff.jpg"
             } },
 			{ "Sheriff", "cop", {
-                "textures\SDOff.jpg"
+                "textures\car\SDOff.jpg"
             } },
 			{ "DEA", "cop", {
-                "textures\DEAoff.jpg"
+                "textures\car\DEAoff.jpg"
             } },
 			{ "Monster", "civ", {
-                "textures\monsterenergy_off.jpg"
+                "textures\car\monsterenergy_off.jpg"
             } },
 			{ "Unicorn", "civ", {
-                "textures\ziv_offroad.jpg"
+                "textures\car\ziv_offroad.jpg"
             } },
 			{ "Gay", "civ", {
-                "textures\ziv_offroad_Gay.jpg"
+                "textures\car\ziv_offroad_Gay.jpg"
             } }
 			
 			{ "Red", "civ", {
@@ -595,9 +595,6 @@ class LifeCfgVehicles {
             { "Blue / White", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
-            }, "" },*/
-            { "Taxi", "civ", {
-                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
             { "Polizei", "cop", {
                 "textures\car\police_offroad.paa"
@@ -652,7 +649,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Monster", "civ", {
                 "textures\hatchback_sport_ken_block.jpg"
             } }
-
+*/
 			{ "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
             }, "" },
@@ -670,7 +667,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
-            }, "" },*/
+            }, "" },
             { "Polizei", "cop", {
                 "textures\car\police_hatchback.paa"
             }, "" }
@@ -715,7 +712,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			
 			{ "Polizei", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
-            }, "" }/*,
+            }, "" },
             { "Digi Desert", "reb", {
                 "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
             }, "" },
@@ -739,7 +736,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            }, "" }*/
+            }, "" }
         };
     };
 
@@ -755,11 +752,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } }
-			
+			*/
 			{ "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            }, "" },*/
+            }, "" },
             { "Polizei", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             }, "" }
@@ -778,14 +775,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } }
-			
+			*/
 			{ "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
             }, "" },
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }*/
+            }, "" }
         };
     };
 
@@ -871,7 +868,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"driver"}, {"cg"}, {""}, {""} };//license_civ_driver
         price = 35000;
         textures[] = {
-            /*{ "Dark Red", "civ", {
+            { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
             } },
             { "Silver", "civ", {
@@ -884,28 +881,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
 			} },
 			{ "APD Sheriff", "cop", {
-                "textures\BTsheriff.jpg"
+                "textures\car\BTsheriff.jpg"
 			} },
 			{ "State Police", "cop", {
-                "textures\policesuv.jpg"
+                "textures\car\policesuv.jpg"
             } },
 			{ "DEA", "cop", {
-                "textures\DEAsuv.jpg"
+                "textures\car\DEAsuv.jpg"
             } },
 			{ "Sheriff", "cop", {
-                "textures\BTsheriffSuv.jpg"
+                "textures\car\BTsheriffSuv.jpg"
             } },
 			{ "HWY Police", "cop", {
-                "textures\HWYsuv.jpg"
+                "textures\car\HWYsuv.jpg"
             } },
 			{ "Trump", "civ", {
-                "textures\TrumpSUV.jpg"
+                "textures\car\TrumpSUV.jpg"
             } },
 			{ "Monster", "civ", {
-                "textures\suv_Monster_energy_block.jpg"
+                "textures\car\suv_Monster_energy_block.jpg"
             } },
 			{ "Ambulance", "med", {
-                "textures\med_suv.jpg"
+                "textures\car\med_suv.jpg"
             } }
 			
 			{ "Dark Red", "civ", {
@@ -916,7 +913,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            }, "" },*/
+            }, "" },
             { "Polizei", "cop", {
                 "textures\car\police_suv.paa"
             }, "" }
@@ -954,11 +951,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            } },
+            } },*/
 			{ "Live Saver", "med", {
                 "textures\rtwfront.jpg",
 				"textures\rtwback.jpg"
-            } }*/
+            },"" },
 			{ "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
             }, "" },
@@ -973,34 +970,34 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"rebel"}, {"cg"}, {""}, {""} };
         price = 3500000;
         textures[] = {
-            /*{ "Metro Police", "cop", {
-                "textures\swathunter_1.jpg",
-				"textures\swathunter_2.jpg"
+            { "Metro Police", "cop", {
+                "textures\car\swathunter_1.jpg",
+				"textures\car\swathunter_2.jpg"
             } },
 			{ "SWAT", "cop", {
-                "textures\APD_Swat_1.jpg",
-				"textures\swathunter_2.jpg"
+                "textures\car\APD_Swat_1.jpg",
+				"textures\car\swathunter_2.jpg"
             } },
 			{ "Sheriff", "cop", {
-                "textures\SD_Hunter_1.jpg",
-				"textures\swathunter_2.jpg"
+                "textures\car\SD_Hunter_1.jpg",
+				"textures\car\swathunter_2.jpg"
             } },
 			{ "DEA", "cop", {
-                "textures\DEA_Hunter_1.jpg",
-				"textures\swathunter_2.jpg"
+                "textures\car\DEA_Hunter_1.jpg",
+				"textures\car\swathunter_2.jpg"
             } },
 			{ "State Police", "cop", {
-                "textures\APDHunter_1.jpg",
-				"textures\swathunter_2.jpg"
-            } }*/
+                "textures\car\APDHunter_1.jpg",
+				"textures\car\swathunter_2.jpg"
+            } },
 			{ "Black", "cop", {
                 "textures\car\sek_hunter_1.paa",
                 "textures\car\sek_hunter_2.paa"
-            }, "" }/*,
+            }, "" },
 			{ "Black", "civ", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }*/
+            }, "" }
         };
     };
 	
