@@ -81,7 +81,7 @@ class ProcessAction {
         NoLicenseCost = 21500;
     };
 
-    class marijuana {
+    class weed {
         MaterialsReq[] = {{"cannabis",1}};
         MaterialsGive[] = {{"marijuana",1}};
         Text = "STR_Process_weed";

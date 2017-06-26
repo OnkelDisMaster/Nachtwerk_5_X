@@ -6528,6 +6528,17 @@
             <Portuguese>conjunto de ferramentas</Portuguese>
             <Polish>zestaw narzędzi</Polish>
         </Key>
+		<Key ID="STR_Item_Schmerzmittel">
+            <Original>Painkiller</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Schmerzmittel</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
 		<Key ID="STR_Item_mikroProzessor">
             <Original>Mikroprozessor</Original>
             <Czech>Mikroprozessor</Czech>
@@ -8596,7 +8607,7 @@
             <Czech>Casting měděných ingotů</Czech>
             <Spanish>Fundiendo Lingotes de Cobre</Spanish>
             <Russian></Russian>
-            <German>Kupfer wird verarbeitet</German>
+            <German>Kupfer verarbeiten</German>
             <French>Fonte de Cuivre</French>
             <Italian>Processando in lingotti di Rame</Italian>
             <Portuguese>Processando Cobre</Portuguese>
