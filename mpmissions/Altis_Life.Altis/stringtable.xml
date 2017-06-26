@@ -6539,7 +6539,6 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-
         <Key ID="STR_Item_Schmerzmittel">
             <Original>Painkiller</Original>
             <Czech></Czech>
@@ -7246,17 +7245,6 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-		<Key ID="STR_License_Transport">
-            <Original>Transport License</Original>
-            <German>Transporteur Lizenz</German>
-            <Czech></Czech>
-            <Spanish></Spanish>
-            <Russian></Russian>
-            <French></French>
-            <Italian></Italian>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
 		<Key ID="STR_License_Pina">
             <Original>Pina Colada License</Original>
             <German>Pina Colada Lizenz</German>
@@ -7312,7 +7300,7 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-		<Key ID="STR_License_Aluminium">
+		<Key ID="STR_License_Marmor">
             <Original>Marble License</Original>
             <German>Marmor Lizenz</German>
             <Czech></Czech>
@@ -7447,17 +7435,6 @@
 		<Key ID="STR_License_Weed">
             <Original>Weed License</Original>
             <German>Marijuana Lizenz</German>
-            <Czech></Czech>
-            <Spanish></Spanish>
-            <Russian></Russian>
-            <French></French>
-            <Italian></Italian>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
-		<Key ID="STR_License_Meth">
-            <Original>Meth License</Original>
-            <German>Meth Lizenz</German>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
@@ -8029,7 +8006,7 @@
         </Key>
         <Key ID="STR_License_Meth">
             <Original>Methamphetamine Training</Original>
-            <German>Methamphetamine Training</German>
+            <German>Methamphetamin Lizenz</German>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>

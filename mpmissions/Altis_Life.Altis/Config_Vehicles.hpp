@@ -514,7 +514,7 @@ class LifeCfgVehicles {
     class O_MRAP_02_F {
         vItemSpace = 100;
         licenses[] = { {"rebel"}, {""}, {""}, {""} };//license_civ_driver
-        price = 300000;
+        price = 4500000;
         textures[] = { };
     };
 
