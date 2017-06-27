@@ -406,7 +406,7 @@ class LifeCfgVehicles {
                 "#(ai,64,64,1)Fresnel(1.3,7)",
 				"#(argb,8,8,3)color(1,1,1,0.8)",
 				"#(ai,64,64,1)Fresnel(1.3,7)"
-            }, "" },
+            }, "" }
 		};
     };
 	
@@ -1048,7 +1048,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "skins\car\sek_marid_0.paa",
 				"skins\car\sek_marid_1.paa",
 				"skins\car\sek_marid_2.paa"
-			},
+			}
 		};
     };
 
