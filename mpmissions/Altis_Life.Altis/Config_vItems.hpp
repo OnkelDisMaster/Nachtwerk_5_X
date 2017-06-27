@@ -144,28 +144,6 @@ class VirtualShops {
         items[] = { "diamond_uncut", "diamond_cut", "juwelen","platinKrone"};
     };
 
-    class schmerzmittel {
-        variable = "schmerzmittel";
-        displayName = "STR_Item_Schmerzmittel";
-        weight = 1;
-        buyPrice = 5500;
-        sellPrice = 1000;
-        illegal = false;
-        edible = 1;
-        icon = "";
-    };
-
-    class kabelbinder {
-        variable = "kabelbinder";
-        displayName = "STR_Item_Kabel";
-        weight = 1;
-        buyPrice = 5500;
-        sellPrice = 1000;
-        illegal = true;
-        edible = -1;
-        icon = "#(argb,8,8,3)color(1,1,1,1)";
-    };
-
     class salt {
         name = "STR_Shops_Salt";
         side = "civ";
@@ -239,6 +217,29 @@ class VirtualItems {
     //Virtual Items
 
     //Misc
+
+    class schmerzmittel {
+        variable = "schmerzmittel";
+        displayName = "STR_Item_Schmerzmittel";
+        weight = 1;
+        buyPrice = 5500;
+        sellPrice = 1000;
+        illegal = false;
+        edible = 1;
+        icon = "";
+    };
+
+    class kabelbinder {
+        variable = "kabelbinder";
+        displayName = "STR_Item_Kabel";
+        weight = 1;
+        buyPrice = 5500;
+        sellPrice = 1000;
+        illegal = true;
+        edible = -1;
+        icon = "#(argb,8,8,3)color(1,1,1,1)";
+    };
+
     class pickaxe {
         variable = "pickaxe";
         displayName = "STR_Item_Pickaxe";
