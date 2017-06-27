@@ -737,27 +737,27 @@ class LifeCfgVehicles {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa"
-            }, "" }
+            }, "" },
             { "Yellow", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa"
-            }, "" }
+            }, "" },
             { "White", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa"
-            }, "" }
+            }, "" },
             { "Blue", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa"
-            }, "" }
+            }, "" },
             { "Dark Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa"
-            }, "" }
+            }, "" },
             { "Blue / White", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
-            }, "" }
+            }, "" },
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, ""  },
@@ -1233,7 +1233,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Blueline", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa"
-            }, "" }
+            }, "" },
             { "Elliptical", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa"
             }, "" },
