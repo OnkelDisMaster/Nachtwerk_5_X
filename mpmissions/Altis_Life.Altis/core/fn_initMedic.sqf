@@ -25,19 +25,12 @@ if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
     };
 };
 
-removeUniform player;
-removeHeadgear player;
-removeBackpack player;
-removeAllItems player;
-removeVest player;
-removeAllWeapons player;
-removeAllAssignedItems player;
-
 //Feuerwehr Gear + Setup
 if((call life_medicLevel) > 0) exitWith {
 	player forceAddUniform "U_B_CombatUniform_mcam";
 	player setObjectTextureGlobal [0,"skins\human\medic\FW_Uniform.paa"];
 	player addBackpackGlobal "B_Kitbag_sgg";
+	(unitBackpack player) setObjectTextureGlobal [0,"skins\human\medic\FW_backpack.paa"];
 	hintSilent "Du bist in Dienst Gegangen";
 };
 

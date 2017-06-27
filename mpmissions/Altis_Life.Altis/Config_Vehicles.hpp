@@ -1273,10 +1273,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
 			{ "Redbull", "civ", {
-                "skins\air\civ_hummingbird_redbull.jpg"
+                "skins\air\civ_hummingbird_redbull.paa"
 			}, "" },
 			{ "Hello Kitty", "civ", {
-                "skins\air\kitty_heli.jpg"
+                "skins\air\kitty_heli.paa"
 			}, "" },
 			{ "Hyper Beast", "civ", {
                 "skins\air\hyperbird.paa"
