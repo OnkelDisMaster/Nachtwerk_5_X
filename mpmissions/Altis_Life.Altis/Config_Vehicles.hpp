@@ -334,7 +334,7 @@ class LifeCfgVehicles {
                 "skins\car\strider_digiblau.paa"
             }, "" },
 			{ "Nachtwerk", "civ", {
-                "skins\car\strider_digiblau.paa"
+                "skins\car\nachtwerk_strider.paa"
             }, "" },			
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_strider.paa"
@@ -1038,7 +1038,18 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = -1;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 300000;
-        textures[] = {};
+        textures[] = {
+			{ "Schwarz", "cop", {
+                "#(ai,64,64,1)Fresnel(1.3,7)",
+				"#(ai,64,64,1)Fresnel(1.3,7)",
+				"#(ai,64,64,1)Fresnel(1.3,7)"
+			},
+			{ "SEK", "cop", {
+                "skins\car\sek_marid_0.paa",
+				"skins\car\sek_marid_1.paa",
+				"skins\car\sek_marid_2.paa"
+			},
+		};
     };
 
     class C_Van_01_transport_F {
