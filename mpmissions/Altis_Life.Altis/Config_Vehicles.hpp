@@ -1273,22 +1273,22 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
 			{ "Redbull", "civ", {
-                "skins\civ_hummingbird_redbull.jpg"
+                "skins\air\civ_hummingbird_redbull.jpg"
 			}, "" },
 			{ "Hello Kitty", "civ", {
-                "skins\kitty_heli.jpg"
+                "skins\air\kitty_heli.jpg"
 			}, "" },
 			{ "Hyper Beast", "civ", {
-                "skins\hyperbird.paa"
+                "skins\air\hyperbird.paa"
 			}, "" },            
             { "Feuerwehr", "med", {
-                "skins\FW_humming.paa"
+                "skins\air\FW_humming.paa"
 			}, "" },
             { "Polizei", "cop", {
-                "skins\police_heli.paa"
+                "skins\air\police_heli.paa"
             }, "" },
 			{ "Hyper Beast", "cop", {
-                "skins\hyperbird.paa"
+                "skins\air\hyperbird.paa"
 			}, "" }
         };
     };
