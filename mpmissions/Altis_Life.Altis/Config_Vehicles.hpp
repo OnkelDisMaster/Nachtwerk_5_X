@@ -1043,12 +1043,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(ai,64,64,1)Fresnel(1.3,7)",
 				"#(ai,64,64,1)Fresnel(1.3,7)",
 				"#(ai,64,64,1)Fresnel(1.3,7)"
-			},
+			},""},
 			{ "SEK", "cop", {
                 "skins\car\sek_marid_0.paa",
 				"skins\car\sek_marid_1.paa",
 				"skins\car\sek_marid_2.paa"
-			}
+			},""}
 		};
     };
 
