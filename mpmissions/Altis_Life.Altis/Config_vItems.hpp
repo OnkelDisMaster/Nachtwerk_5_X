@@ -237,7 +237,7 @@ class VirtualItems {
         sellPrice = 1000;
         illegal = true;
         edible = -1;
-        icon = "#(argb,8,8,3)color(1,1,1,1)";
+        icon = "";
     };
 
     class pickaxe {

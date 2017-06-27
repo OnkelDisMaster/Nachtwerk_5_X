@@ -291,11 +291,11 @@ class LifeCfgVehicles {
         textures[] = {
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(240, 138, 240)"
+				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -303,7 +303,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Polizei", "cop", {
                 "skins\car\PolizeiHEMMT2.paa",
@@ -567,11 +567,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(240, 138, 240)"
+				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -579,7 +579,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Polizei", "cop", {
                 "skins\car\PolizeiHEMMT2.paa",
@@ -595,11 +595,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(240, 138, 240)"
+				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -607,7 +607,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Polizei", "cop", {
                 "skins\car\PolizeiHEMMT2.paa",
@@ -637,11 +637,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(240, 138, 240)"
+				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -649,7 +649,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Polizei", "cop", {
                 "skins\car\PolizeiHEMMT2.paa",
@@ -665,11 +665,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(240, 138, 240)"
+				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -677,7 +677,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Polizei", "cop", {
                 "skins\car\PolizeiHEMMT2.paa",
@@ -1064,7 +1064,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
             }, ""  },
             { "Feuerwehr", "med", {
-                "skins\rtwfront.jpg"
+                "skins\car\rtwfront.jpg"
             },"" }
         };
     };
@@ -1075,8 +1075,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 150000;
         textures[] = {
 			{ "Feuerwehr", "med", {
-                "skins\rtwfront.jpg",
-				"skins\rtwback.jpg"
+                "skins\car\rtwfront.jpg",
+				"skins\car\rtwback.jpg"
             },"" },
 			{ "Weiß", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -1316,7 +1316,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
 			}, "" },
 			{ "Feuerwehr", "med", {
-                "skins\FW_orca.paa"
+                "skins\air\FW_orca.paa"
 			}, "" },
 			{ "Schwarz", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
@@ -1380,11 +1380,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(240, 138, 240)"
+				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -1392,7 +1392,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
-				"#(rgb,64,64,1)color(0, 0, 0, 0.8)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" },
 			{ "Polizei", "cop", {
                 "skins\car\PolizeiHEMMT2.paa",
