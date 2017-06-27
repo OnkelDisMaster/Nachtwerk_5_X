@@ -239,7 +239,7 @@ class Licenses {
 	class meth {
         variable = "meth";
         displayName = "STR_License_Meth";
-        price = 68000;
+        price = 168000;
         illegal = false;
         side = "civ";
     };
@@ -247,7 +247,7 @@ class Licenses {
 	class hero {
         variable = "hero";
         displayName = "STR_License_Hero";
-        price = 88000;
+        price = 288000;
         illegal = false;
         side = "civ";
     };
@@ -255,7 +255,7 @@ class Licenses {
 	class koks {
         variable = "koks";
         displayName = "STR_License_Koks";
-        price = 215000;
+        price = 415000;
         illegal = false;
         side = "civ";
     };

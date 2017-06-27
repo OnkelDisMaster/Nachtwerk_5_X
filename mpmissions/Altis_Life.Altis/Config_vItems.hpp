@@ -163,7 +163,7 @@ class VirtualShops {
         sellPrice = 1000;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "#(argb,8,8,3)color(1,1,1,1)";
     };
 
     class salt {
