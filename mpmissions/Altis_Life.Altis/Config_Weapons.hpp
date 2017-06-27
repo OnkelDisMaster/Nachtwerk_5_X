@@ -85,7 +85,7 @@ class WeaponShops {
 			{ "arifle_MX_SW_F", "", 320000, 2500 },
 			{ "arifle_MXM_F", "", 340000, 2500 },
 			{ "srifle_DMR_03_F", "", 485000, 2500 },
-			{ "srifle_EBR_F", "", 550000, 2500 }			
+			{ "srifle_EBR_F", "", 650000, 2500 }			
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 3000 },
@@ -297,25 +297,14 @@ class WeaponShops {
             { "srifle_DMR_01_F", "", 180000, -1 },
             { "arifle_SDAR_F", "", 20000, 7500 },
 			{ "arifle_AKM_F", "", 120000, 2500 },
-			{ "arifle_AKS_F", "", 95000, 2500 },
-			{ "arifle_MX_F", "", 175000, 2500 },
-			{ "arifle_MXC_F", "", 170000, 2500 },
-			{ "arifle_MX_SW_F", "", 220000, 2500 },
-			{ "arifle_MXM_F", "", 240000, 2500 },
-			{ "srifle_DMR_03_F", "", 285000, 2500 },
-			{ "srifle_EBR_F", "", 350000, 2500 }			
+			{ "arifle_AKS_F", "", 95000, 2500 }			
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 3000 },
             { "30Rnd_65x39_caseless_green", "", 2750 },
             { "10Rnd_762x54_Mag", "", 15000 },
             { "20Rnd_556x45_UW_mag", "", 1250 },
-			{ "30Rnd_762x39_Mag_Tracer_F", "", 15000 },
-			{ "30Rnd_545x39_Mag_Tracer_F", "", 15000 },
-			{ "30Rnd_65x39_caseless_mag", "", 5000 },
-			{ "30Rnd_65x39_caseless_mag_Tracer", "", 5000 },
-			{ "100Rnd_65x39_caseless_mag", "", 9000 },
-			{ "20Rnd_762x51_Mag", "", 15000 }
+			{ "30Rnd_762x39_Mag_Tracer_F", "", 15000 }
         };
         accs[] = {
             { "optic_ACO_grn", "", 12500 },
@@ -1305,10 +1294,11 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "ItemGPS", "", 100, 45 },
-            { "Binocular", "", 150, -1 },
-            { "FirstAidKit", "", 150, 65 },
-            { "NVGoggles", "", 1200, 980 }
+            { "ItemGPS", "", 10, -1 },
+            { "Binocular", "", 15, -1 },
+            { "FirstAidKit", "", 150, -1 },
+			{ "Medikit", "", 100, 1 },
+            { "NVGoggles", "", 12, -1 }
         };
         mags[] = {};
         accs[] = {};
