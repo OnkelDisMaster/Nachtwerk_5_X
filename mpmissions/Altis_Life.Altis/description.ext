@@ -5,6 +5,7 @@ disableChannels[]={0,1,2};
 #include "Config_Master.hpp"
 #include "Config_EmergLights.hpp"
 #include "infiSTAR_AdminMenu.hpp"
+#include "voiceControl.cpp"
 
 author = "Tonic | Edit by Nachtwerk";
 onLoadName = "Nachtwerk - Altis Life";

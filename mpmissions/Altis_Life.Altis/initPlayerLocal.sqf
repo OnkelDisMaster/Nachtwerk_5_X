@@ -16,7 +16,7 @@ if (!hasInterface && !isServer) exitWith {
 
 
 [] execVM "core\init.sqf";
-
+[] execVM "voiceControl.sqf";
 //Illegale Marker nicht für Cops
 
     if (playerSide == west) then 
