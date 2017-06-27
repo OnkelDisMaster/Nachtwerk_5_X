@@ -53,7 +53,7 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["Bomb_03_Plane_CAS_02_F",[-1]];
 		_vehicle removeMagazinesTurret ["Bomb_03_Plane_CAS_02_F",[-1]];
 
-		systemChat "Waffen entfernt und Repariert";
+		
     };
 	
 	case "I_Plane_Fighter_04_F":
@@ -78,7 +78,7 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["weapon_AGM_65Launcher",[-1]];
 		_vehicle removeMagazinesTurret ["weapon_AGM_65Launcher",[-1]];
 
-		systemChat "Waffen entfernt und Repariert";
+		
     };
 	
 	case "O_Plane_Fighter_02_F":
@@ -103,7 +103,7 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["weapon_KAB250Launcher",[-1]];
 		_vehicle removeMagazinesTurret ["weapon_KAB250Launcher",[-1]];
 
-		systemChat "Waffen entfernt und Repariert";
+		
     };
 	
 	case "B_Plane_Fighter_01_F":
@@ -131,7 +131,7 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["weapon_AGM_65Launcher",[-1]];
 		_vehicle removeMagazinesTurret ["weapon_AGM_65Launcher",[-1]];
 
-		systemChat "Waffen entfernt und Repariert";
+		
     };
 	
 	//Gorgon
@@ -144,7 +144,7 @@ switch (_veh) do
 		_vehicle setAmmoCargo 0;
         _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
-		systemChat "Waffen entfernt und Repariert";
+		
     };
 	
 	//Marid
@@ -155,6 +155,23 @@ switch (_veh) do
  		_vehicle allowDamage false;
     };
 	
+	//GhostHawk
+	case "B_Heli_Transport_01_F":
+    {
+        //Remove ammo and Flaires
+        _vehicle setVehicleAmmo 0;
+		_vehicle setDamage 0;
+		_vehicle allowDamage true;
+		_vehicle setAmmoCargo 0;
+        _vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
+		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
+		
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
+    };
 	
 	//GhostHawk (Camo)
 	case "B_Heli_Transport_01_camo_F":
@@ -172,8 +189,6 @@ switch (_veh) do
 		
 		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
 		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
-		
-		systemChat "Waffen entfernt und Repariert";
     };
 	
 	//GhostHawk (Khaki)
@@ -193,7 +208,7 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
 		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
 		
-		systemChat "Waffen entfernt und Repariert";
+		
     };
 	
 	//GhostHawk (Sand)
@@ -213,7 +228,7 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
 		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
 		
-		systemChat "Waffen entfernt und Repariert";
+		
     };
 	
 	//Xi'an
@@ -235,7 +250,29 @@ switch (_veh) do
 		
 		_vehicle removeWeaponTurret ["rockets_Skyfire",[0]];
 		_vehicle removeMagazinesTurret ["rockets_Skyfire",[0]];
-		systemChat "Waffen entfernt und Repariert";
+		
+    };
+	
+	//Falcon
+	case "B_T_UAV_03_F":    //Event Fahrzeug
+    {
+        //Remove ammo and Flaires
+        _vehicle setVehicleAmmo 0;
+		_vehicle setDamage 0;
+		_vehicle allowDamage true;
+		_vehicle setAmmoCargo 0;
+		_vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
+		_vehicle setRepairCargo 0; // Repariert
+		
+		_vehicle removeWeaponTurret ["missiles_SCALPEL",[0]];
+		_vehicle removeMagazinesTurret ["missiles_SCALPEL",[0]];
+		
+		_vehicle removeWeaponTurret ["missiles_DAR",[0]];
+		_vehicle removeMagazinesTurret ["missiles_DAR",[0]];
+		
+		_vehicle removeWeaponTurret ["rockets_Skyfire",[0]];
+		_vehicle removeMagazinesTurret ["rockets_Skyfire",[0]];
+		
     };
 	
 	//MiniGun Boat
@@ -248,7 +285,7 @@ switch (_veh) do
 		_vehicle setAmmoCargo 0;
 		_vehicle setFuelCargo 0; // kein betanken durch Tankfahrzeuge mehr
 		_vehicle setRepairCargo 0; // Repariert
-		systemChat "Waffen entfernt und Repariert";
+		
 	};	
 };
 

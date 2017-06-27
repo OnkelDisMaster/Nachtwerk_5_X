@@ -134,6 +134,7 @@ class CarShops {
 			{ "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
 			{ "I_Heli_Transport_02_F", { "", "", -1 } },
+			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
             { "O_Heli_Transport_04_F", { "", "", -1 } }
         };
     };
