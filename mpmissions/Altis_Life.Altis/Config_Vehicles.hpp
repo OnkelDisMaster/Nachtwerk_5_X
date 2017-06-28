@@ -285,8 +285,8 @@ class LifeCfgVehicles {
         price = 60000;
         textures[] = {
 			{ "Feuerwehr", "med", {
-                "#(rgb,64,64,1)color(255, 0, 0, 0.8)",
-                "#(rgb,64,64,1)color(255, 0, 0, 0.8)"
+                "#(rgb,64,64,1)color(0.941,0.541,0.941,1)",
+                "#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
             }, "" }
 		};
     };
