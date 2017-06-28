@@ -275,8 +275,9 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             }, "" },
 			{ "Feuerwehr", "med", {
-                "#(rgb,64,64,1)color(255, 0, 0, 0.8)",
-                "#(rgb,64,64,1)color(255, 0, 0, 0.8)"
+                "#(rgb,8,8,1)color(1,0,0,1)",
+				"#(rgb,8,8,1)color(1,0,0,1)",
+                "#(rgb,8,8,1)color(1,0,0,1)"
             }, "" }
 		};
     };
@@ -287,8 +288,9 @@ class LifeCfgVehicles {
         price = 60000;
         textures[] = {
 			{ "Feuerwehr", "med", {
-                "#(rgb,64,64,1)color(0.941,0.541,0.941,1)",
-                "#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
+                "#(rgb,8,8,1)color(1,0,0,1)",
+				"#(rgb,8,8,1)color(1,0,0,1)",
+                "#(rgb,8,8,1)color(1,0,0,1)"
             }, "" }
 		};
     };
