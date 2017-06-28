@@ -276,8 +276,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Feuerwehr", "med", {
                 "#(rgb,8,8,1)color(1,0,0,1)",
-				"#(rgb,8,8,1)color(1,0,0,1)",
-                "#(rgb,8,8,1)color(1,0,0,1)"
+				"#(rgb,8,8,1)color(1,0,0,1)"
             }, "" }
 		};
     };
@@ -286,12 +285,7 @@ class LifeCfgVehicles {
         vItemSpace = 350;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 60000;
-        textures[] = {
-			{ "Feuerwehr", "med", {
-                "#(rgb,8,8,1)color(1,0,0,1)",
-				"#(rgb,8,8,1)color(1,0,0,1)",
-                "#(rgb,8,8,1)color(1,0,0,1)"
-            }, "" }
+        textures[] = {};
 		};
     };
 
