@@ -1317,6 +1317,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Hyper Beast", "cop", {
                 "skins\air\hyperbird.paa"
 			}, "" },
+			{ "SEK", "cop", {
                 "skins\air\SEKHM.paa"
             }, "" }
         };

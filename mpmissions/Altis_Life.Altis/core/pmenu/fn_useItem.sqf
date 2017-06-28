@@ -26,7 +26,21 @@ switch (true) do {
             };
         };
     };
-
+	
+	case (_item == "schmerzmittel"):
+	{
+		if(vehicle player != player) exitWith {hintSilent "Du kannst dich nicht in einem Fahrzeug heilen..."};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			player setDamage 0;
+		//	player setFatigue 0;
+			player allowDamage true;
+			player enableSimulation true;
+			closeDialog 0;
+			hintSilent "Die Schmerzmittel haben gewirkt! Du hast nun wieder volles Leben."
+		};
+	};
+	
     case (_item isEqualTo "boltcutter"): {
         [cursorObject] spawn life_fnc_boltcutter;
         closeDialog 0;
