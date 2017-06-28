@@ -127,8 +127,8 @@ class Clothing {
 			{ "U_B_FullGhillie_ard", "", 1, { "life_coplevel", "SCALAR", 7 } },
 			{ "U_B_CombatUniform_mcam","SEK-Uniform", 1, { "life_coplevel", "SCALAR", 9 } },
 			{ "U_B_GEN_Soldier_F","Zivile-SEK-Uniform", 1, { "life_coplevel", "SCALAR", 9 } },
-			{ "U_B_CombatUniform_mcam_worn","SEK-Leitungs-Uniform", 1, { "life_coplevel", "SCALAR", 10 } },
-            { "U_B_GEN_Commander_F","Zivile-Leitungs-Uniform", 1, { "life_coplevel", "SCALAR", 10 } }
+			{ "U_B_CombatUniform_mcam_worn","SEK-Uniform-Digi", 1, { "life_coplevel", "SCALAR", 9 } },
+            { "U_B_GEN_Commander_F","Zivile-Leitungs-Uniform", 1, { "life_coplevel", "SCALAR", 12 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },

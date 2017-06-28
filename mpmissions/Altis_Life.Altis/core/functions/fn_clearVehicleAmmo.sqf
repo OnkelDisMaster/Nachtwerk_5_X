@@ -153,6 +153,12 @@ switch (_veh) do
 		//Remove ammo and Flaires
  		_vehicle setDamage 0;
  		_vehicle allowDamage false;
+		
+		_vehicle removeWeaponTurret ["HMG_127_APC",[1]];
+		_vehicle removeMagazinesTurret ["HMG_127_APC",[1]];
+		
+		_vehicle removeWeaponTurret ["GMG_40mm",[1]];
+		_vehicle removeMagazinesTurret ["GMG_40mm",[1]];
     };
 	
 	//GhostHawk
