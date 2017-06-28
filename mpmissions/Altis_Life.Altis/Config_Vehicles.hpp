@@ -118,24 +118,25 @@ class CarShops {
     class med_shop {
         side = "med";
         vehicles[] = {
-			{ "C_Van_01_box_F", { "", "", -1 } },
-            { "C_Offroad_01_F", { "", "", -1 } },
-            { "C_SUV_01_F", { "", "", -1 } },
-			{ "B_Truck_01_medical_F", { "", "", -1 } },
-			{ "O_Truck_03_medical_F", { "", "", -1 } },
-			{ "B_Truck_01_transport_F", { "", "", -1 } },
-			{ "B_MRAP_01_F", { "", "", -1 } }
+			{ "C_Van_01_box_F", { "life_mediclevel", "SCALAR", 1 } },
+            { "C_Offroad_01_F", { "life_mediclevel", "SCALAR", 2 } },
+            { "C_SUV_01_F", { "life_mediclevel", "SCALAR", 3 } },
+			{ "I_Truck_02_medical_F", { "life_mediclevel", "SCALAR", 2 } },
+			{ "B_Truck_01_medical_F", { "life_mediclevel", "SCALAR", 2 } },
+			{ "O_Truck_03_medical_F", { "life_mediclevel", "SCALAR", 4 } },
+			{ "B_Truck_01_transport_F", { "life_mediclevel", "SCALAR", 2 } },
+			{ "B_MRAP_01_F", { "life_mediclevel", "SCALAR", 6 } }
         };
     };
 
     class med_air_hs {		//Lizenz mAir
         side = "med";
         vehicles[] = {
-			{ "B_Heli_Light_01_F", { "", "", -1 } },
-            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
-			{ "I_Heli_Transport_02_F", { "", "", -1 } },
-			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
-            { "O_Heli_Transport_04_F", { "", "", -1 } }
+			{ "B_Heli_Light_01_F", { "life_mediclevel", "SCALAR", 1 } },
+            { "O_Heli_Light_02_unarmed_F", { "life_mediclevel", "SCALAR", 2 } },
+			{ "I_Heli_Transport_02_F", { "life_mediclevel", "SCALAR", 3 } },
+			{ "I_Heli_light_03_unarmed_F", { "life_mediclevel", "SCALAR", 5 } },
+            { "O_Heli_Transport_04_F", { "life_mediclevel", "SCALAR", 6 } }
         };
     };
 
@@ -258,7 +259,7 @@ class LifeCfgVehicles {
     class I_Truck_02_medical_F {
         vItemSpace = 250;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 300000;
+        price = 30000;
         textures[] = {
 			{ "Orange", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -281,22 +282,27 @@ class LifeCfgVehicles {
     class O_Truck_03_medical_F {
         vItemSpace = 350;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 950000;
-        textures[] = {};
+        price = 60000;
+        textures[] = {
+			{ "Feuerwehr", "med", {
+                "#(rgb,64,64,1)color(255, 0, 0, 0.8)",
+                "#(rgb,64,64,1)color(255, 0, 0, 0.8)"
+            }, "" }
+		};
     };
 
     class B_Truck_01_medical_F {
         vItemSpace = 450;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 1950000;
+        price = 95000;
         textures[] = {
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,8,8,1)color(1,0,0,1)"
+				"#(rgb,8,8,1)color(0,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
+				"#(argb,8,8,3)color(0.75,0.25,0.7,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -594,11 +600,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,8,8,1)color(1,0,0,1)"
+				"#(rgb,8,8,1)color(0,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
+				"#(argb,8,8,3)color(0.75,0.25,0.7,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -622,11 +628,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,8,8,1)color(1,0,0,1)"
+				"#(rgb,8,8,1)color(0,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
+				"#(argb,8,8,3)color(0.75,0.25,0.7,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -664,11 +670,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,8,8,1)color(1,0,0,1)"
+				"#(rgb,8,8,1)color(0,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
+				"#(argb,8,8,3)color(0.75,0.25,0.7,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -692,11 +698,11 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,8,8,1)color(1,0,0,1)"
+				"#(rgb,8,8,1)color(0,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
+				"#(argb,8,8,3)color(0.75,0.25,0.7,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
@@ -1019,13 +1025,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "skins\car\poly_suv.paa"
 			} , "" },
 			{ "Camo", "civ", {
-                "skins\car\camo_suv.jpg"
+                "skins\car\camo_suv.paa"
 			} , "" },
 			{ "Partikel", "civ", {
                 "skins\car\Particle.paa"
 			} , "" },
 			{ "Batman", "civ", {
-                "skins\car\batman_suv.jpg"
+                "skins\car\batman_suv.paa"
 			} , "" },
 			{ "Ferrari", "civ", {
                 "skins\car\civ_suv_ferrari.jpg"
@@ -1410,11 +1416,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
 			{ "Devil", "civ", {
                 "skins\car\civ_hemtt_devil_0.paa",
-				"#(rgb,8,8,1)color(1,0,0,1)"
+				"#(rgb,8,8,1)color(0,0,0,1)"
             }, "" },
 			{ "Hello Kitty", "civ", {
                 "skins\car\civ_hemtt_kitty_0.paa",
-				"#(rgb,64,64,1)color(0.941,0.541,0.941,1)"
+				"#(argb,8,8,3)color(0.75,0.25,0.7,1)"
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
