@@ -92,7 +92,10 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
     };
     if(!dialog && playerSide isEqualTo independent) then {
         [_curObject] call life_fnc_medInteractionMenu;
-     };
+	};
+	if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo civilian) then {
+		[_curObject] call life_fnc_civInteractionMenu;
+	};
 } else {
     //OK, it wasn't a player so what is it?
     private["_isVehicle","_miscItems","_money","_list"];

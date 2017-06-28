@@ -14,7 +14,7 @@ switch (playerSide) do {
 			player setObjectTextureGlobal [0, "skins\civilian_uniform_1.jpg"];
         };     
     };
-*/
+
     case west: {
         if (uniform player isEqualTo "U_Rangemaster") then {
 			if (uniform player isEqualTo "U_Rangemaster") then {
@@ -35,3 +35,4 @@ switch (playerSide) do {
         };
     };
 };
+*/

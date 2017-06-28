@@ -415,14 +415,40 @@ class LifeCfgVehicles {
         vItemSpace = 350;
         licenses[] = { {"rebel"}, {"cAir"}, {"mAir"}, {""} };//license_cop_cAir
         price = 3750000;
-        textures[] = {};
+        textures[] = {
+			{ "Camo", "civ", {
+                "\a3\air_f_heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa",
+				"\a3\air_f_heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa"
+            }, "" },
+			{ "Schwarz", "civ", {
+                "\a3\air_f_heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa",
+				"\a3\air_f_heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"
+            }, "" },
+			{ "Feuerwehr", "med", {
+                "skins\air\Taru_NW_FW_1.paa",
+				"skins\air\Taru_NW_FW_2.paa"
+            }, "" }
+		};
     };
 
 	class O_Heli_Transport_04_box_F {
         vItemSpace = 475;
         licenses[] = { {"rebel"}, {"cAir"}, {"mAir"}, {""} };//license_cop_cAir
         price = 5200000;
-        textures[] = {};
+        textures[] = {
+			{ "Camo", "civ", {
+                "\a3\air_f_heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa",
+				"\a3\air_f_heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa"
+            }, "" },
+			{ "Schwarz", "civ", {
+                "\a3\air_f_heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa",
+				"\a3\air_f_heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"
+            }, "" },
+			{ "Feuerwehr", "med", {
+                "skins\air\Taru_NW_FW_1.paa",
+				"skins\air\Taru_NW_FW_2.paa"
+            }, "" }
+		};
     };
 
 	class B_Heli_Transport_03_unarmed_F {
@@ -1106,8 +1132,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
 				"skins\car\FW_hunter_back.paa"
             }, ""  },
 			{ "Polizei", "cop", {
-                "skins\car\hunterpol_1.jpg",
-				"skins\car\hunterpol_2.jpg"
+                "skins\car\hunterpol_1.paa",
+				"skins\car\hunterpol_2.paa"
             }, ""  },
 			{ "Undercover/Asiimov", "cop", {
                 "skins\car\Hunter_asiimov_0.paa",
@@ -1290,7 +1316,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Hyper Beast", "cop", {
                 "skins\air\hyperbird.paa"
-			}, "" }
+			}, "" },
+                "skins\air\SEKHM.paa"
+            }, "" }
         };
     };
 
