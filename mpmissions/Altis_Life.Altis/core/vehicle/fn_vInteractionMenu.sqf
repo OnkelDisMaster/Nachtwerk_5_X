@@ -36,7 +36,7 @@ _chip = life_vInact_curTarget getvariable ["Chipsatz",0]; // 0 fpr nicht nichts,
 
 //Set Repair Action
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
-_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
+_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;closeDialog 0;";
 
 if("ToolKit" in (items player) || life_inv_toolkit > 0) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 if(_curTarget isKindOf "Ship") then {
@@ -118,12 +118,12 @@ switch (playerside) do
 		if (_chip isEqualTo 0) then {
 			_Btn4 ctrlShow true;
 			_Btn4 ctrlSetText localize "STR_chip_ac";
-			_Btn4 buttonSetAction "[life_vInact_curTarget,false] spawn life_fnc_chipInstall;";
+			_Btn4 buttonSetAction "[life_vInact_curTarget,false] spawn life_fnc_chipInstall;closeDialog 0;";
 			_Btn4 ctrlEnable true;
 		}  else {
 			_Btn4 ctrlShow true;
 			_Btn4 ctrlSetText localize "STR_chip_ac2";
-			_Btn4 buttonSetAction "[life_vInact_curTarget,true] spawn life_fnc_chipInstall;";
+			_Btn4 buttonSetAction "[life_vInact_curTarget,true] spawn life_fnc_chipInstall;closeDialog 0;";
 			_Btn4 ctrlEnable true;
 		};
 	};
@@ -142,7 +142,7 @@ switch (playerside) do
 		if(count crew _curTarget isEqualTo 0) then {_Btn4 ctrlEnable false;};
 	
 		_Btn5 ctrlSetText localize "STR_vInAct_Impound";
-		_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
+		_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;closeDialog 0;";
 	};
 };
 };	
