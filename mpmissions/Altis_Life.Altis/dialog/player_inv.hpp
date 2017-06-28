@@ -399,7 +399,7 @@ class playerSettings {
 class ButtonHelpz_ICON: life_RscPicture
 {
 idc = 1210;
-text = "images\tablet\Internet.paa";
+text = "images\tablet\stvo.paa";
  x = 0.505251 * safezoneW + safezoneX;
  y = 0.6988 * safezoneH + safezoneY;
  w = 0.0315 * safezoneW;
