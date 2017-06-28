@@ -16,12 +16,17 @@ switch (playerSide) do {
 		ctrlShow[3025,false];
 		ctrlShow[9800,true];
 		ctrlShow[888898,true];
+		ctrlShow[1210,true];
+        ctrlShow[2050,true];
+
     };
 
     case civilian: {
         ctrlShow[2012,false];
         ctrlShow[9800,false];
 		ctrlShow[3024,false];
+		ctrlShow[1210,true];
+		ctrlShow[2050,true];
     };
 
     case independent: {
@@ -30,12 +35,18 @@ switch (playerSide) do {
 		ctrlShow[3025,false];
 		ctrlShow[9800,false];
 		ctrlShow[3024,false];
+		ctrlShow[1210,true];
+		ctrlShow[2050,true];
     };
 };
 
-if (FETCH_CONST(life_adminlevel) < 1) then {
+if ((call life_adminlevel) < 1) then {
     ctrlShow[2020,false];
     ctrlShow[2021,false];
+};
+if ((call life_adminlevel) > 1) then {
+    ctrlShow[2020,true];
+    ctrlShow[2021,true];
 };
 
 [] call life_fnc_p_updateMenu;
