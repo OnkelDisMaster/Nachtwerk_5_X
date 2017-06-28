@@ -289,19 +289,21 @@ compileFinal "
                 _message = format[""!!!POLIZEI MESSAGE: %1"",_msg];
                 _admin = format[""Gesendet von der Polizei:""];
                 hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Polizei Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Players<br/><t color='#33CC33'>From: <t color='#ffffff'>Polizei<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
-                [""PoliceDispatch"",[""Du hast eine Nachricht von der Polizei erhalten!""]] call bis_fnc_showNotification;
+                [""PolizeiMessage"",[""Du hast eine Nachricht von der Polizei erhalten!""]] call bis_fnc_showNotification;
             };
 
-            /*if (side _from isEqualTo independent) then {
+            if (side _from isEqualTo independent) then {
                 _message = format[""!!!MEDIC MESSAGE: %1"",_msg];
                 _admin = format[""Gesendet von den Medics:""];
                 hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Medic Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Players<br/><t color='#33CC33'>From: <t color='#ffffff'>Medics<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
-                [""MedicalRequestEmerg"",[""Du hast eine Nachricht von den Medics erhalten!""]] call bis_fnc_showNotification;
-            };*/
+                [""MedicMessage"",[""Du hast eine Nachricht von den Medics erhalten!""]] call bis_fnc_showNotification;
+            };
+
+
 
             systemChat _message;
 
-            //if ((call life_adminlevel) > 0) then {systemChat _admin;};
+            if ((call life_adminlevel) > 0) then {systemChat _admin;};
         };
 
         case 5: {
@@ -310,10 +312,9 @@ compileFinal "
             _loc = _this select 3;
             _unit = _this select 4;
             _message = format[""!!! EMS REQUEST: %1"",_msg];
-            if (isNil ""_loc"") then {_loc = ""Unknown"";};
-            hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>New Dispatch<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Medics<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
-            [""MedicalRequestEmerg"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
-            systemChat _message;
+            hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>EMS Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
+
+            [""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
         };
     };
 ";
