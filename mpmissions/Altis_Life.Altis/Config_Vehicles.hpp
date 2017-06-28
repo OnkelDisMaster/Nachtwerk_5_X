@@ -286,7 +286,6 @@ class LifeCfgVehicles {
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
         price = 60000;
         textures[] = {};
-		};
     };
 
     class B_Truck_01_medical_F {
