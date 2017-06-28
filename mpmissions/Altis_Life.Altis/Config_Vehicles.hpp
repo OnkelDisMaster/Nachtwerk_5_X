@@ -146,6 +146,8 @@ class CarShops {
 			{ "B_Quadbike_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Offroad_01_F", { "life_coplevel", "SCALAR", 2 } },
+			{ "B_Truck_01_transport_F", { "life_coplevel", "SCALAR", 2 } },
+            { "B_Truck_01_box_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Hatchback_01_F", { "life_coplevel", "SCALAR", 3 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 4 } },
 			{ "B_T_LSV_01_unarmed_black_F", { "life_coplevel", "SCALAR", 5 } },
@@ -874,7 +876,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 7500;
         textures[] = {			
 			{ "Polizei", "cop", {
-                "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
+                "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" },
             { "Digi Desert", "reb", {
                 "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
