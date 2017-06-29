@@ -114,18 +114,18 @@ Example 2:
 */
 
     class Minerals {
-        class copper_unrefined {
+        class kupfer_erz {
             amount = (random(2)+1);
             zones[] = { "copper_mine" };
             item = "pickaxe";
-            mined[] = {"copper_unrefined"};
+            mined[] = {"kupfer_erz"};
         };
 
-        class iron_unrefined {
+        class eisen_erz {
             amount = (random(2)+1);
             zones[] = { "iron_mine" };
             item = "pickaxe";
-            mined[] = { "iron_unrefined" };
+            mined[] = { "eisen_erz" };
         };
 
         class salt_unrefined {

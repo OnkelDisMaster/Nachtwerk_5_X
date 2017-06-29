@@ -534,7 +534,7 @@ class VirtualItems {
 
     class eisen_erz {
         variable = "eisenerz";
-        displayName = "STR_Item_IronOre";
+        displayName = "STR_Item_Eisenerz";
         weight = 6;
         buyPrice = -1;
         sellPrice = -1;
