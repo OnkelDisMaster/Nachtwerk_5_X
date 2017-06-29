@@ -44,7 +44,7 @@ class ProcessAction {
     class kupfer {
         MaterialsReq[] = {{"kupfer_erz",1}};
         MaterialsGive[] = {{"kupfer",1}};
-        Text = "STR_Process_kupfer";
+        Text = "STR_Process_KupferErz";
         //ScrollText = "Refine Copper";
         NoLicenseCost = 1500;
     };
@@ -52,7 +52,7 @@ class ProcessAction {
     class eisen {
         MaterialsReq[] = {{"eisen_erz",1}};
         MaterialsGive[] = {{"eisen",1}};
-        Text = "STR_Process_eisen";
+        Text = "STR_Process_Eisenerz";
         //ScrollText = "Refine Iron";
         NoLicenseCost = 2500;
     };

@@ -8059,6 +8059,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_License_Anwalt">
+            <Original>Lawyer License</Original>
+            <German>Anwaltslizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
     </Package>
     <Package name="More_Item_Strings">
         <Key ID="STR_ISTR_Blast_VaultOnly">
@@ -8646,27 +8657,27 @@
             <Portuguese>Processando Heroína</Portuguese>
             <Polish>Oczyszczanie heroiny</Polish>
         </Key>
-        <Key ID="STR_Process_kupfer">
-            <Original>Casting Copper Ingots</Original>
-            <Czech>Casting měděných ingotů</Czech>
-            <Spanish>Fundiendo Lingotes de Cobre</Spanish>
+        <Key ID="STR_Process_KupferErz">
+            <Original>Melting Copperore</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <German>Kupfer verarbeiten</German>
-            <French>Fonte de Cuivre</French>
-            <Italian>Processando in lingotti di Rame</Italian>
-            <Portuguese>Processando Cobre</Portuguese>
-            <Polish>Wytop miedzi</Polish>
+            <German>Kupfererz schmelzen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
-        <Key ID="STR_Process_eisen">
-            <Original>Casting Iron Ingots</Original>
-            <Czech>Litiny ingoty</Czech>
-            <Spanish>Fundiendo Lingotes de Hierro</Spanish>
+		<Key ID="STR_Process_EisenErz">
+            <Original>Melting Ironore</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <German>Eisen wird verarbeitet</German>
-            <French>Fonte de fer</French>
-            <Italian>Processando Ferro</Italian>
-            <Portuguese>Processando Ferro</Portuguese>
-            <Polish>Wytop żelaza</Polish>
+            <German>Eisenerz schmelzen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Process_glas">
             <Original>Processing Sand</Original>
