@@ -42,16 +42,16 @@ class ProcessAction {
     };
 
     class kupfer {
-        MaterialsReq[] = {{"copper_unrefined",1}};
-        MaterialsGive[] = {{"copper_refined",1}};
+        MaterialsReq[] = {{"kupfer_erz",1}};
+        MaterialsGive[] = {{"kupfer",1}};
         Text = "STR_Process_kupfer";
         //ScrollText = "Refine Copper";
         NoLicenseCost = 1500;
     };
 
     class eisen {
-        MaterialsReq[] = {{"iron_unrefined",1}};
-        MaterialsGive[] = {{"iron_refined",1}};
+        MaterialsReq[] = {{"eisen_erz",1}};
+        MaterialsGive[] = {{"eisen",1}};
         Text = "STR_Process_eisen";
         //ScrollText = "Refine Iron";
         NoLicenseCost = 2500;
@@ -307,10 +307,10 @@ class ProcessAction {
 	
 	class pcsaft {
         MaterialsReq[] = {{"ananassaft",1},{"kokosnussMilch",1}};
-        MaterialsGive[] = {{"pinaColada",1}};
+        MaterialsGive[] = {{"pina_colada",1}};
         Text = "STR_Process_pina";
         //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 1000;
+        NoLicenseCost = 200;
 	};
 };
  

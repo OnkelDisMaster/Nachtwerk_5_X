@@ -30,6 +30,8 @@ if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
 	player setObjectTextureGlobal [0,"skins\human\medic\FW_Uniform.paa"];
 	player addBackpackGlobal "B_Kitbag_sgg";
 	(unitBackpack player) setObjectTextureGlobal [0,"skins\human\medic\FW_backpack.paa"];
+	player addItem "ToolKit";
+	player addItem "Medikit";
 
 
 [] execVM "IgiLoad\IgiLoadInit.sqf";

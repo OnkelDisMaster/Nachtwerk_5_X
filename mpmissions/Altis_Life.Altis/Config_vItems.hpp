@@ -133,7 +133,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "iron_refined", "copper_refined", "alu_barren", "platin_barren" };
+        items[] = { "eisen", "kupfer", "alu_barren", "platin_barren" };
     };
 
     class juwelier {
@@ -320,7 +320,7 @@ class VirtualItems {
     class spikeStrip {
         variable = "spikeStrip";
         displayName = "STR_Item_SpikeStrip";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -331,7 +331,7 @@ class VirtualItems {
 	class blitzer {
         variable = "blitzer";
         displayName = "STR_Item_blitzer";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -341,7 +341,7 @@ class VirtualItems {
 	class bunker {
         variable = "bunker";
         displayName = "STR_Item_bunker";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -351,7 +351,7 @@ class VirtualItems {
 	class flutlicht {
         variable = "flutlicht";
         displayName = "STR_Item_flutlicht";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -361,7 +361,7 @@ class VirtualItems {
 	class licht {
         variable = "licht";
         displayName = "STR_Item_licht";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -371,7 +371,7 @@ class VirtualItems {
 	class mauer {
         variable = "mauer";
         displayName = "STR_Item_mauer";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -381,7 +381,7 @@ class VirtualItems {
 	class plastik {
         variable = "plastik";
         displayName = "STR_Item_plastik";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -391,7 +391,7 @@ class VirtualItems {
 	class schranke {
         variable = "schranke";
         displayName = "STR_Item_schranke";
-        weight = 15;
+        weight = 1;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = true;
@@ -510,9 +510,9 @@ class VirtualItems {
         icon = "icons\ico_oilProcessed.paa";
     };
 
-    class copper_unrefined {
-        variable = "copperUnrefined";
-        displayName = "STR_Item_CopperOre";
+    class kupfer_erz {
+        variable = "kupfererz";
+        displayName = "STR_Item_Kupfererz";
         weight = 5;
         buyPrice = -1;
         sellPrice = -1;
@@ -521,8 +521,8 @@ class VirtualItems {
         icon = "icons\ico_copperOre.paa";
     };
 
-    class copper_refined {
-        variable = "copperRefined";
+    class kupfer {
+        variable = "kupfer";
         displayName = "STR_Item_CopperIngot";
         weight = 4;
         buyPrice = 5000;
@@ -532,8 +532,8 @@ class VirtualItems {
         icon = "icons\ico_copper.paa";
     };
 
-    class iron_unrefined {
-        variable = "ironUnrefined";
+    class eisen_erz {
+        variable = "eisenerz";
         displayName = "STR_Item_IronOre";
         weight = 6;
         buyPrice = -1;
@@ -543,8 +543,8 @@ class VirtualItems {
         icon = "icons\ico_ironOre.paa";
     };
 
-    class iron_refined {
-        variable = "ironRefined";
+    class eisen {
+        variable = "eisen";
         displayName = "STR_Item_IronIngot";
         weight = 5;
         buyPrice = 8000;

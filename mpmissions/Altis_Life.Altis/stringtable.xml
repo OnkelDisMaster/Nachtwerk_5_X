@@ -6583,7 +6583,7 @@
             <Portuguese>Picareta</Portuguese>
             <Polish>Kilof</Polish>
         </Key>
-        <Key ID="STR_Item_CopperOre">
+        <Key ID="STR_Item_Kupfererz">
             <Original>Copper Ore</Original>
             <Czech>Měděná ruda</Czech>
             <Spanish>Cobre</Spanish>
@@ -6594,7 +6594,7 @@
             <Portuguese>Pepita de Cobre</Portuguese>
             <Polish>Ruda miedzi</Polish>
         </Key>
-        <Key ID="STR_Item_IronOre">
+        <Key ID="STR_Item_Eisenerz">
             <Original>Iron Ore</Original>
             <Czech>Železná Ruda</Czech>
             <Spanish>Hierro</Spanish>
