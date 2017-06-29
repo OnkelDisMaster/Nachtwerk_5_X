@@ -16,7 +16,7 @@ if (currentWeapon _robber == "") exitWith { hintSilent "HaHa, Du hast keine Waff
 if (_kassa == 0) exitWith { hintSilent "Hier ist kein Bargeld mehr zu holen!" };
 
 _rip = true;
-_kassa = 100000 + round(random 500000);
+_kassa = 50000 + round(random 100000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = 100;
