@@ -66,6 +66,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class anwalt {
+        variable = "anwalt";
+        displayName = "STR_License_Anwalt";
+        price = 1200000;
+        illegal = false;
+        side = "civ";
+    };
 
     class dive {
         variable = "dive";
