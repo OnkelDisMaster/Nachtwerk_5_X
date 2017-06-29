@@ -18,8 +18,8 @@
 
 class ProcessAction {
     class oel {
-        MaterialsReq[] = {{"oil_unprocessed",1}};
-        MaterialsGive[] = {{"oil_processed",1}};
+        MaterialsReq[] = {{"oilUnprocessed",1}};
+        MaterialsGive[] = {{"oilProcessed",1}};
         Text = "STR_Process_oel";
         //ScrollText = "Process Oil";
         NoLicenseCost = 8500;
@@ -226,7 +226,7 @@ class ProcessAction {
 	};
 	
 	class brennstab {
-        MaterialsReq[] = {{"plutonium",1}};
+        MaterialsReq[] = {{"plutonium",5}};
         MaterialsGive[] = {{"brennstab",1}};
         Text = "STR_Process_brennstab";
         //ScrollText = "Harvest Marijuana";
@@ -250,7 +250,7 @@ class ProcessAction {
 	};
 	
 	class mikroprozessor {
-		MaterialsReq[] = {{"platinBarren",1},{"aluBarren",1},{"copperRefined",1}};
+		MaterialsReq[] = {{"platinBarren",1},{"aluBarren",1},{"kupfer",1}};
 		MaterialsGive[] = {{"mikroProzessor",1}};
 		Text = "STR_Process_Mikro_Prozessor";
 		//ScrollText = "Harvest Marijuana";

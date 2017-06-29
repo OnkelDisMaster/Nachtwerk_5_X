@@ -542,7 +542,7 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_ironOre.paa";
     };
-
+	
     class eisen {
         variable = "eisen";
         displayName = "STR_Item_IronIngot";
@@ -555,7 +555,7 @@ class VirtualItems {
     };
 	
 	class alu_erz {
-        variable = "aluErz";
+        variable = "aluerz";
         displayName = "STR_Item_AluErz";
         weight = 6;
         buyPrice = -1;
@@ -577,7 +577,7 @@ class VirtualItems {
     };
 	
 	class platin_erz {
-        variable = "PlatinErz";
+        variable = "platinerz";
         displayName = "STR_Item_PlatinErz";
         weight = 6;
         buyPrice = -1;
@@ -723,8 +723,8 @@ class VirtualItems {
         variable = "marmorRoh";
         displayName = "STR_Item_MarmorRoh";
         weight = 7;
-        buyPrice = -1;
-        sellPrice = -1;
+        buyPrice = 1200;
+        sellPrice = 500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_rock.paa";
@@ -1002,9 +1002,9 @@ class VirtualItems {
 	class brennstab {
         variable = "brennstab";
         displayName = "STR_Item_Brennstab";
-        weight = 4;
+        weight = 5;
         buyPrice = 40000;
-        sellPrice = 17500;
+        sellPrice = 900000;
         illegal = true;
         edible = -1;
         icon = "";
