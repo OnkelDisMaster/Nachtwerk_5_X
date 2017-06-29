@@ -42,7 +42,7 @@ class ProcessAction {
     };
 
     class kupfer {
-        MaterialsReq[] = {{"kupfer_erz",1}};
+        MaterialsReq[] = {{"kupfererz",1}};
         MaterialsGive[] = {{"kupfer",1}};
         Text = "STR_Process_KupferErz";
         //ScrollText = "Refine Copper";
@@ -50,7 +50,7 @@ class ProcessAction {
     };
 
     class eisen {
-        MaterialsReq[] = {{"eisen_erz",1}};
+        MaterialsReq[] = {{"eisenerz",1}};
         MaterialsGive[] = {{"eisen",1}};
         Text = "STR_Process_Eisenerz";
         //ScrollText = "Refine Iron";
@@ -90,7 +90,7 @@ class ProcessAction {
     };
 
 	 class platin {
-        MaterialsReq[] = {{"PlatinErz",1}};
+        MaterialsReq[] = {{"platinerz",1}};
         MaterialsGive[] = {{"platinBarren",1}};
         Text = "STR_Process_platin";
         //ScrollText = "Harvest Marijuana";
@@ -98,7 +98,7 @@ class ProcessAction {
     };
 	
 	class alu {
-        MaterialsReq[] = {{"aluErz",1}};
+        MaterialsReq[] = {{"aluerz",1}};
         MaterialsGive[] = {{"aluBarren",1}};
         Text = "STR_Process_alu";
         //ScrollText = "Harvest Marijuana";
