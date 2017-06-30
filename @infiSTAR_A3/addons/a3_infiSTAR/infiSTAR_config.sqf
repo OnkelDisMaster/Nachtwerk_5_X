@@ -48,7 +48,7 @@ _OPEN_ADMIN_MENU_KEY = 0x3B;
 
 /* What ESCAPE Menu shows */
 _ESCMNUTOP = 'Nachtwerk';
-_ESCMNUBOT = 'IP 78.31.67.120';
+_ESCMNUBOT = 'IP 144.76.83.227';
 _BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
@@ -66,7 +66,7 @@ _LogAdminActions = true;	/* true or false */
 _enableIngameLogs = true;	/* true or false */
 
 /* Use infiSTAR Tild (CommandingMenu) */
-_useTildMenu = true;	/* true or false */
+_useTildMenu = false;	/* true or false */
 
 /* "_startAsNormal": if you add admin UIDs in here as well, they will start as almost "normal" player instead of with admin menu and such. */
 _startAsNormal =

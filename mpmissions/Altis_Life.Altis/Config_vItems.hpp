@@ -141,7 +141,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "diamond_uncut", "diamond_cut", "juwelen","platinKrone"};
+        items[] = { "diamond_uncut", "diamond_cut", "juwelen","krone"};
     };
 
     class salt {
@@ -686,8 +686,8 @@ class VirtualItems {
         icon = "icons\ico_diamondCut.paa";
     };
 	
-	class platin_krone {
-        variable = "platinKrone";
+	class krone {
+        variable = "krone";
         displayName = "STR_Item_PlatinKrone";
         weight = 10;
         buyPrice = 60000;

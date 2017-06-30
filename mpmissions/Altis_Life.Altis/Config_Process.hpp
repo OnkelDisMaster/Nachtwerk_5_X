@@ -145,9 +145,9 @@ class ProcessAction {
         NoLicenseCost = 18000;
 	};
 	
-	class kronen {
-		MaterialsReq[] = {{"platinBarren",1},{"glass",1},{"diamondCut",1}};
-		MaterialsGive[] = {{"platinKrone",1}};
+	class krone {
+		MaterialsReq[] = {{"platin",1},{"glass",1},{"diamondCut",1}};
+		MaterialsGive[] = {{"krone",1}};
 		Text = "STR_Process_kronen";
 		//ScrollText = "Harvest Marijuana";
 		NoLicenseCost = 28000;
