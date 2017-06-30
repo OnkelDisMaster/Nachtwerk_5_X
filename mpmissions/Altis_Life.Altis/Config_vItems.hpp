@@ -187,9 +187,9 @@ class VirtualShops {
 	class cyborg {
         name = "STR_Shops_Cyborg";
         side = "civ";
-        license = "";
+        license = "implantat";
         level[] = { "", "", -1, "" };
-        items[] = { "mikro_prozessor", "implantat_normal" };
+        items[] = { "mikroProzessor", "implantatNormal" };
     };
 	
     class cop {
@@ -273,7 +273,7 @@ class VirtualItems {
         icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
     };
 	
-	class mikro_prozessor {
+	class mikroProzessor {
         variable = "mikroProzessor";
         displayName = "STR_Item_mikroProzessor";
         weight = 10;
@@ -284,7 +284,7 @@ class VirtualItems {
         icon = "";
     };
 	
-	class implantat_normal {
+	class implantatNormal {
         variable = "implantatNormal";
         displayName = "STR_Item_implantat_normal";
         weight = 60;
@@ -477,8 +477,8 @@ class VirtualItems {
     };
 
     //Mined Items
-    class oelup {
-        variable = "oelup";
+    class oelu {
+        variable = "oelu";
         displayName = "STR_Item_OilU";
         weight = 10;
         buyPrice = -1;

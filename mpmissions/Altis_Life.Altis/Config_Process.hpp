@@ -18,7 +18,7 @@
 
 class ProcessAction {
     class oel {
-        MaterialsReq[] = {{"oelup",1}};
+        MaterialsReq[] = {{"oelu",1}};
         MaterialsGive[] = {{"oel",1}};
         Text = "STR_Process_oel";
         //ScrollText = "Process Oil";
