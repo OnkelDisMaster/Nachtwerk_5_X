@@ -133,7 +133,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "eisen", "kupfer", "alu_barren", "platin_barren" };
+        items[] = { "eisen", "kupfer", "alu", "platin" };
     };
 
     class juwelier {
@@ -510,7 +510,7 @@ class VirtualItems {
         icon = "icons\ico_oilProcessed.paa";
     };
 
-    class kupfer_erz {
+    class kupfererz {
         variable = "kupfererz";
         displayName = "STR_Item_Kupfererz";
         weight = 5;
@@ -532,7 +532,7 @@ class VirtualItems {
         icon = "icons\ico_copper.paa";
     };
 
-    class eisen_erz {
+    class eisenerz {
         variable = "eisenerz";
         displayName = "STR_Item_Eisenerz";
         weight = 6;
@@ -554,7 +554,7 @@ class VirtualItems {
         icon = "icons\ico_iron.paa";
     };
 	
-	class alu_erz {
+	class aluerz {
         variable = "aluerz";
         displayName = "STR_Item_AluErz";
         weight = 6;
@@ -565,8 +565,8 @@ class VirtualItems {
         icon = "";
     };
 
-    class alu_barren {
-        variable = "aluBarren";
+    class alu {
+        variable = "alu";
         displayName = "STR_Item_AluBarren";
         weight = 5;
         buyPrice = 8000;
@@ -576,7 +576,7 @@ class VirtualItems {
         icon = "";
     };
 	
-	class platin_erz {
+	class platinerz {
         variable = "platinerz";
         displayName = "STR_Item_PlatinErz";
         weight = 6;
@@ -587,8 +587,8 @@ class VirtualItems {
         icon = "";
     };
 
-    class platin_barren {
-        variable = "platinBarren";
+    class platin {
+        variable = "platin";
         displayName = "STR_Item_AluBarren";
         weight = 5;
         buyPrice = 8000;
@@ -719,7 +719,7 @@ class VirtualItems {
         icon = "icons\ico_diamondCut.paa";
     };
 
-    class marmor_roh {
+    class marmorRoh {
         variable = "marmorRoh";
         displayName = "STR_Item_MarmorRoh";
         weight = 7;

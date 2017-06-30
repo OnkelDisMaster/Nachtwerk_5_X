@@ -8657,7 +8657,7 @@
             <Portuguese>Processando Heroína</Portuguese>
             <Polish>Oczyszczanie heroiny</Polish>
         </Key>
-        <Key ID="STR_Process_KupferErz">
+        <Key ID="STR_Process_Kupfererz">
             <Original>Melting Copperore</Original>
             <Czech></Czech>
             <Spanish></Spanish>
@@ -8668,7 +8668,7 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-		<Key ID="STR_Process_EisenErz">
+		<Key ID="STR_Process_Eisenerz">
             <Original>Melting Ironore</Original>
             <Czech></Czech>
             <Spanish></Spanish>

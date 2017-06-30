@@ -44,7 +44,7 @@ class ProcessAction {
     class kupfer {
         MaterialsReq[] = {{"kupfererz",1}};
         MaterialsGive[] = {{"kupfer",1}};
-        Text = "STR_Process_KupferErz";
+        Text = "STR_Process_Kupfererz";
         //ScrollText = "Refine Copper";
         NoLicenseCost = 1500;
     };
@@ -57,6 +57,22 @@ class ProcessAction {
         NoLicenseCost = 2500;
     };
 
+	class platin {
+        MaterialsReq[] = {{"platinerz",1}};
+        MaterialsGive[] = {{"platin",1}};
+        Text = "STR_Process_platin";
+        //ScrollText = "Harvest Marijuana";
+        NoLicenseCost = 5500;
+    };
+	
+	class alu {
+        MaterialsReq[] = {{"aluerz",1}};
+        MaterialsGive[] = {{"alu",1}};
+        Text = "STR_Process_alu";
+        //ScrollText = "Harvest Marijuana";
+        NoLicenseCost = 4500;
+    };
+	
     class glas {
         MaterialsReq[] = {{"sand",1}};
         MaterialsGive[] = {{"glass",1}};
@@ -89,22 +105,6 @@ class ProcessAction {
         NoLicenseCost = 4800;
     };
 
-	 class platin {
-        MaterialsReq[] = {{"platinerz",1}};
-        MaterialsGive[] = {{"platinBarren",1}};
-        Text = "STR_Process_platin";
-        //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 5500;
-    };
-	
-	class alu {
-        MaterialsReq[] = {{"aluerz",1}};
-        MaterialsGive[] = {{"aluBarren",1}};
-        Text = "STR_Process_alu";
-        //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 4500;
-    };
-	
 	class marmor {
         MaterialsReq[] = {{"marmorRoh",1}};
         MaterialsGive[] = {{"marmor",1}};

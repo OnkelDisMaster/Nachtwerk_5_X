@@ -114,18 +114,18 @@ Example 2:
 */
 
     class Minerals {
-        class kupfer_erz {
+        class kupfererz {
             amount = (random(2)+1);
             zones[] = { "copper_mine" };
             item = "pickaxe";
-            mined[] = {"kupfer_erz"};
+            mined[] = {"kupfererz"};
         };
 
-        class eisen_erz {
+        class eisenerz {
             amount = (random(2)+1);
             zones[] = { "iron_mine" };
             item = "pickaxe";
-            mined[] = { "eisen_erz" };
+            mined[] = { "eisenerz" };
         };
 
         class salt_unrefined {
@@ -149,11 +149,11 @@ Example 2:
             mined[] = { "diamond_uncut" };
         };
 
-        class platin_erz {
+        class platinerz {
             amount = (random(2)+1);
             zones[] = { "platin_mine" };
             item = "pickaxe";
-            mined[] = { "platin_erz" };
+            mined[] = { "platinerz" };
         };
 
         class oil_unprocessed {
@@ -163,11 +163,11 @@ Example 2:
             mined[] = { "oil_unprocessed" };
         };
 		
-		class alu_erz {
+		class aluerz {
             amount = (random(2)+1);
             zones[] = { "alu_mine" };
             item = "pickaxe";
-            mined[] = { "alu_erz" };
+            mined[] = { "aluerz" };
         };
 		
 		class marmor_roh {
