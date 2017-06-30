@@ -185,15 +185,15 @@ class ProcessAction {
         NoLicenseCost = 15500;
 	};
 	
-	class uranerz {
-        MaterialsReq[] = {{"uranErz",1}};
+	class uranI {
+        MaterialsReq[] = {{"uranerz",1}};
         MaterialsGive[] = {{"uranI",1}};
         Text = "STR_Process_uranerz";
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 42000;
 	};
 	
-	class uranI {
+	class uranII {
         MaterialsReq[] = {{"uranI",1}};
         MaterialsGive[] = {{"uranII",1}};
         Text = "STR_Process_uranI";
@@ -201,7 +201,7 @@ class ProcessAction {
         NoLicenseCost = 42000;
 	};
 	
-	class uranII {
+	class uranIII {
         MaterialsReq[] = {{"uranII",1}};
         MaterialsGive[] = {{"uranIII",1}};
         Text = "STR_Process_uranII";
@@ -209,7 +209,7 @@ class ProcessAction {
         NoLicenseCost = 42000;
 	};
 	
-	class uranIII {
+	class uranIV {
         MaterialsReq[] = {{"uranIII",1}};
         MaterialsGive[] = {{"uranIV",1}};
         Text = "STR_Process_uranIII";

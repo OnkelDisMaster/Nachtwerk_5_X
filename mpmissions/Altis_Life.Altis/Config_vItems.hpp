@@ -589,7 +589,7 @@ class VirtualItems {
 
     class platin {
         variable = "platin";
-        displayName = "STR_Item_AluBarren";
+        displayName = "STR_Item_PlatinBarren";
         weight = 5;
         buyPrice = 8000;
         sellPrice = 3500;
@@ -927,8 +927,8 @@ class VirtualItems {
         icon = "";
     };
 	
-	class uran_erz {
-        variable = "uranErz";
+	class uranerz {
+        variable = "uranerz";
         displayName = "STR_Item_Uranerz";
         weight = 6;
         buyPrice = -1;
@@ -939,7 +939,7 @@ class VirtualItems {
         processedItem = "cocaine_processed";
     };
 	
-	class uran_I {
+	class uranI {
         variable = "uranI";
         displayName = "STR_Item_UranI";
         weight = 5;
@@ -951,7 +951,7 @@ class VirtualItems {
 		processedItem = "uranIV";
     };
 	
-    class uran_II {
+    class uranII {
         variable = "uranII";
         displayName = "STR_Item_UranII";
         weight = 5;
@@ -963,7 +963,7 @@ class VirtualItems {
 		processedItem = "uranIV";
     };
 	
-	class uran_III {
+	class uranIII {
         variable = "uranIII";
         displayName = "STR_Item_UranIII";
         weight = 5;
@@ -975,7 +975,7 @@ class VirtualItems {
 		processedItem = "uranIV";
     };
 
-    class uran_IV {
+    class uranIV {
         variable = "uranIV";
         displayName = "STR_Item_UranIV";
         weight = 5;

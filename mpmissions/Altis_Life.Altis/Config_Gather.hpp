@@ -170,11 +170,11 @@ Example 2:
             mined[] = { "aluerz" };
         };
 		
-		class marmor_roh {
+		class marmorRoh {
             amount = (random(3)+1);
             zones[] = { "marmor_mine" };
             item = "pickaxe";
-            mined[] = { "marmor_roh" };
+            mined[] = { "marmorRoh" };
         };
 		
 		class lava {
@@ -191,11 +191,11 @@ Example 2:
             mined[] = { "schurfgut" };
         };
 		
-		class uran_erz {
+		class uranerz {
             amount = (random(2)+1);
             zones[] = { "uran_mine" };
             item = "pickaxe";
-            mined[] = { "uran_erz" };
+            mined[] = { "uranerz" };
         };
 		
     };
