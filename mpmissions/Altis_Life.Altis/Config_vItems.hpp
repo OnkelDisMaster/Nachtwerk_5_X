@@ -85,7 +85,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "schwarzpulver", "polen_boeller", "tabak", "zigaretten", "korallen", "korallen_ketten" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "schwarzpulver", "polenboeller", "tabak", "zigaretten", "korallen", "korallenketten" };
     };
 	
 	class terrorkeller {
@@ -109,7 +109,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "oil_processed", "fuelFull", "diesel" };
+        items[] = { "oel", "fuelFull", "diesel" };
     };
 
     class fishmarket {
@@ -477,8 +477,8 @@ class VirtualItems {
     };
 
     //Mined Items
-    class oil_unprocessed {
-        variable = "oilUnprocessed";
+    class oelup {
+        variable = "oelup";
         displayName = "STR_Item_OilU";
         weight = 10;
         buyPrice = -1;
@@ -488,8 +488,8 @@ class VirtualItems {
         icon = "icons\ico_oilUnprocessed.paa";
     };
 
-    class oil_processed {
-        variable = "oilProcessed";
+    class oel {
+        variable = "oel";
         displayName = "STR_Item_OilP";
         weight = 9;
         buyPrice = 10000;
@@ -824,8 +824,8 @@ class VirtualItems {
         processedItem = "polenBoeller";
     };
 
-    class polen_boeller {
-        variable = "polenBoeller";
+    class polenboeller {
+        variable = "polenboeller";
         displayName = "STR_Item_Polen_Boeller";
         weight = 4;
         buyPrice = 7000;
@@ -867,11 +867,11 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "";
-        processedItem = "korallenKetten";
+        processedItem = "korallenketten";
     };
 
-    class korallen_ketten {
-        variable = "korallenKetten";
+    class korallenketten {
+        variable = "korallenketten";
         displayName = "STR_Item_Korallenketten";
         weight = 9;
         buyPrice = 30000;

@@ -156,11 +156,11 @@ Example 2:
             mined[] = { "platinerz" };
         };
 
-        class oil_unprocessed {
+        class oelup {
             amount = (random(2)+1);
             zones[] = { "oil_field_1", "oil_field_2" };
             item = "pickaxe";
-            mined[] = { "oil_unprocessed" };
+            mined[] = { "oelup" };
         };
 		
 		class aluerz {

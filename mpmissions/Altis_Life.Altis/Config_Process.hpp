@@ -18,8 +18,8 @@
 
 class ProcessAction {
     class oel {
-        MaterialsReq[] = {{"oilUnprocessed",1}};
-        MaterialsGive[] = {{"oilProcessed",1}};
+        MaterialsReq[] = {{"oelup",1}};
+        MaterialsGive[] = {{"oel",1}};
         Text = "STR_Process_oel";
         //ScrollText = "Process Oil";
         NoLicenseCost = 8500;
@@ -161,9 +161,9 @@ class ProcessAction {
         NoLicenseCost = 2800;
 	};
 	
-	class boeller {
+	class polenboeller {
         MaterialsReq[] = {{"schwarzpulver",1}};
-        MaterialsGive[] = {{"polenBoeller",1}};
+        MaterialsGive[] = {{"polenboeller",1}};
         Text = "STR_Process_boeller";
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 5800;
@@ -179,7 +179,7 @@ class ProcessAction {
 	
 	class korallen {
         MaterialsReq[] = {{"korallen",1}};
-        MaterialsGive[] = {{"korallenKetten",1}};
+        MaterialsGive[] = {{"korallenketten",1}};
         Text = "STR_Process_korallen";
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 15500;
