@@ -12345,6 +12345,204 @@
             <Italian>Omicidio di un agente</Italian>
             <Polish>Zabijając żołnierza</Polish>
         </Key>
+        <Key ID="STR_Crime_26">
+            <Original>Besitz einer illegalen Waffe</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Besitz einer illegalen Waffe</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_27">
+            <Original>Abfeuern einer Waffe innerhalb von Staedten</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Abfeuern einer Waffe innerhalb von Staedten</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_28">
+            <Original>Geiselnahme</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Geiselnahme</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_29">
+            <Original>Raubueberfall auf Personen/Fahrzeuge</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Raubueberfall auf Personen/Fahrzeuge</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_30">
+            <Original>Bankraub</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Bankraub</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_212">
+            <Original>Bankfilialenueberfall</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Bankfilialenueberfall</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_31">
+            <Original>Mord</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Mord</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_32">
+            <Original>Aufstand</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Aufstand</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_33">
+            <Original>Angriff durch Rebellen</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Angriff durch Rebellen</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_34">
+            <Original>Angriff/Belagerung von Hauptstaedten/Checkpoints</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Angriff/Belagerung von Hauptstaedten/Checkpoints</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_35">
+            <Original>Landung in einer Flugverbotszone</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Landung in einer Flugverbotszone</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_36">
+            <Original>Fliegen/Schweben unterhalb 150m ueber Stadt</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Fliegen/Schweben unterhalb 150m ueber Stadt</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_37">
+            <Original>Ausbruch aus dem Gefaengnis</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Ausbruch aus dem Gefaengnis</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_38">
+            <Original>Fliegen ohne Fluglizenz</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Fliegen ohne Fluglizenz</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_39">
+            <Original>Dauerhaftes hupen</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Dauerhaftes hupen</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_40">
+            <Original>Handel mit exotischen Gütern</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Handel mit exotischen Gütern</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_41">
+            <Original>Umfahren eines Außenpostens</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Umfahren eines Außenpostens</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_Crime_42">
+            <Original>Kraftwerk manipulation</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <German>Kraftwerk manipulation</German>
+            <Italian></Italian>
+            <Polish></Polish>
+        </Key>
 		 <Key ID="STR_Crime_2000">
             <Original>ATM breaking</Original>
             <German>ATM Aufgebrochen</German>
