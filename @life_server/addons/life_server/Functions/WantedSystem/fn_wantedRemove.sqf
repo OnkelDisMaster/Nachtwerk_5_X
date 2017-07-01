@@ -10,7 +10,7 @@
 */
 private["_uid","_query","_dataArr","_array","_act"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
-_act = [_this,1,"",[""]] call BIS_fnc_param;
+_act = [_this,1,-1] call BIS_fnc_param;
 
 if (_act isEqualTo 1) then {
     _query = format["UPDATE wanted SET active = '0', wantedCrimes = '[]', wantedBounty = 0 WHERE wantedID='%1'",_uid];
