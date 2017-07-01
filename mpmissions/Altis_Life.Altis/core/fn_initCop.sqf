@@ -30,7 +30,7 @@ if (life_blacklisted) exitWith {
 		while {true} do
 		{
 			waitUntil {uniform player == "U_Rangemaster"};
-			player setObjectTextureGlobal [0,"skins\human\cop\NW_PD_uniform_KV"];
+			player setObjectTextureGlobal [0,"skins\human\cop\NW_PD_uniform_KV.paa"];
 			waitUntil {uniform player != "U_Rangemaster"};
 		};
 	};

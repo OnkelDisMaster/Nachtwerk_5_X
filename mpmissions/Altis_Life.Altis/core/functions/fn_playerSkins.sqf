@@ -18,7 +18,7 @@ switch (playerSide) do {
     case west: {
         if (uniform player isEqualTo "U_Rangemaster") then {
 			if (uniform player isEqualTo "U_Rangemaster") then {
-				player setObjectTextureGlobal [0,"skins\human\cop\rekrut.jpg"];
+				player setObjectTextureGlobal [0,"skins\human\cop\NW_PD_uniform_KV.paa"];
 			};
 			if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest") then {
 				player setObjectTextureGlobal [0,"skins\human\cop\polizei_uniform.jpg"];
