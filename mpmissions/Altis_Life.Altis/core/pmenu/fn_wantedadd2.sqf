@@ -88,7 +88,7 @@ _list2 lbSetData [(lbSize _list2)-1,_data];
 
 _text = "VDM $1000000";
 _data = "13";
-_list2 lbAdd format["%A (%B)",_text,_data];
+_list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
 _text = "Illegale Strassensperren $55000";
