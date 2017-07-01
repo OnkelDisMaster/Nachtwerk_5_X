@@ -25,7 +25,7 @@ if (CASH < life_ticket_val) exitWith {
     if (life_HC_isActive) then {
         [getPlayerUID player] remoteExecCall ["HC_fnc_wantedRemove",HC_Life];
     } else {
-        [getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",RSERV];
+        [getPlayerUID player,1] remoteExecCall ["life_fnc_wantedRemove",RSERV];
     };
 
     closeDialog 0;
@@ -37,7 +37,7 @@ life_ticket_paid = true;
 if (life_HC_isActive) then {
     [getPlayerUID player] remoteExecCall ["HC_fnc_wantedRemove",HC_Life];
 } else {
-    [getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",RSERV];
+    [getPlayerUID player,1] remoteExecCall ["life_fnc_wantedRemove",RSERV];
 };
 
 [0,"STR_Cop_Ticket_PaidNOTF",true,[profileName,[life_ticket_val] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",west];
