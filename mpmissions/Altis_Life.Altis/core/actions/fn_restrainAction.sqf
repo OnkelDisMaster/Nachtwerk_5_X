@@ -16,12 +16,13 @@ if (player isEqualTo _unit) exitWith {};
 if (!isPlayer _unit) exitWith {};
 //Broadcast!
 
+if((life_inv_kabelbinder < 1) && (side player isEqualTo civilian)) exitWith { hintSilent "Du hast keine Kabelbinder bei dir !"; };
+
 if (side player isEqualTo civilian) then {
 	if(life_inv_kabelbinder < 1) exitWith { hintSilent "Du hast keine Kabelbinder bei dir !"; };
 	life_inv_kabelbinder = life_inv_kabelbinder - 1;
 	hintSilent "Du hast jemanden festgenommen...";
 };
-if((life_inv_kabelbinder < 1) && (side player isEqualTo civilian)) exitWith { hintSilent "Du hast keine Kabelbinder bei dir !"; };
 
 _unit setVariable["restrained",true,true];
 [player] remoteExec ["life_fnc_restrain",_unit];
