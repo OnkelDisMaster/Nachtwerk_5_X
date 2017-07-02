@@ -118,12 +118,12 @@ switch (playerside) do
 		if (_chip isEqualTo 0) then {
 			_Btn4 ctrlShow true;
 			_Btn4 ctrlSetText localize "STR_chip_ac";
-			_Btn4 buttonSetAction "[life_vInact_curTarget,false] spawn life_fnc_chipInstall;closeDialog 0;";
+			_Btn4 buttonSetAction "[life_vInact_curTarget,false] spawn life_fnc_chipInstall; closeDialog 0;";
 			_Btn4 ctrlEnable true;
 		}  else {
 			_Btn4 ctrlShow true;
 			_Btn4 ctrlSetText localize "STR_chip_ac2";
-			_Btn4 buttonSetAction "[life_vInact_curTarget,true] spawn life_fnc_chipInstall;closeDialog 0;";
+			_Btn4 buttonSetAction "[life_vInact_curTarget,true] spawn life_fnc_chipInstall; closeDialog 0;";
 			_Btn4 ctrlEnable true;
 		};
 	};
