@@ -101,7 +101,7 @@ _Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";
 _Btn11 ctrlSetText localize "STR_pInAct_Breathalyzer";
 _Btn11 buttonSetAction "[player] remoteExec [""life_fnc_alkoholdrugtester"",life_pInact_curTarget];closeDialog 0;";
 
-if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
+if (call life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
 
 {
     if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
