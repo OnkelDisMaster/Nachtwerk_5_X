@@ -21,6 +21,7 @@ if (side player isEqualTo civilian) then {
 	life_inv_kabelbinder = life_inv_kabelbinder - 1;
 	hintSilent "Du hast jemanden festgenommen...";
 };
+if((life_inv_kabelbinder < 1) && (side player isEqualTo civilian)) exitWith { hintSilent "Du hast keine Kabelbinder bei dir !"; };
 
 _unit setVariable["restrained",true,true];
 [player] remoteExec ["life_fnc_restrain",_unit];
