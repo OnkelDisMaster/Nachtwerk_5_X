@@ -106,8 +106,8 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		// Darius, Sascha,  Andreas, Valle 2 
-		['76561198061099914','76561198093687897','76561197992632340','76561198122518534','76561198001840133'],	// Admins, Mods
+		// Darius, Sascha, Valle 2 
+		['76561198061099914','76561198093687897','76561197992632340','76561198001840133'],	// Admins, Mods
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -131,8 +131,8 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		// Lehmann, Salvatore, Ente
-		['76561198143557428','76561198067388481','76561198125513959'],	// Supporter
+		// Salvatore, Ente
+		['76561198067388481','76561198125513959'],	// Supporter
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
