@@ -24,8 +24,8 @@ if (life_blacklisted) exitWith {
     };
 //};
 [] execVM "IgiLoad\IgiLoadInit.sqf";
-
-[player] remoteExec ['life_fnc_playerSkins',RCLIENT];
+[] call life_fnc_playerSkins;
+//[player] remoteExec ['life_fnc_playerSkins',RCLIENT];
 
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;

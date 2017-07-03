@@ -9,7 +9,7 @@
 private["_skinName"];
 
 switch (playerSide) do {
-/*    case civilian: {
+/*  case civilian: {
         if (uniform player isEqualTo "U_C_Poloshirt_blue") then {
 			player setObjectTextureGlobal [0, "skins\civilian_uniform_1.jpg"];
         };     
@@ -33,5 +33,14 @@ switch (playerSide) do {
 				player setObjectTextureGlobal [0,"skins\human\cop\sek_NW.paa"];
 			};
         };
+    };
+	
+	case independent: {
+        if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
+			player setObjectTextureGlobal [0, "skins\human\medic\FW_Uniform.paa"];
+        };
+		if (backpack player isEqualTo "B_Kitbag_sgg") then {
+			(unitBackpack player) setObjectTextureGlobal [0, "skins\human\medic\FW_backpack.paa"];
+        };     
     };
 };
