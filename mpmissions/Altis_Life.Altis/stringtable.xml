@@ -141,6 +141,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_Shops_Jäger">
+            <Original>Hunter</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Jäger</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
             <Czech>Rebel Market</Czech>
