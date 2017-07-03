@@ -16,7 +16,6 @@ switch (playerSide) do {
     };
 */
     case west: {
-        if (uniform player isEqualTo "U_Rangemaster") then {
 			if (uniform player isEqualTo "U_Rangemaster") then {
 				player setObjectTextureGlobal [0,"skins\human\cop\NW_PD_uniform_KV.paa"];
 			};
@@ -32,7 +31,6 @@ switch (playerSide) do {
 			if (uniform player isEqualTo "U_B_CombatUniform_mcam_worn") then {
 				player setObjectTextureGlobal [0,"skins\human\cop\sek_NW.paa"];
 			};
-        };
     };
 	
 	case independent: {
