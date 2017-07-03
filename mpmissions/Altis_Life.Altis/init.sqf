@@ -12,7 +12,7 @@ StartProgress = false;
 [] execVM "core\functions\fn_teargas.sqf"; //Load Teargas Script for Cops
 [] execVM "nw_functions\savezone.sqf"; //Load the Savezones
 [] execVM "nw_functions\fn_statusBar.sqf"; //Load the Statusbar
-
+if(hasInterface)then{[] execVM "voiceControl.sqf"};
 //Polizeilicht
 emergLight_vehicles = [];
 {
