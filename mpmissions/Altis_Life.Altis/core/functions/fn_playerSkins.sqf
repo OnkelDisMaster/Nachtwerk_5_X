@@ -34,7 +34,7 @@ switch (playerSide) do {
     };
 	
 	case independent: {
-    *    if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
+    /*    if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
 			player setObjectTextureGlobal [0, "skins\human\medic\FW_Uniform.paa"];
         };  */
 		if (backpack player isEqualTo "B_Kitbag_sgg") then {
