@@ -25,55 +25,7 @@ if (life_blacklisted) exitWith {
 //};
 [] execVM "IgiLoad\IgiLoadInit.sqf";
 
-[] spawn
-	{
-		while {true} do
-		{
-			waitUntil {uniform player == "U_Rangemaster"};
-			player setObjectTextureGlobal [0,"skins\human\cop\NW_PD_uniform_KV.paa"];
-			waitUntil {uniform player != "U_Rangemaster"};
-		};
-	};
-// CopLevel 2
-[] spawn
-	{
-		while {true} do
-		{
-			waitUntil {uniform player == "U_B_CombatUniform_mcam_vest"};
-			player setObjectTextureGlobal [0,"skins\human\cop\polizei_uniform.jpg"];
-			waitUntil {uniform player != "U_B_CombatUniform_mcam_vest"};
-		};
-	};
-// CopLevel 3+4
-[] spawn
-	{
-		while {true} do
-		{
-			waitUntil {uniform player == "U_B_SpecopsUniform_sgg"};
-			player setObjectTextureGlobal [0,"skins\human\cop\polizei2.jpg"];
-			waitUntil {uniform player != "U_B_SpecopsUniform_sgg"};
-		};
-	};
-// CopLevel 5
-[] spawn
-	{
-		while {true} do
-		{
-			waitUntil {uniform player == "U_B_CombatUniform_mcam"};
-			player setObjectTextureGlobal [0,"skins\human\cop\sek.jpg"];
-			waitUntil {uniform player != "U_B_CombatUniform_mcam"};
-		};
-	};
-// CopLevel 6
-[] spawn
-	{
-		while {true} do
-		{
-			waitUntil {uniform player == "U_B_CombatUniform_mcam_worn"};
-			player setObjectTextureGlobal [0,"skins\human\cop\sek_NW.paa"];
-			waitUntil {uniform player != "U_B_CombatUniform_mcam_worn"};
-		};
-	};
+[player] remoteExec ['life_fnc_playerSkins',RCLIENT];
 
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
