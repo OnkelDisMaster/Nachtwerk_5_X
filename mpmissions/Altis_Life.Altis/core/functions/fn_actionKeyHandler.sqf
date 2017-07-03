@@ -82,12 +82,12 @@ if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _cur
 	{
 		if (LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1) then
 		{
-			if (({life_inv_defibrillator > 0} || {"Medikit" in (items player)}) && (license_cop_revive) && (call life_coplevel > 2)) then {
+			if (((life_inv_defibrillator > 0) || ("Medikit" in (items player))) && (license_cop_revive) && (call life_coplevel > 2)) then {
 				[_curObject] call life_fnc_revivePlayer;
 			};		
 		};
 	} else {
-		if ({life_inv_defibrillator > 0} || {"Medikit" in (items player)}) then {
+		if ((life_inv_defibrillator > 0) || ("Medikit" in (items player))) then {
 			[_curObject] call life_fnc_revivePlayer;
 		};
 	};
