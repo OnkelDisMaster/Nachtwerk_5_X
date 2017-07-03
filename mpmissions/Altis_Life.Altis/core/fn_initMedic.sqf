@@ -41,7 +41,8 @@ waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be ope
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 [] spawn life_fnc_IntroCam;
 
-/*
+[] call life_fnc_playerSkins;
+
 // Uniformen Texturen START
 [] spawn
 {
@@ -52,13 +53,3 @@ while {true} do
 		uiSleep 10;
     };
 };
-[] spawn
-{
-while {true} do
-    {
-        waitUntil {backpack player == "B_Kitbag_sgg"};
-        (unitBackpack player) setObjectTextureGlobal [0,"skins\human\medic\FW_backpack.paa"];
-		uiSleep 10;
-    };
-};
-*/
