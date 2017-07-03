@@ -165,7 +165,7 @@ switch (_code) do {
     /*case 38: {
         //If cop run checks for turning lights on.
         if (_shift && playerSide in [west,independent]) then {
-            if (vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
+            if (vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_T_LSV_01_unarmed_black_F","O_T_LSV_02_unarmed_black_F","I_MRAP_03_F","I_APC_Wheeled_03_cannon_F","B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Heli_Attack_01_F","B_T_VTOL_01_vehicle_blue_F","I_Truck_02_medical_F","B_Truck_01_medical_F","O_Truck_03_medical_F","B_Truck_01_transport_F"]) then {
                 if (!isNil {vehicle player getVariable "lights"}) then {
                     if (playerSide isEqualTo west) then {
                         [vehicle player] call life_fnc_sirenLights;
@@ -194,7 +194,7 @@ switch (_code) do {
 				[_veh] remoteExec ["bf_fnc_lightsOn",0];
 				};
 			} else {
-				if ((typeOf _veh) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
+				if ((typeOf _veh) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_T_LSV_01_unarmed_black_F","O_T_LSV_02_unarmed_black_F","I_MRAP_03_F","I_APC_Wheeled_03_cannon_F","B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Heli_Attack_01_F","B_T_VTOL_01_vehicle_blue_F","I_Truck_02_medical_F","B_Truck_01_medical_F","O_Truck_03_medical_F","B_Truck_01_transport_F"]) then {
 				if (!isNil {_veh getVariable "lights"}) then {
 				if (playerSide isEqualTo west) then {
 				[_veh] call life_fnc_sirenLights;
