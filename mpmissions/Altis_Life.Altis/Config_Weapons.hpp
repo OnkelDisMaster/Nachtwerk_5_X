@@ -50,10 +50,10 @@ class WeaponShops {
         license = "jagd";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "hgun_Pistol_01_F", "", 6500, 500 },
-            { "srifle_DMR_01_F", "", 9850, -1 },
-			{ "srifle_DMR_06_olive_F", "", 25500, -1 },
-			{ "srifle_DMR_06_camo_khs_F", "", 25500, -1 }           
+            { "hgun_Pistol_01_F", "", 55000, -1 },
+            { "srifle_DMR_01_F", "", 560000, -1 },
+			{ "srifle_DMR_06_olive_F", "", 850000, -1 },
+			{ "srifle_DMR_06_camo_khs_F", "", 850000, -1 }           
         };
         mags[] = {
 			{ "10Rnd_9x21_Mag", "", 750 }, //9mm

@@ -781,7 +781,7 @@ case "Zafir Loadout":{
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "muzzle_snds_338_black";
-	player addItem "DemoCharge_Remote_Mag";
+	player addItem "SatchelCharge_Remote_Mag";
 	
 	[] call life_fnc_saveGear;
 	};
@@ -840,7 +840,6 @@ case "Valles Loadout Ak12":
 	player addItem "optic_ERCO_blk_F";
 	player addItem "optic_AMS";
 	player addItem "optic_LRPS";
-	player addItem "muzzle_snds_93mmg";
 	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "muzzle_snds_B";
@@ -858,6 +857,9 @@ case "Valles Loadout Ak12":
 	player addItem "1Rnd_SmokeBlue_Grenade_shell";
 	player addItem "1Rnd_SmokeBlue_Grenade_shell";
 	player addItem "1Rnd_SmokeBlue_Grenade_shell";
+	player addItem "1Rnd_SmokeBlue_Grenade_shell";
+	player addItem "1Rnd_SmokeBlue_Grenade_shell";
+	player addItem "SatchelCharge_Remote_Mag";
 	
 	[] call life_fnc_saveGear;
 	};

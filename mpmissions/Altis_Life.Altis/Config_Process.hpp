@@ -146,7 +146,7 @@ class ProcessAction {
 	};
 	
 	class krone {
-		MaterialsReq[] = {{"platin",1},{"diamondCut",1}};
+		MaterialsReq[] = {{"platin",1},{"diamond_Cut",1}};
 		MaterialsGive[] = {{"krone",1}};
 		Text = "STR_Process_kronen";
 		NoLicenseCost = 28000;

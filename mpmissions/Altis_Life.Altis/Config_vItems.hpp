@@ -35,7 +35,7 @@ class VirtualShops {
 	class jager {
         name = "STR_Shops_Jäger";
         side = "civ";
-        license = "jager";
+        license = "jagd";
         level[] = { "", "", -1, "" };
         items[] = { "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "rabbit", "hen", "rooster", "sheep", "goat" };
     };
