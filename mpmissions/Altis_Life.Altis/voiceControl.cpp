@@ -21,9 +21,5 @@ adminVONChannels[]={0,1,2,3,4,5};
 
 	/* List of Admin GUIDs */
 voiceControlAdminList[]={
-		"76561191234567890",	//Someadminname
-		"76561190987654321",	//Someotheradminname
-		"76561197098765432",		//Thirdadminname
-		"76561198165164593",
-		"76561198001840133"
+		"76561198165164593"
 };

@@ -1,4 +1,4 @@
-disableChannels[]={0,1,2};
+disableChannels[]={1,2};
 
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
