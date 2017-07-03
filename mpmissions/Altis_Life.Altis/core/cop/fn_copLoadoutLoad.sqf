@@ -754,6 +754,8 @@ case "Zafir Loadout":{
 	player addMagazine "10Rnd_338_Mag";
 	player addMagazine "10Rnd_338_Mag";
 	player addMagazine "10Rnd_338_Mag";	
+	player addMagazine "10Rnd_338_Mag";
+	player addMagazine "10Rnd_338_Mag";	
 	// ITEMS
 	player addItem "ItemMap";
 	player assignItem "ItemMap";
@@ -770,7 +772,6 @@ case "Zafir Loadout":{
 	player addItem "optic_ERCO_blk_F";
 	player addItem "optic_AMS";
 	player addItem "optic_LRPS";
-	player addItem "muzzle_snds_93mmg";
 	player addItem "ToolKit";
 	player addItem "Medikit";
 	player addItem "HandGrenade_Stone";
@@ -780,11 +781,12 @@ case "Zafir Loadout":{
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
 	player addItem "muzzle_snds_338_black";
+	player addItem "DemoCharge_Remote_Mag";
 	
 	[] call life_fnc_saveGear;
 	};
 
-case "Valles Loadout Type115":
+case "Valles Loadout Ak12":
 	{   
     private["_handle"];
 	_handle = [] spawn life_fnc_stripDownPlayer;
@@ -802,28 +804,26 @@ case "Valles Loadout Type115":
 	player addMagazine "11Rnd_45ACP_Mag";
 	player addMagazine "11Rnd_45ACP_Mag";
 	// SCHARFE WAFFE
-	player addWeapon "arifle_ARX_blk_F";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	player addMagazine "30Rnd_65x39_caseless_green";
-	
-	player addMagazine "10Rnd_50BW_Mag_F";
-	player addMagazine "10Rnd_50BW_Mag_F";
-	player addMagazine "10Rnd_50BW_Mag_F";
-	player addMagazine "10Rnd_50BW_Mag_F";
-	player addMagazine "10Rnd_50BW_Mag_F";
+	player addWeapon "arifle_AK12_GL_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+	player addMagazine "30Rnd_762x39_Mag_Tracer_Green_F";
+
 	// ITEMS
 	player addItem "ItemMap";
 	player assignItem "ItemMap";
@@ -843,13 +843,21 @@ case "Valles Loadout Type115":
 	player addItem "muzzle_snds_93mmg";
 	player addItem "ToolKit";
 	player addItem "Medikit";
+	player addItem "muzzle_snds_B";
 	player addItem "HandGrenade_Stone";
 	player addItem "HandGrenade_Stone";
 	player addItem "SmokeShellBlue";
 	player addItem "SmokeShellBlue";
-	player addItem "SmokeShellBlue";
-	player addItem "SmokeShellBlue";
-	player addItem "muzzle_snds_65_TI_blk_F";
+	player addItem "1Rnd_HE_Grenade_shell";
+	player addItem "1Rnd_HE_Grenade_shell";
+	player addItem "1Rnd_HE_Grenade_shell";
+	player addItem "1Rnd_HE_Grenade_shell";
+	player addItem "1Rnd_HE_Grenade_shell";
+	player addItem "1Rnd_HE_Grenade_shell";
+	player addItem "1Rnd_SmokeBlue_Grenade_shell";
+	player addItem "1Rnd_SmokeBlue_Grenade_shell";
+	player addItem "1Rnd_SmokeBlue_Grenade_shell";
+	player addItem "1Rnd_SmokeBlue_Grenade_shell";
 	
 	[] call life_fnc_saveGear;
 	};

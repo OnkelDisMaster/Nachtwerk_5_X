@@ -70,7 +70,7 @@ if ((call (life_coplevel)) >= 12) then {
 };
 
 if ((call (life_coplevel)) >= 12) then {
-	_loadouts = _loadouts + ["Valles Loadout Type115"];
+	_loadouts = _loadouts + ["Valles Loadout Ak12"];
 };
 
 // Fill Listbox

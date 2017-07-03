@@ -59,8 +59,8 @@ class Licenses {
         side = "civ";
     };
 	
-	class jager {
-        variable = "jager";
+	class jagd {
+        variable = "jagd";
         displayName = "STR_License_Jagd";
         price = 1200000;
         illegal = false;
