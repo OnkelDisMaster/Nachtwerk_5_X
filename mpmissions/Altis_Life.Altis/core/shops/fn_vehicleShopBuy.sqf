@@ -104,7 +104,8 @@ _vehicle lock 2;
 [_vehicle] call life_fnc_clearVehicleAmmo;
 [_vehicle,"trunk_in_use",false,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
 [_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
-_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+
+if (playerside isEqualTo civilian) then {_vehicle disableTIEquipment true;};   //No Thermals.. They're cheap but addictive.
 
 _vehicle setvariable ["Chipsatz",0,true];
 
@@ -131,7 +132,7 @@ life_vehicles pushBack _vehicle;
 [getPlayerUID player,playerSide,_vehicle,1] remoteExecCall ["TON_fnc_keyManagement",RSERV];
 
 if (_mode) then {
-    if (!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
+    if (!(_className in ["B_MRAP_01_hmg_F"])) then {				// Nur Mieten
         if (life_HC_isActive) then {
             [(getPlayerUID player),playerSide,_vehicle,_colorIndex] remoteExecCall ["HC_fnc_vehicleCreate",HC_Life];
         } else {

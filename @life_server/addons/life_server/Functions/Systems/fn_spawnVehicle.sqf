@@ -106,7 +106,9 @@ _vehicle lock 2;
 [_vehicle,(_vInfo select 8)] remoteExecCall ["life_fnc_colorVehicle",_unit];
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),(_vInfo select 7)],true];
-_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+
+if (playerside isEqualTo civilian) then {_vehicle disableTIEquipment true;};   //No Thermals.. They're cheap but addictive.
+
 [_vehicle] call life_fnc_clearVehicleAmmo;
 
 // Avoid problems if u keep changing which stuff to save!
