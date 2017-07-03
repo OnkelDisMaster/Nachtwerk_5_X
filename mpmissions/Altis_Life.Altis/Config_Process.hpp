@@ -232,7 +232,7 @@ class ProcessAction {
         NoLicenseCost = 20000;
 	};
 	
-	class bombe {
+	class bombenkopf {
         MaterialsReq[] = {{"aluBarren",8},{"ironRefined",8}};
         MaterialsGive[] = {{"bombenkopf",1}};
         Text = "STR_Process_bombe";
