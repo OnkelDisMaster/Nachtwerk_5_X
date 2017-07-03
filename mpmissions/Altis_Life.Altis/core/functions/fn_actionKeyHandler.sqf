@@ -76,13 +76,26 @@ life_action_inUse = true;
 };
 
 //Check if it's a dead body.
-if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable["Revive",false]) && {playerSide in [west,independent]}) exitWith {
-    //Hotfix code by ins0
-    if ((playerSide isEqualTo west && {(LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1)} && ((call (life_coplevel)) >= 3) && license_cop_revive) || playerSide isEqualTo independent) then {
-        if (life_inv_defibrillator > 0) then {
-            [_curObject] call life_fnc_revivePlayer;
-        };
-    };
+if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable["Revive",false]) && {playerSide in [west,independent]}) exitWith 
+{
+    switch (playerside) do
+	{
+		case west:
+		{
+			if (LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1) then
+			{
+				if (({life_inv_defibrillator > 0} || {"Medikit" in (items player)}) && (license_cop_revive) && (call life_coplevel > 2)) then {
+					[_curObject] call life_fnc_revivePlayer;
+				};		
+			};
+		};
+		case independent:
+		{
+			if ({life_inv_defibrillator > 0} || {"Medikit" in (items player)}) then {
+				[_curObject] call life_fnc_revivePlayer;
+			};
+		};
+	};
 };
 
 //If target is a player then check if we can use the cop menu.
