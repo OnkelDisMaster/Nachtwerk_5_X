@@ -23,12 +23,12 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             { "hgun_Rook40_F", "", 26500, 500 },
-            { "hgun_Pistol_heavy_02_F", "", 39850, -1 },
-            { "hgun_ACPC2_F", "", 31500, -1 },
-			{ "hgun_PDW2000_F", "", 70000, -1 },
-			{ "SMG_01_F", "", 85000, -1 },
-			{ "SMG_02_F", "", 95500, -1 },
-			{ "arifle_SDAR_F", "", 35500, -1 }           
+            { "hgun_Pistol_heavy_02_F", "", 29850, -1 },
+            { "hgun_ACPC2_F", "", 21500, -1 },
+			{ "hgun_PDW2000_F", "", 40000, -1 },
+			{ "SMG_01_F", "", 45000, -1 },
+			{ "SMG_02_F", "", 50500, -1 },
+			{ "arifle_SDAR_F", "", 55500, -1 }           
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 250 },
@@ -52,8 +52,8 @@ class WeaponShops {
         items[] = {
             { "hgun_Pistol_01_F", "", 55000, -1 },
             { "srifle_DMR_01_F", "", 560000, -1 },
-			{ "srifle_DMR_06_olive_F", "", 850000, -1 },
-			{ "srifle_DMR_06_camo_khs_F", "", 850000, -1 }           
+			{ "srifle_DMR_06_olive_F", "", 1450000, -1 },
+			{ "srifle_DMR_06_camo_khs_F", "", 1450000, -1 }           
         };
         mags[] = {
 			{ "10Rnd_9x21_Mag", "", 750 }, //9mm
@@ -74,18 +74,18 @@ class WeaponShops {
         license = "rebel";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_TRG20_F", "", 95000, 2500 },
-            { "arifle_Katiba_F", "", 150000, 5000 },
-            { "srifle_DMR_01_F", "", 190000, -1 },
-            { "arifle_SDAR_F", "", 30000, 7500 },
-			{ "arifle_AKM_F", "", 180000, 2500 },
-			{ "arifle_AKS_F", "", 165000, 2500 },
-			{ "arifle_MX_F", "", 375000, 2500 },
-			{ "arifle_MXC_F", "", 370000, 2500 },
-			{ "arifle_MX_SW_F", "", 420000, 2500 },
-			{ "arifle_MXM_F", "", 440000, 2500 },
-			{ "srifle_DMR_03_F", "", 485000, 2500 },
-			{ "srifle_EBR_F", "", 650000, 2500 }			
+            { "arifle_TRG20_F", "", 195000, -1 },
+			{ "arifle_TRG21_F", "", 250000, -1 },
+            { "arifle_Katiba_F", "", 250000, -1 },
+            { "srifle_DMR_01_F", "", 290000, -1 },
+            { "arifle_SDAR_F", "", 50000, -1 },
+			{ "arifle_AKM_F", "", 280000, -1 },
+			{ "arifle_AKS_F", "", 265000, -1 },
+			{ "arifle_MX_F", "", 475000, -1 },
+			{ "arifle_MXC_F", "", 470000, -1 },
+			{ "arifle_MX_SW_F", "", 520000, -1 },
+			{ "arifle_MXM_F", "", 540000, -1 },
+			{ "srifle_EBR_F", "", 1000000, -1 }			
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 3000 },
@@ -121,24 +121,24 @@ class WeaponShops {
         license = "pro_rebel";
         level[] = { "", "", -1, "" };
         items[] = {
-			{ "arifle_TRG20_F", "", 95000, 2500 },
-            { "arifle_Katiba_F", "", 150000, 5000 },
+			{ "arifle_TRG20_F", "", 95000, -1 },
+            { "arifle_Katiba_F", "", 150000, -1 },
             { "srifle_DMR_01_F", "", 190000, -1 },
-            { "arifle_SDAR_F", "", 30000, 7500 },
-			{ "arifle_AKM_F", "", 160000, 2500 },
-			{ "arifle_AKS_F", "", 145000, 2500 },
-			{ "arifle_MX_F", "", 275000, 2500 },
-			{ "arifle_MXC_F", "", 270000, 2500 },
-			{ "arifle_MX_SW_F", "", 360000, 2500 },
-			{ "arifle_MXM_F", "", 380000, 2500 },
-			{ "srifle_DMR_03_F", "", 485000, 2500 },
-			{ "srifle_EBR_F", "", 550000, 2500 },
-			{ "LMG_Mk200_F", "", 650000, 2500 },
-            { "srifle_LRR_F", "", 2650000, 2500 },
-            { "arifle_ARX_hex_F", "", 400000, 5000 },
-            { "srifle_DMR_02_camo_F", "", 850000, 7500 },
-			{ "srifle_DMR_05_hex_F", "", 870000, 5000 },
-            { "LMG_Zafir_F", "", 540000, -1 }
+            { "arifle_SDAR_F", "", 30000, -1 },
+			{ "arifle_AKM_F", "", 160000, -1 },
+			{ "arifle_AKS_F", "", 145000, -1 },
+			{ "arifle_MX_F", "", 375000, -1 },
+			{ "arifle_MXC_F", "", 370000, -1 },
+			{ "arifle_MX_SW_F", "", 460000, -1 },
+			{ "arifle_MXM_F", "", 480000, -1 },
+			{ "srifle_DMR_03_F", "", 785000, -1 },
+			{ "srifle_EBR_F", "", 950000, -1 },
+			{ "LMG_Mk200_F", "", 1650000, -1 },
+            { "srifle_LRR_F", "", 3650000, -1 },
+            { "arifle_ARX_hex_F", "", 600000, -1 }
+    //      { "srifle_DMR_02_camo_F", "", 2850000, -1 },
+	//		{ "srifle_DMR_05_hex_F", "", 2870000, -1 },
+    //      { "LMG_Zafir_F", "", 1540000, -1 }
         };
         mags[] = {
 			{ "30Rnd_556x45_Stanag", "", 3000 },
@@ -154,9 +154,9 @@ class WeaponShops {
             { "200Rnd_65x39_cased_Box_Tracer", "", 20000 },
 			{ "7Rnd_408_Mag", "", 35000 },
             { "30Rnd_65x39_caseless_green", "", 5000 },
-            { "10Rnd_50BW_Mag_F", "", 50000 },
-            { "10Rnd_338_Mag", "", 25000 },
-			{ "10Rnd_93x64_DMR_05_Mag", "", 25000 },
+            { "10Rnd_50BW_Mag_F", "", 150000 },
+            { "10Rnd_338_Mag", "", 55000 },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 55000 },
 			{ "150Rnd_762x54_Box_Tracer", "", 18000 }
         };
         accs[] = {
@@ -207,8 +207,8 @@ class WeaponShops {
 			{ "LMG_Mk200_F", "", 300000, 2500 },
             { "srifle_LRR_tna_LRPS_F", "", 550000, 2500 },
             { "arifle_ARX_ghex_F", "", 260000, 5000 },
-            { "srifle_DMR_02_camo_F", "", 335000, 7500 },
-			{ "srifle_DMR_05_hex_F", "", 420000, 5000 },
+        //    { "srifle_DMR_02_camo_F", "", 335000, 7500 },
+		//	{ "srifle_DMR_05_hex_F", "", 420000, 5000 },
             { "LMG_Zafir_F", "", 410000, -1 },
 			{ "arifle_TRG20_F", "", 50000, 2500 },
             { "arifle_Katiba_F", "", 60000, 5000 },
@@ -292,12 +292,12 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_TRG20_F", "", 85000, 2500 },
-            { "arifle_Katiba_F", "", 120000, 5000 },
-            { "srifle_DMR_01_F", "", 180000, -1 },
-            { "arifle_SDAR_F", "", 20000, 7500 },
-			{ "arifle_AKM_F", "", 120000, 2500 },
-			{ "arifle_AKS_F", "", 95000, 2500 }			
+            { "arifle_TRG20_F", "", 395000, -1 },
+            { "arifle_Katiba_F", "", 450000, -1 },
+            { "srifle_DMR_01_F", "", 490000, -1 },
+            { "arifle_SDAR_F", "", 50000, -1 },
+			{ "arifle_AKM_F", "", 480000, -1 },
+			{ "arifle_AKS_F", "", 55000, -1 }		
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 3000 },
