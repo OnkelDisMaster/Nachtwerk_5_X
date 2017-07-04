@@ -54,7 +54,7 @@ class CfgSpawnPoints {
 		
 		class TWL {
             displayName = "TWL Base";
-            spawnMarker = "civ_spawn_4";
+            spawnMarker = "twl_spawn";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "gang_twl", true } };
             level[] = { "", "", -1 };
@@ -62,7 +62,7 @@ class CfgSpawnPoints {
 		
 		class IRA {
             displayName = "IRA Base";
-            spawnMarker = "civ_spawn_4";
+            spawnMarker = "ira_spawn";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "gang_ira", true } };
             level[] = { "", "", -1 };
@@ -70,7 +70,7 @@ class CfgSpawnPoints {
 		
 		class BT {
             displayName = "BT Base";
-            spawnMarker = "civ_spawn_4";
+            spawnMarker = "bt_spawn";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "gang_bt", true } };
             level[] = { "", "", -1 };
