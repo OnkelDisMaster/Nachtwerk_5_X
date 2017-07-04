@@ -207,6 +207,7 @@ switch (_code) do {
 			};
 				_handled = true;
 			};
+			if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 		};
 	
     //Y Player Menu
