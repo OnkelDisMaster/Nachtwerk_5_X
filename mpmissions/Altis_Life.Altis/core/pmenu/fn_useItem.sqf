@@ -45,6 +45,11 @@ switch (true) do {
         [cursorObject] spawn life_fnc_boltcutter;
         closeDialog 0;
     };
+	
+	case (_item isEqualTo "gpstracker"): {
+        [cursorObject] spawn life_fnc_gpsTracker;
+        closeDialog 0;
+    };
 
     case (_item isEqualTo "blastingcharge"): {
         player reveal fed_bank;

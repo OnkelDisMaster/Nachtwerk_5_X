@@ -327,6 +327,7 @@ class Life_Client_Core {
 		class licht {};
 		class flutlicht {};
 		class mauer {};
+		class gpsTracker {};
     };
 	
 	class Ausweis

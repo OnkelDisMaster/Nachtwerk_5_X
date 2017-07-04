@@ -45,7 +45,7 @@ class VirtualShops {
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder", "gpstracker" };
     };
 
     class gang {
@@ -205,7 +205,7 @@ class VirtualShops {
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "donuts", "coffee", "spikeStrip", "mauer", "blitzer", "bunker", "flutlicht", "licht", "plastik", "schranke", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "gpstracker", "spikeStrip", "mauer", "blitzer", "bunker", "flutlicht", "licht", "plastik", "schranke", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
     };
 };
 
@@ -450,6 +450,17 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_boltCutter.paa";
     };
+	
+	class gpstracker {
+        variable = "gpstracker";
+        displayName = "STR_Item_GPSTracker";
+        weight = 10;
+        buyPrice = 5000;
+        sellPrice = 70000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_boltCutter.paa";
+    };
 
     class defusekit {
         variable = "defuseKit";
@@ -533,8 +544,8 @@ class VirtualItems {
         variable = "kupfer";
         displayName = "STR_Item_CopperIngot";
         weight = 4;
-        buyPrice = 5000;
-        sellPrice = 2400;
+        buyPrice = 3000;
+        sellPrice = 1500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_copper.paa";
@@ -555,8 +566,8 @@ class VirtualItems {
         variable = "eisen";
         displayName = "STR_Item_IronIngot";
         weight = 5;
-        buyPrice = 8000;
-        sellPrice = 3000;
+        buyPrice = 2500;
+        sellPrice = 1200;
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
@@ -823,7 +834,7 @@ class VirtualItems {
 	class schwarzpulver {
         variable = "schwarzpulver";
         displayName = "STR_Item_Schwarzpulver";
-        weight = 5;
+        weight = 6;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -835,7 +846,7 @@ class VirtualItems {
     class polenboeller {
         variable = "polenboeller";
         displayName = "STR_Item_Polen_Boeller";
-        weight = 4;
+        weight = 5;
         buyPrice = 7000;
         sellPrice = 3000;
         illegal = true;

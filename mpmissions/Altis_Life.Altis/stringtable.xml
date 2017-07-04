@@ -7067,6 +7067,17 @@
             <Portuguese>Alicate</Portuguese>
             <Polish>Nożyce do kłódek</Polish>
         </Key>
+		<Key ID="STR_Item_GPSTracker">
+            <Original>GPS Tracker</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Peilsender</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_DefuseKit">
             <Original>Bomb Defuse Kit</Original>
             <Czech>Bomby zneškodnit Kit</Czech>
