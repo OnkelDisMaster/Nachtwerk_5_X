@@ -22,7 +22,7 @@ class WeaponShops {
         license = "gun";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "hgun_Rook40_F", "", 26500, 500 },
+            { "hgun_Rook40_F", "", 26500, -1 },
             { "hgun_Pistol_heavy_02_F", "", 29850, -1 },
             { "hgun_ACPC2_F", "", 21500, -1 },
 			{ "hgun_PDW2000_F", "", 40000, -1 },
@@ -76,11 +76,13 @@ class WeaponShops {
         items[] = {
             { "arifle_TRG20_F", "", 195000, -1 },
 			{ "arifle_TRG21_F", "", 250000, -1 },
+			{ "arifle_Mk20C_plain_F", "", 300000, -1 },
+			{ "arifle_Mk20_plain_F", "", 320000, -1 },
             { "arifle_Katiba_F", "", 250000, -1 },
             { "srifle_DMR_01_F", "", 290000, -1 },
             { "arifle_SDAR_F", "", 50000, -1 },
 			{ "arifle_AKM_F", "", 280000, -1 },
-			{ "arifle_AKS_F", "", 265000, -1 },
+			{ "arifle_AKS_F", "", 50000, -1 },
 			{ "arifle_MX_F", "", 475000, -1 },
 			{ "arifle_MXC_F", "", 470000, -1 },
 			{ "arifle_MX_SW_F", "", 520000, -1 },
@@ -89,6 +91,7 @@ class WeaponShops {
         };
         mags[] = {
             { "30Rnd_556x45_Stanag", "", 3000 },
+			{ "30Rnd_556x45_Stanag_Tracer_Red", "", 3000 },
             { "30Rnd_65x39_caseless_green", "", 2750 },
             { "10Rnd_762x54_Mag", "", 15000 },
             { "20Rnd_556x45_UW_mag", "", 1250 },
@@ -122,27 +125,30 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
 			{ "arifle_TRG20_F", "", 95000, -1 },
+			{ "arifle_TRG21_F", "", 150000, -1 },
+			{ "arifle_Mk20C_plain_F", "", 200000, -1 },
+			{ "arifle_Mk20_plain_F", "", 220000, -1 },
             { "arifle_Katiba_F", "", 150000, -1 },
             { "srifle_DMR_01_F", "", 190000, -1 },
             { "arifle_SDAR_F", "", 30000, -1 },
-			{ "arifle_AKM_F", "", 160000, -1 },
-			{ "arifle_AKS_F", "", 145000, -1 },
-			{ "arifle_MX_F", "", 375000, -1 },
-			{ "arifle_MXC_F", "", 370000, -1 },
+			{ "arifle_AKM_F", "", 220000, -1 },
+			{ "arifle_AKS_F", "", 40000, -1 },
+			{ "arifle_MX_F", "", 415000, -1 },
+			{ "arifle_MXC_F", "", 410000, -1 },
 			{ "arifle_MX_SW_F", "", 460000, -1 },
 			{ "arifle_MXM_F", "", 480000, -1 },
-			{ "srifle_DMR_03_F", "", 785000, -1 },
-			{ "srifle_EBR_F", "", 950000, -1 },
-			{ "LMG_Mk200_F", "", 1650000, -1 },
-            { "srifle_LRR_F", "", 3650000, -1 },
-            { "arifle_ARX_hex_F", "", 600000, -1 }
+			{ "srifle_DMR_03_F", "", 1000000, -1 },
+			{ "srifle_EBR_F", "", 940000, -1 },
+			{ "LMG_Mk200_F", "", 1800000, -1 },
+            { "srifle_LRR_F", "", 4000000, -1 },
+            { "arifle_ARX_hex_F", "", 600000, -1 },
+			{ "10Rnd_50BW_Mag_F", "", 150000, -1 }
     //      { "srifle_DMR_02_camo_F", "", 2850000, -1 },
 	//		{ "srifle_DMR_05_hex_F", "", 2870000, -1 },
     //      { "LMG_Zafir_F", "", 1540000, -1 }
         };
         mags[] = {
 			{ "30Rnd_556x45_Stanag", "", 3000 },
-            { "30Rnd_65x39_caseless_green", "", 2750 },
             { "10Rnd_762x54_Mag", "", 15000 },
             { "20Rnd_556x45_UW_mag", "", 1250 },
 			{ "30Rnd_762x39_Mag_Tracer_F", "", 15000 },
@@ -153,14 +159,13 @@ class WeaponShops {
 			{ "20Rnd_762x51_Mag", "", 15000 },
             { "200Rnd_65x39_cased_Box_Tracer", "", 20000 },
 			{ "7Rnd_408_Mag", "", 35000 },
-            { "30Rnd_65x39_caseless_green", "", 5000 },
-            { "10Rnd_50BW_Mag_F", "", 150000 },
-            { "10Rnd_338_Mag", "", 55000 },
-			{ "10Rnd_93x64_DMR_05_Mag", "", 55000 },
-			{ "150Rnd_762x54_Box_Tracer", "", 18000 }
+            { "30Rnd_65x39_caseless_green", "", 10000 },
+        //  { "10Rnd_338_Mag", "", 55000 },
+		//	{ "10Rnd_93x64_DMR_05_Mag", "", 55000 },
+		//	{ "150Rnd_762x54_Box_Tracer", "", 18000 }
         };
         accs[] = {
-			{ "Rangefinder", "", 22500 },
+			{ "Rangefinder", "", 72500 },
             { "optic_ACO_grn", "", 22500 },
 			{ "optic_MRCO", "", 22500 },
 			{ "optic_Arco", "", 22500 },
@@ -197,35 +202,35 @@ class WeaponShops {
         license = "elite";
         level[] = { "", "", -1, "" };
         items[] = {	
-			{ "arifle_AK12_F", "", 550000, 2500 },
-			{ "arifle_SPAR_01_khk_F", "", 150000, 2500 },
-			{ "arifle_SPAR_02_khk_F", "", 250000, 2500 },
-			{ "arifle_SPAR_03_khk_F", "", 350000, 2500 },
-			{ "arifle_CTAR_ghex_F", "", 250000, 2500 },
-			{ "arifle_CTARS_ghex_F", "", 280000, 2500 },
-			{ "LMG_03_F", "", 340000, 2500 },
-			{ "LMG_Mk200_F", "", 300000, 2500 },
-            { "srifle_LRR_tna_LRPS_F", "", 550000, 2500 },
-            { "arifle_ARX_ghex_F", "", 260000, 5000 },
-        //    { "srifle_DMR_02_camo_F", "", 335000, 7500 },
-		//	{ "srifle_DMR_05_hex_F", "", 420000, 5000 },
-            { "LMG_Zafir_F", "", 410000, -1 },
-			{ "arifle_TRG20_F", "", 50000, 2500 },
-            { "arifle_Katiba_F", "", 60000, 5000 },
+			{ "arifle_AK12_F", "", 900000, -1 },
+			{ "arifle_SPAR_01_khk_F", "", 300000, -1 },
+			{ "arifle_SPAR_02_khk_F", "", 450000, -1 },
+			{ "arifle_SPAR_03_khk_F", "", 1400000, -1 },
+			{ "arifle_CTAR_ghex_F", "", 280000, -1 },
+			{ "arifle_CTARS_ghex_F", "", 430000, -1 },
+			{ "LMG_03_F", "", 1800000, -1 },
+			{ "LMG_Mk200_F", "", 1500000, -1 },
+            { "srifle_LRR_tna_LRPS_F", "", 3550000, -1 },
+            { "arifle_ARX_ghex_F", "", 260000, -1 },
+        //    { "srifle_DMR_02_camo_F", "", 335000, -1 },
+		//	{ "srifle_DMR_05_hex_F", "", 420000, -1 },
+        //    { "LMG_Zafir_F", "", 410000, -1 },
+			{ "arifle_TRG20_F", "", 50000, -1 },
+            { "arifle_Katiba_F", "", 60000, -1 },
             { "srifle_DMR_01_F", "", 40000, -1 },
-            { "arifle_SDAR_F", "", 10000, 7500 },
-			{ "arifle_AKM_F", "", 50000, 2500 },
-			{ "arifle_AKS_F", "", 45000, 2500 },
-			{ "arifle_MX_khk_ACO_Pointer_Snds_F", "", 145000, 2500 },
-			{ "arifle_MXC_khk_ACO_Pointer_Snds_F", "", 140000, 2500 },
-			{ "arifle_MX_SW_khk_Pointer_F", "", 160000, 2500 },
-			{ "arifle_MXM_khk_F", "", 170000, 2500 },
-			{ "srifle_DMR_03_F", "", 110000, 2500 },
-			{ "srifle_EBR_F", "", 200000, 2500 },
-			{ "hgun_P07_khk_F", "", 25000, 2500 }
+            { "arifle_SDAR_F", "", 10000, -1 },
+			{ "arifle_AKM_F", "", 90000, -1 },
+			{ "arifle_AKS_F", "", 30000, -1 },
+			{ "arifle_MX_khk_ACO_Pointer_Snds_F", "", 310000, -1 },
+			{ "arifle_MXC_khk_ACO_Pointer_Snds_F", "", 300000, -1 },
+			{ "arifle_MX_SW_khk_Pointer_F", "", 420000, -1 },
+			{ "arifle_MXM_khk_F", "", 440000, -1 },
+			{ "srifle_DMR_03_F", "", 850000, -1 },
+			{ "srifle_EBR_F", "", 790000, -1 },
+			{ "hgun_P07_khk_F", "", 25000, -1 }
         };
         mags[] = {
-			{ "30Rnd_762x39_Mag_Tracer_Green_F", "", 15000 },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "", 2500 },
 			{ "30Rnd_556x45_Stanag_green", "", 4000 },
 			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 9000 },
 			{ "30Rnd_580x42_Mag_Tracer_F", "", 5000 },
@@ -251,7 +256,7 @@ class WeaponShops {
 			{ "30Rnd_9x21_Green_Mag", "", 15000 }
         };
         accs[] = {
-			{ "Rangefinder", "", 12500 },
+			{ "Rangefinder", "", 50000 },
             { "optic_ACO_grn", "", 12500 },
 			{ "optic_MRCO", "", 12500 },
 			{ "optic_Arco", "", 12500 },
