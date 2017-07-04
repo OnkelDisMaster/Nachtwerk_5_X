@@ -111,7 +111,7 @@ class Licenses {
 	class kupfer {
         variable = "kupfer";
         displayName = "STR_License_Kupfer";
-        price = 15000;
+        price = 25000;
         illegal = false;
         side = "civ";
     };
@@ -119,7 +119,7 @@ class Licenses {
 	class eisen {
         variable = "eisen";
         displayName = "STR_License_Eisen";
-        price = 25000;
+        price = 15000;
         illegal = false;
         side = "civ";
     };
@@ -367,6 +367,14 @@ class Licenses {
 	class gangtwl {
         variable = "license_civ_gang_twl";
         displayName = "TWL Gangmitglied";
+        price = 1;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class gangira {
+        variable = "license_civ_gang_ira";
+        displayName = "IRA Gangmitglied";
         price = 1;
         illegal = false;
         side = "civ";

@@ -24,7 +24,7 @@ class CfgSpawnPoints {
             displayName = "Kavala";
             spawnMarker = "civ_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-            licenses[] = { { "rebel", false } };
+            licenses[] = { { "", true } };
             level[] = { "", "", -1 };
         };
 
@@ -51,28 +51,60 @@ class CfgSpawnPoints {
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
         };
+		
+		class TWL {
+            displayName = "TWL Base";
+            spawnMarker = "civ_spawn_4";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "gang_twl", true } };
+            level[] = { "", "", -1 };
+        };
+		
+		class IRA {
+            displayName = "IRA Base";
+            spawnMarker = "civ_spawn_4";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "gang_ira", true } };
+            level[] = { "", "", -1 };
+        };
+		
+		class BT {
+            displayName = "BT Base";
+            spawnMarker = "civ_spawn_4";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "gang_bt", true } };
+            level[] = { "", "", -1 };
+        };
 
         class RebelS {
-            displayName = "Northern Rebel Base";
-            spawnMarker = "Rebelop";
+            displayName = "REB HQ";
+            spawnMarker = "reb_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
         };
 
         class RebelN {
-            displayName = "Southern Rebel Base";
-            spawnMarker = "Rebelop_1";
+            displayName = "Rebellenlager";
+            spawnMarker = "reb_spawn_2";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
         };
 
         class RebelE {
-            displayName = "Eastern Rebel Base";
-            spawnMarker = "Rebelop_2";
+            displayName = "Rebellen Außenposten";
+            spawnMarker = "reb_spawn_3";
             icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
             licenses[] = { { "rebel", true } };
+            level[] = { "", "", -1 };
+        };
+		
+		class Elite {
+            displayName = "Elite Rebellen HQ";
+            spawnMarker = "elite_spawn";
+            icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+            licenses[] = { { "elite", true } };
             level[] = { "", "", -1 };
         };
     };
@@ -101,9 +133,17 @@ class CfgSpawnPoints {
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
         };
+		
+		class ubung {
+            displayName = "Schießplatz";
+            spawnMarker = "cop_spawn_6";
+            icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+            licenses[] = { { "", true } };
+            level[] = { "", "", -1 };
+        };
 
         class Air {
-            displayName = "Air HQ";
+            displayName = "Gefängnis";
             spawnMarker = "cop_spawn_4";
             icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
             licenses[] = { { "cAir", true } };
@@ -111,11 +151,11 @@ class CfgSpawnPoints {
         };
 
         class HW {
-            displayName = "HW Patrol";
+            displayName = "SEK Zentrale";
             spawnMarker = "cop_spawn_5";
             icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
             licenses[] = { { "", true } };
-            level[] = { "life_coplevel", "SCALAR", 3 };
+            level[] = { "life_coplevel", "SCALAR", 9 };
         };
     };
 
@@ -129,7 +169,7 @@ class CfgSpawnPoints {
         };
 
         class Athira {
-            displayName = "Athira Regional";
+            displayName = "Sofia Regional";
             spawnMarker = "medic_spawn_2";
             icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
             licenses[] = { { "", true } };
