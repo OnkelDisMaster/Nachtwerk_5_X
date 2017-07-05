@@ -346,20 +346,16 @@ switch (_code) do {
 			[player,"copsound"] remoteExec ["life_fnc_say3D",RANY];
 			sleep 2;
 		};
-		if (!(_shift) && (life_inv_gpstracker > 0)) then {
+	};
+	
+	case 41: 
+	{  
+		if ((life_inv_gpstracker > 0) && (cursorTarget isKindOf vehicle)) then {
 			life_inv_gpstracker = life_inv_gpstracker - 1;
-			[cursorObject] spawn life_fnc_gpsTracker;
+			[cursorTarget] spawn life_fnc_gpsTracker;
 		};
 	};
 	
-/*	case 82: {   eigene Taste für Peilsender
-		if ((_shift) && (license_cop_sound)) then {
-			hint "Cop Sound";
-			[player,"copsound"] remoteExec ["life_fnc_say3D",RANY];
-			sleep 2;
-		};
-	};
-*/	
 	//SmartPhone  Shift + 1
     case 2:
     {
