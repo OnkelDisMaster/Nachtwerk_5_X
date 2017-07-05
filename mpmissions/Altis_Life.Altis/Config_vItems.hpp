@@ -192,10 +192,10 @@ class VirtualShops {
         items[] = { "uranErz", "uranI", "uranII", "uranIII", "uranIV" };
     };
 	
-	class cyborg {
-        name = "STR_Shops_Cyborg";
+	class schwarzmarkt {
+        name = "STR_Shops_Schwarzmarkt";
         side = "civ";
-        license = "implantat";
+        license = "";
         level[] = { "", "", -1, "" };
         items[] = { "mikroProzessor", "implantatNormal" };
     };

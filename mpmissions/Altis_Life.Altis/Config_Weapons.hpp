@@ -156,7 +156,8 @@ class WeaponShops {
 			{ "LMG_Mk200_F", "", 1800000, -1 },
             { "srifle_LRR_F", "", 4000000, -1 },
             { "arifle_ARX_hex_F", "", 600000, -1 },
-			{ "10Rnd_50BW_Mag_F", "", 150000, -1 }
+			{ "10Rnd_50BW_Mag_F", "", 150000, -1 },
+			{ "Rangefinder", "", 72500, -1 }
     //      { "srifle_DMR_02_camo_F", "", 2850000, -1 },
 	//		{ "srifle_DMR_05_hex_F", "", 2870000, -1 },
     //      { "LMG_Zafir_F", "", 1540000, -1 }
@@ -179,7 +180,6 @@ class WeaponShops {
 		//	{ "150Rnd_762x54_Box_Tracer", "", 18000 }
         };
         accs[] = {
-			{ "Rangefinder", "", 72500 },
             { "optic_ACO_grn", "", 22500 },
 			{ "optic_MRCO", "", 22500 },
 			{ "optic_Arco", "", 22500 },
@@ -241,7 +241,8 @@ class WeaponShops {
 			{ "arifle_MXM_khk_F", "", 440000, -1 },
 			{ "srifle_DMR_03_F", "", 850000, -1 },
 			{ "srifle_EBR_F", "", 790000, -1 },
-			{ "hgun_P07_khk_F", "", 25000, -1 }
+			{ "hgun_P07_khk_F", "", 25000, -1 },
+			{ "Rangefinder", "", 50000 }
         };
         mags[] = {
 			{ "30Rnd_762x39_Mag_Tracer_Green_F", "", 2500 },
@@ -270,7 +271,6 @@ class WeaponShops {
 			{ "30Rnd_9x21_Green_Mag", "", 15000 }
         };
         accs[] = {
-			{ "Rangefinder", "", 50000 },
             { "optic_ACO_grn", "", 12500 },
 			{ "optic_MRCO", "", 12500 },
 			{ "optic_Arco", "", 12500 },

@@ -1059,6 +1059,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			}, ""  },
 			{ "SEK", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
+			} , "" },
+			{ "Pink", "cop", {
+                "#(argb,8,8,3)color(0.75,0.25,0.7,1)"
 			} , "" }
 			
         };

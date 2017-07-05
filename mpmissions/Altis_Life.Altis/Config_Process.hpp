@@ -249,7 +249,7 @@ class ProcessAction {
 	};
 	
 	class mikroprozessor {
-		MaterialsReq[] = {{"platinBarren",1},{"aluBarren",1},{"kupfer",1}};
+		MaterialsReq[] = {{"platin",1},{"alu",1},{"kupfer",1}};
 		MaterialsGive[] = {{"mikroProzessor",1}};
 		Text = "STR_Process_Mikro_Prozessor";
 		//ScrollText = "Harvest Marijuana";

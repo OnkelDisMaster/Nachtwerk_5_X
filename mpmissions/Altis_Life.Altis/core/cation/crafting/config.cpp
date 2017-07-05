@@ -58,6 +58,16 @@ class Cation_Crafting {
             "Platinkronen herstellen",
             {"krone","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
         },
+		{
+            "bombenkopf",
+            "Bombenköpfe herstellen",
+            {"bombenkopf","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
+        },
+		{
+            "atombomben",
+            "Atombomben herstellen",
+            {"atombombe","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
+        },
         {
             "item",
             "Items",            
