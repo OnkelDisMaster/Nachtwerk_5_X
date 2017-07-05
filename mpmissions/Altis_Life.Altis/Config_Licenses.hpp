@@ -67,6 +67,14 @@ class Licenses {
         side = "civ";
     };
 	
+	class airsoft {
+        variable = "airsoft";
+        displayName = "STR_License_Airsoft";
+        price = 1200000;
+        illegal = false;
+        side = "civ";
+    };
+	
 	class anwalt {
         variable = "anwalt";
         displayName = "STR_License_Anwalt";

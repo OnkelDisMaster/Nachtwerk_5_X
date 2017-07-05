@@ -8081,6 +8081,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_License_Airsoft">
+            <Original>Airsoft and Paintball Clubmember</Original>
+            <German>Airsoft und Paintball Clubmitglied</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
 		<Key ID="STR_License_Anwalt">
             <Original>Lawyer License</Original>
             <German>Anwaltslizenz</German>

@@ -53,16 +53,21 @@ class Cation_Crafting {
             "Vesten",
             {"V_Press_F","",{"copper_refined",1},"","",0}
         },
+		{
+            "kronen",
+            "Platinkronen herstellen",
+            {"krone","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
+        },
         {
             "item",
-            "Items",
-            {"iron_refined","",{"copper_refined",2},"","",1},
+            "Items",            
             {"diamond_cut","",{"copper_refined",1,"iron_refined",1},"","",1}
         } //Kein Komma bei letzten
     };
 
     craftingStations[] = { //verfügbare Kategorien an verschiedenen Crafting Stationen
-        {
+		/*     Beispiele
+		{
             "craftingItems", //Variablenname
             "craftingItemsMarker", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
             {"item","weapon"} //Variablennamen der verfügbaren Kategorien
@@ -71,6 +76,18 @@ class Cation_Crafting {
             "craftingClothes", //Variablenname
             "craftingClothesMarker", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
             {"uniform","backpack","vest"} //Variablennamen der verfügbaren Kategorien
-        } //Kein Komma bei letzten
+        } //Kein Komma bei letzten		
+		*/
+		{
+            "platinkronen", //Variablenname
+            "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
+            {"kronen"} //Variablennamen der verfügbaren Kategorien
+        },
+		
+		{
+            "Schwarzmarkt", //Variablenname
+            "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
+            {"item","weapon"} //Variablennamen der verfügbaren Kategorien
+        }
     };
 };

@@ -67,6 +67,20 @@ class WeaponShops {
 			{ "optic_KHS_old", "", 75000 }
         };
     };
+	
+	class airsoft {
+        name = "Airsoft und Paintball Waffenshop";
+        side = "civ";
+        license = "airsoft";
+        level[] = { "", "", -1, "" };
+        items[] = {
+            { "hgun_Pistol_01_F", "", 55000, -1 }         
+        };
+        mags[] = {
+			{ "10Rnd_9x21_Mag", "", 750 }			
+        };
+        accs[] = {};
+    };
 
     class rebel {
         name = "Mohammed's Jihadi Shop";
