@@ -455,8 +455,8 @@ class VirtualItems {
         variable = "gpstracker";
         displayName = "STR_Item_GPSTracker";
         weight = 10;
-        buyPrice = 5000;
-        sellPrice = 70000;
+        buyPrice = 70000;
+        sellPrice = 5000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_boltCutter.paa";
