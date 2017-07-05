@@ -347,7 +347,7 @@ switch (_code) do {
 			sleep 2;
 		};
 	};
-	
+/*	
 	case 41: 
 	{  
 		if (cursorTarget isKindOf vehicle) then {
@@ -357,7 +357,7 @@ switch (_code) do {
 		//	};
 		};
 	};
-	
+*/	
 	//SmartPhone  Shift + 1
     case 2:
     {
