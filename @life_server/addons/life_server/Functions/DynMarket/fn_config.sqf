@@ -12,11 +12,11 @@
 // █████████████████ DYNAMIC MARKET BASIC CONFIGURATION ██████████████████
 // ███████████████████████████████████████████████████████████████████████
 
-DYNMARKET_Serveruptime         = 15;   // Serveruptime after restart in hours
+DYNMARKET_Serveruptime         = 6;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
-DYNMARKET_PriceUpdateInterval  = 1;   // After how many minutes should the price be updated?
+DYNMARKET_PriceUpdateInterval  = 5;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
-DYNMARKET_CreateBackupInterval = 3;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
+DYNMARKET_CreateBackupInterval = 1;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
 DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
 DYNMARKET_createRandomEvents   = true; // Should random events appear that influence the market?
 
@@ -32,7 +32,7 @@ DYNMARKET_UserNotification_Text =
 
 DYNMARKET_Items_Groups =
 [
-	["Obst",
+	["Legal",
 		[										//Schwankungsbreite 
 			["apple",-1,50,100],					// ["apple",-1,10,50],     
 			["ananas",-1,50,100],					// itemname		-1, minimum, maximum preis
@@ -43,12 +43,7 @@ DYNMARKET_Items_Groups =
 			["ananassaft",-1,140,260],
 			["bananensaft",-1,140,260],
 			["kokosnussmilch",-1,140,260],
-			["pina_colada",-1,420,780]
-		],
-		0.5
-	],
-	["Minensachen",
-		[
+			["pina_colada",-1,420,780],
 			["eisen",-1,880,1620],
 			["kupfer",-1,1100,2000],
 			["alu",-1,1890,3510],
@@ -81,20 +76,6 @@ DYNMARKET_Items_Groups =
 			["atombombe",-1,455000,845000],
 			["mikroProzessor",-1,17500,32500],
 			["implantatNormal",-1,185500,444500]
-		],
-		0.5
-	],
-	["Fisch",
-		[
-			["mullet",-1,100,1250],
-			["tuna",-1,1000,2000],
-			["salema",-1,50,200],
-			["ornate",-1,75,250],
-			["mackerel",-1,100,500],
-			["mullet",-1,250,500],
-			["turtleRaw",-1,5250,9750],
-			["turtleSoup",-1,5250,9750],
-			["catshark",-1,250,1000]
 		],
 		0.5
 	]
