@@ -350,7 +350,7 @@ switch (_code) do {
 	
 	case 41: 
 	{  
-		if ((life_inv_gpstracker > 0) && (cursorTarget isKindOf vehicle)) then {
+		if ((life_inv_gpstracker > 0) && cursorTarget isKindOf vehicle) then {
 			life_inv_gpstracker = life_inv_gpstracker - 1;
 			[cursorTarget] spawn life_fnc_gpsTracker;
 		};
