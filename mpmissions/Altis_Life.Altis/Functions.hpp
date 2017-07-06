@@ -203,8 +203,7 @@ class Life_Client_Core {
         class spawnPointSelected {};
         class unimpound {};
         class vehicleGarage {};
-        class wireTransfer {};
-		class seatbelt {};
+        class wireTransfer {};		
     };
 	
 	class DynMarket {
@@ -271,6 +270,7 @@ class Life_Client_Core {
         class loggedOut {};
 		class AAN {};
 		class postNewsBroadcast {};
+		class seatbelt {};
     };
 
     class Gangs    {
