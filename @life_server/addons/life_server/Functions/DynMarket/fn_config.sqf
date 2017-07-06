@@ -12,20 +12,20 @@
 // █████████████████ DYNAMIC MARKET BASIC CONFIGURATION ██████████████████
 // ███████████████████████████████████████████████████████████████████████
 
-DYNMARKET_Serveruptime         = 6;   // Serveruptime after restart in hours
+DYNMARKET_Serveruptime         = 06;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
-DYNMARKET_PriceUpdateInterval  = 5;   // After how many minutes should the price be updated?
+DYNMARKET_PriceUpdateInterval  = 1;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
-DYNMARKET_CreateBackupInterval = 1;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
-DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
+DYNMARKET_CreateBackupInterval = 2;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
+DYNMARKET_UserNotification     = true; // Should the user be informed with a hint whenever the prices got updated?
 DYNMARKET_createRandomEvents   = true; // Should random events appear that influence the market?
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
 
 DYNMARKET_UserNotification_Text = 
 [
-	"Your prices have been updated!",
-	"The new prices are being calculated by the server..."
+	"Die Preise wurde naktualisiert!",
+	"TDie Preise werden gerade vom Server angepasst..."
 ];
 
 // █████████████████ ITEM GROUP CONFIGURATION █████████████████
@@ -63,19 +63,19 @@ DYNMARKET_Items_Groups =
 	],
 	["Illegal", 
 		[
-			["heroinProcessed",-1,2940,6000],
-			["marijuana",-1,2100,4700],
-			["cocaineProcessed",-1,3640,7000],
-			["polenboeller",-1,2100,3900],
-			["zigaretten",-1,980,2500],
-			["korallenketten",-1,9800,18200],
-			["methProcessed",-1,2170,4030],
-			["uranIV",-1,7000,13000],
-			["plutonium",-1,7000,13000],
-			["brennstab",-1,12250,22750],
-			["atombombe",-1,455000,845000],
-			["mikroProzessor",-1,17500,32500],
-			["implantatNormal",-1,185500,444500]
+			["heroinProcessed",1,2940,6000],
+			["marijuana",1,2100,4700],
+			["cocaineProcessed",1,3640,7000],
+			["polenboeller",1,2100,3900],
+			["zigaretten",1,980,2500],
+			["korallenketten",1,9800,18200],
+			["methProcessed",1,2170,4030],
+			["uranIV",1,7000,13000],
+			["plutonium",1,7000,13000],
+			["brennstab",1,12250,22750],
+			["atombombe",1,455000,845000],
+			["mikroProzessor",1,17500,32500],
+			["implantatNormal",1,185500,444500]
 		],
 		0.5
 	]
