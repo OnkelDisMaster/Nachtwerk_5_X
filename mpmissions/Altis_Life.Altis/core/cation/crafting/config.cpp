@@ -94,15 +94,29 @@ class Cation_Crafting {
         } //Kein Komma bei letzten		
 		*/
 		{
-            "platinkronen", //Variablenname
+            "platinkrone", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
             {"kronen"} //Variablennamen der verfügbaren Kategorien
         },
-		
+		{
+            "mikroprozessor", //Variablenname
+            "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
+            {"mikroprozessor"} //Variablennamen der verfügbaren Kategorien
+        },
+		{
+            "bombenkopf", //Variablenname
+            "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
+            {"bombenkopf"} //Variablennamen der verfügbaren Kategorien
+        },		
+		{
+            "atombombe", //Variablenname
+            "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
+            {"atombombe"} //Variablennamen der verfügbaren Kategorien
+        },	
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"item","weapon"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","uniform","backpack"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };

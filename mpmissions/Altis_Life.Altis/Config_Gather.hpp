@@ -57,7 +57,7 @@ class CfgGather {
 		
 		class korallen {
             amount = (random(2)+1);
-            zones[] = { "korallen_1" };
+            zones[] = { "korallenriff" };
             item = "";
         };
 		

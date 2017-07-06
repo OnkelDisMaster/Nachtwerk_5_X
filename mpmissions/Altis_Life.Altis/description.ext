@@ -9,7 +9,7 @@ disableChannels[]={2};
 
 author = "Tonic | Edit by Nachtwerk";
 onLoadName = "Nachtwerk - Altis Life";
-onLoadMission = "Altis Life [4.4r3]";
+onLoadMission = "Altis Life [4.4R3]";
 loadScreen = "skins\logo.jpg";
 disabledAI = 1;
 
