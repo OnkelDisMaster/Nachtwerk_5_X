@@ -64,7 +64,7 @@ class Cation_Crafting {
             {"mikroprozessor","",{"platin",1,"alu",1,"kupfer",1},"","",0}
         },
 		{
-            "bombenkopf",
+            "bombenkopfe",
             "Bombenköpfe herstellen",
             {"bombenkopf","",{"alu",8,"eisen",8},"","",0}
         },
@@ -99,19 +99,19 @@ class Cation_Crafting {
             {"kronen"} //Variablennamen der verfügbaren Kategorien
         },
 		{
-            "mikroprozessor", //Variablenname
+            "mikroprozessorp", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"mikroprozessor"} //Variablennamen der verfügbaren Kategorien
+            {"mikroprozessoren"} //Variablennamen der verfügbaren Kategorien
         },
 		{
-            "bombenkopf", //Variablenname
+            "bombenkopfp", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"bombenkopf"} //Variablennamen der verfügbaren Kategorien
+            {"bombenkopfe"} //Variablennamen der verfügbaren Kategorien
         },		
 		{
-            "atombombe", //Variablenname
+            "atombombenp", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"atombombe"} //Variablennamen der verfügbaren Kategorien
+            {"atombomben"} //Variablennamen der verfügbaren Kategorien
         },	
 		{
             "Schwarzmarkt", //Variablenname
