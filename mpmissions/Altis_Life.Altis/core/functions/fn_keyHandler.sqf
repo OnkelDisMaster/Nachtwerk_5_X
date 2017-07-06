@@ -347,7 +347,7 @@ switch (_code) do {
 			sleep 2;
 		};
 	};
-	
+/*	Hotkey für Peilsender - funkt noch net	
 	case 41: 
 	{  
 			if (life_inv_gpstracker > 0) then {
@@ -355,7 +355,7 @@ switch (_code) do {
 				[cursorObject] spawn life_fnc_gpsTracker;
 			};
 	};
-	
+*/	
 	//SmartPhone  Shift + 1
     case 2:
     {
