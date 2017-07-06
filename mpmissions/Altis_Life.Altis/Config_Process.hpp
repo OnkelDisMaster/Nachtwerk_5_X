@@ -233,7 +233,7 @@ class ProcessAction {
 	};
 	
 	class bombenkopf {
-        MaterialsReq[] = {{"aluBarren",8},{"ironRefined",8}};
+        MaterialsReq[] = {{"alu",8},{"eisen",8}};
         MaterialsGive[] = {{"bombenkopf",1}};
         Text = "STR_Process_bombe";
         //ScrollText = "Harvest Marijuana";

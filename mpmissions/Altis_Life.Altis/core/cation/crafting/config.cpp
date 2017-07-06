@@ -59,14 +59,19 @@ class Cation_Crafting {
             {"krone","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
         },
 		{
+            "mikroprozessoren",
+            "Mikroprozessoren herstellen",
+            {"mikroprozessor","",{"platin",1,"alu",1,"kupfer",1},"","",0}
+        },
+		{
             "bombenkopf",
             "Bombenköpfe herstellen",
-            {"bombenkopf","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
+            {"bombenkopf","",{"alu",8,"eisen",8},"","",0}
         },
 		{
             "atombomben",
             "Atombomben herstellen",
-            {"atombombe","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
+            {"atombombe","",{"bombenkopf",1,"plutonium",20},"","",0}
         },
         {
             "item",

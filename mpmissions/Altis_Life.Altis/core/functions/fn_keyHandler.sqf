@@ -347,17 +347,15 @@ switch (_code) do {
 			sleep 2;
 		};
 	};
-/*	
+	
 	case 41: 
 	{  
-		if (cursorTarget isKindOf vehicle) then {
-		//	if (!(life_inv_gpstracker isEqualTo 0)) then {
-		//		life_inv_gpstracker = life_inv_gpstracker - 1;
-				[cursorTarget] spawn life_fnc_gpsTracker;
-		//	};
-		};
+			if (life_inv_gpstracker > 0) then {
+				life_inv_gpstracker = life_inv_gpstracker - 1;
+				[cursorObject] spawn life_fnc_gpsTracker;
+			};
 	};
-*/	
+	
 	//SmartPhone  Shift + 1
     case 2:
     {
