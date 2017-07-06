@@ -35,13 +35,13 @@ class Cation_Crafting {
         {
             "weapon", //Variable
             "Waffen", //Text
-            {"hgun_P07_F","",{"diamond_cut",2,"copper_refined",1},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
-            {"srifle_GM6_camo_F","license_civ_pro_rebel",{"copper_refined",3,"iron_refined",3,"diamond_cut",1},"","",0} //{Item 2,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite" (Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)} Kein Komma beim letzten!
+            {"hgun_P07_F","",{"diamond_cut",2,"kupfer",1},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
+            {"srifle_GM6_camo_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0} //{Item 2,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite" (Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)} Kein Komma beim letzten!
         }, //Komma
         {
             "uniform",
             "Uniformen",
-            {"U_IG_Guerilla1_1","",{"copper_refined",1},"","",0}
+            {"U_IG_Guerilla1_1","",{"kupfer",1},"","",0}
         },
         {
             "backpack",
@@ -51,12 +51,12 @@ class Cation_Crafting {
         {
             "vest",
             "Vesten",
-            {"V_Press_F","",{"copper_refined",1},"","",0}
+            {"V_Press_F","",{"kupfer",1},"","",0}
         },
 		{
             "kronen",
             "Platinkronen herstellen",
-            {"krone","",{"diamond_cut",1,"platin",1,"glass",1},"","",0}
+            {"krone","",{"diamond_cut",1,"platin",1},"","",0}
         },
 		{
             "mikroprozessoren",
@@ -76,7 +76,7 @@ class Cation_Crafting {
         {
             "item",
             "Items",            
-            {"diamond_cut","",{"copper_refined",1,"iron_refined",1},"","",1}
+            {"diamond_cut","",{"kupfer",1,"eisen",1},"","",1}
         } //Kein Komma bei letzten
     };
 
@@ -95,7 +95,7 @@ class Cation_Crafting {
 		*/
 		{
             "platinkrone", //Variablenname
-            "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
+            "kronen1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
             {"kronen"} //Variablennamen der verfügbaren Kategorien
         },
 		{
@@ -116,7 +116,7 @@ class Cation_Crafting {
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"weapon","uniform","backpack"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","uniform","backpack","kronen"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };
