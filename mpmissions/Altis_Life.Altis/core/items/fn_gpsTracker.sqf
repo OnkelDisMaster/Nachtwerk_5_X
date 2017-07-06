@@ -3,7 +3,8 @@
  Author: Poseidon
  Description: Attaches a gps tracker to selected vehicle
 */
-private["_unit"];
+private["_unit","_zahl"];
+_zahl = 0;
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {};
 if(!(_unit isKindOf "AllVehicles")) exitWith {hint "Du kannst den GPS Tracker hier nicht benutzen."};
@@ -17,12 +18,13 @@ life_action_inUse = false;
 if(player distance _unit > 7) exitWith {titleText["Du bist nicht in der Nähe eines Fahrzeugs!","PLAIN"];};
 titleText["Du hast einen GPS Tracker an diesem Fahrzeug angebracht.","PLAIN"];
 [_unit] spawn {
+ _zahl = _zahl + 1;
  _veh = _this select 0;
  _markerName = format["%1_gpstracker",_veh];
  _marker = createMarkerLocal [_markerName, visiblePosition _veh];
  _marker setMarkerColorLocal "ColorRed";
  _marker setMarkerTypeLocal "Mil_dot";
- _marker setMarkerTextLocal "GPS Tracker "+getText(configFile >> "CfgVehicles" >> typeof _veh >> "displayName");
+ _marker setMarkerTextLocal "GPS Tracker "+getText(configFile >> "CfgVehicles" >> typeof _veh >> "displayName" + format[" %1",_zahl]);
  _marker setMarkerPosLocal getPos _veh;
  while {true} do {
  if(not alive _veh) exitWith {deleteMarkerLocal _markerName;};

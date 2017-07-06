@@ -24,8 +24,8 @@ DYNMARKET_createRandomEvents   = true; // Should random events appear that influ
 
 DYNMARKET_UserNotification_Text = 
 [
-	"Die Preise wurde naktualisiert!",
-	"TDie Preise werden gerade vom Server angepasst..."
+	"Die Preise wurden aktualisiert!",
+	"Die Preise werden gerade vom Server angepasst..."
 ];
 
 // █████████████████ ITEM GROUP CONFIGURATION █████████████████
@@ -34,7 +34,8 @@ DYNMARKET_Items_Groups =
 [
 	["Legal",
 		[										//Schwankungsbreite 
-			["apple",-1,50,100],					// ["apple",-1,10,50],     
+			["apple",-1,50,100],					// ["apple",-1,10,50],  
+			["peach",-1,50,100],
 			["ananas",-1,50,100],					// itemname		-1, minimum, maximum preis
 			["bananen",-1,50,100],
 			["kokosnuss",-1,50,100],
