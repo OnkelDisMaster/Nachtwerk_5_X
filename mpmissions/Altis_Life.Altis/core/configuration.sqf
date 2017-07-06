@@ -53,6 +53,7 @@ life_TankLaster = 1;
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 life_drink = 0;
 life_drug = 0;
+life_seatbelt = false;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];

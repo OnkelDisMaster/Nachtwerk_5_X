@@ -48,7 +48,7 @@ if(!isNull _source) then {
 	};
 };
 
-if(vehicle _unit == _unit) then {
+if(vehicle _unit isEqualTo _unit) then {
     if(_source isKindOf "Air" OR _source isKindOf "Car" OR _source isKindOf "Boat") then    { //Vehicle without Player
     }else{
         _isVehicle = vehicle _source;
@@ -57,6 +57,11 @@ if(vehicle _unit == _unit) then {
             player playMove "amovppnemstpsraswrfldnon";
         };
     };
+};
+
+if ((vehicle _unit) isKindOf "Car" && (isNull _source || _source isEqualTo _unit)) then
+{
+	_damage = if (life_seatbelt) then { _damage / 2 } else { _damage};
 };
 
 [] call life_fnc_hudUpdate;

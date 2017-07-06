@@ -1,4 +1,6 @@
 #include "..\..\script_macros.hpp"
+#define IDC_LIFE_BAR_SeatBelt 4203
+
 /*
     File: fn_hudUpdate.sqf
     Author: Daniel Stuart
@@ -41,3 +43,15 @@ _ProgressBar_THIRST  progressSetPosition (1 / (100 / life_thirst));
 _Text_THIRST ctrlSetText format["%1%2", life_thirst,"%"];
 _Text_THIRST ctrlCommit 0;
 6 cutRsc ["osefStatusBarAdmin","PLAIN"];
+
+if(!isNil "life_seatbelt") then {
+    if ( vehicle player != player ) then {
+        if(life_seatbelt) then {
+            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\anschnallen.paa";
+        } else {
+            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "";
+        };
+    } else {
+        LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "";
+    };
+};
