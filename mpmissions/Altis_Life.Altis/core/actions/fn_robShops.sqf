@@ -30,7 +30,7 @@ _chance = 100;
 if(_chance >= 85) then { hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!"; [[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
 
 _cops = (west countSide playableUnits);
-if(_cops < 3) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hintSilent "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";};
+//if(_cops < 3) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hintSilent "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";};
 disableSerialization;
 life_Raub = true;
 5 cutRsc ["life_progress","PLAIN"];

@@ -29,6 +29,7 @@ _kassa = 50000 + round(random 100000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = 100;
+
 if(_chance >= 85) then {
     hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!";
     //[[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
@@ -36,11 +37,10 @@ if(_chance >= 85) then {
 };
 
 _cops = (west countSide playableUnits);
-if(_cops < 4) exitWith{
-    //[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP;
+/*if(_cops < 4) exitWith{
     [_vault,-1] remoteExecCall ["disableSerialization;"];
     hint "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";
-};
+};	*/
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";

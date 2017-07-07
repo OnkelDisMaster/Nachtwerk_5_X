@@ -32,7 +32,7 @@ if (isNil "atm_rob") then {atm_rob = []; publicVariable "atm_rob";};
 
 If (life_servername == serverName) then { _testserver = true;};
 
-if(playersNumber west < 2) exitWith {hint "Es muessen min. 2 Polizisten Online sein!"}; 
+//if(playersNumber west < 2) exitWith {hint "Es muessen min. 2 Polizisten Online sein!"}; 
 /*
 IF (player distance (getMarkerPos "Bankraub") < 2000) exitWith { hint "In der naehe wird bereits eine Bank ausgeraubt!" };
 IF (player distance (getMarkerPos "Marker200") < 1000) exitWith { hint "In der naehe wird bereits ein Geldautomat aufgebrochen!" };
