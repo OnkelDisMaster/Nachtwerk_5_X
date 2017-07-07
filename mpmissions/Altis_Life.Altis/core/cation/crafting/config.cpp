@@ -67,6 +67,11 @@ class Cation_Crafting {
             {"V_Press_F","",{"kupfer",1},"","",0}
         },
 		{
+            "fahrzeuge",
+            "Fahrzeuge zusammen scheißen",
+            {"B_Truck_01_box_F","",{"kupfer",1},"Digi Green","0",0}
+        },
+		{
             "kronen",
             "Platinkronen herstellen",
             {"krone","license_civ_kronen",{"diamond_cut",4,"platin",4,"glass",4},"","",1}
@@ -124,7 +129,7 @@ class Cation_Crafting {
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"weapon","uniform","vest","backpack","bombenkopfe"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","uniform","vest","backpack","bombenkopfe","fahrzeuge"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };
