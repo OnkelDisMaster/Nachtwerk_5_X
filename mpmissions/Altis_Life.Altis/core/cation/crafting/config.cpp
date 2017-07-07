@@ -69,12 +69,12 @@ class Cation_Crafting {
 		{
             "kronen",
             "Platinkronen herstellen",
-            {"krone","license_civ_kronen",{"diamond_cut",1,"platin",1},"","",1}
+            {"krone","license_civ_kronen",{"diamond_cut",4,"platin",4,"glass",4},"","",1}
         },
 		{
             "mikroprozessoren",
             "Mikroprozessoren herstellen",
-            {"mikroprozessor","license_civ_implantat",{"platin",1,"alu",1,"kupfer",1},"","",1}
+            {"mikroprozessor","license_civ_implantat",{"platin",2,"alu",3,"kupfer",5},"","",1}
         },
 		{
             "bombenkopfe",
@@ -115,11 +115,6 @@ class Cation_Crafting {
             "mikroprozessorp", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
             {"mikroprozessoren"} //Variablennamen der verfügbaren Kategorien
-        },
-		{
-            "bombenkopfp", //Variablenname
-            "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"bombenkopfe"} //Variablennamen der verfügbaren Kategorien
         },		
 		{
             "atombombenp", //Variablenname
@@ -129,7 +124,7 @@ class Cation_Crafting {
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"weapon","uniform","vest","backpack","kronen"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","uniform","vest","backpack","bombenkopfe"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };
