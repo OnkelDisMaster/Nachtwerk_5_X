@@ -47,7 +47,7 @@ _Text_THIRST ctrlCommit 0;
 if(!isNil "life_seatbelt") then {
     if ( vehicle player != player ) then {
         if(life_seatbelt) then {
-            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\anschnallen.paa";
+            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\ico_apple.paa";
         } else {
             LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "";
         };
