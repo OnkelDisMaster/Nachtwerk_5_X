@@ -13,5 +13,3 @@ switch (life_Event) do
 	case false: {life_Event = true; hint "Event Modus aktiviert"  ; closeDialog 0;};
 	default:   {life_Event = false; hint "Event Modus deaktiviert"; closeDialog 0;};
 };
-
-
