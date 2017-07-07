@@ -21,7 +21,6 @@ if (vehicle player != _robber) exitWith { hintSilent "Steig aus deinem Fahrzeug 
 
 if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hintSilent "HaHa, Du hast keine Waffe! Verschwinde Hier!" };
-if (_kassa == 0) exitWith { hintSilent "Hier ist kein Bargeld mehr zu holen!" };
 
 _cops = (west countSide playableUnits);
 /*if(_cops < 4) exitWith{
@@ -39,8 +38,7 @@ _chance = 100;
 
 if(_chance >= 85) then {
     hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!";
-    //[[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-    [1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]] remoteExec ["life_fnc_broadcast",west,false];
+    [1,format["ALARM! - Bankfiliale: %1 wird gerade ausgeraubt!", _shop]] remoteExec ["life_fnc_broadcast",west,false];
 };
 
 
@@ -66,7 +64,7 @@ _Pos = position player; // by ehno: get player pos
 				                "Marker200" setMarkerColor "ColorRed";
 				                "Marker200" setMarkerText "!! Bankfilialenüberfall !!";
 				                "Marker200" setMarkerType "mil_warning";			
-if(_cP >= 1) exitWith {};
+if(_cP >= 1) exitWith {deleteMarker "Marker200"; life_Raub = false;};
 
 if!(alive _robber) exitWith { _rip = false; life_Raub = false; deleteMarker "Marker200";};
 if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hintSilent "Bleibe innerhalb von (10m) um die Tanke auszurauben! - Jetzt ist die Kasse geschlossen."; 5 cutText ["","PLAIN"]; _rip = false; };

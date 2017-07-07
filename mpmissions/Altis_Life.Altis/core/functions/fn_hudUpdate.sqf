@@ -49,7 +49,7 @@ if(!isNil "life_seatbelt") then {
         if(life_seatbelt) then {
             _seatbelt_icon ctrlSetText "icons\anschnallen.paa";
         } else {
-            _seatbelt_icon ctrlSetText "icons\ico_apple.paa";
+            _seatbelt_icon ctrlSetText "";
         };
     } else {
         _seatbelt_icon ctrlSetText "";

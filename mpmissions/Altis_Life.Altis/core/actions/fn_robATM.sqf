@@ -31,11 +31,7 @@ if (isNil "log_atm_rob") then {log_atm_rob = 0; publicVariable "log_atm_rob";};
 if (isNil "atm_rob") then {atm_rob = []; publicVariable "atm_rob";};
 
 //if(playersNumber west < 2) exitWith {hint "Es muessen min. 2 Polizisten Online sein!"}; 
-/*
-IF (player distance (getMarkerPos "Bankraub") < 2000) exitWith { hint "In der naehe wird bereits eine Bank ausgeraubt!" };
-IF (player distance (getMarkerPos "Marker200") < 1000) exitWith { hint "In der naehe wird bereits ein Geldautomat aufgebrochen!" };
-IF (player distance (getMarkerPos "Tankstelle_raub") < 1000) exitWith { hint "In der naehe wird bereits eine Tankstelle ausgeraubt!" };  
-*/
+
 if (vehicle player != _robber) exitWith { hint "Aus einem Fahrzeug ausrauben? Wird bisschen schwer!" ;};
 if(side _robber != civilian) exitWith { hint "Du bist kein Zivilist!" };
 if(_robber distance _shop > 2) exitWith { hint "Du musst neben den Geldautomat stehen!" };
@@ -65,7 +61,6 @@ if (log_atm_rob >= 4) then { _kassa = 50 + round(random 100);
 
 if(_chance >= 25) then { hint "Die Polizei wurde benachrichtig!"; [1,format["Ein Geldautomat wird aufgebrochen!", _shop]] remoteExecCall ["life_fnc_broadcast",west];
 
-//[[getPlayerUID _robber,name _robber,"213"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 [getPlayerUID _robber,name _robber,"213"] remoteExec ["life_fnc_wantedAdd"];
 };
 
@@ -74,7 +69,7 @@ disableSerialization;
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
-_pgText ctrlSetText format["Wird ausgraubt. Entferne dich weiter weg als 2m. (1%1)...","%"];
+_pgText ctrlSetText format["Entferne dich weiter weg als 2m. (1%1)...","%"];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
  
@@ -104,9 +99,9 @@ while{true} do
     _progress progressSetPosition _cP;
     _pgText ctrlSetText format["Wird ausgraubt. Entferne dich nicht weiter als 2m. (%1%2)...",round(_cP * 100),"%"];
      
-    if(_cP >= 1) exitWith {deleteMarker life_alarm;};
-    if(_robber distance _shop > 2.5) exitWith {deleteMarker life_alarm;};
-    if!(alive _robber) exitWith {deleteMarker life_alarm;};
+    if(_cP >= 1) exitWith {deleteMarker life_alarm; life_Raub = false;};
+    if(_robber distance _shop > 2.5) exitWith {deleteMarker life_alarm; life_Raub = false;};
+    if!(alive _robber) exitWith {deleteMarker life_alarm; life_Raub = false;};
 };
 
 if!(alive _robber) exitWith { _rip = false; life_Raub = false; deleteMarker life_alarm;};
@@ -137,7 +132,6 @@ if(_chance <= 50) then {
     player setObjectTextureGlobal [1,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     player setObjectTextureGlobal [2,"#(argb,8,8,3)color(0.69,0.98,0.2,1,co)"];
     [1,format["Die Farbpatrone wurde ausgeloest, der Taeter ist nun hell gruen! ATM: Taeter laut Sicherheitsdienst ist %1!",name _robber, _shop]]    remoteExecCall ["life_fnc_broadcast",west];
-    //[[getPlayerUID _robber,name _robber,"2000"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
     [getPlayerUID _robber,name _robber,"2000"] remoteExec ["life_fnc_wantedAdd"];
 	deleteMarker life_alarm;
     };

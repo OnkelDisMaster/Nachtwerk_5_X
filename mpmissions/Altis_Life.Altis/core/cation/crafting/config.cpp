@@ -68,8 +68,8 @@ class Cation_Crafting {
         },
 		{
             "fahrzeuge",
-            "Fahrzeuge zusammen scheißen",
-            {"B_Truck_01_box_F","",{"kupfer",1},"Digi Green","0",0}
+            "Fahrzeuge zusammen schweißen",
+            {"B_Truck_01_box_F","",{"kupfer",1},"Digi Green","0",1}
         },
 		{
             "kronen",

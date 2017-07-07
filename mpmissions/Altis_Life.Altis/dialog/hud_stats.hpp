@@ -91,7 +91,7 @@ class playerHUD {
 	class LIFE_BAR_SeatBelt: Life_RscPicture
 	{
 		idc = 4203;
-		text = "icons\money.paa";
+		text = "";
 		x = 0.952292 * safezoneW + safezoneX;
 		y = 0.664333 * safezoneH + safezoneY;
 		w = 0.0331042 * safezoneW;
