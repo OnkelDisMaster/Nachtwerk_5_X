@@ -90,7 +90,7 @@ class playerHUD {
 	
 	class LIFE_BAR_SeatBelt: Life_RscPicture
 	{
-		idc = IDC_LIFE_BAR_SeatBelt;
+		idc = 4203;
 		text = "";
 		x = 0.952292 * safezoneW + safezoneX;
 		y = 0.664333 * safezoneH + safezoneY;

@@ -1,5 +1,4 @@
 #include "..\..\script_macros.hpp"
-#define IDC_LIFE_BAR_SeatBelt 4203
 
 /*
     File: fn_hudUpdate.sqf
@@ -15,7 +14,7 @@
 //LIFEctrl(2201) progressSetPosition (1 - (damage player));
 //LIFEctrl(2202) progressSetPosition (life_thirst / 100);
 
-private ["_BG","_BG2","_Text_FOOD","_Text_THIRST","_Text_HEALTH","_ProgressBar_FOOD","_ProgressBar_THIRST"];
+private ["_BG","_BG2","_Text_FOOD","_Text_THIRST","_Text_HEALTH","_ProgressBar_FOOD","_ProgressBar_THIRST","_seatbelt_icon"];
 disableSerialization;
 
 _ui = uiNameSpace getVariable ["playerHUD",displayNull];
@@ -30,6 +29,7 @@ _Text_THIRST = _ui displayCtrl 4453;
 _ProgressBar_FOOD = _ui displayCtrl 4459;
 _ProgressBar_THIRST = _ui displayCtrl 4460;
 
+_seatbelt_icon = _ui displayCtrl 4203; 
 
 //Update food
 _ProgressBar_FOOD progressSetPosition (1 / (100 / life_hunger));
@@ -42,16 +42,16 @@ _ProgressBar_THIRST  progressSetPosition (1 / (100 / life_thirst));
 
 _Text_THIRST ctrlSetText format["%1%2", life_thirst,"%"];
 _Text_THIRST ctrlCommit 0;
-6 cutRsc ["osefStatusBarAdmin","PLAIN"];
+//6 cutRsc ["osefStatusBarAdmin","PLAIN"];
 
 if(!isNil "life_seatbelt") then {
     if ( vehicle player != player ) then {
         if(life_seatbelt) then {
-            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "icons\ico_apple.paa";
+            _seatbelt_icon ctrlSetText "icons\anschnallen.paa";
         } else {
-            LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "";
+            _seatbelt_icon ctrlSetText "icons\ico_apple.paa";
         };
     } else {
-        LIFEctrl(IDC_LIFE_BAR_SeatBelt) ctrlSetText "";
+        _seatbelt_icon ctrlSetText "";
     };
 };

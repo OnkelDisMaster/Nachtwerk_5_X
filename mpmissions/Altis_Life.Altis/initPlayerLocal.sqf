@@ -13,7 +13,19 @@ if (!hasInterface && !isServer) exitWith {
 #define CONST(var1,var2) var1 = compileFinal (if (var2 isEqualType "") then {var2} else {str(var2)})
 #define LIFE_SETTINGS(TYPE,SETTING) TYPE(missionConfigFile >> "Life_Settings" >> SETTING)
 
-
+if (hasInterface) then {
+    player addEventHandler ["GetOutMan", {
+        life_seatbelt = false;
+        [] call life_fnc_hudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
+    }];
+};
+ 
+if (hasInterface) then {
+    player addEventHandler ["GetInMan", {
+        life_seatbelt = false;
+        [] call life_fnc_hudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
+    }];
+};
 
 [] execVM "core\init.sqf";
 [] execVM "voiceControl.sqf";
