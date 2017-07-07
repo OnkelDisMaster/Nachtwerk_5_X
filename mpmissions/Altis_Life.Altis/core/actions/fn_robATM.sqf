@@ -30,15 +30,12 @@ if (isNil {_robbed getVariable "atm_robbed"}) then {_robbed setVariable["atm_rob
 if (isNil "log_atm_rob") then {log_atm_rob = 0; publicVariable "log_atm_rob";};
 if (isNil "atm_rob") then {atm_rob = []; publicVariable "atm_rob";};
 
-If (life_servername == serverName) then { _testserver = true;};
-
 //if(playersNumber west < 2) exitWith {hint "Es muessen min. 2 Polizisten Online sein!"}; 
 /*
 IF (player distance (getMarkerPos "Bankraub") < 2000) exitWith { hint "In der naehe wird bereits eine Bank ausgeraubt!" };
 IF (player distance (getMarkerPos "Marker200") < 1000) exitWith { hint "In der naehe wird bereits ein Geldautomat aufgebrochen!" };
 IF (player distance (getMarkerPos "Tankstelle_raub") < 1000) exitWith { hint "In der naehe wird bereits eine Tankstelle ausgeraubt!" };  
 */
-IF (life_Bankraub) exitWith { hint "Es wird bereits eine Bank ausgeraubt! Alle ATM's wurden entleert!" };
 if (vehicle player != _robber) exitWith { hint "Aus einem Fahrzeug ausrauben? Wird bisschen schwer!" ;};
 if(side _robber != civilian) exitWith { hint "Du bist kein Zivilist!" };
 if(_robber distance _shop > 2) exitWith { hint "Du musst neben den Geldautomat stehen!" };
@@ -51,6 +48,7 @@ if !(alive _robber) exitWith {};
 if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith { hint "Du brauchst einen Bolzenschneider!"};
 
 life_Raub = true;
+publicVariable "life_Raub";
 _rip = true;
 _kassa = 5000 + round(random 8000);
 _shop removeAction _action;

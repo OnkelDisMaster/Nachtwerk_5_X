@@ -23,7 +23,14 @@ if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hintSilent "HaHa, Du hast keine Waffe! Verschwinde Hier!" };
 if (_kassa == 0) exitWith { hintSilent "Hier ist kein Bargeld mehr zu holen!" };
 
+_cops = (west countSide playableUnits);
+/*if(_cops < 4) exitWith{
+    [_vault,-1] remoteExecCall ["disableSerialization;"];
+    hint "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";
+};	*/
+
 life_Raub = true;
+publicVariable "life_Raub";
 _rip = true;
 _kassa = 50000 + round(random 100000);
 _shop removeAction _action;
@@ -36,11 +43,7 @@ if(_chance >= 85) then {
     [1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]] remoteExec ["life_fnc_broadcast",west,false];
 };
 
-_cops = (west countSide playableUnits);
-/*if(_cops < 4) exitWith{
-    [_vault,-1] remoteExecCall ["disableSerialization;"];
-    hint "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";
-};	*/
+
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";

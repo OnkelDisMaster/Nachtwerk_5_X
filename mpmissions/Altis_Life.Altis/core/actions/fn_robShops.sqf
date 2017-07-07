@@ -22,6 +22,10 @@ if (vehicle player != _robber) exitWith { hintSilent "Steig aus deinem Fahrzeug 
 if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hintSilent "HaHa, Du hast keine Waffe! Verschwinde Hier!" };
 
+//if(_cops < 3) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hintSilent "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";};
+
+life_Raub = true;
+publicVariable "life_Raub";
 _rip = true;
 _kassa = 15000 + round(random 30000);
 _shop removeAction _action;
@@ -30,9 +34,8 @@ _chance = 100;
 if(_chance >= 85) then { hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!"; [[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
 
 _cops = (west countSide playableUnits);
-//if(_cops < 3) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hintSilent "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";};
 disableSerialization;
-life_Raub = true;
+
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
