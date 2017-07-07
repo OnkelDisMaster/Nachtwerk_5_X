@@ -36,8 +36,21 @@ class Cation_Crafting {
             "weapon", //Variable
             "Waffen", //Text
             {"hgun_P07_F","",{"diamond_cut",2,"kupfer",1},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
-            {"srifle_GM6_camo_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0} //{Item 2,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite" (Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)} Kein Komma beim letzten!
-        }, //Komma
+            {"arifle_AK12_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"arifle_ARX_hex_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"LMG_Mk200_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"LMG_Zafir_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0},
+			{"srifle_DMR_04_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"srifle_DMR_04_tan_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"srifle_DMR_02_camo_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0},
+			{"srifle_DMR_02_sniper_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0},			
+			{"srifle_DMR_05_hex_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"srifle_DMR_05_tan_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"srifle_LRR_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
+			{"srifle_LRR_camo_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 			
+			{"srifle_GM6_camo_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0} 
+
+		}, //Komma
         {
             "uniform",
             "Uniformen",
@@ -56,22 +69,22 @@ class Cation_Crafting {
 		{
             "kronen",
             "Platinkronen herstellen",
-            {"krone","",{"diamond_cut",1,"platin",1},"","",0}
+            {"krone","license_civ_kronen",{"diamond_cut",1,"platin",1},"","",0}
         },
 		{
             "mikroprozessoren",
             "Mikroprozessoren herstellen",
-            {"mikroprozessor","",{"platin",1,"alu",1,"kupfer",1},"","",0}
+            {"mikroprozessor","license_civ_implantat",{"platin",1,"alu",1,"kupfer",1},"","",0}
         },
 		{
             "bombenkopfe",
             "Bombenköpfe herstellen",
-            {"bombenkopf","",{"alu",8,"eisen",8},"","",0}
+            {"bombenkopf","license_civ_bombe",{"alu",8,"eisen",8},"","",0}
         },
 		{
             "atombomben",
             "Atombomben herstellen",
-            {"atombombe","",{"bombenkopf",1,"plutonium",20},"","",0}
+            {"atombombe","license_civ_abombe",{"bombenkopf",1,"plutonium",20},"","",0}
         },
         {
             "item",
@@ -116,7 +129,7 @@ class Cation_Crafting {
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"weapon","uniform","backpack","kronen"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","uniform","vest","backpack","kronen"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };

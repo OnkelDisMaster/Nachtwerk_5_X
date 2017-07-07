@@ -34,7 +34,7 @@ if (isNull _curObject) exitWith {
         };
 		if(player distance (getMarkerPos "korallenriff") < 75) then {
 			if (life_action_gathering) exitWith {};
-			_handle = [] spawn life_fnc_gather;
+			[] spawn life_fnc_gather;
 			life_action_gathering = true;
             waitUntil {scriptDone _handle};
             life_action_gathering = false;

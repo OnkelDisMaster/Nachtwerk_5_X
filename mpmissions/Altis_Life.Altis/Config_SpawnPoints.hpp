@@ -151,12 +151,20 @@ class CfgSpawnPoints {
         };
 
         class HW {
-            displayName = "SEK Zentrale";
+            displayName = "Air HQ";
             spawnMarker = "cop_spawn_5";
             icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
             licenses[] = { { "", true } };
             level[] = { "life_coplevel", "SCALAR", 9 };
         };
+		
+	/*	class sek {
+            displayName = "SEK Zentrale";
+            spawnMarker = "cop_spawn_6";
+            icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+            licenses[] = { { "", true } };
+            level[] = { "life_coplevel", "SCALAR", 9 };
+        };	*/
     };
 
     class Medic {
