@@ -19,6 +19,7 @@ class playerHUD
         ProgressBar_THIRST,
         Text_FOOD,
         Text_THIRST,
+		LIFE_BAR_SeatBelt
     };
 
 

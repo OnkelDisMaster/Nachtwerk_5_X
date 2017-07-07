@@ -32,13 +32,6 @@ if (isNull _curObject) exitWith {
                 [_fish] call life_fnc_catchFish;
             };
         };
-		if(player distance (getMarkerPos "korallenriff") < 75) then {
-			if (life_action_gathering) exitWith {};
-			[] spawn life_fnc_gather;
-			life_action_gathering = true;
-            waitUntil {scriptDone _handle};
-            life_action_gathering = false;
-		};
     } else {
         _animal = (nearestObjects[player,(LIFE_SETTINGS(getArray,"animaltypes_hunting")),3]) select 0;
         if (!isNil "_animal") then {

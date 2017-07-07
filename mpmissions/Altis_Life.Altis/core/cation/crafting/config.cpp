@@ -69,22 +69,22 @@ class Cation_Crafting {
 		{
             "kronen",
             "Platinkronen herstellen",
-            {"krone","license_civ_kronen",{"diamond_cut",1,"platin",1},"","",0}
+            {"krone","license_civ_kronen",{"diamond_cut",1,"platin",1},"","",1}
         },
 		{
             "mikroprozessoren",
             "Mikroprozessoren herstellen",
-            {"mikroprozessor","license_civ_implantat",{"platin",1,"alu",1,"kupfer",1},"","",0}
+            {"mikroprozessor","license_civ_implantat",{"platin",1,"alu",1,"kupfer",1},"","",1}
         },
 		{
             "bombenkopfe",
             "Bombenköpfe herstellen",
-            {"bombenkopf","license_civ_bombe",{"alu",8,"eisen",8},"","",0}
+            {"bombenkopf","license_civ_bombe",{"alu",8,"eisen",8},"","",1}
         },
 		{
             "atombomben",
             "Atombomben herstellen",
-            {"atombombe","license_civ_abombe",{"bombenkopf",1,"plutonium",20},"","",0}
+            {"atombombe","license_civ_abombe",{"bombenkopf",1,"plutonium",20},"","",1}
         },
         {
             "item",

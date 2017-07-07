@@ -1,6 +1,5 @@
 class CfgGather {
     zoneSize = 30;
-//	if(player distance (getMarkerPos "korallenriff") < 75) then {zoneSize = 75;};
     class Resources {
         class apple {
             amount =  (random(4)+1);
