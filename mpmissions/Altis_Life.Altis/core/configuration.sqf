@@ -39,7 +39,6 @@ life_save_gear = [];
 life_container_activeObj = ObjNull;
 life_disable_getIn = false;
 life_disable_getOut = false;
-life_admin_debug = false;
 life_preview_3D_vehicle_cam = objNull;
 life_preview_3D_vehicle_object = objNull;
 life_preview_light = objNull;
@@ -54,6 +53,8 @@ life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNe
 life_drink = 0;
 life_drug = 0;
 life_seatbelt = false;
+life_Event = false;
+life_Raub = false;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];

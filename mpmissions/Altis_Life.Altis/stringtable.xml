@@ -659,16 +659,16 @@
             <Russian>Вы не можете телепортировать игрока здесь, потому что они находятся внутри автомобиля.</Russian>
             <German>Sie können den Player hier nicht teleportieren , weil sie im Inneren eines Fahrzeugs sind.</German>
         </Key>
-        <Key ID="STR_Admin_Debug">
-            <Original>Debug</Original>
-            <Czech>Ladit</Czech>
-            <Spanish>Debug</Spanish>
-            <Italian>mettere a punto</Italian>
+        <Key ID="STR_Admin_Event">
+            <Original>Event</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <German>Debug</German>
-            <French>Debug</French>
-            <Portuguese>Depuração</Portuguese>
-            <Polish>Debug</Polish>
+            <German>Event</German>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Admin_Compensate">
             <Original>Comp</Original>

@@ -83,6 +83,7 @@ class Life_Client_Core {
         class ticketAction {};
         class unrestrain {};
 		class sitDown {};
+		class robShops {};
 		class robATM {};  //ATM ausrauben
 		class robMBank {};  //Bank Mini ausrauben
 		class newsBroadcast {};
@@ -103,7 +104,7 @@ class Life_Client_Core {
     class Admin {
         file = "core\admin";
         class adminCompensate {};
-        class adminDebugCon {};
+        class adminEvent {};
         class adminFreeze {};
         class admingetID {};
         class adminGodMode {};
