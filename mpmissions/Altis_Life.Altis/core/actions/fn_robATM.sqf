@@ -17,8 +17,13 @@ _robbed = cursorObject;
 _wait = round(random(2));
 sleep _wait;
 
-if (isNil "life_event") then {life_event = false; publicVariable "life_event";};
-if (life_event) exitWith { titleText ["*** EVENT! kein ATM, Bank - und Tankstellenraub erlaubt! ***","PLAIN"];};
+
+if (isNil "life_Event") then {life_Event = false; publicVariable "life_Event";};
+if (life_Event) exitWith {titleText ["***Momentan findet ein Event statt, \n Aktionen dieser Art sind momentan nicht gestattet!***","PLAIN"];};
+
+if (isNil "life_Raub") then {life_Raub = false; publicVariable "life_Raub";};
+if (life_Raub) exitWith {titleText ["***Momentan findet bereits ein aktiver Raub statt, \n Versuche es später nocheinmal!***","PLAIN"];};
+
 
 if (isNil {_robbed getVariable "atm_robbed"}) then {_robbed setVariable["atm_robbed",false,true];};
 
@@ -45,6 +50,7 @@ if(_robbed getVariable "atm_robbed") exitWith { hint "Dieser Automat ist bereits
 if !(alive _robber) exitWith {};
 if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith { hint "Du brauchst einen Bolzenschneider!"};
 
+life_Raub = true;
 _rip = true;
 _kassa = 5000 + round(random 8000);
 _shop removeAction _action;
@@ -100,15 +106,16 @@ while{true} do
     _progress progressSetPosition _cP;
     _pgText ctrlSetText format["Wird ausgraubt. Entferne dich nicht weiter als 2m. (%1%2)...",round(_cP * 100),"%"];
      
-    if(_cP >= 1) exitWith {};
-    if(_robber distance _shop > 2.5) exitWith { };
-    if!(alive _robber) exitWith {};
+    if(_cP >= 1) exitWith {deleteMarker life_alarm;};
+    if(_robber distance _shop > 2.5) exitWith {deleteMarker life_alarm;};
+    if!(alive _robber) exitWith {deleteMarker life_alarm;};
 };
 
-if!(alive _robber) exitWith { _rip = false; };
+if!(alive _robber) exitWith { _rip = false; life_Raub = false; deleteMarker life_alarm;};
 
 if(_robber distance _shop > 2.5) exitWith { _shop switchMove ""; hint "Du hast dich zuweit entfernt."; 5 cutText ["","PLAIN"]; 
 _rip = false; 
+life_Raub = false;
 sleep (30 + random(180));
 deleteMarker life_alarm;};
 
@@ -120,7 +127,8 @@ life_cash = life_cash + _kassa;
 
 log_atm_rob = log_atm_rob + 1;
 publicVariable "log_atm_rob";
- 
+
+life_Raub = false; 
 _rip = false;
 
 if(_chance <= 50) then { 
@@ -133,15 +141,16 @@ if(_chance <= 50) then {
     [1,format["Die Farbpatrone wurde ausgeloest, der Taeter ist nun hell gruen! ATM: Taeter laut Sicherheitsdienst ist %1!",name _robber, _shop]]    remoteExecCall ["life_fnc_broadcast",west];
     //[[getPlayerUID _robber,name _robber,"2000"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
     [getPlayerUID _robber,name _robber,"2000"] remoteExec ["life_fnc_wantedAdd"];
+	deleteMarker life_alarm;
     };
 
 life_use_atm = false;
 sleep (30 + random(180));
-deleteMarker life_alarm;;
+deleteMarker life_alarm;
 life_use_atm = true;
 call life_fnc_isLife;
 if!(alive _robber) exitWith {};
 };
-sleep 200;
+sleep 300;
 _action = _shop addAction["Geldautomat aufbrechen",life_fnc_robATM]; 
 //_shop switchMove "";
