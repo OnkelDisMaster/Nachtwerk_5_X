@@ -71,7 +71,7 @@ life_clothing_purchase = [-1,-1,-1,-1,-1];
 ****** Weight Variables *****
 *****************************
 */
-life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”); //Static variable representing the players max carrying weight on start.
+life_maxWeight = 24; //Static variable representing the players max carrying weight on start.
 life_minWeight = life_maxWeight; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
 life_carryWeight = 0; //Represents the players current inventory weight (MUST START AT 0).
 

@@ -65,8 +65,8 @@ switch (_code) do {
         };
     };
 
-    //Surrender (Shift + B)
-    case 48: {
+    //Surrender (Shift + G)
+    case 34: {
         if (_shift) then {
             if (player getVariable ["playerSurrender",false]) then {
                 player setVariable ["playerSurrender",false,true];
@@ -122,8 +122,8 @@ switch (_code) do {
         };
     };
 
-    //Knock out, this is experimental and yeah... (Shift + G)
-    case 34: {
+    //Knock out, this is experimental and yeah... (Shift + V)
+    case 47: {
         if (_shift) then {_handled = true;};
         if (_shift && playerSide isEqualTo civilian && !isNull cursorObject && cursorObject isKindOf "Man" && isPlayer cursorObject && alive cursorObject && cursorObject distance player < 4 && speed cursorObject < 1) then {
             if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player == primaryWeapon player || currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isknocked) then {
