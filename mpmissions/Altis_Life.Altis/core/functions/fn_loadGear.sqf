@@ -73,7 +73,7 @@ if (!isNil {(_this select 0)}) then {
     [true,(_x select 0),(_x select 1)] call life_fnc_handleInv;
 } forEach (_yItems);
 
-life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”);
+life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”); //Static variable
 
 
 /* Rucksack CFG */
