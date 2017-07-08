@@ -78,6 +78,14 @@ class CfgRemoteExec {
 		F(life_fnc_Lizenzsehen,CLIENT)
 		F(life_fnc_alkoholdrugtester,CLIENT)
 		F(life_fnc_playerSkins,CLIENT)
+		F(SA_Advanced_Towing_Install,CLIENT)
+		F(SA_Simulate_Towing,CLIENT)
+		F(SA_Attach_Tow_Ropes,CLIENT)
+		F(SA_Take_Tow_Ropes,CLIENT)
+		F(SA_Put_Away_Tow_Ropes,CLIENT)
+		F(SA_Pickup_Tow_Ropes,CLIENT)
+		F(SA_Drop_Tow_Ropes,CLIENT)
+		F(SA_Hint,CLIENT)
 
 
         /* Server only functions */
