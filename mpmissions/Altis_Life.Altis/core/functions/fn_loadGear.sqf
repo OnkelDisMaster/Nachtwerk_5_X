@@ -74,7 +74,39 @@ life_maxWeight = 100;
     [true,(_x select 0),(_x select 1)] call life_fnc_handleInv;
 } forEach (_yItems);
 
-life_maxWeight = 24;
+life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”);
+/* Rucksack CFG */
+[] spawn
+{
+    while{true} do
+    {
+        waitUntil {!(EQUAL(backpack player,""))};
+        _bp = backpack player;
+        _cfg = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,“maximumload”);
+        _load = round(_cfg / 4);
+        if(EQUAL(backpack player,“B_AssaultPack_khk”)) then { _load = 30; };            
+        if(EQUAL(backpack player,“B_AssaultPack_Kerry”)) then { _load = 30; };
+        if(EQUAL(backpack player,“B_AssaultPack_blk”)) then { _load = 30; };
+        if(EQUAL(backpack player,“B_AssaultPack_cbr”)) then { _load = 30; };            
+        if(EQUAL(backpack player,“B_AssaultPack_sgg”)) then { _load = 30; };
+        if(EQUAL(backpack player,“B_Bergen_blk”)) then { _load = 50; };
+        if(EQUAL(backpack player,“B_TacticalPack_oli”)) then { _load = 50; };
+        if(EQUAL(backpack player,“B_Bergen_sgg”)) then { _load = 50; };
+        if(EQUAL(backpack player,“B_Bergen_rgr”)) then { _load = 50; };            
+        if(EQUAL(backpack player,“B_AssaultPack_mcamo_AT”)) then { _load = 70; };
+        if(EQUAL(backpack player,“B_Kitbag_cbr”)) then { _load = 70; };
+        if(EQUAL(backpack player,“B_Kitbag_sgg”)) then { _load = 70; };            
+        if(EQUAL(backpack player,“B_Carryall_khk”)) then { _load = 80; };
+        if(EQUAL(backpack player,“B_Carryall_oli”)) then { _load = 80; };            
+        if(EQUAL(backpack player,“B_Carryall_cbr”)) then { _load = 80; };
+        life_maxWeight = life_minWeight + _load;
+        waitUntil {!(EQUAL(backpack player,_bp))};
+        if(EQUAL(backpack player,"")) then {
+            life_maxWeight = life_minWeight;
+        };
+    };
+};
+
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if (!(_prim isEqualTo "")) then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if (!(_seco isEqualTo "")) then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
