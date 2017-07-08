@@ -6203,7 +6203,7 @@
             <Czech>grilované Rabbit</Czech>
             <Spanish>Conejo Asado</Spanish>
             <Russian></Russian>
-            <German>Gegrilltes Hasenfleisch</German>
+            <German>Hasenbraten</German>
             <French>Lapin grillé</French>
             <Italian>Carne di coniglio alla griglia</Italian>
             <Portuguese>Carne de coelho grelhado</Portuguese>
@@ -6445,7 +6445,7 @@
             <Czech>grilované Ovce</Czech>
             <Spanish>Obeja Asada</Spanish>
             <Russian></Russian>
-            <German>Gegrilltes Schafsfleisch</German>
+            <German>Lammsteak</German>
             <French>moutons grillés</French>
             <Italian>Mutton alla griglia</Italian>
             <Portuguese>Mutton Grelhado</Portuguese>
@@ -8081,6 +8081,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_License_Grill">
+            <Original>Barbeque License</Original>
+            <German>Metzger Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
 		<Key ID="STR_License_Airsoft">
             <Original>Airsoft and Paintball Clubmember</Original>
             <German>Airsoft und Paintball Clubmitglied</German>
@@ -8652,6 +8663,61 @@
             <Spanish></Spanish>
             <Russian></Russian>
             <German>Kokosnüsse zermalmen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Rabbit">
+            <Original>Cooking rabbit</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Hasenbraten zubereiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Hen">
+            <Original>Cooking hen</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Huhn zubereiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Rooster">
+            <Original>Cooking rooster</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Hähnchen grillen</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Sheep">
+            <Original>Cooking sheep</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Lammsteak zubereiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Goat">
+            <Original>Cooking goat</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Ziege anbraten</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>

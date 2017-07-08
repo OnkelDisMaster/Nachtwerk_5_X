@@ -17,6 +17,46 @@
 */
 
 class ProcessAction {
+	class rabbit {
+        MaterialsReq[] = {{"rabbit_raw",1}};
+        MaterialsGive[] = {{"rabbit",1}};
+        Text = "STR_Process_Rabbit";
+        //ScrollText = "Process Oil";
+        NoLicenseCost = 0;
+    };
+	
+	class hen {
+        MaterialsReq[] = {{"hen_raw",1}};
+        MaterialsGive[] = {{"hen",1}};
+        Text = "STR_Process_Hen";
+        //ScrollText = "Process Oil";
+        NoLicenseCost = 0;
+    };
+	
+	class rooster {
+        MaterialsReq[] = {{"rooster_raw",1}};
+        MaterialsGive[] = {{"rooster",1}};
+        Text = "STR_Process_Rooster";
+        //ScrollText = "Process Oil";
+        NoLicenseCost = 0;
+    };
+	
+	class sheep {
+        MaterialsReq[] = {{"sheep_raw",1}};
+        MaterialsGive[] = {{"sheep",1}};
+        Text = "STR_Process_Sheep";
+        //ScrollText = "Process Oil";
+        NoLicenseCost = 0;
+    };
+	
+	class goat {
+        MaterialsReq[] = {{"goat_raw",1}};
+        MaterialsGive[] = {{"goat",1}};
+        Text = "STR_Process_Goat";
+        //ScrollText = "Process Oil";
+        NoLicenseCost = 0;
+    };
+	
     class oel {
         MaterialsReq[] = {{"oelu",1}};
         MaterialsGive[] = {{"oel",1}};
@@ -205,7 +245,7 @@ class ProcessAction {
         MaterialsGive[] = {{"uranIII",1}};
         Text = "STR_Process_uranII";
         //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 42000;
+        NoLicenseCost = 0;
 	};
 	
 	class uranIV {
@@ -213,7 +253,7 @@ class ProcessAction {
         MaterialsGive[] = {{"uranIV",1}};
         Text = "STR_Process_uranIII";
         //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 42000;
+        NoLicenseCost = 0;
 	};
 	
 	class plutonium {
@@ -237,7 +277,7 @@ class ProcessAction {
         MaterialsGive[] = {{"bombenkopf",1}};
         Text = "STR_Process_bombe";
         //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 26500;
+        NoLicenseCost =0;
 	};
 	
 	class abombe {
@@ -245,7 +285,7 @@ class ProcessAction {
         MaterialsGive[] = {{"atombombe",1}};
         Text = "STR_Process_abombe";
         //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 127500;
+        NoLicenseCost = 0;
 	};
 	
 	class mikroprozessor {
