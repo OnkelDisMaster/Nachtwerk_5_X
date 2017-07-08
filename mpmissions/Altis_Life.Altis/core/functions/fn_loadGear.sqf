@@ -68,7 +68,6 @@ if (!isNil {(_this select 0)}) then {
 {(vestContainer player) addItemCargoGlobal [_x,1];} forEach (_vMags);
 {player addItemToBackpack _x;} forEach (_bItems);
 {(backpackContainer player) addItemCargoGlobal [_x,1];} forEach (_bMags);
-life_maxWeight = 100;
 
 {
     [true,(_x select 0),(_x select 1)] call life_fnc_handleInv;
