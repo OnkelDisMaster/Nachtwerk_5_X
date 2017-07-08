@@ -272,6 +272,7 @@ class Life_Client_Core {
 		class AAN {};
 		class postNewsBroadcast {};
 		class seatbelt {};
+		class initPayChecks {};
     };
 
     class Gangs    {
@@ -429,6 +430,7 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
+		class virt_sellAll {};
     };
 
     class Vehicle {

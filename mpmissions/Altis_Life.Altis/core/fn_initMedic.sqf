@@ -33,14 +33,14 @@ if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
 	player addItem "ToolKit";
 	player addItem "Medikit";
 
-
+[] execVM "core\initTowing.sqf";
 [] execVM "IgiLoad\IgiLoadInit.sqf";
 
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 [] spawn life_fnc_IntroCam;
-
+[] call life_fnc_initPayChecks;
 [] call life_fnc_playerSkins;
 
 // Uniformen Texturen START

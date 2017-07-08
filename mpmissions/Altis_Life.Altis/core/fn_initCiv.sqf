@@ -35,6 +35,7 @@ if (life_is_alive && !life_is_arrested) then {
 
 if (license_civ_transport) then {[] execVM "IgiLoad\IgiLoadInit.sqf";};
 [] spawn life_fnc_IntroCam;
+[] call life_fnc_initPayChecks;
 
 life_is_alive = true;
 player addRating 9999999;
