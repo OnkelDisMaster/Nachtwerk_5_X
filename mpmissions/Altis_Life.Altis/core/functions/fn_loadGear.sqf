@@ -74,6 +74,8 @@ if (!isNil {(_this select 0)}) then {
 } forEach (_yItems);
 
 life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”);
+
+
 /* Rucksack CFG */
 [] spawn
 {
@@ -81,8 +83,7 @@ life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”);
     {
         waitUntil {!(EQUAL(backpack player,""))};
         _bp = backpack player;
-        _cfg = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,“maximumload”);
-        _load = round(_cfg / 4);
+        _load = 25;
         if(EQUAL(backpack player,“B_AssaultPack_khk”)) then { _load = 30; };            
         if(EQUAL(backpack player,“B_AssaultPack_Kerry”)) then { _load = 30; };
         if(EQUAL(backpack player,“B_AssaultPack_blk”)) then { _load = 30; };
@@ -97,7 +98,15 @@ life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”);
         if(EQUAL(backpack player,“B_Kitbag_sgg”)) then { _load = 70; };            
         if(EQUAL(backpack player,“B_Carryall_khk”)) then { _load = 80; };
         if(EQUAL(backpack player,“B_Carryall_oli”)) then { _load = 80; };            
-        if(EQUAL(backpack player,“B_Carryall_cbr”)) then { _load = 80; };
+        if(EQUAL(backpack player,“B_Carryall_cbr”)) then { _load = 80; };		
+		if(EQUAL(backpack player,“B_Bergen_hex_F”)) then { _load = 100; };
+		if(EQUAL(backpack player,“B_Bergen_mcamo_F”)) then { _load = 100; };
+		if(EQUAL(backpack player,“B_Bergen_dgtl_F”)) then { _load = 100; };		
+		if(EQUAL(backpack player,“B_ViperHarness_ghex_F”)) then { _load = 130; };
+		if(EQUAL(backpack player,“B_ViperHarness_blk_F”)) then { _load = 120; };
+		if(EQUAL(backpack player,“B_ViperHarness_hex_F”)) then { _load = 120; };
+		if(EQUAL(backpack player,“B_ViperHarness_khk_F”)) then { _load = 120; };
+		if(EQUAL(backpack player,“B_ViperHarness_oli_F”)) then { _load = 120; };
         life_maxWeight = life_minWeight + _load;
         waitUntil {!(EQUAL(backpack player,_bp))};
         if(EQUAL(backpack player,"")) then {
