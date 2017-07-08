@@ -113,24 +113,29 @@ switch (_itemFilter) do {
         };
     };
     default {
-        if (_vItem isEqualTo 1) then {
-            _weight = [_item] call life_fnc_itemWeight;
-            _weightUsedItems = 0;
-            for [{_i=0},{_i<(count _matsNeed)-1},{_i=_i+2}] do {
-                _matsNum = _matsNeed select _i+1;
-                _weightUsedItems = _weightUsedItems + (([(_matsNeed select _i)] call life_fnc_itemWeight) * _matsNum);
-            };
-            if ((life_carryWeight - _weightUsedItems + _weight) > life_maxWeight) exitWith {
-                hint localize "STR_NOTF_NoRoom";
-                _exit = true;
-            };
-        } else {
-            if (!(player canAdd _newItem)) exitWith {
-                hint format[(getText(missionConfigFile >> "Cation_Crafting" >> "NoRoom"))];
-                _exit = true;
-            };
-        };
-    };
+		switch(_vItem) do
+		{
+		case 0: {
+					if (!(player canAdd _newItem)) exitWith {
+						hint format[(getText(missionConfigFile >> "Cation_Crafting" >> "NoRoom"))];
+						_exit = true;
+					};
+				};
+		case 1:	{
+					_weight = [_item] call life_fnc_itemWeight;
+					_weightUsedItems = 0;
+					for [{_i=0},{_i<(count _matsNeed)-1},{_i=_i+2}] do {
+						_matsNum = _matsNeed select _i+1;
+						_weightUsedItems = _weightUsedItems + (([(_matsNeed select _i)] call life_fnc_itemWeight) * _matsNum);
+					};
+					if ((life_carryWeight - _weightUsedItems + _weight) > life_maxWeight) exitWith {
+						hint localize "STR_NOTF_NoRoom";
+						_exit = true;
+					};
+				};
+		case 2:	{hint "Fahrzeug Crafting Test";};
+		};
+	};
 };
 if (_exit) exitWith {
     life_action_inUse = false;
