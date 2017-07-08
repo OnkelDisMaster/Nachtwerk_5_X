@@ -6,7 +6,7 @@
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.
 */
-private["_itemArray","_handle"];
+private["_itemArray","_handle","_load"];
 _itemArray = life_gear;
 waitUntil {!(isNull (findDisplay 46))};
 
@@ -73,7 +73,7 @@ if (!isNil {(_this select 0)}) then {
     [true,(_x select 0),(_x select 1)] call life_fnc_handleInv;
 } forEach (_yItems);
 
-life_maxWeight = LIFE_SETTINGS(getNumber,“total_maxWeight”); //Static variable
+life_maxWeight = 24;
 
 
 /* Rucksack CFG */
