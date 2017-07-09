@@ -39,3 +39,6 @@
 #include "emp_menu.hpp"
 #include "loadout_selector.hpp"
 #include "newsStation.hpp"
+#include "slot_machine.hpp"
+#include "blackjack.hpp"
+#include "hitmarker.hpp"
