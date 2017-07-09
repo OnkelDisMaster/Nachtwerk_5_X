@@ -732,6 +732,10 @@ class LifeCfgVehicles {
 			{ "Zuhälter", "civ", {
                 "skins\car\civ_ifrit_1.paa",
 				"skins\car\civ_ifrit_2.paa"
+            }, "" },
+			{ "Kuhflecken", "civ", {
+                "skins\car\IfritT1.paa",
+				"skins\car\IfritT2.paa"
             }, "" }
 		};
     };

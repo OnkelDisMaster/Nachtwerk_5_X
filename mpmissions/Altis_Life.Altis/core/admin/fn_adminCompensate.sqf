@@ -6,7 +6,7 @@
     Description:
     Figure it out.
 */
-private["_value","_action","_name","_uid","_value"];
+private["_value","_action","_name","_uid"];
 if (FETCH_CONST(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 _value = parseNumber(ctrlText 9922);
 if (_value < 0) exitWith {};
@@ -24,7 +24,7 @@ _action = [
 
 if (_action) then {
     CASH = CASH + _value;
-	diag_log format["Supporter: %1 | %2 | hat %3 $ angefordert",_name,_uid,[_value] call life_fnc_numberText];    
+	diag_log format["Supporter: %1 | %2 | hat %3 $ angefordert",_name,_uid,([_value] call life_fnc_numberText)];    
     hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
     closeDialog 0;
 } else {
