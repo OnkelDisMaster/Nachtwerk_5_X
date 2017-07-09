@@ -348,7 +348,7 @@ switch (_code) do {
 		};
 	};
 /*	Hotkey für Peilsender - funkt noch net	
-	case 41: 
+	case bla: 
 	{  
 			if (life_inv_gpstracker > 0) then {
 				life_inv_gpstracker = life_inv_gpstracker - 1;
@@ -356,6 +356,21 @@ switch (_code) do {
 			};
 	};
 */	
+	
+	//COp Skinrefresh
+	case 41: 
+	{ 
+		if (playerside isEqualTo west) then
+		{
+			[] spawn 
+			{
+				[] call life_fnc_playerSkins;
+				hint "Skin wurde aktualisiert";
+				sleep 2;
+			};
+		};
+	};
+	
 	//SmartPhone  Shift + 1
     case 2:
     {

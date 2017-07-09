@@ -115,6 +115,22 @@ class Licenses {
         side = "civ";
     };
 	
+	class logistikpilot {
+        variable = "logistikpilot";
+        displayName = "STR_License_Logistikpilot";
+        price = 5000000;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class logistikpilot_plus {
+        variable = "logistikpilot_plus";
+        displayName = "STR_License_LogistikpilotPlus";
+        price = 8500000;
+        illegal = false;
+        side = "civ";
+    };
+	
     //Processing Licenses
 	class pina {
         variable = "pina";

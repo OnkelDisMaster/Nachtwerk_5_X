@@ -7056,6 +7056,17 @@
             <Portuguese>Explosivo</Portuguese>
             <Polish>Ładunek wybuchowy</Polish>
         </Key>
+		<Key ID="STR_Item_Speedbomb">
+            <Original>Speedbomb</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Geschwindigkeits Bombe</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_BCutter">
             <Original>Bolt Cutter</Original>
             <Czech>Bolt Cutter</Czech>
@@ -7930,6 +7941,28 @@
         <Key ID="STR_License_transport">
             <Original>Transporteur Lizenz</Original>
             <German>Transporteur Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Logistikpilot">
+            <Original>Logistical pilot</Original>
+            <German>Logistikpilot</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_LogistikpilotPlus">
+            <Original>Logistical pilot pro</Original>
+            <German>Logistikpilot Plus</German>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
