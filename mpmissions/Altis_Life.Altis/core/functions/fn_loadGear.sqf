@@ -81,7 +81,7 @@ life_maxWeight = 24;
 {
     while{true} do
     {
-        waitUntil {!(EQUAL(backpack player,""))};
+        waitUntil {backpack player != ""};
         _bp = backpack player;
         _load = 25;
         if(EQUAL(backpack player,“B_AssaultPack_khk”)) then { _load = 30; };            

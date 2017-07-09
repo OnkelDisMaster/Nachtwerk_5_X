@@ -59,7 +59,7 @@ class BlackjackGUI
 		class RscText_1013: life_RscText
 		{
 			idc = 6000;
-			text = "Winnings: $"; //--- ToDo: Localize;
+			text = "Gewinn: $"; //--- ToDo: Localize;
 			x = 5.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 5 * GUI_GRID_W;

@@ -187,14 +187,5 @@ class CfgRemoteExec {
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
         F(setFuel,ANYONE)
-		F(SA_Advanced_Towing_Install,ANYONE)
-		F(SA_Simulate_Towing,ANYONE)
-		F(SA_Attach_Tow_Ropes,ANYONE)
-		F(SA_Take_Tow_Ropes,ANYONE)
-		F(SA_Put_Away_Tow_Ropes,ANYONE)
-		F(SA_Pickup_Tow_Ropes,ANYONE)
-		F(SA_Drop_Tow_Ropes,ANYONE)
-		F(SA_Hint,ANYONE)
-		F(initTowing,ANYONE)
     };
 };

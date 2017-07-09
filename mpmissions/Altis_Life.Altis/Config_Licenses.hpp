@@ -118,7 +118,7 @@ class Licenses {
 	class logistikpilot {
         variable = "logistikpilot";
         displayName = "STR_License_Logistikpilot";
-        price = 5000000;
+        price = 8500000;
         illegal = false;
         side = "civ";
     };
@@ -126,7 +126,7 @@ class Licenses {
 	class logistikpilot_plus {
         variable = "logistikpilot_plus";
         displayName = "STR_License_LogistikpilotPlus";
-        price = 8500000;
+        price = 18500000;
         illegal = false;
         side = "civ";
     };

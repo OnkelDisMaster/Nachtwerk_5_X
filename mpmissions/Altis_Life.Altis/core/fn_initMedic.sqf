@@ -34,7 +34,6 @@ if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
 	player addItem "Medikit";
 
 [["blacklisted ground/sea vehicles"],["B_Heli_Light_01_F"]] execVM "core\vehicle\Lifting\lift_init.sqf";
-[] execVM "core\initTowing.sqf";
 [] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
 
 [] call life_fnc_spawnMenu;

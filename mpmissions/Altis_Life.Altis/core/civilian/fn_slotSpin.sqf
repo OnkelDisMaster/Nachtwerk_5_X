@@ -27,40 +27,40 @@ _bet4 ctrlEnable false;
 _number = ceil(random 7);
 _pplayer = _this select 0;
 
-if (_number isEqualTo 0) then {_slot1 = 0; _slotPic1 ctrlSetText "images\SlotMachine\slot_zero.paa";};
-if (_number isEqualTo 1) then {_slot1 = 100; _slotPic1 ctrlSetText "images\SlotMachine\slot_one.paa";};
-if (_number isEqualTo 2) then {_slot1 = 200; _slotPic1 ctrlSetText "images\SlotMachine\slot_two.paa";};
-if (_number isEqualTo 3) then {_slot1 = 300; _slotPic1 ctrlSetText "images\SlotMachine\slot_three.paa";};
-if (_number isEqualTo 4) then {_slot1 = 400; _slotPic1 ctrlSetText "images\SlotMachine\slot_four.paa";};
-if (_number isEqualTo 5) then {_slot1 = 500; _slotPic1 ctrlSetText "images\SlotMachine\slot_five.paa";};
-if (_number isEqualTo 6) then {_slot1 = 600; _slotPic1 ctrlSetText "images\SlotMachine\slot_six.paa";};
-if (_number isEqualTo 7) then {_slot1 = 700; _slotPic1 ctrlSetText "images\SlotMachine\slot_seven.paa";};
+if (_number isEqualTo 0) then {_slot1 = 0; _slotPic1 ctrlSetText "images\slotmachine\slot_zero.paa";};
+if (_number isEqualTo 1) then {_slot1 = 100; _slotPic1 ctrlSetText "images\slotmachine\slot_one.paa";};
+if (_number isEqualTo 2) then {_slot1 = 200; _slotPic1 ctrlSetText "images\slotmachine\slot_two.paa";};
+if (_number isEqualTo 3) then {_slot1 = 300; _slotPic1 ctrlSetText "images\slotmachine\slot_three.paa";};
+if (_number isEqualTo 4) then {_slot1 = 400; _slotPic1 ctrlSetText "images\slotmachine\slot_four.paa";};
+if (_number isEqualTo 5) then {_slot1 = 500; _slotPic1 ctrlSetText "images\slotmachine\slot_five.paa";};
+if (_number isEqualTo 6) then {_slot1 = 600; _slotPic1 ctrlSetText "images\slotmachine\slot_six.paa";};
+if (_number isEqualTo 7) then {_slot1 = 700; _slotPic1 ctrlSetText "images\slotmachine\slot_seven.paa";};
 life_action_inUse = true;
 
 sleep 0.5;
 _number = ceil(random 7);
 _pplayer = _this select 0;
-if (_number isEqualTo 0) then {_slot2 = 0; _slotPic2 ctrlSetText "images\SlotMachine\slot_zero.paa";};
-if (_number isEqualTo 1) then {_slot2 = 10; _slotPic2 ctrlSetText "images\SlotMachine\slot_one.paa";};
-if (_number isEqualTo 2) then {_slot2 = 20; _slotPic2 ctrlSetText "images\SlotMachine\slot_two.paa";};
-if (_number isEqualTo 3) then {_slot2 = 30; _slotPic2 ctrlSetText "images\SlotMachine\slot_three.paa";};
-if (_number isEqualTo 4) then {_slot2 = 40; _slotPic2 ctrlSetText "images\SlotMachine\slot_four.paa";};
-if (_number isEqualTo 5) then {_slot2 = 50; _slotPic2 ctrlSetText "images\SlotMachine\slot_five.paa";};
-if (_number isEqualTo 6) then {_slot2 = 60; _slotPic2 ctrlSetText "images\SlotMachine\slot_six.paa";};
-if (_number isEqualTo 7) then {_slot2 = 70; _slotPic2 ctrlSetText "images\SlotMachine\slot_seven.paa";};
+if (_number isEqualTo 0) then {_slot2 = 0; _slotPic2 ctrlSetText "images\slotmachine\slot_zero.paa";};
+if (_number isEqualTo 1) then {_slot2 = 10; _slotPic2 ctrlSetText "images\slotmachine\slot_one.paa";};
+if (_number isEqualTo 2) then {_slot2 = 20; _slotPic2 ctrlSetText "images\slotmachine\slot_two.paa";};
+if (_number isEqualTo 3) then {_slot2 = 30; _slotPic2 ctrlSetText "images\slotmachine\slot_three.paa";};
+if (_number isEqualTo 4) then {_slot2 = 40; _slotPic2 ctrlSetText "images\slotmachine\slot_four.paa";};
+if (_number isEqualTo 5) then {_slot2 = 50; _slotPic2 ctrlSetText "images\slotmachine\slot_five.paa";};
+if (_number isEqualTo 6) then {_slot2 = 60; _slotPic2 ctrlSetText "images\slotmachine\slot_six.paa";};
+if (_number isEqualTo 7) then {_slot2 = 70; _slotPic2 ctrlSetText "images\slotmachine\slot_seven.paa";};
 
 sleep 0.5;
 _number = ceil(random 7);
 _pplayer = _this select 0;
 
-if (_number isEqualTo 0) then {_slot3 = 0; _slotPic3 ctrlSetText "images\SlotMachine\slot_zero.paa";};
-if (_number isEqualTo 1) then {_slot3 = 1; _slotPic3 ctrlSetText "images\SlotMachine\slot_one.paa"; };
-if (_number isEqualTo 2) then {_slot3 = 2; _slotPic3 ctrlSetText "images\SlotMachine\slot_two.paa"; };
-if (_number isEqualTo 3) then {_slot3 = 3; _slotPic3 ctrlSetText "images\SlotMachine\slot_three.paa"; };
-if (_number isEqualTo 4) then {_slot3 = 4; _slotPic3 ctrlSetText "images\SlotMachine\slot_four.paa"; ;};
-if (_number isEqualTo 5) then {_slot3 = 5; _slotPic3 ctrlSetText "images\SlotMachine\slot_five.paa"; };
-if (_number isEqualTo 6) then {_slot3 = 6; _slotPic3 ctrlSetText "images\SlotMachine\slot_six.paa"; };
-if (_number isEqualTo 7) then {_slot3 = 7; _slotPic3 ctrlSetText "images\SlotMachine\slot_seven.paa"; };
+if (_number isEqualTo 0) then {_slot3 = 0; _slotPic3 ctrlSetText "images\slotmachine\slot_zero.paa";};
+if (_number isEqualTo 1) then {_slot3 = 1; _slotPic3 ctrlSetText "images\slotmachine\slot_one.paa"; };
+if (_number isEqualTo 2) then {_slot3 = 2; _slotPic3 ctrlSetText "images\slotmachine\slot_two.paa"; };
+if (_number isEqualTo 3) then {_slot3 = 3; _slotPic3 ctrlSetText "images\slotmachine\slot_three.paa"; };
+if (_number isEqualTo 4) then {_slot3 = 4; _slotPic3 ctrlSetText "images\slotmachine\slot_four.paa"; ;};
+if (_number isEqualTo 5) then {_slot3 = 5; _slotPic3 ctrlSetText "images\slotmachine\slot_five.paa"; };
+if (_number isEqualTo 6) then {_slot3 = 6; _slotPic3 ctrlSetText "images\slotmachine\slot_six.paa"; };
+if (_number isEqualTo 7) then {_slot3 = 7; _slotPic3 ctrlSetText "images\slotmachine\slot_seven.paa"; };
 
 sleep 0.5;
 
