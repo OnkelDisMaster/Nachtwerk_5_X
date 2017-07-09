@@ -57,7 +57,12 @@ switch (true) do {
         [cursorObject] spawn life_fnc_blastingCharge;
         closeDialog 0;
     };
-
+	
+	case (_item isEqualTo "speedbomb"):
+    {
+    	[] spawn life_fnc_speedBomb;
+    };
+	
     case (_item isEqualTo "defusekit"): {
         [cursorObject] spawn life_fnc_defuseKit;
         closeDialog 0;

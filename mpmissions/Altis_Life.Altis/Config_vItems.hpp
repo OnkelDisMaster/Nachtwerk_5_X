@@ -45,7 +45,7 @@ class VirtualShops {
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder", "gpstracker" };
+        items[] = { "speedbomb","waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder", "gpstracker" };
     };
 
     class gang {
@@ -438,6 +438,17 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_blastingCharge.paa";
+    };
+	
+	class speedbomb {
+        variable = "speedbomb";
+        displayName = "STR_Item_Speedbomb";
+        weight = 15;
+        buyPrice = 300000;
+        sellPrice = 10000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_speedbomb.paa";
     };
 
     class boltcutter {
