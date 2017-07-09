@@ -57,7 +57,7 @@ if (!(_backpack isEqualTo "")) then {_handle = [_backpack,true,false,false,false
 
 /* Hotfix for losing virtual items on login */
 if (!isNil {(_this select 0)}) then {
-    life_maxWeight = life_maxWeight + (round(FETCH_CONFIG2(getNumber,"CfgVehicles",(backpack player),"maximumload") / 4));
+    life_maxWeight = life_maxWeight + (round(FETCH_CONFIG2(getNumber,"CfgVehicles",((backpack player)),"maximumload") / 4));
 };
 
 {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} forEach _items;
@@ -81,35 +81,35 @@ life_maxWeight = 24;
 {
     while{true} do
     {
-        waitUntil {backpack player != ""};
-        _bp = backpack player;
+        waitUntil {(backpack player) != ""};
+        _bp = (backpack player);
         _load = 25;
-        if(backpack player isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
-        if(backpack player isEqualTo "B_AssaultPack_Kerry") then { _load = 30; };
-        if(backpack player isEqualTo "B_AssaultPack_blk") then { _load = 30; };
-        if(backpack player isEqualTo "B_AssaultPack_cbr") then { _load = 30; };            
-        if(backpack player isEqualTo "B_AssaultPack_sgg") then { _load = 30; };
-        if(backpack player isEqualTo "B_Bergen_blk") then { _load = 50; };
-        if(backpack player isEqualTo "B_TacticalPack_oli") then { _load = 50; };
-        if(backpack player isEqualTo "B_Bergen_sgg") then { _load = 50; };
-        if(backpack player isEqualTo "B_Bergen_rgr") then { _load = 50; };            
-        if(backpack player isEqualTo "B_AssaultPack_mcamo_AT") then { _load = 70; };
-        if(backpack player isEqualTo "B_Kitbag_cbr") then { _load = 70; };
-        if(backpack player isEqualTo "B_Kitbag_sgg") then { _load = 70; };            
-        if(backpack player isEqualTo "B_Carryall_khk") then { _load = 80; };
-        if(backpack player isEqualTo "B_Carryall_oli") then { _load = 80; };            
-        if(backpack player isEqualTo "B_Carryall_cbr") then { _load = 80; };		
-		if(backpack player isEqualTo "B_Bergen_hex_F") then { _load = 100; };
-		if(backpack player isEqualTo "B_Bergen_mcamo_F") then { _load = 100; };
-		if(backpack player isEqualTo "B_Bergen_dgtl_F") then { _load = 100; };		
-		if(backpack player isEqualTo "B_ViperHarness_ghex_F") then { _load = 130; };
-		if(backpack player isEqualTo "B_ViperHarness_blk_F") then { _load = 130; };
-		if(backpack player isEqualTo "B_ViperHarness_hex_F") then { _load = 120; };
-		if(backpack player isEqualTo "B_ViperHarness_khk_F") then { _load = 120; };
-		if(backpack player isEqualTo "B_ViperHarness_oli_F") then { _load = 120; };
+        if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
+        if((backpack player) isEqualTo "B_AssaultPack_Kerry") then { _load = 30; };
+        if((backpack player) isEqualTo "B_AssaultPack_blk") then { _load = 30; };
+        if((backpack player) isEqualTo "B_AssaultPack_cbr") then { _load = 30; };            
+        if((backpack player) isEqualTo "B_AssaultPack_sgg") then { _load = 30; };
+        if((backpack player) isEqualTo "B_Bergen_blk") then { _load = 50; };
+        if((backpack player) isEqualTo "B_TacticalPack_oli") then { _load = 50; };
+        if((backpack player) isEqualTo "B_Bergen_sgg") then { _load = 50; };
+        if((backpack player) isEqualTo "B_Bergen_rgr") then { _load = 50; };            
+        if((backpack player) isEqualTo "B_AssaultPack_mcamo_AT") then { _load = 70; };
+        if((backpack player) isEqualTo "B_Kitbag_cbr") then { _load = 70; };
+        if((backpack player) isEqualTo "B_Kitbag_sgg") then { _load = 70; };            
+        if((backpack player) isEqualTo "B_Carryall_khk") then { _load = 80; };
+        if((backpack player) isEqualTo "B_Carryall_oli") then { _load = 80; };            
+        if((backpack player) isEqualTo "B_Carryall_cbr") then { _load = 80; };		
+		if((backpack player) isEqualTo "B_Bergen_hex_F") then { _load = 100; };
+		if((backpack player) isEqualTo "B_Bergen_mcamo_F") then { _load = 100; };
+		if((backpack player) isEqualTo "B_Bergen_dgtl_F") then { _load = 100; };		
+		if((backpack player) isEqualTo "B_ViperHarness_ghex_F") then { _load = 130; };
+		if((backpack player) isEqualTo "B_ViperHarness_blk_F") then { _load = 130; };
+		if((backpack player) isEqualTo "B_ViperHarness_hex_F") then { _load = 120; };
+		if((backpack player) isEqualTo "B_ViperHarness_khk_F") then { _load = 120; };
+		if((backpack player) isEqualTo "B_ViperHarness_oli_F") then { _load = 120; };
         life_maxWeight = life_minWeight + _load;
-        waitUntil {backpack player isEqualTo ""};
-        if(backpack player isEqualTo "") then {
+        waitUntil {(backpack player) isEqualTo ""};
+        if((backpack player) isEqualTo "") then {
             life_maxWeight = life_minWeight;
         };
     };
