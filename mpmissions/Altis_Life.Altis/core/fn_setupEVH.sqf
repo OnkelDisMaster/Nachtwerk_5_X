@@ -12,4 +12,4 @@ player addEventHandler["Take",{_this call life_fnc_onTakeItem}]; //Prevent peopl
 player addEventHandler["Fired",{_this call life_fnc_onFired}];
 player addEventHandler["InventoryClosed", {_this call life_fnc_inventoryClosed}];
 player addEventHandler["InventoryOpened", {_this call life_fnc_inventoryOpened}];
-player addMPEventHandler ["mphit", {private["_unit","_source"]; _unit = _this select 0; _source = _this select 3; [_unit] remoteExec [life_fnc_hitMarker,_source]}];
+player addMPEventHandler ["mphit", {private["_unit","_source"]; _unit = _this select 0; _source = _this select 3; remoteExec [life_fnc_hitMarker,_source];}];
