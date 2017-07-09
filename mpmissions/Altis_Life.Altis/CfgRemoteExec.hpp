@@ -195,5 +195,6 @@ class CfgRemoteExec {
 		F(SA_Pickup_Tow_Ropes,ANYONE)
 		F(SA_Drop_Tow_Ropes,ANYONE)
 		F(SA_Hint,ANYONE)
+		F(initTowing,ANYONE)
     };
 };

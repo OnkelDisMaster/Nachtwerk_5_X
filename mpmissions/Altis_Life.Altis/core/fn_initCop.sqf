@@ -23,7 +23,8 @@ if (life_blacklisted) exitWith {
         sleep 35;
     };
 //};
-[] execVM "IgiLoad\IgiLoadInit.sqf";
+[["blacklisted ground/sea vehicles"],["Blacklisted Choppers"]] execVM "core\vehicle\Lifting\lift_init.sqf";
+[] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
 [] call life_fnc_playerSkins;
 //[player] remoteExec ['life_fnc_playerSkins',RCLIENT];
 

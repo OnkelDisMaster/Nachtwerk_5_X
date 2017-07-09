@@ -28,6 +28,7 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\statusBar.hpp"
+	#include "dialog\hitmarker.hpp"
 };
 
 class CfgFunctions {
@@ -65,6 +66,12 @@ class CfgSounds {
     class flashbang {
         name = "flashbang";
         sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class bomb {
+        name = "bomb";
+        sound[] = {"\sounds\bomb.ogg", 1.0, 1};
         titles[] = {};
     };
 	

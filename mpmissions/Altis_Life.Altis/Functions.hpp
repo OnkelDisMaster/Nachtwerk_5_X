@@ -133,6 +133,13 @@ class Life_Client_Core {
         class robReceive {};
         class tazed {};
 		class civInteractionMenu {};
+		class slotSpin {};
+		class slotmachine {};
+		class blackjack {};
+		class BJbet {};
+		class BJhit {};
+		class BJstay {};
+		class skyDive {};
     };
 
     class Config {
@@ -273,6 +280,7 @@ class Life_Client_Core {
 		class postNewsBroadcast {};
 		class seatbelt {};
 		class initPayChecks {};
+		class hitMarker {};
     };
 
     class Gangs    {
@@ -331,6 +339,7 @@ class Life_Client_Core {
 		class flutlicht {};
 		class mauer {};
 		class gpsTracker {};
+		class speedBomb {};
     };
 	
 	class Ausweis
@@ -450,5 +459,7 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
+		class vehTakeAllItem {};
+		class vehStoreAllItem {};
     };
 };

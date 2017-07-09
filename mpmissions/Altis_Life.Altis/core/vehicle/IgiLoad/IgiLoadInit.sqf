@@ -9,7 +9,7 @@ IL_Veh_Array = [];
 
 //cutText ["Abschleppseile werden vorbereitet...","PLAIN",2];
 
-_null = [Player] execVM "IgiLoad\IgiLoad.sqf";
+_null = [Player] execVM "core\vehicle\IgiLoad\IgiLoad.sqf";
 waitUntil {scriptDone _null};
 
 uisleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
@@ -18,7 +18,7 @@ uisleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
 	if ((typeOf _x) in (IL_Supported_Vehicles_All)) then
 	{
 		IL_Veh_Array = IL_Veh_Array + [_x];
-		_null = [_x] execVM "IgiLoad\IgiLoad.sqf";
+		_null = [_x] execVM "core\vehicle\IgiLoad\IgiLoad.sqf";
 		waitUntil {scriptDone _null};
 	};
 } forEach (vehicles);
@@ -40,7 +40,7 @@ while {true} do
 		if (((typeOf _x) in (IL_Supported_Vehicles_All)) && !(_x in IL_Veh_Array)) then
 		{
 			IL_Veh_Array = IL_Veh_Array + [_x];
-			_null = [_x] execVM "IgiLoad\IgiLoad.sqf";
+			_null = [_x] execVM "core\vehicle\IgiLoad\IgiLoad.sqf";
 			waitUntil {scriptDone _null};
 		};
 	} forEach (vehicles);
