@@ -49,3 +49,4 @@ if (life_shop_type isEqualTo "gold" && (LIFE_SETTINGS(getNumber,"noatm_timer")) 
 };
 
 [3] call SOCK_fnc_updatePartial;
+closeDialog 0;
