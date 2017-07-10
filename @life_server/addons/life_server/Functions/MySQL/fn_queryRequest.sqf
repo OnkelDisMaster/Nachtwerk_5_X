@@ -82,7 +82,7 @@ switch (_side) do {
 
 		//Banking
 		_tmp = _queryResult select 12;
-		_queryResult set[16,[_tmp] call DB_fnc_numberSafe];
+		_queryResult set[12,[_tmp] call DB_fnc_numberSafe];
 		
         //Playtime
         _new = [(_queryResult select 11)] call DB_fnc_mresToArray;
@@ -134,7 +134,7 @@ switch (_side) do {
 		
 		//Banking
 		_tmp = _queryResult select 13;
-		_queryResult set[16,[_tmp] call DB_fnc_numberSafe];
+		_queryResult set[13,[_tmp] call DB_fnc_numberSafe];
     };
 
     case independent: {
@@ -145,7 +145,7 @@ switch (_side) do {
 		
 		//Banking
 		_tmp = _queryResult select 11;
-		_queryResult set[16,[_tmp] call DB_fnc_numberSafe];
+		_queryResult set[11,[_tmp] call DB_fnc_numberSafe];
 		
         //Playtime
         _new = [(_queryResult select 10)] call DB_fnc_mresToArray;
