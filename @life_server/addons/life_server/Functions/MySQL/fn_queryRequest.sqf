@@ -82,6 +82,10 @@ switch (_side) do {
         if (_new isEqualType "") then {_new = call compile format["%1", _new];};
         _queryResult set[10,_new];
 
+		//Banking
+		_tmp = _queryResult select 12;
+		_queryResult set[16,[_tmp] call DB_fnc_numberSafe];
+		
         //Playtime
         _new = [(_queryResult select 11)] call DB_fnc_mresToArray;
         if (_new isEqualType "") then {_new = call compile format["%1", _new];};
@@ -129,6 +133,10 @@ switch (_side) do {
         _gangData = _uid spawn TON_fnc_queryPlayerGang;
         waitUntil{scriptDone _gangData};
         _queryResult pushBack (missionNamespace getVariable[format["gang_%1",_uid],[]]);
+		
+		//Banking
+		_tmp = _queryResult select 13;
+		_queryResult set[16,[_tmp] call DB_fnc_numberSafe];
     };
 
     case independent: {
@@ -136,7 +144,11 @@ switch (_side) do {
         _new = [(_queryResult select 9)] call DB_fnc_mresToArray;
         if (_new isEqualType "") then {_new = call compile format["%1", _new];};
         _queryResult set[9,_new];
-
+		
+		//Banking
+		_tmp = _queryResult select 11;
+		_queryResult set[16,[_tmp] call DB_fnc_numberSafe];
+		
         //Playtime
         _new = [(_queryResult select 10)] call DB_fnc_mresToArray;
         if (_new isEqualType "") then {_new = call compile format["%1", _new];};

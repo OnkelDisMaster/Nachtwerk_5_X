@@ -76,6 +76,12 @@ switch(_mode) do {
 		_array = [_this,2,[],[[]]] call BIS_fnc_param;
 		[_uid,_side,_array,0] call TON_fnc_keyManagement;
 	};
+	
+	case 8: {
+		_value = [_this,2,0,[0]] call BIS_fnc_param;
+		_value = [_value] call DB_fnc_numberSafe;
+		_query = format["UPDATE players SET banking_pin='%1' WHERE playerid='%2'",_value,_uid];
+};
 };
 
 if(_query == "") exitWith {};
