@@ -26,9 +26,7 @@ _query = switch (_side) do {
     case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donorlevel, civ_licenses, arrested, civ_gear, civ_stats, civ_alive, civ_position, playtime, banking_pin FROM players WHERE playerid='%1'",_uid];};
     // Independent - 10 entries returned
     case independent: {format["SELECT playerid, name, cash, bankacc, adminlevel, donorlevel, med_licenses, mediclevel, med_gear, med_stats, playtime, banking_pin FROM players WHERE playerid='%1'",_uid];};
-	_tmp = _queryResult select 13;
-	_queryResult set[16,[_tmp] call DB_fnc_numberSafe];
-	};
+};
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
