@@ -50,6 +50,12 @@ class CfgSounds {
         titles[] = {};
     };
 
+	class InsertCard {
+		name = "InsertCard";
+		sound[] = {"\sounds\banking\insertcard.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
     class speech
     {
         name = "speech";
