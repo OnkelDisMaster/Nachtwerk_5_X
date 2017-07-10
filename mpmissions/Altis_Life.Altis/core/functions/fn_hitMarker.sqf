@@ -2,6 +2,7 @@
 /*
     File: fn_hitMarker.sqf
     Author: Jake Hazelwood
+	Modified by Valle1337
 
     Description:
     Gives shooter a hitmarker when they've hit another player.

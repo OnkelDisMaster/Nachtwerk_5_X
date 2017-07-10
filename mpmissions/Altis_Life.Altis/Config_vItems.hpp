@@ -245,7 +245,7 @@ class VirtualItems {
         sellPrice = 1000;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ziptie.paa";
     };
 
     class pickaxe {

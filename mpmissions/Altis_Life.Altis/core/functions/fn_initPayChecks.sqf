@@ -59,5 +59,7 @@ switch (playerSide) do
 			case 4: {life_paycheck = life_paycheck + 3500;}; 
 			case 5: {life_paycheck = life_paycheck + 4000;}; 
 		};
-	};	*/
+	*/
+		if (license_civ_elite) then {life_paycheck = life_paycheck + 4500;};
+	};	
 };

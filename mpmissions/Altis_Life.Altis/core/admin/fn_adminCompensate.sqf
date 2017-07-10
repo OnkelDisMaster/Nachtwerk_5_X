@@ -26,7 +26,7 @@ if (_action) then {
     CASH = CASH + _value;
 	_value = [_value] call life_fnc_numberText;
 	diag_log format ["Supporter: %1 | %2 | hat %3 $ angefordert",_name,_uid,_value]; 
-    hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
+    hint format [localize "STR_ANOTF_Success",_value];
     closeDialog 0;
 } else {
     hint localize "STR_NOTF_ActionCancel";

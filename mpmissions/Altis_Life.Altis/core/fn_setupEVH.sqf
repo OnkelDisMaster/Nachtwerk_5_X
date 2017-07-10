@@ -12,4 +12,5 @@ player addEventHandler["Take",{_this call life_fnc_onTakeItem}]; //Prevent peopl
 player addEventHandler["Fired",{_this call life_fnc_onFired}];
 player addEventHandler["InventoryClosed", {_this call life_fnc_inventoryClosed}];
 player addEventHandler["InventoryOpened", {_this call life_fnc_inventoryOpened}];
-player addMPEventHandler ["mphit", { [_this select 0] remoteExec [life_fnc_hitMarker,(_this select 3)];}];
+									//	Getroffener, der event triggert				//Schütze
+player addMPEventHandler ["mphit", { [_this select 0] remoteExec ["life_fnc_hitMarker",(_this select 3)];}];

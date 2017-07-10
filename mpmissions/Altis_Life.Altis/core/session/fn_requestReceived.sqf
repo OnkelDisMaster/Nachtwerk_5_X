@@ -26,6 +26,7 @@ if (!(getPlayerUID player isEqualTo (_this select 0))) exitWith {[] call SOCK_fn
 //Parse basic player information.
 CASH = parseNumber (_this select 2);
 BANK = parseNumber (_this select 3);
+life_bankingpin = parseNumber (_this select 16);
 CONST(life_adminlevel,(_this select 4));
 if (LIFE_SETTINGS(getNumber,"donor_level") isEqualTo 1) then {
     CONST(life_donorlevel,(_this select 5));
