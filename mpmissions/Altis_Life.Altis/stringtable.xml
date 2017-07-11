@@ -2016,7 +2016,7 @@
     </Package>
     <Package name="Garage_Strings">
         <Key ID="STR_Garage_Title">
-            <Original>Vehicle Garage</Original>
+            <Original>Fahrzeug Garage</Original>
             <Czech>Garáž Vehicle</Czech>
             <Spanish>Garaje de Vehículos</Spanish>
             <Russian></Russian>
@@ -2027,7 +2027,7 @@
             <Polish>Garaż</Polish>
         </Key>
         <Key ID="STR_Garage_GetVehicle">
-            <Original>Get Vehicle</Original>
+            <Original>Ausparken</Original>
             <Czech>Získat vozidlo</Czech>
             <Spanish>Obtener Vehículo</Spanish>
             <Russian></Russian>
@@ -2038,7 +2038,7 @@
             <Polish>Wyciągnij pojazd:</Polish>
         </Key>
         <Key ID="STR_Garage_SellVehicle">
-            <Original>Sell Vehicle</Original>
+            <Original>Fahrzeug verkaufen</Original>
             <Czech>Navrhujeme Vehicle</Czech>
             <Spanish>Vender Vehículo</Spanish>
             <Russian></Russian>
@@ -2049,7 +2049,7 @@
             <Polish>Sprzedaj pojazd</Polish>
         </Key>
         <Key ID="STR_Garage_SellPrice">
-            <Original>Sell Price</Original>
+            <Original>Verkaufspreis</Original>
             <Czech>Navrhujeme Cena</Czech>
             <Spanish>Precio de Venta</Spanish>
             <Russian></Russian>
@@ -2060,7 +2060,7 @@
             <Polish>Cena sprzedaży</Polish>
         </Key>
         <Key ID="STR_Garage_SFee">
-            <Original>Storage Fee</Original>
+            <Original>Lagergebühr</Original>
             <Czech>skladného</Czech>
             <Spanish>Cuota de Guardado</Spanish>
             <Russian></Russian>

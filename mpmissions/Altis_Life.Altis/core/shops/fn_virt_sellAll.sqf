@@ -32,6 +32,7 @@ if ([false,_type,_amount] call life_fnc_handleInv) then {
     CASH = CASH + _price;
     [0] call SOCK_fnc_updatePartial;
     [] call life_fnc_virt_update;
+	DYNAMICMARKET_boughtItems pushBack [_type,_amount];
 };
 
 if (life_shop_type isEqualTo "drugdealer") then {
@@ -56,6 +57,6 @@ if (life_shop_type isEqualTo "gold" && (LIFE_SETTINGS(getNumber,"noatm_timer")) 
         life_use_atm = true;
     };
 };
-
+[0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;
 closeDialog 0;
