@@ -100,7 +100,7 @@ switch (playerSide) do {
     };
 };
 
-life_bankingpin = random(9000)+1000;
+life_bankingpin = round(random(9000))+1000;
 
 player setVariable ["restrained",false,true];
 player setVariable ["Escorting",false,true];

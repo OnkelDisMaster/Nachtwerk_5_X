@@ -135,31 +135,10 @@ switch (_itemFilter) do {
 				};
 		case 2:	{
 					hint "Fahrzeug Crafting Test";
-					_vehicle = createVehicle [_item, getMarkerPos "Schwarzmarkt_1", [Schwarzmarkt_1"], 0, "NONE"];
-
-					waitUntil {!isNil "_vehicle"}; //Warten
-
-					_vehicle allowDamage false;
-
-					_vehicle lock 2;
-
-					_vehicle allowDamage true;
-
-					[_vehicle] call life_fnc_clearVehicleAmmo;
-
-					[_vehicle,"trunk_in_use",false,true] remoteExec ["TON_fnc_setObjVar", 2];
-
-					[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true] remoteExec ["TON_fnc_setObjVar", 2];
-
-					_vehicle disableTIEquipment true;
-
-					life_vehicles pushBack _vehicle;
-
-					[getPlayerUID player,playerSide,_vehicle,1] remoteExec ["TON_fnc_keyManagement", 2];
-
-					[(getPlayerUID player),playerSide,_vehicle,_f] remoteExec ["TON_fnc_vehicleCreate", 2];
-
-					[0] call SOCK_fnc_updatePartial;
+					if ((getMarkerPos "Schwarzmarkt_1")) then 
+					{
+					
+					};
 				};
 		};
 	};
@@ -313,19 +292,50 @@ switch (_itemFilter) do {
             };
         };
     };
-    default {
-        if (_vItem isEqualTo 1) then {
-            _handledItem = _newItem;
-	    if (!([true,_handledItem,1] call life_fnc_handleInv)) then { _exit = true; };
-        } else {
-            if (player canAdd _newItem) then {
-                player addItem _newItem;
-            } else {
-                hint format[(getText(missionConfigFile >> "Cation_Crafting" >> "NoRoom"))];
-                _exit = true;
-            };
-        };
-    };
+	default {
+		switch(_vItem) do
+		{
+		case 0: {
+					if (player canAdd _newItem) then {
+						player addItem _newItem;
+					} else {
+						hint format[(getText(missionConfigFile >> "Cation_Crafting" >> "NoRoom"))];
+					_exit = true;
+					};
+				};
+		case 1:	{	_handledItem = _newItem;
+					if (!([true,_handledItem,1] call life_fnc_handleInv)) then { _exit = true; };
+				};
+		case 2:	{
+					hint "Fahrzeug Crafting Test2";
+					_vehicle = _item createVehicle [getMarkerPos "Schwarzmarkt_1"];
+
+					waitUntil {!isNil "_vehicle"}; //Warten
+
+					_vehicle allowDamage false;
+
+					_vehicle lock 2;
+
+					_vehicle allowDamage true;
+
+					[_vehicle] call life_fnc_clearVehicleAmmo;
+
+					[_vehicle,"trunk_in_use",false,true] remoteExec ["TON_fnc_setObjVar", 2];
+
+					[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true] remoteExec ["TON_fnc_setObjVar", 2];
+
+					_vehicle disableTIEquipment true;
+
+					life_vehicles pushBack _vehicle;
+
+					[getPlayerUID player,playerSide,_vehicle,1] remoteExec ["TON_fnc_keyManagement", 2];
+
+					[(getPlayerUID player),playerSide,_vehicle,_f] remoteExec ["TON_fnc_vehicleCreate", 2];
+
+					[0] call SOCK_fnc_updatePartial;
+				};
+		};
+	};
 };
 if (_exit) exitWith {
     for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
