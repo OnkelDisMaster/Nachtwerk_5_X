@@ -131,7 +131,15 @@ switch (_code) do {
             };
         };
     };
-
+	
+	//ATM Pin Anzeige
+    case 30: {
+		if (!_shift && _ctrlKey) then 
+		{
+			hint format ["Dein Aktueller ATM Pin Code lautet: %1, life_bankingpin];
+		};
+    };
+	
     //T Key (Trunk)
     case 20: {
         if (!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {

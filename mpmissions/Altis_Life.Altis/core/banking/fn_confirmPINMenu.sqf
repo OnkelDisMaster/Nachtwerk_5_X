@@ -48,3 +48,4 @@ if(_pin != -1 && _pin != -3) then {
     hint localize "STR_Banking_PinSuccess";
   };
 };
+hint format ["Dein Aktueller ATM Pin Code lautet: %1, life_bankingpin];
