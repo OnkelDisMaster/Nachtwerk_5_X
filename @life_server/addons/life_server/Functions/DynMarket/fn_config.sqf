@@ -78,7 +78,7 @@ DYNMARKET_Items_Groups =
 			["mikroProzessor",-1,17500,32500],
 			["implantatNormal",-1,185500,444500]
 		],
-		0.8
+		0.2
 	]
 ];
 
