@@ -16,7 +16,7 @@ DYNMARKET_Serveruptime         = 06;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = false; // Should the script use the External Database?
 DYNMARKET_PriceUpdateInterval  = 1;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = false; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
-DYNMARKET_CreateBackupInterval = 2;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
+DYNMARKET_CreateBackupInterval = 5;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
 DYNMARKET_UserNotification     = true; // Should the user be informed with a hint whenever the prices got updated?
 DYNMARKET_createRandomEvents   = true; // Should random events appear that influence the market?
 
@@ -78,7 +78,7 @@ DYNMARKET_Items_Groups =
 			["mikroProzessor",-1,17500,32500],
 			["implantatNormal",-1,185500,444500]
 		],
-		0.5
+		0.8
 	]
 ];
 
