@@ -64,7 +64,7 @@ class SlotMachineGUI
         class SLOT_1: life_RscPicture
         {
             idc = 5771;
-            text = "images\slotmachine\slot_seven.paa";
+            text = "";
             x = 0.2955 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.122 * safezoneW;
@@ -73,7 +73,7 @@ class SlotMachineGUI
         class SLOT_2: life_RscPicture
         {
             idc = 5772;
-            text = "images\slotmachine\slot_seven.paa";
+            text = "";
             x = 0.4195 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.122 * safezoneW;
@@ -82,7 +82,7 @@ class SlotMachineGUI
         class SLOT_3: life_RscPicture
         {
             idc = 5773;
-            text = "images\slotmachine\slot_seven.paa";
+            text = "";
             x = 0.543 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.122 * safezoneW;
