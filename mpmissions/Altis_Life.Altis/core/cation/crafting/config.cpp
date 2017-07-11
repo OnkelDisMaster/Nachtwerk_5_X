@@ -48,7 +48,7 @@ class Cation_Crafting {
 			{"srifle_DMR_05_tan_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
 			{"srifle_LRR_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 
 			{"srifle_LRR_camo_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0}, 			
-			{"srifle_GM6_camo_F","license_civ_pro_rebel",{"kupfer",3,"eisen",3,"diamond_cut",1},"","",0} 
+			{"srifle_GM6_camo_F","license_civ_pro_rebel",{"kupfer",1},"","",0} 
 
 		}, //Komma
         {
@@ -129,7 +129,7 @@ class Cation_Crafting {
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"weapon","uniform","vest","backpack","bombenkopfe","fahrzeuge"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","uniform","vest","backpack","bombenkopfe"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };
