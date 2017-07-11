@@ -471,7 +471,7 @@
             <German>Bewaffnung</German>
         </Key>
         <Key ID="STR_Global_Give">
-            <Original>Give</Original>
+            <Original>Geben</Original>
             <Czech>Dát</Czech>
             <Spanish>Dar</Spanish>
             <Russian></Russian>
@@ -482,7 +482,7 @@
             <Polish>Daj</Polish>
         </Key>
         <Key ID="STR_Global_Use">
-            <Original>Use</Original>
+            <Original>Benutzen</Original>
             <Czech>Použití</Czech>
             <Spanish>Usar</Spanish>
             <Russian></Russian>
@@ -493,7 +493,7 @@
             <Polish>Użyj</Polish>
         </Key>
         <Key ID="STR_Global_Remove">
-            <Original>Remove</Original>
+            <Original>Entfernen</Original>
             <Czech>Odstranit</Czech>
             <Spanish>Remover</Spanish>
             <Russian></Russian>
@@ -504,7 +504,7 @@
             <Polish>Usuń</Polish>
         </Key>
         <Key ID="STR_Global_Settings">
-            <Original>Settings</Original>
+            <Original>Einstellung</Original>
             <Czech>Nastavení</Czech>
             <Spanish>Configuración</Spanish>
             <Russian></Russian>
@@ -515,7 +515,7 @@
             <Polish>Opcje</Polish>
         </Key>
         <Key ID="STR_Global_RentVeh">
-            <Original>Rent</Original>
+            <Original>Mieten</Original>
             <Czech>Nájemné</Czech>
             <Spanish>Rentar</Spanish>
             <Russian></Russian>
@@ -526,7 +526,7 @@
             <Polish>Wynajmij</Polish>
         </Key>
         <Key ID="STR_Global_Retrieve">
-            <Original>Retrieve</Original>
+            <Original>Abrufen</Original>
             <Czech>získat</Czech>
             <Spanish>Recuperar</Spanish>
             <Russian></Russian>

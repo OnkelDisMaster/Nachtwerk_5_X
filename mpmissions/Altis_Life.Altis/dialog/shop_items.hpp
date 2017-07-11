@@ -128,7 +128,7 @@ class shops_menu {
 		class ButtonRemoveAllG: Life_RscButtonMenu
 		{
 			idc = -1;
-			text = "Sell. All";
+			text = "Alles Verkaufen";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call Life_fnc_virt_sellAll;";
 			x = 0.592716 * safezoneW + safezoneX;
