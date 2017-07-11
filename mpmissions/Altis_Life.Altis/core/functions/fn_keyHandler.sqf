@@ -136,7 +136,7 @@ switch (_code) do {
     case 30: {
 		if (!_shift && _ctrlKey) then 
 		{
-			hint format ["Dein Aktueller ATM Pin Code lautet: %1, life_bankingpin];
+			hint format ["Dein Aktueller ATM Pin Code lautet: %1", life_bankingpin];
 		};
     };
 	

@@ -9,7 +9,7 @@
 */
 _unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 disableSerialization;
-hint "Hitmarker Test";
+
 if (!isNull player) then {
 	if (player != _unit) then
 	{
