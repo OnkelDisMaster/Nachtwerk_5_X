@@ -31,7 +31,7 @@ class Life_banking_management {
         class CardSlot: Life_CardSlotButton {
             idc = 45092;
             tooltip = "$STR_Banking_InsertCard";
-            onButtonClick = "[] spawn life_fnc_insertCard;";
+            onButtonClick = "[] spawn life_fnc_insertCard; sleep 5;";
             x = 0.605;
             y = 0.79;
             w = 0.2575;
