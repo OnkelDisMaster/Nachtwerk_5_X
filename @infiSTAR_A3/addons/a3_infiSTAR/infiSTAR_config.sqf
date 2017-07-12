@@ -52,7 +52,7 @@ _ESCMNUBOT = 'IP 144.76.83.227';
 _BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
-_USE_RESTART_TIMER = false;	/* true or false */
+_USE_RESTART_TIMER = true;	/* true or false */
 _RESTART_TIME_IN_M = 360;		/* restart time in minutes */
 _SHOW_TIMER_IN_MIN = [1,2,3,5,10,60,120];	/* minutes before restart, when message is shown */
 

@@ -73,7 +73,7 @@ DYNMARKET_Items_Groups =
 			["methProcessed",-1,2170,5030],
 			["uranIV",-1,7000,23000],
 			["plutonium",-1,7000,33000],
-			["brennstab",-1,12250,42750],
+			["brennstab",-1,12250,50750],
 			["atombombe",-1,455000,1000000],
 			["mikroProzessor",-1,17500,40500],
 			["implantatNormal",-1,185500,500500]
@@ -136,7 +136,7 @@ DYNMARKET_Items_ToTrack        =
 	["cocaine_processed",5200],
 	["uranIV",10000],
 	["plutonium",10000],
-	["brennstab",17500],
+	["brennstab",30000],
 	["atombombe",650000]
 ];
 

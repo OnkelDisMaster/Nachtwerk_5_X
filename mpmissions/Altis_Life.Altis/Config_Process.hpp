@@ -265,7 +265,7 @@ class ProcessAction {
 	};
 	
 	class brennstab {
-        MaterialsReq[] = {{"plutonium",5}};
+        MaterialsReq[] = {{"plutonium",1}};
         MaterialsGive[] = {{"brennstab",1}};
         Text = "STR_Process_brennstab";
         //ScrollText = "Harvest Marijuana";

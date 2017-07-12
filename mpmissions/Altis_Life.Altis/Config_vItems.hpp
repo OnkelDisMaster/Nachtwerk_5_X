@@ -1045,7 +1045,7 @@ class VirtualItems {
         displayName = "STR_Item_Brennstab";
         weight = 5;
         buyPrice = 40000;
-        sellPrice = 900000;
+        sellPrice = 30000;
         illegal = true;
         edible = -1;
         icon = "";

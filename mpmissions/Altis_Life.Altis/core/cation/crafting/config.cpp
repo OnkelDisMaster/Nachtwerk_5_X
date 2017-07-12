@@ -151,7 +151,7 @@ class Cation_Crafting {
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"weapon","uniform","vest","backpack","bombenkopfe","Goldbauteile"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","mags","uniform","vest","backpack","bombenkopfe","Goldbauteile"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };
