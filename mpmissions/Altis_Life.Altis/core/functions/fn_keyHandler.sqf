@@ -114,20 +114,20 @@ switch (_code) do {
 	{	
 		if(vehicle player != player) exitWith {hintSilent "Du bist in einem Fahrzeug!"};
 		if(playerSide == west) then {
-			if(!isNull life_spikestrip) exitWith {hintSilent "You have placed a SpikeStrip"};
-			if(([false,"spikeStrip",1] call life_fnc_handleInv)) then
+			if(([false,"spikeStrip",1] call life_fnc_handleInv) && (!_ctrlKey)) then
 			{
 				[] spawn life_fnc_spikeStrip;
 			};
 		};
-		
+	/*	
 		//Shift Ü GPS tracker
-		if ((life_inv_gpstracker > 0) && (_shift)) then {			
+		if ((life_inv_gpstracker > 0) && (_ctrlKey)) then {			
 			if(([false,"gpstracker",1] call life_fnc_handleInv)) then
 			{
 				[cursorObject] spawn life_fnc_gpsTracker;
 			};
 		};
+	*/
 	};
 
 	

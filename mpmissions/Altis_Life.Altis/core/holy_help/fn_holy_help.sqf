@@ -30,7 +30,11 @@ switch(_lbauswahl) do {
 		} forEach _listitems;
 		lbSetCurSel[198890, 0];
 	};
-	case 0: {
+	case 0: {_desctext = "Test<br/>Test2";}; 
+	case 1: {_desctext = "Test3<br/>Test4";};
+	case 2: {_desctext = "Test5<br/>Test6";};
+	case 3: {_desctext = "Test7<br/>Test8";};
+/*	case 0: {
 		_desctext = "Folgende Steuerung gibt es: <br/>-Abbauen: Windowstaste <br/>-Holstern: Shift+H <br/>-Hände hoch: Shift+G <br/>-Interagieren: Windowstaste <br/>-Ohrstöpsel: Shift+Bild down <br/>-Festnehmen: Shift+R <br/>";
 	};
 	case 1: {
@@ -42,7 +46,7 @@ switch(_lbauswahl) do {
 	};
 	case 3: {
 		_desctext = "illegale Farmrouten: <br/>Zigaretten: Tabakfeld -> Tabakwarenindustrie -> Tabakwarenhändler <br/>Polenböller: Schwarzpulver -> Bernds Böller Bunker -> Dealer <br/>Marijuana: Marijuanaplantage -> Marijuanaküche -> Dealer <br/>Meth: Methplantage -> Methküche -> Dealer <br/>Heroin: Heroinplantage -> Heroinküche -> Dealer <br/>Kokain: Kokainplantage -> Koikainküche -> Dealer <br/>Schildkröten: Naturschutzgebiet -> Schildkrötenhändler <br/>Korallen: Korallenrif -> Korallenketten -> Dealer <br/>Uran: Urangrube -> Uranproduktion 1 -> Uranproduktion 2 -> Uranproduktion 3 -> Uranproduktion 4 -> Uranhändler <br/>	Plutonium: Uran 4 -> Plutoniumproduktion <br/>Brennstäbe: Plutonium -> Kraftwerk Athira -> Kraftwerk Kavala <br/>Bombenköpfe: 8 Eisenbarren + 8 Aluminiumbarren -> Terrorkeller <br/>Atombomben: 20 Plutonium + Bombenkopf -> Bombenherstellung -> Terrorkeller <br/>Mikroprozessoren: Kupferbarren + Aluminiumbarren + Platinbarren -> Mikroprozessorenherstellung -> Chris der Cyborg <br/>Implantate: Mikroprozessoren -> Nano Fabrik -> Chris der Cyborg <br/>(Implantate können momentan hergestellt und verkauft werden später bekommen sie weitere Funktionen) <br/>";
-	};	
+	};	*/
 _textbox ctrlSetStructuredText parseText format["%1",_desctext];
 _textbox ctrlSetPosition [0,0,0.318655 * safezoneW,ctrlTextHeight _textbox];
 _textbox ctrlCommit 0;
