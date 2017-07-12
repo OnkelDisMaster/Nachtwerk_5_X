@@ -108,7 +108,29 @@ switch (_code) do {
 			};           
         };
     };
+	
+	//Ü Nagelbänder
+	case 26:
+	{	
+		if(vehicle player != player) exitWith {hintSilent "Du bist in einem Fahrzeug!"};
+		if(playerSide == west) then {
+			if(!isNull life_spikestrip) exitWith {hintSilent "You have placed a SpikeStrip"};
+			if(([false,"spikeStrip",1] call life_fnc_handleInv)) then
+			{
+				[] spawn life_fnc_spikeStrip;
+			};
+		};
+		
+		//Shift Ü GPS tracker
+		if ((life_inv_gpstracker > 0) && (_shift)) then {			
+			if(([false,"gpstracker",1] call life_fnc_handleInv)) then
+			{
+				[cursorObject] spawn life_fnc_gpsTracker;
+			};
+		};
+	};
 
+	
     //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
     case _interactionKey: {
         if (!life_action_inUse) then {
@@ -363,15 +385,7 @@ switch (_code) do {
 			sleep 2;
 		};
 	};
-/*	Hotkey für Peilsender - funkt noch net	
-	case bla: 
-	{  
-			if (life_inv_gpstracker > 0) then {
-				life_inv_gpstracker = life_inv_gpstracker - 1;
-				[cursorObject] spawn life_fnc_gpsTracker;
-			};
-	};
-*/	
+	
 	
 	//COp Skinrefresh
 	case 41: 

@@ -185,13 +185,6 @@ class ProcessAction {
         NoLicenseCost = 18000;
 	};
 	
-	class krone {
-		MaterialsReq[] = {{"platin",1},{"diamond_Cut",1}};
-		MaterialsGive[] = {{"krone",1}};
-		Text = "STR_Process_kronen";
-		NoLicenseCost = 28000;
-	};
-	
 	class tabak {
         MaterialsReq[] = {{"tabak",1}};
         MaterialsGive[] = {{"zigaretten",1}};
@@ -270,30 +263,6 @@ class ProcessAction {
         Text = "STR_Process_brennstab";
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 20000;
-	};
-	
-	class bombenkopf {
-        MaterialsReq[] = {{"alu",8},{"eisen",8}};
-        MaterialsGive[] = {{"bombenkopf",1}};
-        Text = "STR_Process_bombe";
-        //ScrollText = "Harvest Marijuana";
-        NoLicenseCost =0;
-	};
-	
-	class abombe {
-        MaterialsReq[] = {{"bombenkopf",1},{"plutonium",20}};
-        MaterialsGive[] = {{"atombombe",1}};
-        Text = "STR_Process_abombe";
-        //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 0;
-	};
-	
-	class mikroprozessor {
-		MaterialsReq[] = {{"platin",1},{"alu",1},{"kupfer",1}};
-		MaterialsGive[] = {{"mikroProzessor",1}};
-		Text = "STR_Process_Mikro_Prozessor";
-		//ScrollText = "Harvest Marijuana";
-		NoLicenseCost = 127500;
 	};
 	
 	class implantat {
