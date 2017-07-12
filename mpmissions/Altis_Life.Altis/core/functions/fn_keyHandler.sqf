@@ -78,7 +78,7 @@ switch (_code) do {
     };
 	
 	//Hitmarker toggle (STRG + Shift + H)
-    case 34: {
+    case 35: {
         if ((_shift) && (_ctrlKey)) then {
 			if (license_civ_implantat_hitmarker || license_cop_hitmarker) then
 			{
