@@ -56,6 +56,7 @@ class Life_Client_Core {
         class healHospital {};
         class impoundAction {};
         class mine {};
+		class packupSpikes {};
         class packupmauer {};
 		class packupschranke {};
 		class packupblitzer {};

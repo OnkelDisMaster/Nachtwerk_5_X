@@ -428,7 +428,18 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_goldBar.paa";
     };
-
+	
+	class goldbauteil {
+        variable = "goldbautteil";
+        displayName = "STR_Item_Goldbauteil";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = 1000000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_goldBar.paa";
+    };
+	
     class blastingcharge {
         variable = "blastingCharge";
         displayName = "STR_Item_BCharge";
@@ -565,7 +576,7 @@ class VirtualItems {
     class eisenerz {
         variable = "eisenerz";
         displayName = "STR_Item_Eisenerz";
-        weight = 6;
+        weight = 5;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -576,7 +587,7 @@ class VirtualItems {
     class eisen {
         variable = "eisen";
         displayName = "STR_Item_IronIngot";
-        weight = 5;
+        weight = 4;
         buyPrice = 2500;
         sellPrice = 1200;
         illegal = false;
@@ -598,7 +609,7 @@ class VirtualItems {
     class alu {
         variable = "alu";
         displayName = "STR_Item_AluBarren";
-        weight = 5;
+        weight = 6;
         buyPrice = 8000;
         sellPrice = 2700;
         illegal = false;
@@ -620,7 +631,7 @@ class VirtualItems {
     class platin {
         variable = "platin";
         displayName = "STR_Item_PlatinBarren";
-        weight = 5;
+        weight = 6;
         buyPrice = 8000;
         sellPrice = 3500;
         illegal = false;
@@ -642,7 +653,7 @@ class VirtualItems {
     class salt_refined {
         variable = "saltRefined";
         displayName = "STR_Item_SaltR";
-        weight = 3;
+        weight = 2;
         buyPrice = 5000;
         sellPrice = 2500;
         illegal = false;
@@ -799,7 +810,7 @@ class VirtualItems {
     class heroin_unprocessed {
         variable = "heroinUnprocessed";
         displayName = "STR_Item_HeroinU";
-        weight = 5;
+        weight = 6;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -903,7 +914,7 @@ class VirtualItems {
     class korallenketten {
         variable = "korallenketten";
         displayName = "STR_Item_Korallenketten";
-        weight = 9;
+        weight = 8;
         buyPrice = 30000;
         sellPrice = 14000;
         illegal = true;

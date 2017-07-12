@@ -57,6 +57,7 @@ life_drug = 0;
 life_seatbelt = false;
 life_Event = false;
 life_Raub = false;
+life_hitmarker = false;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];

@@ -76,6 +76,16 @@ switch (_code) do {
             _handled = true;
         };
     };
+	
+	//Hitmarker toggle (STRG + Shift + H)
+    case 34: {
+        if ((_shift) && (_ctrlKey)) then {
+			if (license_civ_implantat_hitmarker || license_cop_hitmarker) then
+			{
+				if (life_hitmarker) then {life_hitmarker = false; hint "Hitmarker Deaktiviert";} else {life_hitmarker = true; hint "Hitmarker Aktiviert";};
+			};           
+        };
+    };
 
     //Map Key
     case _mapKey: {

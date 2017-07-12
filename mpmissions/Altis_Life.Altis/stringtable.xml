@@ -7045,6 +7045,17 @@
             <Portuguese>Barra de Ouro</Portuguese>
             <Polish>Sztabka złota</Polish>
         </Key>
+		<Key ID="STR_Item_Goldbauteil">
+            <Original>Goldpart</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Goldbauteil</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_BCharge">
             <Original>Blasting Charge</Original>
             <Czech>Trhací Charge</Czech>
@@ -7575,6 +7586,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_License_Goldbauteil">
+            <Original>Goldpart License</Original>
+            <German>Goldbauteil Lizenz</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_License_Diving">
             <Original>Diving License</Original>
             <Czech>potápěčské licence</Czech>
@@ -7963,6 +7985,72 @@
 		<Key ID="STR_License_LogistikpilotPlus">
             <Original>Logistical pilot pro</Original>
             <German>Logistikpilot Plus</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_implantat_hitmarker">
+            <Original>Hitmarker Implantat</Original>
+            <German>Hitmarker Implantat</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_implantat_paycheck">
+            <Original>Gehaltscheck Implantat</Original>
+            <German>Gehaltscheck Implantat</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_implantat_backpack">
+            <Original>Tragekapazität Implantat</Original>
+            <German>Tragekapazität Implantat</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_implantat_ausdauer">
+            <Original>Ausdauer Implantat</Original>
+            <German>Ausdauer Implantat</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_implantat_schneller">
+            <Original>Schnelligkeits Implantat</Original>
+            <German>Schnelligkeits Implantat</German>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_implantat_nachtsicht">
+            <Original>Nachtsicht Implantat</Original>
+            <German>Nachtsicht Implantat</German>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>

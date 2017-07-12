@@ -131,6 +131,54 @@ class Licenses {
         side = "civ";
     };
 	
+	class implantat_hitmarker {
+        variable = "implantat_hitmarker";
+        displayName = "STR_License_implantat_hitmarker";
+        price = 0;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class implantat_paycheck {
+        variable = "implantat_paycheck";
+        displayName = "STR_License_implantat_paycheck";
+        price = 0;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class implantat_backpack {
+        variable = "implantat_backpack";
+        displayName = "STR_License_implantat_backpack";
+        price = 0;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class implantat_ausdauer {
+        variable = "implantat_ausdauer";
+        displayName = "STR_License_implantat_ausdauer";
+        price = 0;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class implantat_schneller {
+        variable = "implantat_schneller";
+        displayName = "STR_License_implantat_schneller";
+        price = 0;
+        illegal = false;
+        side = "civ";
+    };
+	
+	class implantat_nachtsicht {
+        variable = "implantat_nachtsicht";
+        displayName = "STR_License_implantat_nachtsicht";
+        price = 0;
+        illegal = false;
+        side = "civ";
+    };
+	
     //Processing Licenses
 	class pina {
         variable = "pina";
@@ -355,6 +403,14 @@ class Licenses {
         illegal = true;
         side = "civ";
     };
+	
+	class goldbauteil {  
+        variable = "goldbauteil";
+        displayName = "STR_License_Goldbauteil";
+        price = 2000000;
+        illegal = true;
+        side = "civ";
+    };
 
 	class gang {
         variable = "license_civ_gang";
@@ -457,6 +513,14 @@ class Licenses {
         variable = "revive";
         displayName = "STR_License_revive";
         price = 200000;
+        illegal = false;
+        side = "cop";
+    };
+	
+	class hitmarker {
+        variable = "hitmarker";
+        displayName = "";
+        price = 500000;
         illegal = false;
         side = "cop";
     };
