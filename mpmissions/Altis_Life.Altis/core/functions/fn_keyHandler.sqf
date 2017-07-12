@@ -75,17 +75,7 @@ switch (_code) do {
             };
             _handled = true;
         };
-    };
-	
-	//Hitmarker toggle (STRG + Shift + H)
-    case 35: {
-        if ((_shift) && (_ctrlKey)) then {
-			if (license_civ_implantat_hitmarker || license_cop_hitmarker) then
-			{
-				if (life_hitmarker) then {life_hitmarker = false; hint "Hitmarker Deaktiviert";} else {life_hitmarker = true; hint "Hitmarker Aktiviert";};
-			};           
-        };
-    };
+    };	
 
     //Map Key
     case _mapKey: {
@@ -108,6 +98,14 @@ switch (_code) do {
             if (life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
                 player selectWeapon life_curWep_h;
             };
+        };
+		
+		//Hitmarker toggle (STRG + Shift + H)
+		if ((_shift) && (_ctrlKey)) then {
+			if (license_civ_implantat_hitmarker || license_cop_hitmarker) then
+			{
+				if (life_hitmarker) then {life_hitmarker = false; hint "Hitmarker Deaktiviert";} else {life_hitmarker = true; hint "Hitmarker Aktiviert";};
+			};           
         };
     };
 

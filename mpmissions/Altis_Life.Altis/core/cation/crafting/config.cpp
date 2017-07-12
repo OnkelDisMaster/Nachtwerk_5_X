@@ -51,6 +51,21 @@ class Cation_Crafting {
 			{"srifle_GM6_camo_F","license_civ_pro_rebel",{"goldbauteil",8,"diamond_cut",10,"mikroprozessor",4},"","",0} 
 
 		}, //Komma
+		{
+            "mags", 
+            "Magazine", 
+            {"16Rnd_9x21_Mag","",{"kupfer",1},"","",0},
+			{"30Rnd_762x39_Mag_Tracer_Green_F","",{"diamond_cut",3},"","",0},
+            {"30Rnd_65x39_caseless_green_mag_Tracer","license_civ_pro_rebel",{"diamond_cut",3},"","",0}, 
+			{"10Rnd_50BW_Mag_F","license_civ_pro_rebel",{"diamond_cut",5,"mikroprozessor",5},"","",0}, 
+			{"200Rnd_65x39_cased_Box_Tracer","license_civ_pro_rebel",{"goldbar",1,"mikroprozessor",1},"","",0}, 
+			{"150Rnd_762x54_Box_Tracer","license_civ_pro_rebel",{"goldbar",1,"mikroprozessor",1},"","",0},
+			{"10Rnd_127x54_Mag","license_civ_pro_rebel",{"goldbar",5,"mikroprozessor",3},"","",0}, 
+			{"10Rnd_338_Mag","license_civ_pro_rebel",{"goldbar",1},"","",0},		
+			{"10Rnd_93x64_DMR_05_Mag","license_civ_pro_rebel",{"goldbar",1},"","",0},
+			{"7Rnd_408_Mag","license_civ_pro_rebel",{"diamond_cut",8},"","",0}, 			
+			{"5Rnd_127x108_Mag","license_civ_pro_rebel",{"goldbar",5,"mikroprozessor",1},"","",0} 
+		}, 
         {
             "uniform",
             "Uniformen",
@@ -81,7 +96,7 @@ class Cation_Crafting {
 		{
             "Goldbauteile",
             "Goldbauteile herstellen",
-            {"goldbauteil","license_civ_goldbauteile",{"goldbar",10},"","",1}
+            {"goldbauteil","license_civ_goldbauteil",{"goldbar",10},"","",1}
         },
 		{
             "mikroprozessoren",
