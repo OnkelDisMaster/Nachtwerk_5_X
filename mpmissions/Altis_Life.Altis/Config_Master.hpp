@@ -74,13 +74,13 @@ class Life_Settings {
 
     /* Item-related Restrictions */
     restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
-    restrict_clothingPickup = false; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
-    restrict_weaponPickup = false; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
+    restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
+    restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
     restricted_weapons[] = { "srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F" };
 
     /* Jail System Configurations */
-    jail_seize_vItems[] = { "spikeStrip","blitzer", "bunker", "flutlicht", "licht", "mauer", "plastik", "schranke", "lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw","schwarzpulver","polenBoeller","tabak","zigaretten","korallen","korallenKetten","uranErz","uranI","uranII","uranIII","uranIV","plutonium","brennstab","bombenkopf","atombombe" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
+    jail_seize_vItems[] = { "spikeStrip","blitzer", "bunker", "flutlicht", "licht", "mauer", "plastik", "schranke", "lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroinu","heroin","weedu","weed","koksu","koks","turtle_raw","schwarzpulver","polenBoeller","tabak","zigaretten","korallen","korallenKetten","uranErz","uranI","uranII","uranIII","uranIV","plutonium","brennstab","bombenkopf","atombombe" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
     jail_seize_inventory = true; //Set to true to run the cop seize script on inmates. False will remove only weapons and magazines otherwise. (Basically used in case cops forget to seize items). [See Lines 106-111 below]
     sendtoJail_locations[] = { "police_hq_1", "police_hq_2", "cop_spawn_3", "cop_spawn_5", "Correctional_Facility" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
 

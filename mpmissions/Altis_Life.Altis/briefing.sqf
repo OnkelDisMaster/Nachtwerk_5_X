@@ -531,8 +531,8 @@ The following items are illegal to posses:<br/><br/>
 1. Turtle<br/>
 2. Cocaine<br/>
 3. Heroin<br/>
-4. Cannabis<br/>
-5. Marijuana<br/><br/>
+4. weedu<br/>
+5. weed<br/><br/>
                 "
         ]
     ];

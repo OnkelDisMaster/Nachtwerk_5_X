@@ -49,9 +49,9 @@ class CfgGather {
             item = "";
         };
 		
-		class meth_unprocessed {
+		class methu {
             amount = (random(3)+1);
-            zones[] = { "meth_unprocessed_1" };
+            zones[] = { "methu_1" };
             item = "";
         };
 		
@@ -61,19 +61,19 @@ class CfgGather {
             item = "";
         };
 		
-        class heroin_unprocessed {
+        class heroinu {
             amount = (random(2)+1);
             zones[] = { "heroin_1" };
             item = "";
         };
 
-        class cocaine_unprocessed {
+        class koksu {
             amount = (random(2)+1);
             zones[] = { "cocaine_1" };
             item = "";
         };
 
-        class cannabis {
+        class weedu {
             amount = (random(3)+1);
             zones[] = { "weed_1" };
             item = "";
@@ -97,12 +97,12 @@ Example 2:
             amount = 2;
         zones[] = { "copper_mine" };
         item = "pickaxe";
-        mined[] = { {"copper_unrefined",0,25},{"iron_unrefined",25,95},{"diamond_uncut",95,100} };
+        mined[] = { {"copper_unrefined",0,25},{"iron_unrefined",25,95},{"diamantu",95,100} };
     };
     This will give :
     25(±1)% to copper_unrefined;
     70(±1)% to iron_unrefined;
-    5%(±1)% to diamond_uncut;
+    5%(±1)% to diamantu;
 
                                                          ! Watch Out !
  If percents are used,you MUST put more than 1 resource in the mined parameter
@@ -142,11 +142,11 @@ Example 2:
             mined[] = { "sand" };
         };
 
-        class diamond_uncut {
+        class diamantu {
             amount = (random(3)+1);
             zones[] = { "diamond_mine" };
             item = "pickaxe";
-            mined[] = { "diamond_uncut" };
+            mined[] = { "diamantu" };
         };
 
         class platinerz {

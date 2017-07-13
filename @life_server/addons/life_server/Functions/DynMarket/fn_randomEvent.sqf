@@ -15,9 +15,12 @@
 DYNMARKET_chance = 10; // Chance for a random event to happen
 DYNMARKET_Events =
 [
- ["Ein Öl Tanker ist gesunken wodurch die Ölpreise gestiegen sind!",["oil_processed"],-1], // -1 MEANS CHANGE PRICE TO MAX, -2 TO MIN, OR A VALUE TO WHICH THE PRICE BE CHANGED TO
- ["Die Bürger scheinen Gesünder zu leben und mehr Obst zu essen, dadurch ist die Nachfrage nach Obst gestiegen!",["apple","peach"],150],
- ["China ist an Metallen interessiert, dadurch steigt die Nachfrage extrem!",["ironRefined","copperRefined"],1000]
+ ["Ein Öl Tanker ist gesunken wodurch die Ölpreise gestiegen sind!",["oel","diesel"],-1], // -1 MEANS CHANGE PRICE TO MAX, -2 TO MIN, OR A VALUE TO WHICH THE PRICE BE CHANGED TO
+ ["Die Bürger scheinen Gesünder zu leben und mehr Obst zu essen, dadurch ist die Nachfrage nach Obst/-Saft gestiegen!",["apple","peach","ananas","bananen","kokosnuss","apfelsaft","pfirsichsaft","ananassaft","bananensaft","kokosnussmilch"],-1],
+ ["Die Altiskom hat beschlossen das Kommunikationsnetz teuer auszubauen und benötigt dafür Bambusleitungen!",["bambusleitung"],-1],
+ ["Es werden nicht mehr genug Zigaretten hergestellt!\n Die Kettenraucher fordern für einen Aufpreis mehr Kippen!!",["zigaretten"],-1],
+ ["Das Kraftwerk Kavala hat keine Brennstäbe mehr!\n Die Nachfrage ist dadurch extrem gestiegen!",["brennstab"],42000],
+ ["China ist an Metallen interessiert, dadurch steigt die Nachfrage extrem!",["eisen","kupfer","alu","platin"],-1]
 ];
 
 _random = floor(random 100)+1;
@@ -69,10 +72,10 @@ DYNMARKET_waitForEvent = true;
 
 sleep 2;
 
-diag_log "### DYNMARKET >> Event semd to be startet errorless ###";
-diag_log " %1 ", _eventMessage;
+//diag_log "### DYNMARKET >> Event semd to be startet errorless ###";
+//diag_log " %1 ", _eventMessage;
 //[[0,_eventMessage],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-//[0,_eventMessage,true] remoteExecCall ["life_fnc_broadcast",-2];
+[0,_eventMessage,true] remoteExecCall ["life_fnc_broadcast",-2];
 
 _text = _eventMessage;
 _title = "MARKT ALARM";

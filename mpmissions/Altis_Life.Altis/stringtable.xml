@@ -5923,14 +5923,14 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-        <Key ID="STR_Item_Cannabis">
-            <Original>Marijuana leaf</Original>
+        <Key ID="STR_Item_weedu">
+            <Original>weed leaf</Original>
             <Czech>marihuana list</Czech>
-            <Spanish>Cannabis</Spanish>
+            <Spanish>weedu</Spanish>
             <Russian></Russian>
             <German>Kannabis</German>
-            <French>Cannabis</French>
-            <Italian>Cannabis</Italian>
+            <French>weedu</French>
+            <Italian>weedu</Italian>
             <Portuguese>Maconha não Processada</Portuguese>
             <Polish>Konopie</Polish>
         </Key>
@@ -6176,14 +6176,14 @@
             <Portuguese>Heroína Processada</Portuguese>
             <Polish>Heroina oczyszczona</Polish>
         </Key>
-        <Key ID="STR_Item_Marijuana">
+        <Key ID="STR_Item_weed">
             <Original>Pot</Original>
             <Czech>Hrnec</Czech>
             <Spanish>Marihuana</Spanish>
             <Russian></Russian>
             <German>Marihuana</German>
-            <French>Marijuana</French>
-            <Italian>Marijuana</Italian>
+            <French>weed</French>
+            <Italian>weed</Italian>
             <Portuguese>Maconha Processada</Portuguese>
             <Polish>Marihuana</Polish>
         </Key>
@@ -7478,7 +7478,7 @@
         </Key>
 		<Key ID="STR_License_Weed">
             <Original>Weed License</Original>
-            <German>Marijuana Lizenz</German>
+            <German>weed Lizenz</German>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
@@ -7762,7 +7762,7 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-        <Key ID="STR_License_DiamondUncut">
+        <Key ID="STR_License_diamantu">
             <Original>Diamant Uncut</Original>
             <German>Diamant Uncut</German>
             <Czech></Czech>
@@ -7773,7 +7773,7 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-        <Key ID="STR_License_DiamondCut">
+        <Key ID="STR_License_diamant">
             <Original>Diamant Cut</Original>
             <German>Diamant Cut</German>
             <Czech></Czech>
@@ -7916,14 +7916,14 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-        <Key ID="STR_License_Marijuana">
-            <Original>Marijuana Training</Original>
+        <Key ID="STR_License_weed">
+            <Original>weed Training</Original>
             <Czech>Marihuana Training</Czech>
             <Spanish>Entrenamiento de Marihuana</Spanish>
             <Russian></Russian>
             <German>Marihuanaausbildung</German>
-            <French>Traitement du Cannabis</French>
-            <Italian>Processo Marijuana</Italian>
+            <French>Traitement du weedu</French>
+            <Italian>Processo weed</Italian>
             <Portuguese>Treinamento de Maconha</Portuguese>
             <Polish>Suszenie konopi</Polish>
         </Key>
@@ -8169,16 +8169,16 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-        <Key ID="STR_License_Medmarijuana">
-            <Original>Medical Marijuana License</Original>
+        <Key ID="STR_License_Medweed">
+            <Original>Medical weed License</Original>
             <Czech>Medical Marihuana Licence</Czech>
             <Spanish>Licencia de Marihuana Medicinal</Spanish>
             <Russian></Russian>
-            <German>Medizinisches Marijuana-Lizenz</German>
-            <French>Marijuana Médicale Licence</French>
-            <Italian>Medical Marijuana Licenza</Italian>
-            <Portuguese>Licença Medical Marijuana</Portuguese>
-            <Polish>Medical Marijuana Licencji</Polish>
+            <German>Medizinisches weed-Lizenz</German>
+            <French>weed Médicale Licence</French>
+            <Italian>Medical weed Licenza</Italian>
+            <Portuguese>Licença Medical weed</Portuguese>
+            <Polish>Medical weed Licencji</Polish>
         </Key>
         <Key ID="STR_License_Home">
             <Original>Home Owners License</Original>
@@ -8933,13 +8933,13 @@
             <Polish>Oczyszczanie kokainy</Polish>
         </Key>
         <Key ID="STR_Process_weed">
-            <Original>Processing Marijuana</Original>
+            <Original>Processing weed</Original>
             <Czech>zpracování Marihuana</Czech>
             <Spanish>Procesando Marihuana</Spanish>
             <Russian></Russian>
             <German>Marihuana wird verarbeitet</German>
-            <French>Traitement de Marijuana</French>
-            <Italian>Processando Marijuana</Italian>
+            <French>Traitement de weed</French>
+            <Italian>Processando weed</Italian>
             <Portuguese>Processando Maconha</Portuguese>
             <Polish>Suszenie marihuany</Polish>
         </Key>
@@ -11254,26 +11254,26 @@
             <Italian>Giacimento di Petrolio</Italian>
         </Key>
         <Key ID="STR_MAR_Weed_Field">
-            <Original>Marijuana Plantage</Original>
+            <Original>weed Plantage</Original>
             <Czech>Marihuana Field</Czech>
             <French>Champs de pavots</French>
             <Spanish>Campo de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Marijuana Plantage</German>
+            <German>weed Plantage</German>
             <Portuguese>Campo de Maconha</Portuguese>
             <Polish>Pole marihuany</Polish>
-            <Italian>Campo di Marijuana</Italian>
+            <Italian>Campo di weed</Italian>
         </Key>
         <Key ID="STR_MAR_Weed_Processing">
-            <Original>Marijuana Küche</Original>
+            <Original>weed Küche</Original>
             <Czech>Zpracování marihuana</Czech>
             <French>Traitement du pavot</French>
             <Spanish>Procesador de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Marijuana Küche</German>
+            <German>weed Küche</German>
             <Portuguese>Processador de Maconha</Portuguese>
             <Polish>Suszarnia marihuany</Polish>
-            <Italian>Trattamento Marijuana</Italian>
+            <Italian>Trattamento weed</Italian>
         </Key>
         <Key ID="STR_MAR_Boat_Spawn">
             <Original>Boat Spawn</Original>

@@ -8,8 +8,8 @@
 *   Example for multiprocess:
 *
 *   class Example {
-*       MaterialsReq[] = {{"cocaine_processed",1},{"heroin_processed",1}};
-*       MaterialsGive[] = {{"diamond_cut",1}};
+*       MaterialsReq[] = {{"koks",1},{"heroin",1}};
+*       MaterialsGive[] = {{"diamant",1}};
 *       Text = "STR_Process_Example";
 *       //ScrollText = "Process Example";
 *       NoLicenseCost = 4000;
@@ -66,16 +66,16 @@ class ProcessAction {
     };
 
     class dia {
-        MaterialsReq[] = {{"diamond_uncut",1}};
-        MaterialsGive[] = {{"diamond_cut",1}};
+        MaterialsReq[] = {{"diamantu",1}};
+        MaterialsGive[] = {{"diamant",1}};
         Text = "STR_Process_Dia";
         //ScrollText = "Cut Diamonds";
         NoLicenseCost = 14000;
     };
 
     class hero {
-        MaterialsReq[] = {{"heroin_unprocessed",1}};
-        MaterialsGive[] = {{"heroin_processed",1}};
+        MaterialsReq[] = {{"heroinu",1}};
+        MaterialsGive[] = {{"heroin",1}};
         Text = "STR_Process_hero";
         //ScrollText = "Process Heroin";
         NoLicenseCost = 8800;
@@ -101,7 +101,7 @@ class ProcessAction {
         MaterialsReq[] = {{"platinerz",1}};
         MaterialsGive[] = {{"platin",1}};
         Text = "STR_Process_platin";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 5500;
     };
 	
@@ -109,7 +109,7 @@ class ProcessAction {
         MaterialsReq[] = {{"aluerz",1}};
         MaterialsGive[] = {{"alu",1}};
         Text = "STR_Process_alu";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 4500;
     };
 	
@@ -130,18 +130,18 @@ class ProcessAction {
     };
 
     class koks {
-        MaterialsReq[] = {{"cocaine_unprocessed",1}};
-        MaterialsGive[] = {{"cocaine_processed",1}};
+        MaterialsReq[] = {{"koksu",1}};
+        MaterialsGive[] = {{"koks",1}};
         Text = "STR_Process_koks";
         //ScrollText = "Process Cocaine";
         NoLicenseCost = 21500;
     };
 
     class weed {
-        MaterialsReq[] = {{"cannabis",1}};
-        MaterialsGive[] = {{"marijuana",1}};
+        MaterialsReq[] = {{"weedu",1}};
+        MaterialsGive[] = {{"weed",1}};
         Text = "STR_Process_weed";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 4800;
     };
 
@@ -149,7 +149,7 @@ class ProcessAction {
         MaterialsReq[] = {{"marmorRoh",1}};
         MaterialsGive[] = {{"marmor",1}};
         Text = "STR_Process_marmor";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 6500;
     };
 	
@@ -157,15 +157,15 @@ class ProcessAction {
         MaterialsReq[] = {{"lava",1}};
         MaterialsGive[] = {{"obsidian",1}};
         Text = "STR_Process_obsidian";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 7500;
 	};
 	
 	class diesel {
-        MaterialsReq[] = {{"oilProcessed",1}};
+        MaterialsReq[] = {{"oel",2}};
         MaterialsGive[] = {{"diesel",1}};
         Text = "STR_Process_diesel";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 12000;
 	};
 	
@@ -173,7 +173,7 @@ class ProcessAction {
         MaterialsReq[] = {{"bambus",1}};
         MaterialsGive[] = {{"bambusleitung",1}};
         Text = "STR_Process_bambus";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 3800;
 	};
 	
@@ -181,7 +181,7 @@ class ProcessAction {
         MaterialsReq[] = {{"schurfgut",1}};
         MaterialsGive[] = {{"juwelen",1}};
         Text = "STR_Process_juwelen";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 18000;
 	};
 	
@@ -189,7 +189,7 @@ class ProcessAction {
         MaterialsReq[] = {{"tabak",1}};
         MaterialsGive[] = {{"zigaretten",1}};
         Text = "STR_Process_tabak";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 2800;
 	};
 	
@@ -197,15 +197,15 @@ class ProcessAction {
         MaterialsReq[] = {{"schwarzpulver",1}};
         MaterialsGive[] = {{"polenboeller",1}};
         Text = "STR_Process_boeller";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 5800;
 	};
 	
 	class meth {
-        MaterialsReq[] = {{"methUnprocessed",1}};
-        MaterialsGive[] = {{"methProcessed",1}};
+        MaterialsReq[] = {{"methu",1}};
+        MaterialsGive[] = {{"meth",1}};
         Text = "STR_Process_meth";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 6800;
 	};
 	
@@ -213,7 +213,7 @@ class ProcessAction {
         MaterialsReq[] = {{"korallen",1}};
         MaterialsGive[] = {{"korallenketten",1}};
         Text = "STR_Process_korallen";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 15500;
 	};
 	
@@ -221,7 +221,7 @@ class ProcessAction {
         MaterialsReq[] = {{"uranerz",1}};
         MaterialsGive[] = {{"uranI",1}};
         Text = "STR_Process_uranerz";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 42000;
 	};
 	
@@ -229,7 +229,7 @@ class ProcessAction {
         MaterialsReq[] = {{"uranI",1}};
         MaterialsGive[] = {{"uranII",1}};
         Text = "STR_Process_uranI";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 42000;
 	};
 	
@@ -237,7 +237,7 @@ class ProcessAction {
         MaterialsReq[] = {{"uranII",1}};
         MaterialsGive[] = {{"uranIII",1}};
         Text = "STR_Process_uranII";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 0;
 	};
 	
@@ -245,7 +245,7 @@ class ProcessAction {
         MaterialsReq[] = {{"uranIII",1}};
         MaterialsGive[] = {{"uranIV",1}};
         Text = "STR_Process_uranIII";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 0;
 	};
 	
@@ -253,7 +253,7 @@ class ProcessAction {
         MaterialsReq[] = {{"uranIV",1}};
         MaterialsGive[] = {{"plutonium",1}};
         Text = "STR_Process_plutonium";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 12000;
 	};
 	
@@ -261,7 +261,7 @@ class ProcessAction {
         MaterialsReq[] = {{"plutonium",1}};
         MaterialsGive[] = {{"brennstab",1}};
         Text = "STR_Process_brennstab";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 20000;
 	};
 	
@@ -269,7 +269,7 @@ class ProcessAction {
         MaterialsReq[] = {{"mikroProzessor",10}};
         MaterialsGive[] = {{"implantatNormal",1}};
         Text = "STR_Process_implantat";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 127500;
 	};
 	
@@ -277,7 +277,7 @@ class ProcessAction {
         MaterialsReq[] = {{"apple",1}};
         MaterialsGive[] = {{"apfelsaft",1}};
         Text = "STR_Item_Apfelsaft";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 0;
 	};
 	
@@ -285,7 +285,7 @@ class ProcessAction {
         MaterialsReq[] = {{"peach",1}};
         MaterialsGive[] = {{"pfirsichsaft",1}};
         Text = "STR_Item_Pfirsichsaft";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 0;
 	};
 	
@@ -293,7 +293,7 @@ class ProcessAction {
         MaterialsReq[] = {{"ananas",1}};
         MaterialsGive[] = {{"ananassaft",1}};
         Text = "STR_Item_Ananassaft";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 0;
 	};
 	
@@ -301,7 +301,7 @@ class ProcessAction {
         MaterialsReq[] = {{"bananen",1}};
         MaterialsGive[] = {{"bananensaft",1}};
         Text = "STR_Item_Bananensaft";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 0;
 	};
 	
@@ -309,7 +309,7 @@ class ProcessAction {
         MaterialsReq[] = {{"kokosnuss",1}};
         MaterialsGive[] = {{"kokosnussMilch",1}};
         Text = "STR_Item_Kokosnussmilch";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 0;
 	};
 	
@@ -317,7 +317,7 @@ class ProcessAction {
         MaterialsReq[] = {{"ananassaft",1},{"kokosnussMilch",1}};
         MaterialsGive[] = {{"pina_colada",1}};
         Text = "STR_Process_pina";
-        //ScrollText = "Harvest Marijuana";
+        //ScrollText = "Harvest weed";
         NoLicenseCost = 200;
 	};
 };

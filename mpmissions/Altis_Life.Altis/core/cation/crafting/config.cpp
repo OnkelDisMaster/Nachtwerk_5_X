@@ -35,35 +35,35 @@ class Cation_Crafting {
         {
             "weapon", //Variable
             "Waffen", //Text
-            {"hgun_P07_F","",{"diamond_cut",10,"kupfer",2},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
-            {"arifle_AK12_F","license_civ_pro_rebel",{"goldbauteil",2,"diamond_cut",20,"mikroprozessor",4},"","",0}, 
-			{"arifle_ARX_hex_F","license_civ_pro_rebel",{"goldbauteil",1,"diamond_cut",2,"mikroprozessor",1},"","",0}, 
-			{"LMG_Mk200_F","license_civ_pro_rebel",{"goldbauteil",1,"diamond_cut",10,"mikroprozessor",3},"","",0}, 
-			{"LMG_Zafir_F","license_civ_pro_rebel",{"goldbauteil",1,"diamond_cut",20,"mikroprozessor",4},"","",0},
-			{"srifle_DMR_04_F","license_civ_pro_rebel",{"goldbauteil",5,"diamond_cut",10,"mikroprozessor",5},"","",0}, 
-			{"srifle_DMR_04_tan_F","license_civ_pro_rebel",{"goldbauteil",5,"diamond_cut",10,"mikroprozessor",5},"","",0}, 
-			{"srifle_DMR_02_camo_F","license_civ_pro_rebel",{"goldbauteil",2,"diamond_cut",10,"mikroprozessor",4},"","",0},
-			{"srifle_DMR_02_sniper_F","license_civ_pro_rebel",{"goldbauteil",2,"diamond_cut",10,"mikroprozessor",4},"","",0},			
-			{"srifle_DMR_05_hex_F","license_civ_pro_rebel",{"goldbauteil",2,"diamond_cut",10,"mikroprozessor",5},"","",0}, 
-			{"srifle_DMR_05_tan_F","license_civ_pro_rebel",{"goldbauteil",2,"diamond_cut",10,"mikroprozessor",5},"","",0}, 
-			{"srifle_LRR_F","license_civ_pro_rebel",{"goldbauteil",4,"diamond_cut",10,"mikroprozessor",2},"","",0}, 
-			{"srifle_LRR_camo_F","license_civ_pro_rebel",{"goldbauteil",4,"diamond_cut",10,"mikroprozessor",2},"","",0}, 			
-			{"srifle_GM6_camo_F","license_civ_pro_rebel",{"goldbauteil",8,"diamond_cut",10,"mikroprozessor",4},"","",0} 
+            {"hgun_P07_F","",{"diamant",10,"kupfer",2},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
+            {"arifle_AK12_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",20,"mikroprozessor",4},"","",0}, 
+			{"arifle_ARX_hex_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",2,"mikroprozessor",1},"","",0}, 
+			{"LMG_Mk200_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",10,"mikroprozessor",3},"","",0}, 
+			{"LMG_Zafir_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",20,"mikroprozessor",4},"","",0},
+			{"srifle_DMR_04_F","license_civ_pro_rebel",{"goldbauteil",5,"diamant",10,"mikroprozessor",5},"","",0}, 
+			{"srifle_DMR_04_tan_F","license_civ_pro_rebel",{"goldbauteil",5,"diamant",10,"mikroprozessor",5},"","",0}, 
+			{"srifle_DMR_02_camo_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",4},"","",0},
+			{"srifle_DMR_02_sniper_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",4},"","",0},			
+			{"srifle_DMR_05_hex_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",5},"","",0}, 
+			{"srifle_DMR_05_tan_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",5},"","",0}, 
+			{"srifle_LRR_F","license_civ_pro_rebel",{"goldbauteil",4,"diamant",10,"mikroprozessor",2},"","",0}, 
+			{"srifle_LRR_camo_F","license_civ_pro_rebel",{"goldbauteil",4,"diamant",10,"mikroprozessor",2},"","",0}, 			
+			{"srifle_GM6_camo_F","license_civ_pro_rebel",{"goldbauteil",8,"diamant",10,"mikroprozessor",4},"","",0} 
 
 		}, //Komma
 		{
             "mags", 
             "Magazine", 
             {"16Rnd_9x21_Mag","",{"kupfer",1},"","",0},
-			{"30Rnd_762x39_Mag_Tracer_Green_F","",{"diamond_cut",3},"","",0},
-            {"30Rnd_65x39_caseless_green_mag_Tracer","license_civ_pro_rebel",{"diamond_cut",3},"","",0}, 
-			{"10Rnd_50BW_Mag_F","license_civ_pro_rebel",{"diamond_cut",5,"mikroprozessor",5},"","",0}, 
+			{"30Rnd_762x39_Mag_Tracer_Green_F","",{"diamant",3},"","",0},
+            {"30Rnd_65x39_caseless_green_mag_Tracer","license_civ_pro_rebel",{"diamant",3},"","",0}, 
+			{"10Rnd_50BW_Mag_F","license_civ_pro_rebel",{"diamant",5,"mikroprozessor",5},"","",0}, 
 			{"200Rnd_65x39_cased_Box_Tracer","license_civ_pro_rebel",{"goldbar",1,"mikroprozessor",1},"","",0}, 
 			{"150Rnd_762x54_Box_Tracer","license_civ_pro_rebel",{"goldbar",1,"mikroprozessor",1},"","",0},
 			{"10Rnd_127x54_Mag","license_civ_pro_rebel",{"goldbar",5,"mikroprozessor",3},"","",0}, 
 			{"10Rnd_338_Mag","license_civ_pro_rebel",{"goldbar",1},"","",0},		
 			{"10Rnd_93x64_DMR_05_Mag","license_civ_pro_rebel",{"goldbar",1},"","",0},
-			{"7Rnd_408_Mag","license_civ_pro_rebel",{"diamond_cut",8},"","",0}, 			
+			{"7Rnd_408_Mag","license_civ_pro_rebel",{"diamant",8},"","",0}, 			
 			{"5Rnd_127x108_Mag","license_civ_pro_rebel",{"goldbar",5,"mikroprozessor",1},"","",0} 
 		}, 
         {
@@ -74,7 +74,7 @@ class Cation_Crafting {
         {
             "backpack",
             "Rucksäcke",
-            {"B_Carryall_oli","",{"diamond_cut",6},"","",0},
+            {"B_Carryall_oli","",{"diamant",6},"","",0},
 			{"B_Bergen_dgtl_F","",{"oel",10},"","",0},
 			{"B_ViperHarness_blk_F","",{"juwelen",10},"","",0}
         },
@@ -91,7 +91,7 @@ class Cation_Crafting {
 		{
             "kronen",
             "Platinkronen herstellen",
-            {"krone","license_civ_kronen",{"diamond_cut",4,"platin",4,"glass",4},"","",1}
+            {"krone","license_civ_kronen",{"diamant",4,"platin",4,"glass",4},"","",1}
         },
 		{
             "Goldbauteile",
@@ -101,7 +101,7 @@ class Cation_Crafting {
 		{
             "mikroprozessoren",
             "Mikroprozessoren herstellen",
-            {"mikroprozessor","license_civ_implantat",{"platin",2,"alu",3,"kupfer",5},"","",1}
+            {"mikroprozessor","license_civ_implantat",{"platin",4,"alu",5,"kupfer",6},"","",1}
         },
 		{
             "bombenkopfe",
@@ -116,7 +116,7 @@ class Cation_Crafting {
         {
             "item",
             "Items",            
-            {"diamond_cut","",{"kupfer",1,"eisen",1},"","",1}
+            {"diamant","",{"kupfer",1,"eisen",1},"","",1}
         } //Kein Komma bei letzten
     };
 

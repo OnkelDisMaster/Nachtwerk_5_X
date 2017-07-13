@@ -295,7 +295,7 @@ class Licenses {
 	class kronen {
         variable = "kronen";
         displayName = "STR_License_Kronen";
-        price = 380000;
+        price = 320000;
         illegal = false;
         side = "civ";
     };
@@ -367,7 +367,7 @@ class Licenses {
 	class plutonium {
         variable = "plutonium";
         displayName = "STR_License_Plutonium";
-        price = 2200000;
+        price = 220000;
         illegal = true;
         side = "civ";
     };
@@ -375,7 +375,7 @@ class Licenses {
 	class brennstab {
         variable = "brennstab";
         displayName = "STR_License_Brennstab";
-        price = 200000;
+        price = 180000;
         illegal = true;
         side = "civ";
     };
