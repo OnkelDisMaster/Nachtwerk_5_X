@@ -13,7 +13,7 @@ _dialogID = 198888; //IDD
 _dialog = (findDisplay _dialogID);
 _listbox = _dialog displayCtrl 198890;
 _textbox = _dialog displayCtrl 198889;
-_listitems = ["Text1","Text2"]; //<- TEXT1 = CASE 0 , TEXT2 = CASE 1, ...
+_listitems = ["Steuerung","Jobs"]; //<- TEXT1 = CASE 0 , TEXT2 = CASE 1, ...
 _lbauswahl = lbCurSel 198890;
 
 if(!dialog) then {createDialog "holy_helpmenu"}; //Thefuck?
@@ -30,9 +30,15 @@ switch(_lbauswahl) do {
 		} forEach _listitems;
 		lbSetCurSel[198890, 0];
 	};
-	case 0: {_desctext = "Test<br/>Test2";}; 
-	case 1: {_desctext = "Test3<br/>Test4";};
-/*	case 2: {_desctext = "Test5<br/>Test6";};
+	case 0: {
+		_desctext = "Folgende Steuerung gibt es:....";
+	};
+	case 1: {
+		_desctext = "Diese Jobs gibt es....";
+	};
+/*	case 2: {
+		_desctext = "Test5<br/>Test6";
+	};
 	case 3: {_desctext = "Test7<br/>Test8";};
 	case 0: {
 		_desctext = "Folgende Steuerung gibt es: <br/>-Abbauen: Windowstaste <br/>-Holstern: Shift+H <br/>-Hände hoch: Shift+G <br/>-Interagieren: Windowstaste <br/>-Ohrstöpsel: Shift+Bild down <br/>-Festnehmen: Shift+R <br/>";
