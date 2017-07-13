@@ -96,14 +96,6 @@ class VirtualShops {
         items[] = { "koks", "heroin", "weed", "schwarzpulver", "polenboeller", "tabak", "zigaretten", "korallen", "korallenketten" };
     };
 	
-	class terrorkeller {
-        name = "STR_Shop_Terrorkeller";
-        side = "civ";
-        license = "";
-        level[] = { "", "", -1, "" };
-        items[] = { "bombenkopf", "atombombe"};
-    };
-	
 	class tabakwaren {
         name = "STR_Shop_Tabakwaren";
         side = "civ";
@@ -197,7 +189,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "mikroProzessor", "implantatNormal" };
+        items[] = { "mikroProzessor", "implantatNormal", "bombenkopf", "atombombe", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "kabelbinder", "gpstracker" };
     };
 	
     class cop {

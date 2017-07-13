@@ -218,17 +218,6 @@
             <Portuguese>Traficante</Portuguese>
             <Polish>Sprzedawca 'Trawy'</Polish>
         </Key>
-		<Key ID="STR_Shops_Terrorkeller">
-            <Original>Terrorism Cave</Original>
-            <Czech></Czech>
-            <Spanish></Spanish>
-            <Russian></Russian>
-            <German>Terrorkeller</German>
-            <Italian></Italian>
-            <French></French>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
 		<Key ID="STR_Shops_Altiskom">
             <Original>Altiskom</Original>
             <Czech></Czech>

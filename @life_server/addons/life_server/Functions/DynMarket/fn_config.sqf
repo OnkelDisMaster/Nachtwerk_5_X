@@ -58,7 +58,7 @@ DYNMARKET_Items_Groups =
 			["diamant",-1,2030,5730],
 			["oel",-1,3150,7850],
 			["diesel",-1,8000,18000],
-			["krone",-1,16800,45200]
+			["krone",-1,25000,60000]
 		],
 		0.5
 	],
@@ -66,17 +66,17 @@ DYNMARKET_Items_Groups =
 		[
 			["heroin",-1,2940,6000],
 			["weed",-1,2100,4700],
-			["koks",-1,3640,7000],
+			["koks",-1,3640,7500],
 			["polenboeller",-1,2100,3900],
 			["zigaretten",-1,980,3500],
 			["korallenketten",-1,9800,28200],
 			["meth",-1,2170,5030],
 			["uranIV",-1,6000,30000],
 			["plutonium",-1,7000,33000],
-			["brennstab",-1,12250,60000],
-			["atombombe",-1,455000,1000000],
-			["mikroProzessor",-1,17500,40500],
-			["implantatNormal",-1,185500,500500]
+			["brennstab",-1,22250,42000],
+			["atombombe",-1,455000,8000000],
+			["mikroProzessor",-1,27500,50500],
+			["implantatNormal",-1,285500,500500]
 		],
 		0.2
 	]
@@ -111,15 +111,15 @@ DYNMARKET_Items_ToTrack        =
 	["goat_raw",1550],
 	["goat",2350],
 	["goldbar",95000],
-	["mikroProzessor",25000],
-	["implantatNormal",265000],
+	["mikroProzessor",40000],
+	["implantatNormal",390000],
 	["oel",4500],
 	["diesel",12000],
 	["eisen",1200],
 	["kupfer",1500],
 	["alu",2700],
 	["platin",3500],
-	["krone",24000],
+	["krone",40000],
 	["salz",2500],
 	["glass",2000],
 	["bambusleitung",1250],
@@ -131,12 +131,12 @@ DYNMARKET_Items_ToTrack        =
 	["zigaretten",1400],
 	["korallenketten",14000],
 	["heroin",4200],
-	["meth",3100],
+	["meth",3500],
 	["weed",3000],
 	["koks",5200],
 	["uranIV",15000],
 	["plutonium",17000],
-	["brennstab",32000],
+	["brennstab",27000],
 	["atombombe",650000]
 ];
 

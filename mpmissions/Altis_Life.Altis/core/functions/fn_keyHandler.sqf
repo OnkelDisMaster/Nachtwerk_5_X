@@ -162,7 +162,7 @@ switch (_code) do {
         };
     };
 	
-	//ATM Pin Anzeige
+	//ATM Pin Anzeige (STRG + Shift + A)
     case 30: {
 		if (!_shift && _ctrlKey) then 
 		{
@@ -285,7 +285,7 @@ switch (_code) do {
         };
     };
 
-    //O Key
+    //Ohrstöpsel Key (Shift + Bild runter)
     case 209: {
         if (_shift) then {
             if (soundVolume != 1) then {
