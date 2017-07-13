@@ -128,11 +128,11 @@ Example 2:
             mined[] = { "eisenerz" };
         };
 
-        class salt_unrefined {
+        class salzu {
             amount = (random(5)+1);
             zones[] = { "salt_mine" };
             item = "pickaxe";
-            mined[] = { "salt_unrefined" };
+            mined[] = { "salzu" };
         };
 
         class sand {

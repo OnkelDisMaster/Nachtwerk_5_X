@@ -122,8 +122,8 @@ class ProcessAction {
     };
 
     class salz {
-        MaterialsReq[] = {{"salt_unrefined",1}};
-        MaterialsGive[] = {{"salt_refined",1}};
+        MaterialsReq[] = {{"salzu",1}};
+        MaterialsGive[] = {{"salz",1}};
         Text = "STR_Process_Salz";
         //ScrollText = "Refine Salt";
         NoLicenseCost = 2800;

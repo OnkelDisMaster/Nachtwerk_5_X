@@ -157,7 +157,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "salt_refined" };
+        items[] = { "salz" };
     };
 
     class baustoff {
@@ -705,26 +705,26 @@ class VirtualItems {
         icon = "";
     };
 	
-    class salt_unrefined {
-        variable = "saltUnrefined";
+    class salzu {
+        variable = "salzu";
         displayName = "STR_Item_Salt";
         weight = 4;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "icons\ico_saltUnprocessed.paa";
+        icon = "icons\ico_salzu.paa";
     };
 
-    class salt_refined {
-        variable = "saltRefined";
+    class salz {
+        variable = "salz";
         displayName = "STR_Item_SaltR";
         weight = 2;
         buyPrice = 5000;
         sellPrice = 2500;
         illegal = false;
         edible = -1;
-        icon = "icons\ico_saltProcessed.paa";
+        icon = "icons\ico_salz.paa";
     };
 
     class sand {
