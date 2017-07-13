@@ -12,7 +12,7 @@ player addEventHandler["Take",{_this call life_fnc_onTakeItem}]; //Prevent peopl
 player addEventHandler["Fired",{_this call life_fnc_onFired}];
 player addEventHandler["InventoryClosed", {_this call life_fnc_inventoryClosed}];
 player addEventHandler["InventoryOpened", {_this call life_fnc_inventoryOpened}];
-if ((license_civ_implantat_hitmarker || license_cop_hitmarker) && life_hitmarker) then {
+if (license_civ_implantat_hitmarker || license_cop_hitmarker) then {
 									//	Getroffener, der event triggert				//Schütze
 player addMPEventHandler ["mphit", { [_this select 0] remoteExec ["life_fnc_hitMarker",(_this select 3)];}];
 };
