@@ -31,16 +31,35 @@ switch(_lbauswahl) do {
 		lbSetCurSel[198890, 0];
 	};
 	case 0: {
-		_desctext = "Folgende Steuerung gibt es: <br/>-Abbauen: Windowstaste <br/>-Holstern: Shift+H <br/>-Hände hoch: Shift+G <br/>-Interagieren: Windowstaste <br/>-Ohrstöpsel: Shift+Bild down <br/>-Festnehmen: Shift+R <br/>";
+		_desctext = "Folgende Steuerung gibt es: <br/>
+		Für Zivilisten:<br/>
+		-Abbauen: Windowstaste <br/>-Holstern: Shift+H <br/>
+		-Hände hoch: Shift+G <br/>
+		-Niederschlagen: Shift + V <br/>
+		<br/><br/>
+		Für Polizisten:<br/>
+		-Nagelbänder: Ü <br/>
+		-Yell Sirene: Ö <br/>-EMP Konsole: K <br/>
+		-Schranken öffnen: O <br/>
+		-Spielerskin aktualisieren: ^ <br/>
+		-Wanted Liste: Shift + 2/3 <br/>"
+		<br/><br/>
+		Für alle Spieler:<br/>
+		-Hitmarker Implantat de/-aktivieren: STRG + Shift + H <br/>
+		-ATM Pin anzeigen: STRG + Shift + A <br/>
+		-Kofferraum: T <br/>-Sirene: F <br/>
+		-Festnehmen: Shift+R <br/>
+		-Emotes: Numpad Tasten <br/>
+		-Schlüssel benutzen: U <br/>
+		-Tuningchip de/-aktivieren <br/>
+		-Ohrstöpsel: Shift+Bild down <br/>
+		-Interagieren: Windowstaste <br/>;
 	};
 	case 1: {
-		_desctext = "Diese Links werden euch helfen: <br/>-Forum: http://nachtwerk-community.de/arma/wcf/ <br/>-TS-Ip: 144.76.83.227 <br/>-Regeln:  http://nachtwerk-community.de/arma/wcf/index.php?thread/2-altis-life-regeln/ <br/>"
-	};
-	case 2: {
-		_desctext = "legale Farmrouten: <br/>Äpfel: Apfelplantage -> Markt <br/>Pfirsiche: Pfirsichplantage -> Markt <br/>Bananen: Bananenplantage -> Markt <br/>Kokosnuss: Kokosnussplantage -> Markt <br/>Ananas: Ananasplantage -> Markt <br/>Apfelsaft: Apfelplantage -> Saftpresse -> Markt <br/>Pfirsichsaft: Pfirsichplantage -> Saftpresse -> Markt <br/>Bananensaft: Bananenplantage -> Saftpresse -> Markt <br/>Kokosnusssaft: Kokosnussplantage -> Saftpresse -> Markt <br/>Ananassaft: Ananasplantage -> Saftpresse -> Markt <br/>Pinacolada: Ananasplantage + Kokosnussplantage -> Saftpresse -> Markt <br/>Kupferbarren: Kupfermine -> Kupferschmelze -> Metallhändler <br/>Eisenbarren: Eisenmine -> Eisenschmeltze -> Metallhändler <br/>Platinbarren: Platingrube -> Platinveredler -> Metallhändler <br/>Aluminiumbarren: Aluminiumgrube -> Aluminiumveredler -> Metallhändler <br/>Marmor: Marmorsteinbruch -> Steinmetz -> Baustoffhändler <br/>Obsidian: Lavagestein -> Steinmetz -> Baustoffhändler <br/>Öl: Ölfelder -> Ölrafinerie -> Ölhändler <br/>Kraftstoff: Ölfelder -> Ölrafinerie -> Kraftstoffrafinerie -> Ölhändler <br/>Glas: Sandgrube -> Sandverarbeitung -> Glasbläserei <br/>Salz: Salzgrube -> Salzverarbeitung -> Salzhändler <br/>Bambusleitungen: Bambusfeld -> Bambusleitungenherstellung -> Altiscom <br/>Diamanten: Diamantenmine -> Edelsteinschleifer -> Juwelier <br/>Juwelen: Schürfstelle -> Edelsteinschleifer -> Juwelier <br/>Kronen: Platin + Diamanten + Glas -> Kronenherstellung -> Juwelier <br/>";
-	};
-	case 3: {
-		_desctext = "illegale Farmrouten: <br/>Zigaretten: Tabakfeld -> Tabakwarenindustrie -> Tabakwarenhändler <br/>Polenböller: Schwarzpulver -> Bernds Böller Bunker -> Dealer <br/>Marijuana: Marijuanaplantage -> Marijuanaküche -> Dealer <br/>Meth: Methplantage -> Methküche -> Dealer <br/>Heroin: Heroinplantage -> Heroinküche -> Dealer <br/>Kokain: Kokainplantage -> Koikainküche -> Dealer <br/>Schildkröten: Naturschutzgebiet -> Schildkrötenhändler <br/>Korallen: Korallenrif -> Korallenketten -> Dealer <br/>Uran: Urangrube -> Uranproduktion 1 -> Uranproduktion 2 -> Uranproduktion 3 -> Uranproduktion 4 -> Uranhändler <br/>	Plutonium: Uran 4 -> Plutoniumproduktion <br/>Brennstäbe: Plutonium -> Kraftwerk Athira -> Kraftwerk Kavala <br/>Bombenköpfe: 8 Eisenbarren + 8 Aluminiumbarren -> Terrorkeller <br/>Atombomben: 20 Plutonium + Bombenkopf -> Bombenherstellung -> Terrorkeller <br/>Mikroprozessoren: Kupferbarren + Aluminiumbarren + Platinbarren -> Mikroprozessorenherstellung -> Chris der Cyborg <br/>Implantate: Mikroprozessoren -> Nano Fabrik -> Chris der Cyborg <br/>(Implantate können momentan hergestellt und verkauft werden später bekommen sie weitere Funktionen) <br/>";
+		_desctext = "Diese Links werden euch helfen: <br/>
+		-Forum: http://nachtwerk-community.de/arma/wcf/ <br/>
+		-TS3 Ip: 144.76.83.227 <br/>
+		-Regelwerk:  http://nachtwerk-community.de/arma/wcf/index.php?thread/2-altis-life-regeln/ <br/>"
 	};
 };
 _textbox ctrlSetStructuredText parseText format["%1",_desctext];
