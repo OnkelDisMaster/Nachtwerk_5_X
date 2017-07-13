@@ -55,9 +55,14 @@ life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNe
 life_drink = 0;
 life_drug = 0;
 life_seatbelt = false;
-life_Event = false;
-life_Raub = false;
 life_hitmarker = false;
+
+life_Event = false;
+publicVariable "life_Event";
+life_Raub = false;
+publicVariable "life_Event";
+
+
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];
