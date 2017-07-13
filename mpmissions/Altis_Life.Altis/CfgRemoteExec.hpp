@@ -177,6 +177,8 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
 		F(bf_fnc_lightsOn,ANYONE)
+		F(stig_sz_msg_add,ANYONE)
+		F(stig_sz_msg_del,ANYONE)	
     };
 
     class Commands {
