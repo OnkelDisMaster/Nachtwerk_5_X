@@ -20,7 +20,7 @@ class holy_help
 		class background: Life_RscPicture
 		{
 			idc = -1;
-			text = "textures\holy_helpBACK.jpg";
+			text = "images\holy_helpBACK.jpg";
 			x = 0.278281 * safezoneW + safezoneX;
 			y = 0.2558 * safezoneH + safezoneY;
 			w = 0.443438 * safezoneW;

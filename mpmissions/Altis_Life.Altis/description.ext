@@ -10,7 +10,7 @@ disableChannels[]={2};
 author = "Tonic | Edit by Nachtwerk";
 onLoadName = "Nachtwerk - Altis Life";
 onLoadMission = "Altis Life [4.4R3]";
-loadScreen = "skins\logo.jpg";
+loadScreen = "images\logo.jpg";
 disabledAI = 1;
 
 class CfgServer {
