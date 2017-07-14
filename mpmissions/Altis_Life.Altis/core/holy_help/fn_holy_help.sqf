@@ -57,8 +57,11 @@ switch(_lbauswahl) do {
 	};
 	case 1: {
 		_desctext = "Diese Links werden euch helfen: <br/>
+		<br/>
 		-Forum: http://nachtwerk-community.de/arma/wcf/ <br/>
+		<br/>
 		-TS3 Ip: 144.76.83.227 <br/>
+		<br/>
 		-Regelwerk:  http://nachtwerk-community.de/arma/wcf/index.php?thread/2-altis-life-regeln/ <br/>";
 	};
 	case 2: {
@@ -100,7 +103,7 @@ switch(_lbauswahl) do {
 		Schildkröten: Naturschutzgebiet -> Schildkrötenhändler <br/>
 		Korallen: Korallenriff -> Korallenketten -> Dealer <br/>
 		Uran: Urangrube -> Uranproduktion 1 -> Uranproduktion 2 -> Uranproduktion 3 -> Uranproduktion 4 -> Uranhändler <br/>	
-		<br/><br/>
+		<br/>
 		Plutonium: Uran 4 -> Plutoniumproduktion <br/>
 		Brennstäbe: Plutonium -> Kraftwerk Athira -> Kraftwerk Kavala <br/>
 		Bombenköpfe: 8 Eisenbarren + 8 Aluminiumbarren -> Schwarzmarkt <br/>

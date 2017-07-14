@@ -112,7 +112,7 @@ for "_i" from 0 to 1 step 0 do {
 			if (!isNull(unitBackpack player)) then {
 				(unitBackpack player) setObjectTextureGlobal [0, ""]; //Macht Rucks?cke unsichtbar
 			};
-			uiSleep 10;
+			Sleep 10;
 		};
 	};
 };
