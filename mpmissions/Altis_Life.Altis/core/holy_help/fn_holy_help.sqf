@@ -42,7 +42,7 @@ switch(_lbauswahl) do {
 		-Yell Sirene: Ö <br/>-EMP Konsole: K <br/>
 		-Schranken öffnen: O <br/>
 		-Spielerskin aktualisieren: ^ <br/>
-		-Wanted Liste: Shift + 2/3 <br/>"
+		-Wanted Liste: Shift + 2/3 <br/>
 		<br/><br/>
 		Für alle Spieler:<br/>
 		-Hitmarker Implantat de/-aktivieren: STRG + Shift + H <br/>
