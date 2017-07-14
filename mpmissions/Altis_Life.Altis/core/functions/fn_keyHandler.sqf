@@ -387,7 +387,7 @@ switch (_code) do {
 	};
 	
 	
-	//COp Skinrefresh
+	//Cop Skinrefresh
 	case 41: 
 	{ 
 		if (playerside isEqualTo west) then

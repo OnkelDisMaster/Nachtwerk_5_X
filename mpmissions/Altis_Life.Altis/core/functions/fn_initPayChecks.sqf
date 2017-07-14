@@ -61,6 +61,6 @@ switch (playerSide) do
 		};
 	*/
 		if (license_civ_elite) then {life_paycheck = life_paycheck + 4500;};
-		if (license_civ_implantat_paycheck) then {life_paycheck = life_paycheck + 15000;};
+		if (license_civ_implantat_paycheck) then {life_paycheck = life_paycheck + 9000;};
 	};	
 };

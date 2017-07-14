@@ -107,6 +107,7 @@ life_maxWeight = 24;
 		if((backpack player) isEqualTo "B_ViperHarness_hex_F") then { _load = 120; };
 		if((backpack player) isEqualTo "B_ViperHarness_khk_F") then { _load = 120; };
 		if((backpack player) isEqualTo "B_ViperHarness_oli_F") then { _load = 120; };
+		if (license_civ_implantat_backpack) then {_load = _load + 30;};
         life_maxWeight = life_minWeight + _load;
         waitUntil {(backpack player) isEqualTo ""};
         if((backpack player) isEqualTo "") then {

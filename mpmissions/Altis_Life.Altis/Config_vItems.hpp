@@ -287,7 +287,7 @@ class VirtualItems {
 	class implantatNormal {
         variable = "implantatNormal";
         displayName = "STR_Item_implantat_normal";
-        weight = 60;
+        weight = 50;
         buyPrice = -1;
         sellPrice = 265000;
         illegal = true;
