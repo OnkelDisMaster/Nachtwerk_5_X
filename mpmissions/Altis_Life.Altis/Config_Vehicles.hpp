@@ -48,7 +48,7 @@ class CarShops {
             { "B_Truck_01_box_F", { "", "", -1 } },
             { "O_Truck_03_transport_F", { "", "", -1 } },
             { "O_Truck_03_covered_F", { "", "", -1 } },
-			{ "O_Truck_03_fuel_F", { "", "", -1 } }
+			{ "O_Truck_03_fuel_F", { "", "", -1 } },
 			{ "O_Truck_03_device_F", { "", "", -1 } },
 			{ "O_Truck_03_ammo_F", { "", "", -1 } }
         };
