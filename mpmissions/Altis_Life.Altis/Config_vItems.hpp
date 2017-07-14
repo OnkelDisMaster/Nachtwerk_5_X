@@ -1118,7 +1118,6 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "";
-		processedItem = "atombombe";
     };
 	
 	class atombombe {
