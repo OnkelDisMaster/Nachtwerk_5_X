@@ -43,14 +43,14 @@ class CarShops {
             { "I_Truck_02_covered_F", { "", "", -1 } },
             { "B_Truck_01_transport_F", { "", "", -1 } },
             { "B_Truck_01_covered_F", { "", "", -1 } },
-    //      { "B_Truck_01_ammo_F", { "", "", -1 } },
+            { "B_Truck_01_ammo_F", { "", "", -1 } },
             { "B_Truck_01_fuel_F", { "", "", -1 } },
-    //      { "B_Truck_01_box_F", { "", "", -1 } },
+            { "B_Truck_01_box_F", { "", "", -1 } },
             { "O_Truck_03_transport_F", { "", "", -1 } },
             { "O_Truck_03_covered_F", { "", "", -1 } },
 			{ "O_Truck_03_fuel_F", { "", "", -1 } }
-	//		{ "O_Truck_03_device_F", { "", "", -1 } },
-	//		{ "O_Truck_03_ammo_F", { "", "", -1 } }
+			{ "O_Truck_03_device_F", { "", "", -1 } },
+			{ "O_Truck_03_ammo_F", { "", "", -1 } }
         };
     };
 
@@ -161,11 +161,6 @@ class CarShops {
     class cop_air {		//Lizenz     cAir
         side = "cop";
         vehicles[] = {
-            //{ "B_Heli_Light_01_F", { "", "", -1 } },
-            //{ "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 3 } },
-			//{ "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 2 } },
-			//{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 2 } }
-			
 			{ "B_Heli_Light_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "I_Heli_light_03_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
 			{ "O_Heli_Light_02_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
@@ -181,12 +176,7 @@ class CarShops {
 
     class cop_ship {
         side = "cop";
-        vehicles[] = {
-            //{ "B_Boat_Transport_01_F", { "", "", -1 } },
-            //{ "C_Boat_Civil_01_police_F", { "", "", -1 } },
-            //{ "B_Boat_Armed_01_minigun_F", { "life_coplevel", "SCALAR", 3 } },
-            //{ "B_SDV_01_F", { "", "", -1 } }
-			
+        vehicles[] = {			
 			{ "B_Boat_Transport_01_F", { "", "", -1 } },
             { "C_Boat_Civil_01_police_F", { "", "", -1 } },
             { "C_Boat_Transport_02_F", { "", "", -1 } }, //Apex DLC
