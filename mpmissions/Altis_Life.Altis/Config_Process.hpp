@@ -222,7 +222,7 @@ class ProcessAction {
         MaterialsGive[] = {{"uranI",1}};
         Text = "STR_Process_uranerz";
         //ScrollText = "Harvest weed";
-        NoLicenseCost = 42000;
+        NoLicenseCost = 0;
 	};
 	
 	class uranII {
@@ -230,7 +230,7 @@ class ProcessAction {
         MaterialsGive[] = {{"uranII",1}};
         Text = "STR_Process_uranI";
         //ScrollText = "Harvest weed";
-        NoLicenseCost = 42000;
+        NoLicenseCost = 0;
 	};
 	
 	class uranIII {
