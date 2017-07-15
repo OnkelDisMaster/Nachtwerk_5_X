@@ -22,7 +22,7 @@ if (vehicle player != _robber) exitWith { hintSilent "Steig aus deinem Fahrzeug 
 if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hintSilent "HaHa, Du hast keine Waffe! Verschwinde Hier!" };
 
-//if(_cops < 3) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hintSilent "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";};
+if(_cops < 3) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hintSilent "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";};
 
 life_Raub = true;
 publicVariable "life_Raub";

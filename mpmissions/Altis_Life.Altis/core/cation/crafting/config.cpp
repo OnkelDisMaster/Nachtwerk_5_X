@@ -148,8 +148,13 @@ class Cation_Crafting {
 		{
             "mikroprozessorp", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"mikroprozessoren","Implantate"} //Variablennamen der verfügbaren Kategorien
-        },	
+            {"mikroprozessoren"} //Variablennamen der verfügbaren Kategorien
+        },
+		{
+            "Implantat", //Variablenname
+            "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
+            {"Implantate"} //Variablennamen der verfügbaren Kategorien
+        },		
 		{
             "atombombenp", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)

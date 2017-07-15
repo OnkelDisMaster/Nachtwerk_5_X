@@ -15,7 +15,6 @@ if (isNil "life_Raub") then {life_Raub = false; publicVariable "life_Raub";};
 if (life_Raub) exitWith {titleText ["***Momentan findet bereits ein aktiver Raub statt, \n Versuche es später nocheinmal!***","PLAIN"];};
 
 
-if !(_kassa) then { _kassa = 1000; };
 if (_rip) exitWith { hintSilent "Der Überfall hatte bereits stattgefunden!" };
 if (vehicle player != _robber) exitWith { hintSilent "Steig aus deinem Fahrzeug aus!" };
 
@@ -23,10 +22,10 @@ if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hintSilent "HaHa, Du hast keine Waffe! Verschwinde Hier!" };
 
 _cops = (west countSide playableUnits);
-/*if(_cops < 4) exitWith{
+if(_cops < 4) exitWith{
     [_vault,-1] remoteExecCall ["disableSerialization;"];
     hint "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";
-};	*/
+};	
 
 life_Raub = true;
 publicVariable "life_Raub";
@@ -55,7 +54,7 @@ if(_rip) then
 {
 while{true} do
 {
-uiSleep 5;
+Sleep 5;
 _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Raub im Gange, entferne dich nicht weiter!(%1%2)...",round(_cP * 100),"%"];
@@ -65,7 +64,7 @@ _Pos = position player; // by ehno: get player pos
 				                "Marker200" setMarkerText "!! Bankfilialenüberfall !!";
 				                "Marker200" setMarkerType "mil_warning";			
 if(_cP >= 1) exitWith {deleteMarker "Marker200"; life_Raub = false;};
-
+};
 if!(alive _robber) exitWith { _rip = false; life_Raub = false; deleteMarker "Marker200";};
 if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hintSilent "Bleibe innerhalb von (10m) um die Tanke auszurauben! - Jetzt ist die Kasse geschlossen."; 5 cutText ["","PLAIN"]; _rip = false; };
 5 cutText ["","PLAIN"];
