@@ -66,23 +66,23 @@ _LogAdminActions = true;	/* true or false */
 _enableIngameLogs = true;	/* true or false */
 
 /* Use infiSTAR Tild (CommandingMenu) */
-_useTildMenu = false;	/* true or false */
+_useTildMenu = true;	/* true or false */
 
 /* "_startAsNormal": if you add admin UIDs in here as well, they will start as almost "normal" player instead of with admin menu and such. */
 _startAsNormal =
 [
-	'0','0','0'
+	'76561198091201110','76561198079472612','0'
 ];
 /* if one of the admins with the UIDs in "_startAsNormal" uses the !admin command to login as admin, it will be announced to ANYONE on the server if "_announce_adminstate_changed" is true. */
-_announce_adminstate_changed = false;	/* true or false */
+_announce_adminstate_changed = true;	/* true or false */
 _use_html_load_on_adminmenu = true;		/* default and recommended is TRUE. infiSTAR updates and news are announced in the top right corner when you open the AdminMenu if this is true! */
 
 
 _adminUIDandAccess =
 [
 	[
-		/*ODM, ElekDrix, Valle */ 
-		['76561198031337441','76561198023941976','76561198165164593'],	// Superadmins
+		/*ODM, ElekDrix, Valle, Valle 2 */ 
+		['76561198031337441','76561198023941976','76561198165164593','76561198122518534'],	// Superadmins
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -106,8 +106,8 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		// Darius, Sascha, Valle 2 
-		['76561198061099914','76561198093687897','76561198122518534'],	// Admins, Mods
+		// Darius, Sascha, Ente 
+		['76561198061099914','76561198093687897','76561198125513959'],	// Admins, Mods
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -122,7 +122,7 @@ _adminUIDandAccess =
 			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
 			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
 			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
-			'Disable Announces','Show FPS','Give All Licenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
+			'Disable Announces','Show FPS','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
 			'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
 			'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
 			'Request Steam Name','Dump unique client variables',
@@ -131,8 +131,8 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		// Salvatore, Ente
-		['76561198067388481','76561198125513959'],	// Supporter
+		// Salvatore, Jauch, Reich
+		['76561198067388481','76561198091201110','76561198079472612'],	// Supporter
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
@@ -143,7 +143,7 @@ _adminUIDandAccess =
 			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
 			'DeadPlayer Marker',
 			'Vehboost',
-			'Give All Licenses','Call EMP','Mass Message','DayTime','NightTime',
+			'Call EMP','Mass Message','DayTime','NightTime',
 			'Request Steam Name','Dump unique client variables',
 			'Restrain','Unrestrain'
 		]
