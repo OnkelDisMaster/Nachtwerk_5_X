@@ -6,7 +6,7 @@
     Description:
     All survival? things merged into one thread.
 */
-private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos","_fatigue"];
+private["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos","_fatigue","_load"];
 
 switch (playerside) do 
 {
@@ -92,7 +92,7 @@ for "_i" from 0 to 1 step 0 do {
         life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");  
         _bp = backpack player;  
     } else {  
-        if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {  
+        if (!(backpack player isEqualTo "") && {!(backpack player isEqualTo _bp)}) then {  
             _bp = backpack player;
 			_load = 0;
 			if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
