@@ -87,6 +87,42 @@ for "_i" from 0 to 1 step 0 do {
         };
     };
 
+	 /* Adjustment of carrying capacity based on backpack changes */  
+    if(EQUAL(backpack player,"")) then {  
+        life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");  
+        _bp = backpack player;  
+    } else {  
+        if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {  
+            _bp = backpack player;
+			_load = 0;
+			if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
+			if((backpack player) isEqualTo "B_AssaultPack_Kerry") then { _load = 30; };
+			if((backpack player) isEqualTo "B_AssaultPack_blk") then { _load = 30; };
+			if((backpack player) isEqualTo "B_AssaultPack_cbr") then { _load = 30; };            
+			if((backpack player) isEqualTo "B_AssaultPack_sgg") then { _load = 30; };
+			if((backpack player) isEqualTo "B_Bergen_blk") then { _load = 50; };
+			if((backpack player) isEqualTo "B_TacticalPack_oli") then { _load = 50; };
+			if((backpack player) isEqualTo "B_Bergen_sgg") then { _load = 50; };
+			if((backpack player) isEqualTo "B_Bergen_rgr") then { _load = 50; };            
+			if((backpack player) isEqualTo "B_AssaultPack_mcamo_AT") then { _load = 70; };
+			if((backpack player) isEqualTo "B_Kitbag_cbr") then { _load = 70; };
+			if((backpack player) isEqualTo "B_Kitbag_sgg") then { _load = 70; };            
+			if((backpack player) isEqualTo "B_Carryall_khk") then { _load = 80; };
+			if((backpack player) isEqualTo "B_Carryall_oli") then { _load = 80; };            
+			if((backpack player) isEqualTo "B_Carryall_cbr") then { _load = 80; };		
+			if((backpack player) isEqualTo "B_Bergen_hex_F") then { _load = 100; };
+			if((backpack player) isEqualTo "B_Bergen_mcamo_F") then { _load = 100; };
+			if((backpack player) isEqualTo "B_Bergen_dgtl_F") then { _load = 100; };		
+			if((backpack player) isEqualTo "B_ViperHarness_ghex_F") then { _load = 130; };
+			if((backpack player) isEqualTo "B_ViperHarness_blk_F") then { _load = 130; };
+			if((backpack player) isEqualTo "B_ViperHarness_hex_F") then { _load = 120; };
+			if((backpack player) isEqualTo "B_ViperHarness_khk_F") then { _load = 120; };
+			if((backpack player) isEqualTo "B_ViperHarness_oli_F") then { _load = 120; };
+			if (license_civ_implantat_backpack) then {_load = _load + 30;};	
+            life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + _load;  
+        };  
+    };
+	
     /* Travelling distance to decrease thirst/hunger which is captured every second so the distance is actually greater then 650 */
     if (!alive player) then {_walkDis = 0;} else {
         _curPos = visiblePosition player;

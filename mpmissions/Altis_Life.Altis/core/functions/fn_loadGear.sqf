@@ -76,46 +76,6 @@ if (!isNil {(_this select 0)}) then {
 life_maxWeight = 24;
 
 
-/* Rucksack CFG */
-[] spawn
-{
-    while{true} do
-    {
-        waitUntil {(backpack player) != ""};
-        _bp = (backpack player);
-        _load = 25;
-        if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
-        if((backpack player) isEqualTo "B_AssaultPack_Kerry") then { _load = 30; };
-        if((backpack player) isEqualTo "B_AssaultPack_blk") then { _load = 30; };
-        if((backpack player) isEqualTo "B_AssaultPack_cbr") then { _load = 30; };            
-        if((backpack player) isEqualTo "B_AssaultPack_sgg") then { _load = 30; };
-        if((backpack player) isEqualTo "B_Bergen_blk") then { _load = 50; };
-        if((backpack player) isEqualTo "B_TacticalPack_oli") then { _load = 50; };
-        if((backpack player) isEqualTo "B_Bergen_sgg") then { _load = 50; };
-        if((backpack player) isEqualTo "B_Bergen_rgr") then { _load = 50; };            
-        if((backpack player) isEqualTo "B_AssaultPack_mcamo_AT") then { _load = 70; };
-        if((backpack player) isEqualTo "B_Kitbag_cbr") then { _load = 70; };
-        if((backpack player) isEqualTo "B_Kitbag_sgg") then { _load = 70; };            
-        if((backpack player) isEqualTo "B_Carryall_khk") then { _load = 80; };
-        if((backpack player) isEqualTo "B_Carryall_oli") then { _load = 80; };            
-        if((backpack player) isEqualTo "B_Carryall_cbr") then { _load = 80; };		
-		if((backpack player) isEqualTo "B_Bergen_hex_F") then { _load = 100; };
-		if((backpack player) isEqualTo "B_Bergen_mcamo_F") then { _load = 100; };
-		if((backpack player) isEqualTo "B_Bergen_dgtl_F") then { _load = 100; };		
-		if((backpack player) isEqualTo "B_ViperHarness_ghex_F") then { _load = 130; };
-		if((backpack player) isEqualTo "B_ViperHarness_blk_F") then { _load = 130; };
-		if((backpack player) isEqualTo "B_ViperHarness_hex_F") then { _load = 120; };
-		if((backpack player) isEqualTo "B_ViperHarness_khk_F") then { _load = 120; };
-		if((backpack player) isEqualTo "B_ViperHarness_oli_F") then { _load = 120; };
-		if (license_civ_implantat_backpack) then {_load = _load + 30;};
-        life_maxWeight = life_minWeight + _load;
-        waitUntil {(backpack player) isEqualTo ""};
-        if((backpack player) isEqualTo "") then {
-            life_maxWeight = life_minWeight;
-        };
-    };
-};
-
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if (!(_prim isEqualTo "")) then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if (!(_seco isEqualTo "")) then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
