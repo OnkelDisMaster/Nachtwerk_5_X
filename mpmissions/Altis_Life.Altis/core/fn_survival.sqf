@@ -92,7 +92,7 @@ for "_i" from 0 to 1 step 0 do {
         life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");  
         _bp = backpack player;  
     } else {  
-        if (!(backpack player isEqualTo "") && {!(backpack player isEqualTo _bp)}) then {  
+        if (!(backpack player isEqualTo "")) then {  
             _bp = backpack player;
 			_load = 0;
 			if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
