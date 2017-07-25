@@ -73,7 +73,7 @@ if (!isNil {(_this select 0)}) then {
     [true,(_x select 0),(_x select 1)] call life_fnc_handleInv;
 } forEach (_yItems);
 
-/*
+
 if((backpack player) isEqualTo "") then {  
         life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");    
     } else {  
@@ -106,7 +106,7 @@ if((backpack player) isEqualTo "") then {
             life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + _load;  
         };  
     };
-*/
+
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if (!(_prim isEqualTo "")) then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if (!(_seco isEqualTo "")) then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
