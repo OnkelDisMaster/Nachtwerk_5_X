@@ -11,10 +11,10 @@ _unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 disableSerialization;
 
 if (!isNull player) then {
-	if ((player != _unit) && life_hitmarker) then
-	{
+//	if ((player != _unit) && life_hitmarker) then
+//	{
 			disableSerialization;
 			"someLayer" cutRsc ["Life_hitmarker", "PLAIN"];
 			_display = uiNamespace getVariable "Life_hitmarker";
-	};
+//	};	
 };
