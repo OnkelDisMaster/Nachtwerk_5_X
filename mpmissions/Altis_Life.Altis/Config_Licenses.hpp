@@ -38,7 +38,7 @@ class Licenses {
     class pilot {
         variable = "pilot";
         displayName = "STR_License_Pilot";
-        price = 150000;
+        price = 250000;
         illegal = false;
         side = "civ";
     };

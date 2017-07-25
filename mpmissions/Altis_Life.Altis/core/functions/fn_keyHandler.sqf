@@ -65,7 +65,7 @@ switch (_code) do {
         };
     };
 
-    //Surrender (Shift + G) case 34
+    //Surrender (Shift + B)
     case 48: {
 		if (_shift) then {
 			if (player getVariable ["playerSurrender",false]) then {
