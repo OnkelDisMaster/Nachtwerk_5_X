@@ -69,11 +69,15 @@ switch (_code) do {
     case 34: {
 		if (_shift) then {
 			if (player getVariable ["playerSurrender",false]) then {
+				hint "test1";
 				player setVariable ["playerSurrender",false,true];
             } else {
                 [] spawn life_fnc_surrender;
+				hint "test2";
             };
             _handled = true;
+			sleep 1;
+			hint "test3";
         };
     };	
 
