@@ -67,14 +67,14 @@ switch (_code) do {
 
     //Surrender (Shift + G)
     case 34: {
-         if (_shift) then {
- +            if (player getVariable ["playerSurrender",false]) then {
- +                player setVariable ["playerSurrender",false,true];
- +            } else {
- +                [] spawn life_fnc_surrender;
- +            };
- +            _handled = true;
- +        };
+		if (_shift) then {
+			if (player getVariable ["playerSurrender",false]) then {
+				player setVariable ["playerSurrender",false,true];
+            } else {
+                [] spawn life_fnc_surrender;
+            };
+            _handled = true;
+        };
     };	
 
     //Map Key
