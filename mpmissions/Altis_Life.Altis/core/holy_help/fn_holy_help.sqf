@@ -67,7 +67,7 @@ switch(_lbauswahl) do {
 	case 2: {
 		_desctext = "Allgemeine Lizenzen: <br/>
 		Führerschein:		1000<br/>
-		LKW Schein:			25k<br/>		
+		LKW Schein:			25k<br/>
         Bootsschein:		25k<br/>
 		Pilotenschein:		250k<br/>
 		Waffenschein:		80k<br/>
