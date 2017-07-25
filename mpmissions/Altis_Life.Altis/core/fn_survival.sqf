@@ -59,7 +59,6 @@ _fnc_water = {
 _foodTime = time;
 _waterTime = time;
 _walkDis = 0;
-_bp = "";
 _lastPos = visiblePosition player;
 _lastPos = (_lastPos select 0) + (_lastPos select 1);
 _lastState = vehicle player;
@@ -88,12 +87,10 @@ for "_i" from 0 to 1 step 0 do {
     };
 
 	 /* Adjustment of carrying capacity based on backpack changes */  
-    if(EQUAL(backpack player,"")) then {  
-        life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");  
-        _bp = backpack player;  
+    if((backpack player) isEqualTo "") then {  
+        life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");    
     } else {  
         if (!(backpack player isEqualTo "")) then {  
-            _bp = backpack player;
 			_load = 0;
 			if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
 			if((backpack player) isEqualTo "B_AssaultPack_Kerry") then { _load = 30; };
