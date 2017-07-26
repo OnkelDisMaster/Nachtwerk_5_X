@@ -311,7 +311,7 @@ class Licenses {
 	class boeller {
         variable = "boeller";
         displayName = "STR_License_Boeller";
-        price = 58000;
+        price = 78000;
         illegal = true;
         side = "civ";
     };
@@ -319,7 +319,7 @@ class Licenses {
 	class weed {
         variable = "weed";
         displayName = "STR_License_Weed";
-        price = 68000;
+        price = 168000;
         illegal = true;
         side = "civ";
     };
@@ -327,7 +327,7 @@ class Licenses {
 	class meth {
         variable = "meth";
         displayName = "STR_License_Meth";
-        price = 168000;
+        price = 240000;
         illegal = true;
         side = "civ";
     };
@@ -335,7 +335,7 @@ class Licenses {
 	class hero {
         variable = "hero";
         displayName = "STR_License_Hero";
-        price = 288000;
+        price = 298000;
         illegal = true;
         side = "civ";
     };
