@@ -107,8 +107,8 @@ class Life_Settings {
 
     /* Search & Seizure System Configurations */
     seize_exempt[] = { "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg" }; //Arma items that will not get seized from player inventories
-    seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
-    seize_vest[] = { "V_TacVest_blk_POLICE" }; //Any specific vests you want to be seized from players
+    seize_uniform[] = { "U_Rangemaster","U_B_SpecopsUniform_sgg","U_B_CombatUniform_mcam_vest","U_B_CombatUniform_mcam","U_B_GEN_Soldier_F","U_B_CombatUniform_mcam_worn","U_B_GEN_Commander_F","U_I_HeliPilotCoveralls","U_B_T_FullGhillie_tna_F","U_B_FullGhillie_lsh","U_B_FullGhillie_sard","U_B_FullGhillie_ard","U_O_FullGhillie_lsh","U_O_FullGhillie_sard","U_O_FullGhillie_ard","U_I_FullGhillie_ard","U_O_GhillieSuit"}; //Any specific uniforms you want to be seized from players
+    seize_vest[] = { "V_Rangemaster_belt","V_RebreatherB","V_TacVest_blk_POLICE","V_TacVestIR_blk","V_PlateCarrier1_blk","V_PlateCarrierSpec_blk","V_PlateCarrierH_CTRG","V_PlateCarrier1_rgr_noflag_F","V_PlateCarrierGL_mtp","V_PlateCarrier2_rgr_noflag_F"}; //Any specific vests you want to be seized from players
     seize_headgear[] = { "H_Cap_police" }; //Any hats or helmets you want seized from players
     seize_minimum_rank = 2; //Required minimum CopLevel to be able to seize items from players
 

@@ -14,9 +14,9 @@ switch (_state) do {
     case 0: {
         missionNamespace setVariable [LICENSE_VARNAME("rebel","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("driver","civ"),false];
-        missionNamespace setVariable [LICENSE_VARNAME("heroin","civ"),false];
+        missionNamespace setVariable [LICENSE_VARNAME("hero","civ"),false];
         missionNamespace setVariable [LICENSE_VARNAME("weed","civ"),false];
-        missionNamespace setVariable [LICENSE_VARNAME("cocaine","civ"),false];
+        missionNamespace setVariable [LICENSE_VARNAME("koks","civ"),false];
     };
 
     //Jail licenses
@@ -43,5 +43,19 @@ switch (_state) do {
             missionNamespace setVariable [LICENSE_VARNAME("gun","civ"),false];
             hint localize "STR_Civ_LicenseRemove_2";
         };
+    };
+	
+	//All Illegal
+	case 4: {
+        missionNamespace setVariable [LICENSE_VARNAME("rebel","civ"),false];
+        missionNamespace setVariable [LICENSE_VARNAME("hero","civ"),false];
+        missionNamespace setVariable [LICENSE_VARNAME("weed","civ"),false];
+        missionNamespace setVariable [LICENSE_VARNAME("koks","civ"),false];
+		missionNamespace setVariable [LICENSE_VARNAME("tabak","civ"),false];
+		missionNamespace setVariable [LICENSE_VARNAME("boeller","civ"),false];
+		missionNamespace setVariable [LICENSE_VARNAME("korallen","civ"),false];
+		missionNamespace setVariable [LICENSE_VARNAME("uran","civ"),false];
+		missionNamespace setVariable [LICENSE_VARNAME("plutonium","civ"),false];
+		missionNamespace setVariable [LICENSE_VARNAME("brennstab","civ"),false];
     };
 };

@@ -119,15 +119,6 @@ switch (_code) do {
 				[] spawn life_fnc_spikeStrip;
 			};
 		};
-	/*	
-		//Shift Ü GPS tracker
-		if ((life_inv_gpstracker > 0) && (_ctrlKey)) then {			
-			if(([false,"gpstracker",1] call life_fnc_handleInv)) then
-			{
-				[cursorObject] spawn life_fnc_gpsTracker;
-			};
-		};
-	*/
 	};
 
 	
@@ -223,7 +214,7 @@ switch (_code) do {
 			call bf_fnc_lights;
 			_handled = true;
 			};
-				if (_shift && {!_ctrlKey} && {!isNull objectParent player} && {(driver _veh) isEqualTo player} && {playerSide isEqualTo west}) then {
+				if (_shift && {!_ctrlKey} && {!isNull objectParent player} && {(driver _veh) isEqualTo player} && (playerSide in [west,independent])) then {
 				if (!isNull (_veh getVariable ["lightObj",objNull])) then {
 				if (_veh getVariable ["lights",false]) then {
 				_veh setVariable ["lights",false,true];
