@@ -81,8 +81,8 @@ _use_html_load_on_adminmenu = true;		/* default and recommended is TRUE. infiSTA
 _adminUIDandAccess =
 [
 	[
-		/*ODM, ElekDrix, Valle, Valle 2 */ 
-		['76561198031337441','76561198023941976','76561198165164593','76561198122518534'],	// Superadmins
+		/*ODM, ElekDrix, Valle, Valle 2, Daniel */ 
+		['76561198031337441','76561198023941976','76561198165164593','76561198122518534','76561198001840133'],	// Superadmins
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',

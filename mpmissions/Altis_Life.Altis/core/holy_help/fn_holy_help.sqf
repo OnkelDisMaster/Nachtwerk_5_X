@@ -40,7 +40,7 @@ switch(_lbauswahl) do {
 		Für Polizisten:<br/>
 		-Nagelbänder: Ü <br/>
 		-Yell Sirene: Ö <br/>-EMP Konsole: K <br/>
-		-Schranken öffnen: O <br/>
+		-Schranken öffnen: Ä <br/>
 		-Spielerskin aktualisieren: ^ <br/>
 		-Wanted Liste: Shift + 2/3 <br/>
 		<br/><br/>
