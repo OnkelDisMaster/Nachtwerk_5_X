@@ -38,9 +38,6 @@ if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
 	player assignItem "ItemGPS";
 	player addItem "ToolKit";
 	player addItem "Medikit";
-	[true,defibrillator,1] call life_fnc_handleInv;
-	[true,fuelFull,1] call life_fnc_handleInv;
-	[true,schmerzmittel,3] call life_fnc_handleInv;
 
 [["blacklisted ground/sea vehicles"],["B_Heli_Light_01_F"]] execVM "core\vehicle\Lifting\lift_init.sqf";
 [] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
