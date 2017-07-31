@@ -63,7 +63,7 @@ switch (playerside) do
 		if(count crew _curTarget isEqualTo 0) then {_Btn4 ctrlEnable false;};
 		};
 		
-		if((typeOf _curTarget isEqualTo "O_Truck_03_device_F") or (typeOf _curTarget isEqualTo "O_Truck_03_device_ghex_F")) then {
+		if((typeOf _curTarget isEqualTo "O_Truck_03_device_F") or (typeOf _curTarget isEqualTo "O_T_Truck_03_device_ghex_F")) then {
 		_Btn3 ctrlSetText localize "STR_vInAct_DeviceMine";
 		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deviceMine";
 		if(!isNil {(_curTarget getVariable "mining")} OR !local _curTarget && {_curTarget in life_vehicles}) then {_Btn3 ctrlEnable false;};
