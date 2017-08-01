@@ -23,7 +23,7 @@ emergLight_vehicles = [];
 {
 	while {true} do 
 	{
-		skeep (60*5);
+		sleep (60*5);
 		[] spawn TON_fnc_randomDealer;
 	};
 };
