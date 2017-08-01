@@ -282,6 +282,7 @@ class Life_Client_Core {
 		class seatbelt {};
 		class initPayChecks {};
 		class hitMarker {};
+		class randomDealer {};
     };
 
     class Gangs    {
