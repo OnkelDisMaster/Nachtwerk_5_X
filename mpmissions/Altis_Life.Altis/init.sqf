@@ -24,7 +24,7 @@ emergLight_vehicles = [];
 	while {true} do 
 	{
 		sleep (60*5);
-		[] spawn TON_fnc_randomDealer;
+		[] spawn life_fnc_randomDealer;
 	};
 };
 
