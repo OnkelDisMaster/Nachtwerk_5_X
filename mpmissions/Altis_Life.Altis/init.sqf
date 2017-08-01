@@ -19,4 +19,13 @@ emergLight_vehicles = [];
         emergLight_vehicles pushBack (configName _x);
 } forEach ("true" configClasses (missionConfigFile >> "emergLightVehicles"));
 
+[] spawn 
+{
+	while {true} do 
+	{
+		skeep (60*5);
+		[] spawn TON_fnc_randomDealer;
+	};
+};
+
 StartProgress = true;
