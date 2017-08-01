@@ -16,6 +16,7 @@ if(life_sitting) then{
     _unit setDir ((getDir _chair) - 180); 
     //_unit setpos [getpos _unit select 0, getpos _unit select 1,((getpos _unit select 2) +1)];
 	_unit setPosATL (getPosATL _chair);
-	[_unit,"Crew",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+	[player,"Crew",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+	player switchMove "Crew";
     life_sitting = true;
 };
