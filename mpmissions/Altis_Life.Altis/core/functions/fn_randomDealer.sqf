@@ -43,7 +43,7 @@ _n = 0;
  } foreach playableunits;
  if !(_handled) then {
  _deal setpos (_auswahlPosi select _forEachIndex);
- (_deal_marker select _n) setMarkerPos (getPos _deal);
+ (_deal_marker select _n) setMarkerPos (_auswahlPosi select _forEachIndex);
  //hint parseText format ["<t color='#ff0000'><t size='2'><t align='center'>Dealer ist untergetaucht!"];
  _msg = "Die Dealer sind untergetaucht!";
  [1, _msg] remoteExecCall ["life_fnc_broadcast",-2];
