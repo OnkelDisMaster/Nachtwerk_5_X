@@ -20,10 +20,39 @@ for "_i" from 1 to _doors do {
 };
 if (_door isEqualTo 0) exitWith {hint localize "STR_Cop_NotaDoor"}; //Not near a door to be broken into.
 
+switch (typeOf _b) do 
+{
+	case "Land_Dome_Small_F": {	
+		if (_b animationPhase format["door_%1A_move",_door] isEqualTo 0) then {
+			_b animate[format["door_%1A_move",_door],1];
+		} else {
+			_b animate[format["door_%1A_move",_door],0];
+		};
+		if (_b animationPhase format["door_%1B_move",_door] isEqualTo 0) then {
+			_b animate[format["door_%1B_move",_door],1];
+		} else {
+			_b animate[format["door_%1B_move",_door],0];
+		};
+	};
+    case "Land_Dome_Big_F": {
+		if (_b animationPhase format["door_%1A_move",_door] isEqualTo 0) then {
+			_b animate[format["door_%1A_move",_door],1];
+		} else {
+			_b animate[format["door_%1A_move",_door],0];
+		};
+		if (_b animationPhase format["door_%1B_move",_door] isEqualTo 0) then {
+			_b animate[format["door_%1B_move",_door],1];
+		} else {
+			_b animate[format["door_%1B_move",_door],0];
+		};
+	};	
+};
+
 if (_b animationPhase format["door_%1_rot",_door] isEqualTo 0) then {
     _b animate[format["door_%1_rot",_door],1];
 } else {
     _b animate[format["door_%1_rot",_door],0];
 };
+
 
 closeDialog 0;
