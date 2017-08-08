@@ -71,10 +71,10 @@ DYNMARKET_Items_Groups =
 			["zigaretten",-1,980,3500],
 			["korallenketten",-1,9800,28200],
 			["meth",-1,2170,5030],
-			["uranIV",-1,6000,30000],
+			["uranIV",-1,6000,40000],
 			["plutonium",-1,7000,33000],
 			["brennstab",-1,22250,42000],
-			["atombombe",-1,455000,8000000],
+			["atombombe",-1,455000,6500000],
 			["mikroProzessor",-1,27500,50500],
 			["implantatNormal",-1,285500,500500]
 		],
