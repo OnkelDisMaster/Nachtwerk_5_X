@@ -39,9 +39,9 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 switch (typeOf _building) do {
-	case "Land_Dome_Small_F": {_cpRate = 0.005;};
-    case "Land_Dome_Big_F": {_cpRate = 0.008;};
-    case "Land_Research_house_V1_F": {_cpRate = 0.004;};
+	case "Land_Dome_Small_F": {_cpRate = 0.01;};
+    case "Land_Dome_Big_F": {_cpRate = 0.015;};
+    case "Land_Research_house_V1_F": {_cpRate = 0.08;};
     default {_cpRate = 0.08;}
 };
 
@@ -71,6 +71,10 @@ if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "ST
 life_action_inUse = false;
 
 _building animate [format["door_%1_rot",_door],0];
+_building animate [format["door_1A_move",_door],0];
+_building animate [format["door_1B_move",_door],0];
+_building animate [format["door_2A_move",_door],0];
+_building animate [format["door_2B_move",_door],0];
 _building setVariable [format["bis_disabled_Door_%1",_door],1,true]; //Lock the door.
 
 _locked = true;
