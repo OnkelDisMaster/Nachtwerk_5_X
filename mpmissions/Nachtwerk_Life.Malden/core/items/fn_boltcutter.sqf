@@ -9,7 +9,6 @@
 private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui"];
 _building = param [0,ObjNull,[ObjNull]];
 
-if (isNull _building) exitWith {};
 if (!(_building isKindOf "House_F")) exitWith {hint localize "STR_ISTR_Bolt_NotNear";};
 if (((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building || (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building || (nearestObject [[12018.057,4361.617,6.054],"Land_Dome_Small_F"]) == _building || (nearestObject [[12017.795,4363.207,6.050],"Land_Research_house_V1_F"]) == _building) && (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops")))) exitWith {
     hint format [localize "STR_Civ_NotEnoughCops",(LIFE_SETTINGS(getNumber,"minimum_cops"))]

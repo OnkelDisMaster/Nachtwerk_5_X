@@ -43,7 +43,6 @@ switch (true) do {
 	
     case (_item isEqualTo "boltcutter"): {
         [cursorObject] spawn life_fnc_boltcutter;
-		hint format ["Objekt: %1",cursorObject];
         closeDialog 0;
     };
 	
