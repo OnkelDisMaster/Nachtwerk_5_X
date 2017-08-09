@@ -28,6 +28,7 @@ for "_i" from 1 to _doors do {
 if (_door isEqualTo 0) exitWith {hint localize "STR_Cop_NotaDoor"}; //Not near a door to be broken into.
 if ((_building getVariable [format["bis_disabled_Door_%1",_door],0]) isEqualTo 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
 
+hint "Test";
 if ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building || (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building || (nearestObject [[12018.057,4361.617,6.054],"Land_Dome_Small_F"]) == _building || (nearestObject [[12017.795,4363.207,6.050],"Land_Research_house_V1_F"]) == _building) then {
     [[1,2],"STR_ISTR_Bolt_AlertFed",true,[]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 } else {
