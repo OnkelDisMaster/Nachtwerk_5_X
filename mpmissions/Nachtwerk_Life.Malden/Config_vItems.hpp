@@ -93,7 +93,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "koks", "heroin", "weed", "schwarzpulver", "polenboeller", "tabak", "zigaretten", "korallen", "korallenketten" };
+        items[] = { "koks", "heroin", "weed", "meth", "schwarzpulver", "polenboeller", "tabak", "zigaretten", "korallen", "korallenketten" };
     };
 	
 	class tabakwaren {
