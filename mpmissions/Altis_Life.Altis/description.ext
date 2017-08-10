@@ -87,7 +87,7 @@ class CfgSounds {
 	
 	class copsound {
         name = "copsound";
-        sound[] = {"\sounds\copsound.ogg", 1.0, 1};
+        sound[] = {"\sounds\copsound.ogg", 2.0, 1};
         titles[] = {};
     };
 
