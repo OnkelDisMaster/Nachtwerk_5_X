@@ -44,7 +44,7 @@ class CfgSounds {
     sounds[] = {};
     class SirenLong {
         name = "SirenLong";
-        sound[] = {"\sounds\Siren_Long.ogg", 1.2, 1};
+        sound[] = {"\sounds\Siren_Long.ogg", 3.0, 1};
         titles[] = {};
     };
 
@@ -63,7 +63,7 @@ class CfgSounds {
     class speech
     {
         name = "speech";
-        sound[] = {"\sounds\speech.ogg", 1.5, 1};
+        sound[] = {"\sounds\speech.ogg", 2.5, 1};
         titles[] = {};
     };
 
