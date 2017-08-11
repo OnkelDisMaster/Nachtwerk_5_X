@@ -184,9 +184,9 @@ Example 2:
             mined[] = { "lava" };
         };
 		
-		class schurfgut {
+		class schurfgut_mine {
             amount = (random(3)+1);
-            zones[] = { "schürfgut_mine" };
+            zones[] = { "schurfgut_mine" };
             item = "pickaxe";
             mined[] = { "schurfgut" };
         };
