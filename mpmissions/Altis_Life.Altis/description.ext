@@ -47,13 +47,13 @@ class CfgSounds {
         sound[] = {"\sounds\Siren_Long.ogg", 3.0, 1};
         titles[] = {};
     };
-
-    class medicSiren {
+	
+	class medicSiren {
         name = "medicSiren";
-        sound[] = {"\sounds\medic_sirenLong.ogg", 1.2, 1};
+        sound[] = {"\sounds\medicSiren.ogg", 3.0, 1};
         titles[] = {};
     };
-
+	
 	class InsertCard {
 		name = "InsertCard";
 		sound[] = {"\sounds\banking\insertcard.ogg", 1.0, 1};
@@ -63,7 +63,7 @@ class CfgSounds {
     class speech
     {
         name = "speech";
-        sound[] = {"\sounds\speech.ogg", 2.5, 1};
+        sound[] = {"\sounds\speech.ogg", 3.0, 1};
         titles[] = {};
     };
 
@@ -118,7 +118,7 @@ class CfgSounds {
 	class empwarn
 	{
 		name = "empwarn";
-		sound[] = {"\sounds\empwarn.ogg", 1.0, 1};
+		sound[] = {"\sounds\empwarn.ogg", 1.5, 1};
 		titles[] = {};
 	};
 	
