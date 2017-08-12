@@ -1615,21 +1615,21 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_CTRG_Heli_Transport_01_tropic_F {
-        vItemSpace = 300;
+        vItemSpace = 600;
         licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 9500000;
         textures[] = { };
     };
 	
 	class B_CTRG_Heli_Transport_01_sand_F {
-        vItemSpace = 300;
+        vItemSpace = 600;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 9500000;
         textures[] = { };
     };
 	
 	class O_T_VTOL_02_vehicle_hex_F {
-        vItemSpace = 420;
+        vItemSpace = 820;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 19500000;
         textures[] = { };

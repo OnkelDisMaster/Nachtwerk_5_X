@@ -1090,7 +1090,7 @@ class VirtualItems {
         variable = "plutonium";
         displayName = "STR_Item_Plutonium";
         weight = 4;
-        buyPrice = 30000;
+        buyPrice = -1;
         sellPrice = 17000;
         illegal = true;
         edible = -1;
@@ -1102,7 +1102,7 @@ class VirtualItems {
         variable = "brennstab";
         displayName = "STR_Item_Brennstab";
         weight = 5;
-        buyPrice = 50000;
+        buyPrice = -1;
         sellPrice = 32000;
         illegal = true;
         edible = -1;
