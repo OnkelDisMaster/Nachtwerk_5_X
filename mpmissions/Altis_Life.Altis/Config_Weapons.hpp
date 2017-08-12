@@ -110,6 +110,7 @@ class WeaponShops {
             { "10Rnd_762x54_Mag", "", 15000 },
             { "20Rnd_556x45_UW_mag", "", 1250 },
 			{ "30Rnd_762x39_Mag_Tracer_F", "", 15000 },
+			{ "30Rnd_545x39_Mag_Tracer_Green_F", "", 15000 },
 			{ "30Rnd_65x39_caseless_mag", "", 5000 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "", 5000 },
 			{ "100Rnd_65x39_caseless_mag", "", 9000 },
@@ -331,6 +332,7 @@ class WeaponShops {
             { "10Rnd_762x54_Mag", "", 15000 },
             { "20Rnd_556x45_UW_mag", "", 1250 },
 			{ "30Rnd_762x39_Mag_Tracer_F", "", 15000 },
+			{ "30Rnd_545x39_Mag_Tracer_Green_F", "", 15000 }
         };
         accs[] = {
             { "optic_ACO_grn", "", 12500 },
