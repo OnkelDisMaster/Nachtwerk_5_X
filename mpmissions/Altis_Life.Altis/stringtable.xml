@@ -3224,15 +3224,15 @@
             <Polish>Zostałeś wyleczony</Polish>
         </Key>
         <Key ID="STR_NOTF_BeingImpounded">
-            <Original>%1 your %2 is being impounded by the office men.</Original>
-            <Czech>%1 Váš%2 je zabaveno policií.</Czech>
-            <Spanish>%1 tu %2 esta siendo embargado por la policía.</Spanish>
+            <Original>%2 your %1 is being impounded by the office men.</Original>
+            <Czech>%2 Váš%1 je zabaveno policií.</Czech>
+            <Spanish>%2 tu %1 esta siendo embargado por la policía.</Spanish>
             <Russian></Russian>
-            <German>%1 dein %2 wird von den Behörden beschlagnahmt.</German>
-            <French>%1 votre %2 est envoyé a la fourrière par la police.</French>
-            <Italian>%1 il tuo %2 sta per essere sequestrato dalla Polizia.</Italian>
-            <Portuguese>%1 seu %2 está sendo apreendido pela Polícia</Portuguese>
-            <Polish>%1 twój %2 jest usuwany przez Policję</Polish>
+            <German>%2 dein %1 wird von den Behörden beschlagnahmt.</German>
+            <French>%2 votre %1 est envoyé a la fourrière par la police.</French>
+            <Italian>%2 il tuo %1 sta per essere sequestrato dalla Polizia.</Italian>
+            <Portuguese>%2 seu %1 está sendo apreendido pela Polícia</Portuguese>
+            <Polish>%2 twój %1 jest usuwany przez Policję</Polish>
         </Key>
         <Key ID="STR_NOTF_Impounding">
             <Original>Impounding Vehicle</Original>
@@ -3257,15 +3257,15 @@
             <Polish>Przerwano usuwanie pojazdu</Polish>
         </Key>
         <Key ID="STR_NOTF_Impounded">
-            <Original>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</Original>
-            <Czech>Jste zabaveno a%1 \ n \ n jste obdržel $%2 pro čištění ulic!</Czech>
-            <Spanish>Has embargado un %1\n\nHas recibido $%2 por  limpiar las calles!</Spanish>
+            <Original>You have impounded a %2\n\nYou have received $%1 for cleaning up the streets!</Original>
+            <Czech>Jste zabaveno a%2 \ n \ n jste obdržel $%1 pro čištění ulic!</Czech>
+            <Spanish>Has embargado un %2\n\nHas recibido $%1 por  limpiar las calles!</Spanish>
             <Russian></Russian>
-            <German>Du hast einen %1 beschlagnahmt\n\nDu hast $%2 für das Aufräumen der Straßen bekommen!</German>
-            <French>Vous avez mis en fourrière un(e) %1\n\nVous avez reçus $%2 pour avoir nettoyé les rues!</French>
-            <Italian>Hai sequestrato un %1\n\nHai ricevuto $%2 per aver mantenuto l'ordine nelle strade!</Italian>
-            <Portuguese>Você apreendeu %1\n\nVocê recebeu R$%2 por deixar as ruas mais seguras!</Portuguese>
-            <Polish>Usunąłeś %1\n\n Otrzymujesz    $%2 za oczyszczanie mapy</Polish>
+            <German>Du hast einen %2 beschlagnahmt\n\nDu hast $%1 für das Aufräumen der Straßen bekommen!</German>
+            <French>Vous avez mis en fourrière un(e) %2\n\nVous avez reçus $%1 pour avoir nettoyé les rues!</French>
+            <Italian>Hai sequestrato un %2\n\nHai ricevuto $%1 per aver mantenuto l'ordine nelle strade!</Italian>
+            <Portuguese>Você apreendeu %2\n\nVocê recebeu R$%1 por deixar as ruas mais seguras!</Portuguese>
+            <Polish>Usunąłeś %2\n\n Otrzymujesz    $%1 za oczyszczanie mapy</Polish>
         </Key>
         <Key ID="STR_NOTF_HasImpounded">
             <Original>%1 has impounded %2's %3</Original>
@@ -3279,15 +3279,15 @@
             <Polish>%1 usunął %2's %3</Polish>
         </Key>
         <Key ID="STR_NOTF_OwnImpounded">
-            <Original>You paid $%1 for impounding your own %2.</Original>
-            <Czech>Zaplatil jste $%1 pro vzdouvání vlastní %2.</Czech>
-            <French>Vous avez payé $%1 pour la mise en fourrière de votre propre %2.</French>
+            <Original>You paid $%2 for impounding your own %1.</Original>
+            <Czech>Zaplatil jste $%2 pro vzdouvání vlastní %1.</Czech>
+            <French>Vous avez payé $%2 pour la mise en fourrière de votre propre %1.</French>
             <Spanish>Has pagado $%2 para embargar tu propio %1.</Spanish>
-            <Italian>Hai pagato $%1 per sequestro la propria %2.</Italian>
-            <Polish>Zapłaciłeś $%1 do zatrzymywania własną %2.</Polish>
+            <Italian>Hai pagato $%2 per sequestro la propria %1.</Italian>
+            <Polish>Zapłaciłeś $%2 do zatrzymywania własną %1.</Polish>
             <Russian></Russian>
-            <German>Du hast %1 $ bezahlt, weil du dein eigenen %2 beschlagnahmt hast.</German>
-            <Portuguese>Você pagou R$%1 para guardar seu próprio %2.</Portuguese>
+            <German>Du hast %2 $ bezahlt, weil du dein eigenen %1 beschlagnahmt hast.</German>
+            <Portuguese>Você pagou R$%2 para guardar seu próprio %1.</Portuguese>
         </Key>
         <Key ID="STR_NOTF_AbortESC">
             <Original>Abort available in %1</Original>

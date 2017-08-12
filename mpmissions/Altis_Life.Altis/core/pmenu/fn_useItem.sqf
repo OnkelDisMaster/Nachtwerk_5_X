@@ -48,42 +48,42 @@ switch (true) do {
 	
 	case (_item isEqualTo "implantatHitmarker"): {
 		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
-		if (license_civ_implantat_hitmarker) exitWith {[true,"implantatHitmarker",1] call life_fnc_handleInv; hint "Du besitzt dieses Implantat bereits!";};
+		if (license_civ_implantat_hitmarker) exitWith {hint "Du besitzt dieses Implantat bereits!";};
         license_civ_implantat_hitmarker = true;
         closeDialog 0;
     };
 	
 	case (_item isEqualTo "implantatPaycheck"): {
 		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
-		if (license_civ_implantat_paycheck) exitWith {[true,"implantatPaycheck",1] call life_fnc_handleInv; hint "Du besitzt dieses Implantat bereits!";};
+		if (license_civ_implantat_paycheck) exitWith {hint "Du besitzt dieses Implantat bereits!";};
         license_civ_implantat_paycheck = true;
         closeDialog 0;
     };
 	
 	case (_item isEqualTo "implantatBackpack"): {
 		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
-		if (license_civ_implantat_backpack) exitWith {[true,"implantatBackpack",1] call life_fnc_handleInv; hint "Du besitzt dieses Implantat bereits!";};
+		if (license_civ_implantat_backpack) exitWith {hint "Du besitzt dieses Implantat bereits!";};
         license_civ_implantat_backpack = true;
         closeDialog 0;
     };
 	
 	case (_item isEqualTo "implantatAusdauer"): {
 		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
-		if (license_civ_implantat_ausdauer) exitWith {[true,"implantatAusdauer",1] call life_fnc_handleInv; hint "Du besitzt dieses Implantat bereits!";};
+		if (license_civ_implantat_ausdauer) exitWith {hint "Du besitzt dieses Implantat bereits!";};
         license_civ_implantat_ausdauer = true;
         closeDialog 0;
     };
 	
 	case (_item isEqualTo "implantatSchneller"): {
 		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
-		if (license_civ_implantat_schneller) exitWith {[true,"implantatSchneller",1] call life_fnc_handleInv; hint "Du besitzt dieses Implantat bereits!";};
+		if (license_civ_implantat_schneller) exitWith {hint "Du besitzt dieses Implantat bereits!";};
         license_civ_implantat_schneller = true;
         closeDialog 0;
     };
 	
 	case (_item isEqualTo "implantatNachtsicht"): {
 		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
-		if (license_civ_implantat_nachtsicht) exitWith {[true,"implantatNachtsicht",1] call life_fnc_handleInv; hint "Du besitzt dieses Implantat bereits!";};
+		if (license_civ_implantat_nachtsicht) exitWith {hint "Du besitzt dieses Implantat bereits!";};
         license_civ_implantat_schneller = true;
         closeDialog 0;
     };

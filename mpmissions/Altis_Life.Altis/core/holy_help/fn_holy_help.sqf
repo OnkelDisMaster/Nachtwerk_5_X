@@ -77,7 +77,7 @@ switch(_lbauswahl) do {
 		Transporteurlizenz:	2,5 Mio<br/>
 		Logistikpilot:		8,5 Mio<br/>
 		Logistikpilot+:		18,5 Mio<br/>
-		Ganglizenz:			100k<br/>
+		Ganglizenz:			250k<br/>
 		Rebellenlizenz:		2,75 Mio<br/>
 		Pro Rebellen:		5,75 Mio<br/>
 		Elite Rebellen:		20 Mio<br/>
