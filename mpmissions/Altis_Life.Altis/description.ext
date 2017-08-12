@@ -63,7 +63,7 @@ class CfgSounds {
     class speech
     {
         name = "speech";
-        sound[] = {"\sounds\speech.ogg", 3.0, 1};
+        sound[] = {"\sounds\speech.ogg", 4.0, 1};
         titles[] = {};
     };
 

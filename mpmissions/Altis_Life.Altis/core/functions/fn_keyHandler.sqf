@@ -191,26 +191,9 @@ switch (_code) do {
     };
 
     //L Key?
-    /*case 38: {
-        //If cop run checks for turning lights on.
-        if (_shift && playerSide in [west,independent]) then {
-            if (vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_T_LSV_01_unarmed_black_F","O_T_LSV_02_unarmed_black_F","I_MRAP_03_F","I_APC_Wheeled_03_cannon_F","B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Heli_Attack_01_F","B_T_VTOL_01_vehicle_blue_F","I_Truck_02_medical_F","B_Truck_01_medical_F","O_Truck_03_medical_F","B_Truck_01_transport_F"]) then {
-                if (!isNil {vehicle player getVariable "lights"}) then {
-                    if (playerSide isEqualTo west) then {
-                        [vehicle player] call life_fnc_sirenLights;
-                    } else {
-                        [vehicle player] call life_fnc_medicSirenLights;
-                    };
-                    _handled = true;
-                };
-            };
-        };
-
-        if (!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
-    };*/
 	case 38: {
 		private _veh = vehicle player;
-			if (_ctrlKey && {!_shift} && {!isNull objectParent player} && {(driver _veh) isEqualTo player} && {playerSide isEqualTo west}) then {
+			if (_ctrlKey && {!_shift} && {!isNull objectParent player} && {(driver _veh) isEqualTo player} && (playerSide in [west,independent])) then {
 			call bf_fnc_lights;
 			_handled = true;
 			};
