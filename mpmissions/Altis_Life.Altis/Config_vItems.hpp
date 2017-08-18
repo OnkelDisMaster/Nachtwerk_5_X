@@ -1101,7 +1101,7 @@ class VirtualItems {
 	class brennstab {
         variable = "brennstab";
         displayName = "STR_Item_Brennstab";
-        weight = 5;
+        weight = 4;
         buyPrice = -1;
         sellPrice = 32000;
         illegal = true;

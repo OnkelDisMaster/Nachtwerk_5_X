@@ -11243,23 +11243,23 @@
             <Italian>Giacimento di Petrolio</Italian>
         </Key>
         <Key ID="STR_MAR_Weed_Field">
-            <Original>weed Plantage</Original>
+            <Original>Weed Plantage</Original>
             <Czech>Marihuana Field</Czech>
             <French>Champs de pavots</French>
             <Spanish>Campo de Marihuana</Spanish>
             <Russian></Russian>
-            <German>weed Plantage</German>
+            <German>Marijuana Plantage</German>
             <Portuguese>Campo de Maconha</Portuguese>
             <Polish>Pole marihuany</Polish>
             <Italian>Campo di weed</Italian>
         </Key>
         <Key ID="STR_MAR_Weed_Processing">
-            <Original>weed Küche</Original>
+            <Original>Marijuana Küche</Original>
             <Czech>Zpracování marihuana</Czech>
             <French>Traitement du pavot</French>
             <Spanish>Procesador de Marihuana</Spanish>
             <Russian></Russian>
-            <German>weed Küche</German>
+            <German>Marijuana Küche</German>
             <Portuguese>Processador de Maconha</Portuguese>
             <Polish>Suszarnia marihuany</Polish>
             <Italian>Trattamento weed</Italian>

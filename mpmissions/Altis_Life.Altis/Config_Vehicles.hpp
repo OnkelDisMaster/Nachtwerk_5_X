@@ -521,7 +521,7 @@ class LifeCfgVehicles {
                 "skins\car\Tempest_Schneetarn_1.jpg",
 				"skins\car\Tempest_Schneetarn_2.jpg",
 				"skins\car\Tempest_Schneetarn_cargo.jpg",
-				"skins\car\Tempest_Schneetarn_covered.jpg"
+				"skins\car\Tempest_Schneetarn_cover.jpg"
             }, "" },
 			{ "Woodland", "civ", {
                 "skins\car\Tempest_Camo_1.paa",
@@ -1661,7 +1661,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "skins\car\Tempest_Schneetarn_1.jpg",
 				"skins\car\Tempest_Schneetarn_2.jpg",
 				"skins\car\Tempest_Schneetarn_cargo.jpg",
-				"skins\car\Tempest_Schneetarn_covered.jpg"
+				"skins\car\Tempest_Schneetarn_cover.jpg"
             }, "" },
 			{ "Woodland", "civ", {
                 "skins\car\Tempest_Camo_1.paa",
