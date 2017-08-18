@@ -500,7 +500,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_cargo.paa"
             }, "" }
 		};
@@ -514,6 +514,7 @@ class LifeCfgVehicles {
 	       { "Hexa", "civ", {
                 "\a3\soft_f_epc\Truck_03\Data\Truck_03_ext01_CO.paa",			//Arma Pfad
 				"\a3\soft_f_epc\Truck_03\Data\Truck_03_ext02_CO.paa",
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_cargo_CO.paa",
 				"\a3\soft_f_epc\Truck_03\Data\Truck_03_cover_CO.paa"
             }, "" },
 			{ "Schnee Hexa", "civ", {
@@ -530,7 +531,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_cargo.paa",
 				"skins\car\Tempest_DCamo_covered.paa"
             }, "" }
@@ -559,7 +560,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_fuel.paa"
             }, "" }
 		};
@@ -587,7 +588,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_cargo.paa"
             }, "" }
 		};
@@ -612,7 +613,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa"
+				"skins\car\Tempest_DCamo_2.paa"
             }, "" }
 		};
     };
@@ -1639,7 +1640,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_cargo.paa"
             }, "" }
 		};
@@ -1653,21 +1654,25 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		{ "ELITE Hexa", "civ", {
                 "\a3\soft_f_exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",			//Arma Pfad
 				"\a3\soft_f_exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa",
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_cargo_ghex_CO.paa",
 				"\a3\soft_f_exp\Truck_03\Data\Truck_03_cover_ghex_CO.paa"
             }, "" },
 			{ "Schnee Hexa", "civ", {
                 "skins\car\Tempest_Schneetarn_1.jpg",
 				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_cargo.jpg",
 				"skins\car\Tempest_Schneetarn_covered.jpg"
             }, "" },
 			{ "Woodland", "civ", {
                 "skins\car\Tempest_Camo_1.paa",
 				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_cargo.paa",
 				"skins\car\Tempest_Camo_covered.paa"
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
+				"skins\car\Tempest_DCamo_cargo.paa",
 				"skins\car\Tempest_DCamo_covered.paa"
             }, "" }
 		};
@@ -1695,7 +1700,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_fuel.paa"
             }, "" }
 		};
@@ -1720,7 +1725,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa"
+				"skins\car\Tempest_DCamo_2.paa"
             }, "" }
 		};
     };
@@ -1747,7 +1752,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Digi BLau", "civ", {
                 "skins\car\Tempest_DCamo_1.paa",
-				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_cargo.paa"
             }, "" }
 		};
@@ -1768,28 +1773,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_CTRG_Heli_Transport_01_tropic_F {
-        vItemSpace = 600;
+        vItemSpace = 500;
         licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 9500000;
         textures[] = { };
     };
 	
 	class B_CTRG_Heli_Transport_01_sand_F {
-        vItemSpace = 600;
+        vItemSpace = 500;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 9500000;
         textures[] = { };
     };
 	
 	class O_T_VTOL_02_vehicle_hex_F {
-        vItemSpace = 820;
+        vItemSpace = 720;
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 19500000;
         textures[] = { };
     };
 	
 	class B_T_VTOL_01_vehicle_olive_F {
-        vItemSpace = 600;
+        vItemSpace = 800;
         licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 14950000;
         textures[] = { };
