@@ -293,7 +293,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
-				"skins\car\digi_hemtt_2.jpg"
+				"#(argb,8,8,3)color(0,0,0,1)"
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
@@ -668,7 +668,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
-				"skins\car\digi_hemtt_2.jpg"
+				"#(argb,8,8,3)color(0,0,0,1)"
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
@@ -696,7 +696,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
-				"skins\car\digi_hemtt_2.jpg"
+				"#(argb,8,8,3)color(0,0,0,1)"
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
@@ -738,7 +738,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
-				"skins\car\digi_hemtt_2.jpg"
+				"#(argb,8,8,3)color(0,0,0,1)"
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
@@ -766,7 +766,7 @@ class LifeCfgVehicles {
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
-				"skins\car\digi_hemtt_2.jpg"
+				"#(argb,8,8,3)color(0,0,0,1)"
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
@@ -1462,7 +1462,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Digi Green", "civ", {
                 "skins\car\digi_hemtt_1.jpg",
-				"skins\car\digi_hemtt_2.jpg"
+				"#(argb,8,8,3)color(0,0,0,1)"
             }, "" },
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_hemtt.paa",
