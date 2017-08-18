@@ -71,9 +71,9 @@ DYNMARKET_Items_Groups =
 			["zigaretten",-1,980,3500],
 			["korallenketten",-1,9800,28200],
 			["meth",-1,2170,5030],
-			["uranIV",-1,6000,40000],
-			["plutonium",-1,7000,33000],
-			["brennstab",-1,22250,42000],
+			["uranIV",-1,6000,45000],
+			["plutonium",-1,17000,32000],
+			["brennstab",-1,22250,50000],
 			["atombombe",-1,455000,6500000],
 			["mikroProzessor",-1,27500,50500],
 			["implantatNormal",-1,285500,500500]
@@ -134,10 +134,10 @@ DYNMARKET_Items_ToTrack        =
 	["meth",3500],
 	["weed",3000],
 	["koks",5200],
-	["uranIV",15000],
-	["plutonium",17000],
-	["brennstab",27000],
-	["atombombe",650000]
+	["uranIV",22000],
+	["plutonium",25000],
+	["brennstab",32000],
+	["atombombe",2250000]
 ];
 
 //███████████████████████████████████████████████████████████████████████
