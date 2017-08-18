@@ -1118,7 +1118,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "SEK", "cop", {
                 "skins\car\sek_marid_0.paa",
 				"skins\car\sek_marid_1.paa",
-				"skins\car\sek_marid_2.paa"
+				"#(argb,8,8,3)color(0,0,0,1)"
 			},""}
 		};
     };
