@@ -21,7 +21,7 @@ class Life_Settings {
     saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull","spikeStrip","blitzer","bunker","flutlicht","licht","mauer","plastik", "schranke","lockpick","defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","ananas","bananen","kokosnuss","apfelsaft","pfirsichsaft","ananassaft","bananensaft","kokosnussmilch","pina_colada","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
-    save_civilian_position = true; //Save civilian location?
+    save_civilian_position = false; //Save civilian location?
     save_civilian_position_restart = true; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
     /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
     save_civilian_positionStrict = true; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
