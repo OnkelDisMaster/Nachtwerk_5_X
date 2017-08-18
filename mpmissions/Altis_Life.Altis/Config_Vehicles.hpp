@@ -394,7 +394,7 @@ class LifeCfgVehicles {
 			{ "Feuerwehr", "med", {
                 "skins\air\FW_mohawk.paa",
 				"skins\air\FW_mohawk2.paa",
-				"skins\air\FW_mohawk3.paa"
+				"#(argb,8,8,3)color(0.62,0.04,0.04,0.8)"
             }, "" },
 			{ "SEK", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)",
@@ -867,9 +867,6 @@ class LifeCfgVehicles {
 			{ "Feuerwehr", "med", {
                 "skins\car\FW_offroad.paa"
             } , "" },
-			{ "Digi Green", "civ", {
-                "skins\car\civ_offroad_digigreen.paa"
-            } , "" },
 			{ "Dodge", "civ", {
                 "skins\car\civ_offroad_dodge.jpg"
             } , "" },
@@ -1067,12 +1064,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			} , "" },
 			{ "Polygon", "civ", {
                 "skins\car\poly_suv.paa"
-			} , "" },
-			{ "Camo", "civ", {
-                "skins\car\camo_suv.paa"
-			} , "" },
-			{ "Partikel", "civ", {
-                "skins\car\Particle.paa"
 			} , "" },
 			{ "Batman", "civ", {
                 "skins\car\batman_suv.paa"
