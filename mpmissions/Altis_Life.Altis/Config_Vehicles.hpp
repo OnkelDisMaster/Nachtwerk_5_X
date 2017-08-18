@@ -483,16 +483,57 @@ class LifeCfgVehicles {
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
         price = 2450000;
         textures[] = { 
-		   /*{ "MAN Desert", "civ", {
-                "skins\Mandes1.paa",
-				"skins\Mandes2.paa",
-				"skins\Mandes3.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "skins\Manwd1.paa",
-				"skins\Manwd2.paa",
-				"skins\Manwd3.paa"
-            } }*/
+		   { "Hexa", "civ", {
+                "\a3\soft_f_epc\Truck_03\Data\Truck_03_ext01_CO.paa",			//Arma Pfad
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_ext02_CO.paa",
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_cargo_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_cargo.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_cargo.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_cargo.paa"
+            }, "" }
+		};
+    };
+	
+	class O_Truck_03_covered_F {
+        vItemSpace = 450;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
+        price = 2950000;
+        textures[] = {
+	       { "Hexa", "civ", {
+                "\a3\soft_f_epc\Truck_03\Data\Truck_03_ext01_CO.paa",			//Arma Pfad
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_ext02_CO.paa",
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_cover_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_cargo.jpg",
+				"skins\car\Tempest_Schneetarn_covered.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_cargo.paa",
+				"skins\car\Tempest_Camo_covered.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_cargo.paa",
+				"skins\car\Tempest_DCamo_covered.paa"
+            }, "" }
 		};
     };
 	
@@ -501,11 +542,26 @@ class LifeCfgVehicles {
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
         price = 500000;
         textures[] = { 
-		   /*{ "Smell Tank", "civ", {
-                "skins\ArmA3-Smell-Tempesttank0.jpg",
-				"skins\ArmA3-Smell-Tempesttank1.jpg",
-				"skins\ArmA3-Smell-Tempesttank2.jpg"
-           } }*/
+		   { "Hexa", "civ", {
+                "\a3\soft_f_epc\Truck_03\Data\Truck_03_ext01_CO.paa",			//Arma Pfad
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_ext02_CO.paa",
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_fuel_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_fuel.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_fuel.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_fuel.paa"
+            }, "" }
 		};
     };
 	
@@ -514,16 +570,26 @@ class LifeCfgVehicles {
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
         price = 12500000;
         textures[] = { 
-		  /* { "MAN Desert", "civ", {
-                "skins\Mandes1.paa",
-				"skins\Mandes2.paa",
-				"skins\Mandes3.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "skins\Manwd1.paa",
-				"skins\Manwd2.paa",
-				"skins\Manwd3.paa"
-            } }*/
+		  { "Hexa", "civ", {
+                "\a3\soft_f_epc\Truck_03\Data\Truck_03_ext01_CO.paa",			//Arma Pfad
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_ext02_CO.paa",
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_cargo_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_cargo.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_cargo.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_cargo.paa"
+            }, "" }
 		};
     };
 
@@ -532,16 +598,22 @@ class LifeCfgVehicles {
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
         price = 10950000;
         textures[] = { 
-  	       /*{ "MAN Desert", "civ", {
-                "skins\Mandes1.paa",
-				"skins\Mandes2.paa",
-				"skins\Mandes3.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "skins\Manwd1.paa",
-				"skins\Manwd2.paa",
-				"skins\Manwd3.paa"
-            } }*/
+  	       { "Hexa", "civ", {
+                "\a3\soft_f_epc\Truck_03\Data\Truck_03_ext01_CO.paa",			//Arma Pfad
+				"\a3\soft_f_epc\Truck_03\Data\Truck_03_ext02_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa"
+            }, "" }
 		};
     };
 
@@ -938,26 +1010,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(rgb,64,64,1)color(255, 0, 0, 0.8)"
             }, "" }
         };
-    };
-
-    class O_Truck_03_covered_F {
-        vItemSpace = 450;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
-        price = 2950000;
-        textures[] = {
-	       /*{ "MAN Desert", "civ", {
-                "skins\Mandes1.paa",
-				"skins\Mandes2.paa",
-				"skins\Mandes3.paa",
-				"skins\Mandes4.paa"
-           } },
-		   { "MAN Woodland", "civ", {
-                "skins\Manwd1.paa",
-				"skins\Manwd2.paa",
-				"skins\Manwd3.paa",
-				"skins\Manwd4.paa"
-            } }*/
-		};
     };
 
     class C_Hatchback_01_F {
@@ -1569,35 +1621,136 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 400;
         licenses[] = { {"elite"}, {""}, {""}, {""} };//license_civ_boat
         price = 2450000;
-        textures[] = { };
+        textures[] = { 
+		{ "ELITE Hexa", "civ", {
+                "\a3\soft_f_exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",			//Arma Pfad
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa",
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_cargo_ghex_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_cargo.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_cargo.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_cargo.paa"
+            }, "" }
+		};
     };
 
     class O_T_Truck_03_covered_ghex_F {
         vItemSpace = 450;
         licenses[] = { {"elite"}, {""}, {""}, {""} };//license_cop_cg
         price = 2950000;
-        textures[] = { };
+        textures[] = {
+		{ "ELITE Hexa", "civ", {
+                "\a3\soft_f_exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",			//Arma Pfad
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa",
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_cover_ghex_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_covered.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_covered.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_covered.paa"
+            }, "" }
+		};
     };
 	
 	class O_T_Truck_03_fuel_ghex_F {
         vItemSpace = 500;
         licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 400000;
-        textures[] = { };
+        textures[] = {
+		{ "ELITE Hexa", "civ", {
+                "\a3\soft_f_exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",			//Arma Pfad
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa",
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_fuel_ghex_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_fuel.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_fuel.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_fuel.paa"
+            }, "" }
+		};
     };
 	
 	class O_T_Truck_03_device_ghex_F {
         vItemSpace = 800;
         licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 10950000;
-        textures[] = { };
+        textures[] = {
+		{ "ELITE Hexa", "civ", {
+                "\a3\soft_f_exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",			//Arma Pfad
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa"
+            }, "" }
+		};
     };
 
     class O_T_Truck_03_ammo_ghex_F {
         vItemSpace = 900;
         licenses[] = { {"elite"}, {""}, {""}, {""} };
         price = 12500000;
-        textures[] = { };
+        textures[] = {
+		{ "ELITE Hexa", "civ", {
+                "\a3\soft_f_exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",			//Arma Pfad
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa",
+				"\a3\soft_f_exp\Truck_03\Data\Truck_03_cargo_ghex_CO.paa"
+            }, "" },
+			{ "Schnee Hexa", "civ", {
+                "skins\car\Tempest_Schneetarn_1.jpg",
+				"skins\car\Tempest_Schneetarn_2.jpg",
+				"skins\car\Tempest_Schneetarn_cargo.jpg"
+            }, "" },
+			{ "Woodland", "civ", {
+                "skins\car\Tempest_Camo_1.paa",
+				"skins\car\Tempest_Camo_2.paa",
+				"skins\car\Tempest_Camo_cargo.paa"
+            }, "" },
+			{ "Digi BLau", "civ", {
+                "skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_1.paa",
+				"skins\car\Tempest_DCamo_cargo.paa"
+            }, "" }
+		};
     };
 	
 	class C_Heli_light_01_ion_F {
