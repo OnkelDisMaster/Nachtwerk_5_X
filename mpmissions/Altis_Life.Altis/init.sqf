@@ -5,6 +5,7 @@
     Description:
     
 */
+private ["_i"];
 StartProgress = false;
 
 [] execVM "briefing.sqf"; //Load Briefing
@@ -22,7 +23,7 @@ emergLight_vehicles = [];
 
 [] spawn 
 {
-	while {true} do 
+	for [{_i=0}, {_i < 12}, {_i = _i + 1}] do 
 	{
 		sleep (60*30);
 		[] spawn life_fnc_randomDealer;
