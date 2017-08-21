@@ -65,6 +65,14 @@ class ProcessAction {
         NoLicenseCost = 8500;
     };
 
+	class diesel {
+        MaterialsReq[] = {{"oel",1}};
+        MaterialsGive[] = {{"diesel",1}};
+        Text = "STR_Process_diesel";
+        //ScrollText = "Harvest weed";
+        NoLicenseCost = 12000;
+	};
+	
     class dia {
         MaterialsReq[] = {{"diamantu",1}};
         MaterialsGive[] = {{"diamant",1}};
@@ -159,14 +167,6 @@ class ProcessAction {
         Text = "STR_Process_obsidian";
         //ScrollText = "Harvest weed";
         NoLicenseCost = 7500;
-	};
-	
-	class diesel {
-        MaterialsReq[] = {{"oel",2}};
-        MaterialsGive[] = {{"diesel",1}};
-        Text = "STR_Process_diesel";
-        //ScrollText = "Harvest weed";
-        NoLicenseCost = 12000;
 	};
 	
 	class bambus {
