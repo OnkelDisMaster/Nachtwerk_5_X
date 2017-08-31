@@ -131,8 +131,8 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		// Salvatore, Jauch, Reich
-		['76561198067388481','76561198091201110','76561198079472612'],	// Supporter
+		
+		[''],	// Supporter
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
