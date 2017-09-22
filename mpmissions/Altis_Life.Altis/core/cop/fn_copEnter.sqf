@@ -15,7 +15,8 @@ switch (_position) do
 	{
 		_veh = vehicle player;
 		_veh lock false;
-		player action ["getOut", _veh];
+		//player action ["getOut", _veh];
+		moveOut player;
 		_veh lock true;
 	};
 };

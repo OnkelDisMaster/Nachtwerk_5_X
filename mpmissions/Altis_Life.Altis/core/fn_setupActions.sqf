@@ -28,7 +28,7 @@ switch (playerSide) do {
 		//Nagelbänder aufheben
 		life_actions = life_actions + [player addAction["Nagelband aufheben",life_fnc_packupSpikes,"",0,false,false,"",' _spikes = nearestObjects[getPos player,["Land_Razorwire_F"],8] select 0; !isNil "_spikes" && !isNil {(_spikes getVariable "item")}']];
 		//Aussteigen aus Fahrzeugen
-		//life_actions = life_actions + [player addAction["Get out",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
+		life_actions = life_actions + [player addAction["Get out",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
 		//Hinsetzen
 		life_actions = life_actions + [player addAction["Hinsetzen",life_fnc_sitDown,cursorTarget,10,false,false,"",' !isNull cursorTarget && (player distance cursorTarget) < 3 && (typeOf (cursorTarget) in ["Land_Cha_ChairPlastic_F", "Land_CampingChair_V1_F", "Land_CampingChair_V2_F", "Land_ChairWood_F", "Land_OfficeChair_01_F", "Land_Bench_F"])']];
 		//Aufstehen
