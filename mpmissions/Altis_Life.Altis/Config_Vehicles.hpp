@@ -1218,7 +1218,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_orange\Van_02\Data\van_body_Syndikat_CO.paa"
             }, ""  },
 			{ "Vrana", "civ", {
-                "\a3\soft_f_orange\Van_02\Data\Vrana.paa"
+                "\a3\soft_f_orange\Van_02\Data\van_body_Vrana_CO.paa"
             }, ""  },
 			{ "Weiß", "civ", {
                 "\a3\soft_f_orange\Van_02\Data\van_body_white_CO.paa"
