@@ -39,6 +39,7 @@ class CarShops {
         vehicles[] = {
             { "C_Van_01_fuel_F", { "", "", -1 } },
             { "C_Van_01_box_F", { "", "", -1 } },
+			{ "C_Van_02_vehicle_F", { "", "", -1 } },			//Orange Van
             { "I_Truck_02_transport_F", { "", "", -1 } },
             { "I_Truck_02_covered_F", { "", "", -1 } },
             { "B_Truck_01_transport_F", { "", "", -1 } },
@@ -79,6 +80,7 @@ class CarShops {
         side = "civ";
         vehicles[] = {
 			{ "B_Quadbike_01_F", { "", "", -1 } },
+			{ "C_Van_02_transport_F", { "", "", -1 } },
             { "B_G_Offroad_01_armed_F", { "", "", -1 } },
             { "B_T_LSV_01_unarmed_olive_F", { "", "", -1 } },
 			{ "O_T_LSV_02_unarmed_arid_F", { "", "", -1 } },
@@ -119,6 +121,7 @@ class CarShops {
         side = "med";
         vehicles[] = {
 			{ "C_Van_01_box_F", { "life_mediclevel", "SCALAR", 1 } },
+			{ "C_Van_02_medevac_F", { "life_mediclevel", "SCALAR", 1 } },
             { "C_Offroad_01_F", { "life_mediclevel", "SCALAR", 2 } },
             { "C_SUV_01_F", { "life_mediclevel", "SCALAR", 3 } },
 			{ "I_Truck_02_medical_F", { "life_mediclevel", "SCALAR", 2 } },
@@ -146,6 +149,8 @@ class CarShops {
 			{ "B_Quadbike_01_F", { "", "", -1 } },
             { "C_SUV_01_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Offroad_01_F", { "life_coplevel", "SCALAR", 2 } },
+			{ "C_Van_02_vehicle_F", { "life_coplevel", "SCALAR", 2 } },
+			{ "C_Van_02_transport_F", { "life_coplevel", "SCALAR", 2 } },
 			{ "B_Truck_01_transport_F", { "life_coplevel", "SCALAR", 2 } },
             { "B_Truck_01_box_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Hatchback_01_F", { "life_coplevel", "SCALAR", 3 } },
@@ -1157,6 +1162,137 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" }
         };
     };
+	
+	class C_Van_02_medevac_F {
+        vItemSpace = -1;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 30000;
+        textures[] = {};
+    };
+	
+	class C_Van_02_vehicle_F {	// Orange Van Transport
+        vItemSpace = 270;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_driver
+        price = 320000;
+        textures[] = {
+            { "AAN News", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_AAN_CO.paa"
+            }, ""  },
+			{ "Amazon", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Armazon_CO.paa"
+            }, ""  },
+            { "BB", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_BB_CO.paa"
+            }, ""  },
+			{ "Schwarz", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+            }, ""  },
+			{ "Bluepearl", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_BluePearl_CO.paa"
+            }, ""  },
+			{ "Blau", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_blue_CO.paa"
+            }, ""  },
+			{ "Daltgreen", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Daltgreen_CO.paa"
+            }, ""  },
+			{ "Fuel", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Fuel_CO.paa"
+            }, ""  },
+			{ "Grün", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_green_CO.paa"
+            }, ""  },
+			{ "Maskiert", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Masked_CO.paa"
+            }, ""  },
+			{ "Orange", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Orange_CO.paa"
+            }, ""  },
+			{ "Racing", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Redstone_CO.paa"
+            }, ""  },
+			{ "Rot", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Red_CO.paa"
+            }, ""  },
+			{ "Braun", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Syndikat_CO.paa"
+            }, ""  },
+			{ "Vrana", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\Vrana.paa"
+            }, ""  },
+			{ "Weiß", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_white_CO.paa"
+            }, ""  },
+            { "Polizei Undercover", "cop", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+            },"" },
+			{ "Polizei", "cop", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+            },"" }
+        };
+    };
+
+    class C_Van_02_transport_F {	// Orange Van Passagier
+        vItemSpace = 200;
+        licenses[] = { {"rebel"}, {""}, {""}, {""} };//license_civ_trucking
+        price = 245000;
+        textures[] = {
+			{ "AAN News", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_AAN_CO.paa"
+            }, ""  },
+			{ "Amazon", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Armazon_CO.paa"
+            }, ""  },
+            { "BB", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_BB_CO.paa"
+            }, ""  },
+			{ "Schwarz", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+            }, ""  },
+			{ "Bluepearl", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_BluePearl_CO.paa"
+            }, ""  },
+			{ "Blau", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_blue_CO.paa"
+            }, ""  },
+			{ "Daltgreen", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Daltgreen_CO.paa"
+            }, ""  },
+			{ "Fuel", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Fuel_CO.paa"
+            }, ""  },
+			{ "Grün", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_green_CO.paa"
+            }, ""  },
+			{ "Maskiert", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Masked_CO.paa"
+            }, ""  },
+			{ "Orange", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Orange_CO.paa"
+            }, ""  },
+			{ "Racing", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Redstone_CO.paa"
+            }, ""  },
+			{ "Rot", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Red_CO.paa"
+            }, ""  },
+			{ "Braun", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_Syndikat_CO.paa"
+            }, ""  },
+			{ "Vrana", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\Vrana.paa"
+            }, ""  },
+			{ "Weiß", "civ", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_white_CO.paa"
+            }, ""  },
+            { "Polizei Undercover", "cop", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+            },"" },
+			{ "Polizei", "cop", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+            },"" }
+        };
+    };
 
     class B_MRAP_01_F {
         vItemSpace = 100;
@@ -1194,7 +1330,17 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 50;
         licenses[] = { {"rebel"}, {""}, {""}, {""} };
         price = 550000;
-        textures[] = {};
+        textures[] = {
+			{ "Doppler", "civ", {
+                "skins\car\prowler_doppler.paa",
+				"skins\car\prowler_doppler_2.paa"
+            }, ""  },
+			{ "Streetracer", "civ", {
+                "skins\car\prowler_blue.paa",
+				"skins\car\prowler_blue_2.paa",
+                "skins\car\prowler_blue_3.paa"
+            }, "" }
+		};
     };
 
 	class O_T_LSV_02_unarmed_arid_F {
@@ -1248,32 +1394,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 	
-	/* class C_Offroad_02_unarmed_black_F { ########TODO: ist in der alten nicht enthalten?!
-        vItemSpace = 80;
-        licenses[] = { {""}, {""}, {""}, {""} };
-        price = 50000;
-        textures[] = {
-            { "DEA", "cop", {
-                "skins\4WDDEA.jpg"
-            } },
-			{ "SWAT", "cop", {
-                "skins\4WDSWAT.jpg"
-            } },
-			{ "POLICE", "cop", {
-                "skins\4WDAPD.jpg"
-            } },
-			{ "Sheriff", "cop", {
-                "skins\4WDSD.jpg"
-            } },
-			{ "Troll", "civ", {
-                "skins\4WDTROLL.jpg"
-            } },
-			{ "Paramedic", "med", {
-                "skins\4WDMED.jpg"
-            } }
-        };
-    };*/
-
     class B_Heli_Light_01_stripped_F {
         vItemSpace = 125;
         licenses[] = { {"rebel"}, {""}, {""}, {""} };
@@ -1408,7 +1528,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         class C_Van_01_fuel_F {
         vItemSpace = 200;
         vFuelSpace = 19500;
-        licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
+        licenses[] = { {""}, {""}, {""}, {""} };//license_civ_trucking
         price = 75000;
         textures[] = {
             { "Weiß", "civ", {
