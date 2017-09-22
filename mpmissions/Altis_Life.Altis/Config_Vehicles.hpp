@@ -1118,12 +1118,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Schwarz", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)",
 				"#(ai,64,64,1)Fresnel(1.3,7)",
-				"#(ai,64,64,1)Fresnel(1.3,7)"
+				""
 			},""},
 			{ "SEK", "cop", {
                 "skins\car\sek_marid_0.paa",
 				"skins\car\sek_marid_1.paa",
-				"#(argb,8,8,3)color(0,0,0,1)"
+				""
 			},""}
 		};
     };

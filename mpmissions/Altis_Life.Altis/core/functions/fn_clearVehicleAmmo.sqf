@@ -154,11 +154,11 @@ switch (_veh) do
  		_vehicle setDamage 0;
  		_vehicle allowDamage false;
 		
-		_vehicle removeWeaponTurret ["HMG_127_APC",[1]];
-		_vehicle removeMagazinesTurret ["HMG_127_APC",[1]];
+		_vehicle removeWeaponTurret ["HMG_127_APC",[0]];
+		_vehicle removeMagazinesTurret ["HMG_127_APC",[0]];
 		
-		_vehicle removeWeaponTurret ["GMG_40mm",[1]];
-		_vehicle removeMagazinesTurret ["GMG_40mm",[1]];
+		_vehicle removeWeaponTurret ["GMG_40mm",[0]];
+		_vehicle removeMagazinesTurret ["GMG_40mm",[0]];
     };
 	
 	//GhostHawk
@@ -175,8 +175,8 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
 		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[2]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[2]];
     };
 	
 	//GhostHawk (Camo)
@@ -193,8 +193,8 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
 		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[2]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[2]];
     };
 	
 	//GhostHawk (Khaki)
@@ -211,8 +211,8 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
 		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[2]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[2]];
 		
 		
     };
@@ -231,8 +231,8 @@ switch (_veh) do
 		_vehicle removeWeaponTurret ["LMG_Minigun_Transport",[1]];
 		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport",[1]];
 		
-		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[1]];
-		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[1]];
+		_vehicle removeWeaponTurret ["LMG_Minigun_Transport2",[2]];
+		_vehicle removeMagazinesTurret ["LMG_Minigun_Transport2",[2]];
 		
 		
     };
