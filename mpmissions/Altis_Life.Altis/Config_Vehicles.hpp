@@ -1223,11 +1223,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Weiß", "civ", {
                 "\a3\soft_f_orange\Van_02\Data\van_body_white_CO.paa"
             }, ""  },
+			{ "Pozilei (ILLEGAL)", "civ", {
+                "skins\car\pozilei_van.jpg"
+            }, ""  },
             { "Polizei Undercover", "cop", {
                 "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
             },"" },
 			{ "Polizei", "cop", {
-                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+                "skins\car\polizei_van.jpg"
             },"" }
         };
     };
@@ -1235,7 +1238,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Van_02_transport_F {	// Orange Van Passagier
         vItemSpace = 200;
         licenses[] = { {"rebel"}, {""}, {""}, {""} };//license_civ_trucking
-        price = 245000;
+        price = 290000;
         textures[] = {
 			{ "AAN News", "civ", {
                 "\a3\soft_f_orange\Van_02\Data\van_body_AAN_CO.paa"
@@ -1285,11 +1288,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Weiß", "civ", {
                 "\a3\soft_f_orange\Van_02\Data\van_body_white_CO.paa"
             }, ""  },
+			{ "Pozilei (ILLEGAL)", "civ", {
+                "skins\car\pozilei_van.jpg"
+            }, ""  },
             { "Polizei Undercover", "cop", {
                 "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
             },"" },
 			{ "Polizei", "cop", {
-                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+                "skins\car\polizei_van.jpg"
             },"" }
         };
     };
