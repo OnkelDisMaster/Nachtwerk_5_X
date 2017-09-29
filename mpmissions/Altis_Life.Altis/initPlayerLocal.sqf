@@ -34,11 +34,8 @@ if (hasInterface) then {
     if (playerSide == west) then 
 		{
             private["_illegalmarkers"];
-            while {true} do
-            {
-                    _illegalmarkers = ["heroin_1","cocaine_1","cocaine_2","weed_1","meth_1","Dealer_1_1","Dealer_1_2","Dealer_1_3"];
+
+                    _illegalmarkers = ["heroin_1","cocaine_1","cocaine_2","weed_1","meth_1"];
                     
                     { deleteMarkerLocal _x; } forEach _illegalmarkers;
-                    sleep 10;
-            };
 		};

@@ -17,7 +17,7 @@ if(hasInterface)then{[] execVM "voiceControl.sqf"};
 //Polizeilicht
 emergLight_vehicles = [];
 {
-        emergLight_vehicles pushBack (configName _x);
+    emergLight_vehicles pushBack (configName _x);
 } forEach ("true" configClasses (missionConfigFile >> "emergLightVehicles"));
 
 /*
