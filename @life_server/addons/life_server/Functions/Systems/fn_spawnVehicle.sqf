@@ -170,11 +170,11 @@ if ((_vInfo select 1) isEqualTo "civ" && (_vInfo select 2) isEqualTo "B_Heli_Lig
     [_vehicle,"civ_littlebird",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if ((_vInfo select 1) isEqualTo "cop" && (_vInfo select 2) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_T_LSV_01_unarmed_black_F","O_T_LSV_02_unarmed_black_F","I_MRAP_03_F","I_APC_Wheeled_03_cannon_F","B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Heli_Attack_01_F","B_T_VTOL_01_vehicle_blue_F","I_Truck_02_medical_F","B_Truck_01_medical_F","O_Truck_03_medical_F","B_Truck_01_transport_F"]) then {
+if ((_vInfo select 1) isEqualTo "cop") then {
     [_vehicle,"cop_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if ((_vInfo select 1) isEqualTo "med" && (_vInfo select 2) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_T_LSV_01_unarmed_black_F","O_T_LSV_02_unarmed_black_F","I_MRAP_03_F","I_APC_Wheeled_03_cannon_F","B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Heli_Attack_01_F","B_T_VTOL_01_vehicle_blue_F","I_Truck_02_medical_F","B_Truck_01_medical_F","O_Truck_03_medical_F","B_Truck_01_transport_F"]) then {
+if ((_vInfo select 1) isEqualTo "med") then {
     [_vehicle,"med_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 

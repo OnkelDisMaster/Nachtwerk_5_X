@@ -132,7 +132,7 @@ class CarShops {
         };
     };
 
-    class med_air_hs {		//Lizenz mAir
+    class med_heli {		//Lizenz mAir
         side = "med";
         vehicles[] = {
 			{ "B_Heli_Light_01_F", { "life_mediclevel", "SCALAR", 1 } },
