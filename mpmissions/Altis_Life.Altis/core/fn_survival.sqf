@@ -106,7 +106,10 @@ for "_i" from 0 to 1 step 0 do {
 			if((backpack player) isEqualTo "B_Kitbag_sgg") then { _load = 70; };            
 			if((backpack player) isEqualTo "B_Carryall_khk") then { _load = 80; };
 			if((backpack player) isEqualTo "B_Carryall_oli") then { _load = 80; };            
-			if((backpack player) isEqualTo "B_Carryall_cbr") then { _load = 80; };		
+			if((backpack player) isEqualTo "B_Carryall_cbr") then { _load = 80; };	
+			if((backpack player) isEqualTo "B_Carryall_oucamo") then { _load = 80; };
+			if((backpack player) isEqualTo "B_Carryall_mcamo") then { _load = 80; };            
+			if((backpack player) isEqualTo "B_Carryall_ocamo") then { _load = 80; };			
 			if((backpack player) isEqualTo "B_Bergen_hex_F") then { _load = 100; };
 			if((backpack player) isEqualTo "B_Bergen_mcamo_F") then { _load = 100; };
 			if((backpack player) isEqualTo "B_Bergen_dgtl_F") then { _load = 100; };		

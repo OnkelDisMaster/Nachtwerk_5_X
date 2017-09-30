@@ -54,6 +54,7 @@ if(vehicle _unit isEqualTo _unit) then {
         _isVehicle = vehicle _source;
         if(_isVehicle isKindOf "Air" OR _isVehicle isKindOf "Car" OR _isVehicle isKindOf "Boat") then    { //Vehicle driven by a player
             _damage = false;
+			moveOut player;
             player playMove "amovppnemstpsraswrfldnon";
         };
     };

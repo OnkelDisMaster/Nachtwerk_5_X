@@ -66,9 +66,6 @@ if (CASH < _purchasePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnoug
 _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
 
-if (((life_veh_shop select 0) == "med_heli")) then {
-    if ((nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) isEqualTo []) exitWith {_spawnPoint = _spawnPoints};
-} else {
     //Check if there is multiple spawn points and find a suitable spawnpoint.
     if (_spawnPoints isEqualType []) then {
         //Find an available spawn point.
@@ -76,7 +73,6 @@ if (((life_veh_shop select 0) == "med_heli")) then {
     } else {
         if ((nearestObjects[(getMarkerPos _spawnPoints),["Car","Ship","Air"],5]) isEqualTo []) exitWith {_spawnPoint = _spawnPoints};
     };
-};
 
 
 if (_spawnPoint isEqualTo "") exitWith {hint localize "STR_Shop_Veh_Block";closeDialog 0;};
