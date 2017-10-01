@@ -13,22 +13,20 @@ StartProgress = false;
 [] execVM "core\functions\fn_teargas.sqf"; //Load Teargas Script for Cops
 [] execVM "nw_functions\savezone.sqf"; //Load the Savezones
 [] execVM "nw_functions\fn_statusBar.sqf"; //Load the Statusbar
-if(hasInterface)then{[] execVM "voiceControl.sqf"};
+if(hasInterface)then {[] execVM "voiceControl.sqf"} else {
+	[] spawn 
+	{
+		for [{_i=0}, {_i < 12}, {_i = _i + 1}] do 
+		{
+			sleep (60*30);	
+			[] spawn life_fnc_randomDealer;
+		};
+	};
+};
 //Polizeilicht
 emergLight_vehicles = [];
 {
     emergLight_vehicles pushBack (configName _x);
 } forEach ("true" configClasses (missionConfigFile >> "emergLightVehicles"));
-
-
-[] spawn 
-{
-	for [{_i=0}, {_i < 12}, {_i = _i + 1}] do 
-	{
-		sleep (60*30);
-		[] spawn life_fnc_randomDealer;
-	};
-};
-
 
 StartProgress = true;
