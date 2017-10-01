@@ -20,7 +20,7 @@ emergLight_vehicles = [];
     emergLight_vehicles pushBack (configName _x);
 } forEach ("true" configClasses (missionConfigFile >> "emergLightVehicles"));
 
-/*
+
 [] spawn 
 {
 	for [{_i=0}, {_i < 12}, {_i = _i + 1}] do 
@@ -29,6 +29,6 @@ emergLight_vehicles = [];
 		[] spawn life_fnc_randomDealer;
 	};
 };
-*/
+
 
 StartProgress = true;
