@@ -11,7 +11,8 @@ if (dialog) exitWith {};
 _vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _vehicle || !(_vehicle isKindOf "Car" || _vehicle isKindOf "Air" || _vehicle isKindOf "Ship" || _vehicle isKindOf "Box_IND_Grenades_F" || _vehicle isKindOf "B_supplyCrate_F")) exitWith {}; //Either a null or invalid vehicle type.
 //Sleep (random 5);
-if ([civilian,visiblePosition player,10] call life_fnc_nearUnits) exitWith{hint "Es darf nur max. 1 Spieler beim Fahrzeug stehen!";};
+if (player-side isEqualTo independent) exitWith {hint "Das Beladen von Fahrzeugen ist der Feuerwehr untersagt!";};
+if (([civilian,visiblePosition player,10] call life_fnc_nearUnits) && (playerSide isEqualTo civilian)) exitWith{hint "Es darf nur max. 1 Spieler beim Fahrzeug stehen!";};
 if ((_vehicle getVariable ["trunk_in_use",false])) exitWith {hint localize "STR_MISC_VehInvUse"};
 _vehicle setVariable["trunk_in_use",true,true];
 _vehicle setVariable["trunk_in_use_by",player,true];
