@@ -139,6 +139,7 @@ switch (_code) do {
         if (_shift) then {_handled = true;};
         if (_shift && ((playerSide isEqualTo west) || (playerSide isEqualTo civilian)) && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent,west])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
             if (!(license_civ_rebel) && (playerSide isEqualTo civilian)) exitWith { hintSilent "Du benötigst eine Rebellenlizenz!"; };
+			if ((playerSide isEqualTo west) && (Side cursorObject isEqualTo west)) exitWith {hint"Du kannst deinen Kollegen nicht festnehmen!";};
 			[] call life_fnc_restrainAction;
         };
     };
