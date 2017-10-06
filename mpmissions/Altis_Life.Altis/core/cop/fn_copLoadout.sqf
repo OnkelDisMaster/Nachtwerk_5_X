@@ -14,13 +14,13 @@ waitUntil {scriptDone _handle};
 player addUniform "U_Rangemaster";
 player addVest "V_Rangemaster_belt";
 
-player addMagazine "16Rnd_9x21_Mag";
-player addWeapon "hgun_P07_snds_F";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
+player addWeapon "hgun_Pistol_heavy_01_snds_F",
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addMagazine "11Rnd_45ACP_Mag";
+player addItem "optic_MRD";
 
 /* ITEMS */
 player addItem "ItemMap";

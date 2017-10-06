@@ -20,7 +20,7 @@ _vehicle = vehicle player;
         waitUntil {(time - _time) > (5 * 60)};
 
         if (!(player getVariable ["restrained",FALSE])) exitWith {};
-        if (!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable ["restrained",FALSE]) && isNull objectParent player) exitWith {
+        if (!([west,getPos player,50] call life_fnc_nearUnits) && (player getVariable ["restrained",FALSE]) && isNull objectParent player) exitWith {
             player setVariable ["restrained",FALSE,TRUE];
             player setVariable ["Escorting",FALSE,TRUE];
             player setVariable ["transporting",false,true];
