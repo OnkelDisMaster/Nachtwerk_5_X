@@ -142,16 +142,16 @@ for "_i" from 0 to 1 step 0 do {
     uiSleep 1;
 	
 	[] spawn {
-	if (playerside isEqualTo west) then {
-	//Unsichtbare Rucksäcke
-		while {true} do {
-			if (!isNull(unitBackpack player)) then {
-				(unitBackpack player) setObjectTextureGlobal [0, ""]; //Macht Rucks?cke unsichtbar
+		if (playerside isEqualTo west) then {
+		//Unsichtbare Rucksäcke
+			while {true} do {
+				if (!isNull(unitBackpack player)) then {
+					(unitBackpack player) setObjectTextureGlobal [0, ""]; //Macht Rucks?cke unsichtbar
+				};
+				Sleep 10;
 			};
-			Sleep 10;
 		};
 	};
-};
 };
 
 
