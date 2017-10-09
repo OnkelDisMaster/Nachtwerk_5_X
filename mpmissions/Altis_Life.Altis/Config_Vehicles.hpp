@@ -123,6 +123,7 @@ class CarShops {
 			{ "C_Van_01_box_F", { "life_mediclevel", "SCALAR", 1 } },
 			{ "C_Van_02_medevac_F", { "life_mediclevel", "SCALAR", 1 } },
             { "C_Offroad_01_F", { "life_mediclevel", "SCALAR", 2 } },
+			{ "C_Van_01_fuel_F", { "", "", -1 } },
             { "C_SUV_01_F", { "life_mediclevel", "SCALAR", 3 } },
 			{ "I_Truck_02_medical_F", { "life_mediclevel", "SCALAR", 2 } },
 			{ "B_Truck_01_medical_F", { "life_mediclevel", "SCALAR", 2 } },
@@ -151,6 +152,7 @@ class CarShops {
             { "C_Offroad_01_F", { "life_coplevel", "SCALAR", 2 } },
 			{ "C_Van_02_vehicle_F", { "life_coplevel", "SCALAR", 2 } },
 			{ "C_Van_02_transport_F", { "life_coplevel", "SCALAR", 2 } },
+			{ "C_IDAP_Van_02_medevac_F", { "life_coplevel", "SCALAR", 2 } },
 			{ "B_Truck_01_transport_F", { "life_coplevel", "SCALAR", 2 } },
             { "B_Truck_01_box_F", { "life_coplevel", "SCALAR", 2 } },
             { "C_Hatchback_01_F", { "life_coplevel", "SCALAR", 3 } },
@@ -1168,6 +1170,23 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 30000;
         textures[] = {};
+    };
+	
+	class C_IDAP_Van_02_medevac_F {
+        vItemSpace = -1;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 30000;
+        textures[] = {
+			{ "Pozilei (ILLEGAL)", "cop", {
+                "skins\car\pozilei_van.jpg"
+            }, ""  },
+            { "SEK", "cop", {
+                "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa"
+            },"" },
+			{ "Polizei", "cop", {
+                "skins\car\polizei_van.jpg"
+            },"" }
+		};
     };
 	
 	class C_Van_02_vehicle_F {	// Orange Van Transport
