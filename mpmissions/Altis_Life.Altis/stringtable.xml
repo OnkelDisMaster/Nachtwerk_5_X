@@ -120,7 +120,7 @@
             <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
-            <Original>Altis Market</Original>
+            <Original>Altis Markt</Original>
             <Czech>Altis Market</Czech>
             <Spanish>Mercado de Altis</Spanish>
             <Russian></Russian>
@@ -11062,7 +11062,7 @@
             <Spanish>Tienda General</Spanish>
             <Italian>Strumenti Generali</Italian>
             <Russian></Russian>
-            <German>Supermarkt</German>
+            <German>Baumarkt</German>
             <Portuguese>Loja de Equipamentos</Portuguese>
             <Polish>Sklep techniczny</Polish>
         </Key>
