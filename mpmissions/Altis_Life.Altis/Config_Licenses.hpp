@@ -421,7 +421,7 @@ class Licenses {
     };
 
 	class gangmtse {
-        variable = "license_civ_gang_mtse";
+        variable = "gang_mtse";
         displayName = "MTSE Gangmitglied";
         price = 1;
         illegal = false;
@@ -429,7 +429,7 @@ class Licenses {
     };
 
 	class gangbt {
-        variable = "license_civ_gang_bt";
+        variable = "gang_bt";
         displayName = "BT Gangmitglied";
         price = 1;
         illegal = false;
@@ -437,7 +437,7 @@ class Licenses {
     };
 
 	class gangraize {
-        variable = "license_civ_gang_raize";
+        variable = "gang_raize";
         displayName = "RaiZe Gangmitglied";
         price = 1;
         illegal = false;
@@ -445,7 +445,7 @@ class Licenses {
     };
 
 	class gangadb {
-        variable = "license_civ_gang_adb";
+        variable = "gang_adb";
         displayName = "ADB Gangmitglied";
         price = 1;
         illegal = false;
@@ -453,7 +453,7 @@ class Licenses {
     };
 
 	class gangtwl {
-        variable = "license_civ_gang_twl";
+        variable = "gang_twl";
         displayName = "TWL Gangmitglied";
         price = 1;
         illegal = false;
@@ -461,7 +461,7 @@ class Licenses {
     };
 	
 	class gangira {
-        variable = "license_civ_gang_ira";
+        variable = "gang_ira";
         displayName = "IRA Gangmitglied";
         price = 1;
         illegal = false;
@@ -469,7 +469,7 @@ class Licenses {
     };
 	
 	class gangdab {
-        variable = "license_civ_gang_dab";
+        variable = "gang_dab";
         displayName = "DAB Gangmitglied";
         price = 1;
         illegal = false;
