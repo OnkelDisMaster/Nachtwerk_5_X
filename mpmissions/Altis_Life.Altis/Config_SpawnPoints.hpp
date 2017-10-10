@@ -68,6 +68,14 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 		
+		class DAB {
+            displayName = "DAB Base";
+            spawnMarker = "DAB_spawn";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "gang_dab", true } };
+            level[] = { "", "", -1 };
+        };
+		
 		class BT {
             displayName = "BT Base";
             spawnMarker = "bt_spawn";

@@ -467,6 +467,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class gangdab {
+        variable = "license_civ_gang_dab";
+        displayName = "DAB Gangmitglied";
+        price = 1;
+        illegal = false;
+        side = "civ";
+    };
 
     class rebel {
         variable = "rebel";

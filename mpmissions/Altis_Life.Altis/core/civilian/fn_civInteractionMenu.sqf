@@ -37,6 +37,8 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
+_Btn9 = _display displayCtrl Btn9;
+_Btn10 = _display displayCtrl Btn10;
 life_pInact_curTarget = _curTarget;
 
 //Set Robber Button
@@ -62,7 +64,7 @@ if (_curTarget getVariable ["restrained",false]) then {
 	};
 	_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
-	{ _x ctrlShow false; } forEach [_Btn5,_Btn6,_Btn7,_Btn8];
+	{ _x ctrlShow false; } forEach [_Btn5,_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
 } else {
 	closeDialog 0;
 	hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";
