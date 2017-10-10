@@ -420,7 +420,7 @@ class Licenses {
         side = "civ";
     };
 
-	class gangmtse {
+	class gang_mtse {
         variable = "gang_mtse";
         displayName = "MTSE Gangmitglied";
         price = 1;
@@ -428,7 +428,7 @@ class Licenses {
         side = "civ";
     };
 
-	class gangbt {
+	class gang_bt {
         variable = "gang_bt";
         displayName = "BT Gangmitglied";
         price = 1;
@@ -436,7 +436,7 @@ class Licenses {
         side = "civ";
     };
 
-	class gangraize {
+	class gang_raize {
         variable = "gang_raize";
         displayName = "RaiZe Gangmitglied";
         price = 1;
@@ -444,7 +444,7 @@ class Licenses {
         side = "civ";
     };
 
-	class gangadb {
+	class gang_adb {
         variable = "gang_adb";
         displayName = "ADB Gangmitglied";
         price = 1;
@@ -452,7 +452,7 @@ class Licenses {
         side = "civ";
     };
 
-	class gangtwl {
+	class gang_twl {
         variable = "gang_twl";
         displayName = "TWL Gangmitglied";
         price = 1;
@@ -460,7 +460,7 @@ class Licenses {
         side = "civ";
     };
 	
-	class gangira {
+	class gang_ira {
         variable = "gang_ira";
         displayName = "IRA Gangmitglied";
         price = 1;
@@ -468,7 +468,7 @@ class Licenses {
         side = "civ";
     };
 	
-	class gangdab {
+	class gang_dab {
         variable = "gang_dab";
         displayName = "DAB Gangmitglied";
         price = 1;
