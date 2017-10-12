@@ -66,7 +66,7 @@ class Life_Settings {
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 4; //Maximum number of houses a player can own.
+    house_limit = 5; //Maximum number of houses a player can own.
 
     /* Hunting & Fishing System Configurations */
     animaltypes_fish[] = { "Salema_F", "Ornate_random_F", "Mackerel_F", "Tuna_F", "Mullet_F", "CatShark_F", "Turtle_F" }; //Classnames of fish you can catch
@@ -74,7 +74,7 @@ class Life_Settings {
 
     /* Item-related Restrictions */
     restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
-    restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
+    restrict_clothingPickup = false; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
     restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
     restricted_weapons[] = { "srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F" };
@@ -82,7 +82,7 @@ class Life_Settings {
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","blitzer", "bunker", "flutlicht", "licht", "mauer", "plastik", "schranke", "lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroinu","heroin","weedu","weed","koksu","koks","turtle_raw","schwarzpulver","polenBoeller","tabak","zigaretten","korallen","korallenKetten","uranErz","uranI","uranII","uranIII","uranIV","plutonium","brennstab","bombenkopf","atombombe" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
     jail_seize_inventory = true; //Set to true to run the cop seize script on inmates. False will remove only weapons and magazines otherwise. (Basically used in case cops forget to seize items). [See Lines 106-111 below]
-    sendtoJail_locations[] = { "police_hq_1", "police_hq_2", "cop_spawn_3", "cop_spawn_5", "Correctional_Facility" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
+    sendtoJail_locations[] = { "cop_spawn_1", "cop_spawn_2", "cop_spawn_3", "cop_spawn_4", "cop_spawn_5", "cop_spawn_6" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
 
     /* Medical System Configurations */
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
@@ -90,9 +90,9 @@ class Life_Settings {
     hospital_heal_fee = 3000; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 150000; //Amount of cash in bank for new cops
-    bank_civ = 150000; //Amount of cash in bank for new civillians
-    bank_med = 150000; //Amount of cash in bank for new medics
+    bank_cop = 200000; //Amount of cash in bank for new cops
+    bank_civ = 200000; //Amount of cash in bank for new civillians
+    bank_med = 200000; //Amount of cash in bank for new medics
 
     paycheck_cop = 3500; //Payment for cops
     paycheck_civ = 2500; //Payment for civillians
