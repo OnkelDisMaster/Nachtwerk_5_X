@@ -264,9 +264,11 @@ switch (_code) do {
     case 209: {
         if (_shift) then {
             if (soundVolume != 1) then {
+				life_fadeSound = false;
                 1 fadeSound 1;
                 hint composeText [ image "icons\sound_new.paa"," Normaler Sound"];
             } else {
+				life_fadeSound = true;
                 1 fadeSound 0.1;
                 hint composeText [ image "icons\sound.paa"," 90% Leiser"];
             };

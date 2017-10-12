@@ -57,6 +57,7 @@ life_drug = 0;
 life_seatbelt = false;
 life_hitmarker = false;
 life_sitting = false;
+life_fadeSound = false;
 
 life_Event = false;
 publicVariable "life_Event";
