@@ -1,7 +1,8 @@
 if(isServer)exitWith{};
-private["_ziel", "_rang", "_marke", "_org", "_message"];
+private["_ziel", "_rang", "_marke", "_org", "_message","_bargeld"];
 if(vehicle player != player )exitWith{};
 _ziel = cursorTarget;
+_bargeld = [life_cash] call life_fnc_numberText;
 if(isNull _ziel) then {_ziel = player;};    
 if(!(_ziel isKindOf "Man")) then {_ziel = player;};  
 if(!(alive _ziel)) then {_ziel = player;};     
@@ -53,4 +54,4 @@ switch(playerSide)do{
 };
 _message = format["<img size='10' color='#FFFFFF' image='icons\%1.paa'/><br/><br/><t size='2.5'>%2</t><br/><t size='1.8'>%3</t><br/><t size='1'>%4</t>",_marke, name player, _rang, _org];
 //[[player, _message],"life_fnc_Lizenzsehen",_ziel,false] spawn life_fnc_MP;
-[player, _message] remoteExec ["life_fnc_Lizenzsehen",_ziel,false];
+[player, _message, _bargeld] remoteExec ["life_fnc_Lizenzsehen",_ziel,false];
