@@ -475,6 +475,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class gang_as {
+        variable = "gang_as";
+        displayName = "AS Gangmitglied";
+        price = 1;
+        illegal = false;
+        side = "civ";
+    };
 
     class rebel {
         variable = "rebel";

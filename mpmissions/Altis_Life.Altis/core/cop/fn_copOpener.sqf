@@ -32,6 +32,7 @@
 	
 	} forEach (nearestObjects [player, ["Land_i_Shed_Ind_F"], 25]);
 	
+	if (playerSide isEqualTo west) then {
 	{
 		if (_x animationPhase "Door_1_Move" == 1) then {
 			_x animate ["Door_1_Move", 0];
@@ -45,4 +46,4 @@
 	
 	} forEach (nearestObjects [player, ["Land_ConcreteWall_01_l_gate_F","Land_ConcreteWall_01_m_gate_F"], 35]);
 	
-	
+	};

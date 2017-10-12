@@ -55,7 +55,7 @@ DYNMARKET_Items_Groups =
 			["obsidian",-1,2730,7070],
 			["salz",-1,1750,4550],
 			["glass",-1,1400,4600],
-			["diamant",-1,3030,8730],
+			["diamant",-1,3030,7730],
 			["oel",-1,3150,7850],
 			["diesel",-1,8000,18000],
 			["krone",-1,25000,60000]
@@ -125,7 +125,7 @@ DYNMARKET_Items_ToTrack        =
 	["bambusleitung",1250],
 	["marmor",3500],
 	["obsidian",3500],
-	["diamant",5900],
+	["diamant",4900],
 	["juwelen",3600],
 	["polenboeller",3000],
 	["zigaretten",2400],

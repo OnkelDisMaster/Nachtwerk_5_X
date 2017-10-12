@@ -76,6 +76,14 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 		
+		class AS {
+            displayName = "AS Base";
+            spawnMarker = "as_spawn";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "gang_as", true } };
+            level[] = { "", "", -1 };
+        };
+		
 		class BT {
             displayName = "BT Base";
             spawnMarker = "bt_spawn";
