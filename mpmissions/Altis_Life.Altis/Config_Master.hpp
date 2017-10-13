@@ -142,7 +142,7 @@ class Life_Settings {
     vehicle_cop_impound_multiplier = .10; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 	
 	/* Channel 7 News Station Configurations */
-	news_broadcast_cost = 500000; //Preis für eine Nachricht im Fernsehen
+	news_broadcast_cost = 300000; //Preis für eine Nachricht im Fernsehen
 	news_broadcast_cooldown = 5; //Abklingzeit zwischen zwei Nachrichten. (Default = 20 minutes)
 	news_broadcast_header_length = 60; //Maximallänge der Überschrift. Alles darüber wird abgeschnitten. Hängt von der Schriftart, -größe und anderen Faktoren ab. Vorsicht beim Abändern!
 	cop_news_broadcast_cooldown = 1; //Abklingzeit zwischen zwei Nachrichten der Polizei
