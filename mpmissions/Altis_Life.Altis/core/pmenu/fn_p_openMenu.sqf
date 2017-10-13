@@ -18,7 +18,8 @@ switch (playerSide) do {
 		ctrlShow[888898,true];
 		ctrlShow[1210,true];
         ctrlShow[2050,true];
-
+		ctrlShow[9696,false];
+		ctrlShow[9898,false];
     };
 
     case civilian: {

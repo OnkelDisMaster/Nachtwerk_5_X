@@ -91,6 +91,14 @@ class Licenses {
         side = "civ";
     };
 
+	class bountyH {  
+        variable = "bountyH";  
+        displayName = "STR_License_bountyH";  
+        price = 10000000;  
+        illegal = true;  
+        side = "civ";  
+    };
+	
     class dive {
         variable = "dive";
         displayName = "STR_License_Dive";
