@@ -28,6 +28,8 @@ switch (playerSide) do {
 		ctrlShow[3024,false];
 		ctrlShow[1210,true];
 		ctrlShow[2050,true];
+		ctrlShow[9696,true];
+		ctrlShow[9898,true];
     };
 
     case independent: {
@@ -38,6 +40,8 @@ switch (playerSide) do {
 		ctrlShow[3024,false];
 		ctrlShow[1210,true];
 		ctrlShow[2050,true];
+		ctrlShow[9696,false];
+		ctrlShow[9898,false];
     };
 };
 

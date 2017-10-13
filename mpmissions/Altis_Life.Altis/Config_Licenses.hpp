@@ -94,7 +94,7 @@ class Licenses {
 	class bountyH {  
         variable = "bountyH";  
         displayName = "STR_License_bountyH";  
-        price = 10000000;  
+        price = 12000000;  
         illegal = true;  
         side = "civ";  
     };
