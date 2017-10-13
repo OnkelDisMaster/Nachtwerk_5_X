@@ -19,20 +19,6 @@ class blackfisch_Functions {
 		class lightsOn {};
 	};
 };
-
-class BountyHunters {
-    	file = "core\BountyHunters";
-    	class bountyAddMenu {};
-    	class bountyAddP {};
-    	class bountyBuy {};
-    	class bountyGrab {};
-    	class bountyHunterReceive {};
-    	class bountyInfo {};
-    	class bountyKill {};
-    	class bountyList {};
-    	class bountyMenu {};
-    	class markers {};
-};
 	
 class Life_Client_Core {
     tag = "life";
@@ -494,5 +480,19 @@ class Life_Client_Core {
 		class bankingHandler {};
 		class createPINMenu {};
 		class confirmPINMenu {};
+	};
+	
+	class BountyHunters {
+    	file = "core\BountyHunters";
+    	class bountyAddMenu {};
+    	class bountyAddP {};
+    	class bountyBuy {};
+    	class bountyGrab {};
+    	class bountyHunterReceive {};
+    	class bountyInfo {};
+    	class bountyKill {};
+    	class bountyList {};
+    	class bountyMenu {};
+    	class markers {};
 	};
 };

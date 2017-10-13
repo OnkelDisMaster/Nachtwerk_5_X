@@ -11,7 +11,6 @@ private ["_aciton","_unit","_atm"];
 
 _unit = player;
 
-hint "Test";
 if(playerSide != civilian) exitWith {hint "Only Civilians can buy a Bounty Hunting License!"};
 if(life_cash < 10000000) exitWith {hint "Sorry! You do not have $10,000,000 for the license"};
 if(license_civ_bountyH) exitWith {hint "You're already a bounty hunter, why buy it again?"};
