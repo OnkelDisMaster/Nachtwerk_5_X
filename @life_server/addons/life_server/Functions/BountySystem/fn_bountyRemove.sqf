@@ -12,7 +12,7 @@ if (_uid isEqualTo "") exitWith {}; //Bad data
 //diag_log format ["UID: %1", _uid];
 _Kopfgeld = param [1,0];
 
-if (!_Kopfgeld == 0) then
+if (_Kopfgeld != 0) then
 {
 	_BonusID = "00000000000000001";
 
