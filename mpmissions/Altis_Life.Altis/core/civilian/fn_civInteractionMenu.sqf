@@ -69,7 +69,7 @@ if (_curTarget getVariable ["restrained",false]) then {
 	
 	if (license_civ_bountyH) then {
 		_Btn5 ctrlSetText "Kopfgeld einfordern";
-		_Btn5 buttonSetAction "[getPlayerUID life_pInact_curTarget,life_pInact_curTarget,player,true] remoteExecCall ["life_fnc_amountBounty",RSERV];";
+		_Btn5 buttonSetAction "[getPlayerUID life_pInact_curTarget,life_pInact_curTarget,player] remoteExecCall ["life_fnc_amountBounty",RSERV];";
 		_Btn5 ctrlShow true;
 	} else {_Btn5 ctrlShow false;};
 

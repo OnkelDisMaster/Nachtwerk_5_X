@@ -15,13 +15,7 @@ _lebend = param [2];
 if (_val != _total) then {
     hint "You broke something xD, val should always == total";
 } else {
-	if (_lebend) then 
-	{
-		hint "Test: Lebend";
-		//titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText],"PLAIN"];
-	} else {
-		titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText],"PLAIN"];
-	};
+	titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText],"PLAIN"];
 };
 
 BANK = BANK + _val;
