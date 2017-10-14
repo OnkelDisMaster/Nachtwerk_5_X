@@ -14,13 +14,14 @@ _display = findDisplay 24000;
 _list = _display displayCtrl 24020;
 _data = lbData[24010,(lbCurSel 24010)];
 _data = call compile format ["%1", _data];
+hint _data;
 if (isNil "_data") exitWith {};
 if (!(_data isEqualType [])) exitWith {};
 if (_data isEqualTo []) exitWith {};
 private _remover = getPlayerUID player;
 private _removed = _data select 0;
 
-if (_remover isEqualTo _removed) exitWith {hint "You cannot remove your self from the bounty hunters list! You must die to be removed!"};
+if (_remover isEqualTo _removed) exitWith {hint "You cannot remove your self from the bounty hunters list!\n You must die to be removed!"};
 
 
 if (life_HC_isActive) then {
