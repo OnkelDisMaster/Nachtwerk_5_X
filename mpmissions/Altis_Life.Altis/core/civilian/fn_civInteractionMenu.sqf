@@ -28,6 +28,7 @@ if (player getVariable ["Escorting", false]) then {
 if (!dialog) then {
     createDialog "pInteraction_Menu";
 };
+
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
@@ -64,7 +65,20 @@ if (_curTarget getVariable ["restrained",false]) then {
 	};
 	_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
-	{ _x ctrlShow false; } forEach [_Btn5,_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
+	
+	_Btn5 ctrlSetText "Kopfgeld einfordern";
+	if (license_civ_bountyH) then {
+		_Btn5 buttonSetAction "
+		if (life_HC_isActive) then {
+			[getPlayerUID life_pInact_curTarget,life_pInact_curTarget,player,true] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
+		} else {
+			[getPlayerUID life_pInact_curTarget,life_pInact_curTarget,player,true] remoteExecCall ["life_fnc_amountBounty",RSERV];
+		};
+		";
+	} else {_Btn5 ctrlShow false;};
+
+	
+	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
 } else {
 	closeDialog 0;
 	hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";

@@ -2,8 +2,8 @@
 /*
     File: fn_bountyKill.sqf
     Author: !TS JORDAN
-	Originally Made for: Underbelly ArmA 
-
+	Modified by Valle @Nachtwerk Community
+	
     Description:
     Removes the bounty on a selected player.
 */
