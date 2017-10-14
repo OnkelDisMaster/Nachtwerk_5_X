@@ -9,7 +9,7 @@
 */
 private _num = true;
 disableSerialization;
-if(playerSide == west) exitWith {};
+//if(playerSide == west) exitWith {};
 //if(playerSide == independent) exitWith {};
 
 createDialog "life_bounty_Addmenu";

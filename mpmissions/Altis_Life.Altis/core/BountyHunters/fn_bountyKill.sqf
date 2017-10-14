@@ -20,7 +20,7 @@ if (_data isEqualTo []) exitWith {};
 private _remover = getPlayerUID player;
 private _removed = _data select 0;
 
-//if (_remover isEqualTo _removed) exitWith {hint "You cannot remove your self from the bounty hunters list! You must die to be removed!"};
+if (_remover isEqualTo _removed) exitWith {hint "You cannot remove your self from the bounty hunters list! You must die to be removed!"};
 
 
 if (life_HC_isActive) then {
