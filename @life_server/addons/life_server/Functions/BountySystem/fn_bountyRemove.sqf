@@ -14,7 +14,7 @@ if (_uid isEqualTo "") exitWith {}; //Bad data
 
 _BonusID = "00000000000000001";
 
-    _Kopfgeld = param [1,"",[""]];
+    _Kopfgeld = [_this,1,"",[""]] call BIS_fnc_param;
 
 	_delKopfgeld = (_Kopfgeld * 1.5);
 		

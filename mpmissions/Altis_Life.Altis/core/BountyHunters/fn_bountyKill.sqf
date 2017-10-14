@@ -35,7 +35,7 @@ if (life_atmbank > _delKopfgeld) then
 	} else {
 		[(_data select 0),_Kopfgeld] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 	};
-	hint format ["Du hast %1$ Kopfgeld für %2$ entfernt",_Kopfgeld,_delKopfgeld];
+	hint format ["Du hast %1$ Kopfgeld für %2$ entfernt",[_Kopfgeld] call life_fnc_numberText,[_delKopfgeld] call life_fnc_numberText];
 } else {
-	hint format ["Du hast nicht genügend Geld auf dem Konto um %1$ Kopfgeld zu entfernen!",_Kopfgeld];
+	hint format ["Du hast nicht genügend Geld auf dem Konto um %1$ Kopfgeld zu entfernen!",[_Kopfgeld] call life_fnc_numberText];
 };
