@@ -10,9 +10,9 @@ private _uid = param [0,"",[""]];
 private ["_Kopfgeld","_delKopfgeld","_Bonus","_BonusID"];
 if (_uid isEqualTo "") exitWith {}; //Bad data
 //diag_log format ["UID: %1", _uid];
-_Kopfgeld = param [1];
+_Kopfgeld = param [1,0];
 
-if (!isNull _Kopfgeld) then
+if (!_Kopfgeld == 0) then
 {
 	_BonusID = "00000000000000001";
 

@@ -66,15 +66,11 @@ if (_curTarget getVariable ["restrained",false]) then {
 	_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 	
-	_Btn5 ctrlSetText "Kopfgeld einfordern";
+	
 	if (license_civ_bountyH) then {
-		_Btn5 buttonSetAction "
-		if (life_HC_isActive) then {
-			[getPlayerUID life_pInact_curTarget,life_pInact_curTarget,player,true] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
-		} else {
-			[getPlayerUID life_pInact_curTarget,life_pInact_curTarget,player,true] remoteExecCall ["life_fnc_amountBounty",RSERV];
-		};
-		";
+		_Btn5 ctrlSetText "Kopfgeld einfordern";
+		_Btn5 buttonSetAction "[getPlayerUID life_pInact_curTarget,life_pInact_curTarget,player,true] remoteExecCall ["life_fnc_amountBounty",RSERV];";
+		_Btn5 ctrlShow true;
 	} else {_Btn5 ctrlShow false;};
 
 	
