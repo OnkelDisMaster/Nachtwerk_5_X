@@ -255,7 +255,7 @@ class VirtualItems {
         variable = "defibrillator";
         displayName = "STR_Item_Defibrillator";
         weight = 4;
-        buyPrice = 900;
+        buyPrice = 10;
         sellPrice = 450;
         illegal = false;
         edible = -1;
@@ -398,8 +398,8 @@ class VirtualItems {
         variable = "blitzer";
         displayName = "STR_Item_blitzer";
         weight = 1;
-        buyPrice = 2500;
-        sellPrice = 1200;
+        buyPrice = 10;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "";
@@ -408,8 +408,8 @@ class VirtualItems {
         variable = "bunker";
         displayName = "STR_Item_bunker";
         weight = 1;
-        buyPrice = 2500;
-        sellPrice = 1200;
+        buyPrice = 10;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "";
@@ -418,8 +418,8 @@ class VirtualItems {
         variable = "flutlicht";
         displayName = "STR_Item_flutlicht";
         weight = 1;
-        buyPrice = 2500;
-        sellPrice = 1200;
+        buyPrice = 10;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "";
@@ -428,8 +428,8 @@ class VirtualItems {
         variable = "licht";
         displayName = "STR_Item_licht";
         weight = 1;
-        buyPrice = 2500;
-        sellPrice = 1200;
+        buyPrice = 10;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "";
@@ -438,8 +438,8 @@ class VirtualItems {
         variable = "mauer";
         displayName = "STR_Item_mauer";
         weight = 1;
-        buyPrice = 2500;
-        sellPrice = 1200;
+        buyPrice = 10;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "";
@@ -448,8 +448,8 @@ class VirtualItems {
         variable = "plastik";
         displayName = "STR_Item_plastik";
         weight = 1;
-        buyPrice = 2500;
-        sellPrice = 1200;
+        buyPrice = 10;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "";
@@ -458,8 +458,8 @@ class VirtualItems {
         variable = "schranke";
         displayName = "STR_Item_schranke";
         weight = 1;
-        buyPrice = 2500;
-        sellPrice = 1200;
+        buyPrice = 10;
+        sellPrice = -1;
         illegal = true;
         edible = -1;
         icon = "";
