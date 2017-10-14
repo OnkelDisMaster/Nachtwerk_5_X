@@ -21,7 +21,7 @@ _BonusID = "00000000000000001";
 	private _query = format ["SELECT bounty FROM bounty WHERE bountyID='%1'",_BonusID];
 	private _queryResult = [_query,2] call DB_fnc_asyncCall;
 		
-	_Bonus = _queryResult param [0] + (_delKopfgeld - _Kopfgeld);
+	_Bonus = (_queryResult param [0]) + (_delKopfgeld - _Kopfgeld);
 	private _query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_Bonus,_BonusID];
 	[_query,2] call DB_fnc_asyncCall;
 
