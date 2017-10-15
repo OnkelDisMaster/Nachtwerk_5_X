@@ -16,5 +16,4 @@ if (life_HC_isActive) then {
 		[(_data select 0),_Kopfgeld] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 };
 
-//Danach direkt 5 min ins Gefängnis
-[cursorTarget, 5] call life_fnc_arrestAction;
+//Wenn gesucht dann direkt 5-10 min ins Gefängnis
