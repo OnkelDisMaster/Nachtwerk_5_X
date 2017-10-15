@@ -70,10 +70,8 @@ if (_curTarget getVariable ["restrained",false]) then {
 	if (license_civ_bountyH) then {
 		_Btn5 ctrlSetText "Kopfgeld einfordern";
 		_Btn5 ctrlShow true;
-		if ((player distance (getMarkerPos(Kopfgeld_1)) < 10) || (player distance (getMarkerPos(Kopfgeld_2)) < 10) || (player distance (getMarkerPos(Kopfgeld_3)) < 10)) then 
+		if ((player distance (getMarkerPos(Kopfgeld_1)) > 10) || (player distance (getMarkerPos(Kopfgeld_2)) > 10) || (player distance (getMarkerPos(Kopfgeld_3)) > 10)) then 
 		{
-			_Btn5 ctrlEnable true;
-		} else {
 			_Btn5 ctrlEnable false;
 		};
 		_Btn5 buttonSetAction "[player] call life_fnc_bountyLebend; closeDialog 0;";

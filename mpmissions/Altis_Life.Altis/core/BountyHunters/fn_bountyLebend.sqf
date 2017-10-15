@@ -10,8 +10,10 @@
 
 if (life_HC_isActive) then {
         [getPlayerUID cursorTarget,cursorTarget,player] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
+		[(_data select 0),_Kopfgeld] remoteExecCall ["HC_fnc_bountyRemove",HC_Life];
 } else {
         [getPlayerUID cursorTarget,cursorTarget,player] remoteExecCall ["life_fnc_amountBounty",RSERV];
+		[(_data select 0),_Kopfgeld] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 };
 
 //Danach direkt 5 min ins Gefängnis
