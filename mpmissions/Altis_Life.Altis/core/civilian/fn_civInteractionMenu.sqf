@@ -40,6 +40,7 @@ _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
+_Btn11 = _display displayCtrl Btn11;
 life_pInact_curTarget = _curTarget;
 
 //Set Robber Button
@@ -70,7 +71,6 @@ if (_curTarget getVariable ["restrained",false]) then {
 	if (license_civ_bountyH) then {
 		_Btn5 ctrlSetText "Kopfgeld einfordern";
 		_Btn5 ctrlShow true;
-		_Btn5 ctrlEnable false;
 		if ((player distance (getMarkerPos(Kopfgeld_1)) > 10) || (player distance (getMarkerPos(Kopfgeld_2)) > 10) || (player distance (getMarkerPos(Kopfgeld_3)) > 10)) then 
 		{
 			_Btn5 ctrlEnable false;
@@ -81,7 +81,7 @@ if (_curTarget getVariable ["restrained",false]) then {
 	} else {_Btn5 ctrlShow false;};
 
 	
-	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
+	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10,_Btn11];
 } else {
 	closeDialog 0;
 	hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";
