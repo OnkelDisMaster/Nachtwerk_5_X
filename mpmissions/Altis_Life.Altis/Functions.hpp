@@ -495,5 +495,6 @@ class Life_Client_Core {
     	class bountyList {};
     	class bountyMenu {};
     	class markers {};
+		class bountyLebend {};
 	};
 };
