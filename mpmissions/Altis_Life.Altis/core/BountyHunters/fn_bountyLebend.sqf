@@ -13,3 +13,6 @@ if (life_HC_isActive) then {
 } else {
         [getPlayerUID cursorTarget,cursorTarget,player] remoteExecCall ["life_fnc_amountBounty",RSERV];
 };
+
+//Danach direkt 5 min ins Gefängnis
+[cursorTarget, 5] call life_fnc_arrestAction;
