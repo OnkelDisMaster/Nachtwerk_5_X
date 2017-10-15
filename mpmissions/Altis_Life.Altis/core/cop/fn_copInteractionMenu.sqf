@@ -86,15 +86,15 @@ _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 
 //SeizeWeapons Button
-_Btn8 ctrlSetText localize "STR_pInAct_Seize";
-_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
-
+_Btn11 ctrlSetText localize "STR_pInAct_Seize";
+_Btn11 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
+/*
 _Btn10 ctrlSetText localize "STR_pInAct_RevokeLicense";
 _Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";
 
 _Btn11 ctrlSetText localize "STR_pInAct_Breathalyzer";
 _Btn11 buttonSetAction "[player] remoteExec [""life_fnc_alkoholdrugtester"",life_pInact_curTarget];closeDialog 0;";
-
+*/
 {
     if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
 } forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
