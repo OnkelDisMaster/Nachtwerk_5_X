@@ -82,7 +82,7 @@ class CfgRemoteExec {
 		F(life_fnc_bountyHunterReceive,CLIENT)//Bountyhunter
 		F(life_fnc_bountyList,CLIENT)//Bountyhunter
 		F(life_fnc_markers,CLIENT)//Bountyhunter
-	//	F(life_fnc_bountyReceive,CLIENT)//Bountyhunter
+		F(life_fnc_bountyBonus,CLIENT)//Bountyhunter
 
 
 
