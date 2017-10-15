@@ -78,7 +78,7 @@ class CfgSpawnPoints {
 		
 		class Raven {
             displayName = "Raven Base";
-            spawnMarker = "rav_spawn";
+            spawnMarker = "raven_spawn";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "gang_as", true } };
             level[] = { "", "", -1 };
