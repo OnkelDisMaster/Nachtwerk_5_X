@@ -23,7 +23,7 @@ switch (_Kopfgeld) do
 	};
 	case 0:
 	{};
-	default:
+	default
 	{
 		_BonusID = "00000000000000001";
 
