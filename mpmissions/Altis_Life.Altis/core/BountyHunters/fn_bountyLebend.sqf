@@ -15,5 +15,5 @@ if (life_HC_isActive) then {
         [getPlayerUID cursorTarget,cursorTarget,player] remoteExecCall ["life_fnc_amountBounty",RSERV];
 		[(_data select 0),_Kopfgeld] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 };
-
+hint "Du versuchst den Gefangenen ans Kopfgeldbüro zu überstellen";
 //Wenn gesucht dann direkt 5-10 min ins Gefängnis
