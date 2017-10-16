@@ -10,7 +10,7 @@ private _uid = param [0,"",[""]];
 private ["_Kopfgeld","_delKopfgeld","_Bonus","_BonusID"];
 if (_uid isEqualTo "") exitWith {}; //Bad data
 _Kopfgeld = param [1,0];
-_spieler = param [2];
+_spieler = param [2,objNull];
 
 switch (_Kopfgeld) do
 	case 1:
