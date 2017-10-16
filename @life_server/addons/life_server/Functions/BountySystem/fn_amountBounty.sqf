@@ -9,9 +9,9 @@
 params [
     ["_uid","",[""]],
     ["_civ",objNull,[objNull]],
-    ["_cop",objNull,[objNull]]
+    ["_cop",objNull,[objNull]],
+	["_lebend",false]
 ];
-private _lebend = param [3,false];
 if (isNull _civ || isNull _cop) exitWith {};
 
 private _query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];
