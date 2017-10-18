@@ -12,11 +12,11 @@ if ((player distance (getMarkerPos(Kopfgeld_1)) < 20) || (player distance (getMa
 	{
 		if (life_HC_isActive) then 
 		{
-			[getPlayerUID cursorTarget,cursorTarget,player,true,true] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
 			[getPlayerUID cursorTarget] remoteExecCall ["HC_fnc_bountyRemove",HC_Life];
+			[getPlayerUID cursorTarget,cursorTarget,player,true,true] remoteExecCall ["HC_fnc_amountBounty",HC_Life];			
 		} else {
-			[getPlayerUID cursorTarget,cursorTarget,player,true,true] remoteExecCall ["life_fnc_amountBounty",RSERV];
 			[getPlayerUID cursorTarget] remoteExecCall ["life_fnc_bountyRemove",RSERV];
+			[getPlayerUID cursorTarget,cursorTarget,player,true,true] remoteExecCall ["life_fnc_amountBounty",RSERV];			
 		};	
 	} else {
 		if (life_HC_isActive) then 
