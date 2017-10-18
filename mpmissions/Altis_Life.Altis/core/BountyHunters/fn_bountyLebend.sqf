@@ -8,7 +8,7 @@
     
 */
 
-_spieler = param [0,0];
+_spieler = param [0];
 
 if ((player distance (getMarkerPos(Kopfgeld_1)) < 20) || (player distance (getMarkerPos(Kopfgeld_2)) < 20) || (player distance (getMarkerPos(Kopfgeld_3)) < 20)) then 
 	{
