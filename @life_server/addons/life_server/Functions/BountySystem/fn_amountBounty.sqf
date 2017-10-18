@@ -14,25 +14,25 @@ params [
 	["_bonus",false]
 ];
 if (isNull _civ || isNull _cop) exitWith {};
-private ["_amount","_bonusCash","_bonusKonto","_BonusID"];
+private ["_amount","_bonusCash","_bonusKonto","_BonusID","_query","_queryResult"];
 _BonusID = "00000000000000001";
 _bonusCash = 0;
 
-private _query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];
-private _queryResult = [_query,2] call DB_fnc_asyncCall;
+_query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];
+_queryResult = [_query,2] call DB_fnc_asyncCall;
 
 if !(count _queryResult isEqualTo 0) then {
     _amount = _queryResult param [2];
 	
-	private _query = format ["SELECT bounty FROM bounty WHERE bountyID='%1'",_BonusID];
-	private _queryResult = [_query,2] call DB_fnc_asyncCall;
+	_query = format ["SELECT bounty FROM bounty WHERE bountyID='%1'",_BonusID];
+	_queryResult = [_query,2] call DB_fnc_asyncCall;
 	
 	if !(count _queryResult isEqualTo 0) then {
 		_bonusKonto = (_queryResult param [0]);
 		_bonusCash =  _bonusKonto * (round(random(30)+1)/100);
 		_bonusKonto = _bonusKonto - _bonusCash;
 		
-		private _query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_bonusKonto,_BonusID];
+		_query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_bonusKonto,_BonusID];
 		[_query,2] call DB_fnc_asyncCall;
 	};
 
