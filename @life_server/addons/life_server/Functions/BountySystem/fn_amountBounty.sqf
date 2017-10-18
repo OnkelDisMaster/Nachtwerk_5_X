@@ -27,9 +27,9 @@ if !(count _queryResult isEqualTo 0) then {
 	_query = format ["SELECT bounty FROM bounty WHERE bountyID='%1'",_BonusID];
 	_queryResult = [_query,2] call DB_fnc_asyncCall;
 	
-	if !(count _queryResult isEqualTo 0) then {
+	if (!(count _queryResult isEqualTo 0) && (_bonus)) then {
 		_bonusKonto = (_queryResult param [0]);
-		_bonusCash =  _bonusKonto * (round(random(30)+1)/100);
+		_bonusCash =  _bonusKonto * 0.25;//(round(random(30)+1)/100);
 		_bonusKonto = _bonusKonto - _bonusCash;
 		
 		_query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_bonusKonto,_BonusID];
