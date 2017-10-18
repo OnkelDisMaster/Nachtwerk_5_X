@@ -17,7 +17,7 @@ _bountyZiel = param [0,ObjNull,[ObjNull]];
 _spieler = param [1,ObjNull,[ObjNull]];
 
 
-if (((_zone1 distance player < _dis) || (_zone2 distance player < _dis) || (_zone3 distance player < _dis)) then 
+if ((_zone1 distance player < _dis) || (_zone2 distance player < _dis) || (_zone3 distance player < _dis)) then 
 	{
 	hint "test";
 			[getPlayerUID _bountyZiel] remoteExecCall ["life_fnc_bountyRemove",RSERV];
