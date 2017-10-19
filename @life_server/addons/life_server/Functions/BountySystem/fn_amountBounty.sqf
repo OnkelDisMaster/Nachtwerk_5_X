@@ -22,6 +22,6 @@ private "_amount";
 if !(count _queryResult isEqualTo 0) then {
     _amount = _queryResult param [2];
     if !(_amount isEqualTo 0) then {
-		[_amount,_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
+		[_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
     };
 };
