@@ -23,7 +23,7 @@ _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 if !(count _queryResult isEqualTo 0) then {
     _amount = _queryResult param [2];
-	
+/*
 	_query = format ["SELECT bounty FROM bounty WHERE bountyID='%1'",_BonusID];
 	_queryResult = [_query,2] call DB_fnc_asyncCall;
 	
@@ -35,7 +35,7 @@ if !(count _queryResult isEqualTo 0) then {
 		_query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_bonusKonto,_BonusID];
 		[_query,2] call DB_fnc_asyncCall;
 	};
-
+*/
     if !(_amount isEqualTo 0) then {
         [_amount,_bonusCash] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
     };
