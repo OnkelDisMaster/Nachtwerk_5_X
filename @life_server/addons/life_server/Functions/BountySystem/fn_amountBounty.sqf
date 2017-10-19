@@ -9,9 +9,9 @@
 params [
     ["_uid","",[""]],
     ["_civ",objNull,[objNull]],
-    ["_cop",objNull,[objNull]],
-	["_lebend",false,[false]],
-	["_bonus",false,[false]]
+    ["_cop",objNull,[objNull]]
+//	["_lebend",false,[false]],
+//	["_bonus",false,[false]]
 ];
 if (isNull _civ || isNull _cop) exitWith {};
 private ["_amount","_bonusCash","_bonusKonto","_BonusID","_query","_queryResult"];
@@ -39,5 +39,5 @@ if !(count _queryResult isEqualTo 0) then {
     if !(_amount isEqualTo 0) then {
         [_amount,_bonusCash] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
     };
-	if ((_lebend) && (side _civ isEqualTo civilian)) then {[_civ, 5] call life_fnc_arrestAction;};
+//	if ((_lebend) && (side _civ isEqualTo civilian)) then {[_civ, 5] call life_fnc_arrestAction;};
 };
