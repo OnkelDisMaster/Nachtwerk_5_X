@@ -11,7 +11,11 @@ private ["_Kopfgeld","_delKopfgeld","_Bonus","_BonusID"];
 if (_uid isEqualTo "") exitWith {}; //Bad data
 _Kopfgeld = param [1,0];
 
-if (_Kopfgeld != 0) then
+switch (_Kopfgeld) do
+{
+	case 0:
+	{};
+	default
 	{
 		_BonusID = "00000000000000001";
 
@@ -24,7 +28,7 @@ if (_Kopfgeld != 0) then
 		private _query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_Bonus,_BonusID];
 		[_query,2] call DB_fnc_asyncCall;
 	};
-	
+};	
 	private _query = format ["DELETE FROM bounty WHERE bountyID ='%1'",_uid];
 	[_query,2] call DB_fnc_asyncCall;
 
