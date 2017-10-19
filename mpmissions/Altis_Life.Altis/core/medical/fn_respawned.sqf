@@ -75,9 +75,9 @@ if (!isNil "life_copRecieve") then {
 if (!isNil "life_bountyHunter") then {
 
     if (life_HC_isActive) then {
-        [getPlayerUID player,player,life_bountyHunter,false,false] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
+        [getPlayerUID player,player,life_bountyHunter] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
     } else {
-        [getPlayerUID player,player,life_bountyHunter,false,false] remoteExecCall ["life_fnc_amountBounty",RSERV];
+        [getPlayerUID player,player,life_bountyHunter] remoteExecCall ["life_fnc_amountBounty",RSERV];
     };
     
 	life_bountyHunter = nil;
