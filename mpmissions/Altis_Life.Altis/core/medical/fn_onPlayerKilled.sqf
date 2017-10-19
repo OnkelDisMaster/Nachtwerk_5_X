@@ -123,7 +123,7 @@ if (side _killer isEqualTo civilian && {_killer != _unit}) then {
 	};
 };	
 
-if (!isNull _killer) then {
+if (!isNull life_bountyHunter) then {
     life_removeBounty = true;
 };
 

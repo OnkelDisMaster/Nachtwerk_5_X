@@ -9,8 +9,7 @@
 params [
     ["_uid","",[""]],
     ["_civ",objNull,[objNull]],
-    ["_cop",objNull,[objNull]],
-    ["_half",false,[false]]
+    ["_cop",objNull,[objNull]]
 ];
 diag_log format ["I called"];
 
@@ -23,10 +22,6 @@ private "_amount";
 if !(count _queryResult isEqualTo 0) then {
     _amount = _queryResult param [2];
     if !(_amount isEqualTo 0) then {
-        if (_half) then {
-            [((_amount) / 2),_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
-        } else {
-            [_amount,_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
-        };
+		[_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
     };
 };
