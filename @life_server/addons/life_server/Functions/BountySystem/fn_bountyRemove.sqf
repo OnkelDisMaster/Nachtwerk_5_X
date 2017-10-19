@@ -2,7 +2,7 @@
     File: fn_bountyRemove.sqf
 	Author: !TS JORDAN
 	Modified by Valle @Nachtwerk Community
-	
+
     Description:
     Removes a person from the bounty list.
 */
@@ -10,7 +10,7 @@ private _uid = param [0,"",[""]];
 private ["_Kopfgeld","_delKopfgeld","_Bonus","_BonusID"];
 if (_uid isEqualTo "") exitWith {}; //Bad data
 _Kopfgeld = param [1,0];
-_spieler = [_this,2,objNull,[objNull]] call BIS_fnc_param;
+_spieler = param [2,objNull];
 
 switch (_Kopfgeld) do
 	case 1:
