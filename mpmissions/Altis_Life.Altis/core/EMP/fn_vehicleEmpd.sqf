@@ -8,7 +8,7 @@ _vehicle =  [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 
 if(isNull _vehicle) exitWith {};
 
-if(_vehicle getVariable ["nano_empd", false]) exitWith {};
+if((_vehicle getVariable ["nano_empd", false])) exitWith {};
 _vehicle setVariable["nano_empd",true,true];
 
 if(_vehicle isKindOf "Car") then {
@@ -25,9 +25,9 @@ if(_vehicle isKindOf "Car") then {
     _vehicle setHitPointDamage ["HitEngine", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
     _vehicle setHitPointDamage ["HitEngine3", 1];
-    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 60 Sekunden deaktiviert!";
+    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 30 Sekunden deaktiviert!";
     _vehicle say3D "empwarn";
-	sleep 60;
+	sleep 30;
     _vehicle setHitPointDamage ["HitEngine", 0];
     _vehicle setHitPointDamage ["HitEngine2", 0];
     _vehicle setHitPointDamage ["HitEngine3", 0];
@@ -48,9 +48,9 @@ if(_vehicle isKindOf "Air") then {
     _vehicle setHitPointDamage ["HitEngine", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
     _vehicle setHitPointDamage ["HitEngine3", 1];
-    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 60 Sekunden deaktiviert!";
+    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 30 Sekunden deaktiviert!";
     _vehicle say3D "empwarn";
-	sleep 60;
+	sleep 30;
     _vehicle setHitPointDamage ["HitEngine", 0];
     _vehicle setHitPointDamage ["HitEngine2", 0];
     _vehicle setHitPointDamage ["HitEngine3", 0];
@@ -69,9 +69,9 @@ if(_vehicle isKindOf "Ship") then {
     _vehicle setHitPointDamage ["HitEngine", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
     _vehicle setHitPointDamage ["HitEngine3", 1];
-    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 60 Sekunden deaktiviert!";
+    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 30 Sekunden deaktiviert!";
     _vehicle say3D "empwarn";
-	sleep 60;
+	sleep 30;
     _vehicle setHitPointDamage ["HitEngine", 0];
     _vehicle setHitPointDamage ["HitEngine2", 0];
     _vehicle setHitPointDamage ["HitEngine3", 0];
