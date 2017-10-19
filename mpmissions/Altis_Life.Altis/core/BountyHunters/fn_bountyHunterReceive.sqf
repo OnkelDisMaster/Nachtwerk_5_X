@@ -7,11 +7,15 @@
     Description:
     Notifies the bounty hunter he has killed the person with the bounty and was rewarded with the bounty.
 */
-private ["_val","_bonus"];
+private ["_val","_total"];
 _val = [_this,0,"",["",0]] call BIS_fnc_param;
-//_bonus = param [1,0];
+_total = [_this,1,"",["",0]] call BIS_fnc_param;
 
-	titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText],"PLAIN"];
+if (_val != _total) then {
+    hint "You broke something xD, val should always == total";
+} else {
+    titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText],"PLAIN"];
+};
 
-BANK = BANK + _val; //+ _bonus;
+BANK = BANK + _val;
 [1] call SOCK_fnc_updatePartial;

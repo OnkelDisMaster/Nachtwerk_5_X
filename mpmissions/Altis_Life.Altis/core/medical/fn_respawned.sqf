@@ -84,6 +84,7 @@ if (!isNil "life_bountyHunter") then {
 }; 
 
 
+
 //Remove Bounty...
 if (life_removeBounty) then {
 	if (life_HC_isActive) then {
