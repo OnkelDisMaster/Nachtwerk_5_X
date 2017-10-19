@@ -7,11 +7,11 @@
     Description:
     Notifies the bounty hunter he has killed the person with the bounty and was rewarded with the bounty.
 */
-private ["_val","_bonus"];
+private ["_val","_Bonus"];
 _val = [_this,0,"",["",0]] call BIS_fnc_param;
-//_bonus = param [1,0];
+_Bonus = param [1,0];
 
 	titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText],"PLAIN"];
 
-BANK = BANK + _val; //+ _bonus;
+BANK = BANK + _val + _Bonus;
 [1] call SOCK_fnc_updatePartial;
