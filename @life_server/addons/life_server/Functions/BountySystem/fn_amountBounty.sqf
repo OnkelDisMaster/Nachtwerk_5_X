@@ -10,8 +10,8 @@ params [
     ["_uid","",[""]],
     ["_civ",objNull,[objNull]],
     ["_cop",objNull,[objNull]],
-	["_lebend",false,[false]],
-	["_bonus",false,[false]]
+	["_lebend",false],
+	["_bonus",false]
 ];
 if (isNull _civ || isNull _cop) exitWith {};
 private ["_amount","_bonusCash","_bonusKonto","_BonusID","_query","_queryResult"];

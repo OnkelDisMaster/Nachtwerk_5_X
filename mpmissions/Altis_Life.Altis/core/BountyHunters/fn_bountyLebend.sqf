@@ -26,5 +26,5 @@ if ((_zone1 distance player < _dis) || (_zone2 distance player < _dis) || (_zone
 			[getPlayerUID _bountyZiel] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 	};
 
-hint "Auf den Gefangenen gibt es zur Zeit kein Kopfgeld";
+//hint "Auf den Gefangenen gibt es zur Zeit kein Kopfgeld";
 //Wenn gesucht dann direkt 5-10 min ins Gefängnis
