@@ -6,7 +6,7 @@
 
     Description: Gather the required info to send to the DB. 
 */
-if (playerSide isEqualTo independent) exitWith {hint localize "STR_bounty_bountyList_notBH";};
+if !(playerSide isEqualTo civilian) exitWith {hint localize "STR_bounty_bountyList_notBH";};
 if ((lbCurSel 240600) isEqualTo -1) exitWith {hint localize "STR_bounty_bountyList_noPlayerSelected";};
 if ((lbCurSel 240700) isEqualTo -1) exitWith {hint localize "STR_bounty_bountyList_noAmountSelected";};
 private _unit = lbData [240600,lbCurSel 240600];
