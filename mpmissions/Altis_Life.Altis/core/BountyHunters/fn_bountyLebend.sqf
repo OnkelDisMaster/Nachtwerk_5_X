@@ -7,7 +7,7 @@
 	Bountyhunter gets payed if he delivers the target near a bh marker.
     
 */
-private ["_spieler","_bountyZiel","_inArea","_zone1","_zone2","_zone3","_dis"];
+private ["_eh1","_inArea","_zone1","_zone2","_zone3","_dis"];
 _zone1 = getMarkerPos "Kopfgeld_1"; // MARKERS FOR SAFEZONE
 _zone2 = getMarkerPos "Kopfgeld_2";
 _zone3 = getMarkerPos "Kopfgeld_3";

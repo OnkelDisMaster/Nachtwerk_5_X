@@ -20,3 +20,4 @@ if (_data isEqualTo []) exitWith {hint localize "STR_Cop_wantedList_FailedToFetc
 lbClear _list;
 
 ctrlSetText[24030,format [localize "STR_Wanted_Bounty",[(_data select 0)] call life_fnc_numberText]];
+tempKopfgeld = (_data select 0);
