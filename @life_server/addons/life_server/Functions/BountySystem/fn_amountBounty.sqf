@@ -9,9 +9,11 @@
 params [
     ["_uid","",[""]],
     ["_civ",objNull,[objNull]],
-    ["_cop",objNull,[objNull]]
+    ["_cop",objNull,[objNull]],
+    ["_half",false,[false]]
 ];
-private _lebend = param [3,false];
+diag_log format ["I called"];
+
 if (isNull _civ || isNull _cop) exitWith {};
 
 private _query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];
@@ -21,7 +23,10 @@ private "_amount";
 if !(count _queryResult isEqualTo 0) then {
     _amount = _queryResult param [2];
     if !(_amount isEqualTo 0) then {
-        [_amount,_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
+        if (_half) then {
+            [((_amount) / 2),_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
+        } else {
+            [_amount,_amount] remoteExecCall ["life_fnc_bountyHunterReceive",(owner _cop)];
+        };
     };
-	if (_lebend) then {[_civ, 5] call life_fnc_arrestAction;};
 };
