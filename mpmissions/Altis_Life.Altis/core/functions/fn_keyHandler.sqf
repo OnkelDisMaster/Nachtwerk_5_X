@@ -294,7 +294,7 @@ switch (_code) do {
 	case 16: {
 		_chip = (vehicle player) getVariable ["Chipsatz",0];
 		if (_chip isEqualTo 0) exitwith {};
-		if (_vehicle getVariable["nano_empd",true]) exitwith {hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
+		if (_vehicle getVariable["nano_empd",false]) exitwith {hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
 		if ((vehicle player != player) && ((driver vehicle player) isEqualTo player)) then {
             if ((vehicle player) getVariable ["speeder",false]) then
 				{	

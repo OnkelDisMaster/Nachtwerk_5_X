@@ -11,7 +11,7 @@ _vehicle = _this select 0;
 _chip = _vehicle getVariable ["Chipsatz",0];
 if (_chip isEqualTo 0) exitwith {}; // nope??
 
-if (_vehicle getVariable["nano_empd",true]) exitwith {hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
+if (_vehicle getVariable["nano_empd",false]) exitwith {hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
 
 
 _vehicle setvariable ["speeder",true,true];
