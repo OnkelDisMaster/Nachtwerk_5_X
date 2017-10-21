@@ -58,9 +58,4 @@ switch (_state) do {
 		missionNamespace setVariable [LICENSE_VARNAME("plutonium","civ"),false];
 		missionNamespace setVariable [LICENSE_VARNAME("brennstab","civ"),false];
     };
-	
-	//Adds the bountyH license to civs
-    case 100: {
-			missionNamespace setVariable [LICENSE_VARNAME("bountyH","civ"),true];
-	};
 };

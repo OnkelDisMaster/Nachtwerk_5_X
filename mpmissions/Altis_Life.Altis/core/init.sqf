@@ -162,12 +162,6 @@ if (life_HC_isActive) then {
     [getPlayerUID player,player getVariable["realname",name player]] remoteExec ["life_fnc_wantedProfUpdate",RSERV];
 };
 
-if (life_HC_isActive) then {
-    [getPlayerUID player,player getVariable ["realname",name player]] remoteExec ["HC_fnc_bountyProfUpdate",HC_Life];
-} else {
-    [getPlayerUID player,player getVariable ["realname",name player]] remoteExec ["life_fnc_bountyProfUpdate",RSERV];
-};
-
 //DynMarket
 DYNAMICMARKET_boughtItems = [];
 [player] remoteExec ["TON_fnc_playerLogged",RSERV];

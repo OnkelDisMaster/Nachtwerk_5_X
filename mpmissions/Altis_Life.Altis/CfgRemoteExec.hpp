@@ -79,11 +79,6 @@ class CfgRemoteExec {
 		F(life_fnc_alkoholdrugtester,CLIENT)
 		F(life_fnc_playerSkins,CLIENT)
 		F(life_fnc_hitMarker,CLIENT)
-		F(life_fnc_bountyHunterReceive,CLIENT)//Bountyhunter
-		F(life_fnc_bountyList,CLIENT)//Bountyhunter
-		F(life_fnc_markers,CLIENT)//Bountyhunter
-		F(life_fnc_bountyBonus,CLIENT)//Bountyhunter
-
 
 
         /* Server only functions */
@@ -132,16 +127,6 @@ class CfgRemoteExec {
 		F(TON_fnc_msgRequest,SERVER) // SMARTPHONE
 		F(TON_fnc_cleanupMessages,SERVER) // SMARTPHONE
 		F(TON_fnc_handleMessages,SERVER) // SMARTPHONE
-		F(life_fnc_bountyAdd,SERVER)//Bountyhunter
-		F(life_fnc_amountBounty,SERVER)//Bountyhunter
-		F(life_fnc_bountyFetch,SERVER)//Bountyhunter
-		F(life_fnc_bountyPerson,SERVER)//Bountyhunter
-		F(life_fnc_bountyProfUpdate,SERVER)//Bountyhunter
-		F(life_fnc_bountyRemove,SERVER)//Bountyhunter
-		F(life_fnc_bountyAlter,SERVER)//Bountyhunter
-		F(life_fnc_bountyCrimes,SERVER)//Bountyhunter
-		F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
-
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)

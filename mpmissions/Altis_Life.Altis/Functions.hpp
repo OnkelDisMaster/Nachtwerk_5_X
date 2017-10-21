@@ -19,7 +19,7 @@ class blackfisch_Functions {
 		class lightsOn {};
 	};
 };
-	
+
 class Life_Client_Core {
     tag = "life";
 
@@ -72,7 +72,6 @@ class Life_Client_Core {
         class putInCar {};
         class removeContainer {};
         class repairTruck {};
-		class repairAuto {};
         class restrainAction {};
         class robAction {};
         class searchAction {};
@@ -481,20 +480,5 @@ class Life_Client_Core {
 		class bankingHandler {};
 		class createPINMenu {};
 		class confirmPINMenu {};
-	};
-	
-	class BountyHunters {
-    	file = "core\BountyHunters";
-    	class bountyAddMenu {};
-    	class bountyAddP {};
-    	class bountyBuy {};
-    	class bountyGrab {};
-    	class bountyHunterReceive {};
-    	class bountyInfo {};
-    	class bountyKill {};
-    	class bountyList {};
-    	class bountyMenu {};
-    	class markers {};
-		//class bountyLebend {};
 	};
 };

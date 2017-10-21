@@ -10,7 +10,7 @@ class Life_Settings {
     spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off
 
     /* Data Logging Settings */
-    battlEye_friendlyLogging = true; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
+    battlEye_friendlyLogging = false; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
     player_advancedLog = true; //False [default] - No advanced logging. True - Logs house purchase and sale, vehicle purchase, sale, and chop shopping, police arrests, and gang creations. Search for: advanced_log
     player_moneyLog = true; //False [default] - No money logging. True - Logs player bank deposits, withdraws, and transfers, gang bank deposits and withdraws, money picked up off of the ground, and player robbery. Search for: money_log
     player_deathLog = true; //False [default] - No death logging. True - Logs victim and killer, and vehicle or weapon if used, when a player dies. Search for: death_log
@@ -75,7 +75,7 @@ class Life_Settings {
     /* Item-related Restrictions */
     restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
     restrict_clothingPickup = false; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
-    restrict_weaponPickup = false; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
+    restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
     restricted_weapons[] = { "srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F" };
 
@@ -142,7 +142,7 @@ class Life_Settings {
     vehicle_cop_impound_multiplier = .10; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 	
 	/* Channel 7 News Station Configurations */
-	news_broadcast_cost = 300000; //Preis für eine Nachricht im Fernsehen
+	news_broadcast_cost = 500000; //Preis für eine Nachricht im Fernsehen
 	news_broadcast_cooldown = 5; //Abklingzeit zwischen zwei Nachrichten. (Default = 20 minutes)
 	news_broadcast_header_length = 60; //Maximallänge der Überschrift. Alles darüber wird abgeschnitten. Hängt von der Schriftart, -größe und anderen Faktoren ab. Vorsicht beim Abändern!
 	cop_news_broadcast_cooldown = 1; //Abklingzeit zwischen zwei Nachrichten der Polizei
@@ -196,36 +196,6 @@ class Life_Settings {
         {"STR_Crime_24","10000","24"},
         {"STR_Crime_25","20000","25"}
     };
-	
-	/* Bounty System Settings *
-    /* bountys[] = {string, amount, code} */
-    bountys[] = {
-		{"STR_Bounty_5000", "5000", "1B"},
-		{"STR_Bounty_10000", "10000", "2B"},
-		{"STR_Bounty_15000", "15000", "3B"},
-		{"STR_Bounty_20000", "20000", "4B"},
-		{"STR_Bounty_25000", "25000", "5B"},
-		{"STR_Bounty_30000", "30000", "6B"},
-		{"STR_Bounty_35000", "35000", "7B"},
-		{"STR_Bounty_40000", "40000", "8B"},
-		{"STR_Bounty_45000", "45000", "9B"},
-		{"STR_Bounty_50000", "50000", "10B"},
-		{"STR_Bounty_55000", "55000", "11B"},
-		{"STR_Bounty_60000", "60000", "12B"},
-		{"STR_Bounty_65000", "65000", "13B"},
-		{"STR_Bounty_70000", "70000", "14B"},
-		{"STR_Bounty_75000", "75000", "15B"},
-		{"STR_Bounty_80000", "80000", "16B"},
-		{"STR_Bounty_85000", "85000", "17B"},
-		{"STR_Bounty_90000", "90000", "18B"},
-		{"STR_Bounty_95000", "95000", "19B"},
-		{"STR_Bounty_100000", "100000", "20B"},
-		{"STR_Bounty_200000", "200000", "21B"},
-		{"STR_Bounty_300000", "300000", "22B"},
-		{"STR_Bounty_400000", "400000", "23B"},
-		{"STR_Bounty_500000", "500000", "24B"},
-		{"STR_Bounty_1000000", "1000000", "25B"}
-	};
 };
 
 #include "Config_Clothing.hpp"

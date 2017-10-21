@@ -1955,13 +1955,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = { };
     };
 	
-	class B_UAV_01_F {
-        vItemSpace = -1;
-        licenses[] = { {""}, {"cAir"}, {""}, {""} };
-        price = 1000;
-        textures[] = { };
-    };
-	
 	class B_T_UAV_03_F {
         vItemSpace = -1;
         licenses[] = { {""}, {"cAir"}, {""}, {""} };

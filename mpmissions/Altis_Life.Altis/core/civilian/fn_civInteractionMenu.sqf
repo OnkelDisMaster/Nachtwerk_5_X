@@ -28,7 +28,6 @@ if (player getVariable ["Escorting", false]) then {
 if (!dialog) then {
     createDialog "pInteraction_Menu";
 };
-
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
@@ -40,7 +39,6 @@ _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
-_Btn11 = _display displayCtrl Btn11;
 life_pInact_curTarget = _curTarget;
 
 //Set Robber Button
@@ -66,15 +64,7 @@ if (_curTarget getVariable ["restrained",false]) then {
 	};
 	_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
-	
-	
-	if (license_civ_bountyH) then {
-		_Btn5 ctrlSetText "Kopfgeld einfordern";
-		_Btn5 buttonSetAction "[player] call life_fnc_bountyLebend; closeDialog 0;";
-	} else {_Btn5 ctrlShow false;};
-
-	
-	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10,_Btn11];
+	{ _x ctrlShow false; } forEach [_Btn5,_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
 } else {
 	closeDialog 0;
 	hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";

@@ -14,9 +14,6 @@ _ctrlKey = _this select 3;
 _alt = _this select 4;
 _speed = speed cursorObject;
 _handled = false;
-#define IDC_LIFE_BAR_Speaker 3007
-
-disableSerialization;
 
 _interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = (actionKeys "ShowMap" select 0);
@@ -270,13 +267,10 @@ switch (_code) do {
 				life_fadeSound = false;
                 1 fadeSound 1;
                 hint composeText [ image "icons\sound_new.paa"," Normaler Sound"];
-				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsN.paa";
-				
             } else {
 				life_fadeSound = true;
                 1 fadeSound 0.1;
                 hint composeText [ image "icons\sound.paa"," 90% Leiser"];
-				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsY.paa";
             };
         };
     };
@@ -294,7 +288,6 @@ switch (_code) do {
 	case 16: {
 		_chip = (vehicle player) getVariable ["Chipsatz",0];
 		if (_chip isEqualTo 0) exitwith {};
-		if (_vehicle getVariable["nano_empd",true]) exitwith {hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
 		if ((vehicle player != player) && ((driver vehicle player) isEqualTo player)) then {
             if ((vehicle player) getVariable ["speeder",false]) then
 				{	
