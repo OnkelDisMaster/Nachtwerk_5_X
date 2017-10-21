@@ -72,6 +72,7 @@ class Life_Client_Core {
         class putInCar {};
         class removeContainer {};
         class repairTruck {};
+		class repairAuto {};
         class restrainAction {};
         class robAction {};
         class searchAction {};

@@ -25,12 +25,12 @@ if(!isNull _source) then {
 			if(side _source == west && playerSide != west) then {
 				private["_distance","_isVehicle","_isQuad"];
 				_isVehicle = if(vehicle player != player) then {true} else {false};
-				_isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
 				
 				_damage = false;
 					if(!life_istazed && !(_unit getVariable["restrained",false])) then {
-						if(_isVehicle && _isQuad) then {
+						if(_isVehicle) then {
 							player action ["Eject",vehicle player];
+							moveOut (vehicle player);
 							[_unit,_source] spawn life_fnc_tazed;
 						} else {
 							[_unit,_source] spawn life_fnc_tazed;
