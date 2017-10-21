@@ -140,7 +140,6 @@ TON_fnc_requestClientID =
 
 /* Miscellaneous mission-required stuff */
 life_wanted_list = [];
-life_bounty_list = [];
 
 cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
 
