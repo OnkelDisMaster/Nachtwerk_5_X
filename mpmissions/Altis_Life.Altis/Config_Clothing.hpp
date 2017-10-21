@@ -235,7 +235,7 @@ class Clothing {
             { "U_C_man_sport_3_F", "", 5000, { "", "", -1 } }
         };
         headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", -1 } }
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
 			{ "H_PASGT_basic_blue_F", "", 45000, { "", "", -1 } },
 			{ "H_PASGT_basic_olive_F", "", 45000, { "", "", -1 } },
 			{ "H_WirelessEarpiece_F", "", 35000, { "", "", -1 } },
@@ -282,7 +282,7 @@ class Clothing {
             { "U_C_Mechanic_01_F", "", 15000, { "", "", -1 } }
         };
         headgear[] = {
-            { "NONE", "Remove Hat", 0, { "", "", -1 } }
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
 			{ "H_PASGT_basic_blue_F", "", 14500, { "", "", -1 } },
 			{ "H_PASGT_basic_olive_F", "", 14500, { "", "", -1 } },
 			{ "H_PASGT_basic_white_F", "", 14500, { "", "", -1 } },
