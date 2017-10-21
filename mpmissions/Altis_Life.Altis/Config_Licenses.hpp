@@ -83,6 +83,14 @@ class Licenses {
         side = "civ";
     };
 	
+	class bauarbeiter {
+        variable = "bauarbeiter";
+        displayName = "STR_License_Bauarbeiter";
+        price = 175000;
+        illegal = false;
+        side = "civ";
+    };
+	
 	class anwalt {
         variable = "anwalt";
         displayName = "STR_License_Anwalt";
