@@ -146,7 +146,7 @@ class Life_Settings {
 	news_broadcast_cooldown = 5; //Abklingzeit zwischen zwei Nachrichten. (Default = 20 minutes)
 	news_broadcast_header_length = 60; //Maximallänge der Überschrift. Alles darüber wird abgeschnitten. Hängt von der Schriftart, -größe und anderen Faktoren ab. Vorsicht beim Abändern!
 	cop_news_broadcast_cooldown = 1; //Abklingzeit zwischen zwei Nachrichten der Polizei
-	cop_news_broadcast_minimum_Rank = 1; //Benötigter Rang für Polizisten, um Nachricht zu senden
+	cop_news_broadcast_minimum_Rank = 2; //Benötigter Rang für Polizisten, um Nachricht zu senden
 	
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
