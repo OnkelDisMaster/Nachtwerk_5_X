@@ -11,7 +11,6 @@ _vehicle = _this select 0;
 _chip = _vehicle getVariable ["Chipsatz",0];
 if (_chip isEqualTo 0) exitwith {}; // nope??
 
-if (_vehicle getVariable["nano_empd",false]) exitwith {hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
 
 
 _vehicle setvariable ["speeder",true,true];
@@ -31,7 +30,9 @@ switch (_chip) do
 _dmg = getdammage _vehicle;
 hint "Chip aktiviert...";
 while{(_vehicle getvariable "speeder")} do {
-
+	
+	if (_vehicle getVariable["nano_empd",false]) exitwith {_vehicle setvariable ["speeder",false,true]; hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
+	
 	if (fuel _vehicle < 0.02) exitwith {
 		hint "Chip wurde deaktiviert...";
 		_vehicle setvariable ["speeder",false,true];
