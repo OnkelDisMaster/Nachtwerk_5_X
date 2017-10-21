@@ -334,6 +334,7 @@ class Clothing {
 			{ "V_DeckCrew_white_F", "", 25000, { "", "", -1 } },
 			{ "V_Safety_blue_F", "", 35000, { "", "", -1 } },
 			{ "V_Safety_yellow_F", "", 25000, { "", "", -1 } },
+			{ "V_Safety_orange_F", "", 25000, { "", "", -1 } },
 			{ "V_LegStrapBag_coyote_F", "", 35000, { "", "", -1 } },
 			{ "V_LegStrapBag_olive_F", "", 35000, { "", "", -1 } },
 			{ "V_LegStrapBag_black_F", "", 35000, { "", "", -1 } }
