@@ -42,7 +42,19 @@ class CfgFunctions {
             class wantedCrimes {};
             class wantedProfUpdate {};
         };
-
+		
+		//Bounty Hunter
+        class Bounty_Sys {
+            file = "\life_server\Functions\BountySystem";
+            class amountBounty {};
+            class bountyRemove {};
+            class bountyAdd {};
+            class bountyFetch {};
+            class bountyProfUpdate {};
+			class bountyCrimes {};
+			class bountyAmountGather {};
+        };
+		
         class Jail_Sys {
             file = "\life_server\Functions\Jail";
             class jailSys {};

@@ -98,6 +98,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class bountyH {
+        variable = "bountyH";
+        displayName = "STR_License_Anwalt";
+        price = 12000000;
+        illegal = false;
+        side = "civ";
+    };
 
     class dive {
         variable = "dive";

@@ -196,6 +196,36 @@ class Life_Settings {
         {"STR_Crime_24","10000","24"},
         {"STR_Crime_25","20000","25"}
     };
+	
+	/* Bounty System Settings *
+    /* bountys[] = {string, amount, code} */
+    bountys[] = {
+		{"STR_Bounty_5000", "5000", "1B"},
+		{"STR_Bounty_10000", "10000", "2B"},
+		{"STR_Bounty_15000", "15000", "3B"},
+		{"STR_Bounty_20000", "20000", "4B"},
+		{"STR_Bounty_25000", "25000", "5B"},
+		{"STR_Bounty_30000", "30000", "6B"},
+		{"STR_Bounty_35000", "35000", "7B"},
+		{"STR_Bounty_40000", "40000", "8B"},
+		{"STR_Bounty_45000", "45000", "9B"},
+		{"STR_Bounty_50000", "50000", "10B"},
+		{"STR_Bounty_55000", "55000", "11B"},
+		{"STR_Bounty_60000", "60000", "12B"},
+		{"STR_Bounty_65000", "65000", "13B"},
+		{"STR_Bounty_70000", "70000", "14B"},
+		{"STR_Bounty_75000", "75000", "15B"},
+		{"STR_Bounty_80000", "80000", "16B"},
+		{"STR_Bounty_85000", "85000", "17B"},
+		{"STR_Bounty_90000", "90000", "18B"},
+		{"STR_Bounty_95000", "95000", "19B"},
+		{"STR_Bounty_100000", "100000", "20B"},
+		{"STR_Bounty_200000", "200000", "21B"},
+		{"STR_Bounty_300000", "300000", "22B"},
+		{"STR_Bounty_400000", "400000", "23B"},
+		{"STR_Bounty_500000", "500000", "24B"},
+		{"STR_Bounty_1000000", "1000000", "25B"}
+	};
 };
 
 #include "Config_Clothing.hpp"

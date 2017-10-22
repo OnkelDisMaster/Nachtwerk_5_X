@@ -52,4 +52,6 @@
 #include "banking\transfer.hpp"
 #include "banking\createaccount.hpp"
 #include "banking\createconfirmaccount.hpp"
+#include "bounty_list.hpp"
+#include "bounty_addList.hpp"
 
