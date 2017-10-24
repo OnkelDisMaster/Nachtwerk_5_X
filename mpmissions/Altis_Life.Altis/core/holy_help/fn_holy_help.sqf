@@ -72,8 +72,6 @@ switch(_lbauswahl) do {
 		Pilotenschein:		250k<br/>
 		Waffenschein:		80k<br/>
 		Jagdschein:			2,2 Mio<br/>
-		Airsoftclub:		1,2 Mio<br/>
-		Bauarbeiterschein (bei Baustoffhändler):	175k<br/>
 		Taucherschein:		28k<br/>
 		Eigentümerlizenz:	3,5 Mio<br/>
 		Transporteurlizenz:	2,5 Mio<br/>
@@ -83,7 +81,6 @@ switch(_lbauswahl) do {
 		Rebellenlizenz:		2,75 Mio<br/>
 		Pro Rebellen:		5,75 Mio<br/>
 		Elite Rebellen:		20 Mio<br/>
-		Kopfgeldjäger:		12 Mio<br/>
 		<br/>
 		Legale Farmlizenzen:<br/>
 		Pina Colada:		10k<br/>

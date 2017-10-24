@@ -82,6 +82,8 @@ class CfgRemoteExec {
 		F(life_fnc_bountyHunterReceive,CLIENT)//Bountyhunter
 		F(life_fnc_bountyList,CLIENT)//Bountyhunter
 		F(life_fnc_markers,CLIENT)//Bountyhunter
+	//	F(life_fnc_bountyReceive,CLIENT)//Bountyhunter
+
 
 
         /* Server only functions */
@@ -139,6 +141,7 @@ class CfgRemoteExec {
 		F(life_fnc_bountyAlter,SERVER)//Bountyhunter
 		F(life_fnc_bountyCrimes,SERVER)//Bountyhunter
 		F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
+
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)

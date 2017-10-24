@@ -86,28 +86,6 @@
             <Portuguese>Loja de equipamentos para Mergulho</Portuguese>
             <Polish>Sklep dla nurków</Polish>
         </Key>
-		<Key ID="STR_Shops_C_Airsoft">
-            <Original>Airsoft/Paintball Bekleidung</Original>
-            <Czech></Czech>
-            <French></French>
-            <Spanish></Spanish>
-            <Italian></Italian>
-            <Russian></Russian>
-            <German>Airsoft/Paintball Bekleidung</German>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
-		<Key ID="STR_Shops_C_Bauarbeiter">
-            <Original>Bauarbeiter Bekleidung</Original>
-            <Czech></Czech>
-            <French></French>
-            <Spanish></Spanish>
-            <Italian></Italian>
-            <Russian></Russian>
-            <German>Bauarbeiter Bekleidung</German>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
         <Key ID="STR_Shops_C_Gun">
             <Original>Billy Joe's Clothing</Original>
             <Czech>Billy Joe oblečení</Czech>
@@ -8225,19 +8203,8 @@
             <Polish></Polish>
         </Key>
 		<Key ID="STR_License_Airsoft">
-            <Original>Airsoft und Paintball Clubmitglied</Original>
+            <Original>Airsoft and Paintball Clubmember</Original>
             <German>Airsoft und Paintball Clubmitglied</German>
-            <Czech></Czech>
-            <Spanish></Spanish>
-            <Russian></Russian>
-            <French></French>
-            <Italian></Italian>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
-		<Key ID="STR_License_Bauarbeiter">
-            <Original>Bauarbeiterschein</Original>
-            <German>Bauarbeiterschein</German>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
@@ -13338,4 +13305,5 @@
             <Original>Bounty Hunter</Original>
         </Key>
 	</Package>
+	
 </Project>

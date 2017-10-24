@@ -27,7 +27,6 @@ _unit setVariable ["Escorting",false,true];
 _unit setVariable ["transporting",false,true];
 _unit setVariable ["playerSurrender",false,true];
 _unit setVariable ["steam64id",(getPlayerUID player),true]; //Set the UID.
-
 private _BountyPeeps = [];
 
 {
@@ -127,6 +126,7 @@ if (side _killer isEqualTo civilian && {_killer != _unit}) then {
 if (!isNull _killer) then {
     life_removeBounty = true;
 };
+
 
 if (!isNull _killer && {_killer != _unit}) then {
     life_removeWanted = true;

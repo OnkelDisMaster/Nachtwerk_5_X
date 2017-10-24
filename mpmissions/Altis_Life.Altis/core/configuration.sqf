@@ -60,7 +60,6 @@ life_sitting = false;
 life_fadeSound = false;
 life_removeBounty = false;
 
-
 life_Event = false;
 publicVariable "life_Event";
 life_Raub = false;

@@ -10,7 +10,6 @@
 #include "bank.hpp"
 #include "veh_shop.hpp"
 #include "shops.hpp"
-//#include "ui.hpp"
 #include "hud_stats.hpp"
 #include "smartphone.hpp"
 #include "admin_menu.hpp"
@@ -54,4 +53,3 @@
 #include "banking\createconfirmaccount.hpp"
 #include "bounty_list.hpp"
 #include "bounty_addList.hpp"
-

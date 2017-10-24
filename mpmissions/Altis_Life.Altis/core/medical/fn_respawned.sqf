@@ -93,6 +93,7 @@ if (life_removeBounty) then {
 	};
 };
 
+
 //So I guess a fellow gang member, cop or myself killed myself so get me off that Altis Most Wanted
 if (life_removeWanted) then {
 

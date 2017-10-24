@@ -51,11 +51,13 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             { "hgun_Pistol_01_F", "", 55000, -1 },
+            { "srifle_DMR_01_F", "", 560000, -1 },
 			{ "srifle_DMR_06_olive_F", "", 1450000, -1 },
-			{ "srifle_DMR_06_camo_F", "", 1450000, -1 }           
+			{ "srifle_DMR_06_camo_khs_F", "", 1450000, -1 }           
         };
         mags[] = {
 			{ "10Rnd_9x21_Mag", "", 750 }, //9mm
+			{ "10Rnd_762x54_Mag", "", 750 }, //Rahim
 			{ "20Rnd_762x51_Mag", "", 750 }	//Mk 14
 			
         };
@@ -72,11 +74,10 @@ class WeaponShops {
         license = "airsoft";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "hgun_Pistol_Signal_F", "", 550000, -1 }         
+            { "hgun_Pistol_01_F", "", 55000, -1 }         
         };
         mags[] = {
-			{ "6Rnd_GreenSignal_F", "", 25000 },
-			{ "6Rnd_RedSignal_F", "", 25000 }				
+			{ "10Rnd_9x21_Mag", "", 750 }			
         };
         accs[] = {};
     };

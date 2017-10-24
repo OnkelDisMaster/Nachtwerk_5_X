@@ -52,11 +52,19 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 		
-		class RoG {
-            displayName = "RoG Base";
-            spawnMarker = "rog_spawn";
+		class TWL {
+            displayName = "TWL Base";
+            spawnMarker = "twl_spawn";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-            licenses[] = { { "gang_rog", true } };
+            licenses[] = { { "gang_twl", true } };
+            level[] = { "", "", -1 };
+        };
+		
+		class IRA {
+            displayName = "IRA Base";
+            spawnMarker = "ira_spawn";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "gang_ira", true } };
             level[] = { "", "", -1 };
         };
 		
@@ -73,14 +81,6 @@ class CfgSpawnPoints {
             spawnMarker = "as_spawn";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "gang_as", true } };
-            level[] = { "", "", -1 };
-        };
-		
-		class Raven {
-            displayName = "Raven Base";
-            spawnMarker = "raven_spawn";
-            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-            licenses[] = { { "gang_raven", true } };
             level[] = { "", "", -1 };
         };
 		
