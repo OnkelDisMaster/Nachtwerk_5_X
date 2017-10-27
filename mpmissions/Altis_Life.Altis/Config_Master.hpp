@@ -10,7 +10,7 @@ class Life_Settings {
     spyGlass_toggle = false; //Spyglass On/Off Toggle --> True = On & False = Off
 
     /* Data Logging Settings */
-    battlEye_friendlyLogging = false; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
+    battlEye_friendlyLogging = true; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.
     player_advancedLog = true; //False [default] - No advanced logging. True - Logs house purchase and sale, vehicle purchase, sale, and chop shopping, police arrests, and gang creations. Search for: advanced_log
     player_moneyLog = true; //False [default] - No money logging. True - Logs player bank deposits, withdraws, and transfers, gang bank deposits and withdraws, money picked up off of the ground, and player robbery. Search for: money_log
     player_deathLog = true; //False [default] - No death logging. True - Logs victim and killer, and vehicle or weapon if used, when a player dies. Search for: death_log
@@ -18,7 +18,7 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull","spikeStrip","blitzer","bunker","flutlicht","licht","mauer","plastik", "schranke","lockpick","defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","ananas","bananen","kokosnuss","apfelsaft","pfirsichsaft","ananassaft","bananensaft","kokosnussmilch","pina_colada","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    saved_virtualItems[] = { "kabelbinder", "gpstracker","schmerzmittel","pickaxe","fuelEmpty","fuelFull","spikeStrip","blitzer","bunker","flutlicht","licht","mauer","plastik", "schranke","lockpick","defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","ananas","bananen","kokosnuss","apfelsaft","pfirsichsaft","ananassaft","bananensaft","kokosnussmilch","pina_colada","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = true; //Save civilian location?
@@ -28,11 +28,11 @@ class Life_Settings {
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
-    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "blitzer", "bunker", "flutlicht", "licht", "mauer", "plastik", "schranke", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","ananas","bananen","kokosnuss","apfelsaft","pfirsichsaft","ananassaft","bananensaft","kokosnussmilch","pina_colada","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
+    save_vehicle_items[] = { "kabelbinder", "gpstracker","schmerzmittel","pickaxe","fuelEmpty","fuelFull", "spikeStrip", "blitzer", "bunker", "flutlicht", "licht", "mauer", "plastik", "schranke", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","ananas","bananen","kokosnuss","apfelsaft","pfirsichsaft","ananassaft","bananensaft","kokosnussmilch","pina_colada","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
     save_vehicle_damage = false; //Save vehicle damage to the database.
-    save_vehicle_illegal = false; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
+    save_vehicle_illegal = true; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
 
 
 /* System Settings */
@@ -56,7 +56,7 @@ class Life_Settings {
 
     /* Fuel System Configurations */
     pump_service = true; //Allow users to use pump service on the map. Default = false
-    fuel_cost = 80; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
+    fuel_cost = 100; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
     service_chopper = 10000; //Cost to service chopper at chopper service station(Repair/Refuel).
     fuelCan_refuel = 2500; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
@@ -75,7 +75,7 @@ class Life_Settings {
     /* Item-related Restrictions */
     restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
     restrict_clothingPickup = false; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
-    restrict_weaponPickup = true; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
+    restrict_weaponPickup = false; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
     restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
     restricted_weapons[] = { "srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F" };
 
@@ -146,7 +146,7 @@ class Life_Settings {
 	news_broadcast_cooldown = 5; //Abklingzeit zwischen zwei Nachrichten. (Default = 20 minutes)
 	news_broadcast_header_length = 60; //Maximallänge der Überschrift. Alles darüber wird abgeschnitten. Hängt von der Schriftart, -größe und anderen Faktoren ab. Vorsicht beim Abändern!
 	cop_news_broadcast_cooldown = 1; //Abklingzeit zwischen zwei Nachrichten der Polizei
-	cop_news_broadcast_minimum_Rank = 3; //Benötigter Rang für Polizisten, um Nachricht zu senden
+	cop_news_broadcast_minimum_Rank = 2; //Benötigter Rang für Polizisten, um Nachricht zu senden
 	
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
