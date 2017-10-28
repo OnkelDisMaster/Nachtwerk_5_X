@@ -64,7 +64,10 @@ if (_curTarget getVariable ["restrained",false]) then {
 	};
 	_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
-	{ _x ctrlShow false; } forEach [_Btn5,_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
+	
+	_Btn5 ctrlSetText "Kopfgeldbetrag";
+	_Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyBetrag; closeDialog 0;";
+	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
 } else {
 	closeDialog 0;
 	hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";

@@ -202,6 +202,7 @@ class Life_Client_Core {
     		class bountyList {};
     		class bountyMenu {};
     		class markers {};
+			class bountyBetrag {};
 	};
 	
     class Dialog_Controls {
