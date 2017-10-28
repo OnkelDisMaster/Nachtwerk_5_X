@@ -11,7 +11,7 @@ params [
     ["_civ",objNull,[objNull]],
     ["_hunter",objNull,[objNull]]
 ];
-diag_log format ["Get Bounty Betrag..."];
+diag_log format ["%1 ruft Betrag von %2 ab...",name _hunter, name _civ];
 
 if (isNull _civ || isNull _hunter) exitWith {};
 private _uid = getPlayerUID _civ;

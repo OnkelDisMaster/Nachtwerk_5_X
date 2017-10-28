@@ -12,7 +12,7 @@ params [
     ["_cop",objNull,[objNull]],
     ["_half",false,[false]]
 ];
-diag_log format ["I called"];
+diag_log "Amount Bounty vor query";
 
 if (isNull _civ || isNull _cop) exitWith {};
 
@@ -30,3 +30,6 @@ if !(count _queryResult isEqualTo 0) then {
         };
     };
 };
+
+
+diag_log "Amount Bounty nach query";
