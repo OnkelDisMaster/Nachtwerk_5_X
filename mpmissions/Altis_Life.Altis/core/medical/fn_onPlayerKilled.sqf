@@ -118,7 +118,7 @@ if (side _killer isEqualTo west && playerSide != west) then {
     };
 };
 
-if (side _killer isEqualTo civilian && {_killer != _unit}) then {
+if ((side _killer isEqualTo civilian) && {_killer != _unit}) then {
 	if (_killer in _BountyPeeps) then {
 		life_bountyHunter = _killer;
 	};

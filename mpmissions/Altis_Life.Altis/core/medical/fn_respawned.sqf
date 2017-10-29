@@ -73,7 +73,6 @@ if (!isNil "life_copRecieve") then {
 };
 
 if (!isNil "life_bountyHunter") then {
-	hint "test";
     if (life_HC_isActive) then {
         [getPlayerUID player,player,life_bountyHunter] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
     } else {

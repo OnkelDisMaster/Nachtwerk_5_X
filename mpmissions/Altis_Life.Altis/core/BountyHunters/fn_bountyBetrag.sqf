@@ -20,5 +20,6 @@ if (_betrag isEqualTo 1) then	//wenn abgefragt, dann noch kein betrag
 		hint "Das Ziel hat kein Kopfgeld";
 	} else {
 		hint format ["Das Ziel hat ein Kopfgeld von $%1",[_betrag] call life_fnc_numberText];
+		[getPlayerUID _bountyZiel,_bountyZiel,player] remoteExecCall ["life_fnc_amountBounty",RSERV];
 	};
 };
