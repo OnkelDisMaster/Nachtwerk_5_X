@@ -34,6 +34,8 @@ private _BountyPeeps = [];
 	if (license_civ_bountyH) then {_BountyPeeps pushBack _x};
 } forEach playableUnits;
 
+hint format ["in _BountyPeeps steht: %1",_BountyPeeps];
+
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
 showCinemaBorder TRUE;
@@ -118,7 +120,7 @@ if (side _killer isEqualTo west && playerSide != west) then {
     };
 };
 
-if ((side _killer isEqualTo civilian) && {_killer != _unit}) then {
+if (side _killer isEqualTo civilian && {_killer != _unit}) then {
 	if (_killer in _BountyPeeps) then {
 		life_bountyHunter = _killer;
 	};

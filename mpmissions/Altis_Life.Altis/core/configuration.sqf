@@ -59,7 +59,7 @@ life_hitmarker = false;
 life_sitting = false;
 life_fadeSound = false;
 life_removeBounty = false;
-
+life_bountyHunter = ObjNull;
 
 life_Event = false;
 publicVariable "life_Event";
