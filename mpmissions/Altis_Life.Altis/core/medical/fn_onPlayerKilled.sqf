@@ -116,12 +116,9 @@ if (side _killer isEqualTo west && playerSide != west) then {
 if (side _killer isEqualTo civilian && {_killer != _unit}) then {
 	if (_killer getVariable ["isBountyH",true]) then {
 		life_bountyHunter = _killer;
+		life_removeBounty = true;
 	};
 };	
-
-if (!isNull _killer) then {
-    life_removeBounty = true;
-};
 
 if (!isNull _killer && {_killer != _unit}) then {
     life_removeWanted = true;
