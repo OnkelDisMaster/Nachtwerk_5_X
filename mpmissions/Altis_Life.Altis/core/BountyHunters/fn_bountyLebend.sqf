@@ -22,8 +22,8 @@ if ((_zone1 distance player < _dis) || (_zone2 distance player < _dis) || (_zone
 			[getPlayerUID _bountyZiel] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 			[getPlayerUID _bountyZiel,_bountyZiel,_spieler,true,true] remoteExecCall ["life_fnc_amountBounty",RSERV];				
 	} else {
-			[getPlayerUID _bountyZiel,_bountyZiel,_spieler] remoteExecCall ["life_fnc_amountBounty",RSERV];
-			[getPlayerUID _bountyZiel,true] remoteExecCall ["life_fnc_bountyRemove",RSERV];
+			[getPlayerUID _bountyZiel,_bountyZiel,_spieler,true] remoteExecCall ["life_fnc_amountBounty",RSERV];
+			[getPlayerUID _bountyZiel] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 	};
 
 hint "Auf den Gefangenen gibt es zur Zeit kein Kopfgeld";
