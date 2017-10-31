@@ -9,7 +9,7 @@
 params [
     ["_uid","",[""]],
     ["_civ",objNull,[objNull]],
-    ["_cop",objNull,[objNull]]
+    ["_cop",objNull,[objNull]],
 	["_lebend",false,[false]],
 	["_bonus",false,[false]]
 ];
