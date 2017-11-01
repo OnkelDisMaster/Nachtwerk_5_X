@@ -35,8 +35,7 @@ if !(count _queryResult isEqualTo 0) then {
 			_bonusKonto = _bonusKonto - _bonusCash;
 			
 			_query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_bonusKonto,_BonusID];
-			[_query,2] call DB_fnc_asyncCall;	
-			[_civ,_hunter,_bonusCash] remoteExecCall ["life_fnc_bountyBetrag",(owner _hunter)];
+			[_query,2] call DB_fnc_asyncCall;
 		};		
 	};
 
