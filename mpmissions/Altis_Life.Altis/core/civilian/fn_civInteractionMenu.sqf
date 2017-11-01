@@ -67,7 +67,10 @@ if (_curTarget getVariable ["restrained",false]) then {
 	
 	_Btn5 ctrlSetText "Kopfgeld einfordern";
 	_Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
-	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
+	
+	_Btn6 ctrlSetText "Bonus";
+	_Btn6 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyBetrag; closeDialog 0;";
+	{ _x ctrlShow false; } forEach [_Btn7,_Btn8,_Btn9,_Btn10];
 } else {
 	closeDialog 0;
 	hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";
