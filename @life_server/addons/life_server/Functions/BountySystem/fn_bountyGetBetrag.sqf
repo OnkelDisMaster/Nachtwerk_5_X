@@ -24,7 +24,6 @@ private _uid = getPlayerUID _civ;
 private _query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];
 private _queryResult = [_query,2] call DB_fnc_asyncCall;
 
-private "_amount";
 if !(count _queryResult isEqualTo 0) then {
     _amount = _queryResult param [2];
     if !(_amount isEqualTo 0) then {
@@ -37,14 +36,14 @@ if !(count _queryResult isEqualTo 0) then {
 */
 
 //Bonus Teil
-_query = format ["SELECT bounty FROM bounty WHERE bountyID='%1'",_BonusID];
-_queryResult = [_query,0] call DB_fnc_asyncCall;
+_query = format ["SELECT bountyID, bountyName, bounty WHERE bountyID='%1'",_BonusID];
+_queryResult = [_query,2] call DB_fnc_asyncCall;
 if !(count _queryResult isEqualTo 0) then {
-	_bonusKonto = (_queryResult param [0]);
+	_bonusKonto = (_queryResult param [2]);
 	_bonusCash =  _bonusKonto * 0.25;//(round(random(30)+1)/100);
 	_bonusKonto = _bonusKonto - _bonusCash;
 	
 	_query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_bonusKonto,_BonusID];
-	[_query,0] call DB_fnc_asyncCall;
+	[_query,2] call DB_fnc_asyncCall;
 	[_civ,_hunter,_bonusCash] remoteExecCall ["life_fnc_bountyBetrag",(owner _hunter)];
 };
