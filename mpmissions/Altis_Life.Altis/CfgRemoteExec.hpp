@@ -193,7 +193,7 @@ class CfgRemoteExec {
 		F(stig_sz_msg_del,ANYONE)	
 		F(life_fnc_bountyBetrag,ANYONE)
 		F(life_fnc_bountyGetBetrag,ANYONE)
-		F(life_fnc_bountyGetBonus,ANONE)
+		F(life_fnc_bountyGetBonus,ANYONE)
     };
 
     class Commands {

@@ -12,7 +12,7 @@ params [
 	["_lebend",false,[false]]
 ];
 
-private ["_amount","_bonusCash","_bonusKonto","_BonusID","_query","_queryResult"];
+private ["_bonusCash","_bonusKonto","_BonusID","_query","_queryResult"];
 
 _BonusID = "00000000000000001";
 _bonusCash = 0;
