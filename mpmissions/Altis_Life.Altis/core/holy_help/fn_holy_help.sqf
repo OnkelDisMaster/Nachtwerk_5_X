@@ -83,7 +83,7 @@ switch(_lbauswahl) do {
 		Rebellenlizenz:		2,75 Mio<br/>
 		Pro Rebellen:		5,75 Mio<br/>
 		Elite Rebellen:		20 Mio<br/>
-		Kopfgeldjäger:		12 Mio<br/>
+		Kopfgeldjäger:		16 Mio<br/>
 		<br/>
 		Legale Farmlizenzen:<br/>
 		Pina Colada:		10k<br/>
