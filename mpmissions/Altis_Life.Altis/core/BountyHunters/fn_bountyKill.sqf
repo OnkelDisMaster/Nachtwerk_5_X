@@ -9,7 +9,7 @@
 */
 private ["_Kopfgeld","_delKopfgeld","_display","_list"];
 disableSerialization;
-if !(license_civ_bountyH) exitWith {hint "Only registered bounty hunters can remove bountys on peoples heads!"};
+if !(license_civ_bountyH) exitWith {hint "Nur eingetragene Kopfgeldjäger können Kopfgelder entfernen!"};
 _display = findDisplay 24000;
 _list = _display displayCtrl 24020;
 _data = lbData[24010,(lbCurSel 24010)];
@@ -20,7 +20,7 @@ if (_data isEqualTo []) exitWith {};
 private _remover = getPlayerUID player;
 private _removed = _data select 0;
 
-if (_remover isEqualTo _removed) exitWith {hint "You cannot remove your self from the bounty hunters list!\n You must die to be removed!"};
+if (_remover isEqualTo _removed) exitWith {hint "Du kannst dich nicht selbst von der Kopfgeldliste entfernen!"};
 
 _Kopfgeld = tempKopfgeld;
 _delKopfgeld = (_Kopfgeld * 1.5);

@@ -21,9 +21,9 @@ if (isNull _unit) exitWith {};
 } forEach playableUnits;
 
 if (life_cash < _amountP) then {
-	hint "You do not have the selected amount, visit an atm or select a lower bounty.";
+	hint "Du hast nicht genügend Bargeld dabei, wähle einen kleineren Betrag aus oder gehe zu einem ATM.";
 } else {
-	[1,[_unit,60,"Mil_dot","THE BOUNTY HUNTERS TARGET LAST KNOWN POSITION"]] remoteExec ["life_fnc_markers",_unitsToNotify];
+	[1,[_unit,60,"Mil_dot","Kopfgeld - zuletzt gesichteter Aufenthaltsort"]] remoteExec ["life_fnc_markers",_unitsToNotify];
 	life_cash = life_cash - _amountP;
 	
 	if (life_HC_isActive) then {

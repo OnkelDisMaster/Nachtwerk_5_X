@@ -13226,116 +13226,116 @@
     </Key>
 </Package>
 <Package name="Bounty">
-		<Key ID="STR_Bounty_5000">
-			<Original>$5,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_10000">
-			<Original>$10,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_15000">
-			<Original>$15,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_20000">
-			<Original>$20,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_25000">
-			<Original>$25,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_30000">
-			<Original>$30,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_35000">
-			<Original>$35,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_40000">
-			<Original>$40,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_45000">
-			<Original>$45,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_50000">
-			<Original>$50,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_55000">
-			<Original>$55,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_60000">
-			<Original>$60,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_65000">
-			<Original>$65,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_70000">
-			<Original>$70,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_75000">
-			<Original>$75,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_80000">
-			<Original>$80,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_85000">
-			<Original>$85,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_90000">
-			<Original>$90,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_95000">
-			<Original>$95,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_100000">
-			<Original>$100,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_200000">
-			<Original>$200,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_300000">
-			<Original>$300,000</Original>
-		</Key>
-		<Key ID="STR_Bounty_400000">
-			<Original>$400,000</Original>
-		</Key>
 		<Key ID="STR_Bounty_500000">
 			<Original>$500,000</Original>
 		</Key>
 		<Key ID="STR_Bounty_1000000">
 			<Original>$1,000,000</Original>
 		</Key>
+		<Key ID="STR_Bounty_1500000">
+			<Original>$1,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_2000000">
+			<Original>$2,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_2500000">
+			<Original>$2,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_3000000">
+			<Original>$3,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_3500000">
+			<Original>$3,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_4000000">
+			<Original>$4,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_4500000">
+			<Original>$4,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_5000000">
+			<Original>$5,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_5500000">
+			<Original>$5,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_6000000">
+			<Original>$6,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_6500000">
+			<Original>$6,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_7000000">
+			<Original>$7,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_7500000">
+			<Original>$7,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_8000000">
+			<Original>$8,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_8500000">
+			<Original>$8,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_9000000">
+			<Original>$9,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_9500000">
+			<Original>$9,500,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_10000000">
+			<Original>$10,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_20000000">
+			<Original>$20,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_30000000">
+			<Original>$30,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_40000000">
+			<Original>$40,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_50000000">
+			<Original>$50,000,000</Original>
+		</Key>
+		<Key ID="STR_Bounty_100000000">
+			<Original>$100,000,000</Original>
+		</Key>
 		<Key ID="STR_Bounty_AddP">
-            <Original>%1 has been added to the bounty list, he was added for $%2 this has risen he current bounty price to $%3. The last known location has been marked on the map for all bounty hunting units. Normal declaration rules still apply, RDM will be delt with.</Original>
+            <Original>%1 wurde der Kopfgeldliste für $%2 hinzugefügt. Sein aktuelles Kopfgeld beträgt $%3. Seine letzte Position wurde auf der KArte markiert. Das normale Serverregelwerk gilt weiterhin, RDM wird bestraft!.</Original>
         </Key>
 		<Key ID="STR_MAR_bountyW">
-            <Original>Bounty Hunters Armory</Original>
+            <Original>Kopfgeldjäger Shop</Original>
         </Key>
 		<Key ID="STR_MAR_bounty">
-            <Original>Bounty Hunters HQ</Original>
+            <Original>Kopfgeldjäger HQ</Original>
         </Key>
 		<Key ID="STR_GNOTF_BountyMSG">
-            <Original>You are about to buy a 'Bounty Hunting License' buying this license will give you access to the Bounty Hunters Database, kill someone on the list to get thier bounty! Normal declaration still applys, you can NOT RDM! Do you accept these terms and conditions?</Original>
+            <Original>Du bist im Begriff eine Kopfgeldjäger Lizenz zu erwerben, diese Lizenz gewährt dir Zugang zum Kopfgeldbüro. Töte oder bringe Kopfgeldziele lebend zur Strecke. Das normale Serverregelwerk gilt weiterhin, RDM wird bestraft, es besteht weiterhin RP Pflicht! Akzeptierst du diese Vereinbarung? </Original>
         </Key>
 		<Key ID="STR_bounty_bountyList_notBH">
-            <Original>You are not a civilian, only civilians can add people to the bounty list! I suggest you leave!</Original>
+            <Original>Du bist kein Zivilist oder Polizist!</Original>
         </Key>
 		<Key ID="STR_bounty_bountyList_noPlayerSelected">
-            <Original>No player on the list was selected! Please select a player.</Original>
+            <Original>Es wurde kein Spieler ausgewählt, wähle doch einen aus.</Original>
         </Key>
 		<Key ID="STR_bounty_bountyList_noAmountSelected">
-            <Original>No amount was selected, use the drop down menu to select a bounty amount.</Original>
+            <Original>Es wurde kein Betrag ausgewählt, wähle doch einen aus.</Original>
         </Key>
 		<Key ID="STR_Bounty_BountyKill">
-            <Original>You have collected a bounty of $%1 for killing someone on the bounty list, nice job!</Original>
+            <Original>Du hast ein Kopfgeld in Höhe von $%1 kassiert und zusätzlich einen Bonus von $%2 bekommen, gute Arbeit!</Original>
         </Key>
       		<Key ID="STR_Bounty_Title">
-            <Original>Bounty List</Original>
+            <Original>Kopfgeld Liste </Original>
         </Key>
 		<Key ID="STR_BountyA_Title">
-            <Original>Bounty Hunting Database</Original>
+            <Original>Kopfgeld Datenbank</Original>
         </Key>
 		<Key ID="STR_Bounty_License">
-            <Original>Bounty License</Original>
+            <Original>Kopfgeldjäger Lizenz</Original>
         </Key>
     <Key ID="STR_License_bountyH">
-            <Original>Bounty Hunter</Original>
+            <Original>Kopfgeldjäger</Original>
         </Key>
 	</Package>
 </Project>

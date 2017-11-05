@@ -12,7 +12,7 @@ disableSerialization;
 if(playerSide == west) exitWith {};
 if(playerSide == independent) exitWith {};
 if(!license_civ_bountyH) exitWith {
-	hint "Only registered bounty hunters can access the hunters databse";
+	hint "Nur eingetragene Kopfgeldjäger können die Kopfgeld Datenbank benutzen!";
 };
 
 createDialog "life_bounty_menu";
@@ -46,7 +46,7 @@ private _crimes = LIFE_SETTINGS(getArray,"crimes");
 };forEach _crimes;
 */
 
-ctrlSetText[24040,"Establishing connection..."];
+ctrlSetText[24040,"Baue Verbindung auf..."];
 
 /*
 if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) isEqualTo 0}) then {

@@ -11,9 +11,9 @@ private ["_aciton","_unit","_atm"];
 
 _unit = player;
 
-if(playerSide != civilian) exitWith {hint "Only Civilians can buy a Bounty Hunting License!"};
-if(life_cash < 100000) exitWith {hint "Sorry! You do not have $100,000 for the license"};
-if(license_civ_bountyH) exitWith {hint "You're already a bounty hunter, why buy it again?"};
+if(playerSide != civilian) exitWith {hint "Nur Zivilisten können eine Kopfgeldjäger Lizenz erwerben!"};
+if(life_cash < 100000) exitWith {hint "Du hast keine $16,000,000 für eine Kopfgeldjäger Lizenz!"};
+if(license_civ_bountyH) exitWith {hint "Du bist bereits ein Kopfgeldjäger, warum solltest du dir die Lizenz erneut holen?"};
 
 _action = [
     format [localize "STR_GNOTF_BountyMSG"],
@@ -28,5 +28,5 @@ if (_action) then {
 	[100] remoteExecCall ["life_fnc_removeLicenses",_unit];
 	player setvariable ["isBountyH",true,true];
 } else {
-	hint "So the bounty hunters is not for you? Get out of my house!";
+	hint "Also ist der Kopfgeldjäger Job nichts für dich, dann raus aus meinem Haus!";
 };

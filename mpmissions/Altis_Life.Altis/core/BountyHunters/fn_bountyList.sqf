@@ -20,8 +20,8 @@ private _list = _display displayCtrl 24010;
     _list lbSetData [(lbSize _list)-1,str(_entry)];
 } forEach _info;
 
-ctrlSetText[24040,"Connection Established"];
+ctrlSetText[24040,"Verbindung aufgebaut"];
 
 if (((lbSize _list)-1) isEqualTo -1) then {
-    _list lbAdd "No bounty's set";
+    _list lbAdd "Es gibt momentan kein Kopfgeld";
 };
