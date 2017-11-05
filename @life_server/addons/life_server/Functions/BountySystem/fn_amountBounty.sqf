@@ -11,9 +11,10 @@ params [
     ["_civ",objNull,[objNull]],
     ["_cop",objNull,[objNull]],
 	["_lebend",false,[false]],
-	["_bonus",0]
+	["_bonus",0, [0]]
 ];
 if (isNull _civ || isNull _cop) exitWith {};
+if (isNull _bonus) then {_bonus = 0;};
 private ["_amount","_query","_queryResult"];
 
 _query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];

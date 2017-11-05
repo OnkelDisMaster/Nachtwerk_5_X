@@ -9,7 +9,7 @@
 private ["_Kopfgeld","_delKopfgeld","_Bonus","_BonusID","_uid"];
 _uid = param [0,"",[""]];
 if (_uid isEqualTo "") exitWith {}; //Bad data
-_Kopfgeld = param [1,0];
+_Kopfgeld = param [1,0, [0]];
 
 if (_Kopfgeld != 0) then
 	{

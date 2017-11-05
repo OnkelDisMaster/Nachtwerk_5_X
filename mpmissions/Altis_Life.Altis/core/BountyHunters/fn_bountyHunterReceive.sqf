@@ -9,7 +9,7 @@
 */
 private ["_val","_bonus"];
 _val = [_this,0,"",["",0]] call BIS_fnc_param;
-_bonus = param [1,0];
+_bonus = param [1,0, [0]];
 
 	titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText],"PLAIN",_bonus];
 
