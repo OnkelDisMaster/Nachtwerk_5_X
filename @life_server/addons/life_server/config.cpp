@@ -53,8 +53,6 @@ class CfgFunctions {
             class bountyProfUpdate {};
 			class bountyCrimes {};
 			class bountyAmountGather {};
-			class bountyGetBetrag {};
-			class bountyGetBonus {};
         };
 		
         class Jail_Sys {

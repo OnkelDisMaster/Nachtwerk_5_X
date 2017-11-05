@@ -190,10 +190,7 @@ class CfgRemoteExec {
         F(life_fnc_simDisable,ANYONE)
 		F(bf_fnc_lightsOn,ANYONE)
 		F(stig_sz_msg_add,ANYONE)
-		F(stig_sz_msg_del,ANYONE)	
-		F(life_fnc_bountyBetrag,ANYONE)
-		F(life_fnc_bountyGetBetrag,ANYONE)
-		F(life_fnc_bountyGetBonus,ANYONE)
+		F(stig_sz_msg_del,ANYONE)
     };
 
     class Commands {

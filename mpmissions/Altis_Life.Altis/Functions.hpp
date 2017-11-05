@@ -203,7 +203,6 @@ class Life_Client_Core {
     		class bountyMenu {};
     		class markers {};
 			class bountyLebend {};
-			class bountyBetrag {};
 	};
 	
     class Dialog_Controls {
