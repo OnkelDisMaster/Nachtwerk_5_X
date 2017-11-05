@@ -23,7 +23,8 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if (_action) then {
-	hint parseText format["<t color='#FA4F4F'><t size='1.5'>Welcome to Bounty Hunters!</t></t><br/><br/><t size='1.2'>The Bounty Hunters are a group of civilians who wish to make Australia a better place by eliminating the ones who make it bad, they do this by the books while earning money on the side. Being a bounty hunter does NOT give you the right to RDM! Any RDM will be delt with!</t>"];
+	hint parseText format["<t color='#FA4F4F'><t size='1.5'>Willkommen bei den Kopfgeldjägern!</t></t><br/><br/><t size='1.2'>Die Kopfgeldjäger sind eine Gruppe von Zivilisten, welche Altis zu einem besseren Platz machen wollen, indem sie Flüchtige Straftäter lebendig oder tot zur Strecke bringen und dafür hohe Geldsummen kassieren.
+	Als Kopfgeldjäger musst du dich dennoch an das Serverregelwerk und die RP Pflicht halten.<br/><br/> Jeglicher Regelverstoß, wie RDM wird bestraft!</t>"];
 	life_cash = life_cash - 16000000;
 	[100] remoteExecCall ["life_fnc_removeLicenses",_unit];
 	player setvariable ["isBountyH",true,true];

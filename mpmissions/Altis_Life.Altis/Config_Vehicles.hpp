@@ -129,7 +129,7 @@ class CarShops {
 			{ "B_Truck_01_medical_F", { "life_mediclevel", "SCALAR", 2 } },
 			{ "O_Truck_03_medical_F", { "life_mediclevel", "SCALAR", 4 } },
 			{ "B_Truck_01_transport_F", { "life_mediclevel", "SCALAR", 2 } },
-			{ "B_MRAP_01_F", { "life_mediclevel", "SCALAR", 6 } }
+			{ "B_MRAP_01_F", { "life_mediclevel", "SCALAR", 5 } }
         };
     };
 
@@ -139,8 +139,8 @@ class CarShops {
 			{ "B_Heli_Light_01_F", { "life_mediclevel", "SCALAR", 1 } },
             { "O_Heli_Light_02_unarmed_F", { "life_mediclevel", "SCALAR", 2 } },
 			{ "I_Heli_Transport_02_F", { "life_mediclevel", "SCALAR", 3 } },
-			{ "I_Heli_light_03_unarmed_F", { "life_mediclevel", "SCALAR", 5 } },
-            { "O_Heli_Transport_04_F", { "life_mediclevel", "SCALAR", 6 } }
+			{ "I_Heli_light_03_unarmed_F", { "life_mediclevel", "SCALAR", 4 } },
+            { "O_Heli_Transport_04_F", { "life_mediclevel", "SCALAR", 5 } }
         };
     };
 
