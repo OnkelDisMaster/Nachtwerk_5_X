@@ -70,6 +70,7 @@ class Cation_Crafting {
             "uniform",
             "Uniformen",
             {"U_IG_Guerilla1_1","",{"kupfer",5},"","",0},
+			{"U_B_survival_uniform","",{"implantatNormal",1,"diamant",4,"platin",4},"","",0}
         },
         {
             "backpack",
