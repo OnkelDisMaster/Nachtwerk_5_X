@@ -372,10 +372,10 @@ class playerSettings {
 	 {
 		 idc = 9696;
 		 text = "images\tablet\wanted.paa";
-		 x = 0.622685 * safezoneW + safezoneX;
-		 y = 0.7016 * safezoneH + safezoneY;
-		 w = 0.0315 * safezoneW;
-		 h = 0.056 * safezoneH;
+		 x = 0.621685 * safezoneW + safezoneX;
+		 y = 0.7006 * safezoneH + safezoneY;
+		 w = 0.027875 * safezoneW;
+		 h = 0.0494 * safezoneH;
 	 };
 	 class ButtonWanted: life_RscButtonMenu
 	 {
@@ -384,7 +384,7 @@ class playerSettings {
 		 y = 0.7006 * safezoneH + safezoneY;
 		 w = 0.027875 * safezoneW;
 		 h = 0.0494 * safezoneH;
-		 onButtonClick = "[] call life_fnc_bountyMenu; closeDialog 0;";
+		 onButtonClick = "[] call life_fnc_bountyMenu;";
 		 colorBackground[] = {-1,-1,-1,-1};
 		 colorBackgroundFocused[] = {1,1,1,0.12};
 		 colorBackground2[] = {0.75,0.75,0.75,0.2};
