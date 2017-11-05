@@ -17,13 +17,13 @@ private _amountP = parseNumber _amount;
 if (isNil "_unit") exitWith {};
 if (isNull _unit) exitWith {};
 {
-	if(license_civ_bountyH) then {_unitsToNotify pushBack _x};
+	if(_x getVariable ["isBountyH",true]) then {_unitsToNotify pushBack _x};
 } forEach playableUnits;
 
 if (life_cash < _amountP) then {
 	hint "Du hast nicht genügend Bargeld dabei, wähle einen kleineren Betrag aus oder gehe zu einem ATM.";
 } else {
-	[1,[_unit,60,"Mil_dot","Kopfgeld - zuletzt gesichteter Aufenthaltsort"]] remoteExec ["life_fnc_markers",_unitsToNotify];
+	[1,[_unit,60,"Mil_dot",format["%1 - zuletzt gesichteter Kopfgeld Aufenthaltsort",_unit]]] remoteExec ["life_fnc_markers",_unitsToNotify];
 	life_cash = life_cash - _amountP;
 	
 	if (life_HC_isActive) then {
