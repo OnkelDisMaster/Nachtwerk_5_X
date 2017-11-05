@@ -69,7 +69,7 @@ class Cation_Crafting {
         {
             "uniform",
             "Uniformen",
-            {"U_IG_Guerilla1_1","",{"kupfer",5},"","",0}
+            {"U_IG_Guerilla1_1","",{"kupfer",5},"","",0},
         },
         {
             "backpack",
@@ -105,20 +105,22 @@ class Cation_Crafting {
         },
 		{
             "Implantate",
-            "Implantate herstellen",
-            {"implantatHitmarker","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"goldbauteil",2},"","",1},
-			{"implantatPaycheck","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",2,"goldbauteil",1,"diamant",3},"","",1},
-			{"implantatBackpack","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",1,"goldbauteil",2},"","",1}
+            "Implantate herstellen",						// 2 * 50			+ 4 * 8				+ 2 * 5
+            {"implantatHitmarker","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"goldbauteil",2},"","",1},
+															// 2 * 50			+ 3 * 8				+ 5 * 4		
+			{"implantatPaycheck","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"brennstab",5},"","",1},
+															// 2 * 50			+ 5 * 8	
+			{"implantatBackpack","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",1},"","",1}
         },
 		{
             "bombenkopfe",
             "Bombenköpfe herstellen",
-            {"bombenkopf","license_civ_bombe",{"alu",8,"eisen",8},"","",1}
+            {"bombenkopf","license_civ_bombe",{"alu",10,"eisen",10},"","",1}
         },
 		{
             "atombomben",
             "Atombomben herstellen",
-            {"atombombe","license_civ_abombe",{"bombenkopf",1,"plutonium",20},"","",1}
+            {"atombombe","license_civ_abombe",{"bombenkopf",1,"plutonium",22},"","",1}
         },
         {
             "item",

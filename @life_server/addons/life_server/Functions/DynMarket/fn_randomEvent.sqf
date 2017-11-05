@@ -12,7 +12,7 @@
 
 
 // In this file you can configure random events
-DYNMARKET_chance = 10; // Chance for a random event to happen
+DYNMARKET_chance = 20; // Chance for a random event to happen
 DYNMARKET_Events =
 [
  ["Ein Öl Tanker ist gesunken wodurch die Ölpreise gestiegen sind!",["oel","diesel"],-1], // -1 MEANS CHANGE PRICE TO MAX, -2 TO MIN, OR A VALUE TO WHICH THE PRICE BE CHANGED TO
