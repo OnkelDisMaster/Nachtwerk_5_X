@@ -7,7 +7,6 @@
     Description:
     Opens the Bounty menu.
 */
-private _num = true;
 disableSerialization;
 if(playerSide == west) exitWith {};
 if(playerSide == independent) exitWith {};

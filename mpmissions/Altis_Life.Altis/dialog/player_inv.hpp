@@ -374,8 +374,8 @@ class playerSettings {
 		 text = "images\tablet\wanted.paa";
 		 x = 0.622685 * safezoneW + safezoneX;
 		 y = 0.7016 * safezoneH + safezoneY;
-		 w = 0.028875 * safezoneW;
-		 h = 0.0504 * safezoneH;
+		 w = 0.0315 * safezoneW;
+		 h = 0.056 * safezoneH;
 	 };
 	 class ButtonWanted: life_RscButtonMenu
 	 {
