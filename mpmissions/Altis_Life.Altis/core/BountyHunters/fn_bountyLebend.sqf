@@ -19,8 +19,8 @@ _spieler = param [1,ObjNull,[ObjNull]];
 
 if ((_zone1 distance player < _dis) || (_zone2 distance player < _dis) || (_zone3 distance player < _dis)) then 
 	{
-			[getPlayerUID _bountyZiel] remoteExecCall ["life_fnc_bountyRemove",RSERV];
-			[getPlayerUID _bountyZiel,_bountyZiel,_spieler,true] remoteExecCall ["life_fnc_bountyGetBonus",RSERV];				
+			[getPlayerUID _bountyZiel,_bountyZiel,_spieler,true] remoteExecCall ["life_fnc_bountyGetBonus",RSERV];	
+			[getPlayerUID _bountyZiel] remoteExecCall ["life_fnc_bountyRemove",RSERV];					
 	} else {
 			[getPlayerUID _bountyZiel,_bountyZiel,_spieler,true] remoteExecCall ["life_fnc_amountBounty",RSERV];
 			[getPlayerUID _bountyZiel] remoteExecCall ["life_fnc_bountyRemove",RSERV];
