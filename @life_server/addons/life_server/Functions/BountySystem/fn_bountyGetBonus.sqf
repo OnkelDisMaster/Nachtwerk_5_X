@@ -28,5 +28,5 @@ if !(count _queryResult isEqualTo 0) then {
 	_query = format ["UPDATE bounty SET bounty='%1' WHERE bountyID ='%2'",_bonusKonto,_BonusID];
 	[_query,2] call DB_fnc_asyncCall;
 };
-[_uid,_civ,_cop,_lebend,_bonusCash] remoteExecCall ["life_fnc_amountBounty",RSERV];
+[_uid,_civ,_cop,_lebend,_bonusCash] call life_fnc_amountBounty;
 diag_log format ["%1 hat einen Kopfgeldbonus von $%2 bekommen",name _cop,_bonusCash];
