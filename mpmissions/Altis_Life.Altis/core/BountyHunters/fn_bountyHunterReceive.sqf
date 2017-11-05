@@ -11,7 +11,7 @@ private ["_val","_bonus"];
 _val = [_this,0,"",["",0]] call BIS_fnc_param;
 _bonus = param [1,0, [0]];
 
-	titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText,_bonus],"PLAIN"];
+	titleText[format [localize "STR_Bounty_BountyKill",[_val] call life_fnc_numberText,[_bonus] call life_fnc_numberText],"PLAIN"];
 
 BANK = BANK + _val + _bonus;
 [1] call SOCK_fnc_updatePartial;
