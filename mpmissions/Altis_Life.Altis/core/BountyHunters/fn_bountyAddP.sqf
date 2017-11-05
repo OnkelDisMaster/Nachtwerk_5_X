@@ -23,7 +23,7 @@ if (isNull _unit) exitWith {};
 if (life_cash < _amountP) then {
 	hint "Du hast nicht genügend Bargeld dabei, wähle einen kleineren Betrag aus oder gehe zu einem ATM.";
 } else {
-	[1,[_unit,60,"Mil_dot",format["%1 - zuletzt gesichteter Kopfgeld Aufenthaltsort",_unit]]] remoteExec ["life_fnc_markers",_unitsToNotify];
+	[1,[_unit,60,"Mil_dot",format["%1 - zuletzt gesichteter Kopfgeld Aufenthaltsort",name _unit]]] remoteExec ["life_fnc_markers",_unitsToNotify];
 	life_cash = life_cash - _amountP;
 	
 	if (life_HC_isActive) then {
