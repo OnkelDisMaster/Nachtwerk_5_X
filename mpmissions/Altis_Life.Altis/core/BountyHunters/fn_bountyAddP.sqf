@@ -28,10 +28,10 @@ if (life_cash < _amountP) then {
 	
 	if (life_HC_isActive) then {
 		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount] remoteExecCall ["HC_fnc_bountyAdd",HC_Life];
-		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount] remoteExecCall ["HC_fnc_bountyAmountGather",HC_Life];
+		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount,_unitsToNotify] remoteExecCall ["HC_fnc_bountyAmountGather",HC_Life];
 	} else {
 		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount] remoteExecCall ["life_fnc_bountyAdd",RSERV];
-		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount] remoteExecCall ["life_fnc_bountyAmountGather",RSERV];
+		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount,_unitsToNotify] remoteExecCall ["life_fnc_bountyAmountGather",RSERV];
 	};
 };
 

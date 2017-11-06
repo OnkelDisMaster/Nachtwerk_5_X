@@ -9,7 +9,8 @@
 params [
     ["_uid","",[""]], 
 	["_name", "",[""]],
-	["_amount","",[""]]
+	["_amount","",[""]],
+	["_unitsToNotify",[],[]]
 ];
 
 if(_uid isEqualTo "") exitWith {};
@@ -21,5 +22,7 @@ private _amountT = _queryResult select 0;
 _amountT = call compile format ["%1", _amountT];
 
 if (_amountT <= _amount) then {_amountT = _amountT + _amount};
-
-[1,"STR_Bounty_AddP",true,[_name,[_amount] call life_fnc_numberText,[_amountT] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+private _count = count _unitsToNotify;
+if (_count > 0) then {
+	[1,"STR_Bounty_AddP",true,[_name,[_amount] call life_fnc_numberText,[_amountT] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",_unitsToNotify];
+};
