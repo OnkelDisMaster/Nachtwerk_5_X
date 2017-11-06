@@ -20,4 +20,6 @@ _amount = call compile format ["%1",_amount];
 private _amountT = _queryResult select 0;
 _amountT = call compile format ["%1", _amountT];
 
+if (_amountT <= _amount) then {_amountT = _amountT + _amount};
+
 [1,"STR_Bounty_AddP",true,[_name,[_amount] call life_fnc_numberText,[_amountT] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];

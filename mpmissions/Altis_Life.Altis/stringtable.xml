@@ -13302,7 +13302,7 @@
 			<Original>$100,000,000</Original>
 		</Key>
 		<Key ID="STR_Bounty_AddP">
-            <Original>%1 wurde der Kopfgeldliste für $%2 hinzugefügt. Sein aktuelles Kopfgeld beträgt $%3. Seine letzte Position wurde auf der Karte markiert. Das normale Serverregelwerk gilt weiterhin, RDM wird bestraft!.</Original>
+            <Original>%1 wurde der Kopfgeldliste für $%2 hinzugefügt. Sein aktuelles Kopfgeld beträgt $%3. Seine letzte Position wurde für 3 Minuten auf der Karte markiert. Das normale Serverregelwerk gilt weiterhin, RDM wird bestraft!.</Original>
         </Key>
 		<Key ID="STR_MAR_bountyW">
             <Original>Kopfgeldjäger Shop</Original>
