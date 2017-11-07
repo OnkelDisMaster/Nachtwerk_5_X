@@ -9,9 +9,9 @@
 */
 private ["_display","_tab","_criminal"];
 disableSerialization;
-_display = findDisplay 24000;
-_tab = _display displayCtrl 24020;
-_criminal = lbData[24010,(lbCurSel 24010)];
+_display = findDisplay 9700;
+_tab = _display displayCtrl 9720;
+_criminal = lbData[9710,(lbCurSel 9710)];
 _criminal = call compile format ["%1", _criminal];
 if (isNil "_criminal") exitWith {};
 

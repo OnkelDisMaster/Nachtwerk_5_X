@@ -1,5 +1,5 @@
 class life_bounty_menu {
-    idd = 24000;
+    idd = 9700;
     name= "life_bounty_menu";
     movingEnable = false;
     enableSimulation = true;
@@ -37,13 +37,13 @@ class life_bounty_menu {
         };
 
         class WantedConnection: Title {
-            idc = 24040;
+            idc = 9740;
             style = 1;
             text = "";
         };
 
         class WantedList: Life_RscListBox {
-            idc = 24010;
+            idc = 9710;
             text = "";
             sizeEx = 0.035;
             onLBSelChanged = "[] spawn life_fnc_bountyGrab";
@@ -55,7 +55,7 @@ class life_bounty_menu {
 
         /*
 		class PlayerList: Life_RscListBox {
-            idc = 24060;
+            idc = 9760;
             text = "";
             sizeEx = 0.035;
             //colorBackground[] = {0,0,0,0};
@@ -68,7 +68,7 @@ class life_bounty_menu {
 		*/
 
         class WantedDetails: Life_RscListBox {
-            idc = 24020;
+            idc = 9720;
             text = "";
             sizeEx = 0.035;
             colorBackground[] = {0, 0, 0, 0};
@@ -79,7 +79,7 @@ class life_bounty_menu {
         };
 
         class BountyPrice: Life_RscText    {
-            idc = 24030;
+            idc = 9730;
             text = "";
             x = 0.12;
             y = 0.60;
@@ -89,7 +89,7 @@ class life_bounty_menu {
 
 		/*
         class WantedAddL: Life_RscCombo    {
-            idc = 24070;
+            idc = 9770;
             x = 0.542;
             y = 0.28;
             w = (8 / 52);
@@ -109,7 +109,7 @@ class life_bounty_menu {
 
 		
         class PardonButtonKey: Life_RscButtonMenu {
-            idc = 24050;
+            idc = 9750;
             text = "$STR_Wanted_Pardon";
             onButtonClick = "[] call life_fnc_bountyKill; closeDialog 0;";
             x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));

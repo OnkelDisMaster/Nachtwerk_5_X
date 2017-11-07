@@ -7,11 +7,11 @@
     Description: Gather the required info to send to the DB. 
 */
 if !(playerSide isEqualTo civilian) exitWith {hint localize "STR_bounty_bountyList_notBH";};
-if ((lbCurSel 240600) isEqualTo -1) exitWith {hint localize "STR_bounty_bountyList_noPlayerSelected";};
-if ((lbCurSel 240700) isEqualTo -1) exitWith {hint localize "STR_bounty_bountyList_noAmountSelected";};
-private _unit = lbData [240600,lbCurSel 240600];
+if ((lbCurSel 97600) isEqualTo -1) exitWith {hint localize "STR_bounty_bountyList_noPlayerSelected";};
+if ((lbCurSel 97700) isEqualTo -1) exitWith {hint localize "STR_bounty_bountyList_noAmountSelected";};
+private _unit = lbData [97600,lbCurSel 97600];
 _unit = call compile format ["%1",_unit];
-private _amount = lbData [240700,lbCurSel 240700];
+private _amount = lbData [97700,lbCurSel 97700];
 private _unitsToNotify = [];
 private _amountP = parseNumber _amount;
 if (isNil "_unit") exitWith {};

@@ -10,9 +10,9 @@
 private ["_Kopfgeld","_delKopfgeld","_display","_list"];
 disableSerialization;
 if !(license_civ_bountyH) exitWith {hint "Nur eingetragene Kopfgeldjäger können Kopfgelder entfernen!"};
-_display = findDisplay 24000;
-_list = _display displayCtrl 24020;
-_data = lbData[24010,(lbCurSel 24010)];
+_display = findDisplay 9700;
+_list = _display displayCtrl 9720;
+_data = lbData[9710,(lbCurSel 9710)];
 _data = call compile format ["%1", _data];
 if (isNil "_data") exitWith {};
 if (!(_data isEqualType [])) exitWith {};

@@ -16,9 +16,9 @@ if(!license_civ_bountyH) exitWith {
 
 createDialog "life_bounty_menu";
 
-private _display = findDisplay 24000;
-private _list = _display displayCtrl 24010;
-private _players = _display displayCtrl 24060;
+private _display = findDisplay 9700;
+private _list = _display displayCtrl 9710;
+private _players = _display displayCtrl 9760;
 private _units = [];
 
 lbClear _list;
@@ -30,7 +30,7 @@ lbClear _players;
     _players lbSetdata [(lbSize _players)-1,str(_x)];
 } forEach playableUnits;
 
-private _list2 = CONTROL(24000,24070);
+private _list2 = CONTROL(9700,9770);
 lbClear _list2; //Purge the list
 
 /*
@@ -45,11 +45,11 @@ private _crimes = LIFE_SETTINGS(getArray,"crimes");
 };forEach _crimes;
 */
 
-ctrlSetText[24040,"Baue Verbindung auf..."];
+ctrlSetText[9740,"Baue Verbindung auf..."];
 
 /*
 if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) isEqualTo 0}) then {
-    ctrlShow[2405,false];
+    ctrlShow[975,false];
 };
 */
 

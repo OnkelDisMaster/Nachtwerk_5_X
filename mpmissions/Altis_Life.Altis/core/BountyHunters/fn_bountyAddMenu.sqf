@@ -14,9 +14,9 @@ if(playerSide == west) exitWith {};
 
 createDialog "life_bounty_Addmenu";
 
-private _display = findDisplay 240000;
-private _list = _display displayCtrl 240100;
-private _players = _display displayCtrl 240600;
+private _display = findDisplay 97000;
+private _list = _display displayCtrl 97100;
+private _players = _display displayCtrl 97600;
 private _units = [];
 
 lbClear _list;
@@ -28,7 +28,7 @@ lbClear _players;
     _players lbSetdata [(lbSize _players)-1,str(_x)];
 } forEach playableUnits;
 
-private _list2 = CONTROL(240000,240700);
+private _list2 = CONTROL(97000,97700);
 lbClear _list2; //Purge the list
 
 
@@ -41,6 +41,3 @@ private _bounty = LIFE_SETTINGS(getArray,"bountys");
   };
     _list2 lbSetData [(lbSize _list2)-1,(_x select 1)];
 } forEach _bounty;
-
-
-//ctrlSetText[240400,"Bounty Database"];
