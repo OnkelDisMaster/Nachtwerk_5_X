@@ -71,7 +71,7 @@ _useTildMenu = true;	/* true or false */
 /* "_startAsNormal": if you add admin UIDs in here as well, they will start as almost "normal" player instead of with admin menu and such. */
 _startAsNormal =
 [
-	'76561198091201110','76561198079472612','0'
+	'0','0','0'
 ];
 /* if one of the admins with the UIDs in "_startAsNormal" uses the !admin command to login as admin, it will be announced to ANYONE on the server if "_announce_adminstate_changed" is true. */
 _announce_adminstate_changed = true;	/* true or false */
@@ -325,7 +325,7 @@ _allowedIDDs =
 	// Different Displays from different mods/additions
 	// (might not be needed at all but I've gotten so many emails like "INFISTAR CLOSES ATM MENU ON ALTIS LIFE.. people need to read this file..)
 	160,
-	9990,9992,9993,99440,
+	9990,9992,9993,99440,9696,9898,
 	-1,-2,-3,-4,-5,-9,-10,-11,-12,-14,-15,-666,300,301,302,303,304,13377,
 	2620,2629,2621,2622,2624,2625,2630,2631,2632,601,2520,2523,2522,
 	2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2300,2400,2600,
