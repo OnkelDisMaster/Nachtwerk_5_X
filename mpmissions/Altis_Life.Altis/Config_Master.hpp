@@ -82,9 +82,9 @@ class Life_Settings {
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","blitzer", "bunker", "flutlicht", "licht", "mauer", "plastik", "schranke", "lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroinu","heroin","weedu","weed","koksu","koks","turtle_raw","schwarzpulver","polenBoeller","tabak","zigaretten","korallen","korallenKetten","uranErz","uranI","uranII","uranIII","uranIV","plutonium","brennstab","bombenkopf","atombombe" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
     jail_seize_inventory = true; //Set to true to run the cop seize script on inmates. False will remove only weapons and magazines otherwise. (Basically used in case cops forget to seize items). [See Lines 106-111 below]
-    sendtoJail_locations[] = { "cop_spawn_1", "cop_spawn_2", "cop_spawn_3", "cop_spawn_4", "cop_spawn_5", "cop_spawn_6" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
-
-    /* Medical System Configurations */
+    sendtoJail_locations[] = { "cop_spawn_1", "cop_spawn_2", "cop_spawn_3", "cop_spawn_4", "cop_spawn_5", "cop_spawn_6", "Kopfgeld_1", "Kopfgeld_2", "Kopfgeld_3" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
+    
+	/* Medical System Configurations */
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_fee = 20000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
     hospital_heal_fee = 3000; //Fee to heal at a hospital NPC
