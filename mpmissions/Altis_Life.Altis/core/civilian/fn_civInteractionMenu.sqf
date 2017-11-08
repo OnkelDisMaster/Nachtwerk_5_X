@@ -15,7 +15,7 @@
 #define Btn7 37456
 #define Btn8 37457
 #define Title 37401
-private ["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
+private ["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","i","_spawn_array"];
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
 if (isNull _curTarget) then {if (!isNull cursorTarget) then {_curTarget = cursorTarget;} else {if(!isNull cursorObject) then {_curTarget = cursorObject;} else {_curTarget = objNull;};};};
@@ -69,10 +69,11 @@ if (_curTarget getVariable ["restrained",false]) then {
 	_Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
 	
 	if (license_civ_bountyH) then {
-		{
-			if (player distance (getMarkerPos _x) > 80) then { _Btn5 ctrlEnable false;};// else {_Btn5 ctrlEnable false;};
-		} forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
-		
+		_spawn_array = LIFE_SETTINGS(getArray,"sendtoJail_locations");
+		for "_i" from 0 to (count _spawn_array) do {
+			if (getMarkerPos(_spawn_array select i) distance player < 80) exitWith {_Btn5 ctrlEnable true;};
+			_Btn5 ctrlEnable false;
+		};	
 	} else {_Btn5 ctrlShow false;};
 		
 	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
