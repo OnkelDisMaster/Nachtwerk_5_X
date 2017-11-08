@@ -106,6 +106,8 @@ _containers = nearestObjects[getPosATL player,["WeaponHolderSimulated"],5];
 //Killed by cop stuff...
 if (side _killer isEqualTo west && playerSide != west) then {
     life_copRecieve = _killer;
+	life_bountyHunter = _killer;
+	life_removeBounty = true;
     //Did I rob the federal reserve?
     if (!life_use_atm && {CASH > 0}) then {
         [format[localize "STR_Cop_RobberDead",[CASH] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -113,8 +115,8 @@ if (side _killer isEqualTo west && playerSide != west) then {
     };
 };
 
-if (({side _killer isEqualTo civilian} || {side _killer isEqualTo west}) && {_killer != _unit}) then {
-	if ((_killer getVariable ["isBountyH",true]) || (side _killer isEqualTo west)) then {
+if (side _killer isEqualTo civilian && {_killer != _unit}) then {
+	if (_killer getVariable ["isBountyH",true]) then {
 		life_bountyHunter = _killer;
 		life_removeBounty = true;
 	};
