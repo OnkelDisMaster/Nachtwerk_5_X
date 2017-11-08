@@ -68,10 +68,10 @@ if (_curTarget getVariable ["restrained",false]) then {
 	_Btn5 ctrlSetText "Kopfgeld einfordern";
 	_Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
 	
-	if (license_civ_bountyH) then {_Btn5 ctrlShow true;} else {_Btn5 ctrlShow false;};
+	if !(license_civ_bountyH) then {_Btn5 ctrlShow false;};
 	
 	{
-		if ((player distance (getMarkerPos _x) <100)) then { _Btn5 ctrlEnable true;} else {_Btn5 ctrlEnable false;};
+		if (player distance (getMarkerPos _x) < 150) then { _Btn5 ctrlEnable true;} else {_Btn5 ctrlEnable false;};
 	} forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
 
 	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
