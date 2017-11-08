@@ -21,7 +21,7 @@ if((life_inv_kabelbinder < 1) && (side player isEqualTo civilian)) exitWith { hi
 if (side player isEqualTo civilian) then {
 	if(life_inv_kabelbinder < 1) exitWith { hintSilent "Du hast keine Kabelbinder bei dir !"; };
 	life_inv_kabelbinder = life_inv_kabelbinder - 1;
-	hintSilent "Du hast jemanden festgenommen...";
+	hintSilent format["Du hast %1 festgenommen...", _unit getVariable["realname", name _unit]];
 };
 
 _unit setVariable["restrained",true,true];
