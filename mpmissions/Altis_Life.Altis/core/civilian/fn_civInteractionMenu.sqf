@@ -70,7 +70,7 @@ if (_curTarget getVariable ["restrained",false]) then {
 	
 	if (license_civ_bountyH) then {
 		{
-			if (player distance (getMarkerPos _x) < 150) then { _Btn5 ctrlEnable true;} else {_Btn5 ctrlEnable false;};
+			if (player distance (getMarkerPos _x) < 80) then { _Btn5 ctrlEnable true;} else {_Btn5 ctrlEnable false;};
 		} forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
 		
 	} else {_Btn5 ctrlShow false;};
