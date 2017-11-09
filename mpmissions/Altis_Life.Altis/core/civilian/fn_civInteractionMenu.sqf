@@ -71,7 +71,7 @@ if (_curTarget getVariable ["restrained",false]) then {
 	if (license_civ_bountyH) then {
 		if (life_pInact_curTarget getVariable ["hatKopfgeld",false]) then {
 			_Btn5 ctrlSetText "Kopfgeldlos";
-			_Btn5 ctrlEnable false;
+			
 		};
 		if (((getMarkerPos "cop_spawn_1") distance player > 80) && ((getMarkerPos "cop_spawn_2") distance player > 80) && ((getMarkerPos "cop_spawn_3") distance player) > 80 && ((getMarkerPos "cop_spawn_4") distance player > 80) && ((getMarkerPos "cop_spawn_5") distance player > 80) && ((getMarkerPos "cop_spawn_6") distance player > 80) && ((getMarkerPos "Kopfgeld_1") distance player > 80) && ((getMarkerPos "Kopfgeld_2") distance player > 80) && ((getMarkerPos "Kopfgeld_3") distance player > 80)) then {
 			_Btn5 ctrlEnable false;
