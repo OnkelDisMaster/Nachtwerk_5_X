@@ -69,10 +69,14 @@ if (_curTarget getVariable ["restrained",false]) then {
 	_Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
 	
 	if (license_civ_bountyH) then {
-		if ((life_pInact_curTarget getVariable ["hatKopfgeld",true]) && ((getMarkerPos "cop_spawn_1") distance player > 80) && ((getMarkerPos "cop_spawn_2") distance player > 80) && ((getMarkerPos "cop_spawn_3") distance player) > 80 && ((getMarkerPos "cop_spawn_4") distance player > 80) && ((getMarkerPos "cop_spawn_5") distance player > 80) && ((getMarkerPos "cop_spawn_6") distance player > 80) && ((getMarkerPos "Kopfgeld_1") distance player > 80) && ((getMarkerPos "Kopfgeld_2") distance player > 80) && ((getMarkerPos "Kopfgeld_3") distance player > 80)) then {
-			_Btn5 ctrlEnable false;
+		if (life_pInact_curTarget getVariable ["hatKopfgeld",false]) then {
 			_Btn5 ctrlSetText "Kopfgeldlos";
+			_Btn5 ctrlEnable false;
+		};
+		if (((getMarkerPos "cop_spawn_1") distance player > 80) && ((getMarkerPos "cop_spawn_2") distance player > 80) && ((getMarkerPos "cop_spawn_3") distance player) > 80 && ((getMarkerPos "cop_spawn_4") distance player > 80) && ((getMarkerPos "cop_spawn_5") distance player > 80) && ((getMarkerPos "cop_spawn_6") distance player > 80) && ((getMarkerPos "Kopfgeld_1") distance player > 80) && ((getMarkerPos "Kopfgeld_2") distance player > 80) && ((getMarkerPos "Kopfgeld_3") distance player > 80)) then {
+			_Btn5 ctrlEnable false;
 		};	
+		
 	} else {_Btn5 ctrlShow false;};
 		
 	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];

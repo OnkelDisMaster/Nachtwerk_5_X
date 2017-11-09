@@ -18,6 +18,4 @@ _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 if !(count _queryResult isEqualTo 0) then {
 	_civ setvariable ["hatKopfgeld",true,true];
-} else {
-	_civ setvariable ["hatKopfgeld",false,true];
 };
