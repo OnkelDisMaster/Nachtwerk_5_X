@@ -90,6 +90,7 @@ if (life_removeBounty) then {
 	} else {
 		[getPlayerUID player] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 	};
+	player setvariable ["hatKopfgeld",false,true];
 };
 
 //So I guess a fellow gang member, cop or myself killed myself so get me off that Altis Most Wanted

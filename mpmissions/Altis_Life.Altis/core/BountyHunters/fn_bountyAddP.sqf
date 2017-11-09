@@ -33,5 +33,7 @@ if (life_cash < _amountP) then {
 		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount] remoteExecCall ["life_fnc_bountyAdd",RSERV];
 		[getPlayerUID _unit,_unit getVariable ["realname",name _unit],_amount,_unitsToNotify] remoteExecCall ["life_fnc_bountyAmountGather",RSERV];
 	};
+	
+	_unit setvariable ["hatKopfgeld",true,true];
 };
 
