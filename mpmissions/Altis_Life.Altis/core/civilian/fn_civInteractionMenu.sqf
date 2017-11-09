@@ -69,9 +69,7 @@ if (_curTarget getVariable ["restrained",false]) then {
 	_Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
 	
 	if (license_civ_bountyH) then {
-		_spawn_array = LIFE_SETTINGS(getArray,"sendtoJail_locations");
-		for "_i" from 0 to (count _spawn_array) do {
-			if (getMarkerPos(_spawn_array select i) distance player < 80) exitWith {_Btn5 ctrlEnable true;};
+		if (((getMarkerPos "cop_spawn_1") distance player > 80) && ((getMarkerPos "cop_spawn_2") distance player > 80) && ((getMarkerPos "cop_spawn_3") distance player) > 80 && ((getMarkerPos "cop_spawn_4") distance player > 80) && ((getMarkerPos "cop_spawn_5") distance player > 80) && ((getMarkerPos "cop_spawn_6") distance player > 80) && ((getMarkerPos "Kopfgeld_1") distance player > 80) && ((getMarkerPos "Kopfgeld_2") distance player > 80) && ((getMarkerPos "Kopfgeld_3") distance player > 80)) then {
 			_Btn5 ctrlEnable false;
 		};	
 	} else {_Btn5 ctrlShow false;};
