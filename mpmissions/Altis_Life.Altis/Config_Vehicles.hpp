@@ -1359,7 +1359,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "SEK", "cop", {
                 "skins\car\sek_hunter_1.paa",
                 "skins\car\sek_hunter_2.paa"
-            }, "" }
+            }, "" },
+			{ "Vanila", "civ", {
+                "\a3\soft_f\MRAP_01\Data\MRAP_01_adds_CO.paa",
+				"\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa"
+            }, ""  }
         };
     };
 	
