@@ -12,3 +12,4 @@ params [
 ];
 
 if (_bounty) then {player setvariable ["hatKopfgeld",true,true];} else {player setvariable ["hatKopfgeld",false,true];};
+hint "Test";
