@@ -119,7 +119,7 @@ if (side _killer isEqualTo civilian && {_killer != _unit}) then {
 	if ((_killer getVariable ["isBountyH",true]) && (player getVariable ["hatKopfgeld",true])) then {
 		life_bountyHunter = _killer;
 		life_removeBounty = true;		
-		[0,"%1 wurde von einem Kopfgeldjäger getötet",name player] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+		[0,format["%1 wurde von einem Kopfgeldjäger getötet",name player]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 	};
 };	
 
