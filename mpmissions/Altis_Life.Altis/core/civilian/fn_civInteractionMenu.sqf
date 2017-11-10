@@ -66,9 +66,9 @@ if (_curTarget getVariable ["restrained",false]) then {
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 	
 	if (license_civ_bountyH) then {
-		if (life_pInact_curTarget getVariable ["hatKopfgeld",false]) then {
+		if (cursorTarget getVariable ["hatKopfgeld",false]) then {
 			_Btn5 ctrlSetText "Kopfgeldlos";
-			//_Btn5 ctrlEnable false;
+			_Btn5 ctrlEnable false;
 		} else {
 			_Btn5 ctrlSetText "Kopfgeld einfordern";
 		};

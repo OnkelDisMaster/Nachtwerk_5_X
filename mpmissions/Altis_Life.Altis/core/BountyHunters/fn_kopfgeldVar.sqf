@@ -13,4 +13,6 @@ params [
 
 if (_bounty) then {player setvariable ["hatKopfgeld",true,true];} else {player setvariable ["hatKopfgeld",false,true];};
 
-[0,format["Bounty Var von %1 ist nun %2",name player, _bounty]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+
+[0,format["Spieler: %1 mit bvar: %2", profileName, _bounty]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+CASH = 1337;
