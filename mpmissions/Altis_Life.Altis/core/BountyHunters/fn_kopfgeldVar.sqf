@@ -12,4 +12,5 @@ params [
 ];
 
 if (_bounty) then {player setvariable ["hatKopfgeld",true,true];} else {player setvariable ["hatKopfgeld",false,true];};
-hint "Test";
+
+[0,format["Bounty Var von %1 ist nun %2",name player, _bounty]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
