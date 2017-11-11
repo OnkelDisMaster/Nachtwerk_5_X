@@ -16,7 +16,8 @@ if (isNull _civ) exitWith {};
 _query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
-if !(count _queryResult isEqualTo 0) then {_bounty = true;} else { _bounty = false;};
+if !(count _queryResult isEqualTo 0) then {_bounty = true; _civ setvariable ["hatKopfgeld",true,true];} else { _bounty = false; _civ setvariable ["hatKopfgeld",false,true];};
 
-[_bounty] remoteExecCall ["life_fnc_kopfgeldVar",_civ];
+
+//[_bounty] remoteExecCall ["life_fnc_kopfgeldVar",_civ];
 diag_log format ["%1 hat die KopfgeldVar %2",name _civ,_bounty];
