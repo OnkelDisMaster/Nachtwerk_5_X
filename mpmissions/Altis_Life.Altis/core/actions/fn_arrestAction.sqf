@@ -26,7 +26,6 @@ if (isNull _unit) exitWith {}; //Not valid
 detach _unit;
 [_unit,false] remoteExecCall ["life_fnc_jail",_unit];
 
-if !(playerSide isEqualTo west) then {[0,format["%1 wurde von einem Kopfgeldjäger inhaftiert",name _unit]] remoteExecCall ["life_fnc_broadcast",RCLIENT];};
 //	[0,"STR_NOTF_Arrested_1",true, [_unit getVariable ["realname",name _unit], name player]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 	[getPlayerUID _unit] remoteExecCall ["life_fnc_bountyRemove",RSERV];
 
