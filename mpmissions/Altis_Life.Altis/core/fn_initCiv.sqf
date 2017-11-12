@@ -39,7 +39,7 @@ if (license_civ_logistikpilot_plus) then {[["O_APC_Wheeled_02_rcws_F"],["B_Heli_
 };
 if (license_civ_bountyH) then {player setvariable ["isBountyH",true,true];} else {player setvariable ["isBountyH",false,true];};
 
-[getPlayerUID player, player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set
+[player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set
 
 [] spawn life_fnc_IntroCam;
 [] call life_fnc_initPayChecks;

@@ -8,16 +8,17 @@
 */
 private ["_uid","_query","_queryResult","_bounty"];
 params [
-	["_uid","",[""]],
 	["_civ",objNull,[objNull]]
 ];
-
 if (isNull _civ) exitWith {};
+_uid = getPlayerUID _civ;
+
+
 _query = format ["SELECT bountyID, bountyName, bounty FROM bounty WHERE bountyID='%1'",_uid];
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
-if !(count _queryResult isEqualTo 0) then {_bounty = true; _civ setvariable ["hatKopfgeld",true,true];} else { _bounty = false; _civ setvariable ["hatKopfgeld",false,true];};
+if !(count _queryResult isEqualTo 0) then {_bounty = true;} else { _bounty = false;};
 
 
-[_bounty,1] remoteExecCall ["life_fnc_kopfgeldVar",(owner_civ)];
+[_bounty,1] remoteExecCall ["life_fnc_kopfgeldVar",(owner _civ)];
 diag_log format ["%1 hat die KopfgeldVar %2",name _civ,_bounty];
