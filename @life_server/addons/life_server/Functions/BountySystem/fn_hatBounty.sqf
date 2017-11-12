@@ -20,5 +20,4 @@ _queryResult = [_query,2] call DB_fnc_asyncCall;
 if !(count _queryResult isEqualTo 0) then {_bounty = true;} else { _bounty = false;};
 
 
-[_bounty,1] remoteExecCall ["life_fnc_kopfgeldVar",(owner _civ)];
-diag_log format ["%1 hat die KopfgeldVar %2",name _civ,_bounty];
+[_bounty] remoteExecCall ["life_fnc_kopfgeldVar",(owner _civ)];
