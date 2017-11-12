@@ -19,7 +19,7 @@ switch (true) do {
     case (_house in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]): {[4000000,0]};
     case (_house in ["Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F"]): {[25000000,2]};
     case (_house in ["Land_i_House_Small_02_V1_F","Land_i_House_Small_02_V2_F","Land_i_House_Small_02_V3_F"]): {[25000000,2]};
-    case (_house in ["Land_i_House_Small_03_V1_F"]): {[8000000,3]};
+    case (_house in ["Land_i_House_Small_03_V1_F"]): {[22000000,3]};
     case (_house in ["Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F"]): {[7500000,1]};
 	
 	case (_house in ["Land_i_House_Big_02_b_brown_F","Land_i_House_Big_02_b_white_F","Land_i_House_Big_02_b_pink_F","Land_i_House_Big_02_b_blue_F"]): {[80000000,6]};	//NW Schnöselberg Groß
