@@ -15,5 +15,6 @@ if (_bounty) then {player setvariable ["hatKopfgeld",true,true];} else {player s
 diag_log format ["Zahl: %1",_zahl];
 diag_log format ["#2 %1 hat die KopfgeldVar %2",profilename,_bounty];
 
+hint "Test";
 [0,"Aufruf von kopfgeldVar-Datei ..."] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 CASH = 1337;
