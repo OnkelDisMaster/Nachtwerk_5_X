@@ -15,7 +15,7 @@
 #define Btn7 37456
 #define Btn8 37457
 #define Title 37401
-private ["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","i","_spawn_array"];
+private ["_display","_bounty","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","i","_spawn_array"];
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
 if (isNull _curTarget) then {if (!isNull cursorTarget) then {_curTarget = cursorTarget;} else {if(!isNull cursorObject) then {_curTarget = cursorObject;} else {_curTarget = objNull;};};};
@@ -66,11 +66,12 @@ if (_curTarget getVariable ["restrained",false]) then {
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 	
 	if (license_civ_bountyH) then {
-		if (cursorTarget getVariable ["hatKopfgeld",false]) then {
+		_bounty = life_pInact_curTarget getVariable["hatKopfgeld",false];
+		if (_bounty) then {
+			_Btn5 ctrlSetText "Kopfgeld einfordern";	
+		} else {
 			_Btn5 ctrlSetText "Kopfgeldlos";
 			_Btn5 ctrlEnable false;
-		} else {
-			_Btn5 ctrlSetText "Kopfgeld einfordern";
 		};
 		if (((getMarkerPos "cop_spawn_1") distance player > 80) && ((getMarkerPos "cop_spawn_2") distance player > 80) && ((getMarkerPos "cop_spawn_3") distance player) > 80 && ((getMarkerPos "cop_spawn_4") distance player > 80) && ((getMarkerPos "cop_spawn_5") distance player > 80) && ((getMarkerPos "cop_spawn_6") distance player > 80) && ((getMarkerPos "Kopfgeld_1") distance player > 80) && ((getMarkerPos "Kopfgeld_2") distance player > 80) && ((getMarkerPos "Kopfgeld_3") distance player > 80)) then {
 			_Btn5 ctrlEnable false;
