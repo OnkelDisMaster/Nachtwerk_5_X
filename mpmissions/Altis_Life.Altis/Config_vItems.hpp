@@ -298,7 +298,7 @@ class VirtualItems {
 	class implantatHitmarker {
         variable = "implantatHitmarker";
         displayName = "STR_License_implantat_hitmarker";
-        weight = 60;
+        weight = 30;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -309,7 +309,7 @@ class VirtualItems {
 	class implantatPaycheck {
         variable = "implantatPaycheck";
         displayName = "STR_License_implantat_paycheck";
-        weight = 60;
+        weight = 30;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -320,7 +320,7 @@ class VirtualItems {
 	class implantatBackpack {
         variable = "implantatBackpack";
         displayName = "STR_License_implantat_backpack";
-        weight = 60;
+        weight = 30;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -331,7 +331,7 @@ class VirtualItems {
 	class implantatAusdauer {
         variable = "implantatAusdauer";
         displayName = "STR_License_implantat_ausdauer";
-        weight = 60;
+        weight = 30;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -342,7 +342,7 @@ class VirtualItems {
 	class implantatSchneller {
         variable = "implantatSchneller";
         displayName = "STR_License_implantat_schneller";
-        weight = 60;
+        weight = 30;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
@@ -353,7 +353,7 @@ class VirtualItems {
 	class implantatNachtsicht {
         variable = "implantatNachtsicht";
         displayName = "STR_License_implantat_Nachtsicht";
-        weight = 60;
+        weight = 30;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;

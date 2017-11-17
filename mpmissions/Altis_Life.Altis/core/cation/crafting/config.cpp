@@ -9,7 +9,7 @@
 class Cation_Crafting {
 
     version_4_4 = 1; // version 3.x - 4.3 -> 0 | version 4.4+ -> 1
-    duration = 0.3; //Dauer im Craftingvorgang für 1% in s (Mögliche Werte zwischen 0.1 und 10)
+    duration = 0.6; //Dauer im Craftingvorgang für 1% in s (Mögliche Werte zwischen 0.1 und 10)
     
     //Texte
     Craftingmenu = "Baumenü";
