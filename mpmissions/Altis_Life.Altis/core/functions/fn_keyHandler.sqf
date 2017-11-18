@@ -159,7 +159,7 @@ switch (_code) do {
 	
 	//ATM Pin Anzeige (STRG + Shift + A)
     case 30: {
-		if (!_shift && _ctrlKey) then 
+		if (_shift && _ctrlKey) then 
 		{
 			hint format ["Dein Aktueller ATM Pin Code lautet: %1", life_bankingpin];
 		};
