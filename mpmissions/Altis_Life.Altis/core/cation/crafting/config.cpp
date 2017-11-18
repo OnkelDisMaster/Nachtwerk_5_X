@@ -117,7 +117,8 @@ class Cation_Crafting {
 		{
             "bombenkopfe",
             "Bombenköpfe herstellen",
-            {"bombenkopf","license_civ_bombe",{"alu",10,"eisen",10},"","",1}
+            {"bombenkopf","license_civ_bombe",{"alu",10,"eisen",10},"","",1},
+			{"implantatBackpack","license_civ_bombe",{"alu",10,"eisen",10},"","",1}
         },
 		{
             "atombomben",
