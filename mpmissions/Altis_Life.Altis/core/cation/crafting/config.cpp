@@ -105,7 +105,7 @@ class Cation_Crafting {
             {"mikroprozessor","license_civ_implantat",{"platin",4,"alu",5,"kupfer",6},"","",1}
         },
 		{
-            "implantate",
+            "imps",
             "Implantate herstellen",						// 2 * 50			+ 4 * 8				+ 2 * 5
             {"implantatHitmarker","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"goldbauteil",2},"","",1},
 															// 2 * 50			+ 3 * 8				+ 5 * 4		
@@ -158,7 +158,7 @@ class Cation_Crafting {
 		{
             "implantat", //Variablenname
             "", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"implantate"} //Variablennamen der verfügbaren Kategorien
+            {"imps"} //Variablennamen der verfügbaren Kategorien
         },		
 		{
             "atombombenp", //Variablenname
