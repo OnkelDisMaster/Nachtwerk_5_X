@@ -111,8 +111,7 @@ class Cation_Crafting {
 															// 2 * 50			+ 3 * 8				+ 5 * 4		
 			{"implantatPaycheck","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"brennstab",5},"","",1},
 															// 2 * 50			+ 5 * 8	
-			//{"implantatBackpack","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",5},"","",1}
-			 {"implantatBackpack","",{"alu",10,"eisen",10},"","",1}
+			{"implantatBackpack","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",5},"","",1}
         },
 		{
             "bombenkopfe",
