@@ -106,12 +106,14 @@ class Cation_Crafting {
         },
 		{
             "imps",
-            "Implantate herstellen",						// 2 * 50			+ 4 * 8				+ 2 * 5
-            {"implantatHitmarker","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"goldbauteil",2},"","",1},
-															// 2 * 50			+ 3 * 8				+ 5 * 4		
-			{"implantatPaycheck","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"brennstab",5},"","",1},
-															// 2 * 50			+ 5 * 8	
-			{"implantatBackpack","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",5},"","",1}
+            "Implantate herstellen",						// 2 * 50			+ 4 * 8				+ 2 * 5		+ 2 * 5
+            {"implantatHitmarker","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"brennstab",2,"goldbauteil",2},"","",1},
+															// 2 * 50			+ 4 * 8				+ 3 * 5		+ 1 * 5  		+ 2 * 1
+            {"implantatAusdauer","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"brennstab",3,"goldbauteil",1,"redgull",2},"","",1},
+															// 2 * 50			+ 3 * 8				+ 4 * 4		+ 2 * 1	 		+ 2 * 1	 
+			{"implantatPaycheck","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"brennstab",4,"spikeStrip",2,"gpstracker",2},"","",1},
+															// 2 * 50			+ 5 * 8	 			+ 2 * 1	 	+ 2 * 1	 
+			{"implantatBackpack","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",5,"spikeStrip",2,"gpstracker",2},"","",1}
         },
 		{
             "bombenkopfe",
