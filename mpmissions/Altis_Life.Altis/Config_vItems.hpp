@@ -534,7 +534,7 @@ class VirtualItems {
 	class gpstracker {
         variable = "gpstracker";
         displayName = "STR_Item_GPSTracker";
-        weight = 10;
+        weight = 1;
         buyPrice = 70000;
         sellPrice = 5000;
         illegal = true;
