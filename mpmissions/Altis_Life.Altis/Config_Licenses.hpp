@@ -435,6 +435,14 @@ class Licenses {
         illegal = true;
         side = "civ";
     };
+	
+	class goldGame {  
+        variable = "goldGame";
+        displayName = "STR_Item_RedGullPalette";
+        price = 5000000;
+        illegal = true;
+        side = "civ";
+    };
 
 	class gang {
         variable = "license_civ_gang";
