@@ -1134,10 +1134,21 @@ class VirtualItems {
     //Drink
     class redgull {
         variable = "redgull";
-        displayName = "STR_Item_RedGull";
+        displayName = "STR_Item_RedGullPallete";
         weight = 1;
-        buyPrice = 1500;
-        sellPrice = 200;
+        buyPrice = 1500000;
+        sellPrice = 200000;
+        illegal = false;
+        edible = 100;
+        icon = "icons\ico_redgull.paa";
+    };
+	
+	class redGullPalette {
+        variable = "redGullPalette";
+        displayName = "STR_Item_RedGullPallete";
+        weight = 2;
+        buyPrice = 1500000;
+        sellPrice = 200000;
         illegal = false;
         edible = 100;
         icon = "icons\ico_redgull.paa";

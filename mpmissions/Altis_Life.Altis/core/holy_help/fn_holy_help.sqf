@@ -84,6 +84,7 @@ switch(_lbauswahl) do {
 		Pro Rebellen:		5,75 Mio<br/>
 		Elite Rebellen:		20 Mio<br/>
 		Kopfgeldjäger:		16 Mio<br/>
+		RedGull Palette:	2 Mio<br/>
 		<br/>
 		Legale Farmlizenzen:<br/>
 		Pina Colada:		10k<br/>
@@ -167,7 +168,17 @@ switch(_lbauswahl) do {
 		Spezielle Implantate: Standard Implantat + Extras -> Nano Fabrik -> Eigenkonsum/Spielerhandel <br/>";
 	};
 	case 5: {
-		_desctext = "Fertigung der Implantate + Nutzen:<br/>";
+		_desctext = "Fertigung der Implantate + Nutzen:<br/><br/>
+		Crafting beim Schwarzmarkt<br/><br/>
+		Hitmarker Implantat: Hitmarker System<br/>
+		Crafting: 2 Standardimplanate,4 Mikroprozessor,2 Brennstäbe,2 Goldbauteile<br/><br/>
+		Ausdauer Implantat: Unendlich Ausdauer<br/>
+		Crafting: 2 Standardimplanate,4 Mikroprozessor,3 Brennstäbe,"goldbauteil",1,"redgullPalette",1<br/><br/>
+		Tragekapazitäts Implantat: +10 Tragekapazität<br/>
+		Crafting: 2 Standardimplanate,3 Mikroprozessor,4 Brennstäbe,2 Nagelbänder,2 Gpstracker<br/><br/>
+		Gehaltscheck Implantat: +9000$ alle 10 Min<br/>
+		Crafting: 2 Standardimplanate,5 Mikroprozessor,2 Nagelbänder,2 Gpstracker<br/><br/>
+		";
 	};
 };
 _textbox ctrlSetStructuredText parseText format["%1",_desctext];

@@ -7067,6 +7067,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_Item_RedGullPalette">
+            <Original>Redgull Palette</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Redgull Palette</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_Item_BCharge">
             <Original>Blasting Charge</Original>
             <Czech>Trhací Charge</Czech>

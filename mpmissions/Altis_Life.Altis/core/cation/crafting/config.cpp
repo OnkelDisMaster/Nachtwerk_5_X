@@ -46,8 +46,8 @@ class Cation_Crafting {
 			{"srifle_DMR_02_sniper_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",4},"","",0},			
 			{"srifle_DMR_05_hex_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",5},"","",0}, 
 			{"srifle_DMR_05_tan_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",5},"","",0}, 
-			{"srifle_LRR_F","license_civ_pro_rebel",{"goldbauteil",4,"diamant",10,"mikroprozessor",2},"","",0}, 
-			{"srifle_LRR_camo_F","license_civ_pro_rebel",{"goldbauteil",4,"diamant",10,"mikroprozessor",2},"","",0}, 			
+			{"srifle_LRR_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",10,"mikroprozessor",2},"","",0}, 
+			{"srifle_LRR_camo_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",10,"mikroprozessor",2},"","",0}, 			
 			{"srifle_GM6_camo_F","license_civ_pro_rebel",{"goldbauteil",8,"diamant",10,"mikroprozessor",4},"","",0} 
 
 		}, //Komma
@@ -100,6 +100,11 @@ class Cation_Crafting {
             {"goldbauteil","license_civ_goldbauteil",{"goldbar",10},"","",1}
         },
 		{
+            "Redgull",
+            "Redgull Palette herstellen",
+            {"redgullPalette","license_civ_redGullPalette",{"redgull",100},"","",1}
+        },
+		{
             "mikroprozessoren",
             "Mikroprozessoren herstellen",
             {"mikroprozessor","license_civ_implantat",{"platin",4,"alu",5,"kupfer",6},"","",1}
@@ -109,7 +114,7 @@ class Cation_Crafting {
             "Implantate herstellen",						// 2 * 50			+ 4 * 8				+ 2 * 5		+ 2 * 5
             {"implantatHitmarker","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"brennstab",2,"goldbauteil",2},"","",1},
 															// 2 * 50			+ 4 * 8				+ 3 * 5		+ 1 * 5  		+ 2 * 1
-            {"implantatAusdauer","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"brennstab",3,"goldbauteil",1,"redgull",2},"","",1},
+            {"implantatAusdauer","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"brennstab",3,"goldbauteil",1,"redgullPalette",1},"","",1},
 															// 2 * 50			+ 3 * 8				+ 4 * 4		+ 2 * 1	 		+ 2 * 1	 
 			{"implantatPaycheck","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"brennstab",4,"spikeStrip",2,"gpstracker",2},"","",1},
 															// 2 * 50			+ 5 * 8	 			+ 2 * 1	 	+ 2 * 1	 
@@ -168,7 +173,7 @@ class Cation_Crafting {
 		{
             "Schwarzmarkt", //Variablenname
             "Schwarzmarkt_1", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"weapon","mags","uniform","vest","backpack","bombenkopfe","Goldbauteile"} //Variablennamen der verfügbaren Kategorien
+            {"weapon","mags","uniform","vest","backpack","bombenkopfe","Goldbauteile","Redgull"} //Variablennamen der verfügbaren Kategorien
         }
     };
 };
