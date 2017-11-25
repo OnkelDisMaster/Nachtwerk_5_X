@@ -33,7 +33,7 @@ _cP = 0;
  
 while{_cP < 1} do
 {
-	uiSleep 1.85;
+	uiSleep 0.2;
 	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
 	_pgText ctrlSetText format["Bleibe innerhalb von (10m)um Goldbarren zu fälschen (%1%2)...",round(_cP * 100),"%"];
