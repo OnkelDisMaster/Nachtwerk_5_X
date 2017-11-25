@@ -18,8 +18,6 @@ if (life_is_processing) exitWith {
 
 if !(license_civ_goldGame) exitWith {hint "Du besitzt die Goldfälscher Lizenz nicht!";};
 
-life_action_inUse = true;//Lock out other actions during processing.
-
 if (life_cash < 1000000) exitWith {hint "Du hast keine 1.000.000$ auf der Hand dabei!";};  
 life_cash = life_cash - 1000000;
 
@@ -63,9 +61,9 @@ if (_GoldGameAnz isEqualTo 0) then {_belohnung = 0;} else {
 		_newAnz = _GoldGameAnz - _belohnung; 
 		if (_newAnz < 0) then {_newAnz = 0};
 		player setVariable ["GoldGameAnz",_newAnz];
-		if ([true,goldbar,_belohnung] call life_fnc_handleInv) then {titleText[format["Du hast %1 Goldbarren erfolgreich gefälscht",_belohnung],"PLAIN"];};
+		if ([true,"goldBar",_belohnung] call life_fnc_handleInv) then {titleText[format["Du hast %1 Goldbarren erfolgreich gefälscht",_belohnung],"PLAIN"];} else {titleText[format["Du hast hattest keinen Platz mehr und dafür %1$ bekommen",(_belohnung * 500000)],"PLAIN"]; life_cash = life_cash + _belohnung * 500000;};
 	};
 };	
 
 if (_belohnung isEqualTo 0) then {titleText["Deine Gold Plagiate sind aufgeflogen","PLAIN"];}; //Wantedlisteneintrag dazu
-life_action_inUse = false;
+
