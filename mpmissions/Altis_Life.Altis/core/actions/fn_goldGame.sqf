@@ -49,10 +49,10 @@ _belohnung = 0;
 _chance = random (101);
 
 switch (_chance) do {
-	case 0..3: {_belohnung = 3};
-	case 4..9: {_belohnung = 2};
-	case 10..20: {_belohnung = 1};
-	case 21..100: {_belohnung = 0};
+	case 0..3: {_belohnung = 3;};
+	case 4..9: {_belohnung = 2;};
+	case 10..20: {_belohnung = 1;};
+	case 21..100: {_belohnung = 0;};
 };
 
 _maxAnz = 10;

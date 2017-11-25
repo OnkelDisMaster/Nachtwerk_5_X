@@ -173,7 +173,7 @@ switch(_lbauswahl) do {
 		Hitmarker Implantat: Hitmarker System<br/>
 		Crafting: 2 Standardimplanate,4 Mikroprozessor,2 Brennstäbe,2 Goldbauteile<br/><br/>
 		Ausdauer Implantat: Unendlich Ausdauer<br/>
-		Crafting: 2 Standardimplanate,4 Mikroprozessor,3 Brennstäbe,"goldbauteil",1,"redgullPalette",1<br/><br/>
+		Crafting: 2 Standardimplanate,4 Mikroprozessor,3 Brennstäbe,1 Goldbauteil,1 RedgullPalette<br/><br/>
 		Tragekapazitäts Implantat: +10 Tragekapazität<br/>
 		Crafting: 2 Standardimplanate,3 Mikroprozessor,4 Brennstäbe,2 Nagelbänder,2 Gpstracker<br/><br/>
 		Gehaltscheck Implantat: +9000$ alle 10 Min<br/>
