@@ -48,13 +48,13 @@ if(_robber distance _shop > 10.5) exitWith {hint "Du hast dich zu weit entfernt!
 _belohnung = 0;
 _chance = random (101);
 
-switch (_chance) do {
-	case 0..3: {_belohnung = 3;};
-	case 4..9: {_belohnung = 2;};
-	case 10..20: {_belohnung = 1;};
-	case 21..100: {_belohnung = 0;};
+if (_chance < 4) then {_belohnung = 3;} else {
+	if (_chance < 10) then {_belohnung = 2;} else {
+		if (_chance < 21) then {_belohnung = 1;} else {
+			if (_chance < 101) then {_belohnung = 0;};
+		};
+	};
 };
-
 _maxAnz = 10;
 _GoldGameAnz = player getVariable ["GoldGameAnz",-1];
 if (_GoldGameAnz isEqualTo -1) then {if ((round(BANK/30000)+3) > _maxAnz) then {player setVariable ["GoldGameAnz",_maxAnz];} else {player setVariable ["GoldGameAnz",(round(BANK/30000)+3)];};};
