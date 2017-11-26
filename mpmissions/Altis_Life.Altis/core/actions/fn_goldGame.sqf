@@ -31,7 +31,7 @@ _cP = 0;
  
 while{_cP < 1} do
 {
-	uiSleep 0.2;
+	uiSleep 0.6;
 	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
 	_pgText ctrlSetText format["Bleibe innerhalb von (10m)um Goldbarren zu fälschen (%1%2)...",round(_cP * 100),"%"];
@@ -48,7 +48,7 @@ _chance = random (101);
 
 if (_chance < 4) then {_belohnung = 3;} else {
 	if (_chance < 10) then {_belohnung = 2;} else {
-		if (_chance < 21) then {_belohnung = 1;} else {
+		if (_chance < 31) then {_belohnung = 1;} else {
 			if (_chance < 101) then {_belohnung = 0;};
 		};
 	};

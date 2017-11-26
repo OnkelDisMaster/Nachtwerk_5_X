@@ -117,7 +117,8 @@ switch(_lbauswahl) do {
 		Bombenkopf:			265k<br/>
 		Atombombe:			1,275 Mio<br/>
 		Implantat/Mikroprozessor: 1,275 Mio<br/>
-		Goldbauteil:		2 Mio<br/>";
+		Goldbauteil:		2 Mio<br/>
+		Goldfälscherlizenz:	10 Mio<br/>";
 	};
 	case 3: {
 		_desctext = "legale Farmrouten: <br/>

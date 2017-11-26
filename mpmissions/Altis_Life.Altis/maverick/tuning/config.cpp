@@ -82,31 +82,31 @@ class Maverick_Tuning
 				{
 					parts[] = {"HideDoor1","HideDoor2","HideDoor3"};
 					displayText = "Hide/Show Doors";
-					price = 4000;
+					price = 44000;
 				};
 				class HideBackpacks
 				{
 					parts[] = {"HideBackpacks"};
 					displayText = "Hide/Show Backpacks";
-					price = 4000;
+					price = 24000;
 				};
 				class HideBumper
 				{
 					parts[] = {"HideBumper1","HideBumper2"};
 					displayText = "Hide/Show Bumpers";
-					price = 4000;
+					price = 24000;
 				};
 				class HideConstruction
 				{
 					parts[] = {"HideConstruction"};
 					displayText = "Hide/Show Construction";
-					price = 4000;
+					price = 44000;
 				};
 				class HideServices
 				{
 					parts[] = {"HideServices"};
 					displayText = "Hide/Show Service Lights";
-					price = 20000;
+					price = 50000;
 				};
 			};
 			class Colors
@@ -115,14 +115,14 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 65000;
 					texture = "";
 				};
 				class Red
 				{
 
 					displayText = "Red (Metallic)";
-					price = 2000;
+					price = 10000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
 					material = "maverick\tuning\bin\materials\firered.rvmat";
 				};
@@ -130,7 +130,7 @@ class Maverick_Tuning
 				{
 
 					displayText = "Blue (Metallic)";
-					price = 2000;
+					price = 10000;
 					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
 					material = "maverick\tuning\bin\materials\shine_blue.rvmat";
 				};
@@ -138,7 +138,7 @@ class Maverick_Tuning
 				{
 
 					displayText = "Green/Blue Ocean Fade";
-					price = 2000;
+					price = 10000;
 					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
 					material = "maverick\tuning\bin\materials\shine_blueocean.rvmat";
 				};
@@ -146,35 +146,35 @@ class Maverick_Tuning
 				{
 
 					displayText = "Red (Glow)";
-					price = 2000;
+					price = 10000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
 					material = "maverick\tuning\bin\materials\glow_red.rvmat";
 				};
 				class YellowMetallic
 				{
 					displayText = "Yellow (Metallic)";
-					price = 2000;
+					price = 10000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\shine_gold.rvmat";
 				};
 				class YellowFade
 				{
 					displayText = "Yellow (Fade)";
-					price = 2000;
+					price = 10000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\fade.rvmat";
 				};
 				class YellowGlow
 				{
 					displayText = "Yellow (Glow)";
-					price = 2000;
+					price = 10000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\glow_yellow.rvmat";
 				};
 				class Chrome
 				{
 					displayText = "Chrome";
-					price = 2000;
+					price = 10000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};
@@ -195,19 +195,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 350000;
 				};
 			};
 			class Underglow
@@ -216,7 +216,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 100000;
+					price = 500000;
 				};
 			};
 		};
@@ -243,19 +243,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 25000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 45000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 60000;
 				};
 			};
 			class Underglow
@@ -291,19 +291,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 350000;
 				};
 			};
 			class Underglow
@@ -312,7 +312,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 100000;
+					price = 500000;
 				};
 			};
 		};
@@ -328,7 +328,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 35000;
 					texture = "";
 				};
 			};
@@ -339,19 +339,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 65000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 85000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 100000;
 				};
 			};
 			class Underglow
@@ -360,7 +360,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 100000;
+					price = 200000;
 				};
 			};
 		};
