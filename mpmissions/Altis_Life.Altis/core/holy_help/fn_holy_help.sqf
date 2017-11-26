@@ -171,13 +171,13 @@ switch(_lbauswahl) do {
 		_desctext = "Fertigung der Implantate + Nutzen:<br/><br/>
 		Crafting beim Schwarzmarkt<br/><br/>
 		Hitmarker Implantat: Hitmarker System<br/>
-		Crafting: 2 Standardimplanate,4 Mikroprozessor,2 Brennstäbe,2 Goldbauteile<br/><br/>
+		Crafting: 2 Standardimplanate, 4 Mikroprozessoren, 2 Brennstäbe, 2 Goldbauteile<br/><br/>
 		Ausdauer Implantat: Unendlich Ausdauer<br/>
-		Crafting: 2 Standardimplanate,4 Mikroprozessor,3 Brennstäbe,1 Goldbauteil,1 RedgullPalette<br/><br/>
+		Crafting: 2 Standardimplanate, 4 Mikroprozessoren, 3 Brennstäbe, 1 Goldbauteil, 1 RedgullPalette<br/><br/>
 		Tragekapazitäts Implantat: +10 Tragekapazität<br/>
-		Crafting: 2 Standardimplanate,3 Mikroprozessor,4 Brennstäbe,2 Nagelbänder,2 Gpstracker<br/><br/>
+		Crafting: 2 Standardimplanate, 3 Mikroprozessoren, 4 Brennstäbe, 2 Nagelbänder, 2 Gpstracker<br/><br/>
 		Gehaltscheck Implantat: +9000$ alle 10 Min<br/>
-		Crafting: 2 Standardimplanate,5 Mikroprozessor,2 Nagelbänder,2 Gpstracker<br/><br/>
+		Crafting: 2 Standardimplanate, 5 Mikroprozessoren, 2 Nagelbänder, 2 Gpstracker<br/><br/>
 		";
 	};
 };

@@ -25,6 +25,8 @@ if (life_blacklisted) exitWith {
 [] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
 [] call life_fnc_playerSkins;
 
+[player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set
+
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 if (license_cop_hitmarker) then {life_hitmarker = true;};
 [] call life_fnc_spawnMenu;

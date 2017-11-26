@@ -438,7 +438,7 @@ class Licenses {
 	
 	class goldGame {  
         variable = "goldGame";
-        displayName = "STR_Item_RedGullPalette";
+        displayName = "STR_Item_GoldGame";
         price = 5000000;
         illegal = true;
         side = "civ";
