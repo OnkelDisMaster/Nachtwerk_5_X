@@ -33,11 +33,13 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\statusBar.hpp"
 	#include "dialog\hitmarker.hpp"
+	#include "maverick\tuning\dialogs\titles.hpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
     #include "core\cation\cation_functions.cpp"
+	#include "maverick\maverick_functions_master.cpp"
 };
 
 class CfgSounds {
@@ -216,3 +218,4 @@ class CfgNotifications {
     };
 };
 #include "core\cation\cation_master.cpp"
+#include "maverick\maverick_master.cpp"

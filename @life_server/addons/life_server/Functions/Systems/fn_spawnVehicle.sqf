@@ -180,3 +180,4 @@ if ((_vInfo select 1) isEqualTo "med") then {
 
 [1,_spawntext] remoteExecCall ["life_fnc_broadcast",_unit];
 serv_sv_use deleteAt _servIndex;
+[_vid, _vehicle, 3] spawn mav_tuning_fnc_getTuningFromDB; 
