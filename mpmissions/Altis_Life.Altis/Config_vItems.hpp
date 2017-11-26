@@ -1144,7 +1144,7 @@ class VirtualItems {
     };
 	
 	class redGullPalette {
-        variable = "redGulPalette";
+        variable = "redGullPalette";
         displayName = "STR_Item_RedGullPalete";
         weight = 2;
         buyPrice = 1500000;

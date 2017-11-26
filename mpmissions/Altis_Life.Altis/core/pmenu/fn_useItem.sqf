@@ -12,7 +12,7 @@ if ((lbCurSel 2005) isEqualTo -1) exitWith {hint localize "STR_ISTR_SelectItemFi
 _item = CONTROL_DATA(2005);
 
 switch (true) do {
-    case (_item in ["waterBottle","coffee","redgull"]): {
+    case (_item in ["waterBottle","coffee","redgull","redGullPalette"]): {
         if ([false,_item,1] call life_fnc_handleInv) then {
             life_thirst = 100;
             if ((_item isEqualTo "redgull") && (playerside isEqualTo civilian)) then {
@@ -22,6 +22,12 @@ switch (true) do {
                     player enableFatigue false;
                     waitUntil {!alive player || ((time - life_redgull_effect) > (3 * 60))};
                     player enableFatigue true;
+                };
+            };
+			if ((_item isEqualTo "redGullPalette") && (playerside isEqualTo civilian)) then {
+                [] spawn {
+                    titleText[localize "Du fühlst dich für die restliche Inselperiode beflügelt!","PLAIN"];
+                    player enableFatigue false;
                 };
             };
         };
