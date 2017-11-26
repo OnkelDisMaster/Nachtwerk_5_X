@@ -26,7 +26,7 @@ switch (true) do {
             };
 			if ((_item isEqualTo "redGullPalette") && (playerside isEqualTo civilian)) then {
                 [] spawn {
-                    titleText[localize "Du fühlst dich für die restliche Inselperiode beflügelt!","PLAIN"];
+                    titleText["Du fühlst dich für die restliche Inselperiode beflügelt!","PLAIN"];
                     player enableFatigue false;
                 };
             };
