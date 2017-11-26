@@ -371,7 +371,7 @@ class Clothing {
     };
 	
 	class uran_clothing {
-        title = "STR_Shops_Uran";
+        title = "STR_Shops_Uranium";
         license = "gun";
         side = "civ";
         uniforms[] = {
