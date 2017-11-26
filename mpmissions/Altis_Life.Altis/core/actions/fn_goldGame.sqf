@@ -61,7 +61,7 @@ if (_GoldGameAnz isEqualTo 0) then {_belohnung = 0;} else {
 		_newAnz = _GoldGameAnz - _belohnung; 
 		if (_newAnz < 0) then {_newAnz = 0};
 		player setVariable ["GoldGameAnz",_newAnz];
-		if ([true,"goldBar",_belohnung] call life_fnc_handleInv) then {titleText[format["Du hast %1 Goldbarren erfolgreich gefälscht",_belohnung],"PLAIN"];} else {titleText[format["Du hast hattest keinen Platz mehr und dafür %1$ bekommen",(_belohnung * 500000)],"PLAIN"]; life_cash = life_cash + _belohnung * 500000;};
+		if ([true,"goldBar",_belohnung] call life_fnc_handleInv) then {titleText[format["Du hast %1 Goldbarren erfolgreich gefälscht",_belohnung],"PLAIN"];} else {titleText[format["Du hast hattest keinen Platz mehr und dafür %1$ bekommen",([(_belohnung * 500000)] call life_fnc_numberText)],"PLAIN"]; life_cash = life_cash + _belohnung * 500000;};
 	};
 };	
 
