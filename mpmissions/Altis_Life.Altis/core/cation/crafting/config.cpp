@@ -36,10 +36,10 @@ class Cation_Crafting {
             "weapon", //Variable
             "Waffen", //Text
             {"hgun_P07_F","",{"diamant",10,"kupfer",2},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
-            {"arifle_AK12_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",20,"mikroprozessor",4},"","",0}, 
+            {"arifle_AK12_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",20,"mikroprozessor",1},"","",0}, 
 			{"arifle_ARX_hex_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",2,"mikroprozessor",1},"","",0}, 
-			{"LMG_Mk200_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",10,"mikroprozessor",3},"","",0}, 
-			{"LMG_Zafir_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",20,"mikroprozessor",4},"","",0},
+			{"LMG_Mk200_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",10,"mikroprozessor",1},"","",0}, 
+			{"LMG_Zafir_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",20,"mikroprozessor",4},"","",0},
 			{"srifle_DMR_04_F","license_civ_pro_rebel",{"goldbauteil",5,"diamant",10,"mikroprozessor",5},"","",0}, 
 			{"srifle_DMR_04_tan_F","license_civ_pro_rebel",{"goldbauteil",5,"diamant",10,"mikroprozessor",5},"","",0}, 
 			{"srifle_DMR_02_camo_F","license_civ_pro_rebel",{"goldbauteil",2,"diamant",10,"mikroprozessor",4},"","",0},
