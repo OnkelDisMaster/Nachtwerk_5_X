@@ -115,7 +115,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 65000;
+					price = 35000;
 					texture = "";
 				};
 				class Red
@@ -174,7 +174,7 @@ class Maverick_Tuning
 				class Chrome
 				{
 					displayText = "Chrome";
-					price = 10000;
+					price = 60000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};
@@ -195,19 +195,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 100000;
+					price = 50000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 200000;
+					price = 100000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 350000;
+					price = 150000;
 				};
 			};
 			class Underglow
@@ -216,7 +216,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 500000;
+					price = 100000;
 				};
 			};
 		};
@@ -232,7 +232,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 15000;
 					texture = "";
 				};
 			};
@@ -264,7 +264,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 100000;
+					price = 30000;
 				};
 			};
 		};
@@ -303,7 +303,7 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 350000;
+					price = 250000;
 				};
 			};
 			class Underglow
@@ -312,7 +312,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 500000;
+					price = 200000;
 				};
 			};
 		};
@@ -360,7 +360,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 200000;
+					price = 100000;
 				};
 			};
 		};

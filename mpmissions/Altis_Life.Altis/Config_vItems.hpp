@@ -1137,7 +1137,7 @@ class VirtualItems {
         displayName = "STR_Item_RedGull";
         weight = 1;
         buyPrice = 1500;
-        sellPrice = 2000;
+        sellPrice = 500;
         illegal = false;
         edible = 100;
         icon = "icons\ico_redgull.paa";
