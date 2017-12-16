@@ -40,7 +40,7 @@ if (license_civ_bountyH) then {player setvariable ["isBountyH",true,true];} else
 player setvariable ["GoldGameAnz",-1];
 [player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set
 
-if (license_civ_implantat_ausdauer) then {player enableFatigue false;} else {player enableFatigue true;};
+if (license_civ_implantat_ausdauer) then {player enableFatigue false; life_redgull_effect = -1;} else {player enableFatigue true;};
 [] spawn life_fnc_IntroCam;
 [] call life_fnc_initPayChecks;
 

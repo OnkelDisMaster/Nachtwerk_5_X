@@ -38,6 +38,9 @@ deleteVehicle life_corpse;
 
 life_is_alive = true;
 
+
+if (life_redgull_effect = -1) then {player enableFatigue false;};
+
 player setVariable ["Revive",nil,TRUE];
 player setVariable ["name",nil,TRUE];
 player setVariable ["Reviving",nil,TRUE];

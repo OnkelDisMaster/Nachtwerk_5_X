@@ -624,7 +624,7 @@ class VirtualItems {
         variable = "kupfer";
         displayName = "STR_Item_CopperIngot";
         weight = 4;
-        buyPrice = 3000;
+        buyPrice = 6000;
         sellPrice = 1500;
         illegal = false;
         edible = -1;
@@ -646,7 +646,7 @@ class VirtualItems {
         variable = "eisen";
         displayName = "STR_Item_IronIngot";
         weight = 4;
-        buyPrice = 2500;
+        buyPrice = 5500;
         sellPrice = 1200;
         illegal = false;
         edible = -1;
@@ -712,7 +712,7 @@ class VirtualItems {
         variable = "salz";
         displayName = "STR_Item_SaltR";
         weight = 2;
-        buyPrice = 5000;
+        buyPrice = 6000;
         sellPrice = 2500;
         illegal = false;
         edible = -1;
@@ -756,7 +756,7 @@ class VirtualItems {
         variable = "bambusleitung";
         displayName = "STR_Item_Bambusleitung";
         weight = 1;
-        buyPrice = 2000;
+        buyPrice = 7000;
         sellPrice = 1250;
         illegal = false;
         edible = -1;
@@ -778,7 +778,7 @@ class VirtualItems {
         variable = "diamant";
         displayName = "STR_Item_DiamondC";
         weight = 4;
-        buyPrice = 8000;
+        buyPrice = 9000;
         sellPrice = 2900;
         illegal = false;
         edible = -1;
@@ -789,7 +789,7 @@ class VirtualItems {
         variable = "krone";
         displayName = "STR_Item_PlatinKrone";
         weight = 10;
-        buyPrice = 60000;
+        buyPrice = 80000;
         sellPrice = 24000;
         illegal = false;
         edible = -1;
@@ -811,7 +811,7 @@ class VirtualItems {
         variable = "juwelen";
         displayName = "STR_Item_Juwelen";
         weight = 4;
-        buyPrice = 6500;
+        buyPrice = 9500;
         sellPrice = 3100;
         illegal = false;
         edible = -1;
@@ -822,7 +822,7 @@ class VirtualItems {
         variable = "marmorRoh";
         displayName = "STR_Item_MarmorRoh";
         weight = 7;
-        buyPrice = 1200;
+        buyPrice = 5200;
         sellPrice = 500;
         illegal = false;
         edible = -1;
@@ -833,7 +833,7 @@ class VirtualItems {
         variable = "marmor";
         displayName = "STR_Item_Marmor";
         weight = 5;
-        buyPrice = 7000;
+        buyPrice = 8000;
         sellPrice = 3500;
         illegal = false;
         edible = -1;
@@ -904,7 +904,7 @@ class VirtualItems {
         variable = "weed";
         displayName = "STR_Item_weed";
         weight = 3;
-        buyPrice = 7000;
+        buyPrice = 8000;
         sellPrice = 3800;
         illegal = true;
         edible = -1;
@@ -927,7 +927,7 @@ class VirtualItems {
         variable = "polenboeller";
         displayName = "STR_Item_Polen_Boeller";
         weight = 5;
-        buyPrice = 7000;
+        buyPrice = 8000;
         sellPrice = 3000;
         illegal = true;
         edible = -1;
@@ -950,7 +950,7 @@ class VirtualItems {
         variable = "zigaretten";
         displayName = "STR_Item_Zigaretten";
         weight = 3;
-        buyPrice = 5000;
+        buyPrice = 6000;
         sellPrice = 3400;
         illegal = true;
         edible = -1;
@@ -973,7 +973,7 @@ class VirtualItems {
         variable = "korallenketten";
         displayName = "STR_Item_Korallenketten";
         weight = 8;
-        buyPrice = 30000;
+        buyPrice = 40000;
         sellPrice = 13000;
         illegal = true;
         edible = -1;
@@ -996,7 +996,7 @@ class VirtualItems {
         variable = "koks";
         displayName = "STR_Item_CocaineP";
         weight = 4;
-        buyPrice = 12500;
+        buyPrice = 14500;
         sellPrice = 5400;
         illegal = true;
         edible = -1;
@@ -1019,7 +1019,7 @@ class VirtualItems {
         variable = "meth";
         displayName = "STR_Item_MethP";
         weight = 3;
-        buyPrice = 8000;
+        buyPrice = 9000;
         sellPrice = 3800;
         illegal = true;
         edible = -1;
@@ -1147,7 +1147,7 @@ class VirtualItems {
         variable = "redGullPalette";
         displayName = "STR_Item_RedGullPalette";
         weight = 2;
-        buyPrice = 1500000;
+        buyPrice = 2000000;
         sellPrice = 200000;
         illegal = false;
         edible = 100;
@@ -1335,8 +1335,8 @@ class VirtualItems {
         variable = "rabbit";
         displayName = "STR_Item_Rabbit";
         weight = 1;
-        buyPrice = 150;
-        sellPrice = 115;
+        buyPrice = 200;
+        sellPrice = 100;
         illegal = false;
         edible = 20;
         icon = "icons\ico_rabbit.paa";

@@ -104,5 +104,7 @@ if (life_removeWanted) then {
 
 };
 
+if (life_redgull_effect = -1) then {player enableFatigue false;};
+
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.

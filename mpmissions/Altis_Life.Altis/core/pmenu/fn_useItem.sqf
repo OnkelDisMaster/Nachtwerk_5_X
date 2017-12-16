@@ -27,6 +27,7 @@ switch (true) do {
 			if ((_item isEqualTo "redGullPalette") && (playerside isEqualTo civilian)) then {
                 [] spawn {
                     titleText["Du fühlst dich für die restliche Inselperiode beflügelt!","PLAIN"];
+					life_redgull_effect = -1;
                     player enableFatigue false;
                 };
             };
