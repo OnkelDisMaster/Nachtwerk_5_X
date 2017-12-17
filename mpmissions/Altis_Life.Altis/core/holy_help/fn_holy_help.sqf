@@ -162,8 +162,8 @@ switch(_lbauswahl) do {
 		<br/>
 		Plutonium: Uran 4 -> Plutoniumproduktion <br/>
 		Brennstäbe: Plutonium -> Kraftwerk Athira -> Kraftwerk Kavala <br/>
-		Bombenköpfe: 8 Eisenbarren + 8 Aluminiumbarren -> Schwarzmarkt <br/>
-		Atombomben: 20 Plutonium + Bombenkopf -> Bombenherstellung -> Schwarzmarkt <br/>
+		Bombenköpfe: 10 Eisenbarren + 10 Aluminiumbarren -> Schwarzmarkt <br/>
+		Atombomben: 22 Plutonium + Bombenkopf -> Bombenherstellung -> Schwarzmarkt <br/>
 		Mikroprozessoren: 4 Platinbarren + 5 Aluminiumbarren + 6 Kupferbarren -> Mikroprozessorenherstellung -> Schwarzmarkt <br/>
 		Standard Implantate: 10 Mikroprozessoren -> Nano Fabrik -> Schwarzmarkt <br/>
 		Spezielle Implantate: Standard Implantat + Extras -> Nano Fabrik -> Eigenkonsum/Spielerhandel <br/>";
