@@ -49,6 +49,8 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 [] call life_fnc_initPayChecks;
 [] call life_fnc_playerSkins;
 
+[player] remoteExecCall ["life_fnc_hatBounty",RSERV];
+
 // Uniformen Texturen START
 [] spawn
 {
