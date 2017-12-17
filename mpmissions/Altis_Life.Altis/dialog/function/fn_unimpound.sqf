@@ -33,7 +33,7 @@ switch (playerSide) do {
 };
 _price = _purchasePrice * _storageFee;
 
-switch (typeOf _vehicle) do {
+switch (_vehicleLife) do {
 	case "O_Plane_CAS_02_F": {_price = 50000};
 	case "O_Plane_Fighter_02_F": {_price = 50000};
 	case "B_Plane_Fighter_01_F": {_price = 50000};
