@@ -62,6 +62,17 @@ if (count crew _vehicle isEqualTo 0) then {
     if (playerSide isEqualTo west || playerSide isEqualTo independent) then {
             _impoundMultiplier = LIFE_SETTINGS(getNumber,"vehicle_cop_impound_multiplier");
             _value = _price * _impoundMultiplier;
+			
+			switch (typeOf _vehicle) do {
+				case "O_Plane_CAS_02_F": {_value = 50000};
+				case "O_Plane_Fighter_02_F": {_value = 50000};
+				case "B_Plane_Fighter_01_F": {_value = 50000};
+				case "B_T_VTOL_01_vehicle_olive_F": {_value = 100000};
+				case "O_T_VTOL_02_vehicle_hex_F": {_value = 20000};
+				case "B_CTRG_Heli_Transport_01_sand_F": {_value = 20000};
+				case "I_MRAP_03_F": {_value = 30000};
+			};
+			
             [0,"STR_NOTF_HasImpounded",true,[profileName,((_vehicleData select 0) select 1),_vehicleName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
             if (_vehicle in life_vehicles) then {
                 hint format[localize "STR_NOTF_OwnImpounded",[_value] call life_fnc_numberText,_type];
