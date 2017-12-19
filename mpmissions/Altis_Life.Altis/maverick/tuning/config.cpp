@@ -69,6 +69,158 @@ class Maverick_Tuning
 
 	class Vehicles
 	{
+		class C_Van_02_vehicle_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+/*
+			class RawModifications
+			{
+				pool[] = {"HideDoors","HideBackpacks","HideBumper","HideConstruction","HideServices"};
+				class HideDoors
+				{
+					parts[] = {"HideDoor1","HideDoor2","HideDoor3"};
+					displayText = "Hide/Show Doors";
+					price = 44000;
+				};
+				class HideBackpacks
+				{
+					parts[] = {"HideBackpacks"};
+					displayText = "Hide/Show Backpacks";
+					price = 24000;
+				};
+				class HideBumper
+				{
+					parts[] = {"HideBumper1","HideBumper2"};
+					displayText = "Hide/Show Bumpers";
+					price = 24000;
+				};
+				class HideConstruction
+				{
+					parts[] = {"HideConstruction"};
+					displayText = "Hide/Show Construction";
+					price = 44000;
+				};
+				class HideServices
+				{
+					parts[] = {"HideServices"};
+					displayText = "Hide/Show Service Lights";
+					price = 50000;
+				};
+			}; */
+			class Colors
+			{
+				pool[] = {"RGB","Red","RedGlow","YellowMetallic","YellowFade","YellowGlow","BlueMetallic","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 35000;
+					texture = "";
+				};
+			/*	class Red
+				{
+
+					displayText = "Red (Metallic)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
+					material = "maverick\tuning\bin\materials\firered.rvmat";
+				};
+				class BlueMetallic
+				{
+
+					displayText = "Blue (Metallic)";
+					price = 10000;
+					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
+					material = "maverick\tuning\bin\materials\shine_blue.rvmat";
+				};
+				class GreenOcean
+				{
+
+					displayText = "Green/Blue Ocean Fade";
+					price = 10000;
+					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
+					material = "maverick\tuning\bin\materials\shine_blueocean.rvmat";
+				};
+				class RedGlow
+				{
+
+					displayText = "Red (Glow)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
+					material = "maverick\tuning\bin\materials\glow_red.rvmat";
+				};
+				class YellowMetallic
+				{
+					displayText = "Yellow (Metallic)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\shine_gold.rvmat";
+				};
+				class YellowFade
+				{
+					displayText = "Yellow (Fade)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\fade.rvmat";
+				};
+				class YellowGlow
+				{
+					displayText = "Yellow (Glow)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\glow_yellow.rvmat";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 60000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	*/
+			};	
+			/*class Wheels
+			{
+				pool[] = {"BulletProof"};
+				class BulletProof
+				{
+					displayText = "Bullet Proof Tires";
+					price = 50000;
+				};
+			};*/
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 50000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 100000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 150000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 100000;
+				};
+			};
+		};
+		
 		class Offroad_01_base_F
 		{
 			default[] = {{0,0,0,0,0},"",0,0,{-1,-1,-1}};
