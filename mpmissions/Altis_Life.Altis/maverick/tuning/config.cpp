@@ -77,74 +77,74 @@ class Maverick_Tuning
 
 			class RawModifications
 			{
-				pool[] = {"LeuchtfeuerV","LeuchtfeuerH","LED","Reflektion","Seitenstufen","Ersatzreifen","ErsatzreifenHalter","Dachrailing","Leiter","Hinterstufe","Seitenrahmen","Frontrahmen"};
-				class LeuchtfeuerV
+				pool[] = {"beacon_front_hide","beacon_rear_hide","LED_lights_hide","reflective_tape_hide","sidesteps_hide","spare_tyre_hide","spare_tyre_holder_hide","roof_rack_hide","ladder_hide","rearsteps_hide","side_protective_frame_hide","front_protective_frame_hide"};
+				class beacon_front_hide
 				{
 					parts[] = {"beacon_front_hide"};
 					displayText = "Leuchtfeuer Vorne";
 					price = 122000;
 				};
-				class LeuchtfeuerH
+				class beacon_rear_hide
 				{
 					parts[] = {"beacon_rear_hide"};
 					displayText = "Leuchtfeuer Hinten";
 					price = 122000;
 				};
-				class LED
+				class LED_lights_hide
 				{
 					parts[] = {"LED_lights_hide"};
 					displayText = "LED";
 					price = 86000;
 				};
-				class Reflektion
+				class reflective_tape_hide
 				{
 					parts[] = {"reflective_tape_hide"};
 					displayText = "Reflektionstape";
 					price = 68000;
 				};
-				class Seitenstufen
+				class sidesteps_hide
 				{
 					parts[] = {"sidesteps_hide"};
 					displayText = "Seitenstufen";
 					price = 50000;
 				};
-				class Ersatzreifen
+				class spare_tyre_hide
 				{
 					parts[] = {"spare_tyre_hide"};
 					displayText = "Ersatzreifen";
 					price = 24000;
 				};
-				class ErsatzreifenHalter
+				class spare_tyre_holder_hide
 				{
 					parts[] = {"spare_tyre_holder_hide"};
 					displayText = "ErsatzreifenHalter";
 					price = 24000;
 				};
-				class Dachrailing
+				class roof_rack_hide
 				{
 					parts[] = {"roof_rack_hide"};
 					displayText = "Dachrailing";
 					price = 64000;
 				};
-				class Leiter
+				class ladder_hide
 				{
 					parts[] = {"ladder_hide"};
 					displayText = "Leiter";
 					price = 34000;
 				};
-				class Hinterstufe
+				class rearsteps_hide
 				{
 					parts[] = {"rearsteps_hide"};
 					displayText = "Hinterstufe";
 					price = 44000;
 				};
-				class Seitenrahmen
+				class side_protective_frame_hide
 				{
 					parts[] = {"side_protective_frame_hide"};
 					displayText = "Seitenrahmen";
 					price = 74000;
 				};
-				class Frontrahmen
+				class front_protective_frame_hide
 				{
 					parts[] = {"front_protective_frame_hide"};
 					displayText = "Frontrahmen";
