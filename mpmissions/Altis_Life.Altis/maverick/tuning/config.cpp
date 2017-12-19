@@ -81,25 +81,25 @@ class Maverick_Tuning
 				class LeuchtfeuerV
 				{
 					parts[] = {"beacon_front_hide"};
-					displayText = "Leuchtfeuer";
+					displayText = "Leuchtfeuer Vorne";
 					price = 122000;
 				};
 				class LeuchtfeuerH
 				{
 					parts[] = {"beacon_rear_hide"};
-					displayText = "Hide/Show Backpacks";
+					displayText = "Leuchtfeuer Hinten";
 					price = 122000;
 				};
 				class LED
 				{
 					parts[] = {"LED_lights_hide"};
-					displayText = "Hide/Show Bumpers";
+					displayText = "LED";
 					price = 86000;
 				};
 				class Reflektion
 				{
 					parts[] = {"reflective_tape_hide"};
-					displayText = "Hide/Show Construction";
+					displayText = "Reflektionstape";
 					price = 68000;
 				};
 				class Seitenstufen
@@ -153,7 +153,7 @@ class Maverick_Tuning
 			};
 			class Colors
 			{
-				pool[] = {"RGB","Red","RedGlow","YellowMetallic","YellowFade","YellowGlow","BlueMetallic","Chrome"};
+				pool[] = {"RGB"};
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
