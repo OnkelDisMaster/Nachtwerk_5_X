@@ -71,44 +71,86 @@ class Maverick_Tuning
 	{
 		class C_Van_02_vehicle_F
 		{
-			default[] = {{},"",0,0,{-1,-1,-1}};
+			default[] = {{0,0,0,0,0,0,0,0,0,0,0,0},"",0,0,{-1,-1,-1}};
 			defaultMaterial = "a3\data_f\default.rvmat";
 			fetchDefaultFromVehicleState = 1;
-/*
+
 			class RawModifications
 			{
-				pool[] = {"HideDoors","HideBackpacks","HideBumper","HideConstruction","HideServices"};
-				class HideDoors
+				pool[] = {"LeuchtfeuerV","LeuchtfeuerH","LED","Reflektion","Seitenstufen","Ersatzreifen","ErsatzreifenHalter","Dachrailing","Leiter","Hinterstufe","Seitenrahmen","Frontrahmen"};
+				class LeuchtfeuerV
 				{
-					parts[] = {"HideDoor1","HideDoor2","HideDoor3"};
-					displayText = "Hide/Show Doors";
-					price = 44000;
+					parts[] = {"beacon_front_hide"};
+					displayText = "Leuchtfeuer";
+					price = 122000;
 				};
-				class HideBackpacks
+				class LeuchtfeuerH
 				{
-					parts[] = {"HideBackpacks"};
+					parts[] = {"beacon_rear_hide"};
 					displayText = "Hide/Show Backpacks";
-					price = 24000;
+					price = 122000;
 				};
-				class HideBumper
+				class LED
 				{
-					parts[] = {"HideBumper1","HideBumper2"};
+					parts[] = {"LED_lights_hide"};
 					displayText = "Hide/Show Bumpers";
-					price = 24000;
+					price = 86000;
 				};
-				class HideConstruction
+				class Reflektion
 				{
-					parts[] = {"HideConstruction"};
+					parts[] = {"reflective_tape_hide"};
 					displayText = "Hide/Show Construction";
-					price = 44000;
+					price = 68000;
 				};
-				class HideServices
+				class Seitenstufen
 				{
-					parts[] = {"HideServices"};
-					displayText = "Hide/Show Service Lights";
+					parts[] = {"sidesteps_hide"};
+					displayText = "Seitenstufen";
 					price = 50000;
 				};
-			}; */
+				class Ersatzreifen
+				{
+					parts[] = {"spare_tyre_hide"};
+					displayText = "Ersatzreifen";
+					price = 24000;
+				};
+				class ErsatzreifenHalter
+				{
+					parts[] = {"spare_tyre_holder_hide"};
+					displayText = "ErsatzreifenHalter";
+					price = 24000;
+				};
+				class Dachrailing
+				{
+					parts[] = {"roof_rack_hide"};
+					displayText = "Dachrailing";
+					price = 64000;
+				};
+				class Leiter
+				{
+					parts[] = {"ladder_hide"};
+					displayText = "Leiter";
+					price = 34000;
+				};
+				class Hinterstufe
+				{
+					parts[] = {"rearsteps_hide"};
+					displayText = "Hinterstufe";
+					price = 44000;
+				};
+				class Seitenrahmen
+				{
+					parts[] = {"side_protective_frame_hide"};
+					displayText = "Seitenrahmen";
+					price = 74000;
+				};
+				class Frontrahmen
+				{
+					parts[] = {"front_protective_frame_hide"};
+					displayText = "Frontrahmen";
+					price = 74000;
+				};
+			};
 			class Colors
 			{
 				pool[] = {"RGB","Red","RedGlow","YellowMetallic","YellowFade","YellowGlow","BlueMetallic","Chrome"};
