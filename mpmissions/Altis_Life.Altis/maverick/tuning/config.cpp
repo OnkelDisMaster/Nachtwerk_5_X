@@ -153,14 +153,14 @@ class Maverick_Tuning
 			};
 			class Colors
 			{
-				pool[] = {"RGB"};
+				pool[] = {"RGB","Red","RedGlow","YellowMetallic","YellowFade","YellowGlow","BlueMetallic","Chrome"};
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
 					price = 35000;
 					texture = "";
 				};
-			/*	class Red
+				class Red
 				{
 
 					displayText = "Red (Metallic)";
@@ -219,7 +219,7 @@ class Maverick_Tuning
 					price = 60000;
 					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
-				};	*/
+				};	
 			};	
 			/*class Wheels
 			{
