@@ -165,7 +165,7 @@ class Maverick_Tuning
 
 					displayText = "Red (Metallic)";
 					price = 10000;
-					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
 					material = "maverick\tuning\bin\materials\firered.rvmat";
 				};
 				class BlueMetallic
@@ -173,7 +173,7 @@ class Maverick_Tuning
 
 					displayText = "Blue (Metallic)";
 					price = 10000;
-					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
 					material = "maverick\tuning\bin\materials\shine_blue.rvmat";
 				};
 				class GreenOcean
@@ -181,7 +181,7 @@ class Maverick_Tuning
 
 					displayText = "Green/Blue Ocean Fade";
 					price = 10000;
-					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
 					material = "maverick\tuning\bin\materials\shine_blueocean.rvmat";
 				};
 				class RedGlow
@@ -189,35 +189,35 @@ class Maverick_Tuning
 
 					displayText = "Red (Glow)";
 					price = 10000;
-					texture = \a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
 					material = "maverick\tuning\bin\materials\glow_red.rvmat";
 				};
 				class YellowMetallic
 				{
 					displayText = "Yellow (Metallic)";
 					price = 10000;
-					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\shine_gold.rvmat";
 				};
 				class YellowFade
 				{
 					displayText = "Yellow (Fade)";
 					price = 10000;
-					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\fade.rvmat";
 				};
 				class YellowGlow
 				{
 					displayText = "Yellow (Glow)";
 					price = 10000;
-					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\glow_yellow.rvmat";
 				};
 				class Chrome
 				{
 					displayText = "Chrome";
 					price = 60000;
-					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
 			};	
