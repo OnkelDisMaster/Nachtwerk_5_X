@@ -216,20 +216,11 @@ class Maverick_Tuning
 				class Chrome
 				{
 					displayText = "Chrome";
-					price = 60000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					price = 500000;
+					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
 			};	
-			/*class Wheels
-			{
-				pool[] = {"BulletProof"};
-				class BulletProof
-				{
-					displayText = "Bullet Proof Tires";
-					price = 50000;
-				};
-			};*/
 			class Nitro
 			{
 				pool[] = {"Nitro1","Nitro2","Nitro3"};
@@ -237,19 +228,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 50000;
+					price = 150000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 100000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 150000;
+					price = 250000;
 				};
 			};
 			class Underglow
@@ -258,7 +249,192 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 100000;
+					price = 1000000;
+				};
+			};
+		};
+		
+		class C_Van_02_transport_F
+		{
+			default[] = {{0,0,0,0,0,0,0,0,0,0,0,0},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+
+			class RawModifications
+			{
+				pool[] = {"beacon_front_hide","beacon_rear_hide","LED_lights_hide","reflective_tape_hide","sidesteps_hide","spare_tyre_hide","spare_tyre_holder_hide","roof_rack_hide","ladder_hide","rearsteps_hide","side_protective_frame_hide","front_protective_frame_hide"};
+				class beacon_front_hide
+				{
+					parts[] = {"beacon_front_hide"};
+					displayText = "Leuchtfeuer Vorne";
+					price = 122000;
+				};
+				class beacon_rear_hide
+				{
+					parts[] = {"beacon_rear_hide"};
+					displayText = "Leuchtfeuer Hinten";
+					price = 122000;
+				};
+				class LED_lights_hide
+				{
+					parts[] = {"LED_lights_hide"};
+					displayText = "LED";
+					price = 86000;
+				};
+				class reflective_tape_hide
+				{
+					parts[] = {"reflective_tape_hide"};
+					displayText = "Reflektionstape";
+					price = 68000;
+				};
+				class sidesteps_hide
+				{
+					parts[] = {"sidesteps_hide"};
+					displayText = "Seitenstufen";
+					price = 50000;
+				};
+				class spare_tyre_hide
+				{
+					parts[] = {"spare_tyre_hide"};
+					displayText = "Ersatzreifen";
+					price = 24000;
+				};
+				class spare_tyre_holder_hide
+				{
+					parts[] = {"spare_tyre_holder_hide"};
+					displayText = "ErsatzreifenHalter";
+					price = 24000;
+				};
+				class roof_rack_hide
+				{
+					parts[] = {"roof_rack_hide"};
+					displayText = "Dachrailing";
+					price = 64000;
+				};
+				class ladder_hide
+				{
+					parts[] = {"ladder_hide"};
+					displayText = "Leiter";
+					price = 34000;
+				};
+				class rearsteps_hide
+				{
+					parts[] = {"rearsteps_hide"};
+					displayText = "Hinterstufe";
+					price = 44000;
+				};
+				class side_protective_frame_hide
+				{
+					parts[] = {"side_protective_frame_hide"};
+					displayText = "Seitenrahmen";
+					price = 74000;
+				};
+				class front_protective_frame_hide
+				{
+					parts[] = {"front_protective_frame_hide"};
+					displayText = "Frontrahmen";
+					price = 74000;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Red","RedGlow","YellowMetallic","YellowFade","YellowGlow","BlueMetallic","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 35000;
+					texture = "";
+				};
+				class Red
+				{
+
+					displayText = "Red (Metallic)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
+					material = "maverick\tuning\bin\materials\firered.rvmat";
+				};
+				class BlueMetallic
+				{
+
+					displayText = "Blue (Metallic)";
+					price = 10000;
+					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
+					material = "maverick\tuning\bin\materials\shine_blue.rvmat";
+				};
+				class GreenOcean
+				{
+
+					displayText = "Green/Blue Ocean Fade";
+					price = 10000;
+					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
+					material = "maverick\tuning\bin\materials\shine_blueocean.rvmat";
+				};
+				class RedGlow
+				{
+
+					displayText = "Red (Glow)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
+					material = "maverick\tuning\bin\materials\glow_red.rvmat";
+				};
+				class YellowMetallic
+				{
+					displayText = "Yellow (Metallic)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\shine_gold.rvmat";
+				};
+				class YellowFade
+				{
+					displayText = "Yellow (Fade)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\fade.rvmat";
+				};
+				class YellowGlow
+				{
+					displayText = "Yellow (Glow)";
+					price = 10000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\glow_yellow.rvmat";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 500000;
+					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};	
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 150000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 200000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 250000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 1000000;
 				};
 			};
 		};
