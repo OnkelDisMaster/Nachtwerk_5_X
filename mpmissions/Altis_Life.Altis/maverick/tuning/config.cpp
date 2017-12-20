@@ -153,65 +153,12 @@ class Maverick_Tuning
 			};
 			class Colors
 			{
-				pool[] = {"RGB","Red","RedGlow","YellowMetallic","YellowFade","YellowGlow","BlueMetallic","Chrome"};
+				pool[] = {"RGB","Chrome"};
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
 					price = 35000;
 					texture = "";
-				};
-				class Red
-				{
-
-					displayText = "Red (Metallic)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
-					material = "maverick\tuning\bin\materials\firered.rvmat";
-				};
-				class BlueMetallic
-				{
-
-					displayText = "Blue (Metallic)";
-					price = 10000;
-					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
-					material = "maverick\tuning\bin\materials\shine_blue.rvmat";
-				};
-				class GreenOcean
-				{
-
-					displayText = "Green/Blue Ocean Fade";
-					price = 10000;
-					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
-					material = "maverick\tuning\bin\materials\shine_blueocean.rvmat";
-				};
-				class RedGlow
-				{
-
-					displayText = "Red (Glow)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
-					material = "maverick\tuning\bin\materials\glow_red.rvmat";
-				};
-				class YellowMetallic
-				{
-					displayText = "Yellow (Metallic)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
-					material = "maverick\tuning\bin\materials\shine_gold.rvmat";
-				};
-				class YellowFade
-				{
-					displayText = "Yellow (Fade)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
-					material = "maverick\tuning\bin\materials\fade.rvmat";
-				};
-				class YellowGlow
-				{
-					displayText = "Yellow (Glow)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
-					material = "maverick\tuning\bin\materials\glow_yellow.rvmat";
 				};
 				class Chrome
 				{
@@ -338,65 +285,12 @@ class Maverick_Tuning
 			};
 			class Colors
 			{
-				pool[] = {"RGB","Red","RedGlow","YellowMetallic","YellowFade","YellowGlow","BlueMetallic","Chrome"};
+				pool[] = {"RGB","Chrome"};
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
 					price = 35000;
 					texture = "";
-				};
-				class Red
-				{
-
-					displayText = "Red (Metallic)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
-					material = "maverick\tuning\bin\materials\firered.rvmat";
-				};
-				class BlueMetallic
-				{
-
-					displayText = "Blue (Metallic)";
-					price = 10000;
-					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
-					material = "maverick\tuning\bin\materials\shine_blue.rvmat";
-				};
-				class GreenOcean
-				{
-
-					displayText = "Green/Blue Ocean Fade";
-					price = 10000;
-					texture = "a3\soft_f\offroad_01\data\offroad_01_ext_base03_co.paa";
-					material = "maverick\tuning\bin\materials\shine_blueocean.rvmat";
-				};
-				class RedGlow
-				{
-
-					displayText = "Red (Glow)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
-					material = "maverick\tuning\bin\materials\glow_red.rvmat";
-				};
-				class YellowMetallic
-				{
-					displayText = "Yellow (Metallic)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
-					material = "maverick\tuning\bin\materials\shine_gold.rvmat";
-				};
-				class YellowFade
-				{
-					displayText = "Yellow (Fade)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
-					material = "maverick\tuning\bin\materials\fade.rvmat";
-				};
-				class YellowGlow
-				{
-					displayText = "Yellow (Glow)";
-					price = 10000;
-					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
-					material = "maverick\tuning\bin\materials\glow_yellow.rvmat";
 				};
 				class Chrome
 				{
@@ -405,7 +299,7 @@ class Maverick_Tuning
 					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
-			};	
+			};		
 			class Nitro
 			{
 				pool[] = {"Nitro1","Nitro2","Nitro3"};
@@ -435,6 +329,171 @@ class Maverick_Tuning
 				{
 					displayText = "Custom RGB Vehicle Underglow";
 					price = 1000000;
+				};
+			};
+		};
+		
+		class B_MRAP_01_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 350000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 5000000;
+					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 350000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 400000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 450000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 3000000;
+				};
+			};
+		};
+		
+		class O_MRAP_02_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 350000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 5000000;
+					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 350000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 400000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 450000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 3000000;
+				};
+			};
+		};
+		
+		class I_MRAP_03_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 350000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 5000000;
+					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 350000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 400000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 450000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 3000000;
 				};
 			};
 		};
