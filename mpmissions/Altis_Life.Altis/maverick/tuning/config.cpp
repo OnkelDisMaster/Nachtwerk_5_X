@@ -333,6 +333,61 @@ class Maverick_Tuning
 			};
 		};
 		
+		class C_Offroad_02_unarmed_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 35000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 500000;
+					texture = "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_red_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 150000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 200000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 250000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 1000000;
+				};
+			};
+		};
+		
 		class B_MRAP_01_F
 		{
 			default[] = {{},"",0,0,{-1,-1,-1}};
@@ -444,6 +499,61 @@ class Maverick_Tuning
 		};
 		
 		class I_MRAP_03_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 350000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 5000000;
+					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 350000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 400000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 450000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 3000000;
+				};
+			};
+		};
+		
+		class C_Hatchback_01_sport_F
 		{
 			default[] = {{},"",0,0,{-1,-1,-1}};
 			defaultMaterial = "a3\data_f\default.rvmat";
@@ -787,60 +897,6 @@ class Maverick_Tuning
 			{
 				pool[] = {"UnderglowRGB"};
 				class UnderglowRGB
-				{
-					displayText = "Custom RGB Vehicle Underglow";
-					price = 100000;
-				};
-			};
-		};
-		class Offroad_02_unarmed_base_F // Classname of the vehicle you wish to tune
-		{
-			default[] = {{},"",0,0,{-1,-1,-1}}; // Do not change this
-			defaultMaterial = "a3\data_f\default.rvmat";
-			fetchDefaultFromVehicleState = 1; // Do not change this
-
-			class Colors // This class has to be present if you want to offer the players custom skins
-			{
-				pool[] = {"RGB","Red"}; // This list of classnames is used to determine what should be shown to the user
-				class RGB // Classname of the custom skin, has to be hte same as in the pool[]
-				{
-					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
-					texture = ""; // Path to the texture to apply
-				};
-				class Red
-				{
-					displayText = "Red";
-					price = 2000;
-					texture = "a3\soft_f_exp\offroad_02\data\offroad_02_ext_red_co.paa";
-				};
-			};
-			class Nitro // If this class is present, Nitro can be bought!
-			{
-				pool[] = {"Nitro1","Nitro2","Nitro3"}; // Classnames of the different types of nitro
-				class Nitro1
-				{
-					displayText = "Nitro Stage 1";
-					timesUseable = 1; // How often should this stage be usable?
-					price = 15000;
-				};
-				class Nitro2
-				{
-					displayText = "Nitro Stage 2";
-					timesUseable = 2;
-					price = 25000;
-				};
-				class Nitro3
-				{
-					displayText = "Nitro Stage 3";
-					timesUseable = 3;
-					price = 40000;
-				};
-			};
-			class Underglow // If this class is present, Underglow can be bought (RGB)
-			{
-				pool[] = {"UnderglowRGB"}; // Do not change
-				class UnderglowRGB // Do not change
 				{
 					displayText = "Custom RGB Vehicle Underglow";
 					price = 100000;
