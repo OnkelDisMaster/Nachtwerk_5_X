@@ -285,9 +285,9 @@ class LifeCfgVehicles {
         price = 50000;
         textures[] = {
 			{ "Feuerwehr", "med", {
-                "skins\car\fw_tempest_1",
-				"skins\car\fw_tempest_2",
-				"skins\car\fw_tempest_3"
+                "skins\car\fw_tempest_1.jpg",
+				"skins\car\fw_tempest_2.jpg",
+				"skins\car\fw_tempest_3.jpg"
             }, "" }
 		};
     };
@@ -298,9 +298,9 @@ class LifeCfgVehicles {
         price = 30000;
         textures[] = {
 			{ "Feuerwehr", "med", {
-                "skins\car\fw_tempest_1",
-				"skins\car\fw_tempest_2",
-				"skins\car\fw_tempest_3"
+                "skins\car\fw_tempest_1.jpg",
+				"skins\car\fw_tempest_2.jpg",
+				"skins\car\fw_tempest_3.jpg"
             }, "" }
 		};
     };
