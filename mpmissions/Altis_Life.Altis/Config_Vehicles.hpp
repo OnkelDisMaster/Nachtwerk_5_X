@@ -127,9 +127,11 @@ class CarShops {
             { "C_SUV_01_F", { "life_mediclevel", "SCALAR", 3 } },
 			{ "I_Truck_02_medical_F", { "life_mediclevel", "SCALAR", 2 } },
 			{ "B_Truck_01_medical_F", { "life_mediclevel", "SCALAR", 2 } },
+			{ "B_Truck_01_transport_F", { "life_mediclevel", "SCALAR", 2 } },
+			{ "O_Truck_03_transport_F", { "life_mediclevel", "SCALAR", 3 } },
+            { "O_Truck_03_covered_F", { "life_mediclevel", "SCALAR", 3 } },
 			{ "O_Truck_03_repair_F", { "life_mediclevel", "SCALAR", 3 } },
 			{ "O_Truck_03_medical_F", { "life_mediclevel", "SCALAR", 3 } },
-			{ "B_Truck_01_transport_F", { "life_mediclevel", "SCALAR", 2 } },
 			{ "B_MRAP_01_F", { "life_mediclevel", "SCALAR", 5 } }
         };
     };
@@ -287,7 +289,8 @@ class LifeCfgVehicles {
 			{ "Feuerwehr", "med", {
                 "skins\car\fw_tempest_1.jpg",
 				"skins\car\fw_tempest_2.jpg",
-				"skins\car\fw_tempest_3.jpg"
+				"#(rgb,8,8,1)color(1,0,0,0.3)",
+				"#(rgb,8,8,1)color(1,0,0,0.3)"
             }, "" }
 		};
     };
@@ -529,6 +532,11 @@ class LifeCfgVehicles {
                 "skins\car\Tempest_DCamo_1.paa",
 				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_cargo.paa"
+            }, "" },
+			{ "Feuerwehr", "med", {
+                "skins\car\fw_tempest_1.jpg",
+				"skins\car\fw_tempest_2.jpg",
+				"#(rgb,8,8,1)color(1,0,0,0.3)"
             }, "" }
 		};
     };
@@ -561,6 +569,12 @@ class LifeCfgVehicles {
 				"skins\car\Tempest_DCamo_2.paa",
 				"skins\car\Tempest_DCamo_cargo.paa",
 				"skins\car\Tempest_DCamo_covered.paa"
+            }, "" },
+			{ "Feuerwehr", "med", {
+                "skins\car\fw_tempest_1.jpg",
+				"skins\car\fw_tempest_2.jpg",
+				"#(rgb,8,8,1)color(1,0,0,0.3)",
+				"#(rgb,8,8,1)color(1,0,0,0.3)"
             }, "" }
 		};
     };
