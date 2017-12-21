@@ -127,7 +127,8 @@ class CarShops {
             { "C_SUV_01_F", { "life_mediclevel", "SCALAR", 3 } },
 			{ "I_Truck_02_medical_F", { "life_mediclevel", "SCALAR", 2 } },
 			{ "B_Truck_01_medical_F", { "life_mediclevel", "SCALAR", 2 } },
-			{ "O_Truck_03_medical_F", { "life_mediclevel", "SCALAR", 4 } },
+			{ "O_Truck_03_repair_F", { "life_mediclevel", "SCALAR", 3 } },
+			{ "O_Truck_03_medical_F", { "life_mediclevel", "SCALAR", 3 } },
 			{ "B_Truck_01_transport_F", { "life_mediclevel", "SCALAR", 2 } },
 			{ "B_MRAP_01_F", { "life_mediclevel", "SCALAR", 5 } }
         };
@@ -281,8 +282,27 @@ class LifeCfgVehicles {
     class O_Truck_03_medical_F {
         vItemSpace = 350;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };
-        price = 60000;
-        textures[] = {};
+        price = 50000;
+        textures[] = {
+			{ "Feuerwehr", "med", {
+                "skins\car\fw_tempest_1",
+				"skins\car\fw_tempest_2",
+				"skins\car\fw_tempest_3"
+            }, "" }
+		};
+    };
+	
+	class O_Truck_03_repair_F {
+        vItemSpace = -1;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 30000;
+        textures[] = {
+			{ "Feuerwehr", "med", {
+                "skins\car\fw_tempest_1",
+				"skins\car\fw_tempest_2",
+				"skins\car\fw_tempest_3"
+            }, "" }
+		};
     };
 
     class B_Truck_01_medical_F {
@@ -793,6 +813,7 @@ class LifeCfgVehicles {
         textures[] = { 
 			{ "Flecktarn", "civ", {
                 "skins\car\ifrit_r1.jpg",
+				"skins\car\ifrit_r2.jpg"
 				"skins\car\ifrit_r2.jpg"
             }, "" },
 			{ "Rebell", "civ", {
