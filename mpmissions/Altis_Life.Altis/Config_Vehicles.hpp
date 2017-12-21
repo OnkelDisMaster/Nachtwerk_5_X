@@ -814,7 +814,6 @@ class LifeCfgVehicles {
 			{ "Flecktarn", "civ", {
                 "skins\car\ifrit_r1.jpg",
 				"skins\car\ifrit_r2.jpg"
-				"skins\car\ifrit_r2.jpg"
             }, "" },
 			{ "Rebell", "civ", {
                 "\A3\Soft_F\MRAP_02\data\mrap_02_ext_01_co.paa",
