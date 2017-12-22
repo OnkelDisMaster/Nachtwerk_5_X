@@ -333,6 +333,270 @@ class Maverick_Tuning
 			};
 		};
 		
+		class C_Van_02_medevac_F
+		{
+			default[] = {{0,0,0,0,0,0,0,0,0,0,0,0},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+
+			class RawModifications
+			{
+				pool[] = {"beacon_front_hide","beacon_rear_hide","LED_lights_hide","reflective_tape_hide","sidesteps_hide","spare_tyre_hide","spare_tyre_holder_hide","roof_rack_hide","ladder_hide","rearsteps_hide","side_protective_frame_hide","front_protective_frame_hide"};
+				class beacon_front_hide
+				{
+					parts[] = {"beacon_front_hide"};
+					displayText = "Leuchtfeuer Vorne";
+					price = 12200;
+				};
+				class beacon_rear_hide
+				{
+					parts[] = {"beacon_rear_hide"};
+					displayText = "Leuchtfeuer Hinten";
+					price = 12200;
+				};
+				class LED_lights_hide
+				{
+					parts[] = {"LED_lights_hide"};
+					displayText = "LED";
+					price = 8600;
+				};
+				class reflective_tape_hide
+				{
+					parts[] = {"reflective_tape_hide"};
+					displayText = "Reflektionstape";
+					price = 6800;
+				};
+				class sidesteps_hide
+				{
+					parts[] = {"sidesteps_hide"};
+					displayText = "Seitenstufen";
+					price = 5000;
+				};
+				class spare_tyre_hide
+				{
+					parts[] = {"spare_tyre_hide"};
+					displayText = "Ersatzreifen";
+					price = 2400;
+				};
+				class spare_tyre_holder_hide
+				{
+					parts[] = {"spare_tyre_holder_hide"};
+					displayText = "ErsatzreifenHalter";
+					price = 2400;
+				};
+				class roof_rack_hide
+				{
+					parts[] = {"roof_rack_hide"};
+					displayText = "Dachrailing";
+					price = 6400;
+				};
+				class ladder_hide
+				{
+					parts[] = {"ladder_hide"};
+					displayText = "Leiter";
+					price = 3400;
+				};
+				class rearsteps_hide
+				{
+					parts[] = {"rearsteps_hide"};
+					displayText = "Hinterstufe";
+					price = 4400;
+				};
+				class side_protective_frame_hide
+				{
+					parts[] = {"side_protective_frame_hide"};
+					displayText = "Seitenrahmen";
+					price = 7400;
+				};
+				class front_protective_frame_hide
+				{
+					parts[] = {"front_protective_frame_hide"};
+					displayText = "Frontrahmen";
+					price = 7400;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 3500;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 500000;
+					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 15000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 20000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 25000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 1000000;
+				};
+			};
+		};
+		
+		class C_IDAP_Van_02_medevac_F
+		{
+			default[] = {{0,0,0,0,0,0,0,0,0,0,0,0},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+
+			class RawModifications
+			{
+				pool[] = {"beacon_front_hide","beacon_rear_hide","LED_lights_hide","reflective_tape_hide","sidesteps_hide","spare_tyre_hide","spare_tyre_holder_hide","roof_rack_hide","ladder_hide","rearsteps_hide","side_protective_frame_hide","front_protective_frame_hide"};
+				class beacon_front_hide
+				{
+					parts[] = {"beacon_front_hide"};
+					displayText = "Leuchtfeuer Vorne";
+					price = 1220;
+				};
+				class beacon_rear_hide
+				{
+					parts[] = {"beacon_rear_hide"};
+					displayText = "Leuchtfeuer Hinten";
+					price = 1220;
+				};
+				class LED_lights_hide
+				{
+					parts[] = {"LED_lights_hide"};
+					displayText = "LED";
+					price = 860;
+				};
+				class reflective_tape_hide
+				{
+					parts[] = {"reflective_tape_hide"};
+					displayText = "Reflektionstape";
+					price = 680;
+				};
+				class sidesteps_hide
+				{
+					parts[] = {"sidesteps_hide"};
+					displayText = "Seitenstufen";
+					price = 500;
+				};
+				class spare_tyre_hide
+				{
+					parts[] = {"spare_tyre_hide"};
+					displayText = "Ersatzreifen";
+					price = 240;
+				};
+				class spare_tyre_holder_hide
+				{
+					parts[] = {"spare_tyre_holder_hide"};
+					displayText = "ErsatzreifenHalter";
+					price = 240;
+				};
+				class roof_rack_hide
+				{
+					parts[] = {"roof_rack_hide"};
+					displayText = "Dachrailing";
+					price = 640;
+				};
+				class ladder_hide
+				{
+					parts[] = {"ladder_hide"};
+					displayText = "Leiter";
+					price = 340;
+				};
+				class rearsteps_hide
+				{
+					parts[] = {"rearsteps_hide"};
+					displayText = "Hinterstufe";
+					price = 440;
+				};
+				class side_protective_frame_hide
+				{
+					parts[] = {"side_protective_frame_hide"};
+					displayText = "Seitenrahmen";
+					price = 740;
+				};
+				class front_protective_frame_hide
+				{
+					parts[] = {"front_protective_frame_hide"};
+					displayText = "Frontrahmen";
+					price = 740;
+				};
+			};
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 350;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 50000;
+					texture = "\a3\soft_f_orange\Van_02\Data\van_body_black_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};	
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 15000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 20000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 25000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 100000;
+				};
+			};
+		};
+		
 		class C_Offroad_02_unarmed_F
 		{
 			default[] = {{},"",0,0,{-1,-1,-1}};
