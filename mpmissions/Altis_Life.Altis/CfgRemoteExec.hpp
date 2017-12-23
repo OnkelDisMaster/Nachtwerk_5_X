@@ -194,7 +194,7 @@ class CfgRemoteExec {
 		F(bf_fnc_lightsOn,ANYONE)
 		F(stig_sz_msg_add,ANYONE)
 		F(stig_sz_msg_del,ANYONE)
-		F(diag_log,ANYONE);
+		F(bis_fnc_call,ANYONE);
     };
 
     class Commands {
