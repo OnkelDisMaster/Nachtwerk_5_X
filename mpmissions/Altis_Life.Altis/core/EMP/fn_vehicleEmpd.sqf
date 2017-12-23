@@ -25,9 +25,9 @@ if(_vehicle isKindOf "Car") then {
     _vehicle setHitPointDamage ["HitEngine", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
     _vehicle setHitPointDamage ["HitEngine3", 1];
-    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 30 Sekunden deaktiviert!";
+    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 180 Sekunden deaktiviert!";
     _vehicle say3D "empwarn";
-	sleep 30;
+	sleep 180;
     _vehicle setHitPointDamage ["HitEngine", 0];
     _vehicle setHitPointDamage ["HitEngine2", 0];
     _vehicle setHitPointDamage ["HitEngine3", 0];
@@ -37,20 +37,20 @@ if(_vehicle isKindOf "Car") then {
 if(_vehicle isKindOf "Air") then {
 	hint"Sie werden gerade EMP!!\n Landen Sie Sofort!!";
 	_vehicle say3D "empwarn";
-	uiSleep 10;
+	uiSleep 20;
 	hint"Sie werden gerade EMP!!\n Landen Sie Sofort!!";
 	_vehicle say3D "empwarn";
-	uiSleep 10;
+	uiSleep 20;
 	hint"Sie werden gerade EMP!!\n Landen Sie Sofort!!";
 	_vehicle say3D "empwarn";
-	uiSleep 10;
+	uiSleep 20;
 
     _vehicle setHitPointDamage ["HitEngine", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
     _vehicle setHitPointDamage ["HitEngine3", 1];
-    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 30 Sekunden deaktiviert!";
+    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 180 Sekunden deaktiviert!";
     _vehicle say3D "empwarn";
-	sleep 30;
+	sleep 180;
     _vehicle setHitPointDamage ["HitEngine", 0];
     _vehicle setHitPointDamage ["HitEngine2", 0];
     _vehicle setHitPointDamage ["HitEngine3", 0];
@@ -69,9 +69,9 @@ if(_vehicle isKindOf "Ship") then {
     _vehicle setHitPointDamage ["HitEngine", 1];
     _vehicle setHitPointDamage ["HitEngine2", 1];
     _vehicle setHitPointDamage ["HitEngine3", 1];
-    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 30 Sekunden deaktiviert!";
+    hint "Sie werden gerade EMP!!\n Das Fahrzeug ist für 180 Sekunden deaktiviert!";
     _vehicle say3D "empwarn";
-	sleep 30;
+	sleep 180;
     _vehicle setHitPointDamage ["HitEngine", 0];
     _vehicle setHitPointDamage ["HitEngine2", 0];
     _vehicle setHitPointDamage ["HitEngine3", 0];

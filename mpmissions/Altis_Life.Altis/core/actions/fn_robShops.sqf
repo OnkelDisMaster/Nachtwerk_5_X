@@ -30,10 +30,9 @@ _rip = true;
 _kassa = 15000 + round(random 30000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
-_chance = 100;
-if(_chance >= 85) then { hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!"; [[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
+hintSilent "Der stille Alarm wurde ausgelöst, die Polizei wird gleich hier erscheinen!"; 
+[1,format["ALARM! - Tankstelle: %1 wird gerade ausgeraubt!", _shop]] remoteExecCall ["life_fnc_broadcast",west];
 
-_cops = (west countSide playableUnits);
 disableSerialization;
 
 5 cutRsc ["life_progress","PLAIN"];
