@@ -231,7 +231,7 @@ switch _loadout do
 	private["_handle"];
 	_handle = [] spawn life_fnc_stripDownPlayer;
 	waitUntil {scriptDone _handle};
-	player addUniform "U_B_CombatUniform_mcam_vest";
+	player addUniform "U_B_SpecopsUniform_sgg";
 	player addVest "V_TacVest_blk_POLICE";
 	player addBackpack "B_Bergen_dgtl_F";
 	player addHeadgear "H_Beret_blk_POLICE";
@@ -279,7 +279,7 @@ switch _loadout do
 		private["_handle"]; 
 		_handle = [] spawn life_fnc_stripDownPlayer;
 		waitUntil {scriptDone _handle};
-		player addUniform "U_B_CombatUniform_mcam_vest";
+		player addUniform "U_B_SpecopsUniform_sgg";
 		player addVest "V_PlateCarrier1_blk";
 		player addBackpack "B_Bergen_dgtl_F";
 		player addHeadgear "H_Beret_02";

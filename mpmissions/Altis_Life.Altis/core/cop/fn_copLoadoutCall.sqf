@@ -25,31 +25,31 @@ if ((call (life_coplevel)) >= 3) then {
 	_loadouts = _loadouts + ["MX-3GL Loadout"];
 };
 
-if ((call (life_coplevel)) >= 4) then {
+if ((call (life_coplevel)) >= 3) then {
 	_loadouts = _loadouts + ["MX-SW Loadout"];
 };
 
-if ((call (life_coplevel)) >= 5) then {
+if ((call (life_coplevel)) >= 3) then {
 	_loadouts = _loadouts + ["SPAR-16-S Loadout"];
 };
 
-if ((call (life_coplevel)) >= 6) then {
+if ((call (life_coplevel)) >= 4) then {
 	_loadouts = _loadouts + ["CAR-95-1 Loadout"];
 };
 
-if ((call (life_coplevel)) >= 7) then {
+if ((call (life_coplevel)) >= 5) then {
 	_loadouts = _loadouts + ["Spar-17 Loadout"];
 };
 
-if ((call (life_coplevel)) >= 7) then {
-	_loadouts = _loadouts + ["AK-12-GL Loadout"];
-};
-
-if ((call (life_coplevel)) >= 7) then {
+if ((call (life_coplevel)) >= 5) then {
 	_loadouts = _loadouts + ["MK18 Loadout"];
 };
 
-if ((call (life_coplevel)) >= 9) then {
+if ((call (life_coplevel)) >= 6) then {
+	_loadouts = _loadouts + ["AK-12-GL Loadout"];
+};
+
+if ((call (life_coplevel)) >= 8) then {
 	_loadouts = _loadouts + ["Typ115 Loadout"];
 };
 
