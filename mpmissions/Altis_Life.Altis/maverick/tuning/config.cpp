@@ -828,13 +828,13 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 350000;
+					price = 35000;
 					texture = "";
 				};
 				class Chrome
 				{
 					displayText = "Chrome";
-					price = 5000000;
+					price = 500000;
 					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
@@ -867,7 +867,7 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 3000000;
+					price = 600000;
 				};
 			};
 		};
