@@ -12,6 +12,7 @@ onLoadName = "Nachtwerk - Altis Life";
 onLoadMission = "Altis Life [4.4R3]";
 loadScreen = "images\logo.jpg";
 disabledAI = 1;
+respawnButton = 0;
 
 class Header
 {
