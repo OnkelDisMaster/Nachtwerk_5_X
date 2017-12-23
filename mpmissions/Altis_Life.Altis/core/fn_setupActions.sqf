@@ -25,8 +25,6 @@ switch (playerSide) do {
 		//Lichticht aufheben
 		life_actions = life_actions + [player addAction["Licht aufheben",life_fnc_packuplicht,"",0,false,false,"",' _licht = nearestObjects[getPos player,["Land_Flush_Light_red_F"],8] select 0; !isNil "_licht" && !isNil {(_licht getVariable "item")}']];
 		
-		//Nagelbänder aufheben
-		life_actions = life_actions + [player addAction["Nagelband aufheben",life_fnc_packupSpikes,"",0,false,false,"",' _spikes = nearestObjects[getPos player,["Land_Razorwire_F"],8] select 0; !isNil "_spikes" && !isNil {(_spikes getVariable "item")}']];
 		//Aussteigen aus Fahrzeugen
 		life_actions = life_actions + [player addAction["Get out",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
 		//Hinsetzen
