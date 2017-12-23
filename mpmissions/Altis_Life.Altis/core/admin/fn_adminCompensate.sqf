@@ -12,7 +12,7 @@ _value = parseNumber(ctrlText 9922);
 if (_value < 0) exitWith {};
 if (_value > 999999) exitWith {hint localize "STR_ANOTF_Fail"};
 
-_name = name player;
+_name = player getVariable ["realname",name player];
 _uid = getPlayerUID player;
 
 _action = [
@@ -25,7 +25,6 @@ _action = [
 if (_action) then {
     CASH = CASH + _value;
 	_value = [_value] call life_fnc_numberText;
-	//diag_log format ["Supporter: %1 | %2 | hat %3 $ angefordert",_name,_uid,_value]; 
 	{diag_log format ["Supporter: %1 | %2 | hat %3 $ angefordert",_name,_uid,_value];} remoteExec ["bis_fnc_call",RSERV];
     hint format [localize "STR_ANOTF_Success",_value];
     closeDialog 0;
