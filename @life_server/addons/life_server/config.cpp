@@ -104,6 +104,7 @@ class CfgFunctions {
             class keyManagement {};
             class vehicleUpdate {};
             class recupkeyforHC {};
+			class logging {};
         };
 
         class Smartphone
