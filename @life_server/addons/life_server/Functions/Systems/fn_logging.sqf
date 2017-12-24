@@ -6,6 +6,6 @@
     Description:
 	Logs sth. 
 */
-private _txt = param [0,"",[""]] call BIS_fnc_param;
+private _txt = param [0,"",[""]];
 //if !(_txt isEqualTo "") exitWith {};
 diag_log _txt;
