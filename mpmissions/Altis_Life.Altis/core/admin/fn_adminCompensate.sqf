@@ -25,7 +25,7 @@ _action = [
 if (_action) then {
     CASH = CASH + _value;
 	_value = [_value] call life_fnc_numberText;
-	//[format ["Supporter: %1 | %2 | hat %3 $ angefordert",_name,_uid,_value]] remoteExec ["TON_fnc_logging",RSERV];
+	[format ["Supporter: %1 | %2 | hat %3 $ angefordert",_name,_uid,_value]] remoteExec ["TON_fnc_logging",RSERV];
     hint format [localize "STR_ANOTF_Success",_value];
     closeDialog 0;
 } else {
