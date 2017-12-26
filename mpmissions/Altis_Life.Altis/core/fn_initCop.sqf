@@ -17,10 +17,11 @@ if (life_blacklisted) exitWith {
     sleep 30;
 };
 
-    if ((FETCH_CONST(life_coplevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0)) then {
-        ["NotWhitelisted",false,true] call BIS_fnc_endMission;
-        sleep 35;
-    };
+if ((FETCH_CONST(life_coplevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0) || (playerSide != west)) then {
+    ["NotWhitelisted",false,true] call BIS_fnc_endMission;
+    sleep 35;
+};
+
 [["blacklisted ground/sea vehicles"],["Blacklisted Choppers"]] execVM "core\vehicle\Lifting\lift_init.sqf";
 [] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
 [] call life_fnc_playerSkins;
