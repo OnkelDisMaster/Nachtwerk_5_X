@@ -14,12 +14,12 @@ _end = false;
 
 if (life_blacklisted) exitWith {
     ["Blacklisted",false,true] call BIS_fnc_endMission;
-    sleep 30;
+    sleep 10;
 };
 
-if ((FETCH_CONST(life_coplevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0) || (playerSide != west)) then {
+if ((FETCH_CONST(life_coplevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0) || (playerSide != west)) exitWith {
     ["NotWhitelisted",false,true] call BIS_fnc_endMission;
-    sleep 35;
+    sleep 10;
 };
 
 [["blacklisted ground/sea vehicles"],["Blacklisted Choppers"]] execVM "core\vehicle\Lifting\lift_init.sqf";
