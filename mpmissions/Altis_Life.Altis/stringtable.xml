@@ -3246,15 +3246,15 @@
             <Polish>Zostałeś wyleczony</Polish>
         </Key>
         <Key ID="STR_NOTF_BeingImpounded">
-            <Original>%2 your %1 is being impounded by the office men.</Original>
-            <Czech>%2 Váš%1 je zabaveno policií.</Czech>
-            <Spanish>%2 tu %1 esta siendo embargado por la policía.</Spanish>
+            <Original>%1 your %2 is being impounded by the office men.</Original>
+            <Czech>%1 Váš%2 je zabaveno policií.</Czech>
+            <Spanish>%1 tu %2 esta siendo embargado por la policía.</Spanish>
             <Russian></Russian>
-            <German>%2 dein %1 wird von den Behörden beschlagnahmt.</German>
-            <French>%2 votre %1 est envoyé a la fourrière par la police.</French>
-            <Italian>%2 il tuo %1 sta per essere sequestrato dalla Polizia.</Italian>
-            <Portuguese>%2 seu %1 está sendo apreendido pela Polícia</Portuguese>
-            <Polish>%2 twój %1 jest usuwany przez Policję</Polish>
+            <German>%1 dein %2 wird von den Behörden beschlagnahmt.</German>
+            <French>%1 votre %2 est envoyé a la fourrière par la police.</French>
+            <Italian>%1 il tuo %2 sta per essere sequestrato dalla Polizia.</Italian>
+            <Portuguese>%1 seu %2 está sendo apreendido pela Polícia</Portuguese>
+            <Polish>%1 twój %2 jest usuwany przez Policję</Polish>
         </Key>
         <Key ID="STR_NOTF_Impounding">
             <Original>Impounding Vehicle</Original>

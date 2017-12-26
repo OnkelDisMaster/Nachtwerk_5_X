@@ -74,7 +74,7 @@ DYNMARKET_Items_Groups =
 			["uranIV",-1,6000,45000],
 			["plutonium",-1,17000,32000],
 			["brennstab",-1,22250,50000],
-			["atombombe",-1,455000,5500000],
+			["atombombe",-1,455000,4700000],
 			["mikroProzessor",-1,27500,50500],
 			["implantatNormal",-1,385500,500500]
 		],
