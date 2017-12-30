@@ -13,10 +13,10 @@ player enableFatigue false;
 
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
-	
-if ((FETCH_CONST(life_medicLevel)) < 1 && (FETCH_CONST(life_adminlevel) isEqualTo 0)) exitWith {
-    ["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
-    sleep 35;
+
+if (((FETCH_CONST(life_medicLevel)) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0) || (playerSide != independent)) exitWith {
+    ["NotWhitelisted",false,true] call BIS_fnc_endMission;
+    sleep 10;
 };
 
 if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
