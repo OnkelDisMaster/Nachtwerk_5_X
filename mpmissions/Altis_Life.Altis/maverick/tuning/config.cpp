@@ -1079,12 +1079,19 @@ class Maverick_Tuning
 
 			class Colors
 			{
-				pool[] = {"RGB"};
+				pool[] = {"RGB","Chrome"};
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
 					price = 25000;
 					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 600000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};
 			};
 			class Nitro
