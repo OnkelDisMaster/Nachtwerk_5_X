@@ -12978,7 +12978,7 @@
             <Polish>Nie wolno korzystać z tego gniazda, ponieważ nie masz odpowiednich uprawnień. Spróbuj użyć innego gniazda.</Polish>
             <Portuguese>Você não tem permissão para usar esse slot, porque você não tem as permissões apropriadas. Tente outro slot.</Portuguese>
             <Russian>Вы не можете использовать этот слот, потому что у вас нет соответствующих разрешений. Попробуйте использовать другой слот.</Russian>
-            <German>Sie sind nicht berechtigt diesen Slot zu verwenden, da Sie nicht über die entsprechenden Berechtigungen verfügen. Versuchen Sie einen anderen Steckplatz.</German>
+            <German>Sie sind nicht berechtigt diesen Slot zu verwenden, da Sie nicht über die entsprechenden Berechtigungen verfügen. Versuchen Sie einen anderen Slot.</German>
         </Key>
     </Package>
     <Package name="Blacklisted">
