@@ -148,6 +148,9 @@ class Life_Settings {
 	cop_news_broadcast_cooldown = 1; //Abklingzeit zwischen zwei Nachrichten der Polizei
 	cop_news_broadcast_minimum_Rank = 2; //Benötigter Rang für Polizisten, um Nachricht zu senden
 	
+	/* Boxes */
+	life_Container [] = {"Land_CargoBox_V1_F","Land_Cargo10_blue_F","Land_Cargo20_blue_F","Land_Cargo40_blue_F"};
+	
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {
