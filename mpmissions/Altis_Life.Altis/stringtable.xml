@@ -11303,18 +11303,18 @@
             <French>Champs de pavots</French>
             <Spanish>Campo de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Marijuana Plantage</German>
+            <German>Marihuana Plantage</German>
             <Portuguese>Campo de Maconha</Portuguese>
             <Polish>Pole marihuany</Polish>
             <Italian>Campo di weed</Italian>
         </Key>
         <Key ID="STR_MAR_Weed_Processing">
-            <Original>Marijuana Küche</Original>
+            <Original>Marihuana Küche</Original>
             <Czech>Zpracování marihuana</Czech>
             <French>Traitement du pavot</French>
             <Spanish>Procesador de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Marijuana Küche</German>
+            <German>Marihuana Küche</German>
             <Portuguese>Processador de Maconha</Portuguese>
             <Polish>Suszarnia marihuany</Polish>
             <Italian>Trattamento weed</Italian>
@@ -11600,7 +11600,7 @@
             <French>Terrain de chasse</French>
             <Spanish>Zona de Caza</Spanish>
             <Russian></Russian>
-            <German>Jagtgründe</German>
+            <German>Jagdgründe</German>
             <Portuguese>Área de Caça</Portuguese>
             <Polish>Strefa polowań</Polish>
             <Italian>Riserva di Caccia</Italian>
