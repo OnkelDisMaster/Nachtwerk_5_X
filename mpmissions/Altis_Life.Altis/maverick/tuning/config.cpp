@@ -670,7 +670,7 @@ class Maverick_Tuning
 				{
 					displayText = "Chrome";
 					price = 5000000;
-					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					texture = "skins\car\Hunter_asiimov_0.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
 			};		
@@ -725,7 +725,7 @@ class Maverick_Tuning
 				{
 					displayText = "Chrome";
 					price = 5000000;
-					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					texture = "skins\car\IfritT1.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
 			};		
@@ -780,7 +780,7 @@ class Maverick_Tuning
 				{
 					displayText = "Chrome";
 					price = 5000000;
-					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					texture = "skins\car\IfritT1.paa";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
 			};		
@@ -835,7 +835,7 @@ class Maverick_Tuning
 				{
 					displayText = "Chrome";
 					price = 500000;
-					texture = "\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa";
+					texture = "skins\car\hatchback_sport_monster.jpg";
 					material = "maverick\tuning\bin\materials\chrome.rvmat";
 				};	
 			};		
