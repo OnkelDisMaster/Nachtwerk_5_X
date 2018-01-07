@@ -4277,7 +4277,7 @@
             <Polish>Nie można zapisać, że w nic poza pojazdem lądowym!</Polish>
             <Portuguese>Você não pode armazenar isso em qualquer coisa, mas um veículo de terra!</Portuguese>
             <Russian>Вы не можете хранить, что ничего, кроме наземного транспортного средства!</Russian>
-            <German>Sie können nicht das, sondern ein Landfahrzeug in irgendetwas zu speichern!</German>
+            <German>Du kannst kein Gold in Helikopter einladen!</German>
         </Key>
         <Key ID="STR_NOTF_notEnoughCashToStoreInVeh">
             <Original>You don't have that much cash on you to store in the vehicle!</Original>
