@@ -30,7 +30,7 @@ if (isNil {_robbed getVariable "atm_robbed"}) then {_robbed setVariable["atm_rob
 if (isNil "log_atm_rob") then {log_atm_rob = 0; publicVariable "log_atm_rob";};
 if (isNil "atm_rob") then {atm_rob = []; publicVariable "atm_rob";};
 
-//if(playersNumber west < 2) exitWith {hint "Es muessen min. 2 Polizisten Online sein!"}; 
+if(playersNumber west < 2) exitWith {hint "Es muessen min. 2 Polizisten Online sein!"}; 
 
 if (vehicle player != _robber) exitWith { hint "Aus einem Fahrzeug ausrauben? Wird bisschen schwer!" ;};
 if(side _robber != civilian) exitWith { hint "Du bist kein Zivilist!" };
