@@ -24,7 +24,7 @@ _itemWeight = ([_ctrl] call life_fnc_itemWeight) * _num;
 _veh_data = life_trunk_vehicle getVariable ["Trunk",[[],0]];
 _inv = _veh_data select 0;
 
-if (_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint localize "STR_NOTF_canOnlyStoreInLandVeh";};
+if (_ctrl == "goldbar" && {(life_trunk_vehicle isKindOf "Air")}) exitWith {hint localize "STR_NOTF_canOnlyStoreInLandVeh";};
 
 _Truck = TypeOf life_trunk_vehicle;
 _FuelStuff = ["oelu","oel","diesel"]; //Which Items can be stored in?
