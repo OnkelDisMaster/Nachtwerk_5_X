@@ -1,4 +1,5 @@
 scriptName "fn_purchaseSelectedModification";
+#include "..\..\script_macros.hpp"
 /*--------------------------------------------------------------------
 	Author: Maverick (ofpectag: MAV)
     File: fn_purchaseSelectedModification.sqf
@@ -41,7 +42,7 @@ if (_subConfig == "RGB" AND _class == "Colors") exitWith {
 	// Money duh
  	life_cash = life_cash - _price;
  	mav_tuning_rgbprice = _price;
-	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call life_fnc_numberText;,[life_cash] call life_fnc_numberText;]] spawn mav_tuning_fnc_displayText;
 
 	[] spawn mav_tuning_fnc_rgbColorSelection;
 };
@@ -51,7 +52,7 @@ if (_subConfig == "UnderglowRGB" AND _class == "Underglow") exitWith {
 	// Money duh
  	life_cash = life_cash - _price;
  	mav_tuning_rgbprice = _price;
-	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[mav_tuning_rgbprice] call life_fnc_numberText;,[life_cash] call life_fnc_numberText;]] spawn mav_tuning_fnc_displayText;
 
 	[] spawn mav_tuning_fnc_rgbColorSelectionLight;
 };
@@ -71,7 +72,7 @@ if (true) then {
 
  	// Money duh
  	life_cash = life_cash - _price;
-	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[_price] call BIS_fnc_numberText,[life_cash] call BIS_fnc_numberText]] spawn mav_tuning_fnc_displayText;
+	[format["<t size='1' align='center' shadow='2' font='PuristaMedium'>You have purchased a modification for <t color='#12FE00'>$%1</t><br/>You have <t color='#12FE00'>$%2</t> left</t>",[_price] call life_fnc_numberText;,[life_cash] call life_fnc_numberText;]] spawn mav_tuning_fnc_displayText;
 
 	// Select nothing
 	_ctrl lbSetCurSel -1;
