@@ -143,6 +143,7 @@ life_use_atm = true;
 call life_fnc_isLife;
 if!(alive _robber) exitWith {};
 };
+life_Raub = false; publicVariable "life_Raub";
 sleep 300;
 _action = _shop addAction["Geldautomat aufbrechen",life_fnc_robATM]; 
 //_shop switchMove "";
