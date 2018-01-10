@@ -9,6 +9,11 @@ this_is_my_regelwerk_from_shinji = profileNamespace getVariable "this_is_my_rege
 
 if !(isNil "this_is_my_regelwerk_from_shinji") exitwith {}; // hat bereits sein Tut durch :)
 
+if (playerSide isEqualTo west || playerSide isEqualTo independent) then {
+    ["NotWhitelisted",false,true] call BIS_fnc_endMission;
+    sleep 35;
+};
+
 accept = false;
 regel1 = false;
 regel2 = false;
