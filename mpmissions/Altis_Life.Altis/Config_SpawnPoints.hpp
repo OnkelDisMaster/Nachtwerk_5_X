@@ -60,6 +60,14 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 		
+		class USMC {
+            displayName = "USMC Base";
+            spawnMarker = "usmc_spawn";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "gang_usmc", true } };
+            level[] = { "", "", -1 };
+        };
+		
 		class DAB {
             displayName = "DAB Base";
             spawnMarker = "dab_spawn";

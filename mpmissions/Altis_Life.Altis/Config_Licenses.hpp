@@ -492,6 +492,14 @@ class Licenses {
         side = "civ";
     };
 	
+	class gang_usmc {
+        variable = "gang_usmc";
+        displayName = "USMC Gangmitglied";
+        price = 1;
+        illegal = false;
+        side = "civ";
+    };
+	
     class rebel {
         variable = "rebel";
         displayName = "STR_License_Rebel";
