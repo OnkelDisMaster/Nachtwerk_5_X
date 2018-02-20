@@ -405,7 +405,6 @@ class WeaponShops {
         items[] = {
             { "arifle_sdar_F", "Taser Rifle", 1, 1 },
             { "hgun_Pistol_heavy_01_MRD_F", "Taser Pistole", 1, 1 },
-            { "HandGrenade_Stone", "Flashbang", 1, 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -430,7 +429,6 @@ class WeaponShops {
             { "SMG_01_Holo_pointer_snds_F", "", 1, 1 },
 			{ "SMG_05_F", "", 1, 1 },
             { "hgun_Pistol_heavy_01_MRD_F", "Taser Pistole", 1, 1 },
-            { "HandGrenade_Stone", "Flashbang", 1, 1 },
             { "Rangefinder", "", 1, 1 },
             { "B_UavTerminal", "", 1, 1 },
             { "Medikit", "", 1, 1 },
@@ -1096,6 +1094,7 @@ class WeaponShops {
 			{ "LMG_Mk200_LP_BI_F", "", 1, 1 },
 			{ "LMG_Zafir_F", "", 1, 1 },
 			{ "srifle_LRR_F", "", 1, 1 },
+			{ "srifle_GM6_LRPS_F", "", 1, 1 },
 			{ "arifle_ARX_blk_F", "", 1, 1 },
 			{ "srifle_DMR_02_F", "", 1, 1 },
 			{ "srifle_DMR_05_MRCO_F", "", 1, 1 },

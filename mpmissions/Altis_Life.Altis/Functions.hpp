@@ -481,6 +481,7 @@ class Life_Client_Core {
         class vInteractionMenu {};
 		class vehTakeAllItem {};
 		class vehStoreAllItem {};
+        class gangSkins {};
     };
 	
 	class Banking {
