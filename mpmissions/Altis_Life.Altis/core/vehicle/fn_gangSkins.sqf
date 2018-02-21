@@ -9,7 +9,7 @@
 */
 private ["_lizenzen","_vehicle","_i"];
 _lizenzen = [];
-_lizenzen = ["license_civ_gang_as","license_civ_gang_rog"];
+//_lizenzen = ["license_civ_gang_as","license_civ_gang_rog"];
 
 if (license_civ_gang_as) then { _lizenzen pushBack "license_civ_gang_as";};
 _vehicle = typeOf (vehicle player);
