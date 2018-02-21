@@ -1116,7 +1116,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "skins\car\kitty.jpg"
 			} , "" },
 			{ "Hyperbeast", "civ", {
-                "skins\car\HyperbeastSUV.paa"
+                "skins\car\HyperbeastSUV.jpg"
 			} , "" },
 			{ "Taxi", "civ", {
                 "skins\car\taxi_suv.jpg"
@@ -1131,7 +1131,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "skins\car\police_suv.paa"
 			}, ""  },
             { "Undercover/Hyperbeast", "cop", {
-                "skins\car\HyperbeastSUV.paa"
+                "skins\car\HyperbeastSUV.jpg"
 			}, ""  },
 			{ "Polizei / Schwarz", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
@@ -1492,7 +1492,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "skins\air\sek_hellcat.paa"            
 			}, "" },
 			{ "Feuerwehr", "med", {
-                "skins\air\FW_hellcat.paa"  
+                "skins\air\FW_hellcat.jpg"  
             }, "" }		
 		};
     };
