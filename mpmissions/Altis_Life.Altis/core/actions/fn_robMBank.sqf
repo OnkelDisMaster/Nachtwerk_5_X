@@ -22,7 +22,7 @@ if !(alive _robber) exitWith {};
 if (currentWeapon _robber == "") exitWith { hintSilent "HaHa, Du hast keine Waffe! Verschwinde Hier!" };
 
 _cops = (west countSide playableUnits);
-if(_cops < 4) exitWith{
+if(_cops < 3) exitWith{
     [_vault,-1] remoteExecCall ["disableSerialization;"];
     hint "Es gibt momentan nicht genügend aktive Polizisten auf der Insel!";
 };	

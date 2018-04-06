@@ -60,7 +60,7 @@ switch(_lbauswahl) do {
 		<br/>
 		-Forum: http://nachtwerk-community.de/arma/wcf/ <br/>
 		<br/>
-		-TS3 Ip: 144.76.83.227 <br/>
+		-TS3 Ip: nachtwerk-community.de <br/>
 		<br/>
 		-Regelwerk:  http://nachtwerk-community.de/arma/wcf/index.php?thread/2-altis-life-regeln/ <br/>";
 	};
