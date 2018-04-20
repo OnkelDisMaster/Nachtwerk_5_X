@@ -1979,6 +1979,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 18500000;
         textures[] = { };
     };
+    
+    class I_LT_01_scout_F {
+        vItemSpace = 400;
+        licenses[] = { {"elite"}, {""}, {""}, {""} };
+        price = 48500000;
+        textures[] = { };
+    };
 	
 	class O_T_VTOL_02_vehicle_hex_F {
         vItemSpace = 800;
