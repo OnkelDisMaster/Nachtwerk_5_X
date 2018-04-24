@@ -19,11 +19,11 @@ player removeAction skinAction;
 player removeAction CopskinAction;
 
 if (license_civ_gang_as) then { _lizenzen pushBack "license_civ_gang_as";};
+if (license_civ_gang_rog) then { _lizenzen pushBack "license_civ_gang_rog";};
 if (license_civ_pro_rebel) then { _lizenzen pushBack "license_civ_pro_rebel";};
 if (FETCH_CONST(life_adminlevel) > 3) then { _lizenzen pushBack "CopSkins";};
 
 _vehicle = typeOf (vehicle player);
-//_lizenzen pushBack "license_civ_gang_as"; _lizenzen pushBack "license_civ_gang_rog";
 
 for "_i" from 0 to (count _lizenzen)-1 do{
     switch (_lizenzen select _i) do
@@ -60,6 +60,17 @@ for "_i" from 0 to (count _lizenzen)-1 do{
                 case "B_Heli_Light_01_F": { CopskinAction = player addAction["<t color = '#0000FF'>Polizei Hummingbird Skin</t>", '(vehicle player) setObjectTextureGlobal[0,"skins\air\police_heli.paa"]; player removeAction CopskinAction;', "",0,false,true,"""",'(vehicle player != player) && ((typeOf (vehicle player)) isEqualTo "B_Heli_Light_01_F")' ]; };  
             };
         };
-        case "license_civ_gang_rog": { systemChat "Gang: RoG";};
+        case "license_civ_gang_rog":
+        { 
+            switch (_vehicle) do 
+            {
+                case "B_MRAP_01_F": { RoGskinAction = player addAction["<t color = '#0000FF'>[RoG] Hunter Skin</t>", '(vehicle player) setObjectTextureGlobal[0,"skins\car\Hunter_ROG.jpg"]; player removeAction RoGskinAction;', "",0,false,true,"""",'(vehicle player != player) && ((typeOf (vehicle player)) isEqualTo "B_MRAP_01_F")' ]; };
+                case "O_MRAP_02_F": { RoGskinAction = player addAction["<t color = '#FF00FF'>[RoG] Ifrit Skin</t>", '(vehicle player) setObjectTextureGlobal[0,"skins\car\Ifrit_ROG_0.jpg"]; (vehicle player) setObjectTextureGlobal[1,"skins\car\Ifrit_ROG_1.jpg"]; player removeAction RoGskinAction;', "",0,false,true,"""",'(vehicle player != player) && ((typeOf (vehicle player)) isEqualTo "O_MRAP_02_F")' ]; };
+                case "O_T_MRAP_02_ghex_F": { RoGskinAction = player addAction["<t color = '#FF00FF'>[RoG] Ifrit Skin</t>", '(vehicle player) setObjectTextureGlobal[0,"skins\car\Ifrit_ROG_0.jpg"]; (vehicle player) setObjectTextureGlobal[1,"skins\car\Ifrit_ROG_1.jpg"]; player removeAction RoGskinAction;', "",0,false,true,"""",'(vehicle player != player) && ((typeOf (vehicle player)) isEqualTo "O_T_MRAP_02_ghex_F")' ]; };
+                case "I_MRAP_03_F": { RoGskinAction = player addAction["<t color = '#0000FF'>[RoG] Strider Skin</t>", '(vehicle player) setObjectTextureGlobal[0,"skins\car\Strider_ROG.jpg"]; player removeAction RoGskinAction;', "",0,false,true,"""",'(vehicle player != player) && ((typeOf (vehicle player)) isEqualTo "I_MRAP_03_F")' ]; };
+                case "C_SUV_01_F": { RoGskinAction = player addAction["<t color = '#FF00FF'>Ole SUV Skin</t>", '(vehicle player) setObjectTextureGlobal[0,"skins\car\SUV_ROG_2.jpg"]; player removeAction RoGskinAction;', "",0,false,true,"""",'(vehicle player != player) && ((typeOf (vehicle player)) isEqualTo "C_SUV_01_F")' ];
+                                                RoGskinAction2 = player addAction["<t color = '#FF00FF'>[RoG] SUV Skin</t>", '(vehicle player) setObjectTextureGlobal[0,"skins\car\SUV_ROG.jpg"]; player removeAction RoGskinAction2;', "",0,false,true,"""",'(vehicle player != player) && ((typeOf (vehicle player)) isEqualTo "C_SUV_01_F")' ];                                             };
+           };
+        };
     };
 };
