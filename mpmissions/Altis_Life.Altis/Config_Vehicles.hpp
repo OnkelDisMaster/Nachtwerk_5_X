@@ -103,6 +103,7 @@ class CarShops {
         vehicles[] = {
             { "O_T_LSV_02_unarmed_ghex_F", { "", "", -1 } },
             { "O_T_MRAP_02_ghex_F", { "", "", -1 } },
+            { "I_LT_01_scout_F", { "", "", -1 } },
 			{ "O_T_Truck_03_transport_ghex_F", { "", "", -1 } },
 			{ "O_T_Truck_03_covered_ghex_F", { "", "", -1 } },
 			{ "O_T_Truck_03_fuel_ghex_F", { "", "", -1 } },
