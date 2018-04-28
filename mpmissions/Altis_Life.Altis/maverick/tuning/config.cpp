@@ -609,7 +609,7 @@ class Maverick_Tuning
 				{
 					displayText = "Custom RGB Vehicle Color";
 					price = 35000;
-					texture = "";
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa";
 				};
 				class Chrome
 				{
@@ -626,19 +626,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 150000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 200000;
+					price = 150000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 250000;
+					price = 200000;
 				};
 			};
 			class Underglow
@@ -647,11 +647,121 @@ class Maverick_Tuning
 				class UnderglowRGB
 				{
 					displayText = "Custom RGB Vehicle Underglow";
-					price = 1000000;
+					price = 700000;
 				};
 			};
 		};
 		
+        class B_G_Offroad_01_armed_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 35000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 500000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 100000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 150000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 200000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 800000;
+				};
+			};
+		};
+       
+        class O_G_Offroad_01_armed_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 3500;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 50000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 10000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 15000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 20000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 80000;
+				};
+			};
+		};
+       
 		class B_MRAP_01_F
 		{
 			default[] = {{},"",0,0,{-1,-1,-1}};
@@ -817,6 +927,61 @@ class Maverick_Tuning
 			};
 		};
 		
+        class I_LT_01_scout_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			defaultMaterial = "a3\data_f\default.rvmat";
+			fetchDefaultFromVehicleState = 1;
+			class Colors
+			{
+				pool[] = {"RGB","Chrome"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 350000;
+					texture = "";
+				};
+				class Chrome
+				{
+					displayText = "Chrome";
+					price = 5000000;
+					texture = "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa";
+					material = "maverick\tuning\bin\materials\chrome.rvmat";
+				};
+			};		
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 100000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 150000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 200000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 3000000;
+				};
+			};
+		};
+        
 		class C_Hatchback_01_sport_F
 		{
 			default[] = {{},"",0,0,{-1,-1,-1}};

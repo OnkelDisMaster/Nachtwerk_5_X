@@ -171,8 +171,10 @@ class CarShops {
             { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 4 } },
 			{ "B_T_LSV_01_unarmed_black_F", { "life_coplevel", "SCALAR", 5 } },
             { "O_T_LSV_02_unarmed_black_F", { "life_coplevel", "SCALAR", 5 } },
+            { "O_G_Offroad_01_armed_F", { "life_coplevel", "SCALAR", 5 } },
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 6 } },
             { "I_MRAP_03_F", { "life_coplevel", "SCALAR", 9 } },
+            { "I_LT_01_scout_F", { "life_coplevel", "SCALAR", 9 } },
             { "O_APC_Wheeled_02_rcws_F", { "life_coplevel", "SCALAR", 9 } } //call life_coplevel >= 3
         };
     };
@@ -703,6 +705,21 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
+    class O_G_Offroad_01_armed_F {
+        vItemSpace = 75;
+        licenses[] = { {""}, {""}, {""}, {""} };//license_civ_rebel
+        price = 300000;
+        textures[] = {
+            { "Polizei", "cop", {
+                "skins\car\police_offroad.paa"
+            }, ""  },
+			{ "SEK", "cop", {
+                "#(ai,64,64,1)Fresnel(1.3,7)"
+            }, ""  }
+        };
+    };
+    
+     
 	class B_Truck_01_covered_F {
         vItemSpace = 600;
         licenses[] = { {"trucking"}, {""}, {""}, {""} };//license_civ_trucking
