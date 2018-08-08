@@ -55,7 +55,7 @@ if ((_vInfo select 6) isEqualTo 1) exitWith {
 };
 
 if (!(_sp isEqualType "")) then {
-    _nearVehicles = nearestObjects[_sp,["Car","Air","Ship"],10];
+    _nearVehicles = nearestObjects[_sp,["Car","Air","Ship","Tank","Light Tank"],10];
 } else {
     _nearVehicles = [];
 };
