@@ -109,7 +109,25 @@ switch (_code) do {
             _handled = true;
         };
     };
-
+    
+    //Ohrstöpsel Key (Shift + Bild runter)
+    case 209: {
+        if (_shift) then {
+            if (soundVolume != 1) then {
+				life_fadeSound = false;
+                1 fadeSound 1;
+                hint composeText [ image "icons\sound_new.paa"," Normaler Sound"];
+				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsN.paa";
+				
+            } else {
+				life_fadeSound = true;
+                1 fadeSound 0.1;
+                hint composeText [ image "icons\sound.paa"," 90% Leiser"];
+				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsY.paa";
+            };
+        };
+    };
+    
     //Surrender (Shift + B)
     case 48: {
         if (_shift) then {
