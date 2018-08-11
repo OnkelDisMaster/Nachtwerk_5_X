@@ -9,7 +9,8 @@
 life_actions = [];
 
 switch (playerSide) do {
-
+    life_actions pushBack (player addAction["<t color = '#D660D6'>Anschnallen</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
+    life_actions pushBack (player addAction["<t color = '#D660D6'>Abschnallen</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
     //Civilian
     case civilian: {
         //Drop fishing net
