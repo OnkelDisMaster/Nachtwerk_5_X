@@ -1,25 +1,13 @@
-disableChannels[]={2};
+disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
+overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
 
+#include "infiSTAR_AdminMenu.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
-#include "Config_Master.hpp"
-#include "Config_EmergLights.hpp"
-#include "infiSTAR_AdminMenu.hpp"
-#include "voiceControl.cpp"
+#include "config\Config_Master.hpp"
 
-author = "Tonic | Edit by Nachtwerk";
-onLoadName = "Nachtwerk - Altis Life";
-onLoadMission = "Altis Life [4.4R3]";
-loadScreen = "images\logo.jpg";
-disabledAI = 1;
-respawnButton = 0;
-
-class Header
-{
-	gameType = RPG;
-};
 class CfgServer {
-    DatabaseName = "nw_life"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
+    DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
     DebugMode = 0; //Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
     HeadlessSupport = 0; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
     /*
@@ -29,68 +17,38 @@ class CfgServer {
 };
 
 class RscTitles {
-	#include "dialog\hud_stats.hpp"
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
-    #include "dialog\statusBar.hpp"
-	#include "dialog\hitmarker.hpp"
-	#include "maverick\tuning\dialogs\titles.hpp"
+    #include "dialog\hud_stats.hpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
-    #include "core\cation\cation_functions.cpp"
-	#include "maverick\maverick_functions_master.cpp"
 };
 
 class CfgSounds {
     sounds[] = {};
-    class SirenLong {
-        name = "SirenLong";
-        sound[] = {"\sounds\Siren_Long.ogg", 3.0, 1};
+    class sirenLong {
+        name = "sirenLong";
+        sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
         titles[] = {};
     };
-	
-	class medicSiren {
+
+    class medicSiren {
         name = "medicSiren";
-        sound[] = {"\sounds\medicSiren.ogg", 3.0, 1};
-        titles[] = {};
-    };
-	
-	class InsertCard {
-		name = "InsertCard";
-		sound[] = {"\sounds\banking\insertcard.ogg", 1.0, 1};
-		titles[] = {};
-	};
-
-    class speech
-    {
-        name = "speech";
-        sound[] = {"\sounds\speech.ogg", 4.0, 1};
+        sound[] = {"\sounds\medicSiren.ogg", 1.0, 1};
         titles[] = {};
     };
 
-    class tazersound {
-        name = "Tazersound";
-        sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+    class tazerSound {
+        name = "tazerSound";
+        sound[] = {"\sounds\tazer.ogg", 0.5, 1};
         titles[] = {};
     };
 
     class flashbang {
         name = "flashbang";
         sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
-        titles[] = {};
-    };
-	
-	class bomb {
-        name = "bomb";
-        sound[] = {"\sounds\bomb.ogg", 1.0, 1};
-        titles[] = {};
-    };
-	
-	class copsound {
-        name = "copsound";
-        sound[] = {"\sounds\copsound.ogg", 5.0, 1};
         titles[] = {};
     };
 
@@ -106,31 +64,17 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class LockCarSound {
-        name = "LockCarSound";
-        sound[] = {"\sounds\car_lock.ogg", 0.25, 1};
+    class lockCarSound {
+        name = "lockCarSound";
+        sound[] = {"\sounds\carLock.ogg", 1.0, 1};
         titles[] = {};
     };
 
-    class UnlockCarSound {
-        name = "UnlockCarSound";
-        sound[] = {"\sounds\unlock.ogg", 0.25, 1};
+    class unlockCarSound {
+        name = "unlockCarSound";
+        sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
-	
-	class empwarn
-	{
-		name = "empwarn";
-		sound[] = {"\sounds\empwarn.ogg", 1.5, 1};
-		titles[] = {};
-	};
-	
-	class empacsound
-	{
-		name = "empacsound";
-		sound[] = {"sounds\empac.ogg", db-5, 1};
-		titles[] = {};
-	};
 };
 
 class CfgDebriefing {
@@ -151,6 +95,7 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
+	
 };
 
 class CfgNotifications {
@@ -218,5 +163,3 @@ class CfgNotifications {
         priority = 5;
     };
 };
-#include "core\cation\cation_master.cpp"
-#include "maverick\maverick_master.cpp"

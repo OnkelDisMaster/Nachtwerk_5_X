@@ -7,13 +7,13 @@
     Master action key handler, handles requests for picking up various items and
     interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
 */
-private["_curObject","_isWater","_CrateModelNames","_crate","_fish","_animal","_whatIsIt","_handle"];
+private ["_curObject","_isWater","_CrateModelNames","_crate","_fish","_animal","_whatIsIt","_handle"];
 _curObject = cursorObject;
 if (life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if (life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
 
-if (player getVariable["isEscorting",false]) exitWith {
+if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exitWith {
     [] call life_fnc_copInteractionMenu;
 };
 
@@ -39,6 +39,7 @@ if (isNull _curObject) exitWith {
                 [_animal] call life_fnc_gutAnimal;
             };
         } else {
+            private "_handle";
             if (playerSide isEqualTo civilian && !life_action_gathering) then {
           _whatIsIt = [] call life_fnc_whereAmI;
                 if (life_action_gathering) exitWith {};                 //Action is in use, exit to prevent spamming.
@@ -60,12 +61,17 @@ if ((_curObject isKindOf "B_supplyCrate_F" || _curObject isKindOf "Box_IND_Grena
     };
 };
 
-if (_curObject isKindOf "House_F" && {player distance _curObject < 12} || ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curObject || (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curObject)) exitWith {
+private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _altisArray = [16019.5,16952.9,0];
+private _tanoaArray = [11074.2,11501.5,0.00137329];
+private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+
+if (_curObject isKindOf "House_F" && {player distance _curObject < 12} || ((nearestObject [_pos,"Land_Dome_Big_F"]) isEqualTo _curObject || (nearestObject [_pos,_vaultHouse]) isEqualTo _curObject)) exitWith {
     [_curObject] call life_fnc_houseMenu;
 };
 
 if (dialog) exitWith {}; //Don't bother when a dialog is open.
-if (vehicle player != player) exitWith {}; //He's in a vehicle, cancel!
+if !(isNull objectParent player) exitWith {}; //He's in a vehicle, cancel!
 life_action_inUse = true;
 
 //Temp fail safe.
@@ -75,21 +81,13 @@ life_action_inUse = true;
 };
 
 //Check if it's a dead body.
-if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable["Revive",false]) && {playerSide in [west,independent]}) exitWith 
-{
-    if (playerside isEqualTo west) then
-	{
-		if (LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1) then
-		{
-			if (((life_inv_defibrillator > 0) || ("Medikit" in (items player))) && (license_cop_revive) && (call life_coplevel > 2)) then {
-				[_curObject] call life_fnc_revivePlayer;
-			};		
-		};
-	} else {
-		if ((life_inv_defibrillator > 0) || ("Medikit" in (items player))) then {
-			[_curObject] call life_fnc_revivePlayer;
-		};
-	};
+if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable ["Revive",false])) exitWith {
+    //Hotfix code by ins0
+    if ((playerSide isEqualTo west && {(LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1)}) || {(playerSide isEqualTo civilian && {(LIFE_SETTINGS(getNumber,"revive_civ") isEqualTo 1)})} || {(playerSide isEqualTo east && {(LIFE_SETTINGS(getNumber,"revive_east") isEqualTo 1)})} || {playerSide isEqualTo independent}) then {
+        if (life_inv_defibrillator > 0) then {
+            [_curObject] call life_fnc_revivePlayer;
+        };
+    };
 };
 
 //If target is a player then check if we can use the cop menu.
@@ -97,15 +95,9 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
     if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
         [_curObject] call life_fnc_copInteractionMenu;
     };
-    if(!dialog && playerSide isEqualTo independent) then {
-        [_curObject] call life_fnc_medInteractionMenu;
-	};
-	if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo civilian) then {
-		[_curObject] call life_fnc_civInteractionMenu;
-	};
 } else {
     //OK, it wasn't a player so what is it?
-    private["_isVehicle","_miscItems","_money","_list"];
+    private ["_isVehicle","_miscItems","_money","_list"];
 
     _list = ["landVehicle","Ship","Air"];
     _isVehicle = if (KINDOF_ARRAY(_curObject,_list)) then {true} else {false};

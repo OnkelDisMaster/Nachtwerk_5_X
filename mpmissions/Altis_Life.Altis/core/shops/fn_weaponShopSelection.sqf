@@ -6,7 +6,7 @@
     Description:
     Checks the weapon & adds the price tag.
 */
-private["_control","_index","_shop","_priceTag","_price","_item","_itemArray","_bool"];
+private ["_control","_index","_shop","_priceTag","_price","_item","_itemArray","_bool"];
 _control = [_this,0,controlNull,[controlNull]] call BIS_fnc_param;
 _index = [_this,1,-1,[0]] call BIS_fnc_param;
 _shop = uiNamespace getVariable ["Weapon_Shop",""];
@@ -18,6 +18,8 @@ _priceTag = CONTROL(38400,38404);
 if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
     _item = CONTROL_DATAI(_control,_index);
     _itemArray = M_CONFIG(getArray,"WeaponShops",_shop,"items");
+    _itemArray append M_CONFIG(getArray,"WeaponShops",_shop,"mags");
+    _itemArray append M_CONFIG(getArray,"WeaponShops",_shop,"accs");
     _item = [_item,_itemArray] call TON_fnc_index;
     _price = ((_itemArray select _item) select 3);
     _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Price: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
@@ -52,7 +54,7 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
 
                 //Accessories Menu
                 if (isClass (configFile >> "CfgWeapons" >> _item >> "WeaponSlotsInfo")) then {
-                    private["_slotArray"];
+                    private ["_slotArray"];
                     _itemArray = [];
                     if (isArray (configFile >> "CfgWeapons" >> _item >> "WeaponSlotsInfo" >> "CowsSlot" >> "compatibleItems")) then {
                         _slotArray = FETCH_CONFIG3(getArray,"CfgWeapons",_item,"WeaponSlotsInfo","CowsSlot","compatibleItems");

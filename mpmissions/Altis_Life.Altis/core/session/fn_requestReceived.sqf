@@ -8,7 +8,7 @@
     sort through the information, validate it and if all valid
     set the client up.
 */
-private["_array"];
+private _count = count _this;
 life_session_tries = life_session_tries + 1;
 if (life_session_completed) exitWith {}; //Why did this get executed when the client already initialized? Fucking arma...
 if (life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK FADED"]; 0 cutFadeOut 999999999;};
@@ -22,6 +22,11 @@ if (_this isEqualType "") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if (count _this isEqualTo 0) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if ((_this select 0) isEqualTo "Error") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if (!(getPlayerUID player isEqualTo (_this select 0))) exitWith {[] call SOCK_fnc_dataQuery;};
+
+//Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
+if (!isServer && (!isNil "life_adminlevel" || !isNil "life_coplevel" || !isNil "life_donorlevel")) exitWith {
+    ["Cheats entdeckt!!",false,true] call BIS_fnc_endMission;
+};
 
 //Parse basic player information.
 CASH = parseNumber (_this select 2);
@@ -37,9 +42,6 @@ if (LIFE_SETTINGS(getNumber,"donor_level") isEqualTo 1) then {
 if (count (_this select 6) > 0) then {
     {missionNamespace setVariable [(_x select 0),(_x select 1)];} forEach (_this select 6);
 };
-
-life_gear = _this select 8;
-[true] call life_fnc_loadGear;
 
 //Parse side specific information.
 switch (playerSide) do {
@@ -58,7 +60,7 @@ switch (playerSide) do {
         life_is_arrested = _this select 7;
         CONST(life_coplevel, 0);
         CONST(life_medicLevel, 0);
-        life_houses = _this select 13;
+        life_houses = _this select (_count - 3);
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);
             life_thirst = ((_this select 9) select 1);
@@ -70,18 +72,18 @@ switch (playerSide) do {
             life_is_alive = _this select 10;
             life_civ_position = _this select 11;
             if (life_is_alive) then {
-                if (count life_civ_position != 3) then {diag_log format["[requestReceived] Bad position received. Data: %1",life_civ_position];life_is_alive =false;};
+                if !(count life_civ_position isEqualTo 3) then {diag_log format ["[requestReceived] Bad position received. Data: %1",life_civ_position];life_is_alive =false;};
                 if (life_civ_position distance (getMarkerPos "respawn_civilian") < 300) then {life_is_alive = false;};
             };
         };
 
         {
-            _house = nearestObject [(call compile format["%1",(_x select 0)]), "House"];
+            _house = nearestObject [(call compile format ["%1",(_x select 0)]), "House"];
             life_vehicles pushBack _house;
         } forEach life_houses;
 
-        life_gangData = _this select 14;
-        if (!(count life_gangData isEqualTo 0)) then {
+        life_gangData = _this select (_count - 2);
+        if !(count life_gangData isEqualTo 0) then {
             [] spawn life_fnc_initGang;
         };
         [] spawn life_fnc_initHouses;
@@ -98,8 +100,11 @@ switch (playerSide) do {
     };
 };
 
-if (count (_this select 15) > 0) then {
-    {life_vehicles pushBack _x;} forEach (_this select 15);
+life_gear = _this select 8;
+[true] call life_fnc_loadGear;
+
+if (count (_this select (_count - 1)) > 0) then {
+    {life_vehicles pushBack _x;} forEach (_this select (_count - 1));
 };
 
 life_session_completed = true;

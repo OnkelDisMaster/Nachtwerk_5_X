@@ -14,11 +14,9 @@
 #define Btn6 37455
 #define Btn7 37456
 #define Btn8 37457
-#define Btn10 37459
-#define Btn11 37460
 #define Title 37401
 
-private["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn10","_Btn11"];
+private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
@@ -43,13 +41,10 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
-_Btn10 = _display displayCtrl Btn10;
-_Btn11 = _display displayCtrl Btn11;
-
 life_pInact_curTarget = _curTarget;
 
-if (player getVariable["isEscorting",false]) then {
-    { _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn5,_Btn6,_Btn7,_Btn8,_Btn10,_Btn11];
+if (player getVariable ["isEscorting",false]) then {
+    { _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
 };
 
 //Set Unrestrain Button
@@ -65,7 +60,7 @@ _Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
 _Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
 
 //Set Escort Button
-if (player getVariable["isEscorting",false]) then {
+if (player getVariable ["isEscorting",false]) then {
     _Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
     _Btn4 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
 } else {
@@ -78,9 +73,8 @@ _Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
-//_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction; closeDialog 0;";
-_Btn6 buttonSetAction "createDialog ""jail_time"";";
-//_Btn6 ctrlEnable false;
+_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction; closeDialog 0;";
+_Btn6 ctrlEnable false;
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
@@ -89,11 +83,7 @@ _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDial
 _Btn8 ctrlSetText localize "STR_pInAct_Seize";
 _Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
 
-_Btn10 ctrlSetText localize "STR_pInAct_RevokeLicense";
-_Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";
-
-_Btn11 ctrlSetText localize "STR_pInAct_Breathalyzer";
-_Btn11 buttonSetAction "[player] remoteExec [""life_fnc_alkoholdrugtester"",life_pInact_curTarget];closeDialog 0;";
+if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
 
 {
     if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};

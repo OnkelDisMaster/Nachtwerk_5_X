@@ -5,7 +5,7 @@ class CfgPatches {
         weapons[] = {};
         requiredAddons[] = {"A3_Data_F","A3_Soft_F","A3_Soft_F_Offroad_01","A3_Characters_F"};
         fileName = "life_server.pbo";
-        author[]= {"Tonic"};
+        author = "Tonic";
     };
 };
 
@@ -38,29 +38,13 @@ class CfgFunctions {
             class wantedBounty {};
             class wantedRemove {};
             class wantedAdd {};
-            class wantedTicket {};
             class wantedCrimes {};
             class wantedProfUpdate {};
         };
-		
-		//Bounty Hunter
-        class Bounty_Sys {
-            file = "\life_server\Functions\BountySystem";
-            class amountBounty {};
-            class bountyRemove {};
-            class bountyAdd {};
-            class bountyFetch {};
-            class bountyProfUpdate {};
-			class bountyCrimes {};
-			class bountyAmountGather {};
-			class hatBounty {};
-        };
-		
+
         class Jail_Sys {
             file = "\life_server\Functions\Jail";
             class jailSys {};
-            class jailTimer {};
-            class jailPlayer {};
         };
 
         class Client_Code {
@@ -68,20 +52,8 @@ class CfgFunctions {
         };
     };
 
-	class TON_System {
+    class TON_System {
         tag = "TON";
-		
-		class DynMarket {
-			file = "\life_server\Functions\DynMarket";
-			class calculatePrices {};
-			class config {};
-			class getUpdate {};
-			class HandleDB {};
-			class playerLogged {};
-			class sleeper {};
-			class randomEvent {};
-		};
-		
         class Systems {
             file = "\life_server\Functions\Systems";
             class managesc {};
@@ -95,7 +67,6 @@ class CfgFunctions {
             class vehicleDelete {};
             class spikeStrip {};
             class transferOwnership {};
-            class logIt {};
             class federalUpdate {};
             class chopShopSell {};
             class clientDisconnect {};
@@ -104,21 +75,15 @@ class CfgFunctions {
             class keyManagement {};
             class vehicleUpdate {};
             class recupkeyforHC {};
-			class logging {};
-        };
-
-        class Smartphone
-        {
-            file = "\life_server\Functions\Smartphone";
-            class handleMessages {};
-            class msgRequest {};
-            class cleanupMessages {};
+            class handleBlastingCharge {};
+            class terrainSort {};
         };
 
         class Housing {
             file = "\life_server\Functions\Housing";
             class addHouse {};
             class addContainer {};
+            class deleteDBContainer {};
             class fetchPlayerHouses {};
             class initHouses {};
             class sellHouse {};
@@ -126,7 +91,7 @@ class CfgFunctions {
             class updateHouseContainers {};
             class updateHouseTrunk {};
             class houseCleanup {};
-            class deleteDBContainer {};
+            class houseGarage {};
         };
 
         class Gangs {

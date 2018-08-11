@@ -6,9 +6,9 @@
     Description:
     Blocks the unit from taking something they should not have.
 */
-private["_unit","_item","_restrictedClothing","_restrictedWeapons"];
-_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-_container = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
+private ["_unit","_item","_restrictedClothing","_restrictedWeapons"];
+_unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;
+_container = [_this,1,objNull,[objNull]] call BIS_fnc_param;
 _item = [_this,2,"",[""]] call BIS_fnc_param;
 
 if (isNull _unit || _item isEqualTo "") exitWith {}; //Bad thingies?
@@ -18,7 +18,7 @@ _restrictedWeapons = LIFE_SETTINGS(getArray,"restricted_weapons");
 switch (playerSide) do
 {
     case west: {
-        if (_item in ["U_Rangemaster","U_B_CombatUniform_mcam_vest","U_B_SpecopsUniform_sgg","U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_worn"]) then {
+        if (_item in ["U_Rangemaster"]) then {
             [] call life_fnc_playerSkins;
         };
     };
@@ -38,8 +38,16 @@ switch (playerSide) do
         };
     };
     case independent: {
-        if (_item in ["U_B_CombatUniform_mcam","B_Kitbag_sgg"]) then {
+        if (_item in ["U_Rangemaster"]) then {
             [] call life_fnc_playerSkins;
+        };
+        // -- Restrict Weapons
+        if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
+            // -- Check if the type is a weapon
+            if (isClass (configFile >> "CfgWeapons" >> _item)) then { 
+                // -- Remove all weapons from player (_unit)
+                removeAllWeapons _unit;
+            };
         };
     };
 };

@@ -6,8 +6,8 @@
     Description:
     Arrests the targeted person.
 */
-private["_unit","_id"];
-_unit = param [0,ObjNull,[ObjNull]];
+private ["_unit","_id"];
+_unit = param [0,objNull,[objNull]];
 if (isNull _unit) exitWith {}; //Not valid
 if (isNil "_unit") exitWith {}; //Not Valid
 if (!(_unit isKindOf "Man")) exitWith {}; //Not a unit
@@ -25,15 +25,13 @@ if (life_HC_isActive) then {
 if (isNull _unit) exitWith {}; //Not valid
 detach _unit;
 [_unit,false] remoteExecCall ["life_fnc_jail",_unit];
-
-//	[0,"STR_NOTF_Arrested_1",true, [_unit getVariable ["realname",name _unit], name player]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
-	[getPlayerUID _unit] remoteExecCall ["life_fnc_bountyRemove",RSERV];
+[0,"STR_NOTF_Arrested_1",true, [_unit getVariable ["realname",name _unit], profileName]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 
 if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
     if (LIFE_SETTINGS(getNumber,"battlEye_friendlyLogging") isEqualTo 1) then {
-        advanced_log = format ["arrested %1",_unit getVariable ["realname",name _unit]];
+        advanced_log = format [localize "STR_DL_AL_Arrested_BEF",_unit getVariable ["realname",name _unit]];
     } else {
-        advanced_log = format ["%1 - %2 arrested %3",profileName,(getPlayerUID player),_unit getVariable ["realname",name _unit]];
+        advanced_log = format [localize "STR_DL_AL_Arrested",profileName,(getPlayerUID player),_unit getVariable ["realname",name _unit]];
     };
     publicVariableServer "advanced_log";
 };

@@ -6,9 +6,10 @@
     Description:
     Sets the player up if he/she used the respawn option.
 */
-private["_handle"];
+private ["_handle"];
 //Reset our weight and other stuff
 
+life_action_inUse = false;
 life_use_atm = true;
 life_hunger = 100;
 life_thirst = 100;
@@ -17,12 +18,12 @@ CASH = 0; //Make sure we don't get our cash back.
 life_respawned = false;
 player playMove "AmovPercMstpSnonWnonDnon";
 
-life_corpse setVariable ["Revive",nil,TRUE];
-life_corpse setVariable ["name",nil,TRUE];
-life_corpse setVariable ["Reviving",nil,TRUE];
-player setVariable ["Revive",nil,TRUE];
-player setVariable ["name",nil,TRUE];
-player setVariable ["Reviving",nil,TRUE];
+life_corpse setVariable ["Revive",nil,true];
+life_corpse setVariable ["name",nil,true];
+life_corpse setVariable ["Reviving",nil,true];
+player setVariable ["Revive",nil,true];
+player setVariable ["name",nil,true];
+player setVariable ["Reviving",nil,true];
 
 //Load gear for a 'new life'
 switch (playerSide) do
@@ -42,7 +43,7 @@ switch (playerSide) do
 //Cleanup of weapon containers near the body & hide it.
 if (!isNull life_corpse) then {
     private "_containers";
-    life_corpse setVariable ["Revive",TRUE,TRUE];
+    life_corpse setVariable ["Revive",true,true];
     _containers = nearestObjects[life_corpse,["WeaponHolderSimulated"],5];
     {deleteVehicle _x;} forEach _containers; //Delete the containers.
     deleteVehicle life_corpse;
@@ -56,55 +57,32 @@ camDestroy life_deathCamera;
 if (life_is_arrested) exitWith {
     hint localize "STR_Jail_Suicide";
     life_is_arrested = false;
-    [player,TRUE] spawn life_fnc_jail;
+    [player,true] spawn life_fnc_jail;
     [] call SOCK_fnc_updateRequest;
 };
 
 //Johnny law got me but didn't let the EMS revive me, reward them half the bounty.
 if (!isNil "life_copRecieve") then {
 
-   // if (life_HC_isActive) then {
-     //   [getPlayerUID player,player,life_copRecieve,true] remoteExecCall ["HC_fnc_wantedBounty",HC_Life];
-    //} else {
+    if (life_HC_isActive) then {
+        [getPlayerUID player,player,life_copRecieve,true] remoteExecCall ["HC_fnc_wantedBounty",HC_Life];
+    } else {
         [getPlayerUID player,player,life_copRecieve,true] remoteExecCall ["life_fnc_wantedBounty",RSERV];
-    //};
+    };
 
     life_copRecieve = nil;
-};
-
-if (!isNil "life_bountyHunter") then {
-    if (life_HC_isActive) then {
-        [getPlayerUID player,player,life_bountyHunter] remoteExecCall ["HC_fnc_amountBounty",HC_Life];
-    } else {
-        [getPlayerUID player,player,life_bountyHunter] remoteExecCall ["life_fnc_amountBounty",RSERV];
-    };
-    
-	life_bountyHunter = nil;
-}; 
-
-
-//Remove Bounty...
-if (life_removeBounty) then {
-	if (life_HC_isActive) then {
-		[getPlayerUID player] remoteExecCall ["HC_fnc_bountyRemove",HC_Life];
-	} else {
-		[getPlayerUID player] remoteExecCall ["life_fnc_bountyRemove",RSERV];
-	};
-	player setvariable ["hatKopfgeld",false,true];
 };
 
 //So I guess a fellow gang member, cop or myself killed myself so get me off that Altis Most Wanted
 if (life_removeWanted) then {
 
-    //if (life_HC_isActive) then {
-    //    [getPlayerUID player] remoteExecCall ["HC_fnc_wantedRemove",HC_Life];
-    //} else {
-        [getPlayerUID player,1] remoteExecCall ["life_fnc_wantedRemove",RSERV];
-    //};
+    if (life_HC_isActive) then {
+        [getPlayerUID player] remoteExecCall ["HC_fnc_wantedRemove",HC_Life];
+    } else {
+        [getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",RSERV];
+    };
 
 };
-
-if (life_redgull_effect < 0) then {player enableFatigue false;};
 
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.

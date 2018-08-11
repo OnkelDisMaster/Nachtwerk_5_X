@@ -8,18 +8,9 @@
     Description:
     Removes a person from the wanted list.
 */
-private["_uid","_query","_dataArr","_array","_act"];
-_uid = [_this,0,"",[""]] call BIS_fnc_param;
-_act = [_this,1,-1] call BIS_fnc_param;
+private _uid = param [0,"",[""]];
 
-if (_act isEqualTo 1) then {
-    _query = format["UPDATE wanted SET active = '0', wantedCrimes = '[]', wantedBounty = 0 WHERE wantedID='%1'",_uid];
-} else {
-    _dataArr = toArray(_uid);
-    _array = toString(_dataArr);
-    _array = call compile format ["%1", _array];
-    if ((_array select 1) isEqualTo "") exitWith {}; //Bad data
-    _query = format["UPDATE wanted SET active = '0', wantedCrimes = '[]', wantedBounty = 0 WHERE wantedID='%1'",_array select 1];
-};
+if (_uid isEqualTo "") exitWith {}; //Bad data
 
+private _query = format ["UPDATE wanted SET active = '0', wantedCrimes = '[]', wantedBounty = 0 WHERE wantedID='%1'",_uid];
 [_query,2] call DB_fnc_asyncCall;

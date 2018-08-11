@@ -20,7 +20,7 @@ class SettingsMenu {
             x = 0.3;
             y = 0.2 + (11 / 250);
             w = 0.5;
-            h = 0.43 - (22 / 250);
+            h = 0.48 - (22 / 250);
         };
 
         class PlayerTagsHeader: Life_RscText {
@@ -44,12 +44,12 @@ class SettingsMenu {
             text = "$STR_SM_RNObj";
             y = 0.53;
         };
-		
-		class BroacastHeader : PlayerTagsHeader {
-			idc = -1;
-			text = "$STR_SM_BCSW";
-			y = 0.58;
-		};
+
+        class BroacastHeader : PlayerTagsHeader {
+            idc = -1;
+            text = "$STR_SM_BCSW";
+            y = 0.58;
+        };
 
         class Title: Life_RscTitle {
             idc = -1;
@@ -179,13 +179,13 @@ class SettingsMenu {
             onCheckedChanged = "['objects',_this select 1] call life_fnc_s_onCheckedChange;";
             y = 0.53;
         };
-		
-		class BroadcastONOFF : PlayerTagsONOFF {
-			idc = 2973;
-			tooltip = "$STR_GUI_BroadcastSwitch";
-			onCheckedChanged = "['broadcast',_this select 1] call life_fnc_s_onCheckedChange;";
-			y = 0.58;
-		};
+
+        class BroadcastONOFF : PlayerTagsONOFF {
+            idc = 2973;
+            tooltip = "$STR_GUI_BroadcastSwitch";
+            onCheckedChanged = "['broadcast',_this select 1] call life_fnc_s_onCheckedChange;";
+            y = 0.58;
+        };
 
         class ButtonClose: Life_RscButtonMenu {
             idc = -1;
@@ -193,7 +193,7 @@ class SettingsMenu {
             text = "$STR_Global_Close";
             onButtonClick = "closeDialog 0;";
             x = 0.48;
-            y = 0.63 - (1 / 25);
+            y = 0.68 - (1 / 25);
             w = (6.25 / 40);
             h = (1 / 25);
         };

@@ -1,6 +1,6 @@
 /* System Wide Stuff */
 #define SYSTEM_TAG "life"
-#define ITEM_TAG format["%1%2",SYSTEM_TAG,"item_"]
+#define ITEM_TAG format ["%1%2",SYSTEM_TAG,"item_"]
 #define CASH life_cash
 #define BANK life_atmbank
 #define GANG_FUNDS group player getVariable ["gang_bank",0];
@@ -21,9 +21,9 @@
 #define CONTROL_DATAI(ctrl,index) ctrl lbData index
 
 //System Macros
-#define LICENSE_VARNAME(varName,flag) format["license_%1_%2",flag,M_CONFIG(getText,"Licenses",varName,"variable")]
+#define LICENSE_VARNAME(varName,flag) format ["license_%1_%2",flag,M_CONFIG(getText,"Licenses",varName,"variable")]
 #define LICENSE_VALUE(varName,flag) missionNamespace getVariable [LICENSE_VARNAME(varName,flag),false]
-#define ITEM_VARNAME(varName) format["life_inv_%1",M_CONFIG(getText,"VirtualItems",varName,"variable")]
+#define ITEM_VARNAME(varName) format ["life_inv_%1",M_CONFIG(getText,"VirtualItems",varName,"variable")]
 #define ITEM_VALUE(varName) missionNamespace getVariable [ITEM_VARNAME(varName),0]
 #define ITEM_ILLEGAL(varName) M_CONFIG(getNumber,"VirtualItems",varName,"illegal")
 #define ITEM_SELLPRICE(varName) M_CONFIG(getNumber,"VirtualItems",varName,"sellPrice")
@@ -45,18 +45,3 @@
 //UI Macros
 #define LIFEdisplay (uiNamespace getVariable ["playerHUD",displayNull])
 #define LIFEctrl(ctrl) ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl ctrl)
-
-
-// EMP START ###############################################################################################################################################
-#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)}) //Quick macro for creating a constant variable
-#define __GETC__(var) (call var) //Quick clean macro for getting a value of a constant / compileFinal variable. i.e if(__GETC__(numberone) == 1) then {}
-#define __SUB__(var1,var2) var1 = var1 - var2
-
-//Control Macros
-#define getControl(disp,ctrl) ((findDisplay ##disp) displayCtrl ##ctrl)
-#define getSelData(ctrl) (lbData[##ctrl,(lbCurSel ##ctrl)])
-
-//Player based quick macros
-#define grpPlayer group player
-#define steamid getPlayerUID player
-// EMP ENDE ##################################################################################################################################################
