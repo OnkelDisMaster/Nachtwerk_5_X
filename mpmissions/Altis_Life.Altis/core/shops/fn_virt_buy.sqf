@@ -13,6 +13,9 @@ _price = lbValue[2401,(lbCurSel 2401)];
 _amount = ctrlText 2404;
 
 _marketprice = [_type] call life_fnc_marketGetBuyPrice;
+
+if ((_marketprice <= 0)&&(_marketprice != -1)) then {_marketprice = 100;};
+
 if(_marketprice != -1) then
 {
 	_price = _marketprice;
