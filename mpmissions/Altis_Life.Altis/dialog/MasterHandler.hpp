@@ -30,3 +30,4 @@
 #include "newsStation.hpp"
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
+#include "..\core\holy_help\dialog\dialog_handler.hpp"

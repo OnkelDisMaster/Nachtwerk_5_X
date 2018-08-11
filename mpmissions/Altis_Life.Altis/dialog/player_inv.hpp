@@ -285,5 +285,23 @@ class playerSettings {
 			w = (6.25 / 40); 
 			h = (1 / 25); 
 		};
+        
+        class ButtonHelpz : Life_RscButtonMenu {
+            idc = 2050;
+            tooltip = $STR_PM_HelpMenu;
+            onButtonClick = "createDialog ""holy_help"";";
+             colorBackground[] = {1,1,1,0.08};
+             colorBackgroundFocused[] = {1,1,1,0.12};
+             colorBackground2[] = {0.75,0.75,0.75,0.2};
+             color[] = {1,1,1,1};
+             colorFocused[] = {0,0,0,1};
+             color2[] = {0,0,0,1};
+             colorText[] = {1,1,1,1};
+             colorDisabled[] = {0,0,0,0.4};
+            x = 0.506562 * safezoneW + safezoneX;
+            y = 0.7016 * safezoneH + safezoneY;
+            w = 0.028875 * safezoneW;
+            h = 0.0504 * safezoneH;
+        };
     };
 };

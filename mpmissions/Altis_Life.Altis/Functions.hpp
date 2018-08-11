@@ -23,8 +23,15 @@ class Life_Client_Core {
         class setupEVH {};
         class survival {};
         class welcomeNotification {};
+        class regelWerk {};
     };
-
+    
+    class holy_help {
+		file = "core\holy_help";
+		class holy_help;
+		class holy_bug;
+	};
+    
     class Market {
 		file = "core\market";
 		class openMarketView {};
