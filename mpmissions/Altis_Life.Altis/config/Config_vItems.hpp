@@ -11,9 +11,9 @@ class VirtualShops {
     //Virtual Shops
     class market {
         name = "STR_Shops_Market";
-        side = "civ";
+        side = "";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "peach", "ananas", "kokosnuss", "bananen", "apfelsaft", "pfirsichsaft", "ananassaft", "kokosnussmilch", "bananensaft", "pina_colada", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig" };
     };
 
     class med_market {
@@ -22,19 +22,35 @@ class VirtualShops {
         conditions = "";
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
     };
-
+	
+	class apotheke {
+        name = "STR_Shops_apotheke";
+        side = "";
+        conditions = "";
+        items[] = { "schmerzmittel" };
+    };
+	
+	class jager {
+        name = "STR_Shops_Jäger";
+        side = "civ";
+        license = "jagd";
+        level[] = { "", "", -1, "" };
+        items[] = { "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "rabbit", "hen", "rooster", "sheep", "goat" };
+    };
+	
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
-        conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        license = "rebel";
+        level[] = { "", "", -1, "" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder", "gpstracker" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "kabelbinder" };
     };
 
     class wongs {
@@ -42,6 +58,13 @@ class VirtualShops {
         side = "civ";
         conditions = "";
         items[] = { "turtle_soup", "turtle_raw" };
+    };
+	
+	class altiskom {
+        name = "STR_Shops_Altiskom";
+        side = "civ";
+        conditions = "";
+        items[] = { "bambusleitung" };
     };
 
     class coffee {
@@ -62,14 +85,21 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "koks", "heroin", "weed", "meth", "schwarzpulver", "polenboeller", "tabak", "zigaretten", "korallen", "korallenketten" };
+    };
+	
+	class tabakwaren {
+        name = "STR_Shop_Tabakwaren";
+        side = "civ";
+        conditions = "";
+        items[] = { "tabak", "zigaretten"};
     };
 
     class oil {
         name = "STR_Shops_Oil";
         side = "civ";
         conditions = "";
-        items[] = { "oil_processed", "pickaxe", "fuelFull" };
+        items[] = { "oel", "fuelFull", "diesel" };
     };
 
     class fishmarket {
@@ -86,32 +116,32 @@ class VirtualShops {
         items[] = { "glass" };
     };
 
-    class iron  {
+    class metall  {
         name = "STR_Shops_Minerals";
         side = "civ";
         conditions = "";
-        items[] = { "iron_refined", "copper_refined" };
+        items[] = { "eisen", "kupfer", "alu", "platin" };
     };
 
-    class diamond {
-        name = "STR_Shops_Diamond";
+    class juwelier {
+        name = "STR_Shops_Juwelier";
         side = "civ";
         conditions = "";
-        items[] = { "diamond_uncut", "diamond_cut" };
+        items[] = { "diamantu", "diamant", "juwelen","krone"};
     };
 
     class salt {
         name = "STR_Shops_Salt";
         side = "civ";
         conditions = "";
-        items[] = { "salt_refined" };
+        items[] = { "salz" };
     };
 
-    class cement {
-        name = "STR_Shops_Cement";
+    class baustoff {
+        name = "STR_Shops_Baustoff";
         side = "civ";
         conditions = "";
-        items[] = { "cement" };
+        items[] = { "marmor_roh", "marmor", "lava", "obsidian" };
     };
 
     class gold {
@@ -120,12 +150,33 @@ class VirtualShops {
         conditions = "";
         items[] = { "goldbar" };
     };
-
+	
+	class kraftwerk {
+        name = "STR_Shops_Kraftwerk";
+        side = "civ";
+        conditions = "";
+        items[] = { "plutonium", "brennstab" };
+    };
+	
+	class uranium {
+        name = "STR_Shops_Uranium";
+        side = "civ";
+        conditions = "";
+        items[] = { "uranErz", "uranI", "uranII", "uranIII", "uranIV" };
+    };
+	
+	class schwarzmarkt {
+        name = "STR_Shops_Schwarzmarkt";
+        side = "civ";
+        conditions = "";
+        items[] = { "mikroProzessor", "implantatNormal", "bombenkopf", "atombombe", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "kabelbinder", "gpstracker" };
+    };
+	
     class cop {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "gpstracker", "spikeStrip", "mauer", "blitzer", "bunker", "flutlicht", "licht", "plastik", "schranke", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
     };
 };
 
