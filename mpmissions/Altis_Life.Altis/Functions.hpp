@@ -26,6 +26,13 @@ class Life_Client_Core {
         class regelWerk {};
     };
     
+    class Ausweis
+    	{
+        file = "core\Ausweis";
+        class Lizenzsehen {};
+        class Lizenzzeigen {};
+   	 };
+    
     class holy_help {
 		file = "core\holy_help";
 		class holy_help;
@@ -66,6 +73,13 @@ class Life_Client_Core {
         class mine {};
         class newsBroadcast {};
         class packupSpikes {};
+        class packupmauer {};
+		class packupschranke {};
+		class packupblitzer {};
+		class packupplastik {};
+		class packupbunker {};
+		class packuplicht {};
+		class packupflutlicht {};
         class pickupItem {};
         class pickupMoney {};
         class postBail {};
@@ -156,6 +170,7 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
+        class copEnter {};
     };
 
     class Dialog_Controls {
@@ -286,6 +301,15 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+        class schranke {};
+		class blitzer {};
+		class plastik {};
+		class bunker {};
+		class licht {};
+		class flutlicht {};
+		class mauer {};
+		class gpsTracker {};
+		class speedBomb {};
     };
 
     class Medical_System {

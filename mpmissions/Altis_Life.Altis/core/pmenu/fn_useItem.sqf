@@ -12,11 +12,10 @@ if ((lbCurSel 2005) isEqualTo -1) exitWith {hint localize "STR_ISTR_SelectItemFi
 _item = CONTROL_DATA(2005);
 
 switch (true) do {
-    case (_item in ["waterBottle","coffee","redgull"]): {
+    case (_item in ["waterBottle","coffee","redgull","redGullPalette"]): {
         if ([false,_item,1] call life_fnc_handleInv) then {
             life_thirst = 100;
-            if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
-            if (_item isEqualTo "redgull" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
+            if ((_item isEqualTo "redgull") && (playerside isEqualTo civilian)) then {
                 [] spawn {
                     life_redgull_effect = time;
                     titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
@@ -25,11 +24,91 @@ switch (true) do {
                     player enableFatigue true;
                 };
             };
+			if ((_item isEqualTo "redGullPalette") && (playerside isEqualTo civilian)) then {
+                [] spawn {
+                    titleText["Du fühlst dich für die restliche Inselperiode beflügelt!","PLAIN"];
+					life_redgull_effect = -1;
+                    player enableFatigue false;
+                };
+            };
         };
     };
-
+	
+	case (_item == "schmerzmittel"):
+	{
+		if(vehicle player != player) exitWith {hintSilent "Du kannst dich nicht in einem Fahrzeug heilen..."};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			player setDamage 0;
+		//	player setFatigue 0;
+			player allowDamage true;
+			player enableSimulation true;
+			closeDialog 0;
+			hintSilent "Die Schmerzmittel haben gewirkt! Du hast nun wieder volles Leben."
+		};
+	};
+	
     case (_item isEqualTo "boltcutter"): {
         [cursorObject] spawn life_fnc_boltcutter;
+        closeDialog 0;
+    };
+	
+	case (_item isEqualTo "implantatHitmarker"): {
+		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
+		if (license_civ_implantat_hitmarker) exitWith {hint "Du besitzt dieses Implantat bereits!";};
+		if ([false,_item,1] call life_fnc_handleInv) then {
+            license_civ_implantat_hitmarker = true;
+			closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "implantatPaycheck"): {
+		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
+		if (license_civ_implantat_paycheck) exitWith {hint "Du besitzt dieses Implantat bereits!";};
+		if ([false,_item,1] call life_fnc_handleInv) then {
+            license_civ_implantat_paycheck = true;
+			closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "implantatBackpack"): {
+		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
+		if (license_civ_implantat_backpack) exitWith {hint "Du besitzt dieses Implantat bereits!";};
+		if ([false,_item,1] call life_fnc_handleInv) then {
+            license_civ_implantat_backpack = true;
+			closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "implantatAusdauer"): {
+		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"}; 
+		if (license_civ_implantat_ausdauer) exitWith {hint "Du besitzt dieses Implantat bereits!";};
+		if ([false,_item,1] call life_fnc_handleInv) then {
+            license_civ_implantat_ausdauer = true;
+			closeDialog 0;
+        };   
+    };
+	
+	case (_item isEqualTo "implantatSchneller"): {
+		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
+		if (license_civ_implantat_schneller) exitWith {hint "Du besitzt dieses Implantat bereits!";};
+		if ([false,_item,1] call life_fnc_handleInv) then {
+            license_civ_implantat_schneller = true;
+			closeDialog 0;
+        };  
+    };
+	
+	case (_item isEqualTo "implantatNachtsicht"): {
+		if (playerSide != civilian) exitWith {hint "Du kannst diesen Gegenstand nicht benutzen!"};
+		if (license_civ_implantat_nachtsicht) exitWith {hint "Du besitzt dieses Implantat bereits!";};
+		if ([false,_item,1] call life_fnc_handleInv) then {
+            license_civ_implantat_nachtsicht = true;
+			closeDialog 0;
+        };  
+    };
+	
+	case (_item isEqualTo "gpstracker"): {
+        [cursorObject] spawn life_fnc_gpsTracker;
         closeDialog 0;
     };
 
@@ -39,7 +118,12 @@ switch (true) do {
         [cursorObject] spawn life_fnc_blastingCharge;
         closeDialog 0;
     };
-
+	
+	case (_item isEqualTo "speedbomb"):
+    {
+    	[] spawn life_fnc_speedBomb;
+    };
+	
     case (_item isEqualTo "defusekit"): {
         [cursorObject] spawn life_fnc_defuseKit;
         closeDialog 0;
@@ -60,15 +144,71 @@ switch (true) do {
             closeDialog 0;
         };
     };
+	
+	case (_item isEqualTo "blitzer"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_blitzer;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "bunker"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_bunker;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "flutlicht"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_flutlicht;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "licht"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_licht;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "plastik"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_plastik;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "schranke"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_schranke;
+            closeDialog 0;
+        };
+    };
+	
+	case (_item isEqualTo "mauer"): {
+        if (!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"; closeDialog 0};
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            [] spawn life_fnc_mauer;
+            closeDialog 0;
+        };
+    };
 
     case (_item isEqualTo "fuelFull"): {
-        if !(isNull objectParent player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
+        if (vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
         [] spawn life_fnc_jerryRefuel;
         closeDialog 0;
     };
 
     case (_item isEqualTo "fuelEmpty"): {
-        [] spawn life_fnc_jerryCanRefuel;
+        [] spawn life_fnc_jerrycanRefuel;
         closeDialog 0;
     };
 
