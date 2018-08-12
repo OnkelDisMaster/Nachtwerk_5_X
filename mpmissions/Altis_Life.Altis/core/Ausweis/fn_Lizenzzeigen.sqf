@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 if(isServer)exitWith{};
 private["_ziel", "_rang", "_marke", "_org", "_message","_bargeld"];
 if(vehicle player != player )exitWith{};
