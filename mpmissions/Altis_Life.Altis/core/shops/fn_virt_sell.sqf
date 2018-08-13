@@ -12,9 +12,6 @@ _type = lbData[2402,(lbCurSel 2402)];
 _price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
 
 _marketprice = [_type] call life_fnc_marketGetSellPrice;
-
-if ((_marketprice <= 0)&&(_marketprice != -1)) then {_marketprice = 100;};
-
 if(_marketprice != -1) then
 {
 	_price = _marketprice;
