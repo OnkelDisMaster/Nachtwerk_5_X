@@ -22,7 +22,7 @@ class Life_Client_Core {
         class setupActions {};
         class setupEVH {};
         class survival {};
-        class welcomeNotification {};
+        class welcome {};
         class regelWerk {};
     };
     
@@ -249,6 +249,7 @@ class Life_Client_Core {
         class whereAmI {};
         class randomRound {};
         class seatbelt {};
+        class introCam {};
     };
 
     class Gangs {

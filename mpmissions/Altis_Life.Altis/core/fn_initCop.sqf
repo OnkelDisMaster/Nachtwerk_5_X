@@ -22,6 +22,19 @@ if (!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
 
 
 player setVariable ["rank",(FETCH_CONST(life_coplevel)),true];
+
+[["blacklisted ground/sea vehicles"],["Blacklisted Choppers"]] execVM "core\vehicle\Lifting\lift_init.sqf";
+[] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
+
+//[player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set
+
+if (license_cop_hitmarker) then {life_hitmarker = true;};
+[] spawn life_fnc_IntroCam;
+[] call life_fnc_playerSkins;
+[] call life_fnc_initPayChecks;
+
+
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+

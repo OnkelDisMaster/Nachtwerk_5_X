@@ -13,6 +13,27 @@ if ((FETCH_CONST(life_medicLevel)) < 1 && (FETCH_CONST(life_adminlevel) isEqualT
     sleep 35;
 };
 
+	removeAllWeapons player;
+	player forceAddUniform "U_B_CombatUniform_mcam";
+	player setObjectTextureGlobal [0,"skins\human\medic\FW_Uniform.paa"];
+	player addBackpackGlobal "B_Kitbag_sgg";
+	(unitBackpack player) setObjectTextureGlobal [0,"skins\human\medic\FW_backpack.paa"];
+	player addItem "ItemMap";
+	player assignItem "ItemMap";
+	player addItem "ItemGPS";
+	player assignItem "ItemGPS";
+	player addItem "ToolKit";
+	player addItem "Medikit";
+
+[["blacklisted ground/sea vehicles"],["B_Heli_Light_01_F"]] execVM "core\vehicle\Lifting\lift_init.sqf";
+[] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
+
+[] call life_fnc_playerSkins;
+[] spawn life_fnc_IntroCam;
+[] call life_fnc_initPayChecks;
+
+//[player] remoteExecCall ["life_fnc_hatBounty",RSERV];
+
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
