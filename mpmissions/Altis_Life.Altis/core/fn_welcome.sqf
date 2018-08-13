@@ -30,7 +30,7 @@ sleep 5;
 	8, 
 	0.5 
 ] spawn BIS_fnc_dynamicText;
-sleep 10;
+sleep 8;
 
 [
 	format["<t color='#c18c48' size='1.0'>Server hosted By</t><br/><t size='0.7'> %1</t>",_serververwaltung],
@@ -39,7 +39,7 @@ sleep 10;
 	3,
 	0.5
 ] spawn BIS_fnc_dynamicText;
-sleep 5;
+sleep 4;
 [
 	format["<t color='#c18c48'  size='1.0'>Scripter</t><br/><t size='0.7'> %1</t>",_scripter],
 	[safezoneX + safezoneW - 2.3,0.50],
@@ -47,7 +47,7 @@ sleep 5;
 	3,
 	0.5
 ] spawn BIS_fnc_dynamicText;
-sleep 5;
+sleep 2.5;
 
 [
 	format["<t color='#c18c48' size='1.0'>Designer</t><br/><t size='0.7'> %1</t>",_designer],
@@ -56,7 +56,7 @@ sleep 5;
 	3,
 	0.5
 ] spawn BIS_fnc_dynamicText;
-sleep 5;
+sleep 2.5;
 
 [ 
 	format["<t color='#c18c48' size='1.5'>Das Nachtwerk-Team</t><br/><t size='0.7'> wünscht Dir viel Spaß</t>"], 
