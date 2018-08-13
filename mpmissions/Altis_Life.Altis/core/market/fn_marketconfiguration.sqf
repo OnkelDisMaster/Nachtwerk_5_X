@@ -35,7 +35,7 @@ life_market_resources = [
 	["eisen", 3500, 0, 4500, 2, 1, 
 		[
 			["kupfer",1],
-			["glass",1]
+			["glass",1],
 			["alu"]
 		] 
 	],
@@ -118,11 +118,6 @@ life_market_resources = [
 			["obsidian",1],
 			["kupfer",1],
 			["eisen",1]
-		] 
-	],
-    
-	["goldbar", 55000, 0, 75000, 2, 1, 
-		[ 
 		] 
 	],
 	
