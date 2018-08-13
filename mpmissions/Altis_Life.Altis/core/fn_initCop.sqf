@@ -30,6 +30,7 @@ player setVariable ["rank",(FETCH_CONST(life_coplevel)),true];
 
 if (license_cop_hitmarker) then {life_hitmarker = true;};
 [] spawn life_fnc_IntroCam;
+[] call life_fnc_welcome;
 [] call life_fnc_playerSkins;
 [] call life_fnc_initPayChecks;
 
