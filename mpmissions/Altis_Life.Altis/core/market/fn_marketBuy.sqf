@@ -25,7 +25,7 @@ _price = _price + _modifier;
 _globalprice = _globalprice + _modifier;
 
 //Check borders
-if(_price < 0) then {_price = 0;};
+if(_price < 0) then {_price = 1;};
 
 _max = _arr_resource select 3;
 

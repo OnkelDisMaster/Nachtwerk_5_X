@@ -17,8 +17,8 @@ if(_marketprice != -1) then
 	_price = _marketprice;
 };
 
-//if (_price isEqualTo -1) exitWith {};
-if (_price < 1) exitWith {hint "Der Preis ist zu niedrig! (kleiner als 1)";};
+if (_price isEqualTo -1) exitWith {};
+//if (_price < 1) exitWith {hint "Der Preis ist zu niedrig! (kleiner als 1)";};
 
 _amount = ctrlText 2405;
 
