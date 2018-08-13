@@ -17,13 +17,9 @@ if(_marketprice != -1) then
 	_price = _marketprice;
 };
 
-//if (_price isEqualTo -1) exitWith {};
-if (_price < 1) exitWith {hint "Der Preis ist zu niedrig! (kleiner als 1)";};
+if (_price isEqualTo -1) exitWith {};
 
 _amount = ctrlText 2405;
-
-if (_amount > 100) exitWith {hint "Du darfst maximal 100 Items auf einmal verkaufen!";};
-
 if (!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _amount = parseNumber (_amount);
 if (_amount > (ITEM_VALUE(_type))) exitWith {hint localize "STR_Shop_Virt_NotEnough"};
