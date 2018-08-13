@@ -14,33 +14,33 @@ life_market_resources = [
 	
 	// Default İsler
 	
-	["oel", 3150, 0, 7850, 3, 1, 
+	["oel", 4500, 3150, 7850, 3, 1, 
 		[ 
 			["diamant",1], 
-			["kupfer"],
-			["eisen"],
-			["alu"]
+			["kupfer",1],
+			["eisen",1],
+			["alu,1"]
 		] 
 	],
 	
-	["kupfer", 1100, 0, 4500, 5, 2, 
+	["kupfer", 1500, 1100, 4500, 5, 2, 
 		[ 
 			["eisen",1],
 			["salz",1],
 			["glass",1],
-			["alu"]
+			["alu,1"]
 		] 
 	],
 	
-	["eisen", 3500, 0, 4500, 2, 1, 
+	["eisen", 1200, 3500, 4500, 2, 1, 
 		[
 			["kupfer",1],
 			["glass",1],
-			["alu"]
+			["alu,1"]
 		] 
 	],
 	
-	["alu", 1890, 0, 6510, 5, 2, 
+	["alu", 2700, 1890, 6510, 5, 2, 
 		[ 
 			["eisen",1],
 			["kupfer",1],
@@ -48,7 +48,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["platin", 2450, 0, 7550, 5, 2, 
+    ["platin", 3500, 2450, 7550, 5, 2, 
 		[ 
 			["alu",1],
 			["eisen",1],
@@ -57,7 +57,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["salz", 1750, 0, 4550, 5, 2, 
+    ["salz", 2600, 1750, 4550, 5, 2, 
 		[ 
 			["eisen",1],
 			["kupfer",1],
@@ -65,7 +65,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["glass", 1400, 0, 4600, 5, 2, 
+    ["glass", 2000, 1400, 4600, 5, 2, 
 		[ 
 			["eisen",1],
 			["kupfer",1],
@@ -73,7 +73,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["bambusleitung", 875, 0, 4625, 5, 2, 
+    ["bambusleitung", 1250, 875, 4625, 5, 2, 
 		[ 
 			["eol",1],
 			["salz",1],
@@ -81,7 +81,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["diamant", 3030, 0, 7730, 5, 2, 
+    ["diamant", 4300, 3030, 7730, 5, 2, 
 		[ 
 			["juwelen",1],
 			["oel",1],
@@ -89,7 +89,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["krone", 30000, 0, 70000, 5, 2, 
+    ["krone", 45000, 30000, 70000, 5, 2, 
 		[ 
 			["obsidian",1],
 			["diamant",1],
@@ -97,7 +97,7 @@ life_market_resources = [
 		] 
 	],
 	
-    ["juwelen", 3170, 0, 9030, 5, 2, 
+    ["juwelen", 5000, 3170, 9030, 5, 2, 
 		[ 
 			["diamant",1],
 			["obsidian",1],
@@ -105,14 +105,14 @@ life_market_resources = [
 		] 
 	],
     
-    ["marmor", 2450, 0, 6550, 5, 2, 
+    ["marmor", 3500, 2450, 6550, 5, 2, 
 		[ 
 			["obsidian",1],
 			["diamant",1]
 		] 
 	],
 	
-    ["obsidian", 2730, 0, 7070, 5, 2, 
+    ["obsidian", 3500, 2730, 7070, 5, 2, 
 		[ 
 			["marmor",1],
 			["obsidian",1],
@@ -127,7 +127,7 @@ life_market_resources = [
         ]
     ],
     
-	["weed", 2100, 0, 5700, 10, 7,   
+	["weed", 3000, 2100, 5700, 10, 7,   
 		[ 
 			["heroin",1],
 			["koks",1],
@@ -137,7 +137,7 @@ life_market_resources = [
 		] 
 	],
 
-	["koks", 3640, 0, 7500, 15, 10,   
+	["koks", 5400, 3640, 7500, 15, 10,   
 		[ 
 			["heroin",1], 
 			["weed",1],
@@ -147,7 +147,7 @@ life_market_resources = [
 		] 
 	],
 		
-	["heroin", 2940, 0, 6000, 15, 10,   
+	["heroin", 4400, 2940, 6000, 15, 10,   
 		[ 
 			["koks",1], 
 			["weed",1],
@@ -157,7 +157,7 @@ life_market_resources = [
         ]    
 	],
     
-    ["polenboeller", 2100, 0, 3900, 15, 10,   
+    ["polenboeller", 3000, 2100, 3900, 15, 10,   
 		[ 
 			["weed",1], 
 			["koks",1],
@@ -167,7 +167,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["zigaretten", 980, 0, 4500, 15, 10,   
+    ["zigaretten", 3400, 980, 4500, 15, 10,   
 		[ 
 			["weed",1], 
 			["koks",1],
@@ -177,7 +177,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["korallenketten", 9800, 0, 28200, 15, 10,   
+    ["korallenketten", 13000, 9800, 28200, 15, 10,   
 		[ 
 			["weed",1], 
 			["koks",1],
@@ -187,7 +187,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["meth", 2170, 0, 6030, 15, 10,   
+    ["meth", 3900, 2170, 6030, 15, 10,   
 		[ 
 			["weed",1], 
 			["koks",1],
@@ -201,21 +201,21 @@ life_market_resources = [
 		] 
 	],
     
-    ["uranIV", 6000, 0, 45000, 15, 10,   
+    ["uranIV", 22000, 6000, 45000, 15, 10,   
 		[ 
 			["plutonium",1], 
 			["brennstab",1]
 		] 
 	],
     
-    ["plutonium", 17000, 0, 32000, 15, 10,   
+    ["plutonium", 25000, 17000, 32000, 15, 10,   
 		[ 
 			["uranIV",1], 
 			["brennstab",1]
 		] 
 	],
     
-    ["brennstab", 22250, 0, 50000, 15, 10,   
+    ["brennstab", 32000, 22250, 50000, 15, 10,   
 		[ 
 			["uranIV",1], 
 			["plutonium",1],
@@ -223,7 +223,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["atombombe", 455000, 0, 4700000, 15, 10,   
+    ["atombombe", 2300000, 455000, 4700000, 15, 10,   
 		[ 
 			["uranIV",1], 
 			["plutonium",1],
@@ -254,7 +254,7 @@ publicVariable "life_market_shortnames";
 	life_market_prices = []; //[SHORTNAME,CURRENTPRICE,DIRECTIONGLOBAL,DIRECTIONLOCAL]
 	{
 	
-		life_market_prices set [count life_market_prices, [_x select 0, _x select 1, 0, 0] ];
+		life_market_prices set [count life_market_prices, [_x select 0, _x select 1, 0] ];
 	}
 	foreach life_market_resources;
 	
