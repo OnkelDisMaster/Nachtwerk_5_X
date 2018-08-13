@@ -18,6 +18,9 @@ if(_marketprice != -1) then
 	_price = _marketprice;
 };
 
+if (_price < 1) exitWith {hint "Der Preis ist zu niedrig! (kleiner als 1)";};
+if (_amount > 50) exitWith {hint "Du darfst maximal 50 Items auf einmal kaufen!";};
+
 if (!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _diff = [_type,parseNumber(_amount),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 _amount = parseNumber(_amount);
