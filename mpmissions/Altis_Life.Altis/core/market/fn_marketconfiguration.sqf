@@ -14,7 +14,7 @@ life_market_resources = [
 	
 	// Default İsler
 	
-	["oil_processed", 5500, 0, 6250, 3, 1, 
+	["oel", 5500, 0, 6250, 3, 1, 
 		[ 
 			["diamond_cut",1], 
 			["iron_refined",1],
@@ -25,7 +25,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamond_cut", 4530, 0, 5250, 5, 2, 
+	["kupfer", 4530, 0, 5250, 5, 2, 
 		[ 
 			["oil_processed",1],
 			["iron_refined",1],
@@ -37,7 +37,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["copper_refined", 2500, 0, 3500, 2, 1, 
+	["eisen", 2500, 0, 3500, 2, 1, 
 		[ 
 			["diamond_cut",1], 
 			["oil_processed",1],
@@ -48,10 +48,82 @@ life_market_resources = [
 		] 
 	],
 	
-	["iron_refined", 3500, 0, 4250, 3, 1,  
+	["alu", 4530, 0, 5250, 5, 2, 
 		[ 
-			["diamond_cut",1], 
 			["oil_processed",1],
+			["iron_refined",1],
+			["copper_refined",1],
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["platin", 4530, 0, 5250, 5, 2, 
+		[ 
+			["oil_processed",1],
+			["iron_refined",1],
+			["copper_refined",1],
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["salz", 4530, 0, 5250, 5, 2, 
+		[ 
+			["oil_processed",1],
+			["iron_refined",1],
+			["copper_refined",1],
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["glass", 4530, 0, 5250, 5, 2, 
+		[ 
+			["oil_processed",1],
+			["iron_refined",1],
+			["copper_refined",1],
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["bambusleitung", 4530, 0, 5250, 5, 2, 
+		[ 
+			["oil_processed",1],
+			["iron_refined",1],
+			["copper_refined",1],
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["diamant", 4530, 0, 5250, 5, 2, 
+		[ 
+			["oil_processed",1],
+			["iron_refined",1],
+			["copper_refined",1],
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["krone", 4530, 0, 5250, 5, 2, 
+		[ 
+			["oil_processed",1],
+			["iron_refined",1],
 			["copper_refined",1],
 			["gold_refined",1],
 			["salt_refined",1],
@@ -60,34 +132,42 @@ life_market_resources = [
 		] 
 	],
 	
-	["salt_refined", 4850, 0, 5750, 2, 1, 
+    ["juwelen", 4530, 0, 5250, 5, 2, 
 		[ 
-
+			["oil_processed",1],
+			["iron_refined",1],
 			["copper_refined",1],
 			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["marmor", 4530, 0, 5250, 5, 2, 
+		[ 
+			["oil_processed",1],
+			["iron_refined",1],
+			["copper_refined",1],
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
 			["glass",1] 
 		] 
 	],
 	
-	["glass", 3450, 0, 4550, 2, 1, 
+    ["obsidian", 4530, 0, 5250, 5, 2, 
 		[ 
-			["diamond_cut",1], 
-			["oil_processed",1],
-			["iron_refined",1],
-			["copper_refined",1]
-		] 
-	],
-	
-	["cement", 3350, 0, 4100, 2, 1, 
-		[ 
-
 			["oil_processed",1],
 			["iron_refined",1],
 			["copper_refined",1],
-			["glass",1]
+			["gold_refined",1],
+			["salt_refined",1],
+			["cement",1],
+			["glass",1] 
 		] 
 	],
-	
+    
 	["goldbar", 55000, 0, 75000, 2, 1, 
 		[ 
 			["diamond_cut",1], 
@@ -98,21 +178,77 @@ life_market_resources = [
 		] 
 	],
 	
-	["marijuana", 5750, 0, 7500, 10, 7,   
+	["weed", 5750, 0, 7500, 10, 7,   
 		[ 
 			["cocaine_processed",1],
 			["heroin_processed",1]
 		] 
 	],
 
-	["cocaine_processed", 6300, 0, 7850, 15, 10,   
+	["koks", 6300, 0, 7850, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["heroin_processed",1]
 		] 
 	],
 		
-	["heroin_processed", 6500, 0, 8700, 15, 10,   
+	["heroin", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["polenboeller", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["zigaretten", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["korallenketten", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["meth", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["uranIV", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["plutonium", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["brennstab", 6500, 0, 8700, 15, 10,   
+		[ 
+			["marijuana",1], 
+			["cocaine_processed",1]
+		] 
+	],
+    
+    ["atombombe", 6500, 0, 8700, 15, 10,   
 		[ 
 			["marijuana",1], 
 			["cocaine_processed",1]
