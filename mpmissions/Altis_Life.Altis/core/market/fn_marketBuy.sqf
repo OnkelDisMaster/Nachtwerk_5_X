@@ -32,6 +32,7 @@ _min = _arr_resource select 2;
 
 if( _price > _max)then {_price = _max;};
 if( _price < _min)then {_price = _min;};
+if(_price isEqualTo 0) then {_price = 100;};
 
 //insert into new array
 [_shortname, [_shortname,_price,_globalprice,_modifier], false ] call life_fnc_marketSetPriceRow; //dont broadcast!
