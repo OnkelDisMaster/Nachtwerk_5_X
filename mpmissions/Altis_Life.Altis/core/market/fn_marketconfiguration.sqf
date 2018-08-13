@@ -121,6 +121,12 @@ life_market_resources = [
 		] 
 	],
 	
+    ["goldbar", 200000, 200000, 200000, 2, 1, 
+		[
+        
+        ]
+    ],
+    
 	["weed", 2100, 0, 5700, 10, 7,   
 		[ 
 			["heroin",1],
@@ -148,6 +154,7 @@ life_market_resources = [
 			["polenboeller",1],
 			["zigaretten",1],
 			["meth",1]
+        ]    
 	],
     
     ["polenboeller", 2100, 0, 3900, 15, 10,   
