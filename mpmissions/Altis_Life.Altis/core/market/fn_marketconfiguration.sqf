@@ -7,7 +7,8 @@
 
 	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	//["gold", 1500, 450, 2300, 8, 5],
-
+                                    --> x Items mal Wert = Drop/Steigen
+                                                --> x verkaufte Items steigern Preise der Items im Kasten drunter
 ////////////MAIN CONFIG
 
 life_market_resources = [
@@ -97,7 +98,7 @@ life_market_resources = [
 		] 
 	],
 	
-    ["juwelen", 5000, 3170, 9030, 5, 2, 
+    ["juwelen", 15000, 3170, 60300, 5, 2, 
 		[ 
 			["diamant",1],
 			["obsidian",1],
@@ -112,7 +113,7 @@ life_market_resources = [
 		] 
 	],
 	
-    ["obsidian", 3500, 2730, 7070, 5, 2, 
+    ["obsidian", 5500, 2730, 9070, 5, 2, 
 		[ 
 			["marmor",1],
 			["obsidian",1],
