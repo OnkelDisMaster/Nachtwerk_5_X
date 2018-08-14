@@ -709,14 +709,14 @@ class LifeCfgVehicles {
 
     class B_G_Offroad_01_F {
         vItemSpace = 100;
-        conditions = { {"driver"}, {""}, {""}, {""} };
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 40000;
         textures[] = { };
     };
 
     class B_G_Offroad_01_armed_F {
         vItemSpace = 75;
-        conditions = { {"rebel"}, {""}, {""}, {""} };//license_civ_rebel
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 1600000;
         textures[] = { };
     };
@@ -864,7 +864,7 @@ class LifeCfgVehicles {
 
     class O_MRAP_02_F {
         vItemSpace = 100;
-        conditions = { {"rebel"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 4500000;
         textures[] = { 
 			{ "Flecktarn", "civ", {
@@ -888,7 +888,7 @@ class LifeCfgVehicles {
 	
 	class O_MRAP_02_hmg_F {
         vItemSpace = 100;
-        conditions = { {"rebel"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 45000000;
         textures[] = { 
 			{ "Flecktarn", "civ", {
@@ -911,7 +911,7 @@ class LifeCfgVehicles {
 
     class C_Offroad_01_F {
         vItemSpace = 50;
-        conditions = { {"driver"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 40000;
         textures[] = {
             { "Red", "civ", {
@@ -961,7 +961,7 @@ class LifeCfgVehicles {
 
     class C_Kart_01_Blu_F {
         vItemSpace = -1;
-        conditions = { {"driver"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 50000;
         textures[] = {};
     };
@@ -979,7 +979,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_sport_F {
         vItemSpace = 45;
-        conditions = { {"driver"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 400000;
         textures[] = {
 			{ "Red", "civ", {
@@ -1014,7 +1014,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_Quadbike_01_F {
         vItemSpace = 30;
-        conditions = { {"driver"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 7500;
         textures[] = {			
 			{ "Polizei", "cop", {
@@ -1095,7 +1095,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_F {
         vItemSpace = 50;
-        conditions = { {"driver"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 25000;
         textures[] = {
             { "Red", "civ", {
@@ -1130,7 +1130,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_SUV_01_F {
         vItemSpace = 30;
-        conditions = { {"driver"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";//license_civ_driver
         price = 35000;
         textures[] = {
             { "Dunkelrot", "civ", {
@@ -1208,7 +1208,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Van_01_transport_F {
         vItemSpace = 150;
-        conditions = { {"driver"}, {""}, {""}, {""} };//license_civ_driver
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 150000;
         textures[] = {
             { "White", "civ", {
@@ -1338,7 +1338,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Van_02_transport_F {	// Orange Van Passagier
         vItemSpace = 200;
-        conditions = { {"rebel"}, {""}, {""}, {""} };//license_civ_trucking
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 200000;
         textures[] = {
 			{ "AAN News", "civ", {
@@ -1409,7 +1409,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_MRAP_01_F {
         vItemSpace = 100;
-        conditions = { {"rebel"}, {""}, {""}, {""} };
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 3500000;
         textures[] = {
             { "Schneetarn", "civ", {
@@ -1445,7 +1445,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	
 	class B_T_LSV_01_unarmed_olive_F {
         vItemSpace = 50;
-        conditions = { {"rebel"}, {""}, {""}, {""} };
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 550000;
         textures[] = {
 			{ "Doppler", "civ", {
@@ -1462,7 +1462,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
 	class O_T_LSV_02_unarmed_arid_F {
         vItemSpace = 50;
-        conditions = { {"rebel"}, {""}, {""}, {""} };
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 550000;
         textures[] = {};
     };
@@ -1513,7 +1513,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	
     class B_Heli_Light_01_stripped_F {
         vItemSpace = 125;
-        conditions = { {"rebel"}, {""}, {""}, {""} };
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 450000;
         textures[] = {
             { "Rebel Digital", "reb", {
@@ -1524,7 +1524,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	
 	class I_Heli_light_03_unarmed_F { 
         vItemSpace = -1;
-        conditions = { {""}, {"cAir"}, {"mAir"}, {""} };
+        conditions = "!(playerSide isEqualTo civilian)";
         price = 200000;
         textures[] = {
 			{ "Polizei", "cop", {
