@@ -463,7 +463,7 @@ class LifeCfgVehicles {
 	
 	class O_Heli_Transport_04_F {
         vItemSpace = 500;
-        conditions = { {"rebel"}, {"cAir"}, {"mAir"}, {""} };//license_cop_cAir
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";//license_cop_cAir
         price = 14500000;
         textures[] = {
 			{ "Camo", "civ", {
@@ -483,7 +483,7 @@ class LifeCfgVehicles {
 
 	class O_Heli_Transport_04_box_F {
         vItemSpace = 800;
-        conditions = { {"rebel"}, {"cAir"}, {"mAir"}, {""} };//license_cop_cAir
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";//license_cop_cAir
         price = 19500000;
         textures[] = {
 			{ "Camo", "civ", {
@@ -503,7 +503,7 @@ class LifeCfgVehicles {
 
 	class B_Heli_Transport_03_unarmed_F {
         vItemSpace = 600;
-        conditions = { {"rebel"}, {"cAir"}, {"mAir"}, {""} };//license_cop_cAir
+        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";//license_cop_cAir
         price = 14500000;
         textures[] = {
 			{ "Carbon Hexagon", "civ", {
