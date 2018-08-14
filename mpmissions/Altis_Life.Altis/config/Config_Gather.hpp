@@ -1,37 +1,93 @@
 class CfgGather {
     class Resources {
         class apple {
-            amount = 5;
+            amount =  (random(4)+1);
             zones[] = { "apple_1", "apple_2", "apple_3", "apple_4" };
-            item = "";
+            item = ""; 
             zoneSize = 30;
         };
 
         class peach {
-            amount = 5;
+            amount = (random(4)+1);
             zones[] = { "peaches_1", "peaches_2", "peaches_3", "peaches_4" };
-            item = "";
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+		class ananas {
+            amount = (random(4)+1);
+            zones[] = { "ananas_1", "ananas_2", "ananas_3" };
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+		class kokosnuss {
+            amount = (random(4)+1);
+            zones[] = { "kokosnuss_1", "kokosnuss_2", "kokosnuss_3" };
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+		class bananen {
+            amount = (random(4)+1);
+            zones[] = { "bananen_1", "bananen_2", "bananen_3" };
+            item = ""; 
             zoneSize = 30;
         };
 
-        class heroin_unprocessed {
-            amount = 3;
+		class bambus {
+            amount = (random(5)+1);
+            zones[] = { "bambus_1" };
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+		class tabak {
+            amount = (random(3)+1);
+            zones[] = { "tabak_1" };
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+		class schwarzpulver {
+            amount = (random(3)+1);
+            zones[] = { "schwarzpulver_1" };
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+		class methu {
+            amount = (random(3)+1);
+            zones[] = { "methu_1" };
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+		class korallen {
+            amount = (random(2)+1);
+            zones[] = { "korallenriff" };
+            item = ""; 
+            zoneSize = 30;
+        };
+		
+        class heroinu {
+            amount = (random(2)+1);
             zones[] = { "heroin_1" };
-            item = "";
+            item = ""; 
             zoneSize = 30;
         };
 
-        class cocaine_unprocessed {
-            amount = 3;
+        class koksu {
+            amount = (random(2)+1);
             zones[] = { "cocaine_1" };
-            item = "";
+            item = ""; 
             zoneSize = 30;
         };
 
-        class cannabis {
-            amount = 3;
+        class weedu {
+            amount = (random(3)+1);
             zones[] = { "weed_1" };
-            item = "";
+            item = ""; 
             zoneSize = 30;
         };
     };
@@ -70,60 +126,81 @@ Example 2:
 */
 
     class Minerals {
-        class copper_unrefined {
-            amount = 2;
+         class kupfererz {
+            amount = (random(2)+1);
             zones[] = { "copper_mine" };
             item = "pickaxe";
-            mined[] = {"copper_unrefined"};
-            zoneSize = 30;
+            mined[] = {"kupfererz"};
         };
 
-        class iron_unrefined {
-            amount = 2;
+        class eisenerz {
+            amount = (random(2)+1);
             zones[] = { "iron_mine" };
             item = "pickaxe";
-            mined[] = { "iron_unrefined" };
-            zoneSize = 30;
+            mined[] = { "eisenerz" };
         };
 
-        class salt_unrefined {
-            amount = 2;
+        class salzu {
+            amount = (random(5)+1);
             zones[] = { "salt_mine" };
             item = "pickaxe";
-            mined[] = { "salt_unrefined" };
-            zoneSize = 30;
+            mined[] = { "salzu" };
         };
 
         class sand {
-            amount = 2;
+            amount = (random(5)+1);
             zones[] = { "sand_mine" };
             item = "pickaxe";
             mined[] = { "sand" };
-            zoneSize = 30;
         };
 
-        class diamond_uncut {
-            amount = 2;
+        class diamantu {
+            amount = (random(3)+1);
             zones[] = { "diamond_mine" };
             item = "pickaxe";
-            mined[] = { "diamond_uncut" };
-            zoneSize = 30;
+            mined[] = {{ "diamantu",0,85 }, {"lava",85,100}};
         };
 
-        class rock {
-            amount = 2;
-            zones[] = { "rock_quarry" };
+        class platinerz {
+            amount = (random(2)+1);
+            zones[] = { "platin_mine" };
             item = "pickaxe";
-            mined[] = { "rock" };
-            zoneSize = 30;
+            mined[] = { "platinerz" };
         };
 
-        class oil_unprocessed {
-            amount = 2;
+        class oelu {
+            amount = (random(2)+1);
             zones[] = { "oil_field_1", "oil_field_2" };
             item = "pickaxe";
-            mined[] = { "oil_unprocessed" };
-            zoneSize = 30;
+            mined[] = { "oelu" };
+        };
+		
+		class aluerz {
+            amount = (random(2)+1);
+            zones[] = { "alu_mine" };
+            item = "pickaxe";
+            mined[] = { "aluerz" };
+        };
+		
+        class metallgrube {
+            amount = (random(6)+1);
+            zones[] = { "metallgrube" };
+            item = "pickaxe";
+            mined[] = { "eisenerz",0,30 },{ "kupfererz",30,60 },{ "aluerz",60,80 },{ "platinerz",80,100 };
+        };
+        
+		class marmorRoh {
+            amount = (random(4)+1);
+            zones[] = { "marmor_mine" };
+            item = "pickaxe";
+            mined[] = {{ "marmorRoh",0,80 }, {"lava",80,90}, { "schurfgut",90,100 }};
+        };
+		
+		class uranerz {
+            amount = (random(2)+1);
+            zones[] = { "uran_mine" };
+            item = "pickaxe";
+            mined[] = { "uranerz" };
         };
     };
 };
