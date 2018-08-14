@@ -186,7 +186,7 @@ Example 2:
             amount = (random(6)+1);
             zones[] = { "metallgrube" };
             item = "pickaxe";
-            mined[] = { "eisenerz",0,30 },{ "kupfererz",30,60 },{ "aluerz",60,80 },{ "platinerz",80,100 };
+            mined[] = {{ "eisenerz",0,30 },{ "kupfererz",30,60 },{ "aluerz",60,80 },{ "platinerz",80,100 }};
         };
         
 		class marmorRoh {
