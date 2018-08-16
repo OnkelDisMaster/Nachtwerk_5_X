@@ -399,7 +399,7 @@ class Clothing {
         side = "civ";
         uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, "" },
-            { "U_I_C_Soldier_Bandit_1_F", "", 15000, {"", "", -1" },
+            { "U_I_C_Soldier_Bandit_1_F", "", 15000, "" },
             { "U_I_C_Soldier_Bandit_2_F", "", 15000, "" },
             { "U_I_C_Soldier_Bandit_3_F", "", 15000, "" },
             { "U_I_C_Soldier_Bandit_4_F", "", 15000, "" },
@@ -557,7 +557,7 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" },
-            { "U_I_C_Soldier_Bandit_1_F", "", 5000, {"", "", -1" },
+            { "U_I_C_Soldier_Bandit_1_F", "", 5000, "" },
             { "U_I_C_Soldier_Bandit_2_F", "", 5000, "" },
             { "U_I_C_Soldier_Bandit_3_F", "", 5000, "" },
             { "U_I_C_Soldier_Bandit_4_F", "", 5000, "" },
@@ -682,7 +682,7 @@ class Clothing {
         side = "civ";
         uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, "" },
-			{ "U_I_C_Soldier_Bandit_1_F", "", 5000, {"", "", -1" },
+			{ "U_I_C_Soldier_Bandit_1_F", "", 5000, "" },
 			{ "U_I_C_Soldier_Bandit_2_F", "", 5000, "" },
 			{ "U_I_C_Soldier_Bandit_3_F", "", 5000, "" },
 			{ "U_I_C_Soldier_Bandit_4_F", "", 5000, "" },
