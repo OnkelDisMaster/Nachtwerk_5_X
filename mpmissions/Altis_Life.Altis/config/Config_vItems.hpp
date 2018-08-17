@@ -517,7 +517,7 @@ class VirtualItems {
         sellPrice = 5000;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_boltCutter.paa";
+        icon = "icons\ico_speedbomb.paa";
     };
 
     class defusekit {

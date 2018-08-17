@@ -39,6 +39,27 @@ class Life_Client_Core {
 		class holy_bug;
 	};
     
+    class nw_functions {
+        file = "nw_functions";
+        class savezone {};        
+    };
+    
+    class BountyHunters {
+    		file = "nw_functions\BountyHunters";
+    		class bountyAddMenu {};
+    		class bountyAddP {};
+    		class bountyBuy {};
+    		class bountyGrab {};
+    		class bountyHunterReceive {};
+    		class bountyInfo {};
+    		class bountyKill {};
+    		class bountyList {};
+    		class bountyMenu {};
+    		class markers {};
+			class bountyLebend {};
+			class kopfgeldVar {};
+	};
+    
     class Market {
 		file = "core\market";
 		class openMarketView {};
