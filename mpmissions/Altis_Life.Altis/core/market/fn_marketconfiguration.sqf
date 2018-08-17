@@ -37,7 +37,7 @@ life_market_resources = [
 		[
 			["kupfer",1],
 			["glass",1],
-			["alu,1"]
+			["alu",1"]
 		] 
 	],
 	
