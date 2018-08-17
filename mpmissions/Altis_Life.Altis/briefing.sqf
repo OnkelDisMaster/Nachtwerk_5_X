@@ -4,7 +4,7 @@ player createDiarySubject ["info","Info"];
 
     player createDiaryRecord ["info", //Container
         [
-          //  "Info", //Subsection
+            "Info", //Subsection
                 "
 #Test<br/><br/>
                 "
