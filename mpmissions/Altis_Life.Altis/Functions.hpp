@@ -120,12 +120,13 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class goldGame {};
     };
 
     class Admin {
         file = "core\admin";
         class adminCompensate {};
-        class adminDebugCon {};
+        class adminEvent {};
         class adminFreeze {};
         class admingetID {};
         class adminGodMode {};
