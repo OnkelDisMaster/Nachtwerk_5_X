@@ -73,6 +73,12 @@ class CfgRemoteExec {
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
         F(life_fnc_Lizenzsehen,CLIENT)
+        F(life_fnc_hitMarker,CLIENT)
+		F(life_fnc_bountyHunterReceive,CLIENT)//Bountyhunter
+		F(life_fnc_bountyList,CLIENT)//Bountyhunter
+		F(life_fnc_markers,CLIENT)//Bountyhunter
+		F(life_fnc_hatBounty,ANYONE)//Bountyhunter
+		F(life_fnc_kopfgeldVar,ANYONE)//Bountyhunter
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -115,6 +121,16 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+        F(life_fnc_bountyAdd,SERVER)//Bountyhunter
+		F(life_fnc_amountBounty,SERVER)//Bountyhunter
+		F(life_fnc_bountyFetch,SERVER)//Bountyhunter
+		F(life_fnc_bountyPerson,SERVER)//Bountyhunter
+		F(life_fnc_bountyProfUpdate,SERVER)//Bountyhunter
+		F(life_fnc_bountyRemove,SERVER)//Bountyhunter
+		F(life_fnc_bountyAlter,SERVER)//Bountyhunter
+		F(life_fnc_bountyCrimes,SERVER)//Bountyhunter
+		F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
+		F(TON_fnc_logging,ANYONE)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
