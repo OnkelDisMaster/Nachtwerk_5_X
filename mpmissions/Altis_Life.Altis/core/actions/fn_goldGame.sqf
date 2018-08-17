@@ -55,7 +55,7 @@ if (_chance < 8) then {_belohnung = 5;} else {
 };
 _maxAnz = 10;
 _GoldGameAnz = player getVariable ["GoldGameAnz",-1];
-if (_GoldGameAnz isEqualTo -1) then {if ((round(BANK/30000)+3) > _maxAnz) then {player setVariable ["GoldGameAnz",_maxAnz];} else {player setVariable ["GoldGameAnz",(round(BANK/30000)+3)];};};
+if (_GoldGameAnz isEqualTo -1) then {if ((round(BANK/30000)+5) > _maxAnz) then {player setVariable ["GoldGameAnz",_maxAnz + 15];} else {player setVariable ["GoldGameAnz",(round(BANK/30000)+5)];};};
 if (_GoldGameAnz isEqualTo 0) then {_belohnung = 0;} else {
 	if (_belohnung > 0) then {
 		_newAnz = _GoldGameAnz - _belohnung; 
