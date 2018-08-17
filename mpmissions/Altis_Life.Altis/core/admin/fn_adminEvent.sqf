@@ -6,6 +6,7 @@
     Description:
     Toggles Event Mode.
 */
+hint "Test";
 if (FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0; hint "Du hast dafür keine Berechtigung";};
 switch (life_Event) do
 {
