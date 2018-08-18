@@ -88,9 +88,9 @@ if (life_container_active) exitwith {
     };
     true;
 };
-
 switch (_code) do {
-    // -- Disable commander/tactical view
+
+     // -- Disable commander/tactical view
     if (LIFE_SETTINGS(getNumber,"disableCommanderView") isEqualTo 1) then {
         private _CommandMode = actionKeys "tacticalView";
 
@@ -99,8 +99,8 @@ switch (_code) do {
             _handled = true;
         };
     };
-
-    //Space key for Jumping
+    
+     //Space key for Jumping
     case 57: {
         if (isNil "jumpActionTime") then {jumpActionTime = 0;};
         if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {!life_is_arrested} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {
@@ -109,36 +109,25 @@ switch (_code) do {
             _handled = true;
         };
     };
-    
-    #define IDC_LIFE_BAR_Speaker 3007
-    disableSerialization;
-    //Ohrstöpsel Key (Shift + Bild runter)
-    case 209: {
-        if (_shift) then {
-            if (soundVolume != 1) then {
-				life_fadeSound = false;
-                1 fadeSound 1;
-                hint composeText [ image "icons\sound_new.paa"," Normaler Sound"];
-				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsN.paa";
-				
-            } else {
-				life_fadeSound = true;
-                1 fadeSound 0.1;
-                hint composeText [ image "icons\sound.paa"," 90% Leiser"];
-				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsY.paa";
-            };
-        };
-    };
-    
+
     //Surrender (Shift + B)
     case 48: {
-        if (_shift) then {
-            if (player getVariable ["playerSurrender",false]) then {
-                player setVariable ["playerSurrender",false,true];
+		if (_shift) then {
+			if (player getVariable ["playerSurrender",false]) then {
+				player setVariable ["playerSurrender",false,true];
             } else {
                 [] spawn life_fnc_surrender;
             };
             _handled = true;
+        };
+    };	
+
+    //Map Key
+    case _mapKey: {
+        switch (playerSide) do {
+            case west: {if (!visibleMap) then {[] spawn life_fnc_copMarkers;}};
+            case independent: {if (!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+            case civilian: {if (!visibleMap) then {[] spawn life_fnc_civMarkers;}};
         };
     };
 
@@ -155,8 +144,29 @@ switch (_code) do {
                 player selectWeapon life_curWep_h;
             };
         };
+		
+		//Hitmarker toggle (STRG + Shift + H)
+		if ((_shift) && (_ctrlKey)) then {
+			if (license_civ_implantat_hitmarker || license_cop_hitmarker) then
+			{
+				if (life_hitmarker) then {life_hitmarker = false; hint "Hitmarker Deaktiviert";} else {life_hitmarker = true; hint "Hitmarker Aktiviert";};
+			};           
+        };
     };
+	
+	//Ü Nagelbänder
+	case 26:
+	{	
+		if(vehicle player != player) exitWith {hintSilent "Du bist in einem Fahrzeug!"};
+		if(playerSide == west) then {
+			if(([false,"spikeStrip",1] call life_fnc_handleInv) && (!_ctrlKey)) then
+			{
+				[] spawn life_fnc_spikeStrip;
+			};
+		};
+	};
 
+	
     //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
     case _interactionKey: {
         if (!life_action_inUse) then {
@@ -172,13 +182,15 @@ switch (_code) do {
     //Restraining (Shift + R)
     case 19: {
         if (_shift) then {_handled = true;};
-        if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
-            [] call life_fnc_restrainAction;
+        if (_shift && ((playerSide isEqualTo west) || (playerSide isEqualTo civilian)) && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent,west])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
+            if (!(license_civ_rebel) && (playerSide isEqualTo civilian)) exitWith { hintSilent "Du benötigst eine Rebellenlizenz!"; };
+			if ((playerSide isEqualTo west) && (Side cursorObject isEqualTo west)) exitWith {hint"Du kannst deinen Kollegen nicht festnehmen!";};
+			[] call life_fnc_restrainAction;
         };
     };
 
-    //Knock out, this is experimental and yeah... (Shift + G)
-    case 34: {
+    //Knock out, this is experimental and yeah... (Shift + V)
+    case 47: {
         if (_shift) then {_handled = true;};
         if (_shift && playerSide isEqualTo civilian && !isNull cursorObject && cursorObject isKindOf "Man" && isPlayer cursorObject && alive cursorObject && cursorObject distance player < 4 && speed cursorObject < 1) then {
             if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player == primaryWeapon player || currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isknocked) then {
@@ -186,12 +198,20 @@ switch (_code) do {
             };
         };
     };
-
+/*	
+	//ATM Pin Anzeige (STRG + Shift + A)
+    case 30: {
+		if (_shift && _ctrlKey) then 
+		{
+			hint format ["Dein Aktueller ATM Pin Code lautet: %1", life_bankingpin];
+		};
+    };
+*/	
     //T Key (Trunk)
     case 20: {
-        if (!_alt && {!_ctrlKey} && {!dialog} && {!life_action_inUse} && {!(player getVariable ["playerSurrender",false])} && {!(player getVariable ["restrained",false])} && {!life_isknocked} && {!life_istazed}) then {
-            if (!(isNull objectParent player) && alive vehicle player) then {
-                if ((vehicle player) in life_vehicles) then {
+        if (!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {
+            if (vehicle player != player && alive vehicle player) then {
+                if (((vehicle player) in life_vehicles) ||  (Side (vehicle player) isEqualTo west) ||  (FETCH_CONST(life_adminlevel) > 1)) then {
                     [vehicle player] spawn life_fnc_openInventory;
                 };
             } else {
@@ -207,7 +227,7 @@ switch (_code) do {
                 } else {
                     _list = ["landVehicle","Air","Ship"];
                     if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 7} && {isNull objectParent player} && {alive cursorObject} && {!life_action_inUse}) then {
-                        if (cursorObject in life_vehicles || {locked cursorObject isEqualTo 0}) then {
+                        if ((cursorObject in life_vehicles) ||  (Side (vehicle player) isEqualTo west) || (FETCH_CONST(life_adminlevel) > 1)) then {
                             [cursorObject] spawn life_fnc_openInventory;
                         };
                     };
@@ -217,24 +237,37 @@ switch (_code) do {
     };
 
     //L Key?
-    case 38: {
-        //If cop run checks for turning lights on.
-        if (_shift && playerSide in [west,independent]) then {
-            if (!(isNull objectParent player) && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
-                if (!isNil {vehicle player getVariable "lights"}) then {
-                    if (playerSide isEqualTo west) then {
-                        [vehicle player] call life_fnc_sirenLights;
-                    } else {
-                        [vehicle player] call life_fnc_medicSirenLights;
-                    };
-                    _handled = true;
-                };
-            };
-        };
-
-        if (!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
-    };
-
+	case 38: {
+		private _veh = vehicle player;
+			if (_ctrlKey && {!_shift} && {!isNull objectParent player} && {(driver _veh) isEqualTo player} && (playerSide in [west,independent])) then {
+			call bf_fnc_lights;
+			_handled = true;
+			};
+				if (_shift && {!_ctrlKey} && {!isNull objectParent player} && {(driver _veh) isEqualTo player} && (playerSide in [west,independent])) then {
+				if (!isNull (_veh getVariable ["lightObj",objNull])) then {
+				if (_veh getVariable ["lights",false]) then {
+				_veh setVariable ["lights",false,true];
+			} else {
+				_veh setVariable ["lights",true,true];
+				[_veh] remoteExec ["bf_fnc_lightsOn",0];
+				};
+			} else {
+				if ((typeOf _veh) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_T_LSV_01_unarmed_black_F","O_T_LSV_02_unarmed_black_F","I_MRAP_03_F","I_APC_Wheeled_03_cannon_F","B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Heli_Attack_01_F","B_T_VTOL_01_vehicle_blue_F","I_Truck_02_medical_F","B_Truck_01_medical_F","O_Truck_03_medical_F","B_Truck_01_transport_F"]) then {
+				if (!isNil {_veh getVariable "lights"}) then {
+				if (playerSide isEqualTo west) then {
+				[_veh] call life_fnc_sirenLights;
+			} else {
+				[_veh] call life_fnc_medicSirenLights;
+				};
+					_handled = true;
+					};
+				};
+			};
+				_handled = true;
+			};
+			if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
+		};
+	
     //Y Player Menu
     case 21: {
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
@@ -275,19 +308,210 @@ switch (_code) do {
         };
     };
 
-    //O Key
-    case 24: {
+    //Ohrstöpsel Key (Shift + Bild runter)
+    case 209: {
         if (_shift) then {
-            if !(soundVolume isEqualTo 1) then {
+            if (soundVolume != 1) then {
+				life_fadeSound = false;
                 1 fadeSound 1;
-                systemChat localize "STR_MISC_soundnormal";
+                hint composeText [ image "icons\sound_new.paa"," Normaler Sound"];
+				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsN.paa";
+				
             } else {
+				life_fadeSound = true;
                 1 fadeSound 0.1;
-                systemChat localize "STR_MISC_soundfade";
+                hint composeText [ image "icons\sound.paa"," 90% Leiser"];
+				LIFEctrl(IDC_LIFE_BAR_Speaker) ctrlSetText "icons\earplugsY.paa";
             };
         };
     };
 
+	//EMP Konsole - K
+    case 37:
+    {
+        if (!_shift && !_alt && !_ctrlKey && (playerSide isEqualTo west) && (call life_coplevel > 2) && (vehicle player != player) && (typeOf vehicle player) in ["B_Heli_Light_01_F","I_Heli_light_03_unarmed_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","I_MRAP_03_F","B_MRAP_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","I_APC_Wheeled_03_cannon_F","C_SUV_01_F"]) then
+        {
+            [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
+        };
+    };	
+/*	
+	// Taste Q Boost
+	case 16: {
+		_chip = (vehicle player) getVariable ["Chipsatz",0];
+		if (_chip isEqualTo 0) exitwith {};
+		if (_vehicle getVariable["nano_empd",false]) exitwith {hint "Du kannst keinen Chip wärend eines EMPs benutzen!!";};
+		if ((vehicle player != player) && ((driver vehicle player) isEqualTo player)) then {
+            if ((vehicle player) getVariable ["speeder",false]) then
+				{	
+					[] spawn {
+					hint "Chip wurde deaktiviert...";
+					sleep 2;
+					vehicle player setvariable ["speeder",false,true];	
+					};
+				} else
+				{
+					[(vehicle player)] spawn life_fnc_speedUp;
+					sleep 2;
+				};
+		};	
+	};
+*/	
+	// Emotes
+	case 79: {
+		player playAction "GestureCeaseFire";
+		sleep 2;
+	};
+	
+	case 156: {
+		player playAction "GestureAdvance";
+		sleep 2;
+	};
+	
+	case 80: {
+		player playAction "GestureAgonyCargo";
+		sleep 2;
+	};
+	
+	case 81: {
+		player playAction "GestureCover";
+		sleep 2;
+	};
+	
+	case 75: {
+		player playAction "GestureFollow";
+		sleep 2;
+	};
+	
+	case 76: {
+		player playAction "GestureFreeze";
+		sleep 2;
+	};
+	
+	case 77: {
+		player playAction "GestureHi";
+		sleep 2;
+	};
+	
+	case 71: {
+		player playAction "GestureNo";
+		sleep 2;
+	};
+	
+	case 72: {
+		player playAction "GestureYes";
+		sleep 2;
+	};
+	
+	case 73: {
+		player playAction "GesturePoint";
+		sleep 2;
+	};
+	
+	case 82: {
+		if ((_shift) && (license_cop_sound)) then {
+			hint "Cop Sound";
+			[player,"copsound"] remoteExec ["life_fnc_say3D",RANY];
+			sleep 2;
+		};
+	};
+	
+	
+	//Cop Skinrefresh
+	case 41: 
+	{ 
+		if (playerside isEqualTo west) then
+		{
+			[] spawn 
+			{
+				[] call life_fnc_playerSkins;
+				hint "Skin wurde aktualisiert";
+				sleep 2;
+			};
+		};
+	};
+/*	
+	//SmartPhone  Shift + 1
+    case 2:
+    {
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                [] call life_fnc_callCellPhone;
+            };
+        };
+    };
+*/
+    //Wanted List Shift + 2
+    case 3:
+    {
+        if(playerSide in [independent,civilian]) exitWith {};
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                [] call life_fnc_wantedMenu;
+            };
+        };
+    };
+/*
+    //Wanted List Shift + 3
+    case 4:
+    {
+        if(playerSide in [independent,civilian]) exitWith {};
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                createDialog "life_wantedadd2";
+            };
+        };
+    };
+*/
+    //Ö Key - Sirene
+	case 39:
+	{
+		if(playerSide in [west] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+		{
+			[] spawn
+			{
+				life_siren_active = true;
+				uiSleep 7;
+				life_siren_active = false;
+			};
+			_veh = vehicle player;
+			if(isNil {_veh getVariable "siren2"}) then {_veh setVariable["siren2",false,true];};
+			if((_veh getVariable "siren2")) then
+			{
+				titleText ["Warnung AUS","PLAIN"];
+				_veh setVariable["siren2",false,true];
+			}
+				else
+			{
+				titleText ["Warnung AN","PLAIN"];
+				_veh setVariable["siren2",true,true];
+				if(playerSide == west) then {
+					//[[_veh],"life_fnc_copSiren2",nil,true] spawn life_fnc_MP;
+					[_veh] remoteExec ["life_fnc_copSiren2"];
+				} else {
+					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+					[_veh] remoteExec ["life_fnc_medicSiren"];
+				};
+			};
+		};
+	};
+
+    // O Schranken öffnen
+    case 40:
+    {
+        if (!_shift && !_alt && !_ctrlKey && (playerSide in [west,independent])) then {
+            [] call life_fnc_copOpener;
+        };
+    };
+	
     //U Key
     case 22: {
         if (!_alt && !_ctrlKey) then {
