@@ -121,6 +121,9 @@ class Life_Client_Core {
         class ticketAction {};
         class unrestrain {};
         class goldGame {};
+        class robShops {};
+		class robATM {};  //ATM ausrauben
+		class robMBank {};  //Bank Mini ausrauben
     };
 
     class Admin {
@@ -193,6 +196,17 @@ class Life_Client_Core {
         class vehInvSearch {};
         class wantedGrab {};
         class copEnter {};
+    };
+    
+    class EMP {
+        file = "core\cop\EMP";
+        class openEmpMenu {};
+		class isEmpOperator {};
+		class scanVehicles {};
+		class warnVehicle {};
+		class empVehicle {};
+		class vehicleWarned {};
+		class vehicleEmpd {};
     };
 
     class Dialog_Controls {

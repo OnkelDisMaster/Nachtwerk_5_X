@@ -8,7 +8,7 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 
 author = "Tonic | Edit by Nachtwerk";
 onLoadName = "Nachtwerk - Altis Life";
-onLoadMission = "Altis Life [4.4R3]";
+onLoadMission = "Altis Life [5.0.0]";
 loadScreen = "images\logo.jpg";
 disabledAI = 1;
 respawnButton = 0;
@@ -103,7 +103,25 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
+	class empwarn
+	{
+		name = "empwarn";
+		sound[] = {"\sounds\empwarn.ogg", 1.5, 1};
+		titles[] = {};
+	};
 	
+	class empacsound
+	{
+		name = "empacsound";
+		sound[] = {"sounds\empac.ogg", db-5, 1};
+		titles[] = {};
+	};
+    
+    class copsound {
+        name = "copsound";
+        sound[] = {"\sounds\copsound.ogg", 5.0, 1};
+        titles[] = {};
+    };
 };
 
 class CfgNotifications {

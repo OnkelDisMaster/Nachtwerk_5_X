@@ -33,3 +33,4 @@
 #include "..\core\holy_help\dialog\dialog_handler.hpp"
 #include "bounty_list.hpp"
 #include "bounty_addList.hpp"
+#include "emp_menu.hpp"
