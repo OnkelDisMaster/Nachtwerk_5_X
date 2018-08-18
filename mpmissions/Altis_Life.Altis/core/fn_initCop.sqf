@@ -26,7 +26,7 @@ player setVariable ["rank",(FETCH_CONST(life_coplevel)),true];
 [["blacklisted ground/sea vehicles"],["Blacklisted Choppers"]] execVM "core\vehicle\Lifting\lift_init.sqf";
 [] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf";
 
-//[player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set
+[player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set
 
 if (license_cop_hitmarker) then {life_hitmarker = true;};
 [] spawn life_fnc_IntroCam;
