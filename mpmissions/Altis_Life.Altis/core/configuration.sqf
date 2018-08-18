@@ -52,6 +52,13 @@ life_canpay_bail = true;
 life_storagePlacing = scriptNull;
 life_seatbelt = false;
 life_fadeSound = false;
+life_hitmarker = false;
+life_sitting = false;
+life_fadeSound = false;
+life_removeBounty = false;
+nn_last_vehicles = [];
+nn_empInUse = false;
+life_Event_use = -1;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

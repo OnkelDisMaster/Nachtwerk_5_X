@@ -31,3 +31,5 @@
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
 #include "..\core\holy_help\dialog\dialog_handler.hpp"
+#include "bounty_list.hpp"
+#include "bounty_addList.hpp"

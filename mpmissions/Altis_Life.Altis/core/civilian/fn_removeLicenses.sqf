@@ -44,4 +44,9 @@ switch (_state) do {
             hint localize "STR_Civ_LicenseRemove_2";
         };
     };
+    
+    //Adds the bountyH license to civs
+    case 100: {
+			missionNamespace setVariable [LICENSE_VARNAME("bountyH","civ"),true];
+	};
 };
