@@ -1,4 +1,4 @@
-#include "..\..\script_macros.hpp"
+#include "..\..\..\script_macros.hpp"
 /*
     File: scanVehicles.sqf
     Author: � 2014 nano2K - written for we-are-friendly.de
