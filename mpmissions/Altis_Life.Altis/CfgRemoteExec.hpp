@@ -104,7 +104,6 @@ class CfgRemoteExec {
         F(TON_fnc_getVehicles,SERVER)
         F(TON_fnc_insertGang,SERVER)
         F(TON_fnc_keyManagement,SERVER)
-        F(TON_fnc_manageSC,SERVER)
         F(TON_fnc_pickupAction,SERVER)
         F(TON_fnc_removeGang,SERVER)
         F(TON_fnc_sellHouse,SERVER)
