@@ -224,6 +224,49 @@ class Clothing {
             { "NONE", "Remove Backpack", 0, "" }
         };
     };
+    
+    class kart {
+        title = "STR_Shops_C_Kart";
+        conditions = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, "" },
+            { "U_C_Driver_1", "", 15000, "" },
+            { "U_C_Driver_2", "", 15000, "" },
+            { "U_C_Driver_3", "", 15000, "" },
+            { "U_C_Driver_4", "", 15000, "" },
+            { "U_C_Driver_1_black", "", 15000, "" },
+            { "U_C_Driver_1_blue", "", 15000, "" },
+            { "U_C_Driver_1_green", "", 15000, "" },
+            { "U_C_Driver_1_red", "", 15000, "" },
+            { "U_C_Driver_1_white", "", 15000, "" },
+            { "U_C_Driver_1_yellow", "", 15000, "" },
+            { "U_C_Driver_1_orange", "", 15000, "" }
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, "" },
+            { "H_RacingHelmet_1_F", "", 8000, "" },
+            { "H_RacingHelmet_2_F", "", 8000, "" },
+            { "H_RacingHelmet_3_F", "", 8000, "" },
+            { "H_RacingHelmet_4_F", "", 8000, "" },
+            { "H_RacingHelmet_1_black_F", "", 8000, "" },
+            { "H_RacingHelmet_1_blue_F", "", 8000, "" },
+            { "H_RacingHelmet_1_green_F", "", 8000, "" },
+            { "H_RacingHelmet_1_red_F", "", 8000, "" },
+            { "H_RacingHelmet_1_white_F", "", 8000, "" },
+            { "H_RacingHelmet_1_yellow_F", "", 8000, "" },
+            { "H_RacingHelmet_1_orange_F", "", 8000, "" }
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, "" }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, "" }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, "" }
+        };
+    };
 	
 	class airsoft {
         title = "STR_Shops_C_Airsoft";

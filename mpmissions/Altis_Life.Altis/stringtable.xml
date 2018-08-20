@@ -97,6 +97,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+        <Key ID="STR_Shops_C_Kart">
+            <Original>Kart Bekleidung</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
+            <Russian></Russian>
+            <German>Kart Bekleidung</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
 		<Key ID="STR_Shops_C_Bauarbeiter">
             <Original>Bauarbeiter Bekleidung</Original>
             <Czech></Czech>
