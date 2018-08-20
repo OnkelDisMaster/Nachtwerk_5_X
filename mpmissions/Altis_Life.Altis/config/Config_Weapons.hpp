@@ -465,7 +465,7 @@ class WeaponShops {
 			{ "100Rnd_65x39_caseless_mag_tracer","MX SW Tracer magazin", 1, 1, ""  }
         };
         accs[] = {
-			{ "muzzle_snds_acp", "", 1, 1, "" }
+			{ "muzzle_snds_acp", "", 1, 1, "" },
 			{ "optic_Holosight", "", 1, 1, "" },
 			{ "optic_Holosight_smg_blk_F", "", 1, 1, "" },
 			{ "optic_ACO_smg", "", 1, 1, "" },
