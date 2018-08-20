@@ -203,7 +203,7 @@ class Clothing {
 
     class dive {
         title = "STR_Shops_C_Diving";
-        conditions = "dive";
+        conditions = "license_civ_dive";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" },
@@ -227,7 +227,7 @@ class Clothing {
 	
 	class airsoft {
         title = "STR_Shops_C_Airsoft";
-        conditions = "airsoft";
+        conditions = "license_civ_airsoft";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" },
@@ -272,7 +272,7 @@ class Clothing {
 	
 	class bauarbeiter {
         title = "STR_Shops_C_Bauarbeiter";
-        conditions = "bauarbeiter";
+        conditions = "license_civ_bauarbeiter";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" },
@@ -351,7 +351,7 @@ class Clothing {
 
     class gun_clothing {
         title = "STR_Shops_C_Gun";
-        conditions = "gun";
+        conditions = "license_civ_gun";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" }
@@ -373,7 +373,7 @@ class Clothing {
 	
 	class uran_clothing {
         title = "STR_Shops_Uranium";
-        conditions = "gun";
+        conditions = "";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" },
@@ -553,7 +553,7 @@ class Clothing {
 
     class rebel {
         title = "STR_Shops_C_Rebel";
-        conditions = "rebel";
+        conditions = "license_civ_rebel";
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, "" },
@@ -678,7 +678,7 @@ class Clothing {
 
 	class elite {
         title = "STR_Shops_C_Elite";
-        conditions = "elite";
+        conditions = "license_civ_elite";
         side = "civ";
         uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, "" },
