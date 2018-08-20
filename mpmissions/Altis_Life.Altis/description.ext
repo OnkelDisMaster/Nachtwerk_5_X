@@ -1,4 +1,4 @@
-disableChannels[] = {{0,false,false},{1,true,false},{2,true,false}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
+disableChannels[] = {{0,true,false},{1,true,false},{2,true,false}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
 
 #include "infiSTAR_AdminMenu.hpp"
