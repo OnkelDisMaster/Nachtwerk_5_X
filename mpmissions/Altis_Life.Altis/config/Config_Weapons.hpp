@@ -388,10 +388,10 @@ class WeaponShops {
     };
 
     //Cop Shops
-    class cop_pa {
-        name = "Polizeiwaffenshop";
+    class cop_weapon {
+        name = "Polizei Waffenshop";
         side = "cop";
-        conditions = "side isEqualTo west";
+        conditions = "playerSide isEqualTo west";
         items[] = {
             { "arifle_sdar_F", "Taser Rifle", 1, 1, "call life_coplevel >= 1" },
             { "SMG_01_Holo_pointer_snds_F", "", 1, 1, "call life_coplevel >= 2" },
