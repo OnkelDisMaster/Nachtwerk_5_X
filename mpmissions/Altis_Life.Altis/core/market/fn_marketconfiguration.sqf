@@ -7,8 +7,8 @@
 
 	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	//["gold", 1500, 450, 2300, 8, 5],
-                                    --> x Items mal Wert = Drop/Steigen
-                                                --> x verkaufte Items steigern Preise der Items im Kasten drunter
+     //                               --> x Items mal Wert = Drop/Steigen
+     //                                           --> x verkaufte Items steigern Preise der Items im Kasten drunter
 ////////////MAIN CONFIG
 
 life_market_resources = [
