@@ -20,7 +20,7 @@ life_market_resources = [
 			["diamant",1], 
 			["kupfer",1],
 			["eisen",1],
-			["alu,1"]
+			["alu",1]
 		] 
 	],
 	
@@ -29,15 +29,15 @@ life_market_resources = [
 			["eisen",1],
 			["salz",1],
 			["glass",1],
-			["alu,1"]
+			["alu",1]
 		] 
 	],
 	
-	["eisen", 1200, 3500, 4500, 2, 1, 
+	["eisen", 3000, 1200, 4500, 2, 1, 
 		[
 			["kupfer",1],
 			["glass",1],
-			["alu",1"]
+			["alu",1]
 		] 
 	],
 	
@@ -76,7 +76,7 @@ life_market_resources = [
     
     ["bambusleitung", 1250, 875, 4625, 5, 2, 
 		[ 
-			["eol",1],
+			["oel",1],
 			["salz",1],
 			["marmor",1]
 		] 
