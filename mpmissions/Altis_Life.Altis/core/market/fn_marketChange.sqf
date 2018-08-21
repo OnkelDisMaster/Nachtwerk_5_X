@@ -47,7 +47,7 @@ switch(true) do
 		}
 		foreach life_market_prices;
 	};
-    /*
+    
 	case (_rand <= 36): //6% Drogenpreis erhöhen
 	{
 		[0,format["News: Drogenpreise sind rapide gestiegen!"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -59,7 +59,7 @@ switch(true) do
 		["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["heroin", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
-		diag_log "+Market+ Event drugp";
+		diag_log "+Market+ Event: +Drogen";
 	};
     
 	case (_rand <= 44): //8% Ölpreis erhöhen
@@ -68,45 +68,47 @@ switch(true) do
 		
 		["oel", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
-		diag_log "+Market+ Event oilp";
+		diag_log "+Market+ Event: +Öl";
 	};
     
-	case (_rand <= 54): //10% Eisenpreis + zementpreis + glaspreis erhöhen
+	case (_rand <= 54): //10% Metallpreis
 	{
-		[0,format["News: cement-ironrefined-glass prices increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+		[0,format["News: Metallpreise sind gestiegen!"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
-		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["iron_refined", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["eisen", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["kupfer", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["alu", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy;
+        ["platin", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy;         
 		
-		diag_log "+Market+ Event wcc";
+		diag_log "+Market+ Event: +Metall";
 	};
 
-	case (_rand <= 60): //4% Goldpreis sinkt
+	case (_rand <= 60): //4% Atombombe sinkt
 	{
 		[0,format["News: goldbar price decreased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
-		["goldbar", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["atombombe", [15,80] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		
-		diag_log "+Market+ Event goldm";
+		diag_log "+Market+ Event: -Atombomen";
 	};
 
-	case (_rand <= 68): //8% Kupfer/Silber erhöht sich
+	case (_rand <= 68): //8% Uran, Plutonium und Brennstäbe erhöht sich
 	{
-		[0,format["News: goldbar - copper refined prices increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+		[0,format["News: Uran, Plutonium und Brennstabpreise sind gestiegen!"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
-		["goldbar", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["copper_refined", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		diag_log "+Market+ Event copperp";
+		["uranIV", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["brennstab", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+        ["plutonium", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		diag_log "+Market+ Event: +Uran & co";
 	};
 
-	case (_rand <= 74): //6% Goldpreis erhöht sich
+	case (_rand <= 74): //6% Atombombe erhöht sich
 	{
 		[0,format["News: goldbar price increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
-		["goldbar", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["atombombe", [15,100] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
-		diag_log "+Market+ Event goldp";
+		diag_log "+Market+ Event: +Atombomen";
 	};
     
 	case (_rand <= 80): //6% Drogenpreis niedriger
@@ -120,22 +122,19 @@ switch(true) do
 		["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		["heroin", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		
-		diag_log "+Market+ Event drugm";
+		diag_log "+Market+ Event: -Drogen";
 	};
     
 	case (_rand <= 90): //10% Schildkröten höher
-	{
-		[0,format["News: example items prices increased"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+	{		
+		[0,format["News: Uran, Plutonium und Brennstabpreise sind gesunken!"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 		
-		//Erhöhe Marktpreis mit marketSell
-		["exampleitem", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
-		["exampleitem", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
-		["exampleitem", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
-		["exampleitem", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
-		
-		diag_log "+Market+ Event exampleitem";
+		["uranIV", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell;
+		["brennstab", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+        ["plutonium", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		diag_log "+Market+ Event: -Uran & co";
 	};
-    */
+    
 	default //market change: default version
 	{
 		//diag_log format["[MARKET] marketChange did nothing. Rand=%1", _rand];
