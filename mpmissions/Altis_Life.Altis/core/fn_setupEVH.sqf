@@ -15,3 +15,5 @@ player addEventHandler ["InventoryOpened", {_this call life_fnc_inventoryOpened}
 player addEventHandler ["HandleRating", {0}];
 
 addMissionEventHandler ["Map", {_this call life_fnc_checkMap}];
+									//	Getroffener, der event triggert				//Schütze
+player addMPEventHandler ["mphit", { [_this select 0] remoteExec ["life_fnc_hitMarker",(_this select 3)];}];

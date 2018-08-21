@@ -34,3 +34,5 @@
 #include "bounty_list.hpp"
 #include "bounty_addList.hpp"
 #include "emp_menu.hpp"
+#include "slot_machine.hpp"
+#include "blackjack.hpp"
