@@ -249,7 +249,7 @@ publicVariable "life_market_shortnames";
 	life_market_prices = []; //[SHORTNAME,CURRENTPRICE,DIRECTIONGLOBAL,DIRECTIONLOCAL]
 	{
 	
-		life_market_prices set [count life_market_prices, [_x select 0, _x select 1, 0] ];
+		life_market_prices set [count life_market_prices, [_x select 0, _x select 1, 0, 0] ];
 	}
 	foreach life_market_resources;
 	
