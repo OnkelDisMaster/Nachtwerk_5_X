@@ -79,8 +79,7 @@ switch(true) do
 		
 		diag_log "+Market+ Event wcc";
 	};
-    */
-    /*
+
 	case (_rand <= 60): //4% Goldpreis sinkt
 	{
 		[0,format["News: goldbar price decreased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -89,8 +88,7 @@ switch(true) do
 		
 		diag_log "+Market+ Event goldm";
 	};
-    */
-    */
+
 	case (_rand <= 68): //8% Kupfer/Silber erhöht sich
 	{
 		[0,format["News: goldbar - copper refined prices increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -99,8 +97,7 @@ switch(true) do
 		["copper_refined", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
 	};
-    */
-    /*
+
 	case (_rand <= 74): //6% Goldpreis erhöht sich
 	{
 		[0,format["News: goldbar price increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
