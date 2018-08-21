@@ -184,9 +184,6 @@ life_market_resources = [
     
     ["meth", 3900, 2170, 6030, 15, 10,   
 		[ 
-			["weed",1], 
-			["koks",1],
-			["heroin",1],
 			["polenboeller",1],
 			["weed",1], 
 			["koks",1],
@@ -222,7 +219,7 @@ life_market_resources = [
 		[ 
 			["uranIV",1], 
 			["plutonium",1],
-			["uranIV",1]
+			["brennstab",1]
 		] 
 	]
 ];
