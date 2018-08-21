@@ -47,6 +47,7 @@ switch(true) do
 		}
 		foreach life_market_prices;
 	};
+    /*
 	case (_rand <= 36): //6% Drogenpreis erhöhen
 	{
 		[0,format["News: Drogenpreise sind rapide gestiegen!"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -60,6 +61,7 @@ switch(true) do
 		
 		diag_log "+Market+ Event drugp";
 	};
+    
 	case (_rand <= 44): //8% Ölpreis erhöhen
 	{
 		[0,format["News: Ölpreise sind gestiegen!"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -68,7 +70,7 @@ switch(true) do
 		
 		diag_log "+Market+ Event oilp";
 	};
-    /*
+    
 	case (_rand <= 54): //10% Eisenpreis + zementpreis + glaspreis erhöhen
 	{
 		[0,format["News: cement-ironrefined-glass prices increased."]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -106,7 +108,7 @@ switch(true) do
 		
 		diag_log "+Market+ Event goldp";
 	};
-    */
+    
 	case (_rand <= 80): //6% Drogenpreis niedriger
 	{
 		[0,format["News: Drogenpreiss sind gesunken!"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
@@ -120,7 +122,7 @@ switch(true) do
 		
 		diag_log "+Market+ Event drugm";
 	};
-    /*
+    
 	case (_rand <= 90): //10% Schildkröten höher
 	{
 		[0,format["News: example items prices increased"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
