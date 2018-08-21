@@ -54,9 +54,8 @@ switch(true) do
 		
 		//Erhöhe Marktpreis mit marketSell
 		["weed", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["koksu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["meth", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["koks", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["heroin", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event: +Drogen";
@@ -117,9 +116,8 @@ switch(true) do
 		
 		//Erhöhe Marktpreis mit marketSell
 		["weed", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["koksu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["koks", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["meth", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["koks", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell;
 		["heroin", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		
 		diag_log "+Market+ Event: -Drogen";
