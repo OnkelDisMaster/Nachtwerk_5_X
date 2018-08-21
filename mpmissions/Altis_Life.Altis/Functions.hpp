@@ -157,6 +157,12 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+        class slotSpin {};
+		class slotmachine {};
+		class blackjack {};
+		class BJbet {};
+		class BJhit {};
+		class BJstay {};
     };
 
     class Config {
@@ -196,6 +202,10 @@ class Life_Client_Core {
         class vehInvSearch {};
         class wantedGrab {};
         class copEnter {};
+        class copOpener {};
+        class copSiren2 {};
+        class copLoadoutCall {};
+		class copLoadoutLoad {};
     };
     
     class EMP {
@@ -286,6 +296,9 @@ class Life_Client_Core {
         class randomRound {};
         class seatbelt {};
         class introCam {};
+        class initPayChecks {};
+		class hitMarker {};
+		class randomDealer {};
     };
 
     class Gangs {
@@ -429,6 +442,7 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
+		class virt_sellAll {};
     };
 
     class Vehicle {
