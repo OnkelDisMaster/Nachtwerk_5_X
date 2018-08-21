@@ -7,115 +7,222 @@
 
 	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	//["gold", 1500, 450, 2300, 8, 5],
-
+                                    --> x Items mal Wert = Drop/Steigen
+                                                --> x verkaufte Items steigern Preise der Items im Kasten drunter
 ////////////MAIN CONFIG
 
 life_market_resources = [
 	
 	// Default İsler
 	
-	["oil_processed", 5500, 0, 6250, 3, 1, 
+	["oel", 4500, 3150, 7850, 3, 1, 
 		[ 
-			["diamond_cut",1], 
-			["iron_refined",1],
-			["copper_refined",1],
-			["gold_refined",1],
-			["cement",1],
-			["glass",1] 
+			["diamant",1], 
+			["kupfer",1],
+			["eisen",1],
+			["alu,1"]
 		] 
 	],
 	
-	["diamond_cut", 4530, 0, 5250, 5, 2, 
+	["kupfer", 1500, 1100, 4500, 5, 2, 
 		[ 
-			["oil_processed",1],
-			["iron_refined",1],
-			["copper_refined",1],
-			["gold_refined",1],
-			["salt_refined",1],
-			["cement",1],
-			["glass",1] 
+			["eisen",1],
+			["salz",1],
+			["glass",1],
+			["alu,1"]
 		] 
 	],
 	
-	["copper_refined", 2500, 0, 3500, 2, 1, 
-		[ 
-			["diamond_cut",1], 
-			["oil_processed",1],
-			["iron_refined",1],
-			["gold_refined",1],
-			["cement",1],
-			["glass",1] 
+	["eisen", 1200, 3500, 4500, 2, 1, 
+		[
+			["kupfer",1],
+			["glass",1],
+			["alu",1"]
 		] 
 	],
 	
-	["iron_refined", 3500, 0, 4250, 3, 1,  
+	["alu", 2700, 1890, 6510, 5, 2, 
 		[ 
-			["diamond_cut",1], 
-			["oil_processed",1],
-			["copper_refined",1],
-			["gold_refined",1],
-			["salt_refined",1],
-			["cement",1],
-			["glass",1] 
-		] 
-	],
-	
-	["salt_refined", 4850, 0, 5750, 2, 1, 
-		[ 
-
-			["copper_refined",1],
-			["gold_refined",1],
-			["glass",1] 
-		] 
-	],
-	
-	["glass", 3450, 0, 4550, 2, 1, 
-		[ 
-			["diamond_cut",1], 
-			["oil_processed",1],
-			["iron_refined",1],
-			["copper_refined",1]
-		] 
-	],
-	
-	["cement", 3350, 0, 4100, 2, 1, 
-		[ 
-
-			["oil_processed",1],
-			["iron_refined",1],
-			["copper_refined",1],
+			["eisen",1],
+			["kupfer",1],
 			["glass",1]
 		] 
 	],
-	
-	["goldbar", 55000, 0, 75000, 2, 1, 
+    
+    ["platin", 3500, 2450, 7550, 5, 2, 
 		[ 
-			["diamond_cut",1], 
-			["oil_processed",1],
-			["iron_refined",1],
-			["copper_refined",1],
-			["glass",1]
+			["alu",1],
+			["eisen",1],
+			["oel",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["salz", 2600, 1750, 4550, 5, 2, 
+		[ 
+			["eisen",1],
+			["kupfer",1],
+			["glass",1] 
+		] 
+	],
+    
+    ["glass", 2000, 1400, 4600, 5, 2, 
+		[ 
+			["eisen",1],
+			["kupfer",1],
+			["salz",1]
+		] 
+	],
+    
+    ["bambusleitung", 1250, 875, 4625, 5, 2, 
+		[ 
+			["eol",1],
+			["salz",1],
+			["marmor",1]
+		] 
+	],
+    
+    ["diamant", 4300, 3030, 7730, 5, 2, 
+		[ 
+			["juwelen",1],
+			["oel",1],
+			["marmor",1] 
+		] 
+	],
+    
+    ["krone", 45000, 30000, 70000, 5, 2, 
+		[ 
+			["obsidian",1],
+			["diamant",1],
+			["juwelen",1]
 		] 
 	],
 	
-	["marijuana", 5750, 0, 7500, 10, 7,   
+    ["juwelen", 15000, 3170, 60300, 5, 2, 
 		[ 
-			["cocaine_processed",1],
-			["heroin_processed",1]
+			["diamant",1],
+			["obsidian",1],
+			["marmor",1]
+		] 
+	],
+    
+    ["marmor", 3500, 2450, 6550, 5, 2, 
+		[ 
+			["obsidian",1],
+			["diamant",1]
+		] 
+	],
+	
+    ["obsidian", 5500, 2730, 9070, 5, 2, 
+		[ 
+			["marmor",1],
+			["obsidian",1],
+			["kupfer",1],
+			["eisen",1]
+		] 
+	],
+    
+	["weed", 3000, 2100, 5700, 10, 7,   
+		[ 
+			["heroin",1],
+			["koks",1],
+			["polenboeller",1],
+			["zigaretten",1],
+			["meth",1]
 		] 
 	],
 
-	["cocaine_processed", 6300, 0, 7850, 15, 10,   
+	["koks", 5400, 3640, 7500, 15, 10,   
 		[ 
-			["marijuana",1], 
-			["heroin_processed",1]
+			["heroin",1], 
+			["weed",1],
+			["polenboeller",1],
+			["zigaretten",1],
+			["meth",1]
 		] 
 	],
 		
-	["heroin_processed", 6500, 0, 8700, 15, 10,   
+	["heroin", 4400, 2940, 6000, 15, 10,   
 		[ 
-			["marijuana",1], 
-			["cocaine_processed",1]
+			["koks",1], 
+			["weed",1],
+			["polenboeller",1],
+			["zigaretten",1],
+			["meth",1]
+        ]    
+	],
+    
+    ["polenboeller", 3000, 2100, 3900, 15, 10,   
+		[ 
+			["weed",1], 
+			["koks",1],
+			["heroin",1],
+			["zigaretten",1],
+			["meth",1]
+		] 
+	],
+    
+    ["zigaretten", 3400, 980, 4500, 15, 10,   
+		[ 
+			["weed",1], 
+			["koks",1],
+			["heroin",1],
+			["polenboeller",1],
+			["meth",1]
+		] 
+	],
+    
+    ["korallenketten", 13000, 9800, 28200, 15, 10,   
+		[ 
+			["weed",1], 
+			["koks",1],
+			["heroin",1],
+			["polenboeller",1],
+			["meth",1]
+		] 
+	],
+    
+    ["meth", 3900, 2170, 6030, 15, 10,   
+		[ 
+			["weed",1], 
+			["koks",1],
+			["heroin",1],
+			["polenboeller",1],
+			["weed",1], 
+			["koks",1],
+			["heroin",1],
+			["polenboeller",1],
+			["korallenketten",1]
+		] 
+	],
+    
+    ["uranIV", 22000, 6000, 45000, 15, 10,   
+		[ 
+			["plutonium",1], 
+			["brennstab",1]
+		] 
+	],
+    
+    ["plutonium", 25000, 17000, 32000, 15, 10,   
+		[ 
+			["uranIV",1], 
+			["brennstab",1]
+		] 
+	],
+    
+    ["brennstab", 32000, 22250, 50000, 15, 10,   
+		[ 
+			["uranIV",1], 
+			["plutonium",1],
+			["atombombe",1]
+		] 
+	],
+    
+    ["atombombe", 2300000, 455000, 4700000, 15, 10,   
+		[ 
+			["uranIV",1], 
+			["plutonium",1],
+			["uranIV",1]
 		] 
 	]
 ];
