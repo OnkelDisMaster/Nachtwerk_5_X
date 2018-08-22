@@ -37,3 +37,4 @@
 #include "slot_machine.hpp"
 #include "blackjack.hpp"
 #include "hitmarker.hpp"
+#include "loadout_selector.hpp"
