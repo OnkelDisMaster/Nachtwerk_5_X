@@ -44,7 +44,7 @@ if(!isNull _source) then {
 			};
             
             if(side _source isEqualTo civilian && playerSide isEqualTo west) then {
-                _damage = _damage * 0.8;
+                _damage = _damage * 1.2 ;
             };
 		};
 	};
