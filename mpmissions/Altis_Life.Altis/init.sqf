@@ -11,6 +11,8 @@ if (hasInterface) then {
     [] execVM "briefing.sqf"; //Load Briefing
 };
 [] execVM "KRON_Strings.sqf";
+[] execVM "core\functions\fn_teargas.sqf"; //Load Teargas Script for Cops
+[] execVM "nw_functions\savezone.sqf"; //Load the Savezones
 
 if(isDedicated && isNil("life_market_prices")) then
 {
