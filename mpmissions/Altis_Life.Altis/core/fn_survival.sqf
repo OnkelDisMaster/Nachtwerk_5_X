@@ -60,15 +60,41 @@ for "_i" from 0 to 1 step 0 do {
     if ((time - _waterTime) > 600 && {!life_god}) then {[] call _fnc_water; _waterTime = time;};
     if ((time - _foodTime) > 850 && {!life_god}) then {[] call _fnc_food; _foodTime = time;};
 
-    /* Adjustment of carrying capacity based on backpack changes */
-    if (backpack player isEqualTo "") then {
-        life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");
-        _bp = backpack player;
-    } else {
-        if (!(backpack player isEqualTo "") && {!(backpack player isEqualTo _bp)}) then {
-            _bp = backpack player;
-            life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_bp,"maximumload") / 4);
-        };
+   /* Adjustment of carrying capacity based on backpack changes */  
+    if((backpack player) isEqualTo "") then {  
+        life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");    
+    } else {  
+        if (!(backpack player isEqualTo "")) then {  
+			_load = 0;
+			if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
+			if((backpack player) isEqualTo "B_AssaultPack_Kerry") then { _load = 30; };
+			if((backpack player) isEqualTo "B_AssaultPack_blk") then { _load = 30; };
+			if((backpack player) isEqualTo "B_AssaultPack_cbr") then { _load = 30; };            
+			if((backpack player) isEqualTo "B_AssaultPack_sgg") then { _load = 30; };
+			if((backpack player) isEqualTo "B_Bergen_blk") then { _load = 50; };
+			if((backpack player) isEqualTo "B_TacticalPack_oli") then { _load = 50; };
+			if((backpack player) isEqualTo "B_Bergen_sgg") then { _load = 50; };
+			if((backpack player) isEqualTo "B_Bergen_rgr") then { _load = 50; };            
+			if((backpack player) isEqualTo "B_AssaultPack_mcamo_AT") then { _load = 70; };
+			if((backpack player) isEqualTo "B_Kitbag_cbr") then { _load = 70; };
+			if((backpack player) isEqualTo "B_Kitbag_sgg") then { _load = 70; };            
+			if((backpack player) isEqualTo "B_Carryall_khk") then { _load = 80; };
+			if((backpack player) isEqualTo "B_Carryall_oli") then { _load = 80; };            
+			if((backpack player) isEqualTo "B_Carryall_cbr") then { _load = 80; };	
+			if((backpack player) isEqualTo "B_Carryall_oucamo") then { _load = 80; };
+			if((backpack player) isEqualTo "B_Carryall_mcamo") then { _load = 80; };            
+			if((backpack player) isEqualTo "B_Carryall_ocamo") then { _load = 80; };			
+			if((backpack player) isEqualTo "B_Bergen_hex_F") then { _load = 100; };
+			if((backpack player) isEqualTo "B_Bergen_mcamo_F") then { _load = 100; };
+			if((backpack player) isEqualTo "B_Bergen_dgtl_F") then { _load = 100; };		
+			if((backpack player) isEqualTo "B_ViperHarness_ghex_F") then { _load = 130; };
+			if((backpack player) isEqualTo "B_ViperHarness_blk_F") then { _load = 130; };
+			if((backpack player) isEqualTo "B_ViperHarness_hex_F") then { _load = 120; };
+			if((backpack player) isEqualTo "B_ViperHarness_khk_F") then { _load = 120; };
+			if((backpack player) isEqualTo "B_ViperHarness_oli_F") then { _load = 120; };
+			if (license_civ_implantat_backpack) then {_load = _load + 30;};	
+            life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + _load;  
+        };  
     };
 
     /* Check if the player's state changed? */
@@ -104,5 +130,13 @@ for "_i" from 0 to 1 step 0 do {
         _lastPos = visiblePosition player;
         _lastPos = (_lastPos select 0) + (_lastPos select 1);
     };
+    
+    if (playerside isEqualTo west) then {
+	//Unsichtbare Rucksäcke
+		if (!isNull(unitBackpack player)) then {
+			(unitBackpack player) setObjectTextureGlobal [0, ""]; //Macht Rucks?cke unsichtbar
+		};
+	};
+    
     uiSleep 1;
 };
