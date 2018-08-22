@@ -298,6 +298,7 @@ class Life_Client_Core {
         class initPayChecks {};
 		class hitMarker {};
 		class randomDealer {};
+        class teargas {};
     };
 
     class Gangs {

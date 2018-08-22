@@ -9,10 +9,20 @@ StartProgress = false;
 
 if (hasInterface) then {
     [] execVM "briefing.sqf"; //Load Briefing
+    [] call life_fnc_teargas;
+    [] call life_fnc_savezone; //Load the Savezones
+} else {
+	[] spawn 
+	{
+		for [{_i=0}, {_i < 12}, {_i = _i + 1}] do 
+		{
+			sleep (60*30);	
+			[] spawn life_fnc_randomDealer;
+		};
+	};
 };
+
 [] execVM "KRON_Strings.sqf";
-[] execVM "core\functions\fn_teargas.sqf"; //Load Teargas Script for Cops
-[] execVM "nw_functions\savezone.sqf"; //Load the Savezones
 
 if(isDedicated && isNil("life_market_prices")) then
 {
