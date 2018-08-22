@@ -18,9 +18,6 @@
 disableSerialization;
 if(isNull LIFEdisplay) then {[] call life_fnc_hudSetup;};
 
-//[LIFE_ID_PlayerTags,"onEachFrame"] call BIS_fnc_removeStackedEventHandler;
-LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
-
 if(!isNil "life_seatbelt") then {
     if ( vehicle player != player ) then {
         if(life_seatbelt) then {

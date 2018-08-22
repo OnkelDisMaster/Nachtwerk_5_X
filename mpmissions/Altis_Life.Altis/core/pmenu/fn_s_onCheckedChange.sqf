@@ -11,18 +11,6 @@ _option = _this select 0;
 _state = _this select 1;
 
 switch (_option) do {
-    case "tags": {
-        if (_state isEqualTo 1) then {
-            life_settings_tagson = true;
-            profileNamespace setVariable ["life_settings_tagson",true];
-            LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
-        } else {
-            life_settings_tagson = false;
-            profileNamespace setVariable ["life_settings_tagson",false];
-            [LIFE_ID_PlayerTags,"onEachFrame"] call BIS_fnc_removeStackedEventHandler;
-        };
-    };
-
     case "objects": {
         if (_state isEqualTo 1) then {
             life_settings_revealObjects = true;

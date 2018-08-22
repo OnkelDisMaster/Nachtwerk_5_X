@@ -23,34 +23,6 @@ class SettingsMenu {
             h = 0.48 - (22 / 250);
         };
 
-        class PlayerTagsHeader: Life_RscText {
-            idc = -1;
-            text = "$STR_SM_PlayerTags";
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-            x = 0.30;
-            y = 0.43;
-            w = 0.35;
-            h = (1 / 25);
-        };
-
-        class SideChatHeader : PlayerTagsHeader {
-            idc = -1;
-            text = "$STR_SM_SC";
-            y = 0.48;
-        };
-
-        class RevealNearestHeader : PlayerTagsHeader {
-            idc = -1;
-            text = "$STR_SM_RNObj";
-            y = 0.53;
-        };
-
-        class BroacastHeader : PlayerTagsHeader {
-            idc = -1;
-            text = "$STR_SM_BCSW";
-            y = 0.58;
-        };
-
         class Title: Life_RscTitle {
             idc = -1;
             colorBackground[] = {0,0,0,0};
@@ -154,16 +126,6 @@ class SettingsMenu {
             y = 0.36;
             w = .08;
             h = .04;
-        };
-
-        class PlayerTagsONOFF: Life_Checkbox {
-            tooltip = "$STR_GUI_PlayTags";
-            idc = 2970;
-            sizeEx = 0.04;
-            onCheckedChanged = "['tags',_this select 1] call life_fnc_s_onCheckedChange;";
-            x = 0.65;
-            y = 0.43;
-
         };
 
         class SideChatONOFF: PlayerTagsONOFF {
