@@ -90,4 +90,40 @@ if (!(_seco isEqualTo "")) then {_handle = [_seco,true,false,false,false] spawn 
     };
 } forEach (_hItems);
 
+if((backpack player) isEqualTo "") then {  
+        life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");    
+    } else {  
+        if (!(backpack player isEqualTo "")) then {  
+			_load = 0;
+			if((backpack player) isEqualTo "B_AssaultPack_khk") then { _load = 30; };            
+			if((backpack player) isEqualTo "B_AssaultPack_Kerry") then { _load = 30; };
+			if((backpack player) isEqualTo "B_AssaultPack_blk") then { _load = 30; };
+			if((backpack player) isEqualTo "B_AssaultPack_cbr") then { _load = 30; };            
+			if((backpack player) isEqualTo "B_AssaultPack_sgg") then { _load = 30; };
+			if((backpack player) isEqualTo "B_Bergen_blk") then { _load = 50; };
+			if((backpack player) isEqualTo "B_TacticalPack_oli") then { _load = 50; };
+			if((backpack player) isEqualTo "B_Bergen_sgg") then { _load = 50; };
+			if((backpack player) isEqualTo "B_Bergen_rgr") then { _load = 50; };            
+			if((backpack player) isEqualTo "B_AssaultPack_mcamo_AT") then { _load = 70; };
+			if((backpack player) isEqualTo "B_Kitbag_cbr") then { _load = 70; };
+			if((backpack player) isEqualTo "B_Kitbag_sgg") then { _load = 70; };            
+			if((backpack player) isEqualTo "B_Carryall_khk") then { _load = 80; };
+			if((backpack player) isEqualTo "B_Carryall_oli") then { _load = 80; };            
+			if((backpack player) isEqualTo "B_Carryall_cbr") then { _load = 80; };	
+			if((backpack player) isEqualTo "B_Carryall_oucamo") then { _load = 80; };
+			if((backpack player) isEqualTo "B_Carryall_mcamo") then { _load = 80; };            
+			if((backpack player) isEqualTo "B_Carryall_ocamo") then { _load = 80; };			
+			if((backpack player) isEqualTo "B_Bergen_hex_F") then { _load = 100; };
+			if((backpack player) isEqualTo "B_Bergen_mcamo_F") then { _load = 100; };
+			if((backpack player) isEqualTo "B_Bergen_dgtl_F") then { _load = 100; };		
+			if((backpack player) isEqualTo "B_ViperHarness_ghex_F") then { _load = 130; };
+			if((backpack player) isEqualTo "B_ViperHarness_blk_F") then { _load = 130; };
+			if((backpack player) isEqualTo "B_ViperHarness_hex_F") then { _load = 120; };
+			if((backpack player) isEqualTo "B_ViperHarness_khk_F") then { _load = 120; };
+			if((backpack player) isEqualTo "B_ViperHarness_oli_F") then { _load = 120; };
+			if (license_civ_implantat_backpack) then {_load = _load + 30;};	
+            life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + _load;  
+        };  
+    };
+
 [] call life_fnc_playerSkins;

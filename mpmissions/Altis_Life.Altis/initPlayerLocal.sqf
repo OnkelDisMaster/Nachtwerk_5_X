@@ -29,4 +29,15 @@ if (hasInterface) then {
     }];
 };
 
+//Illegale Marker nicht für Cops
+
+if (playerSide isEqualTo west) then 
+{
+    private["_illegalmarkers"];
+
+    _illegalmarkers = ["heroin_1","cocaine_1","cocaine_2","weed_1","meth_1"];
+    
+    { deleteMarkerLocal _x; } forEach _illegalmarkers;
+};
+
 [] execVM "core\init.sqf";
