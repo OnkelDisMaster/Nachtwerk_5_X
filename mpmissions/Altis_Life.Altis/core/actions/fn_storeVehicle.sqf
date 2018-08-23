@@ -11,7 +11,7 @@ _container = (LIFE_SETTINGS(getArray,"life_container"));
 if !(isNull objectParent player) then {
     _vehicle = vehicle player;
 } else {
-    _nearVehicles = nearestObjects[getPos (_this select 0),["Car","Air","Ship","Tank",format["%1",(LIFE_SETTINGS(getArray,"life_container"))]],30]; //Fetch vehicles within 30m.
+    _nearVehicles = nearestObjects[getPos (_this select 0),["Car","Air","Ship","Tank",toString(LIFE_SETTINGS(getArray,"life_container"))],30]; //Fetch vehicles within 30m.
     if (count _nearVehicles > 0) then {
         {
             if (!isNil "_vehicle") exitWith {}; //Kill the loop.

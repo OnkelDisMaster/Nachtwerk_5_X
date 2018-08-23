@@ -21,7 +21,7 @@ _type = switch (true) do {
     case (_vehicle isKindOf "Air"): {"Air"};
     case (_vehicle isKindOf "Ship"): {"Ship"};
 	case (_vehicle isKindOf "Tank"): {"Tank"};  
-	case (_vehicle in (LIFE_SETTINGS(getArray,"life_container"))): {"Container"};
+	case (typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container"))): {"Container"};
 };
 
 _side = switch (_side) do {
