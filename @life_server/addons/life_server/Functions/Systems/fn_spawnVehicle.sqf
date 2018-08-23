@@ -58,8 +58,9 @@ if ((_vInfo select 6) isEqualTo 1) exitWith {
 };
 
 private "_nearVehicles";
+private _container = (LIFE_SETTINGS(getArray,"life_container"));
 if !(_sp isEqualType "") then {
-    _nearVehicles = nearestObjects[_sp,["Car","Air","Ship","Tank",(LIFE_SETTINGS(getArray,"life_container"))],10];
+    _nearVehicles = nearestObjects[_sp,["Car","Air","Ship","Tank",_container],10];
 } else {
     _nearVehicles = [];
 };
