@@ -18,5 +18,5 @@ life_knockout = true;
 sleep 0.08;
 [_target,profileName] remoteExec ["life_fnc_knockedOut",_target];
 
-sleep 3;
+sleep 5;
 life_knockout = false;

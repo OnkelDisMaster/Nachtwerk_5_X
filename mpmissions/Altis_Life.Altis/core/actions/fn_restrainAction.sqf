@@ -11,15 +11,15 @@ _unit = cursorObject;
 if (isNull _unit) exitWith {}; //Not valid
 if (player distance _unit > 3) exitWith {};
 if (_unit getVariable "restrained") exitWith {};
+//if !(player getVariable ["knockout",false]) exitWith {};
 // if (side _unit isEqualTo west) exitWith {};
 if (player isEqualTo _unit) exitWith {};
 if (!isPlayer _unit) exitWith {};
 //Broadcast!
 
-if((life_inv_kabelbinder < 1) && (side player isEqualTo civilian)) exitWith { hintSilent "Du hast keine Kabelbinder bei dir !"; };
-
 if (side player isEqualTo civilian) then {
 	if(life_inv_kabelbinder < 1) exitWith { hintSilent "Du hast keine Kabelbinder bei dir !"; };
+    //if ((_unit getVariable ["knockout",false]) || (_unit getVariable ["playerSurrender",false])) exitWith {"Die Person ist nicht niedergeschlagen oder hat sich ergeben!!!"};
 	life_inv_kabelbinder = life_inv_kabelbinder - 1;
 	hintSilent format["Du hast %1 festgenommen...", _unit getVariable["realname", name _unit]];
 };
