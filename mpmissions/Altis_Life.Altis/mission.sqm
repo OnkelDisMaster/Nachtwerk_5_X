@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=641;
 	class ItemIDProvider
 	{
 		nextID=4282;
@@ -352,24 +352,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -384,6 +366,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -4717,6 +4717,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4724,7 +4725,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21675,7 +21675,6 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
-			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29050,6 +29049,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -29058,7 +29058,6 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29472,6 +29471,7 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -29480,7 +29480,6 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
-					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31331,7 +31330,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
-					atlOffset=0.19100189;
+					atlOffset=9.9182129e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37196,7 +37195,7 @@ class Mission
 			};
 			id=1277;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.00096893311;
+			atlOffset=-0.00094604492;
 		};
 		class Item819
 		{
@@ -40196,7 +40195,7 @@ class Mission
 			class Attributes
 			{
 				ammo=0;
-				init="this allowDamage false;   " \n "this enableSimulation false;   " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""transport"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""transport"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""transport"",0,false,false,"""",' !license_civ_transport && playerSide isEqualTo civilian '];   " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""logistikpilot"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""logistikpilot"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""logistikpilot"",0,false,false,"""",' !license_civ_logistikpilot && playerSide isEqualTo civilian '];   " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""logistikpilot_plus"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""logistikpilot_plus"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""logistikpilot_plus"",0,false,false,"""",' !license_civ_logistikpilot_plus && playerSide isEqualTo civilian ']; this addAction[localize ""Altis Transport Unternehmen Containershop"",life_fnc_vehicleShopMenu,[""container"",civilian,[""atu_g_1"",""atu_g_2"",""atu_g_3"",""atu_g_4""],""civ"",""Altis Transport Unternehmen Containershop""]];  " \n "this setVariable[""realname"",""Altis Transport Unternehmen""];";
+				init="this allowDamage false;   " \n "this enableSimulation false;   " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""transport"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""transport"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""transport"",0,false,false,"""",' !license_civ_transport && playerSide isEqualTo civilian '];   " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""logistikpilot"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""logistikpilot"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""logistikpilot"",0,false,false,"""",' !license_civ_logistikpilot && playerSide isEqualTo civilian '];   " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""logistikpilot_plus"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""logistikpilot_plus"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""logistikpilot_plus"",0,false,false,"""",' !license_civ_logistikpilot_plus && playerSide isEqualTo civilian ']; this addAction[""Altis Transport Unternehmen Containershop"",life_fnc_vehicleShopMenu,[""container"",civilian,[""atu_g_1"",""atu_g_2"",""atu_g_3"",""atu_g_4""],""civ"",""Altis Transport Unternehmen Containershop""]];  " \n "this setVariable[""realname"",""Altis Transport Unternehmen""];";
 			};
 			id=1496;
 			type="Land_InfoStand_V2_F";
