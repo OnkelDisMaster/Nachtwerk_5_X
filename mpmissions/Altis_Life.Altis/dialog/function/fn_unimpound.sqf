@@ -33,6 +33,16 @@ switch (playerSide) do {
 };
 _price = _purchasePrice * _storageFee;
 
+switch (_vehicleLife) do {
+	case "O_Plane_CAS_02_F": {_price = 50000};
+	case "O_Plane_Fighter_02_F": {_price = 50000};
+	case "B_Plane_Fighter_01_F": {_price = 50000};
+	case "B_T_VTOL_01_vehicle_olive_F": {_price = 100000};
+	case "O_T_VTOL_02_vehicle_hex_F": {_price = 20000};
+	case "B_CTRG_Heli_Transport_01_sand_F": {_price = 20000};
+	case "I_MRAP_03_F": {_price = 30000};
+};
+
 if (!(_price isEqualType 0) || _price < 1) then {_price = 500;};
 if (BANK < _price) exitWith {hint format [(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 

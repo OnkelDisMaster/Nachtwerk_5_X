@@ -52,6 +52,16 @@ switch (playerSide) do {
 _retrievePrice = _purchasePrice * _storageFee;
 _sellPrice = _purchasePrice * _sellMultiplier;
 
+switch (_classNameLife) do {
+	case "O_Plane_CAS_02_F": {_retrievePrice = 50000};
+	case "O_Plane_Fighter_02_F": {_retrievePrice = 50000};
+	case "B_Plane_Fighter_01_F": {_retrievePrice = 50000};
+	case "B_T_VTOL_01_vehicle_olive_F": {_retrievePrice = 100000};
+	case "O_T_VTOL_02_vehicle_hex_F": {_retrievePrice = 20000};
+	case "B_CTRG_Heli_Transport_01_sand_F": {_retrievePrice = 20000};
+	case "I_MRAP_03_F": {_retrievePrice = 30000};
+};
+
 if (!(_sellPrice isEqualType 0) || _sellPrice < 1) then {_sellPrice = 500;};
 if (!(_retrievePrice isEqualType 0) || _retrievePrice < 1) then {_retrievePrice = 500;};
 
