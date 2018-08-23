@@ -15,7 +15,7 @@ life_market_resources = [
 	
 	// Default İsler
 	
-	["oel", 4500, 3150, 7850, 3, 1, 
+	["oel", 4500, 3150, 7850, 7, 5, 
 		[ 
 			["diamant",1], 
 			["kupfer",1],
@@ -24,7 +24,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["kupfer", 1500, 1100, 4500, 5, 2, 
+	["kupfer", 1500, 1100, 4500, 6, 4, 
 		[ 
 			["eisen",1],
 			["salz",1],
@@ -33,7 +33,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["eisen", 3000, 1200, 4500, 2, 1, 
+	["eisen", 3000, 1200, 4500, 6, 4, 
 		[
 			["kupfer",1],
 			["glass",1],
@@ -41,7 +41,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["alu", 2700, 1890, 6510, 5, 2, 
+	["alu", 2700, 1890, 6510, 7, 5, 
 		[ 
 			["eisen",1],
 			["kupfer",1],
@@ -49,7 +49,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["platin", 3500, 2450, 7550, 5, 2, 
+    ["platin", 3500, 2450, 7550, 8, 3, 
 		[ 
 			["alu",1],
 			["eisen",1],
@@ -58,7 +58,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["salz", 2600, 1750, 4550, 5, 2, 
+    ["salz", 2600, 1750, 4550, 5, 3, 
 		[ 
 			["eisen",1],
 			["kupfer",1],
@@ -66,7 +66,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["glass", 2000, 1400, 4600, 5, 2, 
+    ["glass", 2000, 1400, 4600, 5, 3, 
 		[ 
 			["eisen",1],
 			["kupfer",1],
@@ -82,7 +82,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["diamant", 4300, 3030, 7730, 5, 2, 
+    ["diamant", 4300, 3030, 7730, 8, 5, 
 		[ 
 			["juwelen",1],
 			["oel",1],
@@ -90,7 +90,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["krone", 45000, 30000, 70000, 5, 2, 
+    ["krone", 45000, 30000, 70000, 8, 5, 
 		[ 
 			["obsidian",1],
 			["diamant",1],
@@ -98,7 +98,7 @@ life_market_resources = [
 		] 
 	],
 	
-    ["juwelen", 15000, 3170, 60300, 5, 2, 
+    ["juwelen", 15000, 3170, 60300, 8, 4, 
 		[ 
 			["diamant",1],
 			["obsidian",1],
@@ -106,14 +106,14 @@ life_market_resources = [
 		] 
 	],
     
-    ["marmor", 3500, 2450, 6550, 5, 2, 
+    ["marmor", 3500, 2450, 6550, 5, 4, 
 		[ 
 			["obsidian",1],
 			["diamant",1]
 		] 
 	],
 	
-    ["obsidian", 5500, 2730, 9070, 5, 2, 
+    ["obsidian", 5500, 2730, 9070, 6, 4, 
 		[ 
 			["marmor",1],
 			["obsidian",1],
@@ -122,7 +122,7 @@ life_market_resources = [
 		] 
 	],
     
-	["weed", 3000, 2100, 5700, 10, 7,   
+	["weed", 3000, 2100, 5700, 13, 8,   
 		[ 
 			["heroin",1],
 			["koks",1],
@@ -132,7 +132,7 @@ life_market_resources = [
 		] 
 	],
 
-	["koks", 5400, 3640, 7500, 15, 10,   
+	["koks", 5400, 3640, 7500, 15, 13,   
 		[ 
 			["heroin",1], 
 			["weed",1],
@@ -142,7 +142,7 @@ life_market_resources = [
 		] 
 	],
 		
-	["heroin", 4400, 2940, 6000, 15, 10,   
+	["heroin", 4400, 2940, 6000, 15, 13,   
 		[ 
 			["koks",1], 
 			["weed",1],
@@ -152,7 +152,7 @@ life_market_resources = [
         ]    
 	],
     
-    ["polenboeller", 3000, 2100, 3900, 15, 10,   
+    ["polenboeller", 3000, 2100, 3900, 15, 13,   
 		[ 
 			["weed",1], 
 			["koks",1],
@@ -162,7 +162,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["zigaretten", 3400, 980, 4500, 15, 10,   
+    ["zigaretten", 3400, 980, 4500, 15, 13,   
 		[ 
 			["weed",1], 
 			["koks",1],
@@ -172,7 +172,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["korallenketten", 13000, 9800, 28200, 15, 10,   
+    ["korallenketten", 13000, 9800, 28200, 15, 13,   
 		[ 
 			["weed",1], 
 			["koks",1],
@@ -182,7 +182,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["meth", 3900, 2170, 6030, 15, 10,   
+    ["meth", 3900, 2170, 6030, 15, 13,   
 		[ 
 			["polenboeller",1],
 			["weed",1], 
@@ -193,21 +193,21 @@ life_market_resources = [
 		] 
 	],
     
-    ["uranIV", 22000, 6000, 45000, 15, 10,   
+    ["uranIV", 22000, 6000, 45000, 18, 15,   
 		[ 
 			["plutonium",1], 
 			["brennstab",1]
 		] 
 	],
     
-    ["plutonium", 25000, 17000, 32000, 15, 10,   
+    ["plutonium", 25000, 17000, 32000, 18, 15,   
 		[ 
 			["uranIV",1], 
 			["brennstab",1]
 		] 
 	],
     
-    ["brennstab", 32000, 22250, 50000, 15, 10,   
+    ["brennstab", 32000, 22250, 50000, 18, 15,   
 		[ 
 			["uranIV",1], 
 			["plutonium",1],
@@ -215,7 +215,7 @@ life_market_resources = [
 		] 
 	],
     
-    ["atombombe", 2300000, 455000, 4700000, 15, 10,   
+    ["atombombe", 2300000, 455000, 4700000, 18, 15,   
 		[ 
 			["uranIV",1], 
 			["plutonium",1],
