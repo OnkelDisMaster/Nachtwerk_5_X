@@ -436,6 +436,7 @@ class Life_Client_Core {
         class virt_buy {};
         class virt_menu {};
         class virt_sell {};
+        class virt_sellAll {};
         class virt_update {};
         class weaponShopAccs {};
         class weaponShopBuySell {};

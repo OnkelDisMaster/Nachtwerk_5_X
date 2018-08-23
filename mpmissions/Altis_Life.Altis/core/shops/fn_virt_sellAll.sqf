@@ -9,18 +9,16 @@
 private ["_type","_index","_price","_amount","_name"];
 if ((lbCurSel 2402) isEqualTo -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-_price = -2;
-_itemNameToSearchFor = _type;
+_price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
+
+_marketprice = [_type] call life_fnc_marketGetSellPrice;
+if(_marketprice != -1) then
 {
- _curItemName = _x select 0;
- _curItemPrice = _x select 1;
- if (_curItemName==_itemNameToSearchFor) then {_price=_curItemPrice};
-	} forEach DYNMARKET_prices;
-	if (_price isEqualTo -1) exitWith {};
-	if (_price isEqualTo -2) then {
-	_price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
-	if (_price isEqualTo -1) exitWith {};
-	};
+	_price = _marketprice;
+};
+
+if (_price isEqualTo -1) exitWith {};
+
 _amount = ITEM_VALUE(_type);
 if ((time - life_action_delay) < 0.2) exitWith {hint localize "STR_NOTF_ActionDelay";};
 life_action_delay = time;
@@ -28,11 +26,19 @@ life_action_delay = time;
 _price = (_price * _amount);
 _name = M_CONFIG(getText,"VirtualItems",_type,"displayName");
 if ([false,_type,_amount] call life_fnc_handleInv) then {
-    hint format [localize "STR_Shop_Virt_SellItem",_amount,(localize _name),[_price] call life_fnc_numberText];
+    hint format[localize "STR_Shop_Virt_SellItem",_amount,(localize _name),[_price] call life_fnc_numberText];
     CASH = CASH + _price;
-    [0] call SOCK_fnc_updatePartial;
+	
+	if(_marketprice != -1) then 
+	{ 
+		[_type, _amount] spawn
+		{
+			sleep 120;
+			[_this select 0,_this select 1] call life_fnc_marketSell;
+		};
+	};
+	
     [] call life_fnc_virt_update;
-	DYNAMICMARKET_boughtItems pushBack [_type,_amount];
 };
 
 if (life_shop_type isEqualTo "drugdealer") then {

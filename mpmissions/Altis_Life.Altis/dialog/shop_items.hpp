@@ -124,7 +124,20 @@ class shops_menu {
             w = (6.25 / 40);
             h = (1 / 25);
         };
+    
+        class ButtonRemoveAllG: Life_RscButtonMenu
+		{
+			idc = -1;
+			text = "Alles Verkaufen";
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			onButtonClick = "[] call Life_fnc_virt_sellAll;";
 
+			x = 0.592716 * safezoneW + safezoneX;
+			y = 0.71 * safezoneH + safezoneY;
+			w = 0.103125 * safezoneW;
+			h = 0.033 * safezoneH;
+		};
+        
         class ButtonClose: Life_RscButtonMenu {
             idc = -1;
             text = "$STR_Global_Close";
