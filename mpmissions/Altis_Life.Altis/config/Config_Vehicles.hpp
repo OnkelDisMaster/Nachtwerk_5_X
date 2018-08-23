@@ -40,7 +40,18 @@ class CarShops {
             { "C_Kart_01_Vrana_F", "" }
         };
     };
-
+    
+    class container {
+        side = "civ";
+        conditions = "";
+        vehicles[] = {
+            { "Land_CargoBox_V1_F", "" },
+            { "Land_Cargo10_blue_F", "" },
+            { "Land_Cargo20_blue_F", "" },
+            { "Land_Cargo40_blue_F", "" }   
+        };
+    };
+    
     class civ_truck {		//Lizenz trucking
         side = "civ";
         conditions = ""; 
@@ -689,10 +700,31 @@ class LifeCfgVehicles {
     class Land_CargoBox_V1_F {
         vItemSpace = 5000;
         conditions = "";
-        price = -1;
+        price = 1000;
         textures[] = {};
     };
-
+    
+    class Land_Cargo10_blue_F {
+        vItemSpace = 5000;
+        conditions = "";
+        price = 2000;
+        textures[] = {};
+    };
+    
+    class Land_Cargo20_blue_F {
+        vItemSpace = 5000;
+        conditions = "";
+        price = 4000;
+        textures[] = {};
+    };
+    
+    class Land_Cargo40_blue_F {
+        vItemSpace = 5000;
+        conditions = "";
+        price = 8000;
+        textures[] = {};
+    };
+    
     class Box_IND_Grenades_F {
         vItemSpace = 350;
         conditions = "";

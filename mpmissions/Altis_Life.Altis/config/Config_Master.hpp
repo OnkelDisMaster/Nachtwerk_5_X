@@ -238,6 +238,9 @@ class Life_Settings {
 		{"STR_Bounty_50000000", "50000000", "24B"},
 		{"STR_Bounty_100000000", "100000000", "25B"}
 	};
+    
+    /* Boxes */
+	life_Container[] = {"Land_CargoBox_V1_F","Land_Cargo10_blue_F","Land_Cargo20_blue_F","Land_Cargo40_blue_F"};
 };
 
 #include "Config_Clothing.hpp"
