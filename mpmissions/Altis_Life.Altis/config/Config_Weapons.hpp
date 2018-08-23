@@ -354,7 +354,7 @@ class WeaponShops {
             { "ItemCompass", "", 50, -1, "" },
             { "ItemWatch", "", 50, -1, "" },
             { "FirstAidKit", "", 150, -1, "" },
-			{ "ToolKit", "", 3000, 100, -1, "" },
+			{ "ToolKit", "", 30000, 100, -1, "" },
             { "NVGoggles", "", 4000, -1, "" },
             { "Chemlight_red", "", 300, -1, "" },
             { "Chemlight_yellow", "", 300, -1, "" },
@@ -376,7 +376,7 @@ class WeaponShops {
             { "ItemCompass", "", 250, -1, "" },
             { "ItemWatch", "", 250, -1, "" },
             { "FirstAidKit", "", 750, -1, "" },
-			{ "ToolKit", "", 5000, 100, -1, "" },
+			{ "ToolKit", "", 50000, 100, -1, "" },
             { "NVGoggles", "", 10000, -1, "" },
             { "Chemlight_red", "", 1500, -1, "" },
             { "Chemlight_yellow", "", 1500, -1, "" },
@@ -503,11 +503,12 @@ class WeaponShops {
         side = "med";
         conditions = "";
         items[] = {
-            { "ItemGPS", "", 10, -1, "" },
-            { "Binocular", "", 15, -1 },
-            { "FirstAidKit", "", 150, -1, "" },
-			{ "Medikit", "", 100, 1 },
-            { "NVGoggles", "", 12, -1 }
+            { "ItemGPS", "", 1, -1, "" },
+            { "Binocular", "", 1, -1, "" },
+            { "FirstAidKit", "", 1, -1, "" },
+			{ "Medikit", "", 1, 1, "" },
+            { "ToolKit", "", 1, 1, "" },
+            { "NVGoggles", "", 1, -1, "" }
         };
         mags[] = {};
         accs[] = {};
