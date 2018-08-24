@@ -120492,29 +120492,6 @@ class Mission
 			id=5039;
 			type="Land_Laptop_device_F";
 			atlOffset=1.3185959;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ObjectTextureCustom0";
-					expression="_this setObjectTextureGlobal [0,_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="5283.jpg";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item3036
 		{
