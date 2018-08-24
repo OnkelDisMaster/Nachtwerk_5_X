@@ -31,12 +31,16 @@ if (_side isEqualTo "Error") exitWith {
     [[]] remoteExec ["life_fnc_impoundMenu",(owner _unit)];
 };
 
+_query = "";
+
 {
-_query = format ["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE pid='%1' AND alive='1' AND active='0' AND side='%2' AND type='%3'",_pid,_side,_type select _forEachIndex];
+_query = _query + format ["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE pid='%1' AND alive='1' AND active='0' AND side='%2' AND type='%3'",_pid,_side,_type select _forEachIndex];
 } forEach _type;
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2,true] call DB_fnc_asyncCall;
+
+format ["Test Query: %1 | QueryResult: %2",_query,_queryResult] remoteExec ["TON_fnc_logging",RSERV];
 
 if (EXTDB_SETTING(getNumber,"DebugMode") isEqualTo 1) then {
     diag_log "------------- Client Query Request -------------";
