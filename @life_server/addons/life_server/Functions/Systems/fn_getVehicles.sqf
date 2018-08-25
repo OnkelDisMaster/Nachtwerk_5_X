@@ -36,7 +36,7 @@ _queryResult = [];
 {
 _query = format ["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE pid='%1' AND alive='1' AND active='0' AND side='%2' AND type='%3'",_pid,_side,_type select _forEachIndex];
 _tickTime = diag_tickTime;
-_queryResult = _queryResult + [_query,2,true] call DB_fnc_asyncCall;
+_queryResult = [_query,2,true] call DB_fnc_asyncCall;
 
 format ["Test QueryResult: %1 | Durchlauf %2",_queryResult,_forEachIndex] remoteExec ["TON_fnc_logging",RSERV];
 
