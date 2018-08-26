@@ -38,12 +38,12 @@ _query = format ["SELECT id, side, classname, type, pid, alive, active, plate, c
 _tickTime = diag_tickTime;
 _queryResult = [_query,2,true] call DB_fnc_asyncCall;
 _h append _queryResult;
-format ["Test QueryResult: %1 | Durchlauf %2",_queryResult,_forEachIndex] remoteExec ["TON_fnc_logging",RSERV];
+//format ["Test QueryResult: %1 | Durchlauf %2",_queryResult,_forEachIndex] remoteExec ["TON_fnc_logging",RSERV];
 
 } forEach _type;
 
 _queryResult = _h;
-format ["Test End-QueryResult: %1 ",_queryResult] remoteExec ["TON_fnc_logging",RSERV];
+//format ["Test End-QueryResult: %1 ",_queryResult] remoteExec ["TON_fnc_logging",RSERV];
 
 if (EXTDB_SETTING(getNumber,"DebugMode") isEqualTo 1) then {
     diag_log "------------- Client Query Request -------------";
