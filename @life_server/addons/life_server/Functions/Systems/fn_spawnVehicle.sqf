@@ -59,9 +59,11 @@ if ((_vInfo select 6) isEqualTo 1) exitWith {
     [1,"STR_Garage_SQLError_Active",true,[_vInfo select 2]] remoteExecCall ["life_fnc_broadcast",_unit];
 };
 
-private "_nearVehicles";
+private ["_nearVehicles","_objektTypen"];
+_objektTypen = ["Car","Air","Ship","Tank"];
+_objektTypen append (LIFE_SETTINGS(getArray,"life_container"));
 if !(_sp isEqualType "") then {
-    _nearVehicles = nearestObjects[_sp,["Car","Air","Ship","Tank"],10];
+    _nearVehicles = nearestObjects[_sp,_objektTypen,10];
 } else {
     _nearVehicles = [];
 };
