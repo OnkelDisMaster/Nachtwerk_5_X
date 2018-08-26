@@ -179035,7 +179035,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this allowDamage false; this setObjectTexture [0, ""images\Schilder\Parkplaetze\feuerwehr.paa""]";
 				disableSimulation=1;
 			};
 			id=9293;
@@ -179077,7 +179076,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this allowDamage false; this setObjectTexture [0, ""images\Schilder\Parkplaetze\feuerwehr.paa""]";
 				disableSimulation=1;
 			};
 			id=9294;
@@ -179118,7 +179116,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this allowDamage false; this setObjectTexture [0, ""images\Schilder\Parkplaetze\feuerwehr.paa""]";
 				disableSimulation=1;
 			};
 			id=9295;
@@ -179159,7 +179156,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this allowDamage false; this setObjectTexture [0, ""images\Schilder\Parkplaetze\feuerwehr.paa""]";
 				disableSimulation=1;
 			};
 			id=9296;
@@ -179200,7 +179196,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this allowDamage false; this setObjectTexture [0, ""images\Schilder\Parkplaetze\feuerwehr.paa""]";
 				disableSimulation=1;
 			};
 			id=9297;
