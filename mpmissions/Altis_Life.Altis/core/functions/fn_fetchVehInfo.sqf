@@ -39,6 +39,8 @@ _seats = 0;
 _hp = 0;
 _fuel = 0;
 
+hint format["Class: %1",_class];
+
 //Fetch
 _scope = FETCH_CONFIG2(getNumber,"CfgVehicles",_class,"scope");
 _picture = FETCH_CONFIG2(getText,"CfgVehicles",_class,"picture");
