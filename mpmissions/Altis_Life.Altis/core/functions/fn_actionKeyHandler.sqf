@@ -16,7 +16,7 @@ _isWater = surfaceIsWater (visiblePositionASL player);
 if (player getVariable ["isEscorting",false]) exitWith {
     switch (playerSide) do {
         case "west": {[] call life_fnc_copInteractionMenu;};
-        case "independent": {hint "Med Win";};
+        case "independent": {[] call life_fnc_medicInteractionMenu;};
         case "civilian": {hint "Civ Win";};
     };
 };
