@@ -21,7 +21,7 @@ disableSerialization;
 
 _curTarget = param [0,objNull,[objNull]];
 if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
-_isVehicle = if ((_curTarget isKindOf "landVehicle") || (_curTarget isKindOf "Ship") || (_curTarget isKindOf "Air")) then {true} else {false};
+_isVehicle = if ((_curTarget isKindOf "landVehicle") || (_curTarget isKindOf "Ship") || (_curTarget isKindOf "Air" || _curTarget isKindOf "Tank" || _curTarget in (LIFE_SETTINGS(getArray,"life_container")))) then {true} else {false};
 if (!_isVehicle) exitWith {closeDialog 0;};
 
 _display = findDisplay 37400;
