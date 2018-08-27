@@ -9,7 +9,7 @@
 private["_vehicle","_veh_data"];
 if (dialog) exitWith {};
 _vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
-if (isNull _vehicle || !(_vehicle isKindOf "Car" || _vehicle isKindOf "Air" || _vehicle isKindOf "Ship" || _vehicle isKindOf "Box_IND_Grenades_F" || _vehicle isKindOf "B_supplyCrate_F")) exitWith {}; //Either a null or invalid vehicle type.
+if (isNull _vehicle || !(_vehicle isKindOf "Car" || _vehicle isKindOf "Air" || _vehicle isKindOf "Ship" || _vehicle isKindOf "Box_IND_Grenades_F" || _vehicle isKindOf "B_supplyCrate_F" || (typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container"))))) exitWith {}; //Either a null or invalid vehicle type.
 //Sleep (random 5);
 if (playerSide isEqualTo independent) exitWith {hint "Das Beladen von Fahrzeugen ist der Feuerwehr untersagt!";};
 if (([civilian,visiblePosition player,12] call life_fnc_nearUnits) && (playerSide isEqualTo civilian)) exitWith{hint "Es darf nur max. 1 Spieler beim Fahrzeug stehen!";};
