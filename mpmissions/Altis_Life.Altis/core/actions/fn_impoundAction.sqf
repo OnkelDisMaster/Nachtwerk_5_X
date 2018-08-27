@@ -8,8 +8,8 @@
 */
 private ["_vehicle","_type","_time","_value","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_filters","_impoundValue","_price","_impoundMultiplier"];
 _vehicle = param [0,objNull,[objNull]];
-_filters = ["Car","Air","Ship"];
-if (!((KINDOF_ARRAY(_vehicle,_filters)))) exitWith {};
+_filters = ["Car","Air","Ship","Tank"];
+if (!((KINDOF_ARRAY(_vehicle,_filters))) && !(typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container")))) exitWith {};
 if (player distance cursorObject > 10) exitWith {};
 if (_vehicle getVariable "NPC") exitWith {hint localize "STR_NPC_Protected"};
 
