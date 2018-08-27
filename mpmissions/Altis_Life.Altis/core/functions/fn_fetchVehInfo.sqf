@@ -39,11 +39,10 @@ _seats = 0;
 _hp = 0;
 _fuel = 0;
 
-hint format["Class: %1",_class];
 
 //Fetch
 _scope = FETCH_CONFIG2(getNumber,"CfgVehicles",_class,"scope");
-_picture = FETCH_CONFIG2(getText,"CfgVehicles",_class,"picture");
+if (typeOf _class in (LIFE_SETTINGS(getArray,"life_container"))) then {_picture = FETCH_CONFIG2(getText,"CfgVehicles",_class,"picture");};
 _displayName = FETCH_CONFIG2(getText,"CfgVehicles",_class,"displayName");
 _vehicleClass = FETCH_CONFIG2(getText,"CfgVehicles",_class,"vehicleClass");
 _side = FETCH_CONFIG2(getNumber,"CfgVehicles",_class,"side");
