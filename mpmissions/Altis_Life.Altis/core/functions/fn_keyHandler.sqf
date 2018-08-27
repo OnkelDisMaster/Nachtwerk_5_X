@@ -226,6 +226,7 @@ switch (_code) do {
                     };
                 } else {
                     _list = ["landVehicle","Air","Ship"];
+                    _list append (LIFE_SETTINGS(getArray,"life_container"));
                     if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 7} && {isNull objectParent player} && {alive cursorObject} && {!life_action_inUse}) then {
                         if ((cursorObject in life_vehicles) ||  (Side (vehicle player) isEqualTo west) || (FETCH_CONST(life_adminlevel) > 1)) then {
                             [cursorObject] spawn life_fnc_openInventory;
