@@ -42,7 +42,7 @@ _fuel = 0;
 
 //Fetch
 _scope = FETCH_CONFIG2(getNumber,"CfgVehicles",_class,"scope");
-if (typeOf _class in (LIFE_SETTINGS(getArray,"life_container"))) then {_picture = FETCH_CONFIG2(getText,"CfgVehicles",_class,"picture");};
+if (_class in (LIFE_SETTINGS(getArray,"life_container"))) then {_picture = FETCH_CONFIG2(getText,"CfgVehicles",_class,"picture");};
 _displayName = FETCH_CONFIG2(getText,"CfgVehicles",_class,"displayName");
 _vehicleClass = FETCH_CONFIG2(getText,"CfgVehicles",_class,"vehicleClass");
 _side = FETCH_CONFIG2(getNumber,"CfgVehicles",_class,"side");
