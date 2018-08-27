@@ -12,16 +12,16 @@
 #define Btn5 37454
 #define Title 37401
 
-private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
+private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5"];
 
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
-_seizeRank = LIFE_SETTINGS(getNumber,"seize_minimum_rank");
+
 
 if (player getVariable ["Escorting", false]) then {
     if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
     // disable side check if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
-    if (player distance _curTarget > 4 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+    if (player distance _curTarget > 7 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
 };
 
 if (!dialog) then {
