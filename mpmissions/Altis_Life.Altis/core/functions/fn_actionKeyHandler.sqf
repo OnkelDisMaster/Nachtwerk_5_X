@@ -111,6 +111,7 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
     private ["_isVehicle","_miscItems","_money","_list"];
 
     _list = ["landVehicle","Ship","Air"];
+    _list append (LIFE_SETTINGS(getArray,"life_container"));
     _isVehicle = if (KINDOF_ARRAY(_curObject,_list)) then {true} else {false};
     _miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F"];
 
