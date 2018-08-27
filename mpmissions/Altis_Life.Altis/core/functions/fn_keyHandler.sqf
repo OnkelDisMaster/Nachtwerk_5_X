@@ -103,13 +103,13 @@ switch (_code) do {
      //Space key for Jumping
     case 57: {
         if (isNil "jumpActionTime") then {jumpActionTime = 0;};
-        if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {!life_is_arrested} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {
+        if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {!life_is_arrested} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5} && {((getPos player) distance2D (markerPos "jail_1")) > 150}) then {
             jumpActionTime = time; //Update the time.
             [player] remoteExec ["life_fnc_jumpFnc",RANY]; //Global execution
             _handled = true;
         };
     };
-
+    
     //Surrender (Shift + B)
     case 48: {
 		if (_shift) then {
@@ -197,6 +197,7 @@ switch (_code) do {
                 [cursorObject] spawn life_fnc_knockoutAction;
             };
         };
+        if ((!(_shift) && {(getPos player) distance2D (markerPos "jail_1")) < 150}) then {_handled = true;};
     };
 /*	
 	//ATM Pin Anzeige (STRG + Shift + A)
