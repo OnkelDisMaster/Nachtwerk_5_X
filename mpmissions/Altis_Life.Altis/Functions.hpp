@@ -164,6 +164,7 @@ class Life_Client_Core {
 		class BJbet {};
 		class BJhit {};
 		class BJstay {};
+        class civInteractionMenu {};
     };
 
     class Config {

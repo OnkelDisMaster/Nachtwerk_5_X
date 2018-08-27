@@ -13,12 +13,8 @@ if (life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming
 if (life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
 
-if (player getVariable ["isEscorting",false]) exitWith {
-    switch (playerSide) do {
-        case "west": {[] call life_fnc_copInteractionMenu;};
-        case "independent": {[] call life_fnc_medicInteractionMenu;};
-        case "civilian": {hint "Civ Win";};
-    };
+if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exitWith {
+    [] call life_fnc_copInteractionMenu;
 };
 
 if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
@@ -103,8 +99,12 @@ if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _cur
 
 //If target is a player then check if we can use the cop menu.
 if (isPlayer _curObject && _curObject isKindOf "Man") then {
-    if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
-        [_curObject] call life_fnc_copInteractionMenu;
+    if ((_curObject getVariable ["restrained",false]) && !dialog) then {
+        switch (playerSide) do {
+            case "west": {[_curObject] call life_fnc_copInteractionMenu;};
+            case "independent": {[_curObject] call life_fnc_medicInteractionMenu;};
+            case "civilian": {[_curObject] call life_fnc_civInteractionMenu;};
+        };
     };
 } else {
     //OK, it wasn't a player so what is it?
