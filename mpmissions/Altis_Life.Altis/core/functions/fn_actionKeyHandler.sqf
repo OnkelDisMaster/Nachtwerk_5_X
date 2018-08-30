@@ -103,7 +103,7 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
         switch (playerSide) do {
             case "west": {[_curObject] call life_fnc_copInteractionMenu;};
             case "independent": {[_curObject] call life_fnc_medicInteractionMenu;};
-            case "civilian": {[_curObject] call life_fnc_civInteractionMenu;};
+            //case "civilian": {[_curObject] call life_fnc_civInteractionMenu;};
         };
     };
 } else {
