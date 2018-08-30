@@ -371,7 +371,7 @@ class Life_Client_Core {
         class medicLoadout {};
         class medicMarkers {};
         class medicRequest {};
-	class medicInteractionMenu {};
+        class medicInteractionMenu {};
         class medicSiren {};
         class medicSirenLights {};
         class onPlayerKilled {};
