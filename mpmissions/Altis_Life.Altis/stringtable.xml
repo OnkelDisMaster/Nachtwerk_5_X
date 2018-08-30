@@ -3290,15 +3290,15 @@
             <Polish>Przerwano usuwanie pojazdu</Polish>
         </Key>
         <Key ID="STR_NOTF_Impounded">
-            <Original>You have impounded a %2\n\nYou have received $%1 for cleaning up the streets!</Original>
-            <Czech>Jste zabaveno a%2 \ n \ n jste obdržel $%1 pro čištění ulic!</Czech>
-            <Spanish>Has embargado un %2\n\nHas recibido $%1 por  limpiar las calles!</Spanish>
+            <Original>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</Original>
+            <Czech>Jste zabaveno a%1 \ n \ n jste obdržel $%2 pro čištění ulic!</Czech>
+            <Spanish>Has embargado un %1\n\nHas recibido $%2 por  limpiar las calles!</Spanish>
             <Russian></Russian>
-            <German>Du hast einen %2 beschlagnahmt\n\nDu hast $%1 für das Aufräumen der Straßen bekommen!</German>
-            <French>Vous avez mis en fourrière un(e) %2\n\nVous avez reçus $%1 pour avoir nettoyé les rues!</French>
-            <Italian>Hai sequestrato un %2\n\nHai ricevuto $%1 per aver mantenuto l'ordine nelle strade!</Italian>
-            <Portuguese>Você apreendeu %2\n\nVocê recebeu R$%1 por deixar as ruas mais seguras!</Portuguese>
-            <Polish>Usunąłeś %2\n\n Otrzymujesz    $%1 za oczyszczanie mapy</Polish>
+            <German>Du hast einen %1 beschlagnahmt\n\nDu hast $%2 für das Aufräumen der Straßen bekommen!</German>
+            <French>Vous avez mis en fourrière un(e) %2\n\nVous avez reçus $%2 pour avoir nettoyé les rues!</French>
+            <Italian>Hai sequestrato un %1\n\nHai ricevuto $%2 per aver mantenuto l'ordine nelle strade!</Italian>
+            <Portuguese>Você apreendeu %1\n\nVocê recebeu R$%2 por deixar as ruas mais seguras!</Portuguese>
+            <Polish>Usunąłeś %1\n\n Otrzymujesz    $%2 za oczyszczanie mapy</Polish>
         </Key>
         <Key ID="STR_NOTF_HasImpounded">
             <Original>%1 has impounded %2's %3</Original>

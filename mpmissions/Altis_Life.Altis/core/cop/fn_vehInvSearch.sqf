@@ -8,8 +8,8 @@
 */
 private ["_vehicle","_vehicleInfo","_value","_list"];
 _vehicle = cursorObject;
-_list = ["Air","Ship","LandVehicle"];
-if (isNull _vehicle || {!(KINDOF_ARRAY(_vehicle,_list))}) exitWith {};
+_list = ["Air","Ship","LandVehicle","Tank"];
+if (isNull _vehicle || {(!(KINDOF_ARRAY(_vehicle,_list))) && (!(typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container"))))}) exitWith {};
 
 _vehicleInfo = _vehicle getVariable ["Trunk",[]];
 if (count _vehicleInfo isEqualTo 0) exitWith {hint localize "STR_Cop_VehEmpty"};
