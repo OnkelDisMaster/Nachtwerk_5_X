@@ -48,7 +48,7 @@ if (!alive player) exitWith {life_action_inUse = false;};
 
 if (count crew _vehicle isEqualTo 0) then {
     if (!(KINDOF_ARRAY(_vehicle,_filters))) exitWith {life_action_inUse = false;};
-    _type = FETCH_CONFIG2(getText,"CfgVehicles",(typeOf _vehicle),"displayName");
+    if (typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container"))) then {_type = "Container";} else { _type = FETCH_CONFIG2(getText,"CfgVehicles",(typeOf _vehicle),"displayName");};
 
     life_impound_inuse = true;
 
