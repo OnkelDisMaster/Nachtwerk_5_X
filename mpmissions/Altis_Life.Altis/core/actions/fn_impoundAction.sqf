@@ -46,8 +46,8 @@ for "_i" from 0 to 1 step 0 do {
 if (player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false;};
 if (!alive player) exitWith {life_action_inUse = false;};
 
-if (count crew _vehicle isEqualTo 0) then {
-    if (!(KINDOF_ARRAY(_vehicle,_filters))) exitWith {life_action_inUse = false;};
+if ((count crew _vehicle isEqualTo 0) || (typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container")))) then {
+    if (!((KINDOF_ARRAY(_vehicle,_filters))) && !(typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container")))) exitWith {life_action_inUse = false;};
     if (typeOf _vehicle in (LIFE_SETTINGS(getArray,"life_container"))) then {_type = "Container";} else { _type = FETCH_CONFIG2(getText,"CfgVehicles",(typeOf _vehicle),"displayName");};
 
     life_impound_inuse = true;
