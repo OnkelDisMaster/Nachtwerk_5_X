@@ -36,7 +36,7 @@ if ((_curObject getVariable ["restrained",false])) then {
     //Set Unrestrain Button
     _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
     _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
-} else {{ _x ctrlShow false; } forEach [_Btn1,_Btn2];};
+} else {{ _x ctrlShow false; } forEach [_Btn1];};
 
 //Set Escort Button
 if (player getVariable ["isEscorting",false]) then {
