@@ -21,8 +21,11 @@ private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
 
+if (player getVariable ["Escorting", false]) then {
     if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
-    if (player distance _curTarget > 7 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+    if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
+    if (player distance _curTarget > 4 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+};
 
 if (!dialog) then {
     createDialog "pInteraction_Menu";
@@ -38,8 +41,6 @@ _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 life_pInact_curTarget = _curTarget;
-
-hint "Test2";
 
 { _x ctrlShow false; } forEach [_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 
