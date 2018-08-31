@@ -13,8 +13,9 @@ if (life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming
 if (life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
 
-if ({player getVariable ["isEscorting",false]}) exitWith {
+if (player getVariable ["isEscorting",false]) exitWith {
     switch (playerSide) do {
+        hint "Test";
         case west: {[] call life_fnc_copInteractionMenu;};
         case independent: {[] call life_fnc_medicInteractionMenu;};
         case civilian: {[] call life_fnc_civInteractionMenu;};
