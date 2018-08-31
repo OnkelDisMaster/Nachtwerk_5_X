@@ -102,7 +102,7 @@ if (isPlayer _curObject && _curObject isKindOf "Man" && !dialog) then {
     switch (playerSide) do {
         case west: {[_curObject] call life_fnc_copInteractionMenu;};
         case independent: {[_curObject] call life_fnc_medicInteractionMenu;};
-        case civilian: {if ((_curObject getVariable ["restrained",false])) then { [_curObject] call life_fnc_civInteractionMenu;};};
+        case civilian: {[_curObject] call life_fnc_civInteractionMenu;};
     };
 } else {
     //OK, it wasn't a player so what is it?

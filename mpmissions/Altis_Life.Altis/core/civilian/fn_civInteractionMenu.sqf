@@ -43,6 +43,7 @@ life_pInact_curTarget = _curTarget;
 if (player getVariable ["isEscorting",false]) then {
     _Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
     _Btn2 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
+    _Btn2 ctrlShow true;
     { _x ctrlShow false; } forEach [_Btn1,_Btn3,_Btn4,_Btn5];
 } else {
     if (_curObject getVariable ["restrained",false]) then {
@@ -76,9 +77,6 @@ if (player getVariable ["isEscorting",false]) then {
         _Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
     
     } else {
-        { _x ctrlShow false; } forEach [_Btn1,_Btn2];
-        closeDialog 0;
-        hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";
-        titleText ["Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar","PLAIN"];
+        exitWith{closeDialog 0;};
     };   
 };
