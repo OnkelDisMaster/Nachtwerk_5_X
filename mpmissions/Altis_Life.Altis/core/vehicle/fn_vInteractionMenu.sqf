@@ -80,7 +80,7 @@ switch (playerSide) do {
 
         _Btn3 ctrlSetText localize "STR_vInAct_PullOut";
         _Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
-        if (crew _curTarget isEqualTo []) then {_Btn4 ctrlEnable false;};
+        if (crew _curTarget isEqualTo []) then {_Btn3 ctrlEnable false;};
 
         _Btn4 ctrlSetText localize "STR_vInAct_Impound";
         _Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
