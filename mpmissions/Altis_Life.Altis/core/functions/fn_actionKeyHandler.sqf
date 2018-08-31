@@ -17,7 +17,7 @@ if (player getVariable ["isEscorting",false]) exitWith {
     if (playerSide isEqualTo west) then {[] call life_fnc_copInteractionMenu;};
     if (playerSide isEqualTo independent) then {[] call life_fnc_medicInteractionMenu;};
     if (playerSide isEqualTo civilian) then {[] call life_fnc_civInteractionMenu;};
-    };
+    hint "Test vor Menü";
 };
 
 if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
