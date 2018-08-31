@@ -14,11 +14,9 @@ if (life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
 
 if (player getVariable ["isEscorting",false]) exitWith {
-    switch (playerSide) do {
-        hint "Test";
-        case west: {[] call life_fnc_copInteractionMenu;};
-        case independent: {[] call life_fnc_medicInteractionMenu;};
-        case civilian: {[] call life_fnc_civInteractionMenu;};
+    if (playerSide isEqualTo west) then {[] call life_fnc_copInteractionMenu;};
+    if (playerSide isEqualTo independent) then {[] call life_fnc_medicInteractionMenu;};
+    if (playerSide isEqualTo civilian) then {[] call life_fnc_civInteractionMenu;};
     };
 };
 
