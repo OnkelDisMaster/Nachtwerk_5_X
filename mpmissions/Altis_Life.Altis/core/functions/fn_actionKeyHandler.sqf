@@ -13,12 +13,9 @@ if (life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming
 if (life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
 
-if (player getVariable ["isEscorting",false]) exitWith {
-    if (playerSide isEqualTo west) then {[] call life_fnc_copInteractionMenu;};
-    if (playerSide isEqualTo independent) then {[] call life_fnc_medicInteractionMenu;};
-    if (playerSide isEqualTo civilian) then {[] call life_fnc_civInteractionMenu;};
-    hint "Test vor Menü";
-};
+if ((playerSide isEqualTo west) && (player getVariable ["isEscorting",false])) exitWith {[] call life_fnc_copInteractionMenu;};
+if ((playerSide isEqualTo independent) && (player getVariable ["isEscorting",false])) exitWith {[] call life_fnc_medicInteractionMenu; hint "Nach Aufruf, vor Menu";};
+if ((playerSide isEqualTo civilian) && (player getVariable ["isEscorting",false])) exitWith {[] call life_fnc_civInteractionMenu;};
 
 if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
     //Check if the player is near an ATM.
