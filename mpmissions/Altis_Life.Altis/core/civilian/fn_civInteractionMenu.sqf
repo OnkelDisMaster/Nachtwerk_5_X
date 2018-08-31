@@ -19,10 +19,13 @@ private ["_display","_bounty","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
 
-if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
-if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
-if (player distance _curTarget > 4 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+hint "Civ- ganz oben";
 
+if (player getVariable ["Escorting", false]) then {
+    if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
+    if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
+    if (player distance _curTarget > 4 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+};
 
 if (!dialog) then {
     createDialog "pInteraction_Menu";
@@ -45,6 +48,8 @@ if (player getVariable ["isEscorting",false]) exitWith {
     _Btn2 ctrlShow true;
     { _x ctrlShow false; } forEach [_Btn1,_Btn3,_Btn4,_Btn5];
 };
+
+hint "Im Civ Menu unter IsEscorting";
 
 if (_curTarget getVariable ["restrained",false]) then {
         //Set Unrestrain Button
