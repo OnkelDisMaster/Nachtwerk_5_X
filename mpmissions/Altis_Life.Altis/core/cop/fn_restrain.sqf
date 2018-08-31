@@ -12,6 +12,8 @@ _player = player;
 _vehicle = vehicle player;
 if (isNull _cop) exitWith {};
 
+disableUserInput true;
+
 //Monitor excessive restrainment
 [] spawn {
     private "_time";
@@ -19,12 +21,13 @@ if (isNull _cop) exitWith {};
         _time = time;
         waitUntil {(time - _time) > (5 * 60)};
 
-        if (!(player getVariable ["restrained",false])) exitWith {};
+        if (!(player getVariable ["restrained",false])) exitWith {disableUserInput false;};
         if (!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable ["restrained",false]) && isNull objectParent player) exitWith {
             player setVariable ["restrained",false,true];
             player setVariable ["Escorting",false,true];
             player setVariable ["transporting",false,true];
             detach player;
+            disableUserInput false;
             titleText[localize "STR_Cop_ExcessiveRestrain","PLAIN"];
         };
     };
@@ -48,11 +51,13 @@ while {player getVariable  "restrained"} do {
         player setVariable ["Escorting",false,true];
         player setVariable ["transporting",false,true];
         detach _player;
+        disableUserInput false;
     };
 
     if (!alive _cop) then {
         player setVariable ["Escorting",false,true];
         detach player;
+        disableUserInput false;
     };
 
     if (!(isNull objectParent player) && life_disable_getIn) then {
@@ -84,7 +89,7 @@ while {player getVariable  "restrained"} do {
     };
 };
 
-//disableUserInput false;
+disableUserInput false;
 
 if (alive player) then {
     player switchMove "AmovPercMstpSlowWrflDnon_SaluteIn";
