@@ -100,11 +100,9 @@ if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _cur
 //If target is a player then check if we can use the cop menu.
 if (isPlayer _curObject && _curObject isKindOf "Man") then {
   //  if ((_curObject getVariable ["restrained",false]) && !dialog) then {
-        switch (playerSide) do {
-            case "west": {[_curObject] call life_fnc_copInteractionMenu;};
-            case "independent": {[_curObject] call life_fnc_medicInteractionMenu;};
-            case "civilian": {[_curObject] call life_fnc_civInteractionMenu;};
-        };
+    if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
+        [_curObject] call life_fnc_copInteractionMenu;
+    };
   //  };
 } else {
     //OK, it wasn't a player so what is it?
