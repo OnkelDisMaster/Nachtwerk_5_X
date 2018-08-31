@@ -42,7 +42,7 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck; close
 if ((life_inv_toolkit >= 1) && {alive life_vInact_curTarget} && {([life_vInact_curTarget] call life_fnc_isDamaged)}) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
 switch (playerSide) do {
-    case "west": {
+    case west: {
         _Btn2 ctrlSetText localize "STR_vInAct_Registration";
         _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction; closeDialog 0;";
 
@@ -74,7 +74,7 @@ switch (playerSide) do {
             };
         };
     };
-    case "independent": {
+    case independent: {
         _Btn2 ctrlSetText localize "STR_vInAct_Registration";
         _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction; closeDialog 0;";
 
@@ -105,7 +105,7 @@ switch (playerSide) do {
         
         _Btn6 ctrlShow false;
     };
-    case "civilian": {
+    case civilian: {
         if (_curTarget isKindOf "Ship") then {
             _Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
             _Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
