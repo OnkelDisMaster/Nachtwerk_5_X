@@ -73,7 +73,7 @@ if (_curObject getVariable ["restrained",false]) then {
         if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
     } forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
 
-} else {{ _x ctrlShow false; } forEach [_Btn1,_Btn6,_Btn8];};
+} else {{ _x ctrlShow false; } forEach [_Btn1,_Btn4,_Btn6,_Btn8];};
 
 //Set Check Licenses Button
 _Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";

@@ -38,48 +38,47 @@ _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 life_pInact_curTarget = _curTarget;
+{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8];
 
 if (player getVariable ["isEscorting",false]) then {
     _Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
     _Btn2 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
-    { _x ctrlShow false; } forEach [_Btn1,_Btn3,_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
+    { _x ctrlShow false; } forEach [_Btn1,_Btn3,_Btn4,_Btn5];
 } else {
     if (_curObject getVariable ["restrained",false]) then {
         _Btn2 ctrlSetText localize "STR_pInAct_Escort";
         _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
-    };
-};
-
-if (_curTarget getVariable ["restrained",false]) then {
-    //Set Unrestrain Button
-    _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-    _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+        
+        //Set Unrestrain Button
+        _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
+        _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+        
+        //Set Robber Button
+        _Btn3 ctrlSetText "Ausrauben";
+        _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_robAction; closeDialog 0;";
+        
+        _Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
+        _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
+        
+        if (license_civ_bountyH) then {
+            _bounty = life_pInact_curTarget getVariable["hatKopfgeld",false];
+            if (_bounty) then {
+                _Btn5 ctrlSetText "Kopfgeld einfordern";	
+            } else {
+                _Btn5 ctrlSetText "Kopfgeldlos";
+                _Btn5 ctrlEnable false;
+            };
+            if (((getMarkerPos "cop_spawn_1") distance player > 80) && ((getMarkerPos "cop_spawn_2") distance player > 80) && ((getMarkerPos "cop_spawn_3") distance player) > 80 && ((getMarkerPos "cop_spawn_4") distance player > 80) && ((getMarkerPos "cop_spawn_5") distance player > 80) && ((getMarkerPos "cop_spawn_6") distance player > 80) && ((getMarkerPos "Kopfgeld_1") distance player > 80) && ((getMarkerPos "Kopfgeld_2") distance player > 80) && ((getMarkerPos "Kopfgeld_3") distance player > 80)) then {
+                _Btn5 ctrlEnable false;
+            };	
+            
+        } else {_Btn5 ctrlShow false;};
+        _Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
     
-	//Set Robber Button
-    _Btn3 ctrlSetText "Ausrauben";
-    _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_robAction; closeDialog 0;";
-    
-	_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
-	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
-	
-	if (license_civ_bountyH) then {
-		_bounty = life_pInact_curTarget getVariable["hatKopfgeld",false];
-		if (_bounty) then {
-			_Btn5 ctrlSetText "Kopfgeld einfordern";	
-		} else {
-			_Btn5 ctrlSetText "Kopfgeldlos";
-			_Btn5 ctrlEnable false;
-		};
-		if (((getMarkerPos "cop_spawn_1") distance player > 80) && ((getMarkerPos "cop_spawn_2") distance player > 80) && ((getMarkerPos "cop_spawn_3") distance player) > 80 && ((getMarkerPos "cop_spawn_4") distance player > 80) && ((getMarkerPos "cop_spawn_5") distance player > 80) && ((getMarkerPos "cop_spawn_6") distance player > 80) && ((getMarkerPos "Kopfgeld_1") distance player > 80) && ((getMarkerPos "Kopfgeld_2") distance player > 80) && ((getMarkerPos "Kopfgeld_3") distance player > 80)) then {
-			_Btn5 ctrlEnable false;
-		};	
-		
-	} else {_Btn5 ctrlShow false;};
-	_Btn5 buttonSetAction "[life_pInact_curTarget,player] call life_fnc_bountyLebend; closeDialog 0;";
-		
-	{ _x ctrlShow false; } forEach [_Btn6,_Btn7,_Btn8];
-} else {
-	closeDialog 0;
-	hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";
-	titleText ["Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar","PLAIN"];
+    } else {
+        { _x ctrlShow false; } forEach [_Btn1,_Btn2];
+        closeDialog 0;
+        hint "Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar";
+        titleText ["Es sind noch keine weiteren Funktionen im fn_civInteractionMenu.sqf verfügbar","PLAIN"];
+    };   
 };
