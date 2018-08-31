@@ -39,6 +39,8 @@ _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 life_pInact_curTarget = _curTarget;
 
+hint "Test2";
+
 { _x ctrlShow false; } forEach [_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 
 if (player getVariable ["isEscorting",false]) exitWith {
