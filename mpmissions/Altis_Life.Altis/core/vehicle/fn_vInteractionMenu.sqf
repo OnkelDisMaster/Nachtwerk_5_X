@@ -82,7 +82,7 @@ switch (playerSide) do {
         _Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
         if (crew _curTarget isEqualTo []) then {_Btn3 ctrlEnable false;};
 
-        _Btn4 ctrlSetText localize "STR_vInAct_Impound";
+        _Btn4 ctrlSetText "Abschleppen";
         _Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
         
         if (_curTarget isKindOf "Ship") then {
@@ -103,7 +103,10 @@ switch (playerSide) do {
             };
         };
         
-        _Btn6 ctrlShow false;
+        _Btn6 ctrlShow true;
+		_Btn6 ctrlSetText "Aufbrechen";
+		_Btn6 buttonSetAction "[cursorTarget,0] remoteExec ['life_fnc_lockVehicle',cursorTarget];";	
+		_Btn6 ctrlEnable true;
     };
     case civilian: {
         if (_curTarget isKindOf "Ship") then {
