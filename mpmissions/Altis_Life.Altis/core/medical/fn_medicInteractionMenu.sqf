@@ -41,21 +41,22 @@ life_pInact_curTarget = _curTarget;
 
 { _x ctrlShow false; } forEach [_Btn4,_Btn5,_Btn6,_Btn7,_Btn8];
 
-if (player getVariable ["isEscorting",false]) then {
+if (player getVariable ["isEscorting",false]) exitWith {
     _Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
     _Btn2 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
     _Btn2 ctrlShow true;
     { _x ctrlShow false; } forEach [_Btn1,_Btn3];
-} else {
-    if (_curObject getVariable ["restrained",false]) then {
-        _Btn2 ctrlSetText localize "STR_pInAct_Escort";
-        _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
-        
-        //Set Unrestrain Button
-        _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-        _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
-    } else {{ _x ctrlShow false; } forEach [_Btn1];};
 };
+
+if (_curObject getVariable ["restrained",false]) then {
+    //Set Unrestrain Button
+    _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
+    _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+    
+    _Btn2 ctrlSetText localize "STR_pInAct_Escort";
+    _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
+ 
+} else {{ _x ctrlShow false; } forEach [_Btn1,_Btn2];};
 
 //Set Ticket Button
 _Btn3 ctrlSetText localize "STR_pInAct_TicketBtn";
