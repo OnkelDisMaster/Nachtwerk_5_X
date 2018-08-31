@@ -20,12 +20,15 @@ for "_i" from 0 to 1 step 0 do {
 
         if (!isNil {_veh getVariable "NPC"} && {_veh getVariable "NPC"}) then {_protect = true;};
 
-        if ((_vehicleClass in ["Car","Air","Ship","Armored","Submarine"]) && {!(_protect)}) then {
+        if ((_vehicleClass in ["Car","Air","Ship","Armored","Submarine","Tank"]) && {!(_protect)}) then {
             if (LIFE_SETTINGS(getNumber,"save_vehicle_fuel") isEqualTo 1) then {_fuel = (fuel _veh);};
             _dbInfo = _veh getVariable ["dbInfo",[]];
             _units = {(_x distance _veh < 1200)} count playableUnits;
             if (count crew _x isEqualTo 0) then {
                 switch (true) do {
+                    //Fahrzeuge in der Nähe vom Abschlepphof
+                    case (({getPos _x} distance (getMarkerPos "feuerwehr_hof")) < 100): {_deleted = false;};
+                    
                     case ((_x getHitPointDamage "HitEngine") > 0.7 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
                     case ((_x getHitPointDamage "HitLFWheel") > 0.98 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
                     case ((_x getHitPointDamage "HitLF2Wheel") > 0.98 && _units isEqualTo 0) : {deleteVehicle _x; _deleted = true;};
