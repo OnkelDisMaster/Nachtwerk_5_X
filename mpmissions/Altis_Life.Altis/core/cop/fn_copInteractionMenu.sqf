@@ -50,7 +50,7 @@ if (player getVariable ["isEscorting",false]) exitWith {
     { _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
 };
 
-if (_curObject getVariable ["restrained",false]) then {
+if (life_pInact_curTarget getVariable ["restrained",false]) then {
     //Set Unrestrain Button
     _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
     _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
