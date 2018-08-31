@@ -23,7 +23,7 @@ for "_i" from 0 to 1 step 0 do {
         if ((_vehicleClass in ["Car","Air","Ship","Armored","Submarine","Tank"]) && {!(_protect)}) then {
             if (LIFE_SETTINGS(getNumber,"save_vehicle_fuel") isEqualTo 1) then {_fuel = (fuel _veh);};
             _dbInfo = _veh getVariable ["dbInfo",[]];
-            _units = {(_x distance _veh < 1200)} count playableUnits;
+            _units = {(_x distance _veh < 1000)} count playableUnits;
             if (count crew _x isEqualTo 0) then {
                 switch (true) do {
                     //Fahrzeuge in der Nähe vom Abschlepphof
