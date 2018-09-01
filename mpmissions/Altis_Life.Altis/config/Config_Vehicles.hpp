@@ -18,7 +18,7 @@ class CarShops {
     */
     class civ_car {			//Lizenz driver
         side = "civ"; 
-        conditions = ""; 
+        conditions = "license_civ_driver"; 
         vehicles[] = {
 			{ "B_Quadbike_01_F", "" },
             { "C_Hatchback_01_F", "" },
@@ -43,18 +43,18 @@ class CarShops {
     
     class container {
         side = "civ";
-        conditions = "";
+        conditions = "license_civ_transport || license_civ_logistikpilot || license_civ_logistikpilot_plus";
         vehicles[] = {
             { "Land_CargoBox_V1_F", "" },
             { "Land_Cargo10_blue_F", "" },
-            { "Land_Cargo20_blue_F", "" },
-            { "Land_Cargo40_blue_F", "" }   
+            { "Land_Cargo20_blue_F", "license_civ_logistikpilot || license_civ_logistikpilot_plus" },
+            { "Land_Cargo40_blue_F", "license_civ_logistikpilot || license_civ_logistikpilot_plus" }   
         };
     };
     
     class civ_truck {		//Lizenz trucking
         side = "civ";
-        conditions = ""; 
+        conditions = "license_civ_trucking"; 
         vehicles[] = {
             { "C_Van_01_fuel_F", "" },
             { "C_Van_01_box_F", "" },
@@ -76,7 +76,7 @@ class CarShops {
 
     class civ_air {			//Lizenz   pilot
         side = "civ";
-        conditions = ""; 
+        conditions = "license_civ_pilot"; 
         vehicles[] = {
 			{ "B_Heli_Light_01_F", "" },
             { "O_Heli_Light_02_unarmed_F", "" },
@@ -87,7 +87,7 @@ class CarShops {
 
      class civ_ship {		//Lizenz  boat				
         side = "civ";
-        conditions = ""; 
+        conditions = "license_civ_boat"; 
         vehicles[] = {
 			{ "C_Rubberboat", "" },
             { "C_Boat_Civil_01_F", "" },
@@ -99,7 +99,7 @@ class CarShops {
 
     class reb_car {			//Lizenz rebel
         side = "civ";
-        conditions = ""; 
+        conditions = "license_civ_rebel"; 
         vehicles[] = {
 			{ "B_Quadbike_01_F", "" },
 			{ "C_Van_02_transport_F", "" },
@@ -122,7 +122,7 @@ class CarShops {
 
 	class elite {			//Lizenz elite
         side = "civ";
-        conditions = ""; 
+        conditions = "license_civ_elite"; 
         vehicles[] = {
             { "O_T_LSV_02_unarmed_ghex_F", "" },
             { "O_T_MRAP_02_ghex_F", "" },
@@ -143,7 +143,7 @@ class CarShops {
 	
     class schwarzmarkt { 
         side = "civ";
-        conditions = ""; 
+        conditions = "license_civ_elite"; 
         vehicles[] = {
             { "I_MRAP_03_F", "" },
             { "B_CTRG_Heli_Transport_01_sand_F", "" }         
@@ -152,21 +152,21 @@ class CarShops {
     
     class med_shop {
         side = "med";
-        conditions = ""; 
+        conditions = "playerSide isEqualTo independent"; 
         vehicles[] = {
-			{ "C_Van_01_box_F", "" },
-			{ "C_Van_02_medevac_F", "" },
-            { "C_Offroad_01_F", "" },
-			{ "C_Van_01_fuel_F", "" },
-            { "C_SUV_01_F", "" },
-			{ "I_Truck_02_medical_F", "" },
-			{ "B_Truck_01_medical_F", "" },
-			{ "B_Truck_01_transport_F", "" },
-			{ "O_Truck_03_transport_F", "" },
-            { "O_Truck_03_covered_F", "" },
-			{ "O_Truck_03_repair_F", "" },
-			{ "O_Truck_03_medical_F", "" },
-			{ "B_MRAP_01_F", "" }
+			{ "C_Van_01_box_F", "call life_mediclevel >= 1" },
+			{ "C_Van_02_medevac_F", "call life_mediclevel >= 2" },
+            { "C_Offroad_01_F", "call life_mediclevel >= 2" },
+			{ "C_Van_01_fuel_F", "call life_mediclevel >= 2" },
+            { "C_SUV_01_F", "call life_mediclevel >= 3" },
+			{ "I_Truck_02_medical_F", "call life_mediclevel >= 3" },
+			{ "B_Truck_01_medical_F", "call life_mediclevel >= 3" },
+			{ "B_Truck_01_transport_F", "call life_mediclevel >= 3" },
+			{ "O_Truck_03_transport_F", "call life_mediclevel >= 4" },
+            { "O_Truck_03_covered_F", "call life_mediclevel >= 4" },
+			{ "O_Truck_03_repair_F", "call life_mediclevel >= 3" },
+			{ "O_Truck_03_medical_F", "call life_mediclevel >= 4" },
+			{ "B_MRAP_01_F", "call life_mediclevel >= 6" }
         };
     };
 
@@ -174,11 +174,11 @@ class CarShops {
         side = "med";
         conditions = ""; 
         vehicles[] = {
-			{ "B_Heli_Light_01_F", "" },
-            { "O_Heli_Light_02_unarmed_F", "" },
-			{ "I_Heli_Transport_02_F", "" },
-			{ "I_Heli_light_03_unarmed_F", "" },
-            { "O_Heli_Transport_04_F", "" }
+			{ "B_Heli_Light_01_F", "call life_mediclevel >= 2" },
+            { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 3" },
+			{ "I_Heli_Transport_02_F", "call life_mediclevel >= 4" },
+			{ "I_Heli_light_03_unarmed_F", "call life_mediclevel >= 5" },
+            { "O_Heli_Transport_04_F", "call life_mediclevel >= 5" }
         };
     };
 
@@ -186,23 +186,23 @@ class CarShops {
         side = "cop";
         conditions = ""; 
         vehicles[] = {			
-			{ "B_Quadbike_01_F", "" },
-            { "C_SUV_01_F", "" },
-            { "C_Offroad_01_F", "" },
-			{ "C_Van_02_vehicle_F", "" },
-			{ "C_Van_02_transport_F", "" },
-			{ "C_IDAP_Van_02_medevac_F", "" },
-			{ "B_Truck_01_transport_F", "" },
-            { "B_Truck_01_box_F", "" },
-            { "C_Hatchback_01_F", "" },
-            { "C_Hatchback_01_sport_F", "" },
-			{ "B_T_LSV_01_unarmed_black_F", "" },
-            { "O_T_LSV_02_unarmed_black_F", "" },
-            { "O_G_Offroad_01_armed_F", "" },
-            { "B_MRAP_01_F", "" },
-            { "I_MRAP_03_F", "" },
-            { "I_LT_01_scout_F", "" },
-            { "O_APC_Wheeled_02_rcws_F", "" } //call life_coplevel >= 3
+			{ "B_Quadbike_01_F", "call life_coplevel >= 1" },
+            { "C_SUV_01_F", "call life_coplevel >= 2" },
+            { "C_Offroad_01_F", "call life_coplevel >= 2" },
+			{ "C_Van_02_vehicle_F", "call life_coplevel >= 2" },
+			{ "C_Van_02_transport_F", "call life_coplevel >= 2" },
+			{ "C_IDAP_Van_02_medevac_F", "call life_coplevel >= 2" },
+			{ "B_Truck_01_transport_F", "call life_coplevel >= 3" },
+            { "B_Truck_01_box_F", "call life_coplevel >= 3" },
+            { "C_Hatchback_01_F", "call life_coplevel >= 3" },
+            { "C_Hatchback_01_sport_F", "call life_coplevel >= 4" },
+			{ "B_T_LSV_01_unarmed_black_F", "call life_coplevel >= 4" },
+            { "O_T_LSV_02_unarmed_black_F", "call life_coplevel >= 4" },
+            { "O_G_Offroad_01_armed_F", "call life_coplevel >= 5" },
+            { "B_MRAP_01_F", "call life_coplevel >= 6" },
+            { "I_MRAP_03_F", "call life_coplevel >= 9" },
+            { "I_LT_01_scout_F", "call life_coplevel >= 9" },
+            { "O_APC_Wheeled_02_rcws_F", "call life_coplevel >= 9" } //call life_coplevel >= 3
         };
     };
 
@@ -210,16 +210,16 @@ class CarShops {
         side = "cop";
         conditions = ""; 
         vehicles[] = {
-			{ "B_Heli_Light_01_F", "" },
-            { "I_Heli_light_03_unarmed_F", "" },
-			{ "O_Heli_Light_02_unarmed_F", "" },
-            { "B_UAV_01_F", "" },
-			{ "I_Heli_Transport_02_F", "" },
-            { "B_Heli_Transport_01_F", "" },
-			{ "B_Heli_Transport_03_unarmed_F", "" },
-            { "B_Plane_Fighter_01_F", "" },
-			{ "B_T_VTOL_01_vehicle_blue_F", "" },
-            { "B_T_UAV_03_F", "" }
+			{ "B_Heli_Light_01_F", "call life_coplevel >= 2" },
+            { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 3" },
+			{ "O_Heli_Light_02_unarmed_F", "call life_coplevel >= 4" },
+            { "B_UAV_01_F", "call life_coplevel >= 4" },
+			{ "I_Heli_Transport_02_F", "call life_coplevel >= 4" },
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 5" },
+			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 6" },
+            { "B_Plane_Fighter_01_F", "call life_coplevel >= 7" },
+			{ "B_T_VTOL_01_vehicle_blue_F", "call life_coplevel >= 7" },
+            { "B_T_UAV_03_F", "call life_coplevel >= 11" }
         };
     };
 
@@ -227,11 +227,11 @@ class CarShops {
         side = "cop";
         conditions = ""; 
         vehicles[] = {			
-			{ "B_Boat_Transport_01_F", "" },
-            { "C_Boat_Civil_01_police_F", "" },
-            { "C_Boat_Transport_02_F", "" }, //Apex DLC
-            { "B_Boat_Armed_01_minigun_F", "" },
-            { "B_SDV_01_F", "" }
+			{ "B_Boat_Transport_01_F", "call life_coplevel >= 1" },
+            { "C_Boat_Civil_01_police_F", "call life_coplevel >= 1" },
+            { "C_Boat_Transport_02_F", "call life_coplevel >= 1" }, //Apex DLC
+            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 4" },
+            { "B_SDV_01_F", "call life_coplevel >= 4" }
         };
     };
 };
