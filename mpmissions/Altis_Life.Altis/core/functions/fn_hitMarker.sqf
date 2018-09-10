@@ -10,6 +10,7 @@
 _unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 disableSerialization;
 if (isNull _unit) exitWith {};
+if (!alive _unit) exitWith {};
 if (license_civ_implantat_hitmarker || license_cop_hitmarker) then {
     if (!isNull player) then {
         if ((player != _unit) && life_hitmarker) then

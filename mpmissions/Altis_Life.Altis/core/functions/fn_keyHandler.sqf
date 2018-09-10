@@ -309,6 +309,10 @@ switch (_code) do {
             };
         };
     };
+    
+    #define IDC_LIFE_BAR_Speaker 3007
+
+    disableSerialization;
 
     //Ohrstöpsel Key (Shift + Bild runter)
     case 209: {
