@@ -58,7 +58,7 @@ class CfgGather {
 		
 		class methu {
             amount = (random(3)+1);
-            zones[] = { "methu_1" };
+            zones[] = { "meth_1" };
             item = ""; 
             zoneSize = 30;
         };
@@ -131,6 +131,7 @@ Example 2:
             zones[] = { "copper_mine" };
             item = "pickaxe";
             mined[] = {"kupfererz"};
+            zoneSize = 30;
         };
 
         class eisenerz {
@@ -138,6 +139,7 @@ Example 2:
             zones[] = { "iron_mine" };
             item = "pickaxe";
             mined[] = { "eisenerz" };
+            zoneSize = 30;
         };
 
         class salzu {
@@ -145,6 +147,7 @@ Example 2:
             zones[] = { "salt_mine" };
             item = "pickaxe";
             mined[] = { "salzu" };
+            zoneSize = 30;
         };
 
         class sand {
@@ -152,6 +155,7 @@ Example 2:
             zones[] = { "sand_mine" };
             item = "pickaxe";
             mined[] = { "sand" };
+            zoneSize = 30;
         };
 
         class diamantu {
@@ -159,6 +163,7 @@ Example 2:
             zones[] = { "diamond_mine" };
             item = "pickaxe";
             mined[] = {{ "diamantu",0,85 }, {"lava",85,100}};
+            zoneSize = 30;
         };
 
         class platinerz {
@@ -166,6 +171,7 @@ Example 2:
             zones[] = { "platin_mine" };
             item = "pickaxe";
             mined[] = { "platinerz" };
+            zoneSize = 30;
         };
 
         class oelu {
@@ -173,6 +179,7 @@ Example 2:
             zones[] = { "oil_field_1", "oil_field_2" };
             item = "pickaxe";
             mined[] = { "oelu" };
+            zoneSize = 30;
         };
 		
 		class aluerz {
@@ -180,6 +187,7 @@ Example 2:
             zones[] = { "alu_mine" };
             item = "pickaxe";
             mined[] = { "aluerz" };
+            zoneSize = 30;
         };
 		
         class metallgrube {
@@ -187,6 +195,7 @@ Example 2:
             zones[] = { "metallgrube" };
             item = "pickaxe";
             mined[] = {{ "eisenerz",0,30 },{ "kupfererz",30,60 },{ "aluerz",60,80 },{ "platinerz",80,99 },{"goldbar",99,100}};
+            zoneSize = 30;
         };
         
 		class marmorRoh {
@@ -194,6 +203,7 @@ Example 2:
             zones[] = { "marmor_mine" };
             item = "pickaxe";
             mined[] = {{ "marmorRoh",0,80 }, {"lava",80,90}, { "schurfgut",90,100 }};
+            zoneSize = 30;
         };
 		
 		class uranerz {
@@ -201,6 +211,7 @@ Example 2:
             zones[] = { "uran_mine" };
             item = "pickaxe";
             mined[] = { "uranerz" };
+            zoneSize = 30;
         };
     };
 };
