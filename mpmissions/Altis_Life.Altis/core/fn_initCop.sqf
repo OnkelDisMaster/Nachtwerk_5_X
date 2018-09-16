@@ -32,6 +32,7 @@ if (license_cop_hitmarker) then {life_hitmarker = true;};
 [] call life_fnc_welcome;
 [] call life_fnc_playerSkins;
 [] call life_fnc_initPayChecks;
+[] call life_fnc_nightvision;
 
 
 [] call life_fnc_spawnMenu;

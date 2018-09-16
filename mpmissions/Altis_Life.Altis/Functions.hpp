@@ -41,7 +41,8 @@ class Life_Client_Core {
     
     class nw_functions {
         file = "nw_functions";
-        class savezone {};        
+        class savezone {};  
+        class nightvision {};
     };
     
     class BountyHunters {

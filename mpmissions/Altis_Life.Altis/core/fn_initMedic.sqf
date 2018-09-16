@@ -34,6 +34,8 @@ if ((FETCH_CONST(life_medicLevel)) < 1 && (FETCH_CONST(life_adminlevel) isEqualT
 [] call life_fnc_welcome;
 [] call life_fnc_initPayChecks;
 
+[] call life_fnc_nightvision;
+
 [player] remoteExecCall ["life_fnc_hatBounty",RSERV];
 
 [] call life_fnc_spawnMenu;
