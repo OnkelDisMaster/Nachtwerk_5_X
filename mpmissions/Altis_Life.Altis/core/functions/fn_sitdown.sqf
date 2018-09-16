@@ -7,7 +7,7 @@
 */
 private ["_chair","_unit","_dir","_z"];
 _chair = _this select 0; 
-_unit = _this select 1;
+_unit = player;
 hint "test";
 if (!isNull life_sitting) exitWith { hint "Du sitzt bereits!" };
 if (vehicle _unit != _unit) exitWith { hint "Du darfst das nicht in einem Fahrzeug tun!!" };
