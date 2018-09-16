@@ -94,7 +94,7 @@ if (life_container_active) exitwith {
  {
      if (!isNull life_sitting) then
      {
-         [] execVM "mission.map\script\standup.sqf";
+         [] call life_fnc_standup;
          _handled = true;
      };
  };
