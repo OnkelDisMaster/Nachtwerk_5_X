@@ -34,6 +34,13 @@ diag_log "Markt Preise generiert!";
 diag_log format["Markt Preise geupdated! %1", _this select 1];
 };
 
+MAC_fnc_switchMove = {
+ private["_object","_anim"];
+ _object = _this select 0;
+ _anim = _this select 1;
+ _object switchMove _anim;
+};
+
 //Start server fsm
 [] execFSM "core\fsm\server.fsm";
 diag_log "Server FSM executed";

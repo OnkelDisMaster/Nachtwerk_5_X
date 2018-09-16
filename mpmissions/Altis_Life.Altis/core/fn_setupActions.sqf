@@ -14,6 +14,8 @@ switch (playerSide) do {
         life_actions pushBack (player addAction["<t color = '#D660D6'>Abschnallen</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
 		//Ausweis 
   		life_actions pushBack (player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && cursorTarget isKindOf "Man"']);
+        //Sitdown
+         life_actions pushBack (player addAction["<t color='#0099FF'>Hinsetzen</t>",{[cursorObject,player] call life_fnc_sitdown;},true,1,true,true,"""",'player distance cursorObject < 3 && {([str cursorObject,"bench"] call KRON_StrInStr || [str cursorObject,"chair"] call KRON_StrInStr)} ']);
         
     //Civilian
     case civilian: {

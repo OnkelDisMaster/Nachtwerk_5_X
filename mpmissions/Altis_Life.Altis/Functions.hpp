@@ -301,6 +301,8 @@ class Life_Client_Core {
 		class hitMarker {};
 		class randomDealer {};
         class teargas {};
+        class sitdown {};
+        class standup {};
     };
 
     class Gangs {

@@ -88,6 +88,17 @@ if (life_container_active) exitwith {
     };
     true;
 };
+
+//Sitdown Script
+ if (_code in (actionKeys "MoveForward")) then
+ {
+     if (!isNull life_sitting) then
+     {
+         [] execVM "mission.map\script\standup.sqf";
+         _handled = true;
+     };
+ };
+ 
 switch (_code) do {
 
      // -- Disable commander/tactical view
