@@ -15,6 +15,7 @@ if (_unit distance _chair > 4) exitWith { hint "Du musst näher an den Stuhl um 
 if (_unit getVariable ["restrained",false]) exitWith {};
 if (_unit getVariable ["isTazed",false]) exitWith {};
 if (!isNull (_chair getVariable ["sitting", objNull])) exitWith { hint "Da sitzt bereits jemand!"; };
+hint "nach IFs";
 _dir = switch (typeOf _chair) do
 {
  case "Land_ChairPlastic_F": { 270 };
@@ -38,7 +39,7 @@ _unit attachTo [_obj,[0,0,_z]];
 life_sitting = _obj;
 _chair setVariable ["sitting", _unit, true];
 [_unit,"Crew","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-_action = _unit addAction ["<t color='#B45F04'>Aufstehen</t>","[] call life_fnc_standup"];
+_action = _unit addAction ["<t color='#B45F04'>Aufstehen</t>",life_fnc_standup];
 waitUntil { isNull life_sitting || !(alive _unit) || player distance (getPos _chair) > 2 };
 _unit removeAction _action;
 life_sitting = objNull;
@@ -47,3 +48,4 @@ if (isNull attachedTo _unit) then
 {
  if (attachedTo _unit == _obj) then { detach _unit; deleteVehicle _obj; };
 };
+hint "EoF";
