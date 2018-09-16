@@ -5,7 +5,6 @@
  Description:
  Stand up from chair
 */
-hint "test";
 detach player;
 [player,"","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 if (!isNull life_sitting) then { deleteVehicle life_sitting; };
