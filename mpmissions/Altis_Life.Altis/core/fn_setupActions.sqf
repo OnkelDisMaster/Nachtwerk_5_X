@@ -15,7 +15,7 @@ switch (playerSide) do {
 		//Ausweis 
   		life_actions pushBack (player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && cursorTarget isKindOf "Man"']);
         // Hinsetzen
-        life_actions pushBack (player addAction["Hinsetzen",life_fnc_sitdown,cursorObject,10,false,false,"",' (vehicle player != player) && !isNull cursorTarget && !life_sitting && (player distance cursorTarget) < 3 && (typeOf (cursorTarget) in ["Land_Cha_ChairPlastic_F", "Land_CampingChair_V1_F", "Land_CampingChair_V2_F", "Land_ChairWood_F", "Land_OfficeChair_01_F", "Land_Bench_F", "Land_ChairPlastic_F", "Land_RattanChair_01_F"])']);
+        life_actions pushBack (player addAction["Hinsetzen",life_fnc_sitdown,cursorObject,10,false,false,"",' !isNull cursorTarget && !life_sitting && (player distance cursorTarget) < 3 && (typeOf (cursorTarget) in ["Land_Cha_ChairPlastic_F", "Land_CampingChair_V1_F", "Land_CampingChair_V2_F", "Land_ChairWood_F", "Land_OfficeChair_01_F", "Land_Bench_F", "Land_ChairPlastic_F", "Land_RattanChair_01_F"])']);
     //Civilian
     case civilian: {
         //Drop fishing net
