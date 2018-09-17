@@ -1,21 +1,16 @@
 #include "..\..\script_macros.hpp"
 /*
  File: sitdown.sqf
- Author: John "Paratus" VanderZwet
+ Author: Valle1337 @ Nachtwerk
  Description:
- Sit in a chair!
+ Auf nem Stuhl sitzen soll cool sein, hab ich mal gehört...
 */
-private ["_chair","_unit","_dir","_z","_posPlayer","_posATL"];
-_chair = _this select 0; 
-_unit = player;
-/*
+private ["_chair","_dir","_z"];
+_chair = cursorTarget;
+
 if (life_sitting) exitWith { hint "Du sitzt bereits!"; };
-if (vehicle _unit != _unit) exitWith { hint "Du darfst das nicht in einem Fahrzeug tun!"; };
-if (_unit getVariable ["restrained",false]) exitWith { hint "Als Gefangener darfst du das nicht!"; };
-if (_unit distance _chair > 4) exitWith { hint "Du musst näher an den Stuhl um dich hinzusetzen!";};
-if (_unit getVariable ["isTazed",false]) exitWith { hint "Während du getasert bist darfst du das nicht!";};
-if (!isNull (_chair getVariable ["sitting", objNull])) exitWith { hint "Da sitzt bereits jemand!"; };
-*/
+if (player getVariable ["isTazed",false]) exitWith { hint "Während du getasert bist darfst du das nicht!";};
+
 _dir = switch (typeOf _chair) do
 {
  case "Land_ChairPlastic_F": { 270 };
@@ -31,14 +26,13 @@ _z = switch (typeOf _chair) do
 {
  default { 0 };
 };
-_unit setPos (getPos _chair); 
-_unit setDir ((getDir _chair) - 180); 
-_unit setPosATL (getPosATL _chair);
+player setPos (getPos cursorTarget);  
+player setDir ((getDir cursorTarget) - 180);  
+player setPosATL (getPosATL cursorTarget);
 
 life_sitting = true;
-[_unit,"Crew","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+[player,"Crew","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
 _action = player addAction["Aufstehen", life_fnc_standup,cursorTarget,10,false,false,"",'life_sitting'];
-waitUntil { !life_sitting || !(alive _unit) || player distance (getPos _chair) > 2 };
-_unit removeAction _action;
+waitUntil { !life_sitting || !(alive player) || player distance (getPos _chair) > 2 };
+player removeAction _action;
 life_sitting = false;
-_chair setVariable ["sitting", false, false];
