@@ -41,6 +41,13 @@ private _offset = switch (typeOf _vehicle) do {
     case "B_Heli_Transport_01_F": {
         [-0.5, 0.0, 0.81];
     };
+
+	case "I_MRAP_03_F":
+	{
+		[-0.5, 0.0, 0.7];
+	};
+     
+    default { [-0.37,-1.2,0.42]; };
 };
 
 _lightLeft lightAttachObject [_vehicle, _offset];
@@ -76,6 +83,13 @@ _offset = switch (typeOf _vehicle) do {
     case "B_Heli_Transport_01_F": {
         [0.5, 0.0, 0.81];
     };
+    
+    case "I_MRAP_03_F":
+	{
+		[0.5, 0.0, 0.7];
+	};
+    
+    default { [0.37,-1.2,0.42]; };
 };
 
 _lightRight lightAttachObject [_vehicle, _offset];

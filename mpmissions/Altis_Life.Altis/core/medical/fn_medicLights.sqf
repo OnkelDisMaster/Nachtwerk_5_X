@@ -50,6 +50,8 @@ switch (typeOf _vehicle) do
 	{
 		_lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.7]];
 	};
+    
+    default {  _lightleft lightAttachObject [_vehicle, [-0.37,-1.2,0.42]]; };
 };
 
 _lightleft setLightAttenuation [0.181, 0, 1000, 130];
@@ -95,6 +97,8 @@ switch (typeOf _vehicle) do
 	{
 		_lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.7]];
 	};
+    
+    default { _lightright lightAttachObject [_vehicle, [0.37,-1.2,0.42]]; };
 };
 
 _lightright setLightAttenuation [0.181, 0, 1000, 130];
