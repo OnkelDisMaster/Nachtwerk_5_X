@@ -10,7 +10,8 @@ private ["_speed","_vehicle"];
 _vehicle = cursorTarget;
 _speed = round speed _vehicle;
 
-if((_vehicle isKindOf "Car") && (currentWeapon player) in ["hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_01_snds_F","hgun_Pistol_heavy_01_MRD_F"]) then
+//if((_vehicle isKindOf "Car") && (currentWeapon player) in ["hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_01_snds_F","hgun_Pistol_heavy_01_MRD_F"]) then
+if(_vehicle isKindOf "Car") then
 {
 	switch (true) do 
 	{
