@@ -31,16 +31,13 @@ _z = switch (typeOf _chair) do
 {
  default { 0 };
 };
-_posATL = getPosATL _chair;
-_posPlayer = getPosATL player;
-
-player setPos _posATL;
-player setDir (direction _chair);
+_unit setPos (getPos _chair); 
+_unit setDir ((getDir _chair) - 180); 
+_unit setPosATL (getPosATL _chair);
 
 life_sitting = true;
-_chair setVariable ["sitting", true, true];
 [_unit,"Crew","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-_action = player addAction["Aufstehen", standup,cursorTarget,10,false,false,"",'life_sitting'];
+_action = player addAction["Aufstehen", life_fnc_standup,cursorTarget,10,false,false,"",'life_sitting'];
 waitUntil { !life_sitting || !(alive _unit) || player distance (getPos _chair) > 2 };
 _unit removeAction _action;
 life_sitting = false;
