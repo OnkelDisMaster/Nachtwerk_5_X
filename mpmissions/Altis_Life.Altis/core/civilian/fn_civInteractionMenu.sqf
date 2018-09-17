@@ -24,7 +24,7 @@ _curTarget = param [0,objNull,[objNull]];
 if (player getVariable ["Escorting", false]) then {
     if (isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
     if (!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
-    if (player distance _curTarget > 4 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
+    if (player distance _curTarget > 3 ) exitWith {closeDialog 0;}; // Prevents menu accessing from far distances.
 };
 
 if (!dialog) then {

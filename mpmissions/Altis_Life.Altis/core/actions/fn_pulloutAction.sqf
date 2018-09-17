@@ -8,6 +8,8 @@
 */
 private ["_crew"];
 _crew = crew cursorObject;
+_unit = param [0,objNull,[objNull]];
+if (player distance _unit > 3 ) exitWith {};
 
 {
     if !(side _x isEqualTo west) then {

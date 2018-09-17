@@ -69,7 +69,7 @@ switch (playerSide) do {
                 };
             } else {
                 _Btn6 ctrlSetText localize "STR_vInAct_Unflip";
-                _Btn6 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
+                _Btn6 buttonSetAction "if (player distance _curTarget > 3 ) exitWith {}; life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
                 if (alive _curTarget && {crew _curTarget isEqualTo []} && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
             };
         };
