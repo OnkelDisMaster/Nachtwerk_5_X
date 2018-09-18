@@ -13815,7 +13815,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Diamond_Trader"",life_fnc_virt_menu,""diamond""];";
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Juwelier"",life_fnc_virt_menu,""diamond""];";
 						disableSimulation=1;
 					};
 					id=1014;

@@ -159,7 +159,7 @@ class VirtualShops {
     };
 	
 	class uranium {
-        name = "STR_Shops_Uranium";
+        name = "STR_Shops_Uran";
         side = "civ";
         conditions = "";
         items[] = { "uranErz", "uranI", "uranII", "uranIII", "uranIV" };

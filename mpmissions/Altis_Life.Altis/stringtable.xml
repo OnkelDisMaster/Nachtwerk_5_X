@@ -97,17 +97,6 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-        <Key ID="STR_Shops_C_Kart">
-            <Original>Kart Bekleidung</Original>
-            <Czech></Czech>
-            <French></French>
-            <Spanish></Spanish>
-            <Italian></Italian>
-            <Russian></Russian>
-            <German>Kart Bekleidung</German>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
 		<Key ID="STR_Shops_C_Bauarbeiter">
             <Original>Bauarbeiter Bekleidung</Original>
             <Czech></Czech>
@@ -273,7 +262,7 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-		<Key ID="STR_Shops_Uranium">
+		<Key ID="STR_Shops_Uran">
             <Original>Uranium Dealer</Original>
             <Czech></Czech>
             <Spanish></Spanish>
@@ -3312,15 +3301,15 @@
             <Polish>%1 usunął %2's %3</Polish>
         </Key>
         <Key ID="STR_NOTF_OwnImpounded">
-            <Original>You paid $%2 for impounding your own %1.</Original>
-            <Czech>Zaplatil jste $%2 pro vzdouvání vlastní %1.</Czech>
-            <French>Vous avez payé $%2 pour la mise en fourrière de votre propre %1.</French>
-            <Spanish>Has pagado $%2 para embargar tu propio %1.</Spanish>
-            <Italian>Hai pagato $%2 per sequestro la propria %1.</Italian>
-            <Polish>Zapłaciłeś $%2 do zatrzymywania własną %1.</Polish>
+            <Original>You paid $%1 for impounding your own %2.</Original>
+            <Czech>Zaplatil jste $%1 pro vzdouvání vlastní %2.</Czech>
+            <French>Vous avez payé $%1 pour la mise en fourrière de votre propre %2.</French>
+            <Spanish>Has pagado $%1 para embargar tu propio %2.</Spanish>
+            <Italian>Hai pagato $%1 per sequestro la propria %2.</Italian>
+            <Polish>Zapłaciłeś $%1 do zatrzymywania własną %2.</Polish>
             <Russian></Russian>
-            <German>Du hast %2 $ bezahlt, weil du dein eigenen %1 beschlagnahmt hast.</German>
-            <Portuguese>Você pagou R$%2 para guardar seu próprio %1.</Portuguese>
+            <German>Du hast %1 $ bezahlt, weil du dein eigenen %2 beschlagnahmt hast.</German>
+            <Portuguese>Você pagou R$%1 para guardar seu próprio %2.</Portuguese>
         </Key>
         <Key ID="STR_NOTF_AbortESC">
             <Original>Abort available in %1</Original>
@@ -7520,17 +7509,6 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
-		<Key ID="STR_License_Weed">
-            <Original>Weed License</Original>
-            <German>weed Lizenz</German>
-            <Czech></Czech>
-            <Spanish></Spanish>
-            <Russian></Russian>
-            <French></French>
-            <Italian></Italian>
-            <Portuguese></Portuguese>
-            <Polish></Polish>
-        </Key>
 		<Key ID="STR_License_Hero">
             <Original>Heroin License</Original>
             <German>Heroin Lizenz</German>
@@ -8800,6 +8778,72 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+        <Key ID="STR_Process_Oil">
+            <Original>Processing Oil</Original>
+            <Czech>zpracování ropy</Czech>
+            <Spanish>Procesando Petróleo</Spanish>
+            <Russian></Russian>
+            <German>Öl wird verarbeitet...</German>
+            <French>Raffinage de Pétrole</French>
+            <Italian>Raffinando il Petrolio</Italian>
+            <Portuguese>Processando Petróleo</Portuguese>
+            <Polish>Rafinacja ropy</Polish>
+        </Key>
+        <Key ID="STR_Process_Iron">
+            <Original>Casting Iron Ingots</Original>
+            <Czech>Litiny ingoty</Czech>
+            <Spanish>Fundiendo Lingotes de Hierro</Spanish>
+            <Russian></Russian>
+            <French>Fonte du Fer</French>
+            <German>Eisen wird verarbeitet...</German>
+            <Italian>Processando Ferro</Italian>
+            <Portuguese>Processando Ferro</Portuguese>
+            <Polish>Wytop żelaza</Polish>
+        </Key>
+        <Key ID="STR_Process_Marijuana">
+            <Original>Processing Marijuana</Original>
+            <Czech>zpracování Marihuana</Czech>
+            <Spanish>Procesando Marihuana</Spanish>
+            <Russian></Russian>
+            <German>Marihuana wird verarbeitet...</German>
+            <French>Traitement de Marijuana</French>
+            <Italian>Processando Marijuana</Italian>
+            <Portuguese>Processando Maconha</Portuguese>
+            <Polish>Suszenie marihuany</Polish>
+        </Key>
+        <Key ID="STR_Process_Diamond">
+            <Original>Cutting Diamonds</Original>
+            <Czech>řezání diamantů</Czech>
+            <Spanish>Cortando Diamantes</Spanish>
+            <Russian></Russian>
+            <German>Diamanten werden geschliffen...</German>
+            <French>Taillage de diamant</French>
+            <Italian>Rifinendo diamanti</Italian>
+            <Portuguese>Lapidando Diamante</Portuguese>
+            <Polish>Szlif diamentów</Polish>
+        </Key>
+        <Key ID="STR_Process_Salt">
+            <Original>Processing Salt</Original>
+            <Czech>zpracování Salt</Czech>
+            <Spanish>Procesando Sal</Spanish>
+            <Russian></Russian>
+            <German>Salz wird verarbeitet...</German>
+            <French>Traitement du Sel</French>
+            <Italian>Processando Sale</Italian>
+            <Portuguese>Refinando Sal</Portuguese>
+            <Polish>Warzenie soli</Polish>
+        </Key>
+        <Key ID="STR_Process_Copper">
+            <Original>Casting Copper Ingots</Original>
+            <Czech>Casting měděných ingotů</Czech>
+            <Spanish>Fundiendo Lingotes de Cobre</Spanish>
+            <Russian></Russian>
+            <French>Fonte du Cuivre</French>
+            <German>Kupfer wird verarbeitet...</German>
+            <Italian>Processando in lingotti di Rame</Italian>
+            <Portuguese>Processando Cobre</Portuguese>
+            <Polish>Wytop miedzi</Polish>
+        </Key>
         <Key ID="STR_Process_Pfirsichsaft">
             <Original>Mixing Peach Juice</Original>
             <Czech></Czech>
@@ -8986,6 +9030,39 @@
             <Italian>Processando Cocaina</Italian>
             <Portuguese>Processando Cocaína</Portuguese>
             <Polish>Oczyszczanie kokainy</Polish>
+        </Key>
+        <Key ID="STR_Process_Cocaine">
+            <Original>Processing Coca Leaves</Original>
+            <Czech>Zpracování listů koky</Czech>
+            <Spanish>Procesando Hojas de Coca</Spanish>
+            <Russian></Russian>
+            <German>Kokain wird verarbeitet...</German>
+            <French>Traitement de Cocaïne</French>
+            <Italian>Processando Cocaina</Italian>
+            <Portuguese>Processando Cocaína</Portuguese>
+            <Polish>Oczyszczanie kokainy</Polish>
+        </Key>
+        <Key ID="STR_Process_Heroin">
+            <Original>Processing Opium</Original>
+            <Czech>zpracování Opium</Czech>
+            <Spanish>Procesando Opio</Spanish>
+            <Russian></Russian>
+            <German>Heroin wird verarbeitet...</German>
+            <French>Traitement d'Héroïne</French>
+            <Italian>Processando Eroina</Italian>
+            <Portuguese>Processando Heroína</Portuguese>
+            <Polish>Oczyszczanie heroiny</Polish>
+        </Key>
+        <Key ID="STR_Process_Marijuana">
+            <Original>Processing Marijuana</Original>
+            <Czech>zpracování Marihuana</Czech>
+            <Spanish>Procesando Marihuana</Spanish>
+            <Russian></Russian>
+            <German>Marihuana wird verarbeitet...</German>
+            <French>Traitement de Marijuana</French>
+            <Italian>Processando Marijuana</Italian>
+            <Portuguese>Processando Maconha</Portuguese>
+            <Polish>Suszenie marihuany</Polish>
         </Key>
         <Key ID="STR_Process_weed">
             <Original>Processing weed</Original>
@@ -9453,6 +9530,17 @@
             <Portuguese>O roubo falhou por uma causa desconhecida.</Portuguese>
             <Polish>Napad się nie udał z niewiadomych powodów.</Polish>
         </Key>
+        <Key ID="STR_NOTF_captureGangHideout">
+            <Original>Capture Gang Hideout</Original>
+            <Czech>Zachyťte Gang skrýš</Czech>
+            <French>Capturer la cachette de gang</French>
+            <Spanish>Capturar Escondite</Spanish>
+            <Italian>Cattura Banda Nascondiglio</Italian>
+            <Polish>Przechwytywanie Banda Kryjówka</Polish>
+            <Portuguese>Capturar Esconderijo de Gangue</Portuguese>
+            <Russian>Захват шайка укрытие</Russian>
+            <German>Gangversteck einnehmen</German>
+        </Key>
         <Key ID="STR_NOTF_FRRobbery_Success">
             <Original>$%1 was stolen from the robbery on the federal reserve</Original>
             <Czech>$%1 byl ukraden z loupeže na federální rezervy</Czech>
@@ -9463,6 +9551,17 @@
             <Italian>$%1 sono stati rubati durante la rapina alla banca</Italian>
             <Portuguese>R$%1 foi roubado da Reserva Federal.</Portuguese>
             <Polish>$%1 ukradziono z Rezerwy Federalnej</Polish>
+        </Key>
+        <Key ID="STR_NOTF_ATM">
+            <Original>&lt;t color='#ADFF2F'&gt;ATM&lt;/t&gt;</Original>
+            <Czech>&lt;t color='#ADFF2F'&gt;Bankomat&lt;/t&gt;</Czech>
+            <French>&lt;t color='#ADFF2F'&gt;DAB&lt;/t&gt;</French>
+            <Spanish>&lt;t color='#ADFF2F'&gt;ATM&lt;/t&gt;</Spanish>
+            <Italian>&lt;t color='#ADFF2F'&gt;ATM&lt;/t&gt;</Italian>
+            <Polish>&lt;t color='#ADFF2F'&gt;Bankomat&lt;/t&gt;</Polish>
+            <Portuguese>&lt;t color='#ADFF2F'&gt;Caixa Eletrônico&lt;/t&gt;</Portuguese>
+            <Russian>&lt;t color='#ADFF2F'&gt;Банкомат&lt;/t&gt;</Russian>
+            <German>&lt;t color='#ADFF2F'&gt;Geldautomat&lt;/t&gt;</German>
         </Key>
         <Key ID="STR_FEDR_VInUse">
             <Original>This vault is already being robbed by someone else</Original>
