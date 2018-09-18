@@ -44,6 +44,7 @@ if (license_civ_transport) then {[] execVM "core\vehicle\IgiLoad\IgiLoadInit.sqf
 if (license_civ_logistikpilot_plus) then {[["O_APC_Wheeled_02_rcws_F"],["B_Heli_Light_01_F"]] execVM "core\vehicle\Lifting\lift_init.sqf";} else {
 	if (license_civ_logistikpilot) then {[["O_Truck_03_ammo_F","O_Truck_03_device_F","O_Truck_03_fuel_F","B_Truck_01_box_F","B_Truck_01_fuel_F","B_Truck_01_ammo_F","O_APC_Wheeled_02_rcws_F"],["B_Heli_Light_01_F"]] execVM "core\vehicle\Lifting\lift_init.sqf";};
 };
+if (license_civ_implantat_nachtsicht) then { [] call life_fnc_nightvision;};
 if (license_civ_bountyH) then {player setvariable ["isBountyH",true,true];} else {player setvariable ["isBountyH",false,true];};
 player setvariable ["GoldGameAnz",-1];
 [player] remoteExecCall ["life_fnc_hatBounty",RSERV];	//Bounty Var set

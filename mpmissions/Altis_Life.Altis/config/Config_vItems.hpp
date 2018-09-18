@@ -338,7 +338,18 @@ class VirtualItems {
         edible = -1;
         icon = "";
     };
-
+    
+    class goldNV {
+        variable = "goldNV";
+        displayName = "STR_Item_goldNV";
+        weight = 10;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "";
+    };
+    
     class fuelEmpty {
         variable = "fuelEmpty";
         displayName = "STR_Item_FuelE";

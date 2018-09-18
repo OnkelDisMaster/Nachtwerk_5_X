@@ -7067,6 +7067,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+        <Key ID="STR_Item_goldNV">
+            <Original>Goldenes Nachtsichtgerät</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Goldenes Nachtsichtgerät</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
 		<Key ID="STR_Item_GoldGame">
             <Original>Goldfälscher Lizenz</Original>
             <Czech></Czech>

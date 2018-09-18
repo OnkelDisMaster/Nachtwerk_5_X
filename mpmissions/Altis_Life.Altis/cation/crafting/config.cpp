@@ -50,7 +50,7 @@ class Cation_Crafting {
         {
             "weapon", //Variable
             "Waffen", //Text
-            {"hgun_P07_F","",{"diamant",10,"kupfer",2},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
+            {"hgun_P07_F","",{"diamant",10,"kupfer",2},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 ( 1 für vItem | 0 für alle anderen Items)},
             {"arifle_AK12_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",20,"mikroprozessor",1},"","",0}, 
 			{"arifle_ARX_hex_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",2,"mikroprozessor",1},"","",0}, 
 			{"LMG_Mk200_F","license_civ_pro_rebel",{"goldbauteil",1,"diamant",10,"mikroprozessor",1},"","",0}, 
@@ -107,6 +107,7 @@ class Cation_Crafting {
 		{
             "Goldbauteile",
             "Goldbauteile herstellen",
+            {"goldNV","license_civ_goldbauteil",{"goldbauteil",2},"","",1},
             {"goldbauteil","license_civ_goldbauteil",{"goldbar",10},"","",1}
         },
 		{
@@ -127,6 +128,8 @@ class Cation_Crafting {
             {"implantatAusdauer","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",4,"brennstab",3,"goldbauteil",1,"redgullPalette",1},"","",1},
 															// 2 * 50			+ 3 * 8				+ 4 * 4		+ 2 * 1	 		+ 2 * 1	 
 			{"implantatPaycheck","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"brennstab",4,"spikeStrip",2,"gpstracker",2},"","",1},
+                                                                                    // 2 * 50			                + 3 * 8				+ 1 * 10	 + 2 * 1	 
+			{"implantatNachtsicht","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",3,"goldNV",1,"gpstracker",2},"","",1},
 															// 2 * 50			+ 5 * 8	 			+ 2 * 1	 	+ 2 * 1	 
 			{"implantatBackpack","license_civ_implantat",{"implantatNormal",2,"mikroprozessor",5,"spikeStrip",2,"gpstracker",2},"","",1}
         },

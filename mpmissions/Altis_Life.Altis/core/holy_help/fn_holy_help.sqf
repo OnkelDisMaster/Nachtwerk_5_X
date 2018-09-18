@@ -179,6 +179,8 @@ switch(_lbauswahl) do {
 		Crafting: 2 Standardimplanate, 3 Mikroprozessoren, 4 Brennstäbe, 2 Nagelbänder, 2 Gpstracker<br/><br/>
 		Gehaltscheck Implantat: +9000$ alle 10 Min<br/>
 		Crafting: 2 Standardimplanate, 5 Mikroprozessoren, 2 Nagelbänder, 2 Gpstracker<br/><br/>
+        Nachtsicht Implantat: Fullscreen Nightvision ohne Brille<br/>
+		Crafting: 2 Standardimplanate, 3 Mikroprozessoren, 1 Goldenes Nachtsichtgerät, 2 Gpstracker<br/><br/>
 		";
 	};
 };
