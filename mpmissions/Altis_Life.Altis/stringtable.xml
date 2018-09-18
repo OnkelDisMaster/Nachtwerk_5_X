@@ -8811,17 +8811,6 @@
             <Portuguese>Processando Ferro</Portuguese>
             <Polish>Wytop żelaza</Polish>
         </Key>
-        <Key ID="STR_Process_Marijuana">
-            <Original>Processing Marijuana</Original>
-            <Czech>zpracování Marihuana</Czech>
-            <Spanish>Procesando Marihuana</Spanish>
-            <Russian></Russian>
-            <German>Marihuana wird verarbeitet...</German>
-            <French>Traitement de Marijuana</French>
-            <Italian>Processando Marijuana</Italian>
-            <Portuguese>Processando Maconha</Portuguese>
-            <Polish>Suszenie marihuany</Polish>
-        </Key>
         <Key ID="STR_Process_Diamond">
             <Original>Cutting Diamonds</Original>
             <Czech>řezání diamantů</Czech>
