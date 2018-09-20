@@ -2,6 +2,7 @@ _veh = objNull;
 _vehCar = nearestObject [vehicle player, "Car"];
 _vehTank = nearestObject [vehicle player, "Tank"];
 _vehBoat = nearestObject [vehicle player, "Ship"];
+_vehContainer = nearestObject [vehicle player,(LIFE_SETTINGS(getArray,"life_container"))];
 
 if ((vehicle player distance _vehCar) > (vehicle player distance _vehTank)) then
 {
@@ -14,6 +15,11 @@ if ((vehicle player distance _vehCar) > (vehicle player distance _vehTank)) then
 if ((vehicle player distance _veh) > (vehicle player distance _vehBoat)) then
 {
   _veh = _vehBoat;
+};
+
+if ((vehicle player distance _veh) > (vehicle player distance Container)) then
+{
+    _veh = _vehContainer;
 };
 
 if ((_veh in CUP_vehBlacklist) || (typeOf _veh in CUP_vehBlacklist)) exitWith
