@@ -1,9 +1,8 @@
-#include "..\..\..\script_macros.hpp"
 waitUntil {player == player}; //JIP compatibility and general safety
 
 CUP_vehBlacklist = _this select 0;
 CUP_heloBlacklist = _this select 1;
-private ["_objektTypen"];
+private ["_nearVehicles","_objektTypen"];
 _objektTypen = ["Car","Ship","Tank"];
 _objektTypen append (LIFE_SETTINGS(getArray,"life_container"));
 
