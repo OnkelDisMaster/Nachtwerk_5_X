@@ -1,5 +1,5 @@
 #include "..\..\..\script_macros.hpp"
-private ["_objektTypen"];
+private ["_tempVeh","_veh","_objektTypen"];
 
 _veh = objNull;
 
