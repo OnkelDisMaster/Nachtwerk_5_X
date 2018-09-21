@@ -1,20 +1,16 @@
+#include "..\..\..\script_macros.hpp"
+private ["_objektTypen"];
+
 _veh = objNull;
-_vehCar = nearestObject [vehicle player, "Car"];
-_vehTank = nearestObject [vehicle player, "Tank"];
-_vehBoat = nearestObject [vehicle player, "Ship"];
 
-if ((vehicle player distance _vehCar) > (vehicle player distance _vehTank)) then
-{
-  _veh = _vehTank;
-} else
-{
-  _veh = _vehCar;
-};
+_objektTypen = ["Car","Ship","Tank"];
+_objektTypen append (LIFE_SETTINGS(getArray,"life_container"));
 
-if ((vehicle player distance _veh) > (vehicle player distance _vehBoat)) then
+_veh = nearestObject [vehicle player, "Car"];
 {
-  _veh = _vehBoat;
-};
+    _tempVeh = nearestObject [vehicle player, _objektTypen select _forEachIndex];
+    if ((vehicle player distance _veh) > (vehicle player distance _tempVeh)) then { _veh = _tempVeh;};
+} forEach _objektTypen;
 
 if ((_veh in CUP_vehBlacklist) || (typeOf _veh in CUP_vehBlacklist)) exitWith
 {
