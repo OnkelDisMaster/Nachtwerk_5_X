@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=10605;
+		nextID=10604;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=29;
+		nextID=28;
 	};
 	class Camera
 	{
-		pos[]={14299.7,20.390976,17408.193};
-		dir[]={0.7234211,-0.58339465,0.36922747};
-		up[]={0.51963466,0.81218427,0.26521662};
-		aside[]={0.4546068,4.5925844e-008,-0.89070106};
+		pos[]={3741.0515,58.066643,13444.866};
+		dir[]={0.050933268,-0.20180094,-0.97817612};
+		up[]={0.010497374,0.97941166,-0.2016044};
+		aside[]={-0.99872053,-1.3224781e-006,-0.052002609};
 	};
 };
 binarizationWanted=0;
@@ -548,6 +548,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -562,24 +580,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -621,29 +621,28 @@ class Mission
 		startWindDir=20;
 		startWaves=0.12;
 		startGust=0.099999994;
-		forecastWeather=0.046763863;
+		forecastWeather=0;
 		forecastWind=0.29999998;
 		forecastWaves=0.12;
 		forecastLightnings=0.16960363;
 		forecastGust=0.099999994;
 		forecastWindDir=360;
 		rainForced=1;
-		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
 		year=2020;
 		month=7;
 		day=7;
-		hour=5;
-		minute=21;
+		hour=24;
+		minute=0;
 		startFogBase=-1000;
 		forecastFogBase=-1000;
 		startFogDecay=0;
-		forecastFogDecay=0;
+		forecastFogDecay=0.099983305;
 	};
 	class Entities
 	{
-		items=5035;
+		items=5034;
 		class Item0
 		{
 			dataType="Object";
@@ -20078,13 +20077,14 @@ class Mission
 				angles[]={0,0.55536377,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_kronen"",{[""platinkrone""] spawn cat_crafting_fnc_craft}]; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""kronen"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""kronen"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""kronen"",0,false,false,"""",' !license_civ_kronen && playerSide isEqualTo civilian '];" \n "";
 			};
 			id=1313;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.4834938;
+			atlOffset=0.0057621002;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -78341,7 +78341,7 @@ class Mission
 			title="Dealer_1_3";
 			description="Dealer_1_3";
 			id=4251;
-			atlOffset=109.98206;
+			atlOffset=105.13034;
 		};
 		class Item1946
 		{
@@ -78421,8 +78421,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14302.207,19.420675,17408.439};
-				angles[]={0.0066682254,2.3243246,0.010664274};
+				position[]={14319.535,19.379019,17411.15};
+				angles[]={0.025327841,2.3243246,0.033321146};
 			};
 			side="Empty";
 			flags=4;
@@ -78433,7 +78433,7 @@ class Mission
 			};
 			id=4258;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.00024223328;
+			atlOffset=-0.0071182251;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -78463,8 +78463,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3752.5247,19.412971,11902.244};
-				angles[]={6.2618566,6.0780845,0.0093350215};
+				position[]={3768.1797,22.28228,11905.998};
+				angles[]={5.9734826,6.0780845,0.36431143};
 			};
 			side="Empty";
 			flags=4;
@@ -78475,7 +78475,7 @@ class Mission
 			};
 			id=4259;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.055570602;
+			atlOffset=-0.06801033;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -85168,18 +85168,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3738.1782,19.589693,12979.925};
-				angles[]={0,3.0512545,6.2826962};
+				position[]={3738.1787,19.590149,12979.925};
+				angles[]={0,3.0512545,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false;   " \n "this allowDamage false; this addAction[  " \n " ""Feuerwehr Loadout"", '  " \n " private[""_handle""];  " \n " _handle = [] spawn life_fnc_stripDownPlayer;  " \n " waitUntil {scriptDone _handle};  " \n " player forceAddUniform ""U_B_CombatUniform_mcam"";  " \n " player addBackpack ""B_Kitbag_sgg"";  " \n " player addItem ""ItemMap"";  " \n " player assignItem ""ItemMap"";  " \n " player addItem ""ItemCompass"";  " \n " player assignItem ""ItemCompass"";  " \n " player addItem ""ItemWatch"";  " \n " player assignItem ""ItemWatch"";  " \n " player addItem ""ItemGPS"";  " \n " player assignItem ""ItemGPS"";  " \n " player addItem ""Rangefinder"";  " \n " player assignItem ""Rangefinder"";  " \n " player addItem ""ToolKit"";  " \n " player addItem ""Medikit"";  " \n " [] call life_fnc_saveGear;  " \n " ', """",0,false,true,"""""""",'playerSide isEqualTo independent'  " \n "];  " \n "this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""];   " \n "this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""];   " \n "this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,[""med_car_1"",""med_car_2""],""med"",""Kavala Hospital""]];   " \n "this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_heli"",independent,[""med_air_1"",""med_car_2""],""med"",""Helikopter Shop""]];    " \n "this addAction[localize""STR_MAR_W_Car_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,[""Car"",""Tank""],player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,[""Car"",""Tank""],player] remoteExecCall [""TON_fnc_getVehicles"",2];};     " \n "createDialog ""Life_impound_menu"";     " \n "disableSerialization;     " \n "ctrlSetText[2802,""Suche nach Fahrzeugen....""];     " \n "life_garage_sp = ""med_car_1"";   " \n "life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide isEqualTo independent'];   " \n "this addAction[localize""STR_MAR_Helicopter_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,[""Air""],player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,[""Air""],player] remoteExecCall [""TON_fnc_getVehicles"",2];};     " \n "createDialog ""Life_impound_menu"";     " \n "disableSerialization;     " \n "ctrlSetText[2802,""Suche nach Fahrzeugen....""];     " \n "life_garage_sp = ""med_air_1"";   " \n "life_garage_type = [""Air""];  },"""",0,false,false,"""",'playerSide isEqualTo independent '];   " \n "this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];   " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market"",1.5,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo independent ']; " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""revive"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""revive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""revive"",0,false,false,"""",' !license_cop_revive && playerSide isEqualTo west '];";
+				init="this enableSimulation false;  " \n "this allowDamage false; this addAction[ " \n " ""Feuerwehr Loadout"", ' " \n " private[""_handle""]; " \n " _handle = [] spawn life_fnc_stripDownPlayer; " \n " waitUntil {scriptDone _handle}; " \n " player forceAddUniform ""U_B_CombatUniform_mcam""; " \n " player addBackpack ""B_Kitbag_sgg""; " \n " player addItem ""ItemMap""; " \n " player assignItem ""ItemMap""; " \n " player addItem ""ItemCompass""; " \n " player assignItem ""ItemCompass""; " \n " player addItem ""ItemWatch""; " \n " player assignItem ""ItemWatch""; " \n " player addItem ""ItemGPS""; " \n " player assignItem ""ItemGPS""; " \n " player addItem ""Rangefinder""; " \n " player assignItem ""Rangefinder""; " \n " player addItem ""NVGoggles""; " \n " player assignItem ""NVGoggles""; " \n " player addItem ""ToolKit""; " \n " player addItem ""Medikit""; " \n " [] call life_fnc_saveGear; " \n " ', """",0,false,true,"""""""",'playerSide isEqualTo independent' " \n "]; " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide isEqualTo independent '];  " \n "this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""];  " \n "this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""];  " \n "this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,[""med_car_1"",""med_car_2""],""med"",""Kavala Hospital""]];  this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_heli"",independent,[""med_air_1"",""med_car_2""],""med"",""Helikopter Shop""]];   " \n "this addAction[localize""STR_MAR_W_Car_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};    " \n "createDialog ""Life_impound_menu"";    " \n "disableSerialization;    " \n "ctrlSetText[2802,""Suche nach Fahrzeugen....""];    " \n "life_garage_sp = ""med_car_1"";  " \n "life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide isEqualTo independent'];  " \n "this addAction[localize""STR_MAR_Helicopter_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};    " \n "createDialog ""Life_impound_menu"";    " \n "disableSerialization;    " \n "ctrlSetText[2802,""Suche nach Fahrzeugen....""];    " \n "life_garage_sp = ""med_air_1"";  " \n "life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide isEqualTo independent '];  " \n "this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market"",1.5,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo independent '];" \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""revive"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""revive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""revive"",0,false,false,"""",' !license_cop_revive && playerSide isEqualTo west '];";
 			};
 			id=4443;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.14600182;
+			atlOffset=0.14645767;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -109332,7 +109332,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorWhite";
 			id=5096;
-			atlOffset=14.576057;
+			atlOffset=5.1759338;
 		};
 		class Item2749
 		{
@@ -109857,7 +109857,7 @@ class Mission
 			type="mil_dot";
 			colorName="Color1_FD_F";
 			id=5143;
-			atlOffset=14.838466;
+			atlOffset=14.59104;
 		};
 		class Item2796
 		{
@@ -110365,7 +110365,7 @@ class Mission
 			colorName="ColorRed";
 			angle=299.84787;
 			id=5190;
-			atlOffset=14.576065;
+			atlOffset=11.304634;
 		};
 		class Item2842
 		{
@@ -110406,14 +110406,14 @@ class Mission
 		class Item2845
 		{
 			dataType="Marker";
-			position[]={14302.35,20.934669,17408.732};
+			position[]={14304.078,20.962986,17407.566};
 			name="Dealer_2_1";
 			text="Dealer";
 			type="MinefieldAP";
 			colorName="ColorPink";
 			angle=2.7459998;
 			id=5197;
-			atlOffset=2.0944901;
+			atlOffset=2.0944862;
 		};
 		class Item2846
 		{
@@ -111404,7 +111404,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=153.85995;
 			id=5283;
-			atlOffset=2.0944862;
+			atlOffset=1.9321766;
 		};
 		class Item2929
 		{
@@ -111837,7 +111837,7 @@ class Mission
 			colorName="ColorBrown";
 			angle=357.13501;
 			id=5322;
-			atlOffset=2.0944862;
+			atlOffset=1.5923843;
 		};
 		class Item2968
 		{
@@ -121528,7 +121528,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3272.7161,2.5455728,12976.866};
+						position[]={3272.7156,2.54509,12976.866};
 						angles[]={0,3.0850964,0};
 					};
 					side="Civilian";
@@ -121536,13 +121536,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;   " \n "this allowDamage false;     " \n "this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];   " \n "this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];     " \n "this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];     " \n "this addAction[""Polizei Waffen"",life_fnc_weaponShopMenu,""cop_weapon""];  ";
+						init="this enableSimulation false;    " \n "this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];  " \n "this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];    " \n "this allowDamage false;    " \n "this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];    " \n "this addAction[localize""STR_MAR_Cop_Weapon_pa"",life_fnc_weaponShopMenu,""cop_pa""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_pm"",life_fnc_weaponShopMenu,""cop_pm""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_pom"",life_fnc_weaponShopMenu,""cop_pom""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_phm"",life_fnc_weaponShopMenu,""cop_phm""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_pka"",life_fnc_weaponShopMenu,""cop_pka""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_pk"",life_fnc_weaponShopMenu,""cop_pk""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_pok"",life_fnc_weaponShopMenu,""cop_pok""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_pok_p"",life_fnc_weaponShopMenu,""cop_pok_p""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_phk"",life_fnc_weaponShopMenu,""cop_phk""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_phk_p"",life_fnc_weaponShopMenu,""cop_phk_p""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_ephk"",life_fnc_weaponShopMenu,""cop_ephk""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_pd"",life_fnc_weaponShopMenu,""cop_pd""];  " \n "this addAction[localize""STR_MAR_Cop_Weapon_lpd"",life_fnc_weaponShopMenu,""cop_lpd""];    " \n "    " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west '];    " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west '];";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;
 					};
 					id=6104;
 					type="B_RangeMaster_F";
-					atlOffset=0.00048327446;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -134519,14 +134518,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3236.9729,2.7372434,12953.703};
-				angles[]={0.0026529003,4.8597999,6.2765183};
+				position[]={3236.9731,2.7372417,12953.703};
+				angles[]={0.0026520467,4.8597999,6.2765174};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false;   " \n "this allowDamage false;   " \n "this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""APD - Kavala District""]];   " \n "this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,[""Car"",""Tank""],player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,[""Car"",""Tank""],player] remoteExecCall [""TON_fnc_getVehicles"",2];};    " \n "createDialog ""Life_impound_menu"";    " \n "disableSerialization;    " \n "ctrlSetText[2802,""Suche nach Fahrzeugen....""];    " \n "life_garage_sp = ""cop_car_1"";  " \n "life_garage_type = [""Car"",""Tank""];  },"""",0,false,false,"""",'playerSide isEqualTo west'];   " \n "this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  " \n "this setVariable[""realname"",""Polizei Fahrzeug Shop""];";
+				init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""APD - Kavala District""]];  this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide isEqualTo west'];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Cop Vehicle Store""];";
 			};
 			id=7059;
 			type="Land_InfoStand_V2_F";
@@ -180272,16 +180271,6 @@ class Mission
 				};
 				nAttributes=1;
 			};
-		};
-		class Item5034
-		{
-			dataType="Marker";
-			position[]={3253.925,16.573999,12952.831};
-			name="cop_car_1_1";
-			type="Empty";
-			angle=88.422981;
-			id=10604;
-			atlOffset=14.456865;
 		};
 	};
 };
