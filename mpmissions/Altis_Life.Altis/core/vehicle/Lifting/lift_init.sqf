@@ -13,8 +13,9 @@ CUP_checkLift =
   _return = false;
   _velocity = velocity vehicle player;
   _speed = (sqrt ((_velocity select 0)^2 + (_velocity select 1)^2))*3.6;
-  if ((vehicle player isKindOf "Helicopter") && ((count (nearestObjects [vehicle player, ["Car", "Tank", "Ship"], 10]) > 0) || (count (nearestObjects [vehicle player, _objektTypen, 10]) > 0)) && (_speed < 10) && (driver vehicle player == player) && !(vehicle player in CUP_heloBlacklist) && !(typeOf vehicle player in CUP_heloBlacklist)) then {_return = true};
-  if !(isNil {vehicle player getVariable "CUP_attached"}) then
+//  if ((vehicle player isKindOf "Helicopter") && ((count (nearestObjects [vehicle player, ["Car", "Tank", "Ship"], 10]) > 0) || (count (nearestObjects [vehicle player, _objektTypen, 10]) > 0)) && (_speed < 10) && (driver vehicle player == player) && !(vehicle player in CUP_heloBlacklist) && !(typeOf vehicle player in CUP_heloBlacklist)) then {_return = true;};
+ _return = true;
+ if !(isNil {vehicle player getVariable "CUP_attached"}) then
   {
     if (vehicle player getVariable "CUP_attached" select 0 == 1) then
     {
