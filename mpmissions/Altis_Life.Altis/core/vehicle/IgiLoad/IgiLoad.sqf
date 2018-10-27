@@ -419,8 +419,9 @@ if (isnil "IL_Procedures") then
         
         if (_obj_type in IL_Supported_Cargo10) then
 		{
-			_obj setVariable["slots", 6, true];
+			_obj setVariable["slots", 3, true];
 			_obj setVariable["cargo_offset", 2.6, true];
+            [_obj, 1200] call IL_SetNewMass;
 		};
 		
 		if (_obj_type in IL_Supported_HEMTT) then
@@ -463,17 +464,17 @@ if (isnil "IL_Procedures") then
 		};
 		if (_obj_type in IL_Supported_Hunter) then
 		{
-			_obj setVariable["slots", 7, true];
-			_obj setVariable["cargo_offset", 1.5, true];
+			_obj setVariable["slots", 6, true];
+			_obj setVariable["cargo_offset", 1.3, true];
 		};
 		if (_obj_type in IL_Supported_Ifrit) then
 		{
-			_obj setVariable["slots", 7, true];
-			_obj setVariable["cargo_offset", 1.3, true];
+			_obj setVariable["slots", 6, true];
+			_obj setVariable["cargo_offset", 1.2, true];
 		};
 		if (_obj_type in IL_Supported_VAN) then
 		{
-			_obj setVariable["slots", 6, true];
+			_obj setVariable["slots", 5, true];
 			_obj setVariable["cargo_offset", 1.8, true];
 		};
 		if (_obj_type in IL_Supported_UGV) then
